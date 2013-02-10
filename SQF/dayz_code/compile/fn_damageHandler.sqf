@@ -31,9 +31,9 @@ if (_isPlayer) then {
 	if (_damage > 0.1) then {
 		dayz_canDisconnect = false;
 		["dayzDiscoAdd",getPlayerUID player] call callRpcProcedure;
-				
+
 		dayz_damageCounter = time;
-		
+
 		//Ensure Control is visible
 		_display = uiNamespace getVariable 'DAYZ_GUI_display';
 		_control = 	_display displayCtrl 1204;
@@ -104,6 +104,11 @@ if (_hit in USEC_MinorWounds) then {
 	};
 };
 
+//Handle damage for combat roll
+if (_hit in ["", "?"] && _ammo == "") then {
+	[_unit,_hit,_damage] call object_processHit;
+};
+
 
 if (_unitIsPlayer) then {
 //incombat
@@ -147,7 +152,7 @@ if (_damage > 0.4) then {	//0.25
 				r_player_infected = true;
 				player setVariable["USEC_infected",true,true];
 			};
-			
+
 		};
 		if (_hitPain) then {
 			//Set Pain if not already

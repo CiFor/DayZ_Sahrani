@@ -251,12 +251,12 @@ if (!isDedicated) then {
 		//if (_dikCode == 57) then {_handled = true}; // space
 		//if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
 		if ("ItemMap_Debug" in items player) then {
-			if (_dikCode == 88) then //SCROLL LOCK
+			if (_dikCode == 210) then //SCROLL LOCK
 			{
 				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 			};
 		} else {
-			if (_dikCode == 70) then //SCROLL LOCK
+			if (_dikCode == 210) then //SCROLL LOCK
 			{
 				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 			};
