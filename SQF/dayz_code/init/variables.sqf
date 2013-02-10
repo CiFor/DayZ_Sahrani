@@ -11,7 +11,15 @@ Camo1_DZ = 		"Camo1_DZ";
 Soldier1_DZ = 	"Soldier1_DZ";
 Rocket_DZ = 	"Rocket_DZ";
 
+AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ"];
+AllPlayersVehicles = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
+
+//Cooking
+meatraw = ["FoodSteakRaw",	"FoodmeatRaw","FoodbeefRaw","FoodmuttonRaw","FoodchickenRaw","FoodrabbitRaw","FoodbaconRaw"];
+meatcooked = ["FoodSteakCooked","FoodmeatCooked","FoodbeefCooked","FoodmuttonCooked","FoodchickenCooked","FoodrabbitCooked","FoodbaconCooked"];
+
 dayz_combatLog = "";
+canRoll = true;
 
 
 //Hunting Variables
@@ -31,9 +39,6 @@ SleepWater =			1440; //minutes (24 hours)
 SleepTemperatur	= 		90 / 100;	//Firs Value = Minutes untill Player reaches the coldest Point at night (without other effects! night factor expected to be -1)			//TeeChange
 
 //Server Variables
-dayZ_hivePipe1 = 		"\\.\pipe\dayz";	//The named pipe
-dayZ_hivePipeAuth = 	"\\.\pipe\dayzAuth";	//The named pipe
-hiveInUse	=			false;
 allowConnection = 		false;
 isSinglePlayer =		false;
 dayz_serverObjectMonitor = [];
@@ -51,6 +56,7 @@ Dayz_GUI_B = 0.26; // -0.26
 dayz_resetSelfActions = {
 	s_player_fire =			-1;
 	s_player_cook =			-1;
+	s_player_boil =			-1;
 	s_player_fireout =		-1;
 	s_player_butcher =		-1;
 	s_player_packtent = 	-1;
@@ -66,6 +72,19 @@ dayz_resetSelfActions = {
 	s_build_Wire_cat1 =		-1;
 	s_player_deleteBuild =	-1;
 	s_player_forceSave = 	-1;
+	s_player_flipveh = 		-1;
+	s_player_stats =		-1;
+	s_player_sleep =		-1;
+	s_player_movedog =		-1;
+	s_player_speeddog =		-1;
+	s_player_calldog = 		-1;
+	s_player_feeddog = 		-1;
+	s_player_waterdog = 	-1;
+	s_player_staydog = 		-1;
+	s_player_trackdog = 	-1;
+	s_player_barkdog = 		-1;
+	s_player_warndog = 		-1;
+	s_player_followdog = 	-1;
 };
 call dayz_resetSelfActions;
 
@@ -105,6 +124,22 @@ r_action_repair = 		false;
 r_action_targets = 		[];
 r_pitchWhine = 			false;
 r_isBandit =			false;
+
+//ammo routine
+r_player_actions2 = [];
+r_action2 = false;
+r_player_lastVehicle = objNull;
+r_player_lastSeat = [];
+r_player_removeActions2 = {
+	if (!isNull r_player_lastVehicle) then {
+		{
+			r_player_lastVehicle removeAction _x;
+		} forEach r_player_actions2;
+		r_player_actions2 = [];
+		r_action2 = false;
+	};
+};
+
 USEC_woundHit 	= [
 	"",
 	"body",
@@ -118,23 +153,24 @@ DAYZ_woundHit 	= [
 		"hands",
 		"legs",
 		"head_hit"
-	],[
-		0.45,
-		0.4,
-		0.1,
-		0.05
-	]
+	],
+	[ 0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,3]
 ];
 DAYZ_woundHit_ok = [
 	[
 		"body",
 		"hands",
 		"legs"
-	],[
-		0.5,
-		0.3,
-		0.2
-	]
+	],
+	[0,0,0,0,0,1,1,1,2,2]
+];
+DAYZ_woundHit_dog = [
+	[
+		"body",
+		"hands",
+		"legs"
+	],
+	[0,0,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2]
 ];
 USEC_MinorWounds 	= [
 	"hands",
@@ -175,9 +211,8 @@ dayz_zSpawnDistance = 1000;
 dayz_maxLocalZombies = 40;
 dayz_spawnPos = getPosATL player;
 
-if(isDedicated) then {
-	dayz_disco = [];
-};
+//init global arrays for Loot Chances
+call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\loot_init.sqf";
 
 if(isServer) then {
 	dayz_players = [];

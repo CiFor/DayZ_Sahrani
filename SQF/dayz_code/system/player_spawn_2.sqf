@@ -104,7 +104,7 @@ while {true} do {
 	
 	//Has infection?
 	if (r_player_infected) then {
-		[player,"cough",8,false] call dayz_zombieSpeak;
+		[player,"cough",8,true] call dayz_zombieSpeak;
 	};
 
 	//Record Check
@@ -144,7 +144,7 @@ while {true} do {
 	
 	//can get nearby infection
 	if (!r_player_infected) then {
-		//					Infectionriskstart
+		//	Infectionriskstart
 		if (dayz_temperatur < ((80 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then {	//TeeChange
 			_listTalk = _mylastPos nearEntities ["CAManBase",8];
 			{
@@ -174,8 +174,9 @@ while {true} do {
 	
 	//If has infection reduce blood
 	if (r_player_infected) then {
-		if (r_player_blood > 6000) then {
+		if (r_player_blood > 3000) then {
 			r_player_blood = r_player_blood - 3;
+			player setVariable["USEC_BloodQty",r_player_blood];
 		};
 	};
 	
@@ -217,8 +218,7 @@ while {true} do {
 		if ((time - dayz_damageCounter) > 180) then {
 			if (!r_player_unconscious) then {
 				dayz_canDisconnect = true;
-				dayzDiscoRem = getPlayerUID player;
-				publicVariableServer "dayzDiscoRem";
+				["dayzDiscoRem",getPlayerUID player] call callRpcProcedure;
 				
 				//Ensure Control is hidden
 				_display = uiNamespace getVariable 'DAYZ_GUI_display';
@@ -231,11 +231,8 @@ while {true} do {
 	//Save Checker
 	if (dayz_unsaved) then {
 		if ((time - dayz_lastSave) > _saveTime) then {
-			dayzPlayerSave = [player,dayz_Magazines,false];
-			publicVariableServer "dayzPlayerSave";
-			if (isServer) then {
-				dayzPlayerSave call server_playerSync;
-			};
+			["dayzPlayerSave",[player,dayz_Magazines,false]] call callRpcProcedure;			
+			
 			dayz_lastSave = time;
 			dayz_Magazines = [];
 		};

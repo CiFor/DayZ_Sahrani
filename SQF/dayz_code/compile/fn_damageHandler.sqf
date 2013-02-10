@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_inVehicle","_isHeadHit","_isMinor","_scale","_canHitFree"];
+private["_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_isHeadHit","_isMinor","_scale","_canHitFree"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -14,13 +14,12 @@ _ammo = _this select 4;
 _type = [_damage,_ammo] call fnc_usec_damageType;
 _isMinor = (_hit in USEC_MinorWounds);
 _isHeadHit = (_hit == "head_hit");
-_inVehicle = (vehicle _unit != _unit);
 _evType = "";
 _recordable = false;
 _isPlayer = (isPlayer _source);
 _humanityHit = 0;
 _myKills = 0;
-_sourceZombie = _source isKindOf "zZombie_base";
+_unitIsPlayer = _unit == player;
 
 //Publish Damage
 	//player sidechat format["Processed damage for %1",_unit];
@@ -31,8 +30,8 @@ _sourceZombie = _source isKindOf "zZombie_base";
 if (_isPlayer) then {
 	if (_damage > 0.1) then {
 		dayz_canDisconnect = false;
-		dayzDiscoAdd = getPlayerUID player;
-		publicVariable "dayzDiscoAdd";
+		["dayzDiscoAdd",getPlayerUID player] call callRpcProcedure;
+				
 		dayz_damageCounter = time;
 		
 		//Ensure Control is visible
@@ -43,10 +42,10 @@ if (_isPlayer) then {
 };
 */
 
-if (_unit == player) then {
+if (_unitIsPlayer) then {
 	if (_hit == "") then {
-		if ((_source != player) and _isPlayer) then {
-		//Enable aggressor Actions
+		if ((_source != player) and _isPlayer) then {			
+			//Enable aggressor Actions
 			if (_source isKindOf "CAManBase") then {
 				_source setVariable["startcombattimer",1];	
 			};
@@ -56,10 +55,7 @@ if (_unit == player) then {
 				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
 				//Process Morality Hit
 				_humanityHit = -(_myKills * _damage);
-				_id = [_source,_humanityHit] spawn {					
-					dayzHumanity = [_this select 0,_this select 1,30];
-					publicVariable "dayzHumanity";
-				};
+				["dayzHumanity",[_source,_humanityHit,30]] call broadcastRpcCallAll;
 			};
 		};
 	};
@@ -84,7 +80,7 @@ if (_damage > 0.4) then {
 		case 1: {_scale = _scale + 200};
 		case 2: {_scale = _scale + 200};
 	};
-	if (_unit == player) then {
+	if (_unitIsPlayer) then {
 		//Cause blood loss
 		//Log Damage
 		//diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
@@ -108,13 +104,14 @@ if (_hit in USEC_MinorWounds) then {
 	};
 };
 
-/*
-if (_unit == player) then {
-	player sideChat str(_damage);
+
+if (_unitIsPlayer) then {
+//incombat
+	_unit setVariable["startcombattimer", 1, false];	
 };
-*/
+
 if (_damage > 0.1) then {
-	if (_unit == player) then {
+	if (_unitIsPlayer) then {
 		//shake the cam, frighten them!
 		//player sidechat format["Processed bullet hit for %1 (should only be for me!)",_unit];
 		1 call fnc_usec_bulletHit;
@@ -129,9 +126,9 @@ if (_damage > 0.4) then {	//0.25
 	*/		
 	_wound = _hit call fnc_usec_damageGetWound;
 	_isHit = _unit getVariable[_wound,false];
-	if (_unit == player) then {	
+	if (_unitIsPlayer) then {	
 		_rndPain = 		(random 10);
-		_rndInfection = (random 1000);
+		_rndInfection = (random 500);
 		_hitPain = 		(_rndPain < _damage);
 		if ((_isHeadHit) or (_damage > 1.2 and _hitPain)) then {
 			_hitPain = true;
@@ -140,13 +137,13 @@ if (_damage > 0.4) then {	//0.25
 		//player sidechat format["HitPain: %1, HitInfection %2 (Damage: %3)",_rndPain,_rndInfection,_damage]; //r_player_infected
 		if (_isHit) then {
 			//Make hit worse
-			if (_unit == player) then {
+			if (_unitIsPlayer) then {
 				r_player_blood = r_player_blood - 50;
 			};
 		};
 		if (_hitInfection) then {
 			//Set Infection if not already
-			if (_unit == player) then {
+			if (_unitIsPlayer) then {
 				r_player_infected = true;
 				player setVariable["USEC_infected",true,true];
 			};
@@ -154,7 +151,7 @@ if (_damage > 0.4) then {	//0.25
 		};
 		if (_hitPain) then {
 			//Set Pain if not already
-			if (_unit == player) then {
+			if (_unitIsPlayer) then {
 				r_player_inpain = true;
 				player setVariable["USEC_inPain",true,true];
 			};
@@ -166,15 +163,13 @@ if (_damage > 0.4) then {	//0.25
 	if(!_isHit) then {
 		//Create Wound
 		_unit setVariable[_wound,true,true];
-		[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
-		usecBleed = [_unit,_wound,_hit];
-		publicVariable "usecBleed";
+		["usecBleed",[_unit,_wound,_hit]] call broadcastRpcCallAll;
 
 		//Set Injured if not already
 		_isInjured = _unit getVariable["USEC_injured",false];
 		if (!_isInjured) then {
 			_unit setVariable["USEC_injured",true,true];
-			if ((_unit == player) and (_ammo != "zombie")) then {
+			if ((_unitIsPlayer) and (_ammo != "zombie")) then {
 				dayz_sourceBleeding = _source;
 			};
 		};
@@ -183,7 +178,7 @@ if (_damage > 0.4) then {	//0.25
 		if (!_lowBlood) then {
 			_unit setVariable["USEC_lowBlood",true,true];
 		};
-		if (_unit == player) then {
+		if (_unitIsPlayer) then {
 			r_player_injured = true;
 		};
 	};
@@ -192,13 +187,13 @@ if (_type == 1) then {
 	/*
 		BALISTIC DAMAGE		
 	*/		
-	if ((_damage > 0.01) and (_unit == player)) then {
+	if ((_damage > 0.01) and (_unitIsPlayer)) then {
 		//affect the player
 		[20,45] call fnc_usec_pitchWhine; //Visual , Sound
 	};
 	if (_damage > 4) then {
 		//serious ballistic damage
-		if (_unit == player) then {
+		if (_unitIsPlayer) then {
 			_id = [_source,"explosion"] spawn player_death;
 		};
 	} else {
@@ -217,7 +212,7 @@ if (_type == 2) then {
 	*/
 	if (_damage > 4) then {
 		//serious ballistic damage
-		if (_unit == player) then {
+		if (_unitIsPlayer) then {
 			_id = [_source,"shotheavy"] spawn player_death;
 		};
 	} else {

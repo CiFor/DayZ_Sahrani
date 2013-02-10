@@ -12,8 +12,6 @@ _distance = round(_audible * 10 * _caliber);
 
 dayz_disAudial = _distance;
 dayz_firedCooldown = time;
-// Put everyone in range of the bullet into combat
-//_id = _this spawn player_projectileNear;
 // Color in the combat icon
 dayz_combat = 1;
 
@@ -42,7 +40,6 @@ if (_ammo isKindOf "SmokeShell") then {
 	} forEach _listTalk;
 } else {
 	_id = [_unit,_distance,true,(getPosATL player)] spawn player_alertZombies;
-	
 	//Check if need to place arrow
 	if (_ammo isKindOf "Bolt") then {
 		_id = _this spawn player_crossbowBolt;
@@ -55,16 +52,14 @@ if (_ammo isKindOf "SmokeShell") then {
 		if (_ammo isKindOf "RoadFlare") then {
 			//hint str(_ammo);
 			_projectile = nearestObject [_unit, "RoadFlare"];
-			_id = [_projectile,0] spawn object_roadFlare;
-			dayzRoadFlare = [_projectile,0];
-			publicVariable "dayzRoadFlare";
+			["dayzRoadFlare",[_projectile,0]] call broadcastRpcCallAll;
+
 			_id = _this spawn player_throwObject;
 		};
 		if (_ammo isKindOf "ChemLight") then {
 			_projectile = nearestObject [_unit, "ChemLight"];
-			_id = [_projectile,1] spawn object_roadFlare;
-			dayzRoadFlare = [_projectile,1];
-			publicVariable "dayzRoadFlare";
+			["dayzRoadFlare",[_projectile,1]] call broadcastRpcCallAll;
+
 			_id = _this spawn player_throwObject;
 		};
 	};	
