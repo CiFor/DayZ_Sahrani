@@ -263,6 +263,7 @@ class CfgBuildingLoot {
 			{"ItemSodaMdew","magazine"},
 			{"ItemWatch","generic"},
 			{"ItemCompass","generic"},
+			{"ItemCraftingBook","weapon"},
 			{"ItemMap","weapon"},
 			{"Makarov","weapon"},
 			{"MakarovSD","weapon"},
@@ -294,6 +295,7 @@ class CfgBuildingLoot {
 			0.01,
 			0.15,
 			0.05,
+			0.02,
 			0.03,
 			0.13,
 			0.05,
@@ -334,6 +336,7 @@ class CfgBuildingLoot {
 			{"","generic"},
 			{"","trash"},
 			{"","military"},
+			{"ItemCraftingBook2","weapon"},
 			{"WeaponHolder_PartGeneric","object"},
 			{"WeaponHolder_PartWheel","object"},
 			{"WeaponHolder_PartFueltank","object"},
@@ -345,12 +348,14 @@ class CfgBuildingLoot {
 			{"ItemKnife","military"},
 			{"ItemToolbox","weapon"},
 			{"ItemWire","magazine"},
+			{"ItemNails","magazine"},
 			{"ItemTankTrap","magazine"}
 		};
 		itemChance[] =	{
 			0.18,
 			0.29,
 			0.04,
+			0.02,
 			0.04,
 			0.05,
 			0.02,
@@ -361,6 +366,7 @@ class CfgBuildingLoot {
 			0.11,
 			0.07,
 			0.06,
+			0.01,
 			0.01,
 			0.04
 		};
@@ -408,6 +414,7 @@ class CfgBuildingLoot {
 			{"ItemWatch","generic"},
 			{"ItemCompass","generic"},
 			{"ItemMap","weapon"},
+			{"ItemCraftingBook","weapon"},
 			{"Makarov","weapon"},
 			{"Colt1911","weapon"},
 			{"ItemFlashlight","generic"},
@@ -434,6 +441,7 @@ class CfgBuildingLoot {
 			0.15,
 			0.01,
 			0.05,
+			0.02,
 			0.02,
 			0.02,
 			0.05,
@@ -632,6 +640,7 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		itemType[] =	{
 			{"M9","weapon"},
+			{"ItemCraftingBook3","weapon"},
 			{"M16A2","weapon"},
 			{"M16A2GL","weapon"},
 			{"M9SD","weapon"},
@@ -688,6 +697,7 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.05,
+			0.01,
 			0.05,
 			0.01,
 			0.02,
