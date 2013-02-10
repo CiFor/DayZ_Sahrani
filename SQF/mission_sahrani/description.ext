@@ -1,14 +1,12 @@
 ﻿respawn = "BASE";
-respawndelay = 5;
+respawndelay = 2; // Reduce chance of bodies deleting
 onLoadMission= "DayZ Sahrani";
 OnLoadIntro = "Welcome to Sahrani";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
-disableChannels[]={0,1,2,6}; // -1 to add side
+disableChannels[]={0,1,2,6};
 enableItemsDropping = 0;
-
-loadScreen = "\z\addons\dayz_code\gui\dayz_logo_ca.paa";
 
 class Header
 {
