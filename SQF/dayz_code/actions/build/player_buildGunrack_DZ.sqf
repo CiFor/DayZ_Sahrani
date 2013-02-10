@@ -35,15 +35,15 @@ if (!_isOk) then {
 	_objectTemp = createVehicle ["Gunrack_DZ", _location, [], 0, "CAN_COLLIDE"];
 	_objectTemp setDir _dir;
 	_objectTemp setpos [(getposATL _objectTemp select 0),(getposATL _objectTemp select 1), 0];
-	_objectTemp attachTo [player,[0,2.5,0]];
+	_objectTemp attachTo [player,[0,2.5,0.5]];
 	_timer = 10;
-	_locationPlayer = player modeltoworld [0,0,0];
-	while {_timer != 0} do {
+	_locationPlayer = GetPos player;
+	while {_timer > -1} do {
 	if(player distance _locationPlayer > 0.1) then {_timer = 10;};
 	sleep 1;
 	cutText [format["Building in %1 seconds",_timer],"PLAIN DOWN"];
 	_timer=_timer-1;
-	_locationPlayer = player modeltoworld [0,0,0];
+	_locationPlayer = GetPos player;
 	};
 	deleteVehicle _objectTemp;
 	_location = player modeltoworld [0,2.5,0];
