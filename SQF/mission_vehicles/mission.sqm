@@ -38,16 +38,15 @@ class Mission
 	addOnsAuto[]=
 	{
 		"cacharacters2",
+		"CAWheeled",
 		"castructures_mil",
 		"castructureshouse_a_hospital",
 		"oac_core",
 		"castructureshouse_shed_ind",
-		"a_generalstore_01",
 		"CAAir_E_AH6J",
 		"CAAir_E_UH1H_EP1",
 		"caair",
 		"CAWheeled2_V3S",
-		"CAWheeled",
 		"caair_e_an2",
 		"caair_e",
 		"CAWheeled_E_ATV",
@@ -81,7 +80,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			side="WEST";
@@ -98,6 +97,26 @@ class Mission
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16116.699,148.44275,10892.546};
+					azimut=-112.164;
+					id=588;
+					side="WEST";
+					vehicle="Ural_CDF";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					description="Ural in the woods";
 				};
 			};
 		};
