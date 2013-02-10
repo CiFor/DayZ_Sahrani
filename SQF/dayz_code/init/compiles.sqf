@@ -76,9 +76,6 @@ if (!isDedicated) then {
 	player_setTrap =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_setTrap.sqf";
 	object_pickup = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_pickup.sqf";
 	
-	//base building actions 
-	player_buildBoxStorage =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_buildBoxStorage.sqf";
-	
 	//ui
 	player_selectSlot =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\ui_selectSlot.sqf";
 	player_gearSync	=			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_gearSync.sqf";
