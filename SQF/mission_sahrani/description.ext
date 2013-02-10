@@ -1,5 +1,5 @@
 ﻿respawn = "BASE";
-respawndelay = 2; // Reduce chance of bodies deleting
+respawndelay = 5;
 onLoadMission= "DayZ Sahrani";
 OnLoadIntro = "Welcome to Sahrani";
 OnLoadIntroTime = False;
