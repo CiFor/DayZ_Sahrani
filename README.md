@@ -1,7 +1,7 @@
 DayZ Sahrani
 ===================
-Latest Version: 0.1
+Current Release Version: 0.1
 
-Development: 0.2
+Development Version:     0.2
 
 
