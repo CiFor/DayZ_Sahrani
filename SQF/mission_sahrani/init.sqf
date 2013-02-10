@@ -15,10 +15,6 @@ progressLoadingScreen 0.4;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf"; //Compile regular functions
 progressLoadingScreen 1.0;
 
-stream_locationCheck = {
- // ADDING THIS REMOVES JUNK FROM MAP
-};
-
 player setVariable ["BIS_noCoreConversations", true];
 enableRadio false;
 
