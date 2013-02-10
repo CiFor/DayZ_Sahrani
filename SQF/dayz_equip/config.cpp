@@ -608,7 +608,7 @@ class cfgWeapons {
 	
 	class ItemCraftingBook : ItemCore {
 		scope = 2;
-		displayName = Crafting Book;
+		displayName = Crafting Book (Camp);
 		model = "\ca\misc\SmallObj_spukayev_docs.p3d";
 		picture = "\ca\misc\Data\icons\picture_spukayev_docs_ca.paa";
 		descriptionShort = Crafting Book;
@@ -618,8 +618,67 @@ class cfgWeapons {
 				text = Build Crate;
 				script = "spawn player_buildBoxStorage;";
 			};
+			class Build2 {
+				text = Build GunRack;
+				script = "spawn player_buildGunrack_DZ;";
+			};
+			class Build3 {
+				text = Build Bench;
+				script = "spawn player_buildBench_DZ;";
+			};
+			class Build4 {
+				text = Build RazorWire;
+				script = "spawn player_buildFort_RazorWire_DZ;";
+			};
 		};
 	};
+	
+	class ItemCraftingBook2 : ItemCore {
+		scope = 2;
+		displayName = Crafting Book (Small Fortifications);
+		model = "\ca\misc\SmallObj_moscow_docs.p3d";
+		picture = "\ca\misc\Data\icons\smallobj_moscow_docs_co.paa";
+		descriptionShort = Crafting Book (Small Fortifications);
+		
+		class ItemActions {
+			class Build {
+				text = Build Long Bag Fence;
+				script = "spawn player_buildBagFenceLong_DZ;";
+			};
+			class Build2 {
+				text = Build Long Bag Fence (Corner);
+				script = "spawn player_buildBagFenceLongCorner_DZ;";
+			};
+			class Build3 {
+				text = Build Long Bag Fence (Round);
+				script = "spawn player_buildBagFenceLongRound_DZ;";
+			};
+		};
+	};
+	
+	class ItemCraftingBook3 : ItemCore {
+		scope = 2;
+		displayName = Crafting Book (Huge Fortifications);
+		model = "\ca\misc\SmallObj_File_photos.p3d";
+		picture = "\ca\misc\Data\icons\file_photos_co.paa";
+		descriptionShort = Crafting Book (Huge Fortifications);
+		
+		class ItemActions {
+			class Build {
+				text = Build Fortified Nest;
+				script = "spawn player_buildFortified_nest_DZ;";
+			};
+			class Build2 {
+				text = Build Tower;
+				script = "spawn player_buildCampWoodTower_DZ;";
+			};
+			class Build3 {
+				text = Build Gate;
+				script = "spawn player_buildBarb_Gate_DZ;";
+			};
+		};
+	};
+	
 	class ItemEtool : ItemCore {
 		scope = 2;
 		displayName = $STR_EQUIP_NAME_1;
@@ -1504,6 +1563,163 @@ class CfgVehicles {
 		displayName = "Hedgehog (Steel)";
 		vehicleClass = "Fortifications";
 	};
+	/* DayZ Sahrani Buildings */
+	
+	class BoxStorage : BuiltItems {
+		displayName = "Arms cache";
+		model = "\ca\weapons\AmmoBoxes\GuerillaCache.p3d"; 
+		icon = "\ca\data\data\Unknown_object.paa";
+		armor = 400; 
+		vehicleClass = "Survival";
+		transportMaxMagazines = 75;
+		transportMaxWeapons = 5;
+		transportMaxBackpacks = 5;
+	};
+	class Gunrack_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		vehicleClass = "Survival";
+		model = "\ca\misc2\Gunrack1";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		displayName = $STR_DN_GUNRACK1;
+		transportMaxWeapons = 20;
+		transportMaxMagazines = 0;
+		
+		class AnimationSources {
+			class TakeWeapon_hide {
+				source = "User";
+				animPeriod = 0.0001;
+				initPhase = 0;
+			};
+		};
+	};
+	
+	class Bench_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		model = "\ca\buildings\misc\Lavicka_4";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		displayName = "Bench (Wood)";
+		vehicleClass = "Fortifications";
+	}
+	
+	class BagFenceLong_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		model = "\ca\misc2\BagFenceLong.p3d";
+		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
+		mapSize = 2;
+		displayName = $STR_DN_BAGFENCELONG;
+		vehicleClass = "Fortifications";
+	};
+	
+	class BagFenceLongCorner_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		model = "\ca\misc2\BagFenceCorner.p3d";
+		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceCorner_ca.paa";
+		mapSize = 2;
+		displayName = $STR_DN_BAGFENCECORNER;
+		vehicleClass = "Fortifications";
+	};
+	
+	class BagFenceLongRound_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		model = "\Ca\misc3\fort_bagfence_round";
+		displayName = $STR_DN_FORT_BAGFENCE_ROUND;
+		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceRound_ca.paa";
+		mapSize = 3.2;
+		vehicleClass = "Fortifications";
+	};
+	
+	class Fort_RazorWire_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		animated = 0;
+		model = "\ca\misc\Fort_Razorwire";
+		icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
+		accuracy = 0.3;
+		mapSize = 5.5;
+		displayName = $STR_DN_WIRE;
+		vehicleClass = "Fortifications";
+	};
+	
+	class Fortified_nest_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		model = "\Ca\misc3\fortified_nest_small";
+		displayName = $STR_DN_FORTIFIED_NEST_SMALL;
+		icon = "\Ca\misc3\data\Icons\icon_fortNestSmall_ca.paa";
+		armor = 500;
+		irTarget = 0;
+		vehicleClass = "Fortifications";
+	};
+	
+	class CampWoodTower_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400;
+		model = "\ca\structures\Misc\Misc_DeerStand\misc_deerstand";
+		ladders[] = {{"start1", "end1"}};
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		displayName = "Tower (Wood)";
+		vehicleClass = "Fortifications";
+	};
+	
+	class Barb_Gate_DZ : BuiltItems {
+		animated = 1;
+		scope = 2;
+		model = "\ca\misc2\BarbGate.p3d";
+		icon = "\Ca\misc2\data\Icons\icon_barGate2_ca.paa";
+		mapSize = 3;
+		displayName = $STR_DN_BARGATE2;
+		destrType = "DestructTent";
+		vehicleClass = "Fortifications";
+		
+		class AnimationSources {
+			class Door01 {
+				animPeriod = 1;
+				initPhase = 0;
+			};
+		};
+		
+		class UserActions {
+			class OpenDoors1 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "Door01_axis";
+				radius = 3;
+				onlyForPlayer = 1;
+				condition = "this animationPhase ""Door01"" < 0.5";
+				statement = "this animate [""Door01"", 1]";
+			};
+			
+			class CloseDoors1 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "Door01_axis";
+				radius = 3;
+				onlyForPlayer = 1;
+				condition = "this animationPhase ""Door01"" >= 0.5";
+				statement = "this animate [""Door01"", 0]";
+			};
+		};
+		actionBegin1 = "OpenDoors1";
+		actionEnd1 = "OpenDoors1";
+	};
+	
+	
+	/* End */
 	
 	class Sandbag1_DZ : BuiltItems {
 		scope = 2;
@@ -1511,333 +1727,323 @@ class CfgVehicles {
 		cost = 100;
 		model = "\ca\misc2\BagFenceLong.p3d";
 		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
-		mapSize = 2;
-		armor = 400;
-		displayName = "Bag Fence";
-		vehicleClass = "Fortifications";
+	mapSize = 2;
+	armor = 400;
+	displayName = "Bag Fence";
+	vehicleClass = "Fortifications";
 	};
 	
 	class BearTrap_DZ : TrapItems {
-		scope = 2;
-		destrType = "DestructNo";
-		displayName = "Bear Trap";
-		model = "\dayz_equip\models\bear_trap.p3d";
-		
-		class Eventhandlers {
-			init = "_this execFSM '\z\addons\dayz_code\system\trap_monitor.fsm';";
-		};
-		
-		class AnimationSources {
-			class LeftShutter {
-				source = "user";
-				animPeriod = 0.1;
-				initPhase = 1;
-			};
-			
-			class RightShutter {
-				source = "user";
-				animPeriod = 0.1;
-				initPhase = 1;
-			};
-		};
-		
-		class UserActions {
-			class OpenTrap {
-				position = "";
-				displayName = "Reset Trap";
-				radius = 1.5;
-				onlyForPlayer = 0;
-				condition = "this animationPhase 'LeftShutter' == 1";
-				statement = "this animate ['LeftShutter', 0];this animate ['RightShutter', 0];";
-			};
-			
-			class CloseTrap {
-				position = "";
-				displayName = "Activate Trap";
-				radius = 1.5;
-				onlyForPlayer = 0;
-				condition = "this animationPhase 'LeftShutter' == 0";
-				statement = "this animate ['LeftShutter', 1];this animate ['RightShutter', 1];";
-			};
-			
-			class CollectTrap {
-				position = "";
-				displayName = "Take Trap";
-				radius = 1.5;
-				onlyForPlayer = 0;
-				condition = "this animationPhase 'LeftShutter' == 1";
-				statement = "[0,0,0,['cfgMagazines','TrapBear',this]] call object_pickup;";
-			};
-		};
+	scope = 2;
+	destrType = "DestructNo";
+	displayName = "Bear Trap";
+	model = "\dayz_equip\models\bear_trap.p3d";
+	
+	class Eventhandlers {
+	init = "_this execFSM '\z\addons\dayz_code\system\trap_monitor.fsm';";
+	};
+	
+	class AnimationSources {
+	class LeftShutter {
+	source = "user";
+	animPeriod = 0.1;
+	initPhase = 1;
+	};
+	
+	class RightShutter {
+	source = "user";
+	animPeriod = 0.1;
+	initPhase = 1;
+	};
+	};
+	
+	class UserActions {
+	class OpenTrap {
+	position = "";
+	displayName = "Reset Trap";
+	radius = 1.5;
+	onlyForPlayer = 0;
+	condition = "this animationPhase 'LeftShutter' == 1";
+	statement = "this animate ['LeftShutter', 0];this animate ['RightShutter', 0];";
+	};
+	
+	class CloseTrap {
+	position = "";
+	displayName = "Activate Trap";
+	radius = 1.5;
+	onlyForPlayer = 0;
+	condition = "this animationPhase 'LeftShutter' == 0";
+	statement = "this animate ['LeftShutter', 1];this animate ['RightShutter', 1];";
+	};
+	
+	class CollectTrap {
+	position = "";
+	displayName = "Take Trap";
+	radius = 1.5;
+	onlyForPlayer = 0;
+	condition = "this animationPhase 'LeftShutter' == 1";
+	statement = "[0,0,0,['cfgMagazines','TrapBear',this]] call object_pickup;";
+	};
+	};
 	};
 	class ReammoBox;	// External class reference
 	
 	class WeaponHolderBase : ReammoBox {
-		scope = 0;
-		accuracy = 1000;
-		vehicleClass = "Survival";
-		displayName = "Weapon";
-		memoryPointSupply = "collect";
-		supplyRadius = 3;
-		transportMaxWeapons = 0;
-		transportMaxMagazines = 0;
-		transportMaxBackpacks = 0;
-		transportAmmo = 0;
-		transportRepair = 0;
-		transportFuel = 0;
+	scope = 0;
+	accuracy = 1000;
+	vehicleClass = "Survival";
+	displayName = "Weapon";
+	memoryPointSupply = "collect";
+	supplyRadius = 3;
+	transportMaxWeapons = 0;
+	transportMaxMagazines = 0;
+	transportMaxBackpacks = 0;
+	transportAmmo = 0;
+	transportRepair = 0;
+	transportFuel = 0;
 	};
 	
 	class WeaponHolder_Colt1911 : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_WPN_HOLDR_1;
-		model = "\dayz_equip\proxy\Colt1911.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgWeapons','Colt1911'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_WPN_HOLDR_1;
+	model = "\dayz_equip\proxy\Colt1911.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgWeapons','Colt1911'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_ItemHatchet : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_41;
-		model = "\dayz_equip\models\hatchet.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgWeapons','ItemHatchet'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_41;
+	model = "\dayz_equip\models\hatchet.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgWeapons','ItemHatchet'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_MeleeCrowbar : WeaponHolderBase {
-		scope = 2;
-		displayName = "Crowbar";
-		model = "\dayz_equip\models\crowbar.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgWeapons','MeleeCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = "Crowbar";
+	model = "\dayz_equip\models\crowbar.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgWeapons','MeleeCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_huntingrifle : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_WPN_HOLDR_2;
-		model = "\dayz_equip\proxy\huntingrifle.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgWeapons','huntingrifle'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_WPN_HOLDR_2;
+	model = "\dayz_equip\proxy\huntingrifle.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgWeapons','huntingrifle'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_M4A1 : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_WPN_HOLDR_3;
-		model = "\dayz_equip\proxy\M4A1.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgWeapons','M4A1'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_WPN_HOLDR_3;
+	model = "\dayz_equip\proxy\M4A1.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgWeapons','M4A1'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_ItemTent : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_20;
-		model = "\dayz_equip\proxy\tentbag.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','ItemTent'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_20;
+	model = "\dayz_equip\proxy\tentbag.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgMagazines','ItemTent'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_ItemFlashlight : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_5;
-		model = "\dayz_equip\proxy\flashlight.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgWeapons','ItemFlashlight'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_5;
+	model = "\dayz_equip\proxy\flashlight.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgWeapons','ItemFlashlight'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_ItemFlashlightRed : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_6;
-		model = "\dayz_equip\proxy\flashlight_mil.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgWeapons','ItemFlashlightRed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_6;
+	model = "\dayz_equip\proxy\flashlight_mil.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgWeapons','ItemFlashlightRed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_ItemWaterbottle : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_12;
-		model = "\dayz_equip\proxy\waterbottle.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','ItemWaterbottleUnfilled'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_12;
+	model = "\dayz_equip\proxy\waterbottle.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgMagazines','ItemWaterbottleUnfilled'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_ItemGenerator : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_31;
-		model = "\dayz_equip\models\generator.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','ItemGenerator'] execVM '\z\addons\dayz_code\init\object_generator.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_31;
+	model = "\dayz_equip\models\generator.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgMagazines','ItemGenerator'] execVM '\z\addons\dayz_code\init\object_generator.sqf';";
+	};
 	};
 	
 	class WeaponHolder_ItemToolbox : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_2;
-		model = "\dayz_equip\proxy\toolbox.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgWeapons','ItemToolbox'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_2;
+	model = "\dayz_equip\proxy\toolbox.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgWeapons','ItemToolbox'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_PartFueltank : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_8;
-		model = "\dayz_equip\proxy\fueltank.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','PartFueltank'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_8;
+	model = "\dayz_equip\proxy\fueltank.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgMagazines','PartFueltank'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_PartWheel : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_9;
-		model = "\dayz_equip\proxy\wheel.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','PartWheel'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_9;
+	model = "\dayz_equip\proxy\wheel.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgMagazines','PartWheel'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_PartGeneric : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_10;
-		model = "\dayz_equip\proxy\genericparts.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','PartGeneric'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_10;
+	model = "\dayz_equip\proxy\genericparts.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgMagazines','PartGeneric'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_PartVRotor : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_32;
-		model = "\dayz_equip\proxy\vrotor.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','PartVRotor'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_32;
+	model = "\dayz_equip\proxy\vrotor.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgMagazines','PartVRotor'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_PartEngine : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_11;
-		model = "\dayz_equip\proxy\engine.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','PartEngine'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_11;
+	model = "\dayz_equip\proxy\engine.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgMagazines','PartEngine'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_PartGlass : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_30;
-		model = "\dayz_equip\proxy\carglass.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','PartGlass'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_30;
+	model = "\dayz_equip\proxy\carglass.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgMagazines','PartGlass'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_ItemJerrycan : WeaponHolderBase {
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_19;
-		model = "\dayz_equip\proxy\jerrycan.p3d";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','ItemJerrycan'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_19;
+	model = "\dayz_equip\proxy\jerrycan.p3d";
+	
+	class eventHandlers {
+	init = "[(_this select 0),'cfgMagazines','ItemJerrycan'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
 	};
 	
 	class WeaponHolder_ItemJerrycanSide : WeaponHolder_ItemJerrycan {
-		model = "\dayz_equip\proxy\jerrycan_side.p3d";
+	model = "\dayz_equip\proxy\jerrycan_side.p3d";
 	};
 	class Land_A_tent;	// External class reference
 	class ACamp;	// External class reference
 	
 	class TentStorage : Land_A_tent {
-		vehicleClass = "Survival";
-		transportMaxMagazines = 50;
-		transportMaxWeapons = 10;
-		transportMaxBackpacks = 5;
+	vehicleClass = "Survival";
+	transportMaxMagazines = 50;
+	transportMaxWeapons = 10;
+	transportMaxBackpacks = 5;
 	};
 	
-	class BoxStorage : TentStorage {
-		displayName = "Arms cache";
-		model = "\ca\weapons\AmmoBoxes\GuerillaCache.p3d"; 
-		armor = 30; 
-		vehicleClass = "Survival";
-		transportMaxMagazines = 30;
-		transportMaxWeapons = 5;
-		transportMaxBackpacks = 0;
-	};	
-	
 	class CardboardBox : ReammoBox {
-		accuracy = 1000;
-		vehicleClass = "Survival";
+	accuracy = 1000;
+	vehicleClass = "Survival";
 	};
 	
 	class FoodBox0 : CardboardBox {
-		scope = 2;
-		displayName = $STR_DAYZ_OBJ_1;
-		model = "\dayz_equip\models\cardboard_box.p3d";
-		
-		class TransportWeapons {
-			class _xx_ItemMatchbox {
-				weapon = "ItemMatchbox";
-				count = 3;
-			};
-			
-			class _xx_ItemFlashlight {
-				weapon = "ItemFlashlight";
-				count = 3;
-			};
-			
-			class _xx_ItemKnife {
-				weapon = "ItemKnife";
-				count = 3;
-			};
-		};
-		
-		class transportmagazines {
-			class _xx_FoodCanBakedBeans {
-				magazine = "FoodCanBakedBeans";
-				count = 6;
-			};
-			
-			class _xx_FoodCanSardines {
-				magazine = "FoodCanSardines";
-				count = 6;
-			};
-			
-			class _xx_FoodCanFrankBeans {
-				magazine = "FoodCanFrankBeans";
-				count = 6;
-			};
-			
-			class _xx_FoodCanPasta {
-				magazine = "FoodCanPasta";
-				count = 6;
-			};
-		};
+	scope = 2;
+	displayName = $STR_DAYZ_OBJ_1;
+	model = "\dayz_equip\models\cardboard_box.p3d";
+	
+	class TransportWeapons {
+	class _xx_ItemMatchbox {
+	weapon = "ItemMatchbox";
+	count = 3;
+	};
+	
+	class _xx_ItemFlashlight {
+	weapon = "ItemFlashlight";
+	count = 3;
+	};
+	
+	class _xx_ItemKnife {
+	weapon = "ItemKnife";
+	count = 3;
+	};
+	};
+	
+	class transportmagazines {
+	class _xx_FoodCanBakedBeans {
+	magazine = "FoodCanBakedBeans";
+	count = 6;
+	};
+	
+	class _xx_FoodCanSardines {
+	magazine = "FoodCanSardines";
+	count = 6;
+	};
+	
+	class _xx_FoodCanFrankBeans {
+	magazine = "FoodCanFrankBeans";
+	count = 6;
+	};
+	
+	class _xx_FoodCanPasta {
+	magazine = "FoodCanPasta";
+	count = 6;
+	};
+	};
 	};
 	
 	class FoodBox1 : FoodBox0 {};
@@ -1845,119 +2051,120 @@ class CfgVehicles {
 	class FoodBox2 : FoodBox0 {};
 	
 	class MedBox0 : CardboardBox {
-		scope = 2;
-		displayName = $STR_DAYZ_OBJ_2;
-		model = "\dayz_equip\models\cardboard_box_med.p3d";
-		
-		class transportmagazines {
-			class _xx_ItemBandage {
-				magazine = "ItemBandage";
-				count = 10;
-			};
-			
-			class _xx_ItemEpinephrine {
-				magazine = "ItemEpinephrine";
-				count = 5;
-			};
-			
-			class _xx_ItemMorphine {
-				magazine = "ItemMorphine";
-				count = 5;
-			};
-			
-			class _xx_ItemBloodbag {
-				magazine = "ItemBloodbag";
-				count = 5;
-			};
-			
-			class _xx_ItemPainkiller {
-				magazine = "ItemPainkiller";
-				count = 5;
-			};
-		};
+	scope = 2;
+	displayName = $STR_DAYZ_OBJ_2;
+	model = "\dayz_equip\models\cardboard_box_med.p3d";
+	
+	class transportmagazines {
+	class _xx_ItemBandage {
+	magazine = "ItemBandage";
+	count = 10;
+	};
+	
+	class _xx_ItemEpinephrine {
+	magazine = "ItemEpinephrine";
+	count = 5;
+	};
+	
+	class _xx_ItemMorphine {
+	magazine = "ItemMorphine";
+	count = 5;
+	};
+	
+	class _xx_ItemBloodbag {
+	magazine = "ItemBloodbag";
+	count = 5;
+	};
+	
+	class _xx_ItemPainkiller {
+	magazine = "ItemPainkiller";
+	count = 5;
+	};
+	};
 	};
 	
 	class AmmoBoxSmall : ReammoBox {
-		scope = 2;
-		vehicleClass = "Survival";
-		displayName = "Ammo Small";
-		model = "\ca\weapons\AmmoBoxes\Proxy_UsBasicAmmoBoxSmall.p3d";
+	scope = 2;
+	vehicleClass = "Survival";
+	displayName = "Ammo Small";
+	model = "\ca\weapons\AmmoBoxes\Proxy_UsBasicAmmoBoxSmall.p3d";
 	};
 	class Land_Fire;	// External class reference
 	
 	class Land_Fire_DZ : Land_Fire {
-		transportMaxMagazines = 8;
-		transportMaxWeapons = 1;
-		transportMaxBackpacks = 1;
-		
-		class TransportMagazines {
-			class _xx_PartWoodPile {
-				magazine = "PartWoodPile";
-				count = "1";
-			};
-		};
-		
-		class Eventhandlers {
-			init = "_this call eh_localCleanup;";
-		};
+	transportMaxMagazines = 8;
+	transportMaxWeapons = 1;
+	transportMaxBackpacks = 1;
+	
+	class TransportMagazines {
+	class _xx_PartWoodPile {
+	magazine = "PartWoodPile";
+	count = "1";
+	};
+	};
+	
+	class Eventhandlers {
+	init = "_this call eh_localCleanup;";
+	};
 	};
 	
 	class AmmoBoxMedium : ReammoBox {
-		scope = 2;
-		vehicleClass = "Survival";
-		displayName = "Ammo Medium";
-		model = "\ca\weapons\AmmoBoxes\Proxy_UsBasicAmmoBoxBig.p3d";
+	scope = 2;
+	vehicleClass = "Survival";
+	displayName = "Ammo Medium";
+	model = "\ca\weapons\AmmoBoxes\Proxy_UsBasicAmmoBoxBig.p3d";
 	};
 	
 	class AmmoBoxBig : ReammoBox {
-		scope = 2;
-		vehicleClass = "Survival";
-		displayName = "Ammo Medium";
-		model = "\ca\weapons\AmmoBoxes\Proxy_UsBasicAmmoBox.p3d";
+	scope = 2;
+	vehicleClass = "Survival";
+	displayName = "Ammo Medium";
+	model = "\ca\weapons\AmmoBoxes\Proxy_UsBasicAmmoBox.p3d";
 	};
 	
 	class AmmoBoxSmall_556 : AmmoBoxSmall {
-		displayName = "Ammo 5.56";
-		
-		class transportmagazines {
-			class _xx_30Rnd_556x45_Stanag {
-				magazine = "30Rnd_556x45_Stanag";
-				count = 20;
-			};
-			
-			class _xx_30Rnd_556x45_StanagSD {
-				magazine = "30Rnd_556x45_StanagSD";
-				count = 10;
-			};
-		};
+	displayName = "Ammo 5.56";
+	
+	class transportmagazines {
+	class _xx_30Rnd_556x45_Stanag {
+	magazine = "30Rnd_556x45_Stanag";
+	count = 20;
+	};
+	
+	class _xx_30Rnd_556x45_StanagSD {
+	magazine = "30Rnd_556x45_StanagSD";
+	count = 10;
+	};
+	};
 	};
 	
 	class AmmoBoxSmall_762 : AmmoBoxSmall {
-		displayName = "Ammo 7.62";
-		
-		class transportmagazines {
-			class _xx_20Rnd_762x51_DMR {
-				magazine = "20Rnd_762x51_DMR";
-				count = 10;
-			};
-			
-			class _xx_5Rnd_762x51_M24 {
-				magazine = "5Rnd_762x51_M24";
-				count = 10;
-			};
-			
-			class _xx_10Rnd_762x54_SVD {
-				magazine = "10Rnd_762x54_SVD";
-				count = 10;
-			};
-		};
+	displayName = "Ammo 7.62";
+	
+	class transportmagazines {
+	class _xx_20Rnd_762x51_DMR {
+	magazine = "20Rnd_762x51_DMR";
+	count = 10;
 	};
-};
-
-class CfgSounds {
+	
+	class _xx_5Rnd_762x51_M24 {
+	magazine = "5Rnd_762x51_M24";
+	count = 10;
+	};
+	
+	class _xx_10Rnd_762x54_SVD {
+	magazine = "10Rnd_762x54_SVD";
+	count = 10;
+	};
+	};
+	};
+	};
+	
+	class CfgSounds {
 	class trap_bear_0 {
-		name = "";
-		sound[] = {"\dayz_equip\sound\trap_bear_0", 1, 1, 60};
-		titles[] = {};
+	name = "";
+	sound[] = {"\dayz_equip\sound\trap_bear_0", 1, 1, 60};
+	titles[] = {};
 	};
-};
+	};
+		
