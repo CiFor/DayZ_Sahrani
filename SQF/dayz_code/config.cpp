@@ -480,7 +480,7 @@ class CfgBuildingLoot {
 			{"Mk_48_DZ","weapon"},
 			{"M249_DZ","weapon"},
 			//{"BAF_L85A2_RIS_CWS","weapon"},
-			{"BAF_L85A2_RIS_Holo","weapon"},
+			{"BAF_L85A2_RIS_SUSAT","weapon"},
 			{"DMR","weapon"},
 			{"","military"},
 			{"","medical"},
@@ -513,7 +513,7 @@ class CfgBuildingLoot {
 			0.01,		//{"BAF_AS50_scoped","weapon"},
 			0.03,		//{"Mk_48_DZ","weapon"},
 			0.05,		//{"M249_DZ","weapon"},
-			0.01,		//{"BAF_L85A2_RIS_CWS","weapon"}, BAF_L85A2_RIS_Holo
+			0.01,		//{"BAF_L85A2_RIS_CWS","weapon"}, BAF_L85A2_RIS_SUSAT
 			0.06,		//{"DMR","weapon"},
 			1,			//{"","military"},
 			0.5,		//{"","medical"},
@@ -555,7 +555,7 @@ class CfgBuildingLoot {
 			{"Mk_48_DZ","weapon"},
 			{"M249_DZ","weapon"},
 			//{"BAF_L85A2_RIS_CWS","weapon"},
-			{"BAF_L85A2_RIS_Holo","weapon"},
+			{"BAF_L85A2_RIS_SUSAT","weapon"},
 			{"DMR","weapon"},
 			{"","military"},
 			{"","medical"},
