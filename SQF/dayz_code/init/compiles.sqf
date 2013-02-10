@@ -84,6 +84,18 @@ if (!isDedicated) then {
 	player_flipvehicle = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_flipvehicle.sqf";
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
 	
+	//base building actions 
+	player_buildBoxStorage =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBoxStorage.sqf";
+	player_buildGunrack_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildGunrack_DZ.sqf";
+	player_buildBench_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBench_DZ.sqf";
+	player_buildBagFenceLong_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBagFenceLong_DZ.sqf";
+	player_buildBagFenceLongCorner_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBagFenceLongCorner_DZ.sqf";
+	player_buildBagFenceLongRound_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBagFenceLongRound_DZ.sqf";
+	player_buildFort_RazorWire_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildFort_RazorWire_DZ.sqf";
+	player_buildFortified_nest_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildFortified_nest_DZ.sqf";
+	player_buildCampWoodTower_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildCampWoodTower_DZ.sqf";
+	player_buildBarb_Gate_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBarb_Gate_DZ.sqf";
+	
 	//ui
 	player_selectSlot =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\ui_selectSlot.sqf";
 	player_gearSync	=			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_gearSync.sqf";
