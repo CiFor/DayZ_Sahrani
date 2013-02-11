@@ -25,7 +25,7 @@ class RscDisplayLoading
 			{
 				class LoadingPic : RscPictureKeepAspect
 				{
-					text = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
+					text = "z\addons\dayz_code\gui\sahrani.paa";
 				};
 			};
 		};
@@ -38,7 +38,7 @@ class RscDisplayStart
 	{
 		class LoadingPic: RscPictureKeepAspect
 		{
-			text = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
+			text = "z\addons\dayz_code\gui\sahrani.paa";
 		};
 	};
 };
