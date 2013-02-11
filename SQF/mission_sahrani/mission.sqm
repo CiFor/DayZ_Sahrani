@@ -1167,7 +1167,7 @@ class Mission
 		items=7;
 		class Item0
 		{
-			position[]={12604.851,79.226906,11631.251};
+			position[]={17901.201, 3403, 25923.943};
 			name="center";
 			type="Empty";
 		};
