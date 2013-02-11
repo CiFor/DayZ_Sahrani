@@ -23,7 +23,7 @@ while {true} do {
 	
 	//Adding some Random systems
 	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ"] call BIS_fnc_selectRandom;
-	
+	_lootTable = ["Military","HeliCrash","MilitarySpecial"] call BIS_fnc_selectRandom;
 	_crashName	= getText (configFile >> "CfgVehicles" >> _crashModel >> "displayName");
 
 	diag_log(format["CRASHSPAWNER: %1%2 chance to spawn '%3' with loot table '%4' at %5", round(_spawnChance * 100), '%', _crashName, _lootTable, _timeToSpawn]);
@@ -77,6 +77,7 @@ while {true} do {
 		
 		_config = 		configFile >> "CfgBuildingLoot" >> "HeliCrash";
 		_itemTypes =	[] + getArray (_config >> "itemType");
+
 		_index =        dayz_CBLBase  find "HeliCrash";
 		_weights =		dayz_CBLChances select _index;
 		_cntWeights = count _weights;
