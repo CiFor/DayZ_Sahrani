@@ -1401,15 +1401,6 @@ class CfgMagazines {
 		model = "\dayz_equip\models\sandbags.p3d";
 		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_21;
-		
-		class ItemActions {
-			class Build {
-				text = $STR_ACTIONS_BUILD;
-				script = "spawn player_build;";
-				require[] = {"ItemEtool"};
-				create = "Sandbag1_DZ";
-			};
-		};
 	};
 	
 	class ItemNails : CA_Magazine{

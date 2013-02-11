@@ -10,6 +10,7 @@ _isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
 _hasEtool = 	"ItemEtool" in items player;
 _hasToolBox = 	"ItemToolbox" in items player;
 //_isOk = true;
+_classname = "BagFenceLongCorner_DZ";
 
 diag_log ("Build Crate: " + str(_isok) );
 
@@ -32,50 +33,9 @@ if (["concrete",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_l
 diag_log ("Build Crate surface: " + str(_isok) );
 
 if (!_isOk) then {
-	_objectTemp = createVehicle ["BagFenceLongCorner_DZ", _location, [], 0, "CAN_COLLIDE"];
-	_objectTemp setDir _dir;
-	_objectTemp setpos [(getposATL _objectTemp select 0),(getposATL _objectTemp select 1), 0];
+	_objectTemp = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 	_objectTemp attachTo [player,[0,2.5,0.5]];
-	_timer = 10;
-	_locationPlayer = GetPos player;
-	while {_timer > -1} do {
-	if(player distance _locationPlayer > 0.1) then {_timer = 10;};
-	sleep 1;
-	cutText [format["Building in %1 seconds",_timer],"PLAIN DOWN"];
-	_timer=_timer-1;
-	_locationPlayer = GetPos player;
-	};
-	deleteVehicle _objectTemp;
-	_location = player modeltoworld [0,2.5,0];
-	_dir = round(direction player);	
-	
-	//wait a bit
-	player playActionNow "Medic";
-	sleep 1;
-	player removeMagazine "ItemSandbag";
-	player removeMagazine "ItemSandbag";
-	player removeMagazine "ItemSandbag";
-	[player,"tentunpack",0,false] call dayz_zombieSpeak;
-	
-	_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
-	
-	sleep 5;
-	//place tent (local)
-	_tent = createVehicle ["BagFenceLongCorner_DZ", _location, [], 0, "CAN_COLLIDE"];
-	_tent setdir _dir;
-	_tent setpos _location;
-	player reveal _tent;
-	_location = getPosATL _tent;
-
-	_tent setVariable ["characterID",dayz_characterID,true];
-
-	dayzPublishObj = [dayz_characterID,_tent,[_dir,_location],"BagFenceLongCorner_DZ"];
-	publicVariable "dayzPublishObj";
-	if (isServer) then {
-		dayzPublishObj call server_publishObj;
-	};
-	
-	cutText ["A Bag Fence Long (Corner) has been built !", "PLAIN DOWN"];
+	_action_menu = player addAction ["Start Building", "\z\addons\dayz_code\actions\build\drop.sqf",[_objectTemp,_classname,_action_menu], 5, true, true];
 } else {
 	cutText ["You cannot build here !", "PLAIN DOWN"];
 };
