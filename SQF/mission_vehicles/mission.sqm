@@ -7364,7 +7364,7 @@ class Mission
 			position[]={11384.136,-0.00012207031,8732.0225};
 			id=1;
 			side="EMPTY";
-			vehicle="uh1h_dz";
+			vehicle="UH1H_TK_EP1";
 			skill=0.2;
 			init="this call {_r = getpos _this; _r set [2,-0.00012207031]; _this setpos _r}";
 		};
@@ -7420,7 +7420,7 @@ class Mission
 			position[]={13268.191,0.00012159348,9124.9668};
 			id=7;
 			side="EMPTY";
-			vehicle="uh1h_dz";
+			vehicle="UH1H_TK_EP1";
 			skill=0.2;
 			init="this call {_r = getpos _this; _r set [2,0.00012159348]; _this setpos _r}";
 		};
