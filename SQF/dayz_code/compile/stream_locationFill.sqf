@@ -11,7 +11,7 @@ for "_i" from 0 to ((count _this) - 1) do
 		_object =  _type createVehicleLocal _position;
 		_object setPos _position;
 		_object setDir _dir;
-		_object allowDamage false;
+		_object allowDamage true;
 		
 		//diag_log format["CreateObj: %1 / %2",_type,_position];
 		
