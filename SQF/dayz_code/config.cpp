@@ -1111,8 +1111,111 @@ class CfgBuildingLoot {
 		lootPos[] = {{-2.21777, 5.00586, -0.944006}, {1.03662, 6.85107, -0.944006}, {-1.46631, -5.90137, -0.944006}, {0.757324, -3.8291, -0.944006}, {-2.23193, -6.66846, -4.34475}, {-1.34229, -2.26807, -4.34475}, {2.40283, 4.83936, -4.34475}, {-1.56201, 5.76904, -4.34475}};
 	};
 	
-	//Original
+	//Extra No loot buildings
+	class land_dum_mesto3 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_sara_domek_kovarna : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum02 : Residential {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
+	class land_dum_mesto : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum_mesto2l : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum_olezlina : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class Land_deutshe : Residential {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
+	class land_dum_istan2_01 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum_istan2_03 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum_olez_istan1 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum_istan2_04a : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class Land_garaz : Residential {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
+	class Land_garaz_mala : Residential {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
+	class land_budova5 : Industrial {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
+	class land_bouda3 : Industrial {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
 	
+	//Needs Loot
+	class land_sara_domek_hospoda : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_afdum_mesto3 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class Land_dum_istan4_detaily1 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class Land_dum_istan4_inverse : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+		class land_dum_istan2_02 : Residential {
+		minRoaming = 3;
+		maxRoaming = 5;
+		lootPos[] = {};
+	};
+	
+	//Original
 	class Land_HouseV_1I4: Residential {
 		lootPos[] = {{-0.400146,-3.87695,-2.76879},{-3.67749,-2.52002,-2.76551},{-0.472168,3.19702,-2.72021}};
 	};
