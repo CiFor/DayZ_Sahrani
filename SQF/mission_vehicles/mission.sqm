@@ -42,7 +42,6 @@ class Mission
 		"castructureshouse_a_hospital",
 		"oac_core",
 		"castructureshouse_shed_ind",
-		"a_generalstore_01",
 		"CAAir_E_AH6J",
 		"CAAir_E_UH1H_EP1",
 		"caair",
@@ -81,7 +80,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			side="WEST";
@@ -93,6 +92,23 @@ class Mission
 					position[]={2908.0161,17.454153,2872.877};
 					azimut=75;
 					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2497.8909,13.905,2761.4648};
+					id=588;
 					side="WEST";
 					vehicle="USMC_Soldier";
 					player="PLAYER COMMANDER";
@@ -8289,7 +8305,7 @@ class Mission
 			azimut=-65.740524;
 			id=97;
 			side="EMPTY";
-			vehicle="policecar";
+			vehicle="lada1_tk_civ_ep1";
 			skill=0.2;
 			init="this call {_r = getpos _this; _r set [2,-2.5749207e-005]; _this setpos _r}";
 		};
@@ -8398,7 +8414,7 @@ class Mission
 			azimut=20;
 			id=583;
 			side="EMPTY";
-			vehicle="VolhaLimo_TK_CIV_EP1";
+			vehicle="Volha_1_TK_CIV_EP1";
 			skill=0.60000002;
 			description="Rahmadi Gaz Limo Car Spawn TEST5";
 		};
