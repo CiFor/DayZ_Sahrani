@@ -6,7 +6,7 @@ for "_i" from 0 to ((count _this) - 1) do
 		_type = 	getText		(_config >> "type");
 		_position = [] + getArray	(_config >> "position");
 		_dir = 		getNumber	(_config >> "direction");
-		_onFire = 	getNumber	(_config >> "onFire");
+		_SetZUp = 	getNumber	(_config >> "SetZUp");
 		
 		_object =  _type createVehicleLocal _position;
 		_object setPos _position;
@@ -14,11 +14,9 @@ for "_i" from 0 to ((count _this) - 1) do
 		_object allowDamage false;
 		
 		//diag_log format["CreateObj: %1 / %2",_type,_position];
-		/*
-		if (_onFire > 0) then {
-			nul=[_object,_onFire,time,false,false] spawn BIS_Effects_Burn;
+		
+		if (_SetZUp > 0) then {
+			_object setVectorUp [0,0,1];
 		};
-		*/
 	};
 };
-//diag_log ("FILL: " + str(_this));
