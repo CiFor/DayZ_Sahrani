@@ -9,7 +9,7 @@ disableChannels[]={0,1,2,6}; // -1 to add side
 enableItemsDropping = 0;
 onPauseScript = "\z\addons\dayz_code\compile\player_onPause.sqf";
 
-loadScreen = "\z\addons\dayz_code\gui\dayz_logo_ca.paa";
+loadScreen = "\z\addons\dayz_code\gui\sahrani.paa";
 
 class Header
 {

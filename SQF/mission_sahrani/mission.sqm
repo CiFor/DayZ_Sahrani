@@ -1162,6 +1162,46 @@ class Mission
 			};
 		};
 	};
+	class Vehicles
+	{
+		items=3;
+		class Item0
+		{
+			position[]={15626.1,-1.1071,11301.2};
+			azimut=-94.595703;
+			special="NONE";
+			id=1;
+			side="EMPTY";
+			vehicle="Land_A_Castle_Stairs_A";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [15626.1, 11301.2, -0.1871]; this setDir -94.5957; doStop this;";
+		};
+		class Item1
+		{
+			position[]={11800.8,-0.058844998,15438.3};
+			azimut=462.88901;
+			special="NONE";
+			id=80;
+			side="EMPTY";
+			vehicle="Land_A_Castle_Bergfrit";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [11800.8, 15438.3, -0.058845]; this setDir 462.889; doStop this;";
+		};
+		class Item2
+		{
+			position[]={11808.7,1.6078,15444.8};
+			azimut=-164.56;
+			special="NONE";
+			id=81;
+			side="EMPTY";
+			vehicle="Land_A_Castle_Stairs_A";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [11805.6, 15441.9, 0]; this setDir -164.56; doStop this;";
+		};
+	};
 	class Markers
 	{
 		items=7;
