@@ -1381,6 +1381,7 @@ class CfgBuildingLoot {
 		lootPos[] = {{1.18213,-1.65039,-1.17793},{0.24707,0.799316,-1.17803}};
 	}; // Qty: 1
 	class MASH_EP1: MASH {};
+	class Land_SS_Hangard: Land_SS_hangar {};
 
 	class UH1Wreck_DZ: Military {
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
