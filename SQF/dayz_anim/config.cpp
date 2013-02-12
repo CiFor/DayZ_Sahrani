@@ -1160,7 +1160,7 @@ class CfgVehicles {
 	class ZU23_Ins: Banned {};
 	class ZU23_CDF: Banned {};
 	class ZU23_Gue: Banned {};
-	class RHIB: Banned {};
+	//class RHIB: Banned {};
 	class RHIB2Turret: Banned {};
 	class Zodiac: Banned {};
 	//class PBX: Banned {};
@@ -1669,7 +1669,7 @@ class CfgVehicles {
 	class HMMWV_M2: Banned {};
 	class HMMWV_TOW: Banned {};
 	class HMMWV_MK19: Banned {};
-	class HMMWV: Banned {};
+	//class HMMWV: Banned {};
 	class UAZ_MG_CDF: Banned {};
 	class UAZ_AGS30_CDF: Banned {};
 	class UralOpen_CDF: Banned {};
@@ -1749,7 +1749,7 @@ class CfgVehicles {
 	class UAZ_MG_TK_EP1: Banned {};
 	class UAZ_AGS30_TK_EP1: Banned {};
 	class Ural_UN_EP1: Banned {};
-	class UralRepair_TK_EP1: Banned {};
+	//class UralRepair_TK_EP1: Banned {};
 	class UralReammo_TK_EP1: Banned {};
 	class UralRefuel_TK_EP1: Banned {};
 	class Ural_ZU23_TK_EP1: Banned {};
@@ -1789,7 +1789,7 @@ class CfgVehicles {
 	class HMMWV_TOW_DES_EP1: Banned {};
 	class HMMWV_Terminal_EP1: Banned {};
 	class LandRover_MG_TK_INS_EP1: Banned {};
-	class LandRover_MG_TK_EP1: Banned {};
+	//class LandRover_MG_TK_EP1: Banned {};
 	class LandRover_Special_CZ_EP1: Banned {};
 	class LandRover_SPG9_TK_INS_EP1: Banned {};
 	class LandRover_SPG9_TK_EP1: Banned {};
@@ -1928,7 +1928,7 @@ class CfgVehicles {
 	class AH64D_EP1: Banned {};
 	class AH6J_EP1: Banned {};
 	class AH6X_EP1: Banned {};
-	class MH6J_EP1: Banned {};
+	//class MH6J_EP1: Banned {};
 	class An2_1_TK_CIV_EP1: Banned {};
 	class An2_2_TK_CIV_EP1: Banned {};
 	class An2_TK_EP1: Banned {};
@@ -1938,7 +1938,7 @@ class CfgVehicles {
 	class Mi171Sh_rockets_CZ_EP1: Banned {};
 	class Mi171Sh_CZ_EP1: Banned {};
 	class Mi17_TK_EP1: Banned {};
-	class UH1H_TK_EP1: Banned {};
+	//class UH1H_TK_EP1: Banned {};
 	class UH1H_TK_GUE_EP1: Banned {};
 	class UH60M_EP1: Banned {};
 	class UH60M_MEV_EP1: Banned {};
