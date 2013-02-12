@@ -42,6 +42,7 @@ class Mission
 		"castructureshouse_a_hospital",
 		"oac_core",
 		"castructureshouse_shed_ind",
+		"a_generalstore_01",
 		"CAAir_E_AH6J",
 		"CAAir_E_UH1H_EP1",
 		"caair",
@@ -89,7 +90,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2908.0161,17.454153,2872.877};
+					position[]={2476.6387,13.905,2726.9382};
 					azimut=75;
 					id=0;
 					side="WEST";
@@ -107,8 +108,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2497.8909,13.905,2761.4648};
-					id=588;
+					position[]={13455.271,132.88271,17288.648};
+					id=577;
 					side="WEST";
 					vehicle="USMC_Soldier";
 					player="PLAYER COMMANDER";
@@ -120,7 +121,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=805;
+		items=797;
 		class Item0
 		{
 			position[]={12214.938,25.965,17758.033};
@@ -8351,112 +8352,33 @@ class Mission
 		};
 		class Item794
 		{
-			position[]={2480.0591,13.905,2772.3059};
-			id=577;
+			position[]={1466.6312,1.064992,2189.8364};
+			azimut=310;
+			id=578;
 			side="EMPTY";
-			vehicle="VolhaLimo_TK_CIV_EP1";
+			vehicle="RHIB";
 			skill=0.60000002;
-			description="Rahmadi Gaz Limo Car Spawn TEST1";
+			description="RHIB Ramahdi Spawn 1";
 		};
 		class Item795
 		{
-			position[]={2479.8694,13.905,2777.6184};
-			azimut=95;
-			id=578;
+			position[]={18321.207,-4.2413478,2928.6194};
+			azimut=55;
+			id=579;
 			side="EMPTY";
-			vehicle="VolhaLimo_TK_CIV_EP1";
+			vehicle="RHIB";
 			skill=0.60000002;
-			description="Rahmadi Gaz Limo Car Spawn TEST2";
+			description="RHIB Monte Asharah Spawn 1";
 		};
 		class Item796
 		{
-			position[]={2489.2131,13.905,2775.0354};
-			azimut=95;
-			id=579;
-			side="EMPTY";
-			vehicle="VolhaLimo_TK_CIV_EP1";
-			skill=0.60000002;
-			description="Rahmadi Gaz Limo Car Spawn TEST3";
-		};
-		class Item797
-		{
-			position[]={2485.5352,13.905,2772.2546};
-			azimut=180;
+			position[]={16935.137,-7.2353134,19724.566};
+			azimut=330;
 			id=580;
 			side="EMPTY";
-			vehicle="VolhaLimo_TK_CIV_EP1";
+			vehicle="RHIB";
 			skill=0.60000002;
-			description="Rahmadi Gaz Limo Car Spawn TEST4";
-		};
-		class Item798
-		{
-			position[]={2488.6169,13.905,2767.7808};
-			azimut=90;
-			id=581;
-			side="EMPTY";
-			vehicle="VolhaLimo_TK_CIV_EP1";
-			skill=0.60000002;
-			description="Rahmadi Gaz Limo Car Spawn TEST5";
-		};
-		class Item799
-		{
-			position[]={2488.4177,13.905,2771.6577};
-			azimut=90;
-			id=582;
-			side="EMPTY";
-			vehicle="VolhaLimo_TK_CIV_EP1";
-			skill=0.60000002;
-			description="Rahmadi Gaz Limo Car Spawn TEST5";
-		};
-		class Item800
-		{
-			position[]={2497.96,13.905,2775.2344};
-			azimut=20;
-			id=583;
-			side="EMPTY";
-			vehicle="Volha_1_TK_CIV_EP1";
-			skill=0.60000002;
-			description="Rahmadi Gaz Limo Car Spawn TEST5";
-		};
-		class Item801
-		{
-			position[]={2498.5564,13.905,2770.8643};
-			azimut=100;
-			id=584;
-			side="EMPTY";
-			vehicle="VolhaLimo_TK_CIV_EP1";
-			skill=0.60000002;
-			description="Rahmadi Gaz Limo Car Spawn TEST5";
-		};
-		class Item802
-		{
-			position[]={2498.5564,13.905,2766.9885};
-			azimut=220;
-			id=585;
-			side="EMPTY";
-			vehicle="VolhaLimo_TK_CIV_EP1";
-			skill=0.60000002;
-			description="Rahmadi Gaz Limo Car Spawn TEST5";
-		};
-		class Item803
-		{
-			position[]={2508.6951,13.905,2776.0291};
-			azimut=80;
-			id=586;
-			side="EMPTY";
-			vehicle="VolhaLimo_TK_CIV_EP1";
-			skill=0.60000002;
-			description="Rahmadi Gaz Limo Car Spawn TEST5";
-		};
-		class Item804
-		{
-			position[]={2508.4963,13.905,2772.3535};
-			azimut=180;
-			id=587;
-			side="EMPTY";
-			vehicle="VolhaLimo_TK_CIV_EP1";
-			skill=0.60000002;
-			description="Rahmadi Gaz Limo Car Spawn TEST5";
+			description="RHIB Antigua Spawn 1";
 		};
 	};
 };
