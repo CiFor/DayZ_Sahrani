@@ -5,6 +5,8 @@ private["_location","_dir","_object"];
 	_action_menu = _this select 2;
 	player removeAction _action_menu;
 	deleteVehicle _objectTemp;
+	_isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
+	if (!_isOk) then {
 	_location = player modeltoworld [0,2.5,0];
 	_location set [2,0];
 	_dir = getDir player;
@@ -72,3 +74,6 @@ private["_location","_dir","_object"];
 
 	sleep 2;
 	player allowDamage true;
+} else {
+	cutText ["You cannot build here !", "PLAIN DOWN"];
+};
