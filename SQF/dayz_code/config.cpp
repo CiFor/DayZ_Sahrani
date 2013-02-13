@@ -1188,31 +1188,36 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 	};
 	
-	//Needs Loot
+	//Loot added
 	class land_sara_domek_hospoda : Residential {
 		minRoaming = 1;
 		maxRoaming = 3;
-		lootPos[] = {};
+		lootPos[] = {{3.89746, -3.92383, -2.55354}, {-0.0595703, -4.04492, -2.49121}, {-5.12012, -3.85156, -2.4221}};
 	};
 	class land_afdum_mesto3 : Residential {
 		minRoaming = 1;
 		maxRoaming = 3;
-		lootPos[] = {};
+		lootPos[] = {-0.352539, 0.0458984, -5.85629};
 	};
 	class Land_dum_istan4_detaily1 : Residential {
 		minRoaming = 1;
 		maxRoaming = 3;
-		lootPos[] = {};
+		lootPos[] = {{2.70703, -3.2666, -4.33588}, {2.68359, -8.11523, -5.92871}, {-4.61719, 6.00488, -7.28588}, {3.71582, 5.9082, -7.28588}};
+	};
+	class Land_dum_istan4 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {{2.45923, -2.51367, -4.34236}, {2.47852, -7.65332, -5.9352}, {-3.98633, 6.0459, -7.24409},{3.0813, 6.1543, -7.24408}};
 	};
 	class Land_dum_istan4_inverse : Residential {
 		minRoaming = 1;
 		maxRoaming = 3;
-		lootPos[] = {};
+		lootPos[] = {{-2.46582, -2.38379, -4.33588}, {-2.75195, -7.81934, -5.92871}, {4.04785, 6.09424, -7.28588}, {-2.27246, 5.96436, -7.28588}};
 	};
 		class land_dum_istan2_02 : Residential {
 		minRoaming = 3;
 		maxRoaming = 5;
-		lootPos[] = {};
+		lootPos[] = {{-1.55566, -2.97949, -4.21303}, {-2.35156, 0.222656, 1.52753}};
 	};
 	
 	//Original
