@@ -618,15 +618,15 @@ class cfgWeapons {
 				text = Build Crate;
 				script = "spawn player_buildBoxStorage;";
 			};
-			class Build2 {
+			class Build1 {
 				text = Build GunRack;
 				script = "spawn player_buildGunrack_DZ;";
 			};
-			class Build3 {
+			class Build2 {
 				text = Build Bench;
 				script = "spawn player_buildBench_DZ;";
 			};
-			class Build4 {
+			class Build3 {
 				text = Build RazorWire;
 				script = "spawn player_buildFort_RazorWire_DZ;";
 			};
@@ -645,13 +645,17 @@ class cfgWeapons {
 				text = Build Long Bag Fence;
 				script = "spawn player_buildBagFenceLong_DZ;";
 			};
-			class Build2 {
+			class Build1 {
 				text = Build Long Bag Fence (Corner);
 				script = "spawn player_buildBagFenceLongCorner_DZ;";
 			};
-			class Build3 {
+			class Build2 {
 				text = Build Long Bag Fence (Round);
 				script = "spawn player_buildBagFenceLongRound_DZ;";
+			};
+			class Build3 {
+				text = Build Fortified Nest;
+				script = "spawn player_buildFortified_nest_DZ;";
 			};
 		};
 	};
@@ -665,14 +669,10 @@ class cfgWeapons {
 		
 		class ItemActions {
 			class Build {
-				text = Build Fortified Nest;
-				script = "spawn player_buildFortified_nest_DZ;";
-			};
-			class Build2 {
 				text = Build Tower;
 				script = "spawn player_buildCampWoodTower_DZ;";
 			};
-			class Build3 {
+			class Build1 {
 				text = Build Gate;
 				script = "spawn player_buildBarb_Gate_DZ;";
 			};
