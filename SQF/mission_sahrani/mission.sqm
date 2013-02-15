@@ -1225,7 +1225,7 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={9316.2061,1.01365184619.2192,};
+			position[]={9316.2061,1.0136518,4619.2192};
 			name="spawn1";
 			type="Empty";
 		};
