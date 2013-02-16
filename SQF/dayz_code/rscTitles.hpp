@@ -7,8 +7,11 @@ class RscLineBreak;
 class RscIGUIShortcutButton;
 class RscGearShortcutButton;
 class RscIGUIListNBox;
+class RscIGUIListBox;
 class RscActiveText;
-
+class CA_Version;
+class CA_Title;
+class RscXKeyShadow;
 class RscPictureKeepAspect;
 class RscStandardDisplay;
 class RscProgress {
@@ -54,6 +57,8 @@ class RscDisplayStart
 
 class CA_TextLanguage;
 class RscXListBox;
+class RscShortcutButton;
+class RscShortcutButtonMain;
 
 class RscDisplayGameOptions
 {
@@ -77,35 +82,304 @@ class RscDisplayGameOptions
 		};	
 	};
 };
-class RscDisplayMain : RscStandardDisplay
-{
-	class controlsBackground 
-	{
-		class Mainback;
-		class CA_ARMA2 : RscPicture
-		{
-			text = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
+class RscShortcutButtonMainDZ : RscShortcutButton {
+	idc = -1;
+	style = 0;
+	default = 0;
+	w = 0.313726;
+	h = 0.104575;
+	color[] = {1.0, 1.0, 1.0, 1.0};
+	colorDisabled[] = {0, 0, 0, 0};
+	
+	class HitZone {
+		left = 0.0;
+		top = 0.0;
+		right = 0.0;
+		bottom = 0.0;
+	};
+	
+	class ShortcutPos {
+		left = 0.0204;
+		top = 0.026;
+		w = 0.0392157;
+		h = 0.0522876;
+	};
+	
+	class TextPos {
+		left = 0.08;
+		top = 0.038;
+		right = 0.005;
+		bottom = 0.005;
+	};
+	animTextureNormal = "\z\addons\dayz_code\gui\ui_button_main_normal_ca.paa";
+	animTextureDisabled = "\z\addons\dayz_code\gui\ui_button_main_disabled_ca.paa";
+	animTextureOver = "\z\addons\dayz_code\gui\ui_button_main_over_ca.paa";
+	animTextureFocused = "\z\addons\dayz_code\gui\ui_button_main_focus_ca.paa";
+	animTexturePressed = "\z\addons\dayz_code\gui\ui_button_main_down_ca.paa";
+	animTextureDefault = "\z\addons\dayz_code\gui\ui_button_main_normal_ca.paa";
+	period = 0.5;
+	font = "Zeppelin32";
+	size = 0.04;
+	sizeEx = 0.04;
+	text = "";
+	soundEnter[] = {"\ca\ui\data\sound\onover", 0.09, 1};
+	soundPush[] = {"\ca\ui\data\sound\new1", 0.0, 0};
+	soundClick[] = {"\ca\ui\data\sound\onclick", 0.07, 1};
+	soundEscape[] = {"\ca\ui\data\sound\onescape", 0.09, 1};
+	action = "";
+	
+	class Attributes {
+		font = "Zeppelin32";
+		color = "#ffffff";
+		align = "left";
+		shadow = "false";
+	};
+	
+	class AttributesImage {
+		font = "Zeppelin32";
+		color = "#ffffff";
+		align = "false";
+	};
+};
+
+class RscDisplayMain : RscStandardDisplay {
+	onKeyDown = " _dummy = _this execVM ""\ca\ui\scripts\mainmenuShortcuts.sqf"";";
+	class controlsBackground {
+		class Mainback : RscPicture {
+			idc = 1104;
+			x = safezoneXAbs;
+			y = safezoneY;
+			w = safezoneWAbs;
+			h = safezoneH * 1.01;
+			text = "z\addons\dayz_code\gui\sahrani.paa";
+		};
+		
+		class CA_ARMA2 : RscPicture {
+			idc = 1106;
+			colorText[] = {1, 1, 1, 0.6+0.4};
+			x = "(SafeZoneW + SafeZoneX) - (0.1568627*1.5 + 0.04)";
+			y = "SafeZoneY + 0.00";
+			w = 0.1568627*1.5;
+			h = 0.2091503*1.5;
+			text = "";
 		};
 	};
 	
-	onLoad = "((_this select 0) displayCtrl 138) ctrlEnable false;";
-
-	class controls 
-	{
-		class CA_Version;
+	class controls {
+		class B_Player {};
+		class B_SinglePlayer {};
+		class B_SingleMission {};
+		class B_MultiPlayer {};
+		class B_MissionEditor {};
+		class B_Credits {};
+		class B_Quit {};
+		class B_Campaign {};
+		class B_Expansions {};
+		class B_Options {};
+		class Date {};
+		class Version {};
+		class Modlist {};
+		onLoad = "((_this select 0) displayCtrl 138) ctrlEnable false;";
+		
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
 			text = "DayZ Sahrani 0.2";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
-		class CA_TitleMainMenu;
-		class CA_SinglePlayer;
-		class CA_MP;
-		class CA_Options;
-		class CA_PlayerProfile;
-		class CA_Expansions;
-		class CA_Exit;
+		
+		class CA_TitleMainMenu : CA_Title {
+			idc = 1003;
+			x = 0.087;
+			y = 0.192;
+			w = 0.28;
+			text = $STR_DISP_MAIN_MENU;
+		};
+		
+		class CA_SinglePlayer : RscShortcutButtonMainDZ {
+			idc = 138;
+			default = 0;
+			x = 0;
+			y = 0;
+			w = 0;
+			h = 0;
+			show = 0;
+			toolTip = $STR_TOOLTIP_MAIN_SINGLEPLAYER;
+			text = $STR_DISP_MAIN_SINGLE_PLAYER;
+			
+			class KeyHints {
+				class A {
+					key = 0x00050000 + 0;
+					hint = "";
+				};
+			};
+		};
+		
+		class CA_MP : RscShortcutButtonMainDZ {
+			idc = 105;
+			x = 0.051;
+			y = 0.354519;
+			toolTip = $STR_TOOLTIP_MAIN_MULTIPLAYER;
+			text = $STR_CA_MAIN_MULTI;
+			
+			class KeyHints {
+				class A {
+					key = 0x00050000 + 0;
+					hint = "";
+				};
+			};
+		};
+		
+		class CA_Options : RscShortcutButtonMainDZ {
+			idc = 102;
+			default = 0;
+			x = 0.051;
+			y = 0.455421;
+			action = "";
+			toolTip = $STR_TOOLTIP_MAIN_OPTIONS;
+			text = $STR_CA_MAIN_OPTIONS;
+			
+			class KeyHints {
+				class A {
+					key = 0x00050000 + 0;
+					hint = "";
+				};
+			};
+		};
+		
+		class CA_PlayerProfile : RscShortcutButtonMainDZ {
+			idc = 1001;
+			default = 0;
+			x = 0.051;
+			y = 0.557324;
+			onButtonClick = "_display = ctrlParent (_this select 0);  _ctrl109 =_display displayCtrl 109; ctrlActivate _ctrl109; debuglog _ctrl109";
+			toolTip = $STR_TOOLTIP_MAIN_PLAYER;
+			text = $STR_DISP_PROFILE;
+			
+			class KeyHints {};
+		};
+		
+		class CA_Expansions : RscShortcutButtonMainDZ {
+			idc = 140;
+			default = 0;
+			x = 0.051;
+			y = 0.658;
+			action = "";
+			toolTip = $STR_TOOLTIP_MAIN_EXPANSIONS;
+			text = $STR_DISP_EXPANSIONS;
+			
+			class KeyHints {};
+		};
+		
+		class CA_Exit : RscShortcutButtonMainDZ {
+			idc = 106;
+			shortcuts[] = {0x00050000 + 3};
+			x = 0.109431;
+			y = 0.7625;
+			w = 0.227943;
+			text = $STR_CA_MAIN_QUIT;
+			toolTip = $STR_TOOLTIP_MAIN_EXIT;
+		};
+		
+		class CA_Achievements : RscShortcutButtonMain {
+			idc = 137;
+			x = 0.051;
+			y = 0.658;
+			text = $STR_DISP_ACHIEVEMENTS;
+			
+			class KeyHints {};
+		};
+		
+		class CA_ModList : RscStructuredText {
+			idc = 139;
+			style = 1;
+			x = "SafeZoneX";
+			y = "SafeZoneY";
+			w = 0;
+			h = 0;
+			size = 0;
+			
+			class Attributes {
+				font = "Zeppelin32";
+				color = "#ffffff";
+				align = "right";
+				shadow = 0;
+			};
+		};
+		
+		class ModIcons : RscControlsGroup {
+			idc = 141;
+			x = "SafeZoneX";
+			y = "SafeZoneY";
+			w = 0;
+			h = 0;
+			
+			class Controls {};
+		};
+		
+		class IconPicture : RscPicture {
+			w = 0;
+			h = 0;
+			spacing = 0;
+		};
+		
+		class CA_PlayerName : RscText {
+			idc = 109;
+			style = 256;
+			colorbackground[] = {0.1, 0.1, 0.1, 0};
+			x = "SafeZoneX + 0.03";
+			y = "SafeZoneY + 0.03";
+			w = 0.5;
+			h = 0.05;
+		};
+		
+		class CA_Version : RscText {
+			idc = 118;
+			style = 0x100 + 0x01;
+			x = "(SafeZoneW + SafeZoneX) - (0.53)";
+			y = "(SafeZoneH + SafeZoneY) - (1 - 0.92)";
+			w = 0.5;
+			h = 0.05;
+			sizeEx = 0.02674;
+		};
+		
+		class HintA_Select : RscXKeyShadow {
+			idc = 1007;
+			key = 0x00050000 + 0;
+			x = 0.14;
+			y = 0.784;
+			w = 0.330885;
+			h = 0.104575;
+			text = $STR_DISP_BACK;
+		};
+		
+		class ButtonCampaign : RscText {
+			idc = 120;
+			x = 2.585;
+			y = 2.038;
+		};
+		
+		class ButtonAllMissions : RscShortcutButton {
+			idc = 104;
+			shortcuts[] = {0x00050000 + 3};
+			x = "(SafeZoneW + SafeZoneX) - (0.24)";
+			y = "(SafeZoneH + SafeZoneY) - (0.2)";
+			w = 0.235296;
+			text = "All missions";
+		};
+		
+		class ButtonEditor : RscText {
+			idc = 115;
+			x = 2.585;
+			y = 2.038;
+		};
+	};
+	
+	class KeyHints {
+		class KeyA {
+			key = 0x00050000 + 0;
+			hint = "";
+		};
 	};
 };
 
@@ -1233,6 +1507,388 @@ class RscTitles
 				w = 0.04;
 				h = 0.053333;
 			};
+		};
+	};
+};
+
+class RscDisplayMultiplayerSetup : RscStandardDisplay {
+	west = "ca\ui\data\flag_bluefor_ca.paa";
+	east = "ca\ui\data\flag_opfor_ca.paa";
+	guer = "ca\ui\data\flag_indep_ca.paa";
+	civl = "ca\ui\data\flag_civil_ca.paa";
+	none = "ca\ui\data\flag_civil_ca.paa";
+	westUnlocked = "ca\ui\data\flag_bluefor_ca.paa";
+	westLocked = "ca\ui\data\flag_bluefor_ca.paa";
+	eastUnlocked = "ca\ui\data\flag_opfor_ca.paa";
+	eastLocked = "ca\ui\data\flag_opfor_ca.paa";
+	guerUnlocked = "ca\ui\data\flag_indep_ca.paa";
+	guerLocked = "ca\ui\data\flag_indep_ca.paa";
+	civlUnlocked = "ca\ui\data\flag_civil_ca.paa";
+	civlLocked = "ca\ui\data\flag_civil_ca.paa";
+	disabledAllAI = $STR_DISP_MULTI_ENABLE_AI;
+	enabledAllAI = $STR_DISP_MULTI_DISABLE_AI;
+	hostLocked = $STR_DISP_MULTI_UNLOCK;
+	hostUnlocked = $STR_DISP_MULTI_LOCK;
+	colorNotAssigned[] = {0.4, 0.4, 0.4, 1};
+	colorAssigned[] = {0.78, 0.39, 0, 1};
+	colorConfirmed[] = {0, 1, 0, 1};
+	
+	class controlsbackground {
+		class MP_roles_TitleBorder : RscText {
+			style = 64;
+			colorText[] = {0, 0, 0, 1};
+			x = "(02/100)	* SafeZoneW + SafeZoneX";
+			y = "(02/100)	* SafeZoneH + SafeZoneY";
+			w = "(96/100)	* SafeZoneW";
+			h = "(06/100)	* SafeZoneH";
+		};
+		
+		class TextBack : RscText {
+			x = "(02/100)	* SafeZoneW + SafeZoneX";
+			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(96/100)	* SafeZoneW";
+			h = "(6/100)	* SafeZoneH";
+			colorBackground[] = {0.1961, 0.1451, 0.0941, 0.42};
+		};
+		
+		class TextBorder : RscText {
+			style = 64;
+			colorText[] = {0, 0, 0, 1};
+			x = "(02/100)	* SafeZoneW + SafeZoneX";
+			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(96/100)	* SafeZoneW";
+			h = "(6/100)	* SafeZoneH";
+		};
+		
+		class SidesBack : RscText {
+			x = "(2/100)	* SafeZoneW + SafeZoneX";
+			y = "(20/100)	* SafeZoneH + SafeZoneY";
+			w = "(16/100)	* SafeZoneW";
+			h = "(73/100)	* SafeZoneH";
+			colorBackground[] = {0.1961, 0.1451, 0.0941, 0.42};
+		};
+		
+		class SidesBorder : RscText {
+			style = 64;
+			colorText[] = {0, 0, 0, 1};
+			x = "(2/100)	* SafeZoneW + SafeZoneX";
+			y = "(20/100)	* SafeZoneH + SafeZoneY";
+			w = "(16/100)	* SafeZoneW";
+			h = "(73/100)	* SafeZoneH";
+		};
+		
+		class ValueRolesBack : RscText {
+			x = "(20/100)	* SafeZoneW + SafeZoneX";
+			y = "(20/100)	* SafeZoneH + SafeZoneY";
+			w = "(38/100)	* SafeZoneW";
+			h = "(73/100)	* SafeZoneH";
+			colorBackground[] = {0.1961, 0.1451, 0.0941, 0.42};
+		};
+		
+		class ValueRolesBorder : RscText {
+			style = 64;
+			colorText[] = {0, 0, 0, 1};
+			x = "(20/100)	* SafeZoneW + SafeZoneX";
+			y = "(20/100)	* SafeZoneH + SafeZoneY";
+			w = "(38/100)	* SafeZoneW";
+			h = "(73/100)	* SafeZoneH";
+		};
+		
+		class ValuePoolBack : RscText {
+			x = "(60/100)	* SafeZoneW + SafeZoneX";
+			y = "(20/100)	* SafeZoneH + SafeZoneY";
+			w = "(38/100)	* SafeZoneW";
+			h = "(73/100)	* SafeZoneH";
+			colorBackground[] = {0.1961, 0.1451, 0.0941, 0.42};
+		};
+		
+		class ValuePoolBorder : RscText {
+			style = 64;
+			colorText[] = {0, 0, 0, 1};
+			x = "(60/100)	* SafeZoneW + SafeZoneX";
+			y = "(20/100)	* SafeZoneH + SafeZoneY";
+			w = "(38/100)	* SafeZoneW";
+			h = "(73/100)	* SafeZoneH";
+		};
+	};
+	
+	class controls {
+		class B_Civilian {};
+		class B_Guerrila {};
+		class B_East {};
+		class B_West {};
+		class B_Side {};
+		class B_OK {};
+		class B_Cancel {};
+		class B_Kick {};
+		class B_EnableAll {};
+		class B_Lock {};
+		class TextDescription {};
+		class ValueDescription {};
+		class TextMessage {};
+		class ValueRoles {};
+		class TextParam1 {};
+		class TextParam2 {};
+		class ValueParam1 {};
+		class ValueParam2 {};
+		class ValuePool {};
+		class B_Params {};
+		class Title {};
+		
+		class CA_MP_roles_Title : CA_Title {
+			idc = 1001;
+			style = 2;
+			x = "(02/100)	* SafeZoneW + SafeZoneX";
+			y = "(02/100)	* SafeZoneH + SafeZoneY";
+			w = "(96/100)	* SafeZoneW";
+			h = "(06/100)	* SafeZoneH";
+			colorBackground[] = {49/255, 36/255, 25/255, 173/255};
+			text = $STR_DISP_MPSETUP_TITLE;
+		};
+		
+		class CA_TextVotingTimeLeft : CA_MP_roles_Title {
+			idc = 121;
+			style = 1;
+			x = "(50/100)	* SafeZoneW + SafeZoneX";
+			y = "(02/100)	* SafeZoneH + SafeZoneY";
+			w = "(45/100)	* SafeZoneW";
+			colorBackground[] = {0, 0, 0, 0};
+		};
+		
+		class TextMission : RscText {
+			idc = 1002;
+			x = "(02/100)	* SafeZoneW + SafeZoneX";
+			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(18/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03;
+			text = $STR_DISP_SRVSETUP_NAME;
+		};
+		
+		class ValueMission : RscText {
+			idc = 101;
+			x = "(20/100)	* SafeZoneW + SafeZoneX";
+			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(40/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03;
+		};
+		
+		class CA_TextDescription : RscText {
+			idc = 1004;
+			x = "(02/100)	* SafeZoneW + SafeZoneX";
+			y = "(12.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(18/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03;
+			text = $STR_DISP_SRVSETUP_DESC;
+		};
+		
+		class CA_ValueDescription : RscText {
+			idc = 103;
+			x = "(20/100)	* SafeZoneW + SafeZoneX";
+			y = "(12.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(78/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03;
+		};
+		
+		class TextIsland : RscText {
+			idc = 1003;
+			x = "(60/100)	* SafeZoneW + SafeZoneX";
+			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(5/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03;
+			text = $STR_DISP_SRVSETUP_ISLAND;
+		};
+		
+		class ValueIsland : RscText {
+			idc = 102;
+			x = "(65/100)	* SafeZoneW + SafeZoneX";
+			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(33/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03;
+		};
+		
+		class TextSide : RscText {
+			idc = 1005;
+			style = 2;
+			x = "(02/100)	* SafeZoneW + SafeZoneX";
+			y = "(16.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(16/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03921;
+			text = $STR_DISP_MPSETUP_SIDE;
+		};
+		
+		class TextRoles : RscText {
+			style = 2;
+			x = "(20/100)	* SafeZoneW + SafeZoneX";
+			y = "(16.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(38/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03921;
+			text = $STR_DISP_MPSETUP_SIDE;
+		};
+		
+		class CA_B_West : RscActiveText {
+			x = "(4.15/100)	* SafeZoneW + SafeZoneX";
+			y = "(21/100)	* SafeZoneH + SafeZoneY";
+			w = "(11.7/100)	* SafeZoneW";
+			h = "(7/100)	* SafeZoneH";
+			style = 0x02 + 0x100 + 0x40;
+			type = 11;
+			colorActive[] = {1, 1, 1, 1};
+			colorDisabled[] = {1, 1, 1, 0.15};
+			colorShade[] = {1, 1, 1, 1};
+			colorText[] = {1, 1, 1, 1};
+			pictureWidth = 1;
+			pictureHeight = 1;
+			textHeight = 0.38;
+			sideDisabled = "ca\ui\data\flag_none_ca.paa";
+			sideToggle = "ca\ui\data\flag_side_toggle_ca.paa";
+			idc = 104;
+			color[] = {1, 1, 1, 0.55};
+			text = $STR_WEST;
+			picture = "\ca\ui\data\flag_bluefor_ca.paa";
+		};
+		
+		class CA_B_East : CA_B_West {
+			idc = 105;
+			y = "(31/100)	* SafeZoneH + SafeZoneY";
+			text = $STR_EAST;
+			picture = "\ca\ui\data\flag_opfor_ca.paa";
+		};
+		
+		class CA_B_Guerrila : CA_B_West {
+			idc = 106;
+			y = "(41/100)	* SafeZoneH + SafeZoneY";
+			text = $STR_GUERRILA;
+			picture = "\ca\ui\data\flag_indep_ca.paa";
+		};
+		
+		class CA_B_Civilian : CA_B_West {
+			idc = 107;
+			y = "(51/100)	* SafeZoneH + SafeZoneY";
+			text = $STR_CIVILIAN;
+			picture = "\ca\ui\data\flag_civil_ca.paa";
+		};
+		
+		class CA_ValueRoles : RscIGUIListBox {
+			idc = 109;
+			style = 16;
+			x = "(20/100)	* SafeZoneW + SafeZoneX";
+			y = "(20.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(38/100)	* SafeZoneW";
+			h = "(72/100)	* SafeZoneH";
+			color[] = {1, 1, 1, 1};
+			colorSelect[] = {1, 1, 0, 1};
+			colorSelectBackground[] = {0.2, 0.2, 0.2, 1};
+			colorSelectBackground2[] = {0.1, 0.1, 0.1, 1};
+			rowHeight = 0.05;
+			colorText[] = {0.95, 0.95, 0.95, 1};
+			colorPlayer[] = {1, 1, 0, 1};
+			colorAI[] = {1, 0, 0, 1};
+			colorNobody[] = {0.4, 0.4, 0.4, 1};
+			enabledAI = "ca\ui\textures\ai2_on.paa";
+			disabledAI = "ca\ui\textures\ai2_off.paa";
+		};
+		
+		class TextPool : RscText {
+			idc = 1006;
+			style = 2;
+			x = "(60/100)	* SafeZoneW + SafeZoneX";
+			y = "(16.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(38/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03921;
+			text = $STR_DISP_SRVSIDE_POOL;
+		};
+		
+		class CA_ValuePool : RscIGUIListBox {
+			idc = 114;
+			style = 16;
+			x = "(60/100)	* SafeZoneW + SafeZoneX";
+			y = "(20/100)	* SafeZoneH + SafeZoneY";
+			w = "(38/100)	* SafeZoneW";
+			h = "(72/100)	* SafeZoneH";
+			color[] = {1, 1, 1, 1};
+			colorSelect[] = {1, 1, 0, 1};
+			colorSelectBackground[] = {0.2, 0.2, 0.2, 1};
+			colorSelectBackground2[] = {0.1, 0.1, 0.1, 1};
+			rows = 25;
+			canDrag = 1;
+		};
+		
+		class CA_B_EnableAll : RscShortcutButton {
+			idc = 117;
+			x = "(22/100)	* SafeZoneW + SafeZoneX";
+			y = "(93/100)	* SafeZoneH + SafeZoneY";
+			w = 0.223825;
+			
+			class TextPos {
+				left = 0.035;
+				top = 0.034;
+				right = 0.005;
+				bottom = 0.005;
+			};
+			default = 0;
+		};
+		
+		class CA_B_Lock : RscShortcutButton {
+			idc = 118;
+			x = "(39/100)	* SafeZoneW + SafeZoneX";
+			y = "(93/100)	* SafeZoneH + SafeZoneY";
+			w = 0.183825;
+		};
+		
+		class CA_B_Params : RscShortcutButton {
+			idc = 128;
+			x = "(53/100)	* SafeZoneW + SafeZoneX";
+			y = "(93/100)	* SafeZoneH + SafeZoneY";
+			w = 0.203825;
+			text = $STR_DISP_XBOX_EDITOR_WIZARD_PARAMS;
+		};
+		
+		class CA_B_DSinterface : RscShortcutButton {
+			idc = 1012;
+			default = 0;
+			onButtonClick = "openDSInterface;";
+			shortcuts[] = {};
+			x = "(2.75/100)	* SafeZoneW + SafeZoneX";
+			y = "(93/100)	* SafeZoneH + SafeZoneY";
+			w = 0.26;
+			text = $STR_DISP_SERVER_CONTROL;
+		};
+		
+		class CA_B_Kick : RscShortcutButton {
+			idc = 116;
+			default = 0;
+			shortcuts[] = {0x00050000 + 2};
+			x = "(83/100)	* SafeZoneW + SafeZoneX";
+			y = "(14/100)	* SafeZoneH + SafeZoneY";
+			text = $STR_DISP_MP_KICKOFF;
+		};
+		
+		class CA_ButtonContinue : RscShortcutButton {
+			idc = 1;
+			default = 1;
+			shortcuts[] = {0x00050000 + 0, 28, 57, 156};
+			x = "(83/100)	* SafeZoneW + SafeZoneX";
+			y = "(93/100)	* SafeZoneH + SafeZoneY";
+			text = $STR_DISP_OK;
+		};
+		
+		class CA_ButtonCancel : RscShortcutButton {
+			idc = 2;
+			default = 0;
+			shortcuts[] = {0x00050000 + 1};
+			x = "(68/100)	* SafeZoneW + SafeZoneX";
+			y = "(93/100)	* SafeZoneH + SafeZoneY";
+			w = 0.203825;
+			text = $STR_DISP_BACK;
 		};
 	};
 };
