@@ -11,7 +11,16 @@ class RscActiveText;
 
 class RscPictureKeepAspect;
 class RscStandardDisplay;
-class RscProgress;
+class RscProgress {
+	x = 0.344;
+	y = 0.619;
+	w = 0.313726;
+	h = 0.0261438;
+	shadow = 2;
+	texture = "z\addons\dayz_code\gui\loadscreen_progressbar_ca.paa";
+	colorFrame[] = {0, 0, 0, 0};
+	colorBar[] = {1, 1, 1, 1};
+};
 class RscProgressNotFreeze;
 class RscButtonTextOnly;
 
@@ -513,9 +522,9 @@ class RscDisplayGear
 					onMouseButtonDown = "_this call player_selectSlot;";
 					soundDoubleClick[] = {"",0.1,1};
 					color[] = {1,1,1,1};
-					colorBackground[] = {0.8784,0.8471,0.651,1};
-					colorBackgroundSelected[] = {0.8784,0.8471,0.651,1};
-					colorFocused[] = {0,0,0,0};
+					colorBackground[] = {0,0,0,0};
+					colorBackgroundSelected[] = {0,0,0,0};
+					colorFocused[] = {1,1,1,1};
 					canDrag = 1;
 				};
 				class CA_Gear_slot_secondary: CA_Gear_slot_primary
@@ -904,7 +913,7 @@ class RscDisplayGear
 			w = 1.2549;
 			h = 1.6732;
 			moving = 1;
-			text = "\ca\ui\data\igui_background_gear_ca.paa";
+			text = "z\addons\dayz_code\gui\igui_background_gear_ca.paa";
 		};
 	};
 };

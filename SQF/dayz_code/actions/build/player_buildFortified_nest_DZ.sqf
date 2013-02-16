@@ -20,7 +20,7 @@ _text = getText (_config >> "displayName");
 
 if (!_hasToolBox) exitWith {cutText ["You need a toolbox !","PLAIN DOWN"]};
 if (!_hasEtool) exitWith {cutText ["You need an Entreching Tool !","PLAIN DOWN"]};
-if (_haswoodpile < 2 || _hasNails < 2 || hasSandBag < 2) exitWith {cutText ["You need 2 wood piles,2 bags of nails and 2 Sand Bags!","PLAIN DOWN"]};
+if (_haswoodpile > 1 || _hasNails > 1 || hasSandBag > 1) exitWith {cutText ["You need 2 wood piles,2 bags of nails and 2 Sand Bags!","PLAIN DOWN"]};
 
 
 //allowed
@@ -34,9 +34,9 @@ if (["concrete",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_l
 diag_log ("Build Crate surface: " + str(_isok) );
 
 if (!_isOk) then {
-	_objectTemp = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+	_objectTemp = createVehicle ["Fortified_nest_DZ", _location, [], 0, "CAN_COLLIDE"];
 	_objectTemp attachTo [player,[0,2.5,0.5]];
-	_action_menu = player addAction ["Start Building", "\z\addons\dayz_code\actions\build\drop.sqf",[_objectTemp,_classname,_action_menu], 5, true, true];
+	_action_menu = player addAction ["Start Building", "\z\addons\dayz_code\actions\build\drop.sqf",[_objectTemp,"Fortified_nest_DZ",_action_menu], 5, true, true];
 } else {
 	cutText ["You cannot build here !", "PLAIN DOWN"];
 };
