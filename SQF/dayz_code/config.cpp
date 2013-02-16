@@ -34,7 +34,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "";
-		version = "0.2";
+		version = "0.21";
 		hiveVersion = 0.96; //0.93
 	};
 };
