@@ -1231,20 +1231,14 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={11442.368,0.895355585234.8477,};
+			position[]={11442.368,0.89535558,5234.8477};
 			name="spawn2";
-			type="Empty";
-		};
-		class Item5
-		{
-			position[]={15200.332,8315.2148,1.0878223};
-			name="spawn3";
 			type="Empty";
 		};
 		class Item6
 		{
 			position[]={8000.7075,0.98171496,5689.8237};
-			name="spawn4";
+			name="spawn3";
 			type="Empty";
 		};
 	};
