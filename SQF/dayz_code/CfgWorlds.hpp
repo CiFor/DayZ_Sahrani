@@ -18,7 +18,7 @@ class CfgWorlds {
 	class Chernarus : CAWorld {
 		access = ReadOnlyVerified;
 		worldId = 4;
-		cutscenes[] = {"ChernarusIntro1"};
+		cutscenes[] = {"Sara.intro"};
 		description = $STR_DN_CHERNARUS;
 		icon = "";
 		worldName = "\ca\chernarus\chernarus.wrp";

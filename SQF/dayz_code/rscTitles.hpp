@@ -179,7 +179,7 @@ class RscDisplayMain : RscStandardDisplay {
 		class Date {};
 		class Version {};
 		class Modlist {};
-		onLoad = "((_this select 0) displayCtrl 138) ctrlEnable false;";
+		//onLoad = "((_this select 0) displayCtrl 138) ctrlEnable false;";
 		
 		class DAYZ_Version : CA_Version
 		{
@@ -1202,7 +1202,7 @@ class DZ_ItemInteraction {
 	};
 	class controls { 
 		// define controls here
-
+		
 	};
 };
 
@@ -1305,7 +1305,7 @@ class RscTitles
 			};
 		};
 	};
-
+	
 	class playerStatusGUI
 	{
 		idd = 6900;
@@ -1489,7 +1489,7 @@ class RscTitles
 				h = 0.08;
 			};
 			class RscPicture_1701: RscPictureGUI
-
+			
 			{
 				idc = 1701;
 				//text = "\z\addons\dayz_code\gui\status_food_inside_ca.paa";
@@ -1534,6 +1534,15 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 	colorConfirmed[] = {0, 1, 0, 1};
 	
 	class controlsbackground {
+	
+		class MainbackMP : RscPicture {
+			idc = 1104;
+			x = safezoneXAbs;
+			y = safezoneY;
+			w = safezoneWAbs;
+			h = safezoneH * 1.01;
+			text = "z\addons\dayz_code\gui\sahrani.paa";
+		};
 		class MP_roles_TitleBorder : RscText {
 			style = 64;
 			colorText[] = {0, 0, 0, 1};
@@ -1635,15 +1644,26 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		class B_Params {};
 		class Title {};
 		
-		class CA_MP_roles_Title : CA_Title {
+		class CA_TitleDZ : RscText {
+			x = 0;
+			y = 0;
+			w = 0;
+			h = 0;
+			style = 0x00 + 0x100;
+			font = "Zeppelin32";
+			sizeEx = 0;
+			colorText[] = {0, 0, 0, 0};
+		};
+		
+		class CA_MP_roles_Title : CA_TitleDZ {
 			idc = 1001;
 			style = 2;
-			x = "(02/100)	* SafeZoneW + SafeZoneX";
-			y = "(02/100)	* SafeZoneH + SafeZoneY";
-			w = "(96/100)	* SafeZoneW";
-			h = "(06/100)	* SafeZoneH";
-			colorBackground[] = {49/255, 36/255, 25/255, 173/255};
-			text = $STR_DISP_MPSETUP_TITLE;
+			x = "0";
+			y = "0";
+			w = "0";
+			h = "0";
+			colorBackground[] = {0, 0, 0, 0};
+			text = "";
 		};
 		
 		class CA_TextVotingTimeLeft : CA_MP_roles_Title {
@@ -1747,33 +1767,33 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			pictureWidth = 1;
 			pictureHeight = 1;
 			textHeight = 0.38;
-			sideDisabled = "ca\ui\data\flag_none_ca.paa";
-			sideToggle = "ca\ui\data\flag_side_toggle_ca.paa";
+			sideDisabled = "";
+			sideToggle = "";
 			idc = 104;
 			color[] = {1, 1, 1, 0.55};
 			text = $STR_WEST;
-			picture = "\ca\ui\data\flag_bluefor_ca.paa";
+			picture = "";
 		};
 		
 		class CA_B_East : CA_B_West {
 			idc = 105;
 			y = "(31/100)	* SafeZoneH + SafeZoneY";
 			text = $STR_EAST;
-			picture = "\ca\ui\data\flag_opfor_ca.paa";
+			picture = "";
 		};
 		
 		class CA_B_Guerrila : CA_B_West {
 			idc = 106;
 			y = "(41/100)	* SafeZoneH + SafeZoneY";
 			text = $STR_GUERRILA;
-			picture = "\ca\ui\data\flag_indep_ca.paa";
+			picture = "";
 		};
 		
 		class CA_B_Civilian : CA_B_West {
 			idc = 107;
 			y = "(51/100)	* SafeZoneH + SafeZoneY";
 			text = $STR_CIVILIAN;
-			picture = "\ca\ui\data\flag_civil_ca.paa";
+			picture = "";
 		};
 		
 		class CA_ValueRoles : RscIGUIListBox {
@@ -1792,8 +1812,8 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			colorPlayer[] = {1, 1, 0, 1};
 			colorAI[] = {1, 0, 0, 1};
 			colorNobody[] = {0.4, 0.4, 0.4, 1};
-			enabledAI = "ca\ui\textures\ai2_on.paa";
-			disabledAI = "ca\ui\textures\ai2_off.paa";
+			enabledAI = "";
+			disabledAI = "";
 		};
 		
 		class TextPool : RscText {
