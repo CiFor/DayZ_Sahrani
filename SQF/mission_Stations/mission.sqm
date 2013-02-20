@@ -1,0 +1,251 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"cacharacters2",
+		"ca_modules",
+		"cacharacters_pmc",
+		"caweapons_ammoboxes",
+		"caweapons_e_ammoboxes",
+		"CAWheeled2_V3S",
+		"CAWheeled",
+		"CAWheeled2_VWGolf",
+		"CAWheeled2_LADA",
+		"camisc_e",
+		"camisc3",
+		"CABuildings",
+		"caweapons_warfare_weapons",
+		"caair2_uh1y",
+		"warfarebuildings",
+		"caweapons",
+		"castructureshouse_a_stationhouse",
+		"castructures_mil"
+	};
+	addOnsAuto[]=
+	{
+		"castructureshouse_a_stationhouse",
+		"castructures_mil",
+		"oac_core"
+	};
+	randomSeed=9132674;
+	class Intel
+	{
+		startWeather=0.43754399;
+		forecastWeather=0.43553776;
+		year=2007;
+		month=6;
+		day=7;
+		hour=5;
+	};
+	class Vehicles
+	{
+		items=12;
+		class Item0
+		{
+			position[]={13625.1,0.19697,8754.0195};
+			special="NONE";
+			id=0;
+			side="EMPTY";
+			vehicle="Land_a_stationhouse";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [13625.1, 8754.02, 0.19697]; this setDir 0; doStop this;";
+		};
+		class Item1
+		{
+			position[]={14607.4,0.19697,11097.6};
+			azimut=-31.3146;
+			special="NONE";
+			id=1;
+			side="EMPTY";
+			vehicle="Land_a_stationhouse";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14607.4, 11097.6, 0.19697]; this setDir -31.3146; doStop this;";
+		};
+		class Item2
+		{
+			position[]={14457.2,0.19697,12581.5};
+			azimut=-111.22;
+			special="NONE";
+			id=2;
+			side="EMPTY";
+			vehicle="Land_a_stationhouse";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14457.2, 12581.5, 0.19697]; this setDir -111.22; doStop this;";
+		};
+		class Item3
+		{
+			position[]={12764.7,0.19697,15013.1};
+			azimut=-9.79181;
+			special="NONE";
+			id=3;
+			side="EMPTY";
+			vehicle="Land_a_stationhouse";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12764.7, 15013.1, 0.19697]; this setDir -9.79181; doStop this;";
+		};
+		class Item4
+		{
+			position[]={18845.4,0,13707.5};
+			azimut=26.168699;
+			special="NONE";
+			id=4;
+			side="EMPTY";
+			vehicle="Land_Mil_Barracks_i";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [18845.4, 13707.5, 0]; this setDir 26.1687; doStop this;";
+		};
+		class Item5
+		{
+			position[]={18852.1,0,13720.5};
+			azimut=26.168699;
+			special="NONE";
+			id=5;
+			side="EMPTY";
+			vehicle="Land_Mil_Barracks_i";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [18852.1, 13720.5, 0]; this setDir 26.1687; doStop this;";
+		};
+		class Item6
+		{
+			position[]={18831.6,0.36363,13680.4};
+			azimut=-45.6572;
+			special="NONE";
+			id=6;
+			side="EMPTY";
+			vehicle="Land_a_stationhouse";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [18831.6, 13680.4, 0.36363]; this setDir -45.6572; ";
+		};
+		class Item7
+		{
+			position[]={12483.6,0.19697,6774.3398};
+			special="NONE";
+			id=7;
+			side="EMPTY";
+			vehicle="Land_a_stationhouse";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12483.6, 6774.34, 0.19697]; this setDir 0; ";
+		};
+		class Item8
+		{
+			position[]={11428.8,0.16666,5848.0098};
+			azimut=106.972;
+			special="NONE";
+			id=8;
+			side="EMPTY";
+			vehicle="Land_a_stationhouse";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [11428.8, 5848.01, 0.16666]; this setDir 106.972; doStop this;";
+		};
+		class Item9
+		{
+			position[]={8959.8203,0.16666,6166.6699};
+			azimut=173.271;
+			special="NONE";
+			id=9;
+			side="EMPTY";
+			vehicle="Land_a_stationhouse";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [8959.82, 6166.67, 0.16666]; this setDir 173.271; doStop this;";
+		};
+		class Item10
+		{
+			position[]={7244.46,0.090910003,8376.9199};
+			azimut=126.633;
+			special="NONE";
+			id=10;
+			side="EMPTY";
+			vehicle="Land_a_stationhouse";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [7244.46, 8376.92, 0.090910]; this setDir 126.633; ";
+		};
+		class Item11
+		{
+			position[]={9901.5195,0.25757,9433.3896};
+			azimut=28.8284;
+			special="NONE";
+			id=11;
+			side="EMPTY";
+			vehicle="Land_a_stationhouse";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [9901.52, 9433.39, 0.25757]; this setDir 28.8284; doStop this;";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=16694358;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=6916151;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=4420959;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
