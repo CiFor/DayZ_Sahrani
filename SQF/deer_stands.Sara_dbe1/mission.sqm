@@ -1,0 +1,643 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"camisc3"
+	};
+	addOnsAuto[]=
+	{
+		"camisc3",
+		"oac_core"
+	};
+	randomSeed=14884306;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+	class Vehicles
+	{
+		items=46;
+		class Item0
+		{
+			position[]={14833,0,13818.3};
+			azimut=-167.112;
+			special="NONE";
+			id=0;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14833, 13818.3, 0]; this setDir -167.112; doStop this;";
+		};
+		class Item1
+		{
+			position[]={15209.4,0,13597.9};
+			azimut=-150.004;
+			special="NONE";
+			id=1;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [15209.4, 13597.9, 0]; this setDir -150.004; doStop this;";
+		};
+		class Item2
+		{
+			position[]={16610,0,14196.5};
+			azimut=-46.152802;
+			special="NONE";
+			id=2;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [16610, 14196.5, 0]; this setDir -46.1528; doStop this;";
+		};
+		class Item3
+		{
+			position[]={13416.3,0,9359.7695};
+			azimut=-9.8543797;
+			special="NONE";
+			id=3;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [13416.3, 9359.77, 0]; this setDir -9.85438; ";
+		};
+		class Item4
+		{
+			position[]={14373.4,0,9730.5098};
+			azimut=-323.591;
+			special="NONE";
+			id=4;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14373.4, 9730.51, 0]; this setDir -323.591; doStop this;";
+		};
+		class Item5
+		{
+			position[]={10844.7,0,8884.0098};
+			azimut=-359.00101;
+			special="NONE";
+			id=5;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [10844.7, 8884.01, 0]; this setDir -359.001; doStop this;";
+		};
+		class Item6
+		{
+			position[]={12328.3,0,9515.3701};
+			azimut=-134.827;
+			special="NONE";
+			id=6;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12328.3, 9515.37, 0]; this setDir -134.827; ";
+		};
+		class Item7
+		{
+			position[]={12256.5,0,8674.21};
+			azimut=-100.744;
+			special="NONE";
+			id=7;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12256.5, 8674.21, 0]; this setDir -100.744; ";
+		};
+		class Item8
+		{
+			position[]={14458.1,0,12263.3};
+			azimut=-224.754;
+			special="NONE";
+			id=8;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14458.1, 12263.3, 0]; this setDir -224.754; ";
+		};
+		class Item9
+		{
+			position[]={14000.1,0,13051.4};
+			azimut=-219.75999;
+			special="NONE";
+			id=9;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14000.1, 13051.4, 0]; this setDir -219.76; ";
+		};
+		class Item10
+		{
+			position[]={13088.2,0,14670.1};
+			azimut=-236.82899;
+			special="NONE";
+			id=10;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [13088.2, 14670.1, 0]; this setDir -236.829; doStop this;";
+		};
+		class Item11
+		{
+			position[]={9327.54,0,16613.801};
+			azimut=-134.827;
+			special="NONE";
+			id=11;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [9327.54, 16613.8, 0]; this setDir -134.827; ";
+		};
+		class Item12
+		{
+			position[]={9974.2998,0,16622.699};
+			azimut=-134.827;
+			special="NONE";
+			id=12;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [9974.3, 16622.7, 0]; this setDir -134.827; doStop this;";
+		};
+		class Item13
+		{
+			position[]={10521.9,0,16209.4};
+			azimut=-134.827;
+			special="NONE";
+			id=13;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [10521.9, 16209.4, 0]; this setDir -134.827; ";
+		};
+		class Item14
+		{
+			position[]={12044.8,0,17503.5};
+			azimut=-269.72198;
+			special="NONE";
+			id=14;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12044.8, 17503.5, 0]; this setDir -269.722; doStop this;";
+		};
+		class Item15
+		{
+			position[]={12044.7,0,17600.9};
+			azimut=-271.086;
+			special="NONE";
+			id=15;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12044.7, 17600.9, 0]; this setDir -271.086; doStop this;";
+		};
+		class Item16
+		{
+			position[]={12045.3,0,17798.6};
+			azimut=-180.42101;
+			special="NONE";
+			id=16;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12045.3, 17798.6, 0]; this setDir -180.421; doStop this;";
+		};
+		class Item17
+		{
+			position[]={12279.8,0,17799.1};
+			azimut=-175.938;
+			special="NONE";
+			id=17;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12279.8, 17799.1, 0]; this setDir -175.938; doStop this;";
+		};
+		class Item18
+		{
+			position[]={12272.7,0,17503.5};
+			azimut=-361.495;
+			special="NONE";
+			id=18;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12272.7, 17503.5, 0]; this setDir -361.495; ";
+		};
+		class Item19
+		{
+			position[]={12197.1,0,17503};
+			azimut=-2.5820799;
+			special="NONE";
+			id=19;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12197.1, 17503, 0]; this setDir -2.58208; doStop this;";
+		};
+		class Item20
+		{
+			position[]={12273.6,0,17645.199};
+			azimut=-89.132202;
+			special="NONE";
+			id=20;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12273.6, 17645.2, 0]; this setDir -89.1322; doStop this;";
+		};
+		class Item21
+		{
+			position[]={10356.1,0,15483.4};
+			azimut=-134.827;
+			special="NONE";
+			id=21;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [10356.1, 15483.4, 0]; this setDir -134.827; ";
+		};
+		class Item22
+		{
+			position[]={12521.2,0,14400.1};
+			azimut=-281.271;
+			special="NONE";
+			id=22;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12521.2, 14400.1, 0]; this setDir -281.271; ";
+		};
+		class Item23
+		{
+			position[]={13744.5,0,13346.8};
+			azimut=-107.087;
+			special="NONE";
+			id=23;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [13744.5, 13346.8, 0]; this setDir -107.087; ";
+		};
+		class Item24
+		{
+			position[]={14976.6,0,13565.6};
+			azimut=-187.80901;
+			special="NONE";
+			id=24;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14976.6, 13565.6, 0]; this setDir -187.809; ";
+		};
+		class Item25
+		{
+			position[]={14818,0,12840};
+			azimut=-134.827;
+			special="NONE";
+			id=25;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14818, 12840, 0]; this setDir -134.827; ";
+		};
+		class Item26
+		{
+			position[]={14866.3,0,12768.4};
+			azimut=-88.087799;
+			special="NONE";
+			id=26;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14866.3, 12768.4, 0]; this setDir -88.0878; doStop this;";
+		};
+		class Item27
+		{
+			position[]={14582.8,0,10980.2};
+			azimut=-240.369;
+			special="NONE";
+			id=27;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14582.8, 10980.2, 0]; this setDir -240.369; doStop this;";
+		};
+		class Item28
+		{
+			position[]={12857.2,0,8664.0703};
+			azimut=-577.495;
+			special="NONE";
+			id=28;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12857.2, 8664.07, 0]; this setDir -577.495; ";
+		};
+		class Item29
+		{
+			position[]={9387.6299,0,7385.5298};
+			azimut=-314.013;
+			special="NONE";
+			id=29;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [9387.63, 7385.53, 0]; this setDir -314.013; ";
+		};
+		class Item30
+		{
+			position[]={9474.71,0,7756.1699};
+			azimut=-198.466;
+			special="NONE";
+			id=30;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [9474.71, 7756.17, 0]; this setDir -198.466; doStop this;";
+		};
+		class Item31
+		{
+			position[]={9564.2305,0,8385.9502};
+			azimut=-194.619;
+			special="NONE";
+			id=31;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [9564.23, 8385.95, 0]; this setDir -194.619; ";
+		};
+		class Item32
+		{
+			position[]={14744.7,0,13974.9};
+			azimut=-183.21899;
+			special="NONE";
+			id=32;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14744.7, 13974.9, 0]; this setDir -183.219; ";
+		};
+		class Item33
+		{
+			position[]={17472.1,0,14260.1};
+			azimut=-203.63699;
+			special="NONE";
+			id=33;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [17472.1, 14260.1, 0]; this setDir -203.637; ";
+		};
+		class Item34
+		{
+			position[]={17707,0,14246.6};
+			azimut=-144.343;
+			special="NONE";
+			id=34;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [17707, 14246.6, 0]; this setDir -144.343; ";
+		};
+		class Item35
+		{
+			position[]={14640.2,0,14724};
+			azimut=-351.323;
+			special="NONE";
+			id=35;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14640.2, 14724, 0]; this setDir -351.323; ";
+		};
+		class Item36
+		{
+			position[]={15279.7,0,8570.3496};
+			azimut=-140.946;
+			special="NONE";
+			id=36;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [15279.7, 8570.35, 0]; this setDir -140.946; ";
+		};
+		class Item37
+		{
+			position[]={15860.2,0,9146.2803};
+			azimut=-9.1066799;
+			special="NONE";
+			id=37;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [15860.2, 9146.28, 0]; this setDir -9.10668; ";
+		};
+		class Item38
+		{
+			position[]={17123.801,0,9623.8701};
+			azimut=-62.317699;
+			special="NONE";
+			id=38;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [17123.8, 9623.87, 0]; this setDir -62.3177; ";
+		};
+		class Item39
+		{
+			position[]={14803.2,0,11800.6};
+			azimut=-328.315;
+			special="NONE";
+			id=39;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14803.2, 11800.6, 0]; this setDir -328.315; ";
+		};
+		class Item40
+		{
+			position[]={13441.3,0,12782.5};
+			azimut=-134.827;
+			special="NONE";
+			id=40;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [13441.3, 12782.5, 0]; this setDir -134.827; ";
+		};
+		class Item41
+		{
+			position[]={12746,0,13160.6};
+			azimut=-296.59299;
+			special="NONE";
+			id=41;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12746, 13160.6, 0]; this setDir -296.593; ";
+		};
+		class Item42
+		{
+			position[]={12578.9,0,12668.3};
+			azimut=-13.9864;
+			special="NONE";
+			id=42;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12578.9, 12668.3, 0]; this setDir -13.9864; ";
+		};
+		class Item43
+		{
+			position[]={11749.2,0,14527};
+			azimut=-176.547;
+			special="NONE";
+			id=43;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [11749.2, 14527, 0]; this setDir -176.547; ";
+		};
+		class Item44
+		{
+			position[]={11402.1,0,16362.6};
+			azimut=-204.948;
+			special="NONE";
+			id=44;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [11402.1, 16362.6, 0]; this setDir -204.948; ";
+		};
+		class Item45
+		{
+			position[]={11258.7,0,16831.699};
+			azimut=-322.61899;
+			special="NONE";
+			id=45;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [11258.7, 16831.7, 0]; this setDir -322.619; ";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=11386951;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=3059345;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10946174;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
