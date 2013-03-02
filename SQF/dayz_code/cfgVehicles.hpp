@@ -1,7 +1,7 @@
 class CfgVehicles {
 	class Citizen1;	// External class reference
 	class zZombie_Base : Citizen1 {
-		scope = public;
+		scope = 0;
 		glassesEnabled = 0;
 		vehicleClass = "Zombie";
 		displayName = "Zombie";
@@ -196,7 +196,7 @@ class CfgVehicles {
 		side = 2;
 		crew = "";
 		typicalCargo[] = {};
-		hiddenSelections[] = {};
+		hiddenSelections[] = {"Camo1", "Camo2", "Camo_mlod"};
 		class TransportMagazines{};
 		class TransportWeapons{};
 		commanderCanSee = 2+16+32;
@@ -217,8 +217,11 @@ class CfgVehicles {
 				magazines[] = {"100Rnd_762x51_M240"};
 			};
 		};
+		hiddenSelectionsTextures[] = {"ca\air_E\UH1H\data\UH1D_CO.paa", "ca\air_E\UH1H\data\UH1D_in_CO.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
-	class UH1H_TK_DZ: UH1H_DZ; // Camo Huey - Copy UH1H_DZ
+	class UH1H_TK_DZ: UH1H_DZ { // Camo Huey - Copy UH1H_DZ
+		hiddenSelectionsTextures[] = {"ca\air_E\UH1H\data\UH1D_TKA_CO.paa", "ca\air_E\UH1H\data\UH1D_in_TKA_CO.paa", "ca\air_E\UH1H\data\default_TKA_co.paa"};
+	};
 	class AH6_Base_EP1;
 	//class AH6X_EP1: AH6_Base_EP1 {};
 	class AH6X_DZ: AH6_Base_EP1
@@ -249,31 +252,6 @@ class CfgVehicles {
 		transportMaxMagazines = 10;
         transportmaxbackpacks = 2;
 		class Turrets {};
-	};
-	class MH6J_DZ : AH6_Base_EP1 {
-		scope = 2;
-		displayName = "MH6J  Little Bird";
-		model = "\ca\air_e\ah6j\mh6j";
-		picture = "\ca\air_e\data\UI\Picture_mh6j_CA.paa";
-		icon = "\ca\air_e\data\UI\Icon_mh6j_CA.paa";
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		isuav = 0;
-		radartype = 0;
-		class TransportMagazines{};
-		class TransportWeapons{};
-		weapons[] = {};
-		magazines[] = {};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 3;
-		transportMaxMagazines = 10;
-        transportmaxbackpacks = 2;
-		class Turrets {};
-		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa", "ca\air_e\ah6j\data\default_co.paa"};
 	};
 	class HMMWV_Base;
 	class HMMWV_DZ: HMMWV_Base {
@@ -325,7 +303,13 @@ class CfgVehicles {
 			tex[] = {};
 		};
 	};
-	class Boat;
+	class Ship;
+	class Boat : Ship {
+		precision = 6;
+		brakeDistance = 20;	// vehicle movement precision
+		class Turrets;
+		class NewTurret;
+	};
 	class RHIB_DZ : Boat {
 		scope = 2;
 		displayName = $STR_DN_RHIB;
@@ -427,7 +411,6 @@ class CfgVehicles {
 				weapon = "M2";
 			};
 		};
-		
 		class Turrets : Turrets {
 			class MainTurret : NewTurret {
 				class HitPoints {
@@ -1912,7 +1895,7 @@ class CfgVehicles {
 	};
 	class WeaponHolderBase;
 	class WoodenArrowF : WeaponHolderBase {
-		scope = public;
+		scope = 0;
 		displayName = "WoodenArrowF";
 		model = "\dayz_weapons\models\bolt";
 		
