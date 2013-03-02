@@ -4,11 +4,15 @@ class CfgLoot {
 			"TrashTinCan",
 			"TrashJackDaniels",
 			"ItemSodaEmpty",
+			"ItemTrashToiletpaper",
+			"ItemTrashRazor"
 		},
 		{
 			1,
 			0.1,
-			0.5
+			0.5,
+			0.4,
+			0.2
 		}
 	};
 	civilian[] = {
@@ -49,27 +53,87 @@ class CfgLoot {
 	};
 	food[] = {
 		{
+			//trash
 			"TrashTinCan",
 			"TrashJackDaniels",
 			"ItemSodaEmpty",
+			//sodas
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
+			"ItemSodaMtngreen",
+			"ItemSodaR4z0r",
+			"ItemSodaClays",
+			"ItemSodaSmasht",
+			"ItemSodaDrwaste",
+			"ItemSodaLemonade",
+			"ItemSodaLvg",
+			"ItemSodaMzly",
+			"ItemSodaRabbit",
+			//"ItemSodaFranka",
+			//"ItemSodaLirikola",
+			//"ItemSodaSacrite",
+			//"ItemSodaPeppsy",
+			//food cans
 			"FoodCanBakedBeans",
 			"FoodCanSardines",
 			"FoodCanFrankBeans",
 			"FoodCanPasta",
-			"ItemBandage"
+			"FoodCanGriff",
+			"FoodCanBadguy",
+			"FoodCanBoneboy",
+			"FoodCanCorn",
+			"FoodCanCurgon",
+			"FoodCanDemon",
+			"FoodCanFraggleos",
+			"FoodCanHerpy",
+			"FoodCanOrlok",
+			"FoodCanPowell",
+			"FoodCanTylers",
+			"FoodCanUnlabeled",
+			//Bags
+			"FoodPistachio",
+			"FoodNutmix"
 		},
 		{
+			//trash
 			0.13,
 			0.13,
 			0.13,
-			0.09,
-			0.13,
-			0.09,
-			0.09,
-			0.09,
-			0.09,
+			//sodas
+			0.01,
+			0.01,
+			0.06,
+			0.04,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.05,
+			//0.06,
+			//0.06,
+			//0.06,
+			//0.06,
+			//food cans
+			0.04,
+			0.04,
+			0.04,
+			0.04,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			//Bags
+			0.05,
 			0.04
 		}
 	};
@@ -95,7 +159,7 @@ class CfgLoot {
 			"2Rnd_shotgun_74Pellets",
 			"8Rnd_9x18_Makarov",
 			"15Rnd_W1866_Slug",
-			"BoltSteel",
+			"WoodenArrow",
 			"HandRoadFlare",
 			"ItemPainkiller",
 			"HandChemGreen",
@@ -206,7 +270,8 @@ class CfgLoot {
 			"HandChemGreen",
 			"HandChemBlue",
 			"HandChemRed",
-			"ItemHeatPack"
+			"ItemHeatPack",
+			"FoodMRE"
 		},
 		{
 			0.18,
@@ -244,7 +309,8 @@ class CfgLoot {
 			0.02,
 			0.02,
 			0.02,
-			0.04
+			0.04,
+			0.03
 		}
 	};
 	policeman[] = {
@@ -272,8 +338,10 @@ class CfgLoot {
 			"7Rnd_45ACP_1911",
 			"10x_303",
 			"ItemWaterbottleUnfilled",
-			"BoltSteel",
-			"ItemHeatPack"
+			"WoodenArrow",
+			"ItemHeatPack",
+			"FoodMRE",
+			"FoodNutmix"
 		},
 		{
 			1,
@@ -282,7 +350,9 @@ class CfgLoot {
 			0.5,
 			0.2,
 			1,
-			0.2
+			0.2,
+			0.04,
+			0.1
 		}
 	};
 };

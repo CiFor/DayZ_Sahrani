@@ -14,9 +14,9 @@ for "_i" from 0 to ((count _this) - 1) do
 		_object allowDamage false;
 		
 		//diag_log format["CreateObj: %1 / %2",_type,_position];
-		
 		if (_SetZUp > 0) then {
 			_object setVectorUp [0,0,1];
 		};
 	};
 };
+//diag_log ("FILL: " + str(_this));

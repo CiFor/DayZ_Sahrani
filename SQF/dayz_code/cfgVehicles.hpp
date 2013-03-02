@@ -145,7 +145,7 @@ class CfgVehicles {
 	
 	class Mi17_DZ: Mi17_base	
 	{
-		displayname = "Mi-8M";
+		displayname = "Mi17_DZ";
 		displaynameshort = "Mi17_DZ";
 		scope = 2;
 		side = 2;
@@ -218,6 +218,7 @@ class CfgVehicles {
 			};
 		};
 	};
+	class UH1H_TK_DZ: UH1H_DZ; // Camo Huey - Copy UH1H_DZ
 	class AH6_Base_EP1;
 	//class AH6X_EP1: AH6_Base_EP1 {};
 	class AH6X_DZ: AH6_Base_EP1
@@ -249,6 +250,31 @@ class CfgVehicles {
         transportmaxbackpacks = 2;
 		class Turrets {};
 	};
+	class MH6J_DZ : AH6_Base_EP1 {
+		scope = 2;
+		displayName = "MH6J  Little Bird";
+		model = "\ca\air_e\ah6j\mh6j";
+		picture = "\ca\air_e\data\UI\Picture_mh6j_CA.paa";
+		icon = "\ca\air_e\data\UI\Icon_mh6j_CA.paa";
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		isuav = 0;
+		radartype = 0;
+		class TransportMagazines{};
+		class TransportWeapons{};
+		weapons[] = {};
+		magazines[] = {};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 3;
+		transportMaxMagazines = 10;
+        transportmaxbackpacks = 2;
+		class Turrets {};
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa", "ca\air_e\ah6j\data\default_co.paa"};
+	};
 	class HMMWV_Base;
 	class HMMWV_DZ: HMMWV_Base {
 		accuracy = 0.32;
@@ -268,89 +294,427 @@ class CfgVehicles {
 		transportMaxMagazines = 12;
         transportmaxbackpacks = 4;
 		class Turrets {};
-		class HitPoints {
-			class HitEngine {
-				armor = 2.4;
-				material = -1;
-				name = "motor";
-				passthrough = 0.2;
-				visual = "";
-			};
-			class HitBody {
-				armor = 1;
-				material = -1;
-				name = "karoserie";
-				passthrough = 1;
-				visual = "";
-			};
-			class HitFuel {
-				armor = 1.3;
-				material = -1;
-				name = "palivo";
-				passthrough = 0.5;
-				visual = "";
-			};
-			class HitLFWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_1_1_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitRFWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_2_1_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitLBWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_1_2_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitRBWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_2_2_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitGlass1 {
-				armor = 0.4;
-				material = -1;
-				name = "glass1";
-				passthrough = 0;
-				visual = "glass1";
-			};
-			class HitGlass2 {
-				armor = 0.4;
-				material = -1;
-				name = "glass2";
-				passthrough = 0;
-				visual = "glass2";
-			};
-			class HitGlass3 {
-				armor = 0.2;
-				material = -1;
-				name = "glass3";
-				passthrough = 0;
-				visual = "glass3";
-			};
-			class HitGlass4 {
-				armor = 0.2;
-				material = -1;
-				name = "glass4";
-				passthrough = 0;
-				visual = "glass4";
-			};
-		};
 		class Damage {
 			mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
 			tex[] = {};
 		};
+	};
+	class RubberBoat;
+	class PBX: RubberBoat {
+		cargoaction[] = {"PBX_Cargo01", "PBX_Cargo02", "PBX_Cargo03"};
+		crew = "";
+		displayname = "PBX";
+		driveraction = "PBX_Driver";
+		extcameraposition[] = {0, 4, -14};
+		faction = "RU";
+		icon = "\Ca\water\Data\map_ico\icomap_rubber_CA.paa";
+		mapsize = 6;
+		maxspeed = 65;
+		model = "\ca\water\PBX";
+		picture = "\ca\water\data\ico\pbx_CA.paa";
+		scope = 2;
+		side = 0;
+		transportsoldier = 3;
+		typicalcargo[] = {};
+		class TransportMagazines {};
+		class Library {
+			libtextdesc = "The PBX is a Combat Rubber Craft very similar to the CRRC in design. It is intended to be used for maritime raids and infiltration, as well as riverine operations.";
+		};
+		class Damage {
+			mat[] = {"ca\water\data\pbx_engine.rvmat", "ca\water\data\pbx_engine.rvmat", "ca\water\data\pbx_engine_destruct.rvmat", "ca\water\data\pbx_01.rvmat", "ca\water\data\pbx_01.rvmat", "ca\water\data\pbx_01_destruct.rvmat", "ca\water\data\pbx_02.rvmat", "ca\water\data\pbx_02.rvmat", "ca\water\data\pbx_02_destruct.rvmat"};
+			tex[] = {};
+		};
+	};
+	class Boat;
+	class RHIB_DZ : Boat {
+		scope = 2;
+		displayName = $STR_DN_RHIB;
+		vehicleClass = "Ship";
+		accuracy = 0.5;	// accuracy needed to recognize type of this target
+		crew = "";
+		faction = "USMC";
+		side = 0;
+		model = "\ca\water\rhib";
+		picture = "\ca\water\data\ico\rhib_CA.paa";
+		Icon = "\Ca\water\Data\map_ico\icomap_RHIB_CA.paa";
+		mapSize = 8;
+		unitInfoType = "UnitInfoShip";
+		soundEnviron[] = {"", db-25, 0.9};
+		
+		class SoundEvents {};
+		insideSoundCoef = 1;
+		soundEngineOnInt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-start-01", 0.1, 1.0};
+		soundEngineOnExt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-start-01", 1.0, 1.0, 150};
+		soundEngineOffInt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-stop-01", 0.1, 1.0};
+		soundEngineOffExt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-stop-01", 1.0, 1.0, 150};
+		
+		class Sounds {
+			class Engine {
+				sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-low-01", db0, 0.9, 300};
+				frequency = "(randomizer*0.05+0.95)*rpm";
+				volume = "engineOn*(rpm factor[0.5, 0.1])";
+			};
+			
+			class EngineHighOut {
+				sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-high-01", db0, 0.8, 300};
+				frequency = "(randomizer*0.05+0.95)*rpm";
+				volume = "engineOn*(rpm factor[0.4, 1.3])";
+			};
+			
+			class IdleOut {
+				sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-idle-03", 0.562341, 1.0, 150};
+				frequency = "1";
+				volume = "engineOn*(rpm factor[0.3, 0])";
+			};
+			
+			class WaternoiseOutW0 {
+				sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-water-noise-nospeed", 0.398107, 1.0, 100};
+				frequency = "1";
+				volume = "(speed factor[7, 0])";
+			};
+			
+			class WaternoiseOutW1 {
+				sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-boat-lospd-noise-02", 0.398107, 1.0, 100};
+				frequency = "1";
+				volume = "((speed factor[2, 12]) min (speed factor[12, 2]))";
+			};
+			
+			class WaternoiseOutW2 {
+				sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-boat-hispd-noise-02", 0.398107, 1.0, 100};
+				frequency = "1";
+				volume = "(speed factor[9, 18.7])";
+			};
+		};
+		driverAction = "RHIB_Driver";
+		cargoAction[] = {"RHIB_Cargo"};
+		getInAction = "GetInMedium";
+		getOutAction = "GetOutMedium";
+		cargoGetInAction[] = {"GetInMedium"};
+		cargoGetOutAction[] = {"GetOutMedium"};
+		castDriverShadow = true;
+		castCargoShadow = true;
+		gunnerHasFlares = false;
+		maxSpeed = 60;	// max speed on level road, km/h
+		enableGPS = 0;
+		transportSoldier = 10;
+		typicalCargo[] = {};
+		supplyRadius = 3;
+		
+		class Exhausts {
+			class Exhaust1 {
+				position = "vyfuk start";
+				direction = "vyfuk konec";
+				effect = "";
+			};
+		};
+		armor = 30;
+		
+		class TransportMagazines {};
+		
+		class AnimationSources {
+			class ReloadAnim {
+				source = "reload";
+				weapon = "M2";
+			};
+			
+			class ReloadMagazine {
+				source = "reloadmagazine";
+				weapon = "M2";
+			};
+			
+			class Revolving {
+				source = "revolving";
+				weapon = "M2";
+			};
+		};
+		
+		class Turrets : Turrets {
+			class MainTurret : NewTurret {
+				class HitPoints {
+					class HitTurret {
+						armor = 0.8;
+						material = 60;
+						name = "vez";
+						visual = "vez";
+						passThrough = true;
+					};
+					
+					class HitGun {
+						armor = 0.6;
+						material = 60;
+						name = "zbran";
+						visual = "zbran";
+						passThrough = true;
+					};
+				};
+				stabilizedInAxes = 0;
+				body = "MainTurret";
+				gun = "MainGun";
+				animationSourceBody = "mainTurret";
+				animationSourceGun = "mainGun";
+				gunnerAction = "RHIB_Gunner";
+				gunnerGetInAction = "GetInMedium";
+				gunnerGetOutAction = "GetOutMedium";
+				ejectDeadGunner = true;
+				outGunnerMayFire = true;
+				inGunnerMayFire = false;
+				minElev = -25;
+				maxElev = 60;
+				initElev = 5;
+				minTurn = -135;
+				maxTurn = 135;
+				initTurn = 0;
+				soundServo[] = {"\ca\sounds\vehicles\servos\turret-1", db-45, 1.0};
+				gunBeg = "usti hlavne";	// endpoint of the gun
+				gunEnd = "konec hlavne";	// chamber of the gun
+				weapons[] = {"M2"};
+				magazines[] = {"100Rnd_127x99_M2", "100Rnd_127x99_M2"};
+				gunnerName = $STR_POSITION_FRONTGUNNER;
+				gunnerOpticsModel = "\ca\weapons\optika_empty";
+				gunnerForceOptics = false;
+				startEngine = false;
+				commanding = 2;
+				primaryGunner = 0;
+				primaryObserver = 1;
+				
+				class ViewOptics {
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.7;
+					minFov = 0.25;
+					maxFov = 1.1;
+				};
+				
+				class ViewGunner {
+					initAngleX = 5;
+					minAngleX = -65;
+					maxAngleX = 85;
+					initAngleY = 0;
+					minAngleY = -150;
+					maxAngleY = 150;
+					initFov = 0.7;
+					minFov = 0.25;
+					maxFov = 1.1;
+				};
+			};
+		};
+		
+		class Library {
+			libTextDesc = $STR_LIB_RHIB;
+		};
+		extCameraPosition[] = {0, 4.0, -14.0};
+		
+		class Damage {
+			tex[] = {};
+			mat[] = {"ca\water\data\rhib.rvmat", "ca\water\data\rhib.rvmat", "ca\water\data\rhib_destruct.rvmat", "ca\water\data\rhib_dash.rvmat", "ca\water\data\rhib_dash.rvmat", "ca\water\data\rhib_dash_destruct.rvmat"};
+		};
+	}
+	
+	class TT650_Base;
+	class TT650_Ins: TT650_Base {
+		crew = "";
+		faction = "INS";
+		hiddenselectionstextures[] = {"\ca\wheeled3\tt650\data\Yam650_skin1_CO.paa"};
+		scope = 2;
+		side = 0;
+		typicalcargo[] = {};
+	};
+	class V3S_Base;
+	class V3S_Civ: V3S_Base {
+		crew = "";
+		faction = "CIV";
+		rarityurban = 0.3;
+		scope = 2;
+		side = 3;
+		typicalcargo[] = {};
+		class Library {
+			libtextdesc = "The V3S is a Czech-made military 6x6 cargo truck capable of carrying cargo up to 5 tons, or up to 3 tons in rough terrain.<br/>This one is a harmless civilian vehicle.";
+		};
+	};
+	class SkodaBase;
+	 class car_hatchback: SkodaBase {
+		armorcrash0[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_01", 0.707946, 1, 200};
+		armorcrash1[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_02", 0.707946, 1, 200};
+		armorcrash2[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_03", 0.707946, 1, 200};
+		armorcrash3[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_04", 0.707946, 1, 200};
+		brakedistance = 10;
+		buildcrash0[] = {"Ca\sounds\Vehicles\Crash\crash_building_01", 0.707946, 1, 200};
+		buildcrash1[] = {"Ca\sounds\Vehicles\Crash\crash_building_02", 0.707946, 1, 200};
+		buildcrash2[] = {"Ca\sounds\Vehicles\Crash\crash_building_03", 0.707946, 1, 200};
+		buildcrash3[] = {"Ca\sounds\Vehicles\Crash\crash_building_04", 0.707946, 1, 200};
+		cargoaction[] = {"Hatchback_Cargo01"};
+		cargoiscodriver[] = {1, 0};
+		crew = "";
+		displayname = "Old hatchback";
+		driveraction = "Hatchback_Driver";
+		faction = "CIV";
+		hiddenselections[] = {"Camo1"};
+		hiddenselectionstextures[] = {"\ca\wheeled\data\hatchback_co.paa"};
+		icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
+		mapsize = 6;
+		maxspeed = 125;
+		model = "\ca\Wheeled\car_hatchback";
+		picture = "\Ca\wheeled\data\ico\car_hatchback_CA.paa";
+		rarityurban = 0.6;
+		scope = 2;
+		soundarmorcrash[] = {"ArmorCrash0", 0.25, "ArmorCrash1", 0.25, "ArmorCrash2", 0.25, "ArmorCrash3", 0.25};
+		soundbuildingcrash[] = {"buildCrash0", 0.25, "buildCrash1", 0.25, "buildCrash2", 0.25, "buildCrash3", 0.25};
+		soundengineoffext[] = {"ca\sounds\vehicles\Wheeled\sedan\ext\ext-sedan-stop-1", 0.398107, 1, 250};
+		soundengineoffint[] = {"ca\sounds\vehicles\Wheeled\sedan\int\int-sedan-stop-1", 0.398107, 1};
+		soundengineonext[] = {"ca\sounds\vehicles\Wheeled\sedan\ext\ext-sedan-start-1", 0.398107, 1, 250};
+		soundengineonint[] = {"ca\sounds\vehicles\Wheeled\sedan\int\int-sedan-start-1", 0.398107, 1};
+		soundgear[] = {"", "5.62341e-005", 1};
+		soundgetin[] = {"ca\sounds\vehicles\Wheeled\sedan\ext\ext-sedan-getout-1", 0.316228, 1};
+		soundgetout[] = {"ca\sounds\vehicles\Wheeled\sedan\ext\ext-sedan-getout-1", 0.316228, 1, 30};
+		soundwoodcrash[] = {"woodCrash0", 0.166, "woodCrash1", 0.166, "woodCrash2", 0.166, "woodCrash3", 0.166, "woodCrash4", 0.166, "woodCrash5", 0.166};
+		typicalcargo[] = {};
+		wheelcircumference = 2.148;
+		woodcrash0[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_01", 0.707946, 1, 200};
+		woodcrash1[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_02", 0.707946, 1, 200};
+		woodcrash2[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_03", 0.707946, 1, 200};
+		woodcrash3[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_04", 0.707946, 1, 200};
+		woodcrash4[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_05", 0.707946, 1, 200};
+		woodcrash5[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_06", 0.707946, 1, 200};
+		class SoundEvents {
+			class AccelerationIn {
+				expression = "(engineOn*(1-camPos))*gmeterZ";
+				limit = 0.5;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\sedan\int\int-sedan-acce-1", 0.398107, 1};
+			};
+			class AccelerationOut {
+				expression = "(engineOn*camPos)*gmeterZ";
+				limit = 0.5;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\sedan\ext\ext-sedan-acce-1", 0.398107, 1, 250};
+			};
+		};
+		class Sounds {
+			class Engine {
+				frequency = "(randomizer*0.05+0.95)*rpm";
+				sound[] = {"\ca\sounds\Vehicles\Wheeled\sedan\ext\ext-sedan-low-1", 0.398107, 0.9, 300};
+				volume = "engineOn*camPos*(rpm factor[0.6, 0.2])";
+			};
+			class EngineHighOut {
+				frequency = "(randomizer*0.05+0.95)*rpm";
+				sound[] = {"\ca\sounds\Vehicles\Wheeled\sedan\ext\ext-sedan-high-1", 0.398107, 0.8, 380};
+				volume = "engineOn*camPos*(rpm factor[0.45, 0.9])";
+			};
+			class IdleOut {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\sedan\ext\ext-sedan-idle-1", 0.281838, 1, 200};
+				volume = "engineOn*camPos*(rpm factor[0.3, 0])";
+			};
+			class TiresRockOut {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2", 0.316228, 1, 30};
+				volume = "camPos*rock*(speed factor[2, 20])";
+			};
+			class TiresSandOut {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2", 0.316228, 1, 30};
+				volume = "camPos*sand*(speed factor[2, 20])";
+			};
+			class TiresGrassOut {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3", 0.316228, 1, 30};
+				volume = "camPos*grass*(speed factor[2, 20])";
+			};
+			class TiresMudOut {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2", 0.316228, 1, 30};
+				volume = "camPos*mud*(speed factor[2, 20])";
+			};
+			class TiresGravelOut {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2", 0.316228, 1, 30};
+				volume = "camPos*gravel*(speed factor[2, 20])";
+			};
+			class TiresAsphaltOut {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3", 0.316228, 1, 30};
+				volume = "camPos*asphalt*(speed factor[2, 20])";
+			};
+			class NoiseOut {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\int-noise3", 0.316228, 1, 30};
+				volume = "camPos*(damper0 max 0.04)*(speed factor[0, 8])";
+			};
+			class EngineLowIn {
+				frequency = "(randomizer*0.05+0.95)*rpm";
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\sedan\int\int-sedan-low-1", 0.562341, 0.8};
+				volume = "((engineOn*thrust) factor[0.65, 0.2])*(1-camPos)";
+			};
+			class EngineHighIn {
+				frequency = "(randomizer*0.05+0.95)*rpm";
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\sedan\int\int-sedan-high-1", 0.562341, 0.8};
+				volume = "((engineOn*thrust) factor[0.55, 0.95])*(1-camPos)";
+			};
+			class IdleIn {
+				frequency = 1;
+				sound[] = {"\ca\sounds\Vehicles\Wheeled\sedan\int\int-sedan-idle-1", 0.316228, 1};
+				volume = "engineOn*(rpm factor[0.3, 0])*(1-camPos)";
+			};
+			class TiresRockIn {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2", 0.177828, 1};
+				volume = "(1-camPos)*rock*(speed factor[2, 20])";
+			};
+			class TiresSandIn {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2", 0.177828, 1};
+				volume = "(1-camPos)*sand*(speed factor[2, 20])";
+			};
+			class TiresGrassIn {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3", 0.177828, 1};
+				volume = "(1-camPos)*grass*(speed factor[2, 20])";
+			};
+			class TiresMudIn {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2", 0.177828, 1};
+				volume = "(1-camPos)*mud*(speed factor[2, 20])";
+			};
+			class TiresGravelIn {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2", 0.177828, 1};
+				volume = "(1-camPos)*gravel*(speed factor[2, 20])";
+			};
+			class TiresAsphaltIn {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3", 0.177828, 1};
+				volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
+			};
+			class NoiseIn {
+				frequency = 1;
+				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\int\noise3", 0.177828, 1};
+				volume = "(damper0 max 0.04)*(speed factor[0, 8])*(1-camPos)";
+			};
+			class Movement {
+				frequency = 1;
+				sound = "soundEnviron";
+				volume = 0;
+			};
+		};
+		class Damage {
+			mat[] = {"ca\wheeled\data\hatchback.rvmat", "ca\wheeled\data\hatchback.rvmat", "ca\wheeled\data\hatchback_destruct.rvmat", "ca\wheeled\data\hatchback.rvmat", "ca\wheeled\data\hatchback.rvmat", "ca\wheeled\data\hatchback_destruct.rvmat", "ca\wheeled\data\detailmapy\auta_skla.rvmat", "ca\wheeled\data\detailmapy\auta_skla_damage.rvmat", "ca\wheeled\data\detailmapy\auta_skla_damage.rvmat", "ca\wheeled\data\detailmapy\auta_skla_in.rvmat", "ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat", "ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
+			tex[] = {};
+		};
+		class Library {
+			libtextdesc = "Civilian Car";
+		};
+	};
+	class UAZ_Unarmed_Base;
+	class UAZ_CDF: UAZ_Unarmed_Base {
+		accuracy = 0.3;
+		crew = "";
+		faction = "CDF";
+		hiddenselectionstextures[] = {"\ca\wheeled\data\Uaz_main_002_CO.paa"};
+		scope = 2;
+		side = 1;
+		typicalcargo[] = {};
 	};
 	class MH6J_DZ: AH6_Base_EP1
 	{
@@ -1544,6 +1908,36 @@ class CfgVehicles {
 				brightness = 0;
 				blinking = 0;
 			};
+		};
+	};
+	class WeaponHolderBase;
+	class WoodenArrowF : WeaponHolderBase {
+		scope = public;
+		displayName = "WoodenArrowF";
+		model = "\dayz_weapons\models\bolt";
+		
+		class eventHandlers {
+			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};	
+	class WeaponHolder_ItemCrowbar: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Crowbar";
+		model="\dayz_equip\models\crowbar.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemMachete: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Machete";
+		model="\z\addons\dayz_communityassets\models\machete.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 };

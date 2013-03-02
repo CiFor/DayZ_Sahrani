@@ -1,6 +1,5 @@
 class CfgPatches {
-	class dayz_anim
-	{
+	class dayz_anim {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
@@ -9,8 +8,7 @@ class CfgPatches {
 	};
 };
 
-class CfgMarkers
-{
+class CfgMarkers {
 	class Empty;
 	class Faction_US: Empty {};
 	class Faction_USMC: Empty {};
@@ -188,8 +186,7 @@ class CfgMarkers
 };
 
 
-class CfgAmmo
-{
+class CfgAmmo {
 	class FakeAmmo;
 	class MissileCore: FakeAmmo {};
 	class BombCore: FakeAmmo {};
@@ -268,7 +265,7 @@ class CfgAmmo
 	class R_57mm_HE: FakeAmmo {};
 	class R_80mm_HE: FakeAmmo {};
 	class R_S8T_AT: FakeAmmo {};
-	class R_M136_AT: FakeAmmo {};
+	//class R_M136_AT: FakeAmmo {};
 	class R_RPG18_AT: FakeAmmo {};
 	class R_PG7V_AT: FakeAmmo {};
 	class R_PG7VL_AT: FakeAmmo {};
@@ -434,8 +431,7 @@ class CfgAmmo
 	//class B_556x45_Ball_airLock: FakeAmmo {};
 };
 
-class CfgMagazines
-{
+class CfgMagazines {
 	class Default;
 	class FakeMagazine: Default
 	{
@@ -1019,7 +1015,7 @@ class CfgWeapons {
 	//class L85A2_base_BAF: FakeWeapon {};
 	//class BAF_L85A2_RIS_Holo: FakeWeapon {};
 	class BAF_L85A2_UGL_Holo: FakeWeapon {};
-	class BAF_L85A2_RIS_SUSAT: FakeWeapon {};
+	//class BAF_L85A2_RIS_SUSAT: FakeWeapon {};
 	class BAF_L85A2_UGL_SUSAT: FakeWeapon {};
 	//class BAF_L85A2_RIS_ACOG: FakeWeapon {};
 	class BAF_L85A2_UGL_ACOG: FakeWeapon {};
@@ -1098,7 +1094,7 @@ class CfgWeapons {
 	class SCAR_Base: FakeWeapon {};
 	//class SCAR_L_Base: FakeWeapon {};
 	//class SCAR_L_CQC: FakeWeapon {};
-	//class SCAR_L_CQC_Holo: FakeWeapon {};
+	class SCAR_L_CQC_Holo: FakeWeapon {};
 	class SCAR_L_STD_Mk4CQT: FakeWeapon {};
 	class SCAR_L_STD_EGLM_RCO: FakeWeapon {};
 	class SCAR_L_CQC_EGLM_Holo: FakeWeapon {};

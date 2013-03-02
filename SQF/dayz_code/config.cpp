@@ -22,21 +22,53 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {"dayz_equip","dayz_weapons","CAMisc3","CABuildingParts","CABuildingParts_Signs","CAStructuresHouse","CAStructuresLand_Ind_Stack_Big","CAStructures_Misc_Powerlines","CAStructures","CABuildings","CABuildings2","Ind_MalyKomin","CAStructures_A_CraneCon","CAStructures_Mil","CAStructures_Nav","CAStructures_Rail","A_Crane_02","A_TVTower","CAStructures_Railway","CAStructuresHouse","CAStructuresHouse_HouseBT"};
 	};
+	class DZ_DebriefingRemoved
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"CAUI"};
+	};
 };
 
 class CfgMods
 {
 	class DayZ
 	{
-		dir = "DayZSahrani";
-		name = "DayZSahrani";
+		dir = "DayZ_Sahrani";
+		name = "DayZ Sahrani";
 		picture = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
 		hidePicture = 0;
 		hideName = 0;
 		action = "";
-		version = "0.2";
+		version = "0.3";
 		hiveVersion = 0.96; //0.93
 	};
+	class DZ_InitWorld
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"Chernarus"};
+	};
+};
+
+
+class CfgMissions
+{
+	 class Cutscenes
+	 {
+	  class ChernarusIntro1
+		  {
+			directory = "z\addons\dayz_code\cfgworlds\intro.Chernarus";
+		  };
+	 };
+};
+
+class CfgWorlds
+{
+        initWorld = "Chernarus";
+        demoWorld = "Chernarus";
 };
 
 class CfgAddons
@@ -59,11 +91,11 @@ class CfgAISkill {
 	aimingshake[] = {0, 0, 1, 1};
 	aimingspeed[] = {0, 0, 1, 1};
 	commanding[] = {0, 0, 1, 1};
-	courage[] = {0, 0, 1, 1};
+	courage[] = {0, 1, 1, 1};
 	endurance[] = {0, 0, 1, 1};
 	general[] = {0, 0, 1, 1};
 	reloadspeed[] = {0, 0, 1, 1};
-	spotdistance[] = {0, 0, 1, 1};
+	spotdistance[] = {0, 0, 1, 0.6};
 	spottime[] = {0, 0, 1, 1};
 };
 
@@ -73,6 +105,7 @@ class CfgInGameUI
     {
         cueColor[] = {0,0,0,0};
     };
+	
 	
 	class MPTable
 	{
@@ -164,6 +197,7 @@ class RscPictureGUI
 	h = 0.15;
 };
 
+
 class RscStructuredText {
 	class Attributes;
 };
@@ -185,6 +219,7 @@ class RscStructuredTextGUI: RscStructuredText
 #include "CfgMagazines.hpp"
 #include "cfgLoot.hpp"
 #include "CfgMarkers.hpp"
+#include "CfgAmmo.hpp"
 
 class CfgSurvival {
 	class Inventory {
@@ -275,20 +310,22 @@ class CfgBuildingLoot {
 			{"LeeEnfield","weapon"},
 			{"revolver_EP1","weapon"},
 			
-			{"DZ_Patrol_Pack_EP1","object"}, //8
 			{"DZ_Assault_Pack_EP1","object"}, // 12
 			{"DZ_Czech_Vest_Puch","object"}, // 12-0
+			{"DZ_ALICE_Pack_EP1","object"}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
+			{"DZ_British_ACU","object"}, // 18
 			
 			{"Winchester1866","weapon"},
 			{"WeaponHolder_ItemTent","object"},
 			{"","military"},
 			{"","trash"},
-			{"Crossbow","weapon"},
+			{"Crossbow_DZ","weapon"},
 			{"Binocular","weapon"},
 			{"PartWoodPile","magazine"},
 			{"Skin_Camo1_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
-			{"WeaponHolder_MeleeCrowbar","object"},
+			{"WeaponHolder_ItemCrowbar","object"},
 			{"MR43","weapon"}
 		};
 		itemChance[] =	{
@@ -299,16 +336,18 @@ class CfgBuildingLoot {
 			0.03,
 			0.13,
 			0.05,
-			0.05,
+			0.03,
 			0.03,
 			0.08,
 			0.06,
 			2,
 			0.06,
 			0.04,
-			0.04, //8
-			0.01, //12
-			0.03, //12-0
+			0.05, //12
+			0.04, // 12-0
+			0.02, //16
+			0.02, //16
+			0.01, //18
 			0.01,
 			0.01,
 			0.03,
@@ -367,7 +406,7 @@ class CfgBuildingLoot {
 			0.07,
 			0.06,
 			0.01,
-			0.01,
+			0.07
 			0.04
 		};
 	};
@@ -384,11 +423,11 @@ class CfgBuildingLoot {
 			{"LeeEnfield","weapon"},
 			{"Winchester1866","weapon"},
 			{"","trash"},
-			{"Crossbow","weapon"},
+			{"Crossbow_DZ","weapon"},
 			{"PartWoodPile","magazine"},
 			{"WeaponHolder_ItemHatchet","object"},
 			{"MR43","weapon"},
-			{"TrapBear","magazine"}
+			{"WeaponHolder_ItemMachete"}
 		};
 		itemChance[] =	{
 			0.06,
@@ -401,7 +440,7 @@ class CfgBuildingLoot {
 			0.11,
 			0.17,
 			0.06,
-			0.01
+			0.03
 		};
 	};
 	class Supermarket: Default {
@@ -424,15 +463,17 @@ class CfgBuildingLoot {
 			{"LeeEnfield","weapon"},
 			{"revolver_EP1","weapon"},
 					
-			{"DZ_Patrol_Pack_EP1","object"}, //8
 			{"DZ_Assault_Pack_EP1","object"}, // 12
 			{"DZ_Czech_Vest_Puch","object"}, // 12-0
+			{"DZ_ALICE_Pack_EP1","object"}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
+			{"DZ_British_ACU","object"}, // 18
 			
 			{"Winchester1866","weapon"},
 			{"WeaponHolder_ItemTent","object"},
 			{"","food"},
 			{"","trash"},
-			{"Crossbow","weapon"},
+			{"Crossbow_DZ","weapon"},
 			{"Binocular","weapon"},
 			{"PartWoodPile","magazine"},
 			{"MR43","weapon"}
@@ -450,9 +491,11 @@ class CfgBuildingLoot {
 			0.05,
 			0.01,
 			0.01,
-			0.04, //8
-			0.01, //12
-			0.03, // 12-0
+			0.05, //12
+			0.04, // 12-0
+			0.02, //16
+			0.02, //16
+			0.01, //18
 			0.01,
 			0.01,
 			0.3,
@@ -479,7 +522,6 @@ class CfgBuildingLoot {
 			{"BAF_AS50_scoped","weapon"},
 			{"Mk_48_DZ","weapon"},
 			{"M249_DZ","weapon"},
-			//{"BAF_L85A2_RIS_CWS","weapon"},
 			{"BAF_L85A2_RIS_SUSAT","weapon"},
 			{"DMR","weapon"},
 			{"","military"},
@@ -492,6 +534,7 @@ class CfgBuildingLoot {
 			{"Skin_Sniper1_DZ","magazine"},
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
+			//{"G36_C_SD_camo","weapon"},
 			{"G36A_camo","weapon"},
 			{"G36K_camo","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
@@ -513,83 +556,7 @@ class CfgBuildingLoot {
 			0.01,		//{"BAF_AS50_scoped","weapon"},
 			0.03,		//{"Mk_48_DZ","weapon"},
 			0.05,		//{"M249_DZ","weapon"},
-			0.01,		//{"BAF_L85A2_RIS_CWS","weapon"}, BAF_L85A2_RIS_SUSAT
-			0.06,		//{"DMR","weapon"},
-			1,			//{"","military"},
-			0.5,		//{"","medical"},
-			0.1,		//{"MedBox0","object"},
-			0.02,		//{"NVGoggles","weapon"}
-			0.1,	//AmmoBoxSmall_556
-			0.1,	//AmmoBoxSmall_762
-			0.08,	//Skin_Camo1_DZ
-			0.05,	//Skin_Sniper1_DZ
-			0.03,	//G36C"
-			0.02,	//G36C_camo
-			0.02,	//G36A_camo
-			0.02,	//G36K_camo
-			0.01,	//("100Rnd_762x54_PK","magazine"}
-			0.01,	//("100Rnd_762x54_PK","magazine"}
-			0.01,	//("M40A3","weapon"}
-			0.01,	//("m8_SAW","weapon"}
-			0.01,	//("m8_sharpshooter","weapon"}
-			0.01,	//("BAF_L85A2_RIS_ACOG","weapon"}
-			0.01,	//("VSS_vintorez","weapon"}
-			0.01,	//("SVD","weapon"}
-			0.01	//("SVD_CAMO","weapon"}
-		};
-	};
-	class HeliCrash_No50s: Default {
-		zombieChance = 0.4;
-		maxRoaming = 2;
-		zombieClass[] = {"z_soldier_pilot"};
-		lootChance = 0.5;
-		lootPos[] = {};
-		itemType[] =	{		
-			{"FN_FAL","weapon"},
-			{"bizon_silenced","weapon"},
-			{"bizon","weapon"},
-			{"M14_EP1","weapon"},
-			{"FN_FAL_ANPVS4","weapon"},
-//			{"M107_DZ","weapon"},
-//			{"BAF_AS50_scoped","weapon"},
-			{"Mk_48_DZ","weapon"},
-			{"M249_DZ","weapon"},
-			//{"BAF_L85A2_RIS_CWS","weapon"},
-			{"BAF_L85A2_RIS_SUSAT","weapon"},
-			{"DMR","weapon"},
-			{"","military"},
-			{"","medical"},
-			{"MedBox0","object"},
-			{"NVGoggles","weapon"},
-			{"AmmoBoxSmall_556","object"},
-			{"AmmoBoxSmall_762","object"},
-			{"Skin_Camo1_DZ","magazine"},
-			{"Skin_Sniper1_DZ","magazine"},
-			{"G36C","weapon"},
-			{"G36C_camo","weapon"},
-			//{"G36_C_SD_camo","weapon"},
-			{"G36A_camo","weapon"},
-			{"G36K_camo","weapon"},
-			{"100Rnd_762x54_PK","magazine"},
-			{"M40A3","weapon"},
-			{"m8_SAW","weapon"},
-			{"m8_sharpshooter","weapon"},
-			{"VSS_vintorez","weapon"},
-			{"BAF_L85A2_RIS_ACOG","weapon"},
-			{"SVD","weapon"},
-			{"SVD_CAMO","weapon"}
-		};
-		itemChance[] =	{
-			0.02,		//{"FN_FAL","weapon"},
-			0.05,		//{"bizon_silenced","weapon"},
-			0.03,		//{"bizon","weapon"},
-			0.05,		//{"M14_EP1","weapon"},
-			0.02,		//{"FN_FAL_ANPVS4","weapon"},
-//			0.02,		//{"m107","weapon"},
-//			0.01,		//{"BAF_AS50_scoped","weapon"},
-			0.03,		//{"Mk_48_DZ","weapon"},
-			0.05,		//{"M249_DZ","weapon"},
-			0.01,		//{"BAF_L85A2_RIS_CWS","weapon"}, BAF_L85A2_RIS_Holo
+			0.01,		//{"BAF_L85A2_RIS_SUSAT","weapon"},
 			0.06,		//{"DMR","weapon"},
 			1,			//{"","military"},
 			0.5,		//{"","medical"},
@@ -612,6 +579,77 @@ class CfgBuildingLoot {
 			0.01,	//("VSS_vintorez","weapon"}
 			0.01,	//("SVD","weapon"}
 			0.01	//("SVD_CAMO","weapon"}
+		};
+	};
+	class HeliCrash_No50s: Default {
+		zombieChance = 0.4;
+		maxRoaming = 2;
+		zombieClass[] = {"z_soldier_pilot"};
+		lootChance = 0.5;
+		lootPos[] = {};
+		itemType[] =	{		
+			{"FN_FAL","weapon"},
+			{"bizon_silenced","weapon"},
+			{"bizon","weapon"},
+			{"M14_EP1","weapon"},
+			{"FN_FAL_ANPVS4","weapon"},
+			{"Mk_48_DZ","weapon"},
+			{"M249_DZ","weapon"},
+			{"BAF_L85A2_RIS_SUSAT","weapon"},
+			{"DMR","weapon"},
+			{"","military"},
+			{"","medical"},
+			{"MedBox0","object"},
+			{"NVGoggles","weapon"},
+			{"AmmoBoxSmall_556","object"},
+			{"AmmoBoxSmall_762","object"},
+			{"Skin_Camo1_DZ","magazine"},
+			{"Skin_Sniper1_DZ","magazine"},
+			{"G36C","weapon"},
+			{"G36C_camo","weapon"},
+			//{"G36_C_SD_camo","weapon"},
+			{"G36A_camo","weapon"},
+			{"G36K_camo","weapon"},
+			{"M40A3","weapon"},
+			{"m8_SAW","weapon"},
+			{"m8_sharpshooter","weapon"},
+			{"VSS_vintorez","weapon"},
+			{"BAF_L85A2_RIS_ACOG","weapon"},
+			{"SVD","weapon"},
+			{"SVD_CAMO","weapon"},
+			{"100Rnd_762x54_PK","magazine"}
+		};
+		itemChance[] =	{
+			0.02,		//{"FN_FAL","weapon"},
+			0.05,		//{"bizon_silenced","weapon"},
+			0.03,		//{"bizon","weapon"},
+			0.05,		//{"M14_EP1","weapon"},
+			0.02,		//{"FN_FAL_ANPVS4","weapon"},
+			0.03,		//{"Mk_48_DZ","weapon"},
+			0.05,		//{"M249_DZ","weapon"},
+			0.01,		//{"BAF_L85A2_RIS_SUSAT","weapon"},
+			0.06,		//{"DMR","weapon"},
+			1,			//{"","military"},
+			0.5,		//{"","medical"},
+			0.1,		//{"MedBox0","object"},
+			0.02,		//{"NVGoggles","weapon"}
+			0.1,	//AmmoBoxSmall_556
+			0.1,	//AmmoBoxSmall_762
+			0.08,	//Skin_Camo1_DZ
+			0.05,	//Skin_Sniper1_DZ
+			0.03,	//G36C"
+			0.02,	//G36C_camo
+			//0.01,	//G36_C_SD_camo
+			0.02,	//G36A_camo
+			0.02,	//G36K_camo
+			0.01,	//("M40A3","weapon"}
+			0.01,	//("m8_SAW","weapon"}
+			0.01,	//("m8_sharpshooter","weapon"}
+			0.01,	//("BAF_L85A2_RIS_ACOG","weapon"}
+			0.01,	//("VSS_vintorez","weapon"}
+			0.01,	//("SVD","weapon"}
+			0.01,	//("SVD_CAMO","weapon"}
+			0.01	//("100Rnd_762x54_PK","magazine"}
 		};
 	};
 	class Hospital: Default {
@@ -676,6 +714,7 @@ class CfgBuildingLoot {
 			{"","medical"},
 			{"","generic"},
 			{"","military"},
+			//{"Body","object"},
 			{"ItemEtool","weapon"},
 			{"ItemSandbag","magazine"},
 			{"Sa58P_EP1","weapon"},
@@ -684,7 +723,6 @@ class CfgBuildingLoot {
 			{"MakarovSD","weapon"},
 			{"Sa61_EP1","weapon"},
 			{"SCAR_L_CQC","weapon"},
-			{"SCAR_L_CQC_Holo","weapon"},
 			{"AK_107_pso","weapon"},
 			{"AK_107_kobra","weapon"},
 			{"AK_107_GL_kobra","weapon"},
@@ -693,7 +731,8 @@ class CfgBuildingLoot {
 			{"m8_carbine","weapon"},
 			{"m8_carbineGL","weapon"},
 			{"m8_compact","weapon"},
-			{"SVD","weapon"}
+			{"SVD","weapon"},
+			{"BAF_L85A2_RIS_Holo","weapon"}
 		};
 		itemChance[] =	{
 			0.05,
@@ -731,15 +770,14 @@ class CfgBuildingLoot {
 			0.10, 
 			1.00,
 			2.50,
+			//0.20,
 			0.05,
 			0.02,
 			0.03,
 			0.03,
-			
 			0.03, //MakarovSD
 			0.03, //Sa61_EP1
-			0.04, //SCAR_L_CQC
-			0.02, //SCAR_L_CQC_Holo
+			0.02, //SCAR_L_CQC
 			0.01, //AK_107_pso
 			0.03, //AK_107_kobra
 			0.03, //AK_107_GL_kobra
@@ -748,7 +786,8 @@ class CfgBuildingLoot {
 			0.04, //m8_carbine
 			0.04, //m8_carbineGL
 			0.04, //m8_compact
-			0.01  //SVD
+			0.01,  //SVD
+			0.01
 		};
 	};
 	class MilitarySpecial: Default {
@@ -763,6 +802,7 @@ class CfgBuildingLoot {
 			{"M16A2GL","weapon"},
 			{"M249_DZ","weapon"},
 			{"M9SD","weapon"},
+			//{"M136","weapon"},
 			{"AK_74","weapon"},
 			{"M4A1_Aim","weapon"},
 			{"AKS_74_kobra","weapon"},
@@ -788,6 +828,7 @@ class CfgBuildingLoot {
 			{"AmmoBoxSmall_556","object"},
 			{"AmmoBoxSmall_762","object"},
 
+			//{"NVGoggles","weapon"},
 			{"Binocular","weapon"},
 			{"ItemFlashlightRed","military"},
 			{"ItemKnife","military"},
@@ -804,13 +845,13 @@ class CfgBuildingLoot {
 			{"","medical"},
 			{"","generic"},
 			{"","military"},
+			//{"Body","object"},
 			{"PipeBomb","magazine"},
 			{"Sa58V_RCO_EP1","weapon"},
 			{"Sa58V_CCO_EP1","weapon"},
-			{"G36_C_SD_camo","weapon"},
+			//{"G36_C_SD_camo","weapon"},
 			{"M40A3","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
-			
 			{"MakarovSD","weapon"},
 			{"Sa61_EP1","weapon"},
 			{"SCAR_L_CQC","weapon"},
@@ -824,12 +865,14 @@ class CfgBuildingLoot {
 			{"m8_carbineGL","weapon"},
 			{"m8_compact","weapon"},
 			{"SVD","weapon"}
+
 		};
 		itemChance[] =	{
 			0.10,
 			0.05,
 			0.01,
 			0.02,
+			//0.01, //m136
 			0.10,
 			0.02,
 			0.10,
@@ -853,6 +896,7 @@ class CfgBuildingLoot {
 			0.08,
 			0.04,
 			0.02,
+			//0.01, //NVGoggles
 			0.10,
 			0.05,
 			0.15,
@@ -868,13 +912,13 @@ class CfgBuildingLoot {
 			0.30,
 			1.00,
 			5.00, //military
+			//0.20,
 			0.01, //PipeBomb
 			0.01, //Sa58V_RCO_EP1
 			0.01, //Sa58V_CCO_EP1
-			0.01, //{"G36_C_SD_camo","weapon"},
+			//0.01, //{"G36_C_SD_camo","weapon"},
 			0.02, // M40A3
-			0.01,  //("100Rnd_762x54_PK","magazine"}
-			
+			0.01,	//("100Rnd_762x54_PK","magazine"}
 			0.03, //MakarovSD
 			0.03, //Sa61_EP1
 			0.04, //SCAR_L_CQC
@@ -888,8 +932,42 @@ class CfgBuildingLoot {
 			0.04, //m8_carbineGL
 			0.04, //m8_compact
 			0.01  //SVD
+
 		};
 	};
+	class Hunting: Default {
+		zombieChance = 0.4;
+		minRoaming = 1;
+		maxRoaming = 3;
+		zombieClass[] = {"z_hunter","z_hunter","z_hunter"};
+		lootChance = 1;
+		lootPos[] = {};
+		itemType[] =	{
+			{"ItemMap","weapon"},
+			{"ItemCraftingBook3","weapon"},
+			{"ItemFlashlight","generic"},
+			{"ItemKnife","generic"},
+			{"ItemMatchbox","generic"},
+			{"Crossbow_DZ","weapon"},
+			{"","military"},
+			{"WeaponHolder_ItemMachete", "object"},
+			{"huntingrifle","weapon"},
+			{"","hunter"}
+		};
+		itemChance[] =	{
+			0.08,
+			0.02,
+			0.05,
+			0.04,
+			0.06,
+			0.03,
+			2.00,
+			0.03,
+			0.04,
+			3.00
+		};
+	};
+	
 	class Church: Residential {
 		minRoaming = 1;
 		maxRoaming = 3;
@@ -898,27 +976,27 @@ class CfgBuildingLoot {
 	
 		class Land_army_hut_int : Military {
 		maxRoaming = 3;
-		lootPos[] = {{1.64453, -5.52002, -1.33056}, {0.53125, 1.72607, -1.36391}};
+		lootPos[] = {{1.64453, -5.52002, -1.33056},{0.53125, 1.72607, -1.36391}};
 	};
 	
 	class Land_garaz_s_tankem : Military {
 		maxRoaming = 3;
-		lootPos[] = {{-6.38477, 3.67871, -2.49103}, {3.28027, 0.556641, -2.49103}};
+		lootPos[] = {{-6.38477, 3.67871, -2.49103},{3.28027, 0.556641, -2.49103}};
 	};
 	
 	class Land_army_hut3_long_int : Military {
 		maxRoaming = 3;
-		lootPos[] = {{-1.72803, -0.726563, -1.23617}, {-2.26416, -4.87402, -1.23617}, {-0.449219, 3.71338, -1.23617}};
+		lootPos[] = {{-1.72803, -0.726563, -1.23617},{-2.26416, -4.87402, -1.23617},{-0.449219, 3.71338, -1.23617}};
 	};
 	
 	class Land_army_hut2_int : Military {
 		maxRoaming = 3;
-		lootPos[] = {{0.703369, 0.560547, -0.948328}, {1.6875, -2.17627, -0.948328}};
+		lootPos[] = {{0.703369, 0.560547, -0.948328},{1.6875, -2.17627, -0.948328}};
 	};
 	
 	class Land_army_hut2 : Military {
 		maxRoaming = 3;
-		lootPos[] = {{0.703369, 0.560547, -0.948328}, {1.6875, -2.17627, -0.948328}};
+		lootPos[] = {{0.703369, 0.560547, -0.948328},{1.6875, -2.17627, -0.948328}};
 	};
 	
 	class Land_posed : Military {
@@ -928,7 +1006,7 @@ class CfgBuildingLoot {
 	
 	class Land_army_hut_storrage : Military {
 		maxRoaming = 3;
-		lootPos[] = {{0.847168, -2.55713, -1.96141}, {0.608887, 2.79443, -1.96141}};
+		lootPos[] = {{0.847168, -2.55713, -1.96141},{0.608887, 2.79443, -1.96141}};
 	};
 	
 	class Land_hlaska : Military {
@@ -938,27 +1016,27 @@ class CfgBuildingLoot {
 	
 	class Land_cihlovej_dum_in : Residential {
 		maxRoaming = 5;
-		lootPos[] = {{1.87744, 2.37598, -5.27588}, {-1.71484, 1.78711, -1.8147}, {0.640137, -1.39795, -1.81472}};
+		lootPos[] = {{1.87744, 2.37598, -5.27588},{-1.71484, 1.78711, -1.8147},{0.640137, -1.39795, -1.81472}};
 	};
 	
 	class Land_dum_mesto_in : Residential {
 		maxRoaming = 5;
-		lootPos[] = {{-4.72754, -0.462402, -4.23207}, {5.52393, -1.52441, -4.21337}, {-4.91895, 3.55244, -4.27988}, {5.21289, 2.88672, -1.42627}, {5.27441, -1.26953, -1.23014}, {-3.92676, 4.32178, -1.56758}, {-3.1626, -0.688477, -1.22935}};
+		lootPos[] = {{-4.72754, -0.462402, -4.23207},{5.52393, -1.52441, -4.21337},{-4.91895, 3.55244, -4.27988},{5.21289, 2.88672, -1.42627},{5.27441, -1.26953, -1.23014},{-3.92676, 4.32178, -1.56758},{-3.1626, -0.688477, -1.22935}};
 	};
 	
 	class Land_sara_Domek_sedy : Residential {
 		maxRoaming = 3;
-		lootPos[] = {{-1.2832, 0.844727, -2.14196}, {-3.59521, 3.14893, -2.14198}, {4.49568, 2.21338, -2.14196}};
+		lootPos[] = {{-1.2832, 0.844727, -2.14196},{-3.59521, 3.14893, -2.14198},{4.49568, 2.21338, -2.14196}};
 	};
 	
 	class Land_hruzdum : Residential {
 		maxRoaming = 3;
-		lootPos[] = {{1.31641, 2.11475, 1.59321}, {-1.16504, 0.639648, 1.59321}, {0.558594, 2.17696, -1.16265}, {1.32813, 2.17676, -4.73357}};
+		lootPos[] = {{1.31641, 2.11475, 1.59321},{-1.16504, 0.639648, 1.59321},{0.558594, 2.17696, -1.16265},{1.32813, 2.17676, -4.73357}};
 	};
 	
 	class Land_tovarna1 : Industrial {
 		maxRoaming = 5;
-		lootPos[] = {{1.59082, -4.73145, -5.75442}, {-6.48047, -0.56543, -5.75442}, {-9.13379, 4, 4.82972}, {-5.41699, -6.46045, 4.82972}, {3.56592, -7.5332, -0.320107}, {1.1416, -6.83887, 2.17997}, {2.71289, 1.61426, 2.15098}, {-9.21143, -6.28223, 2.17997}};
+		lootPos[] = {{1.59082, -4.73145, -5.75442},{-6.48047, -0.56543, -5.75442},{-9.13379, 4, 4.82972},{-5.41699, -6.46045, 4.82972},{3.56592, -7.5332, -0.320107},{1.1416, -6.83887, 2.17997},{2.71289, 1.61426, 2.15098},{-9.21143, -6.28223, 2.17997}};
 	};
 	
 	class Land_ryb_domek : Residential {
@@ -973,12 +1051,12 @@ class CfgBuildingLoot {
 	
 	class Land_deutshe_mini : Residential {
 		maxRoaming = 3;
-		lootPos[] = {{-1.81348, 2.36963, -2.79262}, {-2.11768, -0.958008, -2.73062}, {3.41357, 0.916504, -2.78435}, {3.76172, -2.10693, -2.73065}};
+		lootPos[] = {{-1.81348, 2.36963, -2.79262},{-2.11768, -0.958008, -2.73062},{3.41357, 0.916504, -2.78435},{3.76172, -2.10693, -2.73065}};
 	};
 	
 	class Land_hotel_riviera1 : Residential {
 		maxRoaming = 3;
-		lootPos[] = {{10.8145, 4.72375, -0.209453}, {2.43164, 6.83557, -0.271956}, {-6.52734, 5.13611, -0.358277}};
+		lootPos[] = {{10.8145, 4.72375, -0.209453},{2.43164, 6.83557, -0.271956},{-6.52734, 5.13611, -0.358277}};
 	};
 	
 	class Land_zalchata : Residential {
@@ -988,12 +1066,12 @@ class CfgBuildingLoot {
 	
 	class Land_hotel_riviera2 : Residential {
 		maxRoaming = 3;
-		lootPos[] = {{-6.81641, -8.87415, -0.227416}, {-6.94629, 2.83325, -0.395831}};
+		lootPos[] = {{-6.81641, -8.87415, -0.227416},{-6.94629, 2.83325, -0.395831}};
 	};
 	
 	class Land_sara_stodola : Farm {
 		maxRoaming = 3;
-		lootPos[] = {{-2.94824, -0.0193848, -2.19523}, {4.08301, -1.0835, -2.19523}};
+		lootPos[] = {{-2.94824, -0.0193848, -2.19523},{4.08301, -1.0835, -2.19523}};
 	};
 	
 	class Land_hut01 : Residential {
@@ -1007,7 +1085,7 @@ class CfgBuildingLoot {
 	};
 	
 	class Land_hospoda_mesto: Residential {
-		lootPos[] = {{5.33691, 4.18164, -5.149056}, {2.87451, -4.98828, -5.17222}, {1.55518, -1.5293, -5.17846}, {-6.48926, -3.0957, -5.17224}, {-0.642578, -4.02344, -5.17224}, {-6.15039, -4.04492, -1.22695}, {2.83838, -1.31641, -1.24297}, {5.75244, 3.92773, -1.2485}};
+		lootPos[] = {{5.33691, 4.18164, -5.149056},{2.87451, -4.98828, -5.17222},{1.55518, -1.5293, -5.17846},{-6.48926, -3.0957, -5.17224},{-0.642578, -4.02344, -5.17224},{-6.15039, -4.04492, -1.22695},{2.83838, -1.31641, -1.24297},{5.75244, 3.92773, -1.2485}};
 	};
 	
 	class Land_hut04 : Residential {
@@ -1017,17 +1095,17 @@ class CfgBuildingLoot {
 	
 	class Land_dulni_bs : Residential {
 		maxRoaming = 1;
-		lootPos[] = {{0.70459, -1.89063, -1.75204}, {0.778809, 1.64063, -1.75206}};
+		lootPos[] = {{0.70459, -1.89063, -1.75204},{0.778809, 1.64063, -1.75206}};
 	};
 	
 	class Land_bouda2_vnitrek : Farm {
 		maxRoaming = 2;
-		lootPos[] = {{-1.34631, 1.36914, -0.610504}, {0.775391, -1.76465, -0.610504}};
+		lootPos[] = {{-1.34631, 1.36914, -0.610504},{0.775391, -1.76465, -0.610504}};
 	};
 	
 	class Land_dum_zboreny : Residential {
 		maxRoaming = 3;
-		lootPos[] = {{3.98828, -2.43848, -2.37674}, {-3.51367, 3.46289, -2.37674}, {6.21875, 4.40234, -2.37674}, {-0.03125, -2.62207, 1.40173}, {-2.28125, 3.90332, 1.40192}, {-5.29883, -2.30957, 1.414438}};
+		lootPos[] = {{3.98828, -2.43848, -2.37674},{-3.51367, 3.46289, -2.37674},{6.21875, 4.40234, -2.37674},{-0.03125, -2.62207, 1.40173},{-2.28125, 3.90332, 1.40192},{-5.29883, -2.30957, 1.414438}};
 	};
 	
 	class Land_dum_zboreny_total : Residential {
@@ -1052,48 +1130,48 @@ class CfgBuildingLoot {
 	
 	class Land_hut_old02 : Industrial {
 		maxRoaming = 5;
-		lootPos[] = {{0.573242, -7.09033, -3.03308}, {0.1875, 0.723145, -3.03308}, {-7.09033, -3.14648, -3.03308}, {-7.18457, 1.79688, -3.03308}};
+		lootPos[] = {{0.573242, -7.09033, -3.03308},{0.1875, 0.723145, -3.03308},{-7.09033, -3.14648, -3.03308},{-7.18457, 1.79688, -3.03308}};
 	};
 	
 	class Land_dum_rasovna : Residential {
 		maxRoaming = 3;
-		lootPos[] = {{1.02197, 3.18604, 0.272606}, {1.36816, 1.83447, -2.66958}};
+		lootPos[] = {{1.02197, 3.18604, 0.272606},{1.36816, 1.83447, -2.66958}};
 	};
 	
 	class Land_sara_zluty_statek_in : Residential {
 		maxRoaming = 3;
-		lootPos[] = {{-8.0752, 3.12695, -2.88265}, {5.53662, -2.125, -2.91741}, {-1.21533, 0.908203, -2.88771}, {-3.49365, 4.92578, -2.87814}, {6.77148, 0.861328, -2.90053}, {2.46338, 1.375, -2.89846}};
+		lootPos[] = {{-8.0752, 3.12695, -2.88265},{5.53662, -2.125, -2.91741},{-1.21533, 0.908203, -2.88771},{-3.49365, 4.92578, -2.87814},{6.77148, 0.861328, -2.90053},{2.46338, 1.375, -2.89846}};
 	};
 	// Third story map up
 	class Land_hotel : Residential {
 		lootChance = 0.5;
 		maxRoaming = 20;
-		lootPos[] = {{6.32813, 15.6167, -0.376892}, {-12.3643, 3.48145, -7.74672}, {-0.821289, 9.6123, -7.74672}, {5.85059, -5.88184, -8.00944}, {-1.4873, -3.58398, -7.74672}, {4.1167, 16.1064, -7.74672}, {3.74854, 2.61426, -7.74672}, {15.5654, 13.417, -7.74671}, {12.814, -3.21484, -7.74672}, {2.71094, -10.3848, -7.74672}, {6.04834, -4.68652, -5.8722}, {-0.930176, -1.91364, -4.25943}, {4.3374, 2.96387, -4.25943}, {15.5142, 16.2598, -4.25943}, {15.8984, 4.9577, -4.25943}, {17.0278, -14, -4.25943}, {3.43115, -13.0674, -4.25944}, {4.10547, 14.9834, 3.21649}, {-2.20313, 12.8359, 3.57263}, {6.47119, -5.25488, -2.4038}, {-1.03418, -2.47559, -0.75906}};
+		lootPos[] = {{6.32813, 15.6167, -0.376892},{-12.3643, 3.48145, -7.74672},{-0.821289, 9.6123, -7.74672},{5.85059, -5.88184, -8.00944},{-1.4873, -3.58398, -7.74672},{4.1167, 16.1064, -7.74672},{3.74854, 2.61426, -7.74672},{15.5654, 13.417, -7.74671},{12.814, -3.21484, -7.74672},{2.71094, -10.3848, -7.74672},{6.04834, -4.68652, -5.8722},{-0.930176, -1.91364, -4.25943},{4.3374, 2.96387, -4.25943},{15.5142, 16.2598, -4.25943},{15.8984, 4.9577, -4.25943},{17.0278, -14, -4.25943},{3.43115, -13.0674, -4.25944},{4.10547, 14.9834, 3.21649},{-2.20313, 12.8359, 3.57263},{6.47119, -5.25488, -2.4038},{-1.03418, -2.47559, -0.75906}};
 	};
 	
 	class Land_dum_istan2 : Residential {
 		maxRoaming = 3;
-		lootPos[] = {{ -5.39941,0.694824,3.80019 }, { 5.82715,-4.5752,0.822979 }, { -6.38525,-4.09766,3.80019 }, { 3.71338,-1.09912,0.822979 }, { -0.486328,-2.90381,0.822979 }};
+		lootPos[] = {{ -5.39941,0.694824,3.80019 },{ 5.82715,-4.5752,0.822979 },{ -6.38525,-4.09766,3.80019 },{ 3.71338,-1.09912,0.822979 },{ -0.486328,-2.90381,0.822979 }};
 	};
 	
 	class Land_dum_istan3 : Residential {
 		maxRoaming = 3;
-		lootPos[] = {{ -7.49463,-1.50439,0.585144 }, { -10.3994,-4.03662,-1.10769 }, { -3.33594,-1.15234,0.585143 }, { 9.63916,-0.274414,0.585144 }, { 4.73975,-4.78345,0.585144 }};
+		lootPos[] = {{ -7.49463,-1.50439,0.585144 },{ -10.3994,-4.03662,-1.10769 },{ -3.33594,-1.15234,0.585143 },{ 9.63916,-0.274414,0.585144 },{ 4.73975,-4.78345,0.585144 }};
 	};
 	
 	class Land_dum_istan3_pumpa : Residential {
 		maxRoaming = 5;
-		lootPos[] = {{3.21826, 0.550293, 1.47485}, {-2.80615, 0.327637, 1.47485}};
+		lootPos[] = {{3.21826, 0.550293, 1.47485},{-2.80615, 0.327637, 1.47485}};
 	};
 	
 	class Land_dum_istan3_hromada : Residential {
 		maxRoaming = 2;
-		lootPos[] = {{ -1.52051,-2.9375,-3.24189 }, { -0.0441895,0.201172,-3.24189 }};
+		lootPos[] = {{ -1.52051,-2.9375,-3.24189 },{ -0.0441895,0.201172,-3.24189 }};
 	};
 	
 	class Land_dum_istan3_hromada2 : Residential {
 		maxRoaming = 5;
-		lootPos[] = {{-1.50049, 4.32764, -1.28517}, {-1.12061, -3.42383, -1.28517}, {4.62012, -3.88379, 2.08801}, {6.20166, 2.93652, 2.08801}};
+		lootPos[] = {{-1.50049, 4.32764, -1.28517},{-1.12061, -3.42383, -1.28517},{4.62012, -3.88379, 2.08801},{6.20166, 2.93652, 2.08801}};
 	};
 	
 	class Land_fuelstation : Industrial {
@@ -1108,11 +1186,119 @@ class CfgBuildingLoot {
 	
 	class Land_dum_mesto2 : Residential {
 		maxRoaming = 10;
-		lootPos[] = {{-2.21777, 5.00586, -0.944006}, {1.03662, 6.85107, -0.944006}, {-1.46631, -5.90137, -0.944006}, {0.757324, -3.8291, -0.944006}, {-2.23193, -6.66846, -4.34475}, {-1.34229, -2.26807, -4.34475}, {2.40283, 4.83936, -4.34475}, {-1.56201, 5.76904, -4.34475}};
+		lootPos[] = {{-2.21777, 5.00586, -0.944006},{1.03662, 6.85107, -0.944006},{-1.46631, -5.90137, -0.944006},{0.757324, -3.8291, -0.944006},{-2.23193, -6.66846, -4.34475},{-1.34229, -2.26807, -4.34475},{2.40283, 4.83936, -4.34475},{-1.56201, 5.76904, -4.34475}};
+	};
+	
+	//Extra No loot buildings
+	class land_dum_mesto3 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_sara_domek_kovarna : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum02 : Residential {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
+	class land_dum_mesto : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum_mesto2l : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum_olezlina : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class Land_deutshe : Residential {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
+	class land_dum_istan2_01 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum_istan2_03 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum_olez_istan1 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class land_dum_istan2_04a : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {};
+	};
+	class Land_garaz : Residential {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
+	class Land_garaz_mala : Residential {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
+	class land_budova5 : Industrial {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
+	class land_bouda3 : Industrial {
+		minRoaming = 1;
+		maxRoaming = 2;
+		lootPos[] = {};
+	};
+	
+	//Loot added
+	class land_sara_domek_hospoda : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {{3.89746, -3.92383, -2.55354},{-0.0595703, -4.04492, -2.49121},{-5.12012, -3.85156, -2.4221}};
+	};
+	class land_afdum_mesto3 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {-0.352539, 0.0458984, -5.85629};
+	};
+	class Land_dum_istan4_detaily1 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {{2.70703, -3.2666, -4.33588},{2.68359, -8.11523, -5.92871},{-4.61719, 6.00488, -7.28588},{3.71582, 5.9082, -7.28588}};
+	};
+	class Land_dum_istan4 : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {{2.45923, -2.51367, -4.34236},{2.47852, -7.65332, -5.9352},{-3.98633, 6.0459, -7.24409},{3.0813, 6.1543, -7.24408}};
+	};
+	class Land_dum_istan4_inverse : Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
+		lootPos[] = {{-2.46582, -2.38379, -4.33588},{-2.75195, -7.81934, -5.92871},{4.04785, 6.09424, -7.28588},{-2.27246, 5.96436, -7.28588}};
+	};
+	class land_dum_istan2_02 : Residential {
+		minRoaming = 3;
+		maxRoaming = 5;
+		lootPos[] = {{-1.55566, -2.97949, -4.21303},{-2.35156, 0.222656, 1.52753}};
 	};
 	
 	//Original
-	
 	class Land_HouseV_1I4: Residential {
 		lootPos[] = {{-0.400146,-3.87695,-2.76879},{-3.67749,-2.52002,-2.76551},{-0.472168,3.19702,-2.72021}};
 	};
@@ -1166,9 +1352,6 @@ class CfgBuildingLoot {
 	class Land_Barn_W_01: Farm {
 		lootPos[] = {{4.93188,-17.0444,-2.63063},{-3.82813,-18.6699,-2.63036},{-4.46387,16.6665,-2.63651},{5.78711,18.9473,-2.6369},{3.9541,4.88428,-2.63446},{-2.99072,-4.16748,-2.63287}};
 	};
-	class Land_sara_stodola2: Farm {
-		lootPos[] = {{-2.34375, -1.08008, -2.16877}, {2.80225, 0.824219, -2.16877}};
-	};
 	class Land_Hlidac_budka: Residential {
 		lootPos[] = {{-2.3186,1.5127,-0.78363},{2.02075,0.444336,-0.78363},{-0.460938,1.75879,-0.78363}};
 	};
@@ -1183,18 +1366,7 @@ class CfgBuildingLoot {
 		lootChance = 0.4;
 		lootPos[] = {{10.0703,3.76367,-9.62869},{3.89844,3.43457,-5.46368},{1.75195,5.68164,-5.46368},{6.66113,-0.625488,-1.0687},{2.63965,-0.191406,-1.0687},{6.72266,3.23389,-1.0687}};
 	};
-	class Land_sara_domek_podhradi_1: Residential {
-		lootPos[] = {{2.44629, -3.04883, -2.75808}, {-4.83398, -3.44531, -2.75808}, {-5.2259, 1.2666, -2.75808}};
-	};
-	class Land_Budova4_in: Military {
-		maxRoaming = 3;
-		lootPos[] = {{-5.79492, 2.49512, -1.88723}, {-1.90234, 2.25684, -1.88723}, {1.76758, 2.41406, -1.88723}, {5.89063, -2.04785, -1.88723}};
-	};
 	class Land_SS_hangar: Military {
-		maxRoaming = 3;
-		lootPos[] = {{11.7344,-17.165,-5.87253},{-11.7158,-18.9541,-5.87253},{-14.2461,23.0439,-5.87253}};
-	};
-	class Land_SS_hangard: Military {
 		maxRoaming = 3;
 		lootPos[] = {{11.7344,-17.165,-5.87253},{-11.7158,-18.9541,-5.87253},{-14.2461,23.0439,-5.87253}};
 	};
@@ -1208,11 +1380,6 @@ class CfgBuildingLoot {
 	class Land_A_Hospital: hospital {
 		lootChance = 0.9;
 		lootPos[] = {{0.807129,-1.16333,-7.33966},{-7.23389,-2.63647,-7.33966},{-16.3687,-2.40381,-7.33966},{-12.2847,-3.19604,-7.33966},{4.40674,-3.50513,-7.33966},{-3.2666,-0.925293,-7.33966},{6.85693,-2.75146,-7.33966},{11.0151,-3.95435,-7.33966},{16.8198,-4.71118,-7.33966},{-1.12793,3.78418,-7.44939},{12.7476,0.142822,3.29184},{10.2661,-1.21558,3.29184}};
-	};
-	class Land_Hospital: hospital {
-		lootChance = 1;
-		maxRoaming = 0;
-		lootPos[] = {{-3.45509, 3.39258, -1.44191}, {-0.0585938, -1.92139, -1.44191}};
 	};
 	class Land_Panelak: Office {
 		lootPos[] = {{-2.76904,-6.26563,0.0714226},{-2.93896,-1.3916,0.0714226},{-5.42065,-3.13184,0.0714226},{-6.81128,-6.15527,0.0714221},{-4.00879,2.53027,0.0714226},{-0.730957,-3.20117,2.77144},{3.979,-7.08936,2.77144},{2.49609,2.93701,2.77144},{6.7373,1.63281,2.77144},{6.38525,-2.3916,2.77144},{6.80615,-5.77295,2.77144},{3.75122,-0.803711,2.77144},{-0.824219,1.86914,1.32865}};
@@ -1378,7 +1545,7 @@ class CfgBuildingLoot {
 		maxRoaming = 3;
 		lootPos[] = {};
 	}; // Qty: 83
-	class Land_Misc_deerstand: Military {
+	class Land_Misc_deerstand: Hunting {
 		zombieChance = 0.3;
 		lootChance = 0.5;
 		maxRoaming = 3;

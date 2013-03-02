@@ -8,9 +8,11 @@ _body =		player;
 _playerID =	getPlayerUID player;
 
 //Send Death Notice
-["dayzDeath",[dayz_characterID,0,_body,_playerID,dayz_playerName]] call callRpcProcedure;
+//["dayzDeath",[dayz_characterID,0,_body,_playerID,dayz_playerName]] call callRpcProcedure;
+		dayzDeath = [dayz_characterID,0,_body,_playerID,dayz_playerName];
+		publicVariable "dayzDeath";
 
-_id = [player,50,true,getPosATL player] spawn player_alertZombies;
+_id = [player,20,true,getPosATL player] spawn player_alertZombies;
 
 sleep 0.5;
 
@@ -57,7 +59,9 @@ if (count _array > 0) then {
 				_wait = 0;
 			};
 			if (!_canHitFree and !_isBandit) then {
-				["dayzHumanity",[_source,_humanity,_wait]] call broadcastRpcCallAll;
+				//["dayzHumanity",[_source,_humanity,_wait]] call broadcastRpcCallAll;
+				dayzHumanity = [_source,_humanity,_wait];
+				publicVariable "dayzHumanity";
 			};
 		};
 	};
@@ -74,6 +78,7 @@ terminate dayz_gui;
 terminate dayz_zedCheck;
 terminate dayz_locationCheck;
 terminate dayz_combatCheck;
+terminate dayz_spawnCheck;
 
 //Reset (just in case)
 //deleteVehicle dayz_playerTrigger;
