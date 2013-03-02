@@ -643,7 +643,7 @@ INSERT INTO object_classes VALUES
   ('Land_A_Hospital', 0.00000, 0, '0', '[]', '0', NULL),
   ('Land_A_FuelStation_Feed', 0.00000, 0, '0', '[]', '0', NULL),
   ('Land_Mil_ControlTower', 0.00000, 0, '0', '[]', '0', NULL),
-  ('RHIB', 1.00000, 2, '0.3', '[]', '0.2', '[]'),
+  ('RHIB_DZ', 1.00000, 2, '0.3', '[]', '0.2', '[]'),
   ('Land_A_Crane_02b', 0.00000, 0, '0', '[]', '0', NULL),
   ('Land_A_GeneralStore_01', 0.00000, 0, '0', '[]', '0', NULL),
   ('Land_A_GeneralStore_01a', 0.00000, 0, '0', '[]', '0', NULL),
@@ -658,11 +658,11 @@ INSERT INTO object_classes VALUES
   ('S1203_ambulance_EP1', 1.00000, 0, '.1', '[]', '0', '[]'),
   ('VolhaLimo_TK_CIV_EP1 ', 1.00000, 3, '.2', '[]', '0.2', '[]'),
   ('Fishing_Boat', 0.90000, 1, '0.2', '[]', '0.2', '[]'),
-  ('HMMWV', 1.00000, 9, '.2', '[]', '0.2', '[]'),
+  ('HMMWV_DZ', 1.00000, 9, '.2', '[]', '0.2', '[]'),
   ('UralRepair_TK_EP1', 1.00000, 5, '.1', '[]', '0.2', '[]'),
   ('LandRover_MG_TK_EP1', 1.00000, 0, '.1', '[]', '0.2', '[]'),
-  ('MH6J_EP1', 1.00000, 0, '.2', '[]', '0.2', '[]'),
-  ('UH1H_TK_EP1', 1.00000, 0, '.4', '[]', '0.2', '[]');
+  ('MH6J_DZ', 1.00000, 0, '.2', '[]', '0.2', '[]'),
+  ('UH1H_TK_DZ', 1.00000, 0, '.4', '[]', '0.2', '[]');
 
 -- 
 -- Dumping data for table object_data
