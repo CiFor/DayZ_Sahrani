@@ -1665,7 +1665,7 @@ class CfgVehicles {
 	class HMMWV_M2: Banned {};
 	class HMMWV_TOW: Banned {};
 	class HMMWV_MK19: Banned {};
-	//class HMMWV: Banned {};
+	class HMMWV: Banned {};
 	class UAZ_MG_CDF: Banned {};
 	class UAZ_AGS30_CDF: Banned {};
 	class UralOpen_CDF: Banned {};
@@ -1924,7 +1924,7 @@ class CfgVehicles {
 	class AH64D_EP1: Banned {};
 	class AH6J_EP1: Banned {};
 	class AH6X_EP1: Banned {};
-	//class MH6J_EP1: Banned {};
+	class MH6J_EP1: Banned {};
 	class An2_1_TK_CIV_EP1: Banned {};
 	class An2_2_TK_CIV_EP1: Banned {};
 	class An2_TK_EP1: Banned {};
@@ -1934,7 +1934,7 @@ class CfgVehicles {
 	class Mi171Sh_rockets_CZ_EP1: Banned {};
 	class Mi171Sh_CZ_EP1: Banned {};
 	class Mi17_TK_EP1: Banned {};
-	//class UH1H_TK_EP1: Banned {};
+	class UH1H_TK_EP1: Banned {};
 	class UH1H_TK_GUE_EP1: Banned {};
 	class UH60M_EP1: Banned {};
 	class UH60M_MEV_EP1: Banned {};

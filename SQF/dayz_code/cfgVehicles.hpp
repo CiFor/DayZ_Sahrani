@@ -256,7 +256,7 @@ class CfgVehicles {
 	class HMMWV_Base;
 	class HMMWV_DZ: HMMWV_Base {
 		accuracy = 0.32;
-		displayname = "HMMWV_DZ";
+		displayname = "HMMWV";
 		hasgunner = 0;
 		hiddenselections[] = {"Camo1"};
 		hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
