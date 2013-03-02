@@ -1,7 +1,7 @@
 class CfgVehicles {
 	class Citizen1;	// External class reference
 	class zZombie_Base : Citizen1 {
-		scope = 0;
+		scope = public;
 		glassesEnabled = 0;
 		vehicleClass = "Zombie";
 		displayName = "Zombie";
