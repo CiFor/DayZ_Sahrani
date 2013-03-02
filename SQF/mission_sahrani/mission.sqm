@@ -3,7 +3,6 @@ class Mission
 {
 	addOns[]=
 	{
-		"oac_core",
 		"ca_modules_animals",
 		"dayz_code",
 		"dayz_weapons",
@@ -16,7 +15,6 @@ class Mission
 	{
 		"dayz_weapons",
 		"ca_modules_functions",
-		"oac_core"
 	};
 	randomSeed=11171215;
 	class Intel
