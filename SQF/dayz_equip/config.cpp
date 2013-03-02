@@ -609,7 +609,7 @@ class cfgWeapons {
 	class ItemCraftingBook : ItemCore {
 		scope = 2;
 		displayName = Crafting Book (Camp);
-		model = "\ca\misc\SmallObj_spukayev_docs.p3d";
+		model = "\ca\misc\SmallObj_spukayev_docs_WPN.p3d";
 		picture = "\ca\misc\Data\icons\picture_spukayev_docs_ca.paa";
 		descriptionShort = Crafting Book;
 		
@@ -636,7 +636,7 @@ class cfgWeapons {
 	class ItemCraftingBook2 : ItemCore {
 		scope = 2;
 		displayName = Crafting Book (Small Fortifications);
-		model = "\ca\misc\SmallObj_moscow_docs.p3d";
+		model = "\ca\misc\SmallObj_moscow_docs_WPN.p3d";
 		picture = "\ca\misc\Data\icons\picture_moscow_docs_ca.paa";
 		descriptionShort = Crafting Book (Small Fortifications);
 		
@@ -663,7 +663,7 @@ class cfgWeapons {
 	class ItemCraftingBook3 : ItemCore {
 		scope = 2;
 		displayName = Crafting Book (Huge Fortifications);
-		model = "\ca\misc\SmallObj_File_photos.p3d";
+		model = "\ca\misc\SmallObj_File_photos_WPN.p3d";
 		picture = "\ca\misc\Data\icons\picture_photo_folder_ca.paa";
 		descriptionShort = Crafting Book (Huge Fortifications);
 		
