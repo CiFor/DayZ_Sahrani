@@ -1275,7 +1275,7 @@ class CfgBuildingLoot {
 	class land_afdum_mesto3 : Residential {
 		minRoaming = 1;
 		maxRoaming = 3;
-		lootPos[] = {-0.352539, 0.0458984, -5.85629};
+		lootPos[] = {{-0.352539, 0.0458984, -5.85629}};
 	};
 	class Land_dum_istan4_detaily1 : Residential {
 		minRoaming = 1;
