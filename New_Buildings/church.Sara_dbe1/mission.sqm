@@ -1,0 +1,199 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"castructureshouse_church_03"
+	};
+	addOnsAuto[]=
+	{
+		"castructureshouse_church_03",
+		"oac_core"
+	};
+	randomSeed=10506643;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+	class Vehicles
+	{
+		items=9;
+		class Item0
+		{
+			position[]={13117.33,25.963825,11222.903};
+			azimut=-99.990601;
+			special="NONE";
+			id=0;
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12654.9, 10998.4, 0]; this setDir -99.9906; ";
+		};
+		class Item1
+		{
+			position[]={14101.8,0,10885.7};
+			azimut=-476.72101;
+			special="NONE";
+			id=1;
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [14101.8, 10885.7, 0]; this setDir -476.721; ";
+		};
+		class Item2
+		{
+			position[]={13916,0,12268.8};
+			azimut=-271.79401;
+			special="NONE";
+			id=2;
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [13916, 12268.8, 0]; this setDir -271.794; doStop this;";
+		};
+		class Item3
+		{
+			position[]={11989.3,0,14848.7};
+			azimut=-162.908;
+			special="NONE";
+			id=3;
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [11989.3, 14848.7, 0]; this setDir -162.908; ";
+		};
+		class Item4
+		{
+			position[]={16899.801,0,14070.8};
+			azimut=-290.27802;
+			special="NONE";
+			id=4;
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [16899.8, 14070.8, 0]; this setDir -290.278; ";
+		};
+		class Item5
+		{
+			position[]={12952.2,0,8944.0898};
+			azimut=-269.67999;
+			special="NONE";
+			id=5;
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12952.2, 8944.09, 0]; this setDir -269.68; ";
+		};
+		class Item6
+		{
+			position[]={12741.3,0,8675.4902};
+			azimut=-541.63702;
+			special="NONE";
+			id=6;
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12741.3, 8675.49, 0]; this setDir -541.637; doStop this;";
+		};
+		class Item7
+		{
+			position[]={10137.1,0,9111.8701};
+			azimut=-180.86;
+			special="NONE";
+			id=7;
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [10137.1, 9111.87, 0]; this setDir -180.86; doStop this;";
+		};
+		class Item8
+		{
+			position[]={11983.1,0.38332999,6468.6499};
+			azimut=-137.94901;
+			special="NONE";
+			id=8;
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [11983.1, 6468.65, 0.38333]; this setDir -137.949; doStop this;";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=15856861;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=654497;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=14319799;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
