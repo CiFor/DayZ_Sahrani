@@ -1,0 +1,116 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"oac_core"
+	};
+	randomSeed=14437434;
+	class Intel
+	{
+		briefingName="DayZ Loot Mapper Finder";
+		briefingDescription="By Tankuster, modified by shinkicker";
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13673.596,4.8757496,11241};
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="this addaction [""show loc"", ""tankylocation.sqf""];";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=14967939;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=2657715;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=16442008;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
