@@ -16,7 +16,7 @@ function GenerateCFGTown($zone) {
 			//Collect the data
 			$x = $data[1];
 			$y = $data[2];
-			$z = $data[3];
+			(float)$z =$data[3];
 			$types = $data[4];
 			$yaw = $data[5];
 			//Start Generating class for zone
@@ -28,6 +28,7 @@ function GenerateCFGTown($zone) {
 				$tmpx = $x[$j];
 				$tmpy = $y[$j];
 				$tmpz = $z[$j];
+				if($tmpz > 1 || $tmpz < -1) $tmpz = 0;
 				$tmptype = $types[$j];
 				$tmpyaw = $yaw[$j];
 				echo "		class Object".$j." {<br>";
