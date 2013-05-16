@@ -1,0 +1,353 @@
+class _prefix_0
+{
+	objectType="prefix";
+	class Arguments
+	{
+	};
+};
+class _center_0
+{
+	objectType="center";
+	class Arguments
+	{
+		SIDE="west";
+	};
+};
+class _group_0
+{
+	objectType="group";
+	class Arguments
+	{
+		CENTER="_center_0";
+	};
+};
+class _unit_3
+{
+	objectType="unit";
+	class Arguments
+	{
+		POSITION="[8085.1489, 9379.293, -6.1035156e-005]";
+		GROUP="_group_0";
+		TYPE="Sniper1_DZ";
+		AZIMUT="10.054947";
+		SKILL="0.60000002";
+		PLAYER="true";
+		PLAYABLE="true";
+		LEADER="true";
+	};
+};
+class _vehicle_454
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9741.3525, 5515.4468, 3.8146973e-005]";
+		TYPE="Land_A_FuelStation_Build";
+		AZIMUT="53.18969";
+		PARENT="";
+	};
+};
+class _vehicle_455
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9721.2393, 5516.8208, -0.063669682]";
+		TYPE="Land_A_FuelStation_Shed";
+		AZIMUT="-37.351627";
+		PARENT="";
+	};
+};
+class _vehicle_456
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9739.6113, 5519.6284, 0.17583084]";
+		TYPE="Land_Ind_TankSmall2";
+		AZIMUT="-36.67086";
+		PARENT="";
+	};
+};
+class _vehicle_457
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9721.1709, 5516.689, 0.17348246]";
+		TYPE="Land_A_FuelStation_Feed";
+		AZIMUT="-126.11369";
+		PARENT="";
+	};
+};
+class _vehicle_458
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9715.5664, 5512.6758, 0.097451709]";
+		TYPE="Land_A_FuelStation_Feed";
+		AZIMUT="-125.54933";
+		PARENT="";
+	};
+};
+class _vehicle_459
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9726.7246, 5521.0107, 0.24816656]";
+		TYPE="Land_A_FuelStation_Feed";
+		AZIMUT="-125.54933";
+		PARENT="";
+	};
+};
+class _vehicle_624
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9122.4131, 5357.5898, -3.4332275e-005]";
+		TYPE="Land_Barn_W_01";
+		AZIMUT="-41.173008";
+		PARENT="";
+	};
+};
+class _vehicle_627
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9210.3223, 5462.6504, -3.8146973e-005]";
+		TYPE="Land_Barn_W_02";
+		AZIMUT="-56.383026";
+		PARENT="";
+	};
+};
+class _vehicle_630
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9261.0254, 5787.4683, -7.6293945e-006]";
+		TYPE="Land_Shed_Ind02";
+		AZIMUT="89.30056";
+		PARENT="";
+	};
+};
+class _vehicle_632
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9261.0176, 5806.3643, 1.1444092e-005]";
+		TYPE="Land_Shed_Ind02";
+		AZIMUT="89.30056";
+		PARENT="";
+	};
+};
+class _vehicle_635
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9228.6318, 5802.9434, -2.2888184e-005]";
+		TYPE="Land_Ind_Workshop01_04";
+		AZIMUT="-178.7836";
+		PARENT="";
+	};
+};
+class _vehicle_638
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9223.9355, 5784.561, 1.1444092e-005]";
+		TYPE="Land_Ind_Workshop01_L";
+		AZIMUT="272.3335";
+		PARENT="";
+	};
+};
+class _vehicle_641
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9259.8174, 5829.8062, 0]";
+		TYPE="Land_Ind_Workshop01_L";
+		AZIMUT="272.3335";
+		PARENT="";
+	};
+};
+class _vehicle_644
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9258.1611, 5906.9648, 3.8146973e-006]";
+		TYPE="Land_Ind_Workshop01_L";
+		AZIMUT="178.57326";
+		PARENT="";
+	};
+};
+class _vehicle_647
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9345.3359, 5914.7935, -0.65575278]";
+		TYPE="Land_ladderEP1";
+		AZIMUT="270.4472";
+		PARENT="";
+	};
+};
+class _vehicle_650
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9319.1279, 5932.6724, -0.53455889]";
+		TYPE="Land_ladderEP1";
+		AZIMUT="270.4472";
+		PARENT="";
+	};
+};
+class _vehicle_654
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9324.9346, 5799.5762, -0.46985599]";
+		TYPE="Land_ladderEP1";
+		AZIMUT="270.4472";
+		PARENT="";
+	};
+};
+class _vehicle_656
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9306.9326, 5752.1084, 5.7220459e-005]";
+		TYPE="Land_ladderEP1";
+		AZIMUT="270.4472";
+		PARENT="";
+	};
+};
+class _vehicle_658
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[7534.7217, 6525.2583, -1.9073486e-006]";
+		TYPE="Land_ladderEP1";
+		AZIMUT="285.2179";
+		PARENT="";
+	};
+};
+class _vehicle_663
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[7596.8481, 6638.583, -0.50484169]";
+		TYPE="Land_ladderEP1";
+		AZIMUT="285.2179";
+		PARENT="";
+	};
+};
+class _vehicle_666
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[7737.9194, 6364.021, -0.58005071]";
+		TYPE="Land_A_GeneralStore_01";
+		AZIMUT="-360.02121";
+		PARENT="";
+	};
+};
+class _vehicle_699
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8833.0117, 6045.4976, 0]";
+		TYPE="Land_Ind_Workshop01_L";
+		AZIMUT="1.3119901";
+		PARENT="";
+	};
+};
+class _vehicle_701
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8929.4063, 5956.3647, 1.1444092e-005]";
+		TYPE="Land_Ind_Workshop01_L";
+		AZIMUT="269.3573";
+		PARENT="";
+	};
+};
+class _vehicle_704
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[9071.0273, 5960.5181, 2.6702881e-005]";
+		TYPE="Land_Ind_Workshop01_04";
+		AZIMUT="-178.7836";
+		PARENT="";
+	};
+};
+class _vehicle_706
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8611.1523, 6132.2979, 0]";
+		TYPE="Land_Ind_Workshop01_04";
+		AZIMUT="-180.69658";
+		PARENT="";
+	};
+};
+class _vehicle_708
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8595.0625, 6369.9609, 2.6702881e-005]";
+		TYPE="Land_Ind_Workshop01_04";
+		AZIMUT="-178.7836";
+		PARENT="";
+	};
+};
+class _vehicle_711
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8775.1299, 6120.4834, 1.1444092e-005]";
+		TYPE="Land_Ind_Workshop01_04";
+		AZIMUT="-179.09299";
+		PARENT="";
+	};
+};
+class _vehicle_717
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8898.0723, 6130.105, 3.8146973e-006]";
+		TYPE="Land_Ind_Workshop01_L";
+		AZIMUT="449.94666";
+		PARENT="";
+	};
+};
+class _postfix_0
+{
+	objectType="postfix";
+	class Arguments
+	{
+	};
+};

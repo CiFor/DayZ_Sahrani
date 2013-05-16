@@ -1,0 +1,330 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"castructureshouse_church_03"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10506643;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+	class Vehicles
+	{
+		class Item0
+		{
+			position[]=
+			{
+				10622.2,
+				0,
+				9329.05
+			};
+			azimut=180;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [10622.2, 9329.05, 0]; this setDir 180; doStop this;";
+			id=0;
+		};
+		items=12;
+		class Item1
+		{
+			position[]=
+			{
+				13224.5,
+				0,
+				8892.3
+			};
+			azimut=180;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [13224.5, 8892.3, 0]; this setDir 180; doStop this;";
+			id=2;
+		};
+		class Item2
+		{
+			position[]=
+			{
+				13434.8,
+				0,
+				9160.49
+			};
+			azimut=89.0036;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [13434.8, 9160.49, 0]; this setDir 89.0036; doStop this;";
+			id=4;
+		};
+		class Item3
+		{
+			position[]=
+			{
+				14583.4,
+				0.074999,
+				11099.7
+			};
+			azimut=-119.598;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [14583.4, 11099.7, 0.074999]; this setDir -119.598; ";
+			id=6;
+		};
+		class Item4
+		{
+			position[]=
+			{
+				13130.7,
+				0,
+				11218.9
+			};
+			azimut=339.348;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [13130.7, 11218.9, 0]; this setDir 339.348; ";
+			id=8;
+		};
+		class Item5
+		{
+			position[]=
+			{
+				14393.4,
+				0,
+				12484.5
+			};
+			azimut=-274.092;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [14393.4, 12484.5, 0]; this setDir -274.092; doStop this;";
+			id=10;
+		};
+		class Item6
+		{
+			position[]=
+			{
+				12472.2,
+				0,
+				15068
+			};
+			azimut=199.424;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [12472.2, 15068, 0]; this setDir 199.424; ";
+			id=12;
+		};
+		class Item7
+		{
+			position[]=
+			{
+				17385.3,
+				0,
+				14286.3
+			};
+			azimut=73.093;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [17385.3, 14286.3, 0]; this setDir 73.093; ";
+			id=14;
+		};
+		class Item8
+		{
+			position[]=
+			{
+				12131.6,
+				0,
+				7267.8
+			};
+			azimut=236.491;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [12131.6, 7267.8, 0]; this setDir 236.491; ";
+			id=16;
+		};
+		class Item9
+		{
+			position[]=
+			{
+				8208.69,
+				0,
+				8962.18
+			};
+			azimut=269.399;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [8208.69, 8962.18, 0]; this setDir 269.399; doStop this;";
+			id=18;
+		};
+		class Item10
+		{
+			position[]=
+			{
+				6908.35,
+				0.066666,
+				8253.97
+			};
+			azimut=267.313;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [6908.35, 8253.97, 0.066666]; this setDir 267.313; doStop this;";
+			id=20;
+		};
+		class Item11
+		{
+			position[]=
+			{
+				9565.64,
+				0,
+				8562.68
+			};
+			azimut=233.649;
+			special="NONE";
+			side="EMPTY";
+			vehicle="Land_Church_03";
+			lock="UNLOCKED";
+			health=1;
+			fuel=1;
+			ammo=1;
+			text="";
+			init="this setPos [9565.64, 8562.68, 0]; this setDir 233.649; ";
+			id=22;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=15856861;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=654497;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=14319799;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
