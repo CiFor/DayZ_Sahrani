@@ -1,0 +1,1435 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"ca_modules_silvie",
+		"camisc3",
+		"CABuildings",
+		"ca_air2_su25",
+		"CAAir3_Su34",
+		"CAAir_E_AH6J",
+		"CAAir_E_UH1H_EP1",
+		"caair",
+		"CAWheeled2_V3S",
+		"CAWheeled",
+		"CAWheeled_E_LandRover",
+		"caair_e_an2",
+		"caair_e",
+		"CAWheeled_E_ATV",
+		"cadata",
+		"caa1_c_ah6",
+		"CAWater",
+		"cawater2_fishing_boat",
+		"cawheeled_e_volha",
+		"CAWheeled3_TT650",
+		"CAWheeled_E",
+		"CAWheeled2_VWGolf",
+		"CAWheeled_E_Old_bike",
+		"cawheeled_w_baf",
+		"cawheeled_d_baf",
+		"CAWheeled_E_Old_moto",
+		"cawheeled_pmc",
+		"CAWheeled2_LADA",
+		"castructureshouse_housev",
+		"castructureshouse_shed_ind",
+		"CAWheeled2_MTVR",
+		"CAWheeled_Pickup",
+		"CAAir2_MV22",
+		"CAWheeled2_Kamaz",
+		"cawheeled_e_v3s",
+		"cacharacters2"
+	};
+	addOnsAuto[]=
+	{
+		"CAAir_E_AH6J",
+		"CAAir_E_UH1H_EP1",
+		"caair",
+		"CAWheeled2_V3S",
+		"CAWheeled2_Kamaz",
+		"CAWheeled",
+		"CAWheeled_E_ATV",
+		"CAWater",
+		"cawater2_fishing_boat",
+		"CAWheeled3_TT650",
+		"CAWheeled2_VWGolf",
+		"CAWheeled_E_LandRover",
+		"CAWheeled_E",
+		"cawheeled_pmc",
+		"cawheeled_e_volha",
+		"CAWheeled2_LADA",
+		"camisc3",
+		"CAWheeled2_MTVR",
+		"CAWheeled_Pickup",
+		"cawheeled_e_v3s",
+		"oac_core"
+	};
+	randomSeed=7882067;
+	class Intel
+	{
+		startWeather=0.10000002;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=14;
+	};
+	class Vehicles
+	{
+		items=124;
+		class Item0
+		{
+			position[]={12012.314,160.05499,15462.838};
+			azimut=195;
+			id=0;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			skill=0.60000002;
+			description="EML_Z2 AH6X_1 - Pesadas";
+		};
+		class Item1
+		{
+			position[]={11912.08,153,15447.997};
+			azimut=195;
+			id=1;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 AH6X_2 - Pesadas";
+		};
+		class Item2
+		{
+			position[]={11958.771,153,15365.646};
+			azimut=195;
+			id=2;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 AH6X_3 - Pesadas";
+		};
+		class Item3
+		{
+			position[]={11847.103,153,15296.562};
+			azimut=195;
+			id=3;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 AH6X_4 - Pesadas";
+		};
+		class Item4
+		{
+			position[]={11874.796,153,15371.278};
+			azimut=105;
+			id=5;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 UH1H_1 - Pesadas";
+		};
+		class Item5
+		{
+			position[]={11871.795,153,15482.457};
+			azimut=185;
+			id=6;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 UH1H_2 - Pesadas";
+		};
+		class Item6
+		{
+			position[]={11997.843,153,15418.979};
+			azimut=290;
+			id=7;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 UH1H_3 - Pesadas";
+		};
+		class Item7
+		{
+			position[]={11944.572,152.90636,15296.531};
+			azimut=290;
+			id=8;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 UH1H_4 - Pesadas";
+		};
+		class Item8
+		{
+			position[]={11832.779,153,15285.64};
+			azimut=290;
+			id=9;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 AH6X_5 - Pesadas";
+		};
+		class Item9
+		{
+			position[]={12067.604,25.965,17537.283};
+			id=10;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 UH1H_5 - Cabo_Santa_Lucia";
+		};
+		class Item10
+		{
+			position[]={12140.722,25.965,17757.068};
+			id=11;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="Cabo Santa Lucia UH1 Spawn 2";
+		};
+		class Item11
+		{
+			position[]={12108.674,25.965,17741.352};
+			id=12;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 UH1H_6 - Cabo_Santa_Lucia";
+		};
+		class Item12
+		{
+			position[]={12240.564,25.965,17653.584};
+			azimut=94.431602;
+			id=13;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 UH1H_7 - Cabo_Santa_Lucia";
+		};
+		class Item13
+		{
+			position[]={12512.527,30.959999,17672.982};
+			id=14;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 UH1H_8 - Cabo_Santa_Lucia";
+		};
+		class Item14
+		{
+			position[]={12106.867,25.965,17601.566};
+			azimut=270;
+			id=15;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 AH6X_6 - Cabo_Santa_Lucia";
+		};
+		class Item15
+		{
+			position[]={12107.397,25.965,17654.119};
+			id=16;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 AH6X_7 - Cabo_Santa_Lucia";
+		};
+		class Item16
+		{
+			position[]={12266.731,25.965,17620.676};
+			azimut=-31.712601;
+			id=17;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 AH6X_8 - Cabo_Santa_Lucia";
+		};
+		class Item17
+		{
+			position[]={12260.165,25.965,17601.924};
+			azimut=267.64401;
+			id=18;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 AH6X_9 - Cabo_Santa_Lucia";
+		};
+		class Item18
+		{
+			position[]={12140.965,25.965,17707.445};
+			id=19;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="Cabo Santa Lucia AH6X_5";
+		};
+		class Item19
+		{
+			position[]={12180.138,25.965,17631.305};
+			azimut=-268.884;
+			id=23;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z2 Mi17_1 - Cabo_Santa_Lucia";
+		};
+		class Item20
+		{
+			position[]={12068.168,25.965,17571.033};
+			id=24;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z2 Mi17_2 - Cabo_Santa_Lucia";
+		};
+		class Item21
+		{
+			position[]={12450.511,30.330297,17631.119};
+			id=25;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z2 Mi17_3 - Cabo_Santa_Lucia";
+		};
+		class Item22
+		{
+			position[]={12210.815,25.965,17779.813};
+			azimut=268.23999;
+			id=26;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z2 Mi17_4 - Cabo_Santa_Lucia";
+		};
+		class Item23
+		{
+			position[]={11886.513,152.82416,15285.516};
+			azimut=290;
+			id=27;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z2 Mi17_5 - Pesadas";
+		};
+		class Item24
+		{
+			position[]={11939.032,153,15397.446};
+			azimut=10;
+			id=28;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z2 Mi17_6 - Pesadas";
+		};
+		class Item25
+		{
+			position[]={11988.927,153,15395.191};
+			azimut=10;
+			id=29;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z2 Mi17_7 - Pesadas";
+		};
+		class Item26
+		{
+			position[]={11958.975,153,15443.094};
+			azimut=10;
+			id=30;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z2 Mi17_8 - Pesadas";
+		};
+		class Item27
+		{
+			position[]={11888.932,153,15453.461};
+			azimut=10;
+			id=31;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z2 Mi17_9 - Pesadas";
+		};
+		class Item28
+		{
+			position[]={12538.753,30.959999,17710.385};
+			id=33;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UtilityTruckO_RUS_2 - Cabo_Santa_Lucia";
+		};
+		class Item29
+		{
+			position[]={12233.688,25.965,17690.078};
+			azimut=-0.513798;
+			id=34;
+			side="EMPTY";
+			vehicle="KamazOpen";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UtilityTruckO_RUS_3 - Cabo_Santa_Lucia";
+		};
+		class Item30
+		{
+			position[]={12233.887,25.965,17733.635};
+			azimut=381.46201;
+			id=35;
+			side="EMPTY";
+			vehicle="KamazOpen";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UtilityTruckO_RUS_1 - Cabo_Santa_Lucia";
+		};
+		class Item31
+		{
+			position[]={11919.425,152.45396,15261.576};
+			azimut=278;
+			id=36;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 V3S_4 - Pesadas";
+		};
+		class Item32
+		{
+			position[]={12001.418,153,15355.454};
+			azimut=15;
+			id=37;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 V3S_5 - Pesadas";
+		};
+		class Item33
+		{
+			position[]={11975.27,160.06976,15470.835};
+			azimut=195;
+			id=38;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 V3S_6 - Pesadas";
+		};
+		class Item34
+		{
+			position[]={11930.256,153,15460.736};
+			azimut=94;
+			id=39;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 V3S_7 - Pesadas";
+		};
+		class Item35
+		{
+			position[]={11862.666,153,15484.654};
+			azimut=180;
+			id=40;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 V3S_8 - Pesadas";
+		};
+		class Item36
+		{
+			position[]={11852.596,153,15388.551};
+			azimut=105;
+			id=41;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UAZ_01 - Pesadas";
+		};
+		class Item37
+		{
+			position[]={11914.395,153,15491.206};
+			azimut=105;
+			id=42;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UAZ_02 - Pesadas";
+		};
+		class Item38
+		{
+			position[]={11704.211,117.38589,15462.591};
+			azimut=5;
+			id=43;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UAZ_03 - Pesadas";
+		};
+		class Item39
+		{
+			position[]={11808.661,179.07497,15067.004};
+			azimut=110;
+			id=44;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UAZ_04 - Pesadas";
+		};
+		class Item40
+		{
+			position[]={12250.482,179.50697,14895.874};
+			azimut=95;
+			id=45;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UAZ_05 - Eponia";
+		};
+		class Item41
+		{
+			position[]={12274.518,25.965,17775.135};
+			azimut=179.713;
+			id=46;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UAZ_06 - Cabo_Santa_Lucia";
+		};
+		class Item42
+		{
+			position[]={12062.566,25.965,17602.514};
+			azimut=90;
+			id=47;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UAZ_07 - Cabo_Santa_Lucia";
+		};
+		class Item43
+		{
+			position[]={12415.799,59.425316,17446.766};
+			azimut=90;
+			id=48;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UAZ_08 - Cabo_Santa_Lucia";
+		};
+		class Item44
+		{
+			position[]={12486.919,30.959999,17663.492};
+			azimut=90;
+			id=49;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UAZ_09 - Cabo_Santa_Lucia";
+		};
+		class Item45
+		{
+			position[]={11164.637,5.6603708,16950.809};
+			id=50;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UAZ_10 - Isla_deVictoria";
+		};
+		class Item46
+		{
+			position[]={11119.385,27.54796,16258.02};
+			azimut=270;
+			id=51;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UAZ_11 - Cabo_Santa_Lucia";
+		};
+		class Item47
+		{
+			position[]={12257.965,25.965,17504.033};
+			azimut=275;
+			id=52;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_01 - Cabo_Santa_Lucia";
+		};
+		class Item48
+		{
+			position[]={11188.008,6.6084962,16927.578};
+			azimut=177.164;
+			id=53;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="Isla De Vicotr ATV_2 - Isla_deVictoria";
+		};
+		class Item49
+		{
+			position[]={10639.023,32.750916,16156.548};
+			azimut=401.905;
+			id=54;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_02 - Mataredo";
+		};
+		class Item50
+		{
+			position[]={10511.376,30.671631,16282.291};
+			azimut=170.017;
+			id=55;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z1 ATV_01 - Mataredo";
+		};
+		class Item51
+		{
+			position[]={12473.553,185.39879,14842.514};
+			azimut=311.32199;
+			id=56;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_03 - Eponia";
+		};
+		class Item52
+		{
+			position[]={11631.604,147.12665,15453.133};
+			id=57;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_04 - Pesadas";
+		};
+		class Item53
+		{
+			position[]={11728.162,117.41631,15459.257};
+			azimut=85;
+			id=58;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_05 - Pesadas";
+		};
+		class Item54
+		{
+			position[]={11835.16,153,15313.992};
+			azimut=105;
+			id=59;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_06 - Pesadas";
+		};
+		class Item55
+		{
+			position[]={11688.632,111.73966,15343.072};
+			azimut=95;
+			id=60;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_07 - Pesadas";
+		};
+		class Item56
+		{
+			position[]={12357.455,180.11917,14935.483};
+			azimut=270;
+			id=61;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_08 - Eponia";
+		};
+		class Item57
+		{
+			position[]={12533.046,180,15033.469};
+			id=62;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_09 - Eponia";
+		};
+		class Item58
+		{
+			position[]={12723.672,179.53471,14910.354};
+			azimut=155;
+			id=63;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_10 - Eponia";
+		};
+		class Item59
+		{
+			position[]={12512.755,180,14993.653};
+			azimut=90;
+			id=64;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_11 - Eponia";
+		};
+		class Item60
+		{
+			position[]={12641.361,180,14976.99};
+			azimut=30;
+			id=65;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_12 - Eponia";
+		};
+		class Item61
+		{
+			position[]={14006.19,23.512575,16465.65};
+			azimut=30;
+			id=66;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_13 - Pico_deRevolucion";
+		};
+		class Item62
+		{
+			position[]={13922.67,26.469793,16677.576};
+			azimut=41;
+			id=67;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_14 - Pico_deRevolucion";
+		};
+		class Item63
+		{
+			position[]={14235.47,22,16235.726};
+			azimut=234.70399;
+			id=68;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_15 - Pico_deRevolucion";
+		};
+		class Item64
+		{
+			position[]={13984.737,325.56952,15727.688};
+			azimut=5;
+			id=69;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z2 ATV_16 - Passo_Epone";
+		};
+		class Item65
+		{
+			position[]={15735.942,0.3303718,15140.753};
+			azimut=315;
+			id=70;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 PBX_1 - Ancon_deAmanitas";
+		};
+		class Item66
+		{
+			position[]={14295.548,0.34714082,17088.723};
+			azimut=315;
+			id=71;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 PBX_2 - Roca_delDror";
+		};
+		class Item67
+		{
+			position[]={12265.299,0.16932927,18345.73};
+			azimut=60;
+			id=72;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 PBX_3 - Cabo_Santa_Lucia";
+		};
+		class Item68
+		{
+			position[]={10720.145,0.29807645,16805.041};
+			azimut=60;
+			id=73;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 PBX_4 - Isla_desCompadres";
+		};
+		class Item69
+		{
+			position[]={10693.838,0.22751993,16309.629};
+			azimut=15;
+			id=74;
+			side="EMPTY";
+			vehicle="Fishing_Boat";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 FishingBoat_1 - Mataredo";
+		};
+		class Item70
+		{
+			position[]={12770.049,180.6087,15071.819};
+			azimut=64.208702;
+			special="NONE";
+			id=20;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z2 Moto_1 - Eponia";
+		};
+		class Item71
+		{
+			position[]={13072.55,200.05659,15018.153};
+			azimut=3.51561;
+			special="NONE";
+			id=21;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z2 Moto_2 - Eponia";
+		};
+		class Item72
+		{
+			position[]={10646.592,33.276222,16204.132};
+			azimut=9.8449202;
+			special="NONE";
+			id=22;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z2 Moto_3 - Mataredo";
+		};
+		class Item73
+		{
+			position[]={11202.605,4.1635737,16966.027};
+			azimut=-180.679;
+			special="NONE";
+			id=26;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z2 Moto_4 - Isla_deVictoria";
+		};
+		class Item74
+		{
+			position[]={13991.258,324.86414,15739.878};
+			azimut=3.51561;
+			special="NONE";
+			id=32;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z2 Moto_5 - Passo_Epone";
+		};
+		class Item75
+		{
+			position[]={12667.807,180,15028.037};
+			azimut=110.82481;
+			id=4;
+			side="EMPTY";
+			vehicle="vwgolf";
+			skill=0.2;
+			init="this call {_r = getpos _this; _r set [2,0]; _this setpos _r}";
+		};
+		class Item76
+		{
+			position[]={10611.216,30.825287,16147.297};
+			azimut=-19.127199;
+			id=5;
+			side="EMPTY";
+			vehicle="VWGolf";
+			skill=0.2;
+			description="EML_Z2 VWgolf_1 - Mataredo";
+		};
+		class Item77
+		{
+			position[]={12145.021,25.965,17550.553};
+			azimut=0.92009997;
+			id=75;
+			side="EMPTY";
+			vehicle="HMMWV";
+			skill=0.60000002;
+			description="EML_Z2 HMMWV_F_1 - Cabo_Santa_Lucia";
+		};
+		class Item78
+		{
+			position[]={11963.307,152.46001,15264.366};
+			azimut=190;
+			id=76;
+			side="EMPTY";
+			vehicle="HMMWV";
+			skill=0.60000002;
+			description="EML_Z2 HMMWV_F_2 - Pesadas";
+		};
+		class Item79
+		{
+			position[]={12104.593,25.965,17553.406};
+			azimut=1.29372;
+			id=77;
+			side="EMPTY";
+			vehicle="LandRover_MG_TK_EP1";
+			skill=0.60000002;
+			description="EML_Z2 BAF_Offroad_M2_1 - Cabo_Santa_Lucia";
+		};
+		class Item80
+		{
+			position[]={12495.842,180,15049.247};
+			azimut=5;
+			id=78;
+			side="EMPTY";
+			vehicle="Ikarus_TK_CIV_EP1";
+			skill=0.60000002;
+			description="Eponia Bus_1";
+		};
+		class Item81
+		{
+			position[]={10516.637,30.704733,16293.207};
+			azimut=280;
+			id=79;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z2 SUV_1 - Mataredo";
+		};
+		class Item82
+		{
+			position[]={11180.609,5.9045968,16947.191};
+			azimut=270;
+			id=80;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z2 SUV_2 - Isla_deVictoria";
+		};
+		class Item83
+		{
+			position[]={12407.299,59.400002,17428.549};
+			id=81;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z2 SUV_3 - Cabo_Santa_Lucia";
+		};
+		class Item84
+		{
+			position[]={13985.912,23.767078,16399.457};
+			azimut=235;
+			id=82;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z2 SUV_4 - Pico_deRevolucion";
+		};
+		class Item85
+		{
+			position[]={12330.379,180,14987.524};
+			azimut=90;
+			id=83;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z2 SUV_5 - Eponia";
+		};
+		class Item86
+		{
+			position[]={12536.71,180,14949.629};
+			id=84;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z2 SUV_6 - Eponia";
+		};
+		class Item87
+		{
+			position[]={10595.808,32.588528,16209.091};
+			azimut=248.181;
+			id=85;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z2 PickUp_1 - Mataredo";
+		};
+		class Item88
+		{
+			position[]={11862.67,153,15455.904};
+			azimut=190.95399;
+			id=86;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z2 PickUp_2 - Pesadas";
+		};
+		class Item89
+		{
+			position[]={12225.677,25.965,17529.602};
+			azimut=89.677101;
+			id=87;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z2 PickUp_3 - Cabo_Santa_Lucia";
+		};
+		class Item90
+		{
+			position[]={14014.489,26.04653,16545.121};
+			azimut=65.625099;
+			id=88;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z2 PickUp_4 - Pico_deRevolucion";
+		};
+		class Item91
+		{
+			position[]={12403.245,180,15035.485};
+			azimut=359.37201;
+			id=89;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z2 PickUp_5 - Eponia";
+		};
+		class Item92
+		{
+			position[]={10620.391,33.052361,16188.067};
+			azimut=198.539;
+			id=90;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z2 GazLimo_1 - Mataredo";
+		};
+		class Item93
+		{
+			position[]={11416.388,11.862041,16565.709};
+			azimut=270.297;
+			id=91;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z2 GazLimo_2 - Isla_deVictoria";
+		};
+		class Item94
+		{
+			position[]={12403.454,59.400002,17427.607};
+			azimut=180;
+			id=92;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z2 GazLimo_3 - Cabi_Santa_Lucia";
+		};
+		class Item95
+		{
+			position[]={13969.592,325.02371,15751.033};
+			azimut=180;
+			id=93;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z2 GazLimo_4 - Passo_Epone";
+		};
+		class Item96
+		{
+			position[]={14015.869,26.006908,16542.416};
+			azimut=65.710503;
+			id=94;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z2 GazLimo 5 - Pico_deRevolucion";
+		};
+		class Item97
+		{
+			position[]={10632.403,32.76675,16172.736};
+			azimut=203.582;
+			id=95;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 sedan_1 - Mataredo";
+		};
+		class Item98
+		{
+			position[]={11898.904,152.97832,15299.196};
+			azimut=281.72601;
+			id=96;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 sedan_2 - Pesadas";
+		};
+		class Item99
+		{
+			position[]={12503.7,179.89064,14950.913};
+			azimut=0.22453099;
+			id=97;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 sedan_3 - Eponia";
+		};
+		class Item100
+		{
+			presence=0.84484982;
+			position[]={13975.971,23.834455,16418.322};
+			azimut=-123.284;
+			id=98;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.62;
+			description="EML_Z2 sedan_4 - Pico_deRevolucion";
+		};
+		class Item101
+		{
+			position[]={12666.457,180,15024.654};
+			azimut=116.285;
+			id=99;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 sedan_5 - Eponia";
+		};
+		class Item102
+		{
+			position[]={10744.423,33.478775,16184.867};
+			azimut=-147.528;
+			id=100;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z2 UAZred_2 - Mataredo";
+		};
+		class Item103
+		{
+			position[]={11183.79,7.1482105,16920.893};
+			id=101;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z2 UAZred_3 - Isla_deVictoria";
+		};
+		class Item104
+		{
+			position[]={11902.852,153,15318.804};
+			azimut=-80.612999;
+			id=102;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z2 UAZred_4 - Pesadas";
+		};
+		class Item105
+		{
+			position[]={12446.059,180,15037.928};
+			azimut=-26.894501;
+			id=103;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z2 UAZred_5 - Eponia";
+		};
+		class Item106
+		{
+			position[]={11904.971,153,15324.551};
+			azimut=-78.208;
+			id=104;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z1 PickUp_TubeC_4 - Pesadas";
+		};
+		class Item107
+		{
+			position[]={10672.754,34.008266,16195.993};
+			azimut=182.62801;
+			id=105;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z2 PickUp_TubeC_2 - Mataredo";
+		};
+		class Item108
+		{
+			position[]={12699.447,180,15123.379};
+			azimut=209.903;
+			id=106;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z2 PickUp_TubeC_3 - Eponia";
+		};
+		class Item109
+		{
+			position[]={12272.371,25.965,17628.666};
+			id=107;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z2 PickUp_TubeC_4 - Cabo_Santa_Lucia";
+		};
+		class Item110
+		{
+			position[]={14232.722,22,16207.362};
+			azimut=-90.732201;
+			id=108;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z2 PickUp_TubeC_5 - Pico_deRevolucion";
+		};
+		class Item111
+		{
+			position[]={12197.1,25.965,17503};
+			azimut=-2.5820799;
+			special="NONE";
+			id=109;
+			side="EMPTY";
+			vehicle="Land_Misc_deerstand";
+			lock="UNLOCKED";
+			skill=0.2;
+			init="this setPos [12197.1, 17503, 0]; this setDir -2.58208; doStop this;";
+			description="EML_Z2 Deer_stand - Cabo_Santa_Lucia";
+		};
+		class Item112
+		{
+			position[]={13969.897,32.40366,16735.318};
+			azimut=272.41699;
+			id=110;
+			side="EMPTY";
+			vehicle="MtvrRefuel";
+			skill=0.60000002;
+			description="EML_Z2 MTVR_Refuel_F - Pico_deRevolucion";
+		};
+		class Item113
+		{
+			position[]={13979.411,325.33472,15733.892};
+			azimut=630.71075;
+			id=111;
+			side="EMPTY";
+			vehicle="MtvrRepair";
+			skill=0.60000002;
+			description="EML_Z2 MTVR_Repair_F - Passo_Epone";
+		};
+		class Item114
+		{
+			position[]={12066.021,25.965,17520.66};
+			azimut=1.63047;
+			id=112;
+			side="EMPTY";
+			vehicle="Pickup_PK_GUE";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 Pickup_PK - Cabo_Santa_Lucia ";
+		};
+		class Item115
+		{
+			position[]={11679.617,0.51476705,16974.17};
+			azimut=-363.40497;
+			id=113;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z2 PBX_5 - Isla_deVictoria";
+		};
+		class Item116
+		{
+			position[]={12229.98,25.965,17602.471};
+			azimut=271.20599;
+			id=114;
+			side="EMPTY";
+			vehicle="V3S_TK_GUE_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 VS3_Covered - Cabo_Santa_Lucia";
+		};
+		class Item117
+		{
+			position[]={12173.019,25.965,17681.814};
+			azimut=179.313;
+			id=115;
+			side="EMPTY";
+			vehicle="V3S_TK_GUE_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 VS3_Covered_2 - Cabo_Santa_Lucia";
+		};
+		class Item118
+		{
+			position[]={13886.561,26.581621,16685.721};
+			azimut=33.383202;
+			id=116;
+			side="EMPTY";
+			vehicle="V3S_TK_GUE_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 VS3_Covered - Pico_deRevolucion";
+		};
+		class Item119
+		{
+			position[]={14195.834,22,16212.704};
+			azimut=180.338;
+			id=117;
+			side="EMPTY";
+			vehicle="V3S_TK_GUE_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 VS3_Covered - Pico_deRevolucion";
+		};
+		class Item120
+		{
+			position[]={13965.814,26.110769,16693.227};
+			azimut=268.53601;
+			id=118;
+			side="EMPTY";
+			vehicle="V3S_TK_GUE_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 VS3_Covered - Pico_deRevolucion";
+		};
+		class Item121
+		{
+			position[]={13903.88,25.846725,16714.25};
+			azimut=445.37701;
+			id=119;
+			side="EMPTY";
+			vehicle="KamazOpen";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UtilityTruckO_RUS_1 - Pico_deRevolucion";
+		};
+		class Item122
+		{
+			position[]={13904.328,25.986338,16708.465};
+			azimut=447.39709;
+			id=120;
+			side="EMPTY";
+			vehicle="KamazOpen";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 UtilityTruckO_RUS_1 - Pico_deRevolucion";
+		};
+		class Item123
+		{
+			position[]={12521.861,200.69934,14422.693};
+			azimut=-3.23911;
+			id=121;
+			side="EMPTY";
+			vehicle="Ural_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z2 Ural_CivBl - Eponia";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=15248578;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10013427;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10698790;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

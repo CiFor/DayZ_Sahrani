@@ -1,0 +1,815 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"ca_modules_silvie",
+		"camisc3",
+		"CABuildings",
+		"ca_air2_su25",
+		"CAAir3_Su34",
+		"CAAir_E_AH6J",
+		"caair",
+		"CAWheeled2_V3S",
+		"CAWheeled",
+		"CAWheeled_E_LandRover",
+		"CAWheeled_E_ATV",
+		"cadata",
+		"caa1_c_ah6",
+		"CAWater",
+		"cawheeled_e_volha",
+		"CAWheeled3_TT650",
+		"CAWheeled_E",
+		"CAWheeled2_VWGolf",
+		"CAWheeled_E_Old_bike",
+		"cawheeled_w_baf",
+		"cawheeled_d_baf",
+		"CAWheeled_E_Old_moto",
+		"cawheeled_pmc",
+		"CAWheeled2_LADA",
+		"castructureshouse_housev",
+		"castructureshouse_shed_ind",
+		"CAWheeled2_MTVR",
+		"CAAir2_MV22",
+		"cacharacters2"
+	};
+	addOnsAuto[]=
+	{
+		"caair",
+		"CAWheeled2_V3S",
+		"CAWheeled",
+		"CAWheeled_E_LandRover",
+		"CAWheeled_E_ATV",
+		"cadata",
+		"CAWater",
+		"CAWheeled3_TT650",
+		"CAWheeled2_VWGolf",
+		"CAWheeled_E_Old_bike",
+		"CAWheeled_E_Old_moto",
+		"CAWheeled_E",
+		"cawheeled_pmc",
+		"cawheeled_e_volha",
+		"CAWheeled2_LADA",
+		"CAWheeled2_MTVR",
+		"CAAir_E_AH6J",
+		"oac_core"
+	};
+	randomSeed=7882067;
+	class Intel
+	{
+		startWeather=0.10000002;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=14;
+	};
+	class Vehicles
+	{
+		items=67;
+		class Item0
+		{
+			position[]={13648.034,29.154539,12603.477};
+			azimut=450.88901;
+			id=3;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z6 Mi17_4 - Bagango_Quarry";
+		};
+		class Item1
+		{
+			position[]={17545.51,18,9529.0947};
+			id=6;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			skill=0.60000002;
+			description="EML_Z4 V3S_1 - Everone_OP";
+		};
+		class Item2
+		{
+			position[]={16480.42,22.730404,8886.9492};
+			azimut=270;
+			id=7;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			skill=0.60000002;
+			description="EML_Z4 V3S_3 - EveronWoods";
+		};
+		class Item3
+		{
+			position[]={17568.807,18,9543.8047};
+			azimut=270;
+			id=8;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z4 UAZ_1 - Everone_OP";
+		};
+		class Item4
+		{
+			position[]={17607.217,18,9539.4248};
+			id=9;
+			side="EMPTY";
+			vehicle="LandRover_MG_TK_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z4 BAF_Offroad_M2_1 - Everone_OP";
+		};
+		class Item5
+		{
+			position[]={17607.188,18,9533.293};
+			id=10;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z3 UAZ_3 - Everone_OP";
+		};
+		class Item6
+		{
+			position[]={16457.686,12.96,9407.3047};
+			azimut=170;
+			id=11;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z4 ATV_1 - Everon";
+		};
+		class Item7
+		{
+			position[]={17557.822,18,9526.1445};
+			id=12;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z4 ATV_2 - Everone_OP";
+		};
+		class Item8
+		{
+			position[]={17521.816,18,9563.1396};
+			id=13;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z4 ATV_3 - Everone_OP";
+		};
+		class Item9
+		{
+			position[]={17525.498,18,9568.0801};
+			azimut=270;
+			id=14;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="Everon ATV_4 - Everone_OP";
+		};
+		class Item10
+		{
+			position[]={16130.468,15.25609,9387.7676};
+			azimut=60;
+			id=15;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z4 ATV_5 - Everon";
+		};
+		class Item11
+		{
+			position[]={16441.422,11.97,9273.0723};
+			azimut=310;
+			id=16;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z4 ATV_6 - Everon";
+		};
+		class Item12
+		{
+			position[]={15578.814,33.146603,8790.1211};
+			azimut=200;
+			id=17;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_V4 ATV_3 - Bajo Valor";
+		};
+		class Item13
+		{
+			position[]={15390.302,52.686272,9845.292};
+			azimut=90;
+			id=18;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="Modesto ATV_6 - Valor";
+		};
+		class Item14
+		{
+			position[]={16718.453,12.195,9483.3604};
+			azimut=330;
+			id=19;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_Z4 tractor_1 - Everon";
+		};
+		class Item15
+		{
+			position[]={16437.078,11.97,9294.0234};
+			azimut=130;
+			id=20;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_V4 tractor_2 - Everon";
+		};
+		class Item16
+		{
+			position[]={16096.494,17.450914,9383.6465};
+			azimut=300;
+			id=21;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_Z4 tractor_3 - Everon";
+		};
+		class Item17
+		{
+			position[]={16658.113,12.048611,9195.6494};
+			azimut=315;
+			id=22;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_Z4 tractor_5 - Everon";
+		};
+		class Item18
+		{
+			position[]={15485.178,28.683773,8886.5947};
+			azimut=2.78495;
+			id=23;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_V4 tractor_2 - Bajo Valor";
+		};
+		class Item19
+		{
+			position[]={15501.095,31.037273,9037.5547};
+			azimut=359.10556;
+			id=24;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_Z4 tractor_4 - Bajo Valor";
+		};
+		class Item20
+		{
+			position[]={16882.498,0.10049684,9387.1523};
+			azimut=140;
+			id=25;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z4 PBX_1 - Everone";
+		};
+		class Item21
+		{
+			position[]={16591.258,12.135915,9193.1299};
+			azimut=48.516201;
+			special="NONE";
+			id=2;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z4 Moto - Everon";
+		};
+		class Item22
+		{
+			position[]={15424.803,57.4245,9818.2832};
+			azimut=-23.573;
+			special="NONE";
+			id=4;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_V4 Moto - Valor";
+		};
+		class Item23
+		{
+			position[]={15560.249,26.648012,8696.4502};
+			azimut=3.51561;
+			special="NONE";
+			id=5;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z4 Moto - Bajo Valor";
+		};
+		class Item24
+		{
+			position[]={16474.428,11.97,9267.4219};
+			id=0;
+			side="EMPTY";
+			vehicle="VWGolf";
+			skill=0.2;
+			description="EML_Z4 VWgolf_1 - Everon";
+		};
+		class Item25
+		{
+			position[]={11946.504,138.68198,9342.502};
+			azimut=-56.038502;
+			id=1;
+			side="EMPTY";
+			vehicle="Old_bike_TK_CIV_EP1";
+			skill=0.2;
+			description="WML_Z2 OldBike - Hiccoras";
+		};
+		class Item26
+		{
+			position[]={17584.27,18,9531.8613};
+			id=26;
+			side="EMPTY";
+			vehicle="HMMWV";
+			skill=0.60000002;
+			description="EML_Z4 HMMWV_F_1 - Everone_OP";
+		};
+		class Item27
+		{
+			position[]={17595.338,18,9552.8643};
+			azimut=270;
+			id=27;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			skill=0.60000002;
+			description="EML_Z4 V3S - Everone_OP";
+		};
+		class Item28
+		{
+			position[]={17558.092,18,9530.9453};
+			id=28;
+			side="EMPTY";
+			vehicle="Old_moto_TK_Civ_EP1";
+			skill=0.60000002;
+			description="EML_Z4 OMoto_Tak_1 - Everone_OP";
+		};
+		class Item29
+		{
+			position[]={17588.932,18,9527.7051};
+			azimut=270;
+			id=29;
+			side="EMPTY";
+			vehicle="Old_moto_TK_Civ_EP1";
+			skill=0.60000002;
+			description="EML_Z4 OMoto_Tak_2 - Everone_OP";
+		};
+		class Item30
+		{
+			position[]={16474.221,11.97,9298.4746};
+			azimut=210;
+			id=30;
+			side="EMPTY";
+			vehicle="Ikarus_TK_CIV_EP1";
+			skill=0.60000002;
+			description="Everon Bus_1";
+		};
+		class Item31
+		{
+			position[]={16589.203,12.283124,9430.1416};
+			azimut=100;
+			id=31;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z4 SUV_1 - Everon";
+		};
+		class Item32
+		{
+			position[]={16480.641,12.96,9407.2051};
+			azimut=175;
+			id=32;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z4 SUV_2 - Everon";
+		};
+		class Item33
+		{
+			position[]={16080.776,18,9372.9736};
+			id=33;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z4 SUV_3 - Everon";
+		};
+		class Item34
+		{
+			position[]={15406.458,50.009907,9859.875};
+			azimut=15;
+			id=34;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z4 SUV_4 - Valor";
+		};
+		class Item35
+		{
+			position[]={15574.958,31.013727,8960.7754};
+			azimut=270;
+			id=35;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z4 SUV_5 - Bajo Valor";
+		};
+		class Item36
+		{
+			position[]={17535.594,18,9557.957};
+			azimut=179.23199;
+			id=36;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z4 PickUp_1 - Everone_OP";
+		};
+		class Item37
+		{
+			position[]={16642.969,12.15,9465.7979};
+			azimut=235.526;
+			id=37;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z4 PickUp_2 - Everon";
+		};
+		class Item38
+		{
+			position[]={16544.184,11.934413,9215.207};
+			azimut=1.3486;
+			id=38;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z4 PickUp_3 - Everon";
+		};
+		class Item39
+		{
+			position[]={15561.928,29.702862,8809.1875};
+			azimut=-176.646;
+			id=39;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z4 PickUp_4 - Bajo Valor";
+		};
+		class Item40
+		{
+			position[]={15313.241,52.459896,9886.6074};
+			azimut=171.916;
+			id=40;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z4 PickUp_5 - Valor";
+		};
+		class Item41
+		{
+			position[]={16641.75,12.365177,9171.6553};
+			azimut=312.87;
+			id=41;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z4 GazLimo_1 - Everon";
+		};
+		class Item42
+		{
+			position[]={15278.838,54.138577,9870.1523};
+			azimut=1.97787;
+			id=42;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z4 GazLimo 3 - Valor";
+		};
+		class Item43
+		{
+			position[]={15607.279,29.492254,8846.0518};
+			azimut=-204.28;
+			id=43;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z4 GazLimo_5 - Bajo Valor";
+		};
+		class Item44
+		{
+			position[]={16684.359,12.159807,9498.0713};
+			azimut=-26.2444;
+			id=44;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z4 sedan_1 - Everon";
+		};
+		class Item45
+		{
+			position[]={16463.219,12.066254,9223.4385};
+			azimut=-428.73099;
+			id=45;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z4 sedan_2 - Everon";
+		};
+		class Item46
+		{
+			position[]={15546.949,29.643358,8809.1982};
+			azimut=87.258698;
+			id=46;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z4 sedan_3 - Bajo Valor";
+		};
+		class Item47
+		{
+			position[]={15580.579,30.928141,8940.8906};
+			azimut=-91.6017;
+			id=47;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z4 sedan_4 - Bajo Valor";
+		};
+		class Item48
+		{
+			position[]={15364.211,51.155296,9882.6084};
+			azimut=-82.962799;
+			id=48;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z4 sedan_5 - Valor";
+		};
+		class Item49
+		{
+			position[]={17532.104,18,9536.2939};
+			azimut=122.008;
+			id=49;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z4 UAZred_1 - Everone_OP";
+		};
+		class Item50
+		{
+			position[]={16655.496,11.359152,9410.5576};
+			azimut=-256.84299;
+			id=50;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z4 UAZred_2 - Everon";
+		};
+		class Item51
+		{
+			position[]={16638.646,12.423289,9168.5703};
+			azimut=-48.016998;
+			id=51;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z4 UAZred_3 - Everon";
+		};
+		class Item52
+		{
+			position[]={15588.698,31.102861,8952.3213};
+			azimut=90.787102;
+			id=52;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z4 UAZred_4 - Bajo Valor";
+		};
+		class Item53
+		{
+			position[]={15340.178,52.054573,9874.1592};
+			azimut=98.461899;
+			id=53;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z4 UAZred_5 - Valor";
+		};
+		class Item54
+		{
+			position[]={17531.178,18,9533.291};
+			azimut=123.502;
+			id=54;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z4 PickUp_TubeC_1 - Everone_OP";
+		};
+		class Item55
+		{
+			position[]={16714.174,12.195,9480.3047};
+			azimut=149.295;
+			id=55;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z4 PickUp_TubeC_2 - Everon";
+		};
+		class Item56
+		{
+			position[]={15603.501,29.507427,8845.7939};
+			azimut=155.942;
+			id=56;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z4 PickUp_TubeC_3 - Bajo Valor";
+		};
+		class Item57
+		{
+			position[]={15416.528,49.722363,9874.2773};
+			azimut=193.283;
+			id=57;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z4 PickUp_TubeC_4 - Valor";
+		};
+		class Item58
+		{
+			position[]={14919.374,104.30844,9649.2383};
+			azimut=-78.405403;
+			id=58;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z4 PickUp_TubeC_5 - Valor";
+		};
+		class Item59
+		{
+			position[]={17599.111,18,9526.5684};
+			azimut=630.23798;
+			id=59;
+			side="EMPTY";
+			vehicle="MtvrRefuel";
+			skill=0.60000002;
+			description="EML_Z4 MTVR_Refuel_F - Everone_OP";
+		};
+		class Item60
+		{
+			position[]={18395.738,-13.500102,10406.011};
+			azimut=-306.26599;
+			id=60;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z4 PBX - Wilderness";
+		};
+		class Item61
+		{
+			position[]={17753.193,-1.8616333,9564.4336};
+			azimut=-306.26599;
+			id=61;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z4 PBX - EveroneOP";
+		};
+		class Item62
+		{
+			position[]={16300.201,0.69432408,8757.4209};
+			azimut=-138.31331;
+			id=62;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z4 PBX - Everone";
+		};
+		class Item63
+		{
+			position[]={16086.343,18,9364.2393};
+			azimut=179.7;
+			id=63;
+			side="EMPTY";
+			vehicle="UralCivil";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z4 Ural_CivOr - Everon";
+		};
+		class Item64
+		{
+			position[]={16590.445,12.102936,9200.917};
+			azimut=39.383202;
+			id=64;
+			side="EMPTY";
+			vehicle="Ural_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z4 Ural_CivBl - Everon";
+		};
+		class Item65
+		{
+			position[]={15494.613,30.943907,9030.5693};
+			azimut=-87.194702;
+			id=65;
+			side="EMPTY";
+			vehicle="Ural_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z4 Ural_CivBl - Bajo Valor";
+		};
+		class Item66
+		{
+			position[]={17562.166,18,9537.2021};
+			azimut=0.74698102;
+			id=66;
+			side="EMPTY";
+			vehicle="MH6J_EP1";
+			skill=0.60000002;
+			description="EML_Z4 MH6J_1 - PitaAF";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=15248578;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10013427;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10698790;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

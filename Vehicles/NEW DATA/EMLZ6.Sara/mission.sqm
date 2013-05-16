@@ -1,0 +1,769 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"ca_modules_silvie",
+		"camisc3",
+		"CABuildings",
+		"ca_air2_su25",
+		"CAAir3_Su34",
+		"CAAir_E_AH6J",
+		"CAAir_E_UH1H_EP1",
+		"caair",
+		"CAWheeled2_V3S",
+		"CAWheeled",
+		"caair_e_an2",
+		"caair_e",
+		"CAWheeled_E_ATV",
+		"caa1_c_ah6",
+		"cawater2_fishing_boat",
+		"cawheeled_e_volha",
+		"CAWheeled3_TT650",
+		"CAWheeled_E",
+		"CAWheeled2_VWGolf",
+		"CAWheeled_E_Old_bike",
+		"cawheeled_w_baf",
+		"cawheeled_d_baf",
+		"cawheeled_pmc",
+		"CAWheeled2_LADA",
+		"castructureshouse_housev",
+		"castructureshouse_shed_ind",
+		"CAWheeled2_MTVR",
+		"CAWheeled_Pickup",
+		"CAAir2_MV22",
+		"cawheeled_e_v3s",
+		"cacharacters2"
+	};
+	addOnsAuto[]=
+	{
+		"CAAir_E_AH6J",
+		"CAAir_E_UH1H_EP1",
+		"caair",
+		"CAWheeled2_V3S",
+		"CAWheeled",
+		"CAWheeled_E_ATV",
+		"CAWheeled3_TT650",
+		"CAWheeled2_VWGolf",
+		"CAWheeled_E",
+		"cawheeled_pmc",
+		"cawheeled_e_volha",
+		"CAWheeled2_LADA",
+		"cabuildings",
+		"CAWheeled2_MTVR",
+		"oac_core"
+	};
+	randomSeed=7882067;
+	class Intel
+	{
+		startWeather=0.10000002;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=14;
+	};
+	class Vehicles
+	{
+		items=62;
+		class Item0
+		{
+			position[]={13753.34,29.581181,12598.011};
+			azimut=354.63599;
+			id=0;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			skill=0.60000002;
+			description="EML_Z6 AH6X - Bagango_Quarry";
+		};
+		class Item1
+		{
+			position[]={13741.531,27.196476,12708.52};
+			azimut=-91.747803;
+			id=2;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z6 UH1H_1 - Bagango_Quarry";
+		};
+		class Item2
+		{
+			position[]={13648.034,29.154539,12603.477};
+			azimut=450.88901;
+			id=6;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z6 Mi17_4 - Bagango_Quarry";
+		};
+		class Item3
+		{
+			position[]={13939.784,38.431828,12613.192};
+			azimut=315.31201;
+			id=7;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z6 Mi17_5 - Bagango_Quarry";
+		};
+		class Item4
+		{
+			position[]={13758.574,29.73525,12836.857};
+			azimut=-99.4151;
+			id=9;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Cabo Santa Lucia V3S_4 - Bagango_Quarry";
+		};
+		class Item5
+		{
+			position[]={13881.642,35.25161,12662.759};
+			azimut=145;
+			id=10;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z6 UAZ_09 - Bagango_Quarry";
+		};
+		class Item6
+		{
+			position[]={13682.901,27,12800.586};
+			azimut=85.510201;
+			id=11;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Cabo Snta Lucia UAZ_10 - Bagango_Quarry";
+		};
+		class Item7
+		{
+			position[]={15645.564,60.258446,13859.689};
+			azimut=295;
+			id=12;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z6 UAZ_10 - Benoma";
+		};
+		class Item8
+		{
+			position[]={13909.14,37.518875,12686.037};
+			azimut=132.418;
+			id=13;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z6 ATV_6 - Bagango_Quarry";
+		};
+		class Item9
+		{
+			position[]={13732.793,49.689304,11869.204};
+			id=14;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z6 ATV_1 - S_Bagango";
+		};
+		class Item10
+		{
+			position[]={14173.046,55.553303,11874.826};
+			azimut=30;
+			id=15;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z6 ATV_2 - S_Bagango";
+		};
+		class Item11
+		{
+			position[]={14621.995,62.178486,11875.805};
+			azimut=165;
+			id=16;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z6 ATV_3 - S_Bagango";
+		};
+		class Item12
+		{
+			position[]={14022.95,50.324978,12895.669};
+			azimut=350;
+			id=17;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z6 ATV_6 - Bagango";
+		};
+		class Item13
+		{
+			position[]={15357.152,21.959999,13783.643};
+			azimut=350;
+			id=18;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="Benoma ATV_1";
+		};
+		class Item14
+		{
+			position[]={15324.236,27.736307,14102.392};
+			azimut=310;
+			id=19;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z6 ATV_2 - Benoma";
+		};
+		class Item15
+		{
+			position[]={14750.63,86.491211,13959.395};
+			azimut=110;
+			id=20;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z6 ATV_3 - Benoma";
+		};
+		class Item16
+		{
+			position[]={15415.998,34.653893,13378.794};
+			azimut=340.00601;
+			id=21;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z6 ATV_4 - N_Bagango";
+		};
+		class Item17
+		{
+			position[]={15423.657,50.412998,12771.717};
+			azimut=250;
+			id=22;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z6 ATV_6 - W_Bagango";
+		};
+		class Item18
+		{
+			position[]={13892.268,38.058079,12782.892};
+			azimut=266.11099;
+			id=23;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z6 ATV_4 - Bagango";
+		};
+		class Item19
+		{
+			position[]={14434.059,39.959999,12494.124};
+			azimut=3.51561;
+			special="NONE";
+			id=3;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z6 Moto  - Bagango";
+		};
+		class Item20
+		{
+			position[]={14309.993,40.356079,12352.351};
+			azimut=3.51561;
+			special="NONE";
+			id=4;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z6 Moto - Bagango";
+		};
+		class Item21
+		{
+			position[]={15447.313,42.443455,13655.933};
+			azimut=-56.193615;
+			special="NONE";
+			id=5;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="Motorcycle @ Benoma";
+		};
+		class Item22
+		{
+			position[]={14168.706,21.959999,14021.494};
+			azimut=-127.23187;
+			special="NONE";
+			id=8;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="Motorcycle @ Terra Marismo";
+		};
+		class Item23
+		{
+			position[]={14134.22,39.985317,12557.956};
+			id=1;
+			side="EMPTY";
+			vehicle="VWGolf";
+			skill=0.2;
+			init="this call {_r = getpos _this; _r set [2,0]; _this setpos _r}";
+			description="EML_Z6 VWgolf  - Bagango";
+		};
+		class Item24
+		{
+			position[]={14599.102,55.274654,11896.75};
+			azimut=350;
+			id=24;
+			side="EMPTY";
+			vehicle="Ikarus_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z6 Bus_1 - S_Bagango";
+		};
+		class Item25
+		{
+			position[]={14313.188,39.959999,12372.431};
+			id=25;
+			side="EMPTY";
+			vehicle="Ikarus_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z6 Bus_2 - Bagango";
+		};
+		class Item26
+		{
+			position[]={13902.729,38.494923,12801.226};
+			azimut=5;
+			id=26;
+			side="EMPTY";
+			vehicle="Ikarus_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z6 Bus_3 - Bagango";
+		};
+		class Item27
+		{
+			position[]={14290.896,53.788582,11865.177};
+			id=27;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z6 SUV_1 - S_Bagango";
+		};
+		class Item28
+		{
+			position[]={14316.342,39.959999,12451.133};
+			id=28;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z6 SUV_2 - Bagango";
+		};
+		class Item29
+		{
+			position[]={14020.617,43.688984,12337.948};
+			azimut=50;
+			id=29;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z6 SUV_3 - Bagango";
+		};
+		class Item30
+		{
+			position[]={14017.336,39.828152,12676.411};
+			azimut=180;
+			id=30;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z6 SUV_4 - Bagango";
+		};
+		class Item31
+		{
+			position[]={14231.907,38.349709,12770.713};
+			azimut=260;
+			id=31;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z6 SUV_5 - Bagango";
+		};
+		class Item32
+		{
+			position[]={13516.141,34.380314,11995.804};
+			azimut=450.26801;
+			id=32;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z6 PickUp_1 - S_Bagango";
+		};
+		class Item33
+		{
+			position[]={14031.16,56.686432,12819.257};
+			azimut=181.067;
+			id=33;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z6 PickUp_3 - Bagango";
+		};
+		class Item34
+		{
+			position[]={14130.54,39.959999,12451.553};
+			azimut=450.51199;
+			id=34;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z6 PickUp_4 - Bagango";
+		};
+		class Item35
+		{
+			position[]={14465.395,39.959999,12525.033};
+			azimut=90.473503;
+			id=35;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z6 PickUp_5 - Bagango";
+		};
+		class Item36
+		{
+			position[]={15392.934,35.208538,13375.765};
+			azimut=-244.967;
+			id=36;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z6 GazLimo_1 - N_Bagango";
+		};
+		class Item37
+		{
+			position[]={15369.59,22.434696,13782.009};
+			azimut=251.63455;
+			id=37;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z6 GazLimo 2";
+		};
+		class Item38
+		{
+			position[]={14160.771,39.959999,12647.746};
+			azimut=93.469902;
+			id=38;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z6 GazLimo 3 - Bagango";
+		};
+		class Item39
+		{
+			position[]={14073.957,39.959999,12505.331};
+			azimut=203.56599;
+			id=39;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z6 GazLimo 4 - Bagango";
+		};
+		class Item40
+		{
+			position[]={14594.3,55.924984,11861.532};
+			azimut=-98.078003;
+			id=40;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z6 GazLimo_5 - S_Bagango";
+		};
+		class Item41
+		{
+			position[]={14451.047,54.155144,12347.87};
+			azimut=-151.731;
+			id=41;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z6 sedan_3 - Bagango";
+		};
+		class Item42
+		{
+			position[]={14398.681,39.959999,12604.255};
+			azimut=55.0867;
+			id=42;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z6 sedan_4 - Bagango";
+		};
+		class Item43
+		{
+			position[]={14411.92,39.959999,12503.087};
+			azimut=-270.823;
+			id=43;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z6 sedan_5 - Bagango";
+		};
+		class Item44
+		{
+			position[]={14898.483,48.539219,13758.791};
+			id=44;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z6 UAZred_1";
+		};
+		class Item45
+		{
+			position[]={15375.931,23.813435,13692.351};
+			azimut=-76.166176;
+			id=45;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z6 UAZred_2";
+		};
+		class Item46
+		{
+			position[]={13733.191,29.774561,12732.407};
+			azimut=-183.63901;
+			id=46;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z6 UAZred_3 - Bagango_Quarry";
+		};
+		class Item47
+		{
+			position[]={13971.589,39.402729,12461.724};
+			azimut=-168.617;
+			id=47;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z6 UAZred_4 - Bagango";
+		};
+		class Item48
+		{
+			position[]={14240.767,39.959999,12611.2};
+			azimut=-85.331497;
+			id=48;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z6 UAZred_5 - Bagango";
+		};
+		class Item49
+		{
+			position[]={14246.832,39.843605,12663.694};
+			azimut=99.068604;
+			special="NONE";
+			id=49;
+			side="EMPTY";
+			vehicle="Land_majak";
+			lock="UNLOCKED";
+			skill=0.2;
+			description="EML_Z6 - Bagango";
+		};
+		class Item50
+		{
+			position[]={14591.281,56.131832,12501.731};
+			azimut=-88.454201;
+			id=50;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z6 PickUp_TubeC_1 - Bagango";
+		};
+		class Item51
+		{
+			position[]={15387.655,22.864374,13780.22};
+			azimut=237.40692;
+			id=51;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z6 PickUp_TubeC_2";
+		};
+		class Item52
+		{
+			position[]={14530.397,36.131428,13706.04};
+			azimut=10.6679;
+			id=52;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z6 PickUp_TubeC_3 - N_Bagango";
+		};
+		class Item53
+		{
+			position[]={14839.15,145,12786.502};
+			azimut=-222.354;
+			id=53;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z6 PickUp_TubeC_4 - N_Bagango";
+		};
+		class Item54
+		{
+			position[]={14080.896,41.070198,12392.393};
+			azimut=-219.98;
+			id=54;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z6 PickUp_TubeC_5 - Bagango";
+		};
+		class Item55
+		{
+			position[]={14211.435,54.990002,11865.024};
+			azimut=389.29224;
+			id=55;
+			side="EMPTY";
+			vehicle="MtvrRefuel";
+			skill=0.60000002;
+			description="EML_Z6 MTVR_Refuel_F - S_Bagango";
+		};
+		class Item56
+		{
+			position[]={14544.329,37.024136,13707.834};
+			azimut=98.841774;
+			id=56;
+			side="EMPTY";
+			vehicle="UralCivil";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z4 Ural_CivOr - Everon";
+		};
+		class Item57
+		{
+			position[]={14222.265,55.116482,11898.737};
+			azimut=540.354;
+			id=57;
+			side="EMPTY";
+			vehicle="Ural_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z6 Ural_CivBl - Bagango";
+		};
+		class Item58
+		{
+			position[]={14225.788,55.116207,11898.697};
+			azimut=180.353;
+			id=58;
+			side="EMPTY";
+			vehicle="Ural_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z6 Ural_CivBl - Bagango";
+		};
+		class Item59
+		{
+			position[]={14828.189,145,12780.1};
+			azimut=498.06799;
+			id=59;
+			side="EMPTY";
+			vehicle="Ural_UN_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z6 Ural_CivUN - Bagango";
+		};
+		class Item60
+		{
+			position[]={13701.011,26.255268,12745.614};
+			azimut=720.492;
+			id=60;
+			side="EMPTY";
+			vehicle="Ural_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z6 Ural_CivBl - Bagango";
+		};
+		class Item61
+		{
+			position[]={13696.99,26.23,12745.522};
+			azimut=720.492;
+			id=61;
+			side="EMPTY";
+			vehicle="Ural_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z6 Ural_CivBl - Bagango";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=15248578;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10013427;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10698790;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

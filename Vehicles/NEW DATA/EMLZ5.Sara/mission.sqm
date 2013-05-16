@@ -1,0 +1,870 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"ca_modules_silvie",
+		"camisc3",
+		"CABuildings",
+		"ca_air2_su25",
+		"CAAir3_Su34",
+		"caair",
+		"CAWheeled",
+		"CAWheeled_E_LandRover",
+		"CAWheeled_E_ATV",
+		"cadata",
+		"caa1_c_ah6",
+		"CAWater",
+		"cawheeled_e_volha",
+		"CAWheeled3_TT650",
+		"CAWheeled_E",
+		"CAWheeled2_VWGolf",
+		"cawheeled_w_baf",
+		"cawheeled_d_baf",
+		"cawheeled_pmc",
+		"CAWheeled2_LADA",
+		"castructureshouse_shed_ind",
+		"CAWheeled2_MTVR",
+		"CAAir2_MV22",
+		"CAWheeled2_Kamaz",
+		"cacharacters2"
+	};
+	addOnsAuto[]=
+	{
+		"caair",
+		"CAWheeled_E_ATV",
+		"CAWheeled",
+		"cadata",
+		"CAWater",
+		"CAWheeled3_TT650",
+		"CAWheeled2_VWGolf",
+		"CAWheeled_E_LandRover",
+		"CAWheeled_E",
+		"cawheeled_pmc",
+		"cawheeled_e_volha",
+		"CAWheeled2_LADA",
+		"cabuildings",
+		"CAWheeled2_MTVR",
+		"CAWheeled2_Kamaz",
+		"oac_core"
+	};
+	randomSeed=7882067;
+	class Intel
+	{
+		startWeather=0.10000002;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=14;
+	};
+	class Vehicles
+	{
+		items=72;
+		class Item0
+		{
+			position[]={13648.034,29.154539,12603.477};
+			azimut=450.88901;
+			id=4;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="EML_Z6 Mi17_4 - Bagango_Quarry";
+		};
+		class Item1
+		{
+			position[]={13192.123,29.231073,11492.268};
+			azimut=350;
+			id=6;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z5 ATV_5 - Mercalilo";
+		};
+		class Item2
+		{
+			position[]={13771.916,34.965,11487.947};
+			id=7;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z5 ATV_6 - N_Mercalilo";
+		};
+		class Item3
+		{
+			position[]={14715.434,43.965,10725.323};
+			azimut=15;
+			id=8;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z5 ATV_1 - Obregan";
+		};
+		class Item4
+		{
+			position[]={13331.195,20.252886,10686.248};
+			azimut=290;
+			id=9;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z5 ATV_2 - S_Mercalilo";
+		};
+		class Item5
+		{
+			position[]={13430.641,26.469326,11061.036};
+			azimut=265;
+			id=10;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z5 ATV_3 - S_Mercalilo";
+		};
+		class Item6
+		{
+			position[]={13731.513,27.077566,10641.496};
+			azimut=325;
+			id=11;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z5 ATV_4 - S_Mercalilo";
+		};
+		class Item7
+		{
+			position[]={14750.016,52.36031,11203.816};
+			azimut=410.121;
+			id=12;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z5 ATV_5 - N_Obregan";
+		};
+		class Item8
+		{
+			position[]={14298.314,36.716473,10929.199};
+			azimut=50;
+			id=13;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_V5 ATV_6 - Obregan";
+		};
+		class Item9
+		{
+			position[]={13884.359,30.165014,10308.657};
+			azimut=90;
+			id=14;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z5 ATV_5 - S_Mercalilo";
+		};
+		class Item10
+		{
+			position[]={14064.463,32.47514,9997.1436};
+			azimut=65;
+			id=15;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_Z5 tractor - Modesta";
+		};
+		class Item11
+		{
+			position[]={13480.425,26.132591,11084.865};
+			azimut=65;
+			id=16;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_Z5 tractor_1 - S_Mercalilo";
+		};
+		class Item12
+		{
+			position[]={13841.589,32.91642,10873.508};
+			azimut=75;
+			id=17;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_Z5 tractor_2 - S_Mercalilo";
+		};
+		class Item13
+		{
+			position[]={13377.789,19.555763,10725.222};
+			azimut=310;
+			id=18;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_Z5 tractor_3 - S_Mercalilo";
+		};
+		class Item14
+		{
+			position[]={13745.217,27.250641,10610.709};
+			azimut=165;
+			id=19;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_Z5 tractor_6 - S_Mercalilo";
+		};
+		class Item15
+		{
+			position[]={13892.892,30.237757,10303.744};
+			azimut=10;
+			id=20;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_Z5 tractor_7 - S_Mercalilo";
+		};
+		class Item16
+		{
+			position[]={12427.207,0.28052455,10453.193};
+			id=21;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z5 PBX 3 - Isla_Verda";
+		};
+		class Item17
+		{
+			position[]={12403.51,0.24430221,10857.137};
+			id=22;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z5 PBX 2 - Isla_delLibertad";
+		};
+		class Item18
+		{
+			position[]={11800.033,0.22462867,11482.988};
+			id=23;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z5 PBX 1 - Mercalillo";
+		};
+		class Item19
+		{
+			position[]={14380.365,43.166393,10685.118};
+			azimut=195.709;
+			special="NONE";
+			id=2;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z5 Moto - Obregan";
+		};
+		class Item20
+		{
+			position[]={14604.815,51.913883,10949.22};
+			azimut=3.51561;
+			special="NONE";
+			id=3;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z5 Moto - Obregan";
+		};
+		class Item21
+		{
+			position[]={13336.643,25.965,11412.859};
+			azimut=3.51561;
+			special="NONE";
+			id=5;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="EML_Z5 Moto - Mercalillo";
+		};
+		class Item22
+		{
+			position[]={14401.734,41.427505,10869.619};
+			azimut=-48.811001;
+			id=0;
+			side="EMPTY";
+			vehicle="VWGolf";
+			skill=0.2;
+			description="EML_Z5 VWgolf  - Obregan";
+		};
+		class Item23
+		{
+			position[]={13285.322,25.965,11397.932};
+			azimut=-15.6841;
+			id=1;
+			side="EMPTY";
+			vehicle="VWGolf";
+			skill=0.2;
+			description="EML_Z5 VWgolf  - Mercalilo";
+		};
+		class Item24
+		{
+			position[]={14713.918,47.886444,10540.097};
+			azimut=290;
+			id=24;
+			side="EMPTY";
+			vehicle="LandRover_MG_TK_EP1";
+			skill=0.60000002;
+			description="EML_Z5 BAF_Offroad_M2_1 - Obregan";
+		};
+		class Item25
+		{
+			position[]={14709.894,47.900108,10530.614};
+			azimut=290;
+			id=25;
+			side="EMPTY";
+			vehicle="LandRover_MG_TK_EP1";
+			skill=0.60000002;
+			description="EML_Z5 BAF_Offroad_M2_2 - Obregan";
+		};
+		class Item26
+		{
+			position[]={13302.021,25.965,11367.222};
+			azimut=235;
+			id=26;
+			side="EMPTY";
+			vehicle="Ikarus_TK_CIV_EP1";
+			skill=0.60000002;
+			description="Mercalillo Bus_1";
+		};
+		class Item27
+		{
+			position[]={14395.513,39.780415,10813.508};
+			azimut=210;
+			id=27;
+			side="EMPTY";
+			vehicle="Ikarus_TK_CIV_EP1";
+			skill=0.60000002;
+			description="Obregon Bus_1";
+		};
+		class Item28
+		{
+			position[]={14443.05,41.805,10920.685};
+			azimut=120;
+			id=28;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z5 SUV_1 - Obregan";
+		};
+		class Item29
+		{
+			position[]={14241.487,37.535492,10682.942};
+			azimut=330;
+			id=29;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z5 SUV_2 - Obregan";
+		};
+		class Item30
+		{
+			position[]={13887.563,30.701124,10293.87};
+			azimut=180;
+			id=30;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z5 SUV_3 - S_Mercalilo";
+		};
+		class Item31
+		{
+			position[]={13700.622,27.063156,10614.421};
+			azimut=255;
+			id=31;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z5 SUV_4 - S_Mercalilo";
+		};
+		class Item32
+		{
+			position[]={12988.091,21.959999,11290.857};
+			azimut=140;
+			id=32;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z5 SUV_5 - Mercalilo";
+		};
+		class Item33
+		{
+			position[]={14272.697,43.357101,10466.723};
+			azimut=469.24399;
+			id=33;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z5 PickUp_1 - S_Obregan";
+		};
+		class Item34
+		{
+			position[]={13345.762,20.431095,10711.927};
+			azimut=220.392;
+			id=34;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z5 PickUp_2 - S_Mercalilo";
+		};
+		class Item35
+		{
+			position[]={13134.382,25.965,11279.091};
+			azimut=169.455;
+			id=35;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z5 PickUp_3 - Mercalilo";
+		};
+		class Item36
+		{
+			position[]={14754.185,52.475471,11188.911};
+			azimut=683.80701;
+			id=36;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z5 PickUp_4 - N_Obregan";
+		};
+		class Item37
+		{
+			position[]={13741.487,34.965,11529.979};
+			azimut=538.23499;
+			id=37;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			skill=0.60000002;
+			description="EML_Z5 PickUp_5 - N_Mercalilo";
+		};
+		class Item38
+		{
+			position[]={13347.751,20.324966,10709.218};
+			azimut=-142.05299;
+			id=38;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z5 GazLimo 1 - S_Mercalilo";
+		};
+		class Item39
+		{
+			position[]={13423.002,26.205118,11036.68};
+			azimut=-44.9501;
+			id=39;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z5 GazLimo 2 - S_Mercalilo";
+		};
+		class Item40
+		{
+			position[]={14289.965,38.278,10845.716};
+			azimut=10.3106;
+			id=40;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z5 GazLimo 3 - Obregan";
+		};
+		class Item41
+		{
+			position[]={14667.146,49.910442,11150.488};
+			azimut=58.9659;
+			id=41;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z5 GazLimo 4 - N_Obregan";
+		};
+		class Item42
+		{
+			position[]={14374.673,44.508152,11137.617};
+			azimut=-271.94501;
+			id=42;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z5 GazLimo 5 - N_Obregan";
+		};
+		class Item43
+		{
+			position[]={13871.278,30.20224,10291.349};
+			azimut=89.411003;
+			id=43;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z5 sedan_1 - S_Mercalilo";
+		};
+		class Item44
+		{
+			position[]={14282.537,43.407188,10477.155};
+			azimut=-249.66499;
+			id=44;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z5 sedan_2 - S_Obregan";
+		};
+		class Item45
+		{
+			position[]={13210.499,28.634047,11513.232};
+			azimut=91.007004;
+			id=45;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z5 sedan_3 - Mercalilo";
+		};
+		class Item46
+		{
+			position[]={13068.022,25.965,11284.375};
+			azimut=-10.4369;
+			id=46;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z5 sedan_4 - Mercalilo";
+		};
+		class Item47
+		{
+			position[]={14507.285,43.965,10690.834};
+			azimut=337.63501;
+			id=47;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z5 sedan_5 - Obregan";
+		};
+		class Item48
+		{
+			position[]={13486.634,27.628439,11572.312};
+			azimut=-249.29401;
+			id=48;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z5 sedan_1 - N_Mercalilo";
+		};
+		class Item49
+		{
+			position[]={13738.716,34.965,11516.649};
+			azimut=179.886;
+			id=49;
+			side="EMPTY";
+			vehicle="car_sedan";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z5 sedan_2 - N_Mercalilo";
+		};
+		class Item50
+		{
+			position[]={13709.669,27.07416,10623.291};
+			azimut=-15.6592;
+			id=50;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z5 UAZred_1 - S_Mercalilo";
+		};
+		class Item51
+		{
+			position[]={13424.374,26.24576,11040.081};
+			azimut=-47.214199;
+			id=51;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z5 UAZred_2 - S_Mercalilo";
+		};
+		class Item52
+		{
+			position[]={13837.757,32.621838,10866.322};
+			azimut=67.241798;
+			id=52;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z5 UAZred_3 - S_Mercalilo";
+		};
+		class Item53
+		{
+			position[]={13254.837,25.965,11362.143};
+			azimut=69.789803;
+			id=53;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z5 UAZred_4 - Mercalilo";
+		};
+		class Item54
+		{
+			position[]={14446.075,42.974998,10749.934};
+			azimut=60.0886;
+			id=54;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z5 UAZred_5 - Obregan";
+		};
+		class Item55
+		{
+			position[]={14448.02,41.805,10867.106};
+			azimut=210.472;
+			special="NONE";
+			id=55;
+			side="EMPTY";
+			vehicle="Land_majak";
+			lock="UNLOCKED";
+			skill=0.2;
+			description="EML_Z5 - Obregan";
+		};
+		class Item56
+		{
+			position[]={12959.101,21.959999,11316.497};
+			azimut=501.27802;
+			id=56;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z5 PickUp_TubeC_1 - Mercalilo";
+		};
+		class Item57
+		{
+			position[]={13189.222,25.965,11307.33};
+			azimut=163.563;
+			id=57;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z5 PickUp_TubeC_2 - Mercalilo";
+		};
+		class Item58
+		{
+			position[]={13743.762,34.965,11517.649};
+			azimut=180.43201;
+			id=58;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z5 PickUp_TubeC_3 - N_Mercalilo";
+		};
+		class Item59
+		{
+			position[]={14383.23,44.858105,11123.061};
+			azimut=268.04199;
+			id=59;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z5 PickUp_TubeC_4 - N_Obregan";
+		};
+		class Item60
+		{
+			position[]={14344.802,44.421398,10664.902};
+			azimut=290.173;
+			id=60;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z5 PickUp_TubeC_5 - Obregan";
+		};
+		class Item61
+		{
+			position[]={13799.672,34.965,11499.486};
+			azimut=270.54401;
+			id=61;
+			side="EMPTY";
+			vehicle="MtvrRefuel";
+			skill=0.60000002;
+			description="EML_Z5 MTVR_Refuel_F - N_Mercalilo";
+		};
+		class Item62
+		{
+			position[]={12704.823,-1.2419248,11315.118};
+			azimut=-306.26599;
+			id=62;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z5 PBX - Mercalillo";
+		};
+		class Item63
+		{
+			position[]={13819.369,29.783422,10249.069};
+			azimut=143.388;
+			id=63;
+			side="EMPTY";
+			vehicle="UralCivil";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z5 Ural_CivOr - S_Mercalilo";
+		};
+		class Item64
+		{
+			position[]={13732.391,27.26091,10607.205};
+			azimut=160.26199;
+			id=64;
+			side="EMPTY";
+			vehicle="Ural_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z5 Ural_CivBl - S_Mercalilo";
+		};
+		class Item65
+		{
+			position[]={13365.185,19.831684,10720.486};
+			azimut=222.255;
+			id=65;
+			side="EMPTY";
+			vehicle="UralCivil";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z5 Ural_CivOr - S_Mercalilo";
+		};
+		class Item66
+		{
+			position[]={13438.71,26.077105,11022.223};
+			azimut=267.30801;
+			id=66;
+			side="EMPTY";
+			vehicle="Ural_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z5 Ural_CivBl - S_Mercalilo";
+		};
+		class Item67
+		{
+			position[]={13763.14,34.965,11542.479};
+			azimut=177.961;
+			id=67;
+			side="EMPTY";
+			vehicle="KamazOpen";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z5 MilitaryUtility_RUS - Mercalilo";
+		};
+		class Item68
+		{
+			position[]={14416.477,45.469456,11147.283};
+			azimut=270.43585;
+			id=68;
+			side="EMPTY";
+			vehicle="UralCivil";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z5 Ural_CivOr - S_Mercalilo";
+		};
+		class Item69
+		{
+			position[]={14676.077,46.011734,10539.764};
+			azimut=387.26901;
+			id=69;
+			side="EMPTY";
+			vehicle="Ural_UN_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z5 Ural_CivUN - Obregan";
+		};
+		class Item70
+		{
+			position[]={14683.977,46.302731,10536.038};
+			azimut=387.51599;
+			id=70;
+			side="EMPTY";
+			vehicle="Ural_UN_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z5 Ural_CivUN - Obregan";
+		};
+		class Item71
+		{
+			position[]={14676.456,43.965,10742.821};
+			azimut=298.521;
+			id=71;
+			side="EMPTY";
+			vehicle="UralCivil";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="EML_Z5 Ural_CivOr - Obregan";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=15248578;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10013427;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10698790;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
