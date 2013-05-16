@@ -1,4 +1,4 @@
-+private["_iItem","_iClass","_iPos","_radius","_itemTypes","_index","_item","_qty","_max","_tQty","_canType","_weights","_cntWeights","_dateNow"];
+private["_iItem","_iClass","_iPos","_radius","_itemTypes","_index","_item","_qty","_max","_tQty","_canType","_weights","_cntWeights","_dateNow"];
 _iItem = 	_this select 0;
 _iClass = 	_this select 1;
 _iPos =	_this select 2;
@@ -50,6 +50,9 @@ switch (_iClass) do {
 // timestamp for later clearing
 _dateNow = (DateToNumber date);
 _item setVariable ["looted",_dateNow,true];
+
+_iPosZ = _iPos select 2;
+if( _iPosZ < 0 ) then { _iPos = [_iPos select 0,_iPos select 1,0]; };
 
 if ((count _iPos) > 2) then {
 	_item setPosATL _iPos;

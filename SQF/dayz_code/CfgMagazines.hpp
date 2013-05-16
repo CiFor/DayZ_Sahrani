@@ -94,6 +94,16 @@ class CfgMagazines {
 		};
 	};
 	
+	class ItemNails : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Nails Bag";
+		model = "\Ca\misc\SmallObj_dog_tags_WPN";
+		picture = "\z\addons\dayz_code\textures\equip_nails.paa";
+		descriptionShort = "Small bag of nails";
+	};
+	
 	class FoodEdible;
 	class FoodmeatRaw : FoodEdible {
 		scope = public;
@@ -179,7 +189,7 @@ class CfgMagazines {
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_5;
 		bloodRegen = 100;
 	};
-class ItemWaterbottle;
+	class ItemWaterbottle;
 	class ItemWaterbottleBoiled : ItemWaterbottle {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
 		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;

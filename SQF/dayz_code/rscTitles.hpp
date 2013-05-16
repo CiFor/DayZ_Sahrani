@@ -79,7 +79,7 @@ class RscDisplayMain : RscStandardDisplay
 		};
 	};
 	
-	onLoad = "((_this select 0) displayCtrl 138) ctrlEnable false;";
+	//onLoad = "((_this select 0) displayCtrl 138) ctrlEnable false;";
 
 	class controls 
 	{

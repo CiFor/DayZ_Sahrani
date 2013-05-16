@@ -10,7 +10,7 @@ _nearestCity = _this select 6;
 _maxZombies = _this select 7;
 
 if (_inVehicle) then {
-	_maxZombies = _maxZombies / 2;
+	_maxZombies = _maxZombies / 4;
 };
 
 _zombied = (_x getVariable ["zombieSpawn",-0.1]);

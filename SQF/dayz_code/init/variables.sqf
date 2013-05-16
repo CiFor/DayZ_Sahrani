@@ -224,6 +224,7 @@ if(!isDedicated) then {
 	//Establish Location Streaming
 	_funcGetLocation = 
 	{
+		/* Null this out
 		for "_i" from 0 to ((count _this) - 1) do 
 		{
 			private ["_location","_config","_locHdr","_position","_size","_type"];
@@ -239,9 +240,9 @@ if(!isDedicated) then {
 			
 			//Record details
 			dayz_Locations set [count dayz_Locations, [_location,_locHdr,_size]]; 
-		};
+		};*/
 	};
-	_cfgLocation = configFile >> "CfgTownGenerator";
+	_cfgLocation = configFile >> "CfgTownGeneratorSara";
 	_cfgLocation call _funcGetLocation;
 	
 	dayz_buildingMonitor = [];	//Buildings to check
