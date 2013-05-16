@@ -1,0 +1,602 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"ca_modules_silvie",
+		"ca_air2_su25",
+		"CAAir3_Su34",
+		"CAAir_E_AH6J",
+		"CAAir_E_UH1H_EP1",
+		"CAWheeled2_V3S",
+		"CAWheeled",
+		"caa1_c_ah6",
+		"CAWater",
+		"CAWheeled3_TT650",
+		"CAWheeled_E_Old_bike",
+		"cawheeled_w_baf",
+		"cawheeled_d_baf",
+		"castructureshouse_shed_ind",
+		"CAWheeled2_MTVR",
+		"CAAir2_MV22",
+		"cawheeled_e_v3s",
+		"cacharacters2"
+	};
+	addOnsAuto[]=
+	{
+		"CAAir_E_AH6J",
+		"CAAir_E_UH1H_EP1",
+		"cawheeled_e_v3s",
+		"CAWheeled2_V3S",
+		"CAWheeled",
+		"CAWater",
+		"CAWheeled3_TT650",
+		"CAWheeled_E_Old_bike",
+		"CAWheeled2_MTVR",
+		"oac_core"
+	};
+	randomSeed=7882067;
+	class Intel
+	{
+		startWeather=0.10000002;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=14;
+	};
+	class Vehicles
+	{
+		items=46;
+		class Item0
+		{
+			position[]={2385.0796,8.7008591,18823.605};
+			azimut=-196.38699;
+			id=3;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			skill=0.60000002;
+			description="NWI  AH6X_1 - Parvulo";
+		};
+		class Item1
+		{
+			position[]={4955.9854,24.975,15747.413};
+			id=4;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			skill=0.60000002;
+			description="NWI  AH6X_2 - Vida";
+		};
+		class Item2
+		{
+			position[]={4980.5352,78.250183,16075.607};
+			azimut=355;
+			id=5;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NWI  AH6X_3 - Vida";
+		};
+		class Item3
+		{
+			position[]={4417.8525,30.959999,15806.573};
+			azimut=45;
+			id=6;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NWI  AH6X_4 - Vassal";
+		};
+		class Item4
+		{
+			position[]={4421.7549,6.9749999,15556.715};
+			azimut=45;
+			id=7;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NWI  AH6X_5 - Vassal";
+		};
+		class Item5
+		{
+			position[]={4575.2319,31.263475,15274.136};
+			azimut=150;
+			id=8;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NWI  AH6X_6 - Vassal";
+		};
+		class Item6
+		{
+			position[]={4938.4893,56.970001,15473.471};
+			azimut=245;
+			id=9;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NWI UH1H_1 - Vida";
+		};
+		class Item7
+		{
+			position[]={4908.8252,3.8800561,15834.633};
+			azimut=75;
+			id=10;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NWI UH1H_2 - Vida";
+		};
+		class Item8
+		{
+			position[]={2414.4248,5.6348815,18823.193};
+			azimut=75;
+			id=11;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NWI UH1H_3 - Parvulo";
+		};
+		class Item9
+		{
+			position[]={4555.3745,30.959999,15290.068};
+			azimut=75;
+			id=12;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NWI UH1H_4 - Vassal";
+		};
+		class Item10
+		{
+			position[]={4488.6772,6.9749999,15483.641};
+			azimut=75;
+			id=13;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NWI UH1H_5 - Vassal";
+		};
+		class Item11
+		{
+			position[]={4391.8174,30.959999,15808.56};
+			azimut=75;
+			id=14;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NWI UH1H_6 - Vassal";
+		};
+		class Item12
+		{
+			position[]={4894.5459,56.970001,15498.271};
+			azimut=55;
+			id=18;
+			side="EMPTY";
+			vehicle="V3S_TK_GUE_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NWI V3S_1 - Vida";
+		};
+		class Item13
+		{
+			position[]={4910.334,55.133987,15537.159};
+			azimut=6.0036998;
+			id=19;
+			side="EMPTY";
+			vehicle="V3S_TK_GUE_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NWI V3S_2 - Vida";
+		};
+		class Item14
+		{
+			position[]={4867.3623,53.308636,15548.78};
+			azimut=105.576;
+			id=20;
+			side="EMPTY";
+			vehicle="V3S_TK_GUE_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NWI V3S_3 - Vida";
+		};
+		class Item15
+		{
+			position[]={4514.5884,30.959999,15291.074};
+			azimut=55;
+			id=21;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NWI V3S_4 - Vassal";
+		};
+		class Item16
+		{
+			position[]={4409.7832,30.959999,15792.435};
+			azimut=-1.6284;
+			id=22;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NWI V3S_5 - Vassal";
+		};
+		class Item17
+		{
+			position[]={4584.6328,30.501345,15281.092};
+			azimut=275;
+			id=23;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NWI V3S_6 - Vassal";
+		};
+		class Item18
+		{
+			position[]={4382.959,36.923763,15352.326};
+			id=24;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI UAZ_01 - Vassal";
+		};
+		class Item19
+		{
+			position[]={4527.1357,30.721865,15304.811};
+			id=25;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI UAZ_02 - Vassal";
+		};
+		class Item20
+		{
+			position[]={4508.7686,7.7678337,15523.982};
+			azimut=260;
+			id=26;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI UAZ_03 - Vassal";
+		};
+		class Item21
+		{
+			position[]={4282.6636,21.605623,15758.173};
+			azimut=260;
+			id=27;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI UAZ_04 - Vassal";
+		};
+		class Item22
+		{
+			position[]={4636.4204,8.5039768,15762.74};
+			azimut=40;
+			id=28;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI UAZ_05 - Vassal";
+		};
+		class Item23
+		{
+			position[]={4885.7905,45.838428,15567.433};
+			azimut=58.921398;
+			id=29;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI UAZ_06 - Vida";
+		};
+		class Item24
+		{
+			position[]={4938.8486,24.886915,15756.64};
+			azimut=5;
+			id=30;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI UAZ_07 - Vida";
+		};
+		class Item25
+		{
+			position[]={4940.6685,3.2970679,15826.856};
+			azimut=90;
+			id=31;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI UAZ_08 - Vida";
+		};
+		class Item26
+		{
+			position[]={4950.8857,69.494171,16043.738};
+			azimut=305;
+			id=32;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI UAZ_09 - Vida";
+		};
+		class Item27
+		{
+			position[]={4922.9956,56.970001,15492.312};
+			azimut=66.446167;
+			id=33;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI UAZ_10 - Vida";
+		};
+		class Item28
+		{
+			position[]={4981.1714,0.18861291,16168.875};
+			azimut=270;
+			id=34;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="NWI PBX_1 - Vida";
+		};
+		class Item29
+		{
+			position[]={4333.666,0.24592717,15503.652};
+			azimut=270;
+			id=35;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="NWI PBX_2 - Vassal";
+		};
+		class Item30
+		{
+			position[]={4486.3516,6.9749999,15562.463};
+			azimut=3.51561;
+			special="NONE";
+			id=16;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="NWI Motorcycle 1 - Vassal";
+		};
+		class Item31
+		{
+			position[]={5060.5864,26.17683,15796.89};
+			azimut=3.51561;
+			special="NONE";
+			id=17;
+			side="EMPTY";
+			vehicle="TT650_Civ";
+			skill=0.60000002;
+			description="NWI Motorcycle 1 - Vida";
+		};
+		class Item32
+		{
+			position[]={2259.3057,6.4206967,18783.59};
+			azimut=60.4935;
+			id=0;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			skill=0.2;
+			description="NWI  AH6X_1 - Parvulo";
+		};
+		class Item33
+		{
+			position[]={4902.1313,56.085854,15521.374};
+			azimut=42.023701;
+			id=1;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			skill=0.2;
+			description="NWI  AH6X_7 - Vida";
+		};
+		class Item34
+		{
+			position[]={4375.606,30.959999,15801.359};
+			id=2;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			skill=0.2;
+			description="NWI  AH6X_5 - Vassal";
+		};
+		class Item35
+		{
+			position[]={11946.504,138.68198,9342.502};
+			azimut=-56.038502;
+			id=15;
+			side="EMPTY";
+			vehicle="Old_bike_TK_CIV_EP1";
+			skill=0.2;
+			description="WML_Z2 OldBike - Hiccoras";
+		};
+		class Item36
+		{
+			position[]={4417.1934,30.959999,15821.662};
+			azimut=573.02899;
+			id=36;
+			side="EMPTY";
+			vehicle="MtvrRefuel";
+			skill=0.60000002;
+			description="NWI MTVR_Refuel_F - Vassal";
+		};
+		class Item37
+		{
+			position[]={4903.0073,56.970001,15479.267};
+			azimut=781.80902;
+			id=37;
+			side="EMPTY";
+			vehicle="MtvrRefuel";
+			skill=0.60000002;
+			description="NWI MTVR_Refuel_F - Vida";
+		};
+		class Item38
+		{
+			position[]={4943.3843,0.61528742,15595.809};
+			azimut=505.509;
+			id=38;
+			side="EMPTY";
+			vehicle="PBX";
+			skill=0.60000002;
+			description="NWI PBX - Isla_delVida";
+		};
+		class Item39
+		{
+			position[]={4753.9316,0.36485791,15769.927};
+			azimut=390.522;
+			id=39;
+			side="EMPTY";
+			vehicle="PBX";
+			skill=0.60000002;
+			description="NWI PBX - Isla_delVida";
+		};
+		class Item40
+		{
+			position[]={4873.5381,0.52685165,16027.688};
+			azimut=358.16599;
+			id=40;
+			side="EMPTY";
+			vehicle="PBX";
+			skill=0.60000002;
+			description="NWI PBX - Isla_delVida";
+		};
+		class Item41
+		{
+			position[]={4454.7349,0.66323215,15215.549};
+			azimut=483.43301;
+			id=41;
+			side="EMPTY";
+			vehicle="PBX";
+			skill=0.60000002;
+			description="NWI PBX - Isla_delVassal";
+		};
+		class Item42
+		{
+			position[]={4252.2749,0.69226044,15399.746};
+			azimut=377.133;
+			id=42;
+			side="EMPTY";
+			vehicle="PBX";
+			skill=0.60000002;
+			description="NWI PBX - Isla_delVassal";
+		};
+		class Item43
+		{
+			position[]={4607.7227,0.66927534,15596.794};
+			azimut=464.40427;
+			id=43;
+			side="EMPTY";
+			vehicle="PBX";
+			skill=0.60000002;
+			description="NWI PBX - Isla_delVassal";
+		};
+		class Item44
+		{
+			position[]={4293.3589,0.48323122,15871.362};
+			azimut=404.96149;
+			id=44;
+			side="EMPTY";
+			vehicle="PBX";
+			skill=0.60000002;
+			description="NWI PBX - Isla_delVassal";
+		};
+		class Item45
+		{
+			position[]={2183.8464,0.31647882,18929.715};
+			azimut=27.8487;
+			id=45;
+			side="EMPTY";
+			vehicle="RHIB";
+			skill=0.60000002;
+			description="NWI RHIB 1 - Parvulo";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=15248578;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10013427;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10698790;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

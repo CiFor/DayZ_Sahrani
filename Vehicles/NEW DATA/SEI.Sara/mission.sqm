@@ -1,0 +1,411 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"ca_modules_silvie",
+		"camisc3",
+		"CABuildings",
+		"Extra_Vehicles",
+		"CAWheeled2_V3S",
+		"CAWheeled_E_LandRover",
+		"cadata",
+		"caa1_c_ah6",
+		"CAWater",
+		"cawater2_fishing_boat",
+		"CAWheeled_E",
+		"CAWheeled2_VWGolf",
+		"CAWheeled_E_Old_bike",
+		"cawheeled_w_baf",
+		"cawheeled_d_baf",
+		"CAWheeled_E_Old_moto",
+		"cawheeled_pmc",
+		"CAWheeled2_LADA",
+		"castructureshouse_housev",
+		"castructureshouse_shed_ind",
+		"CAWheeled2_MTVR",
+		"CAWheeled2_GAZ39371",
+		"CAWheeled2_Kamaz",
+		"cawheeled_e_v3s",
+		"cacharacters2"
+	};
+	addOnsAuto[]=
+	{
+		"CAWater",
+		"CAWheeled2_MTVR",
+		"Extra_Vehicles",
+		"CAWheeled2_GAZ39371",
+		"oac_core"
+	};
+	randomSeed=7882067;
+	class Intel
+	{
+		startWeather=0.10000002;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=14;
+	};
+	class Vehicles
+	{
+		items=29;
+		class Item0
+		{
+			position[]={18321.207,0.21037769,2928.6194};
+			azimut=55;
+			id=0;
+			side="EMPTY";
+			vehicle="RHIB";
+			skill=0.60000002;
+			description="SEI RHIB 1 - Asharah";
+		};
+		class Item1
+		{
+			position[]={16381.352,7.5002365,4542.75};
+			azimut=723.53101;
+			id=1;
+			side="EMPTY";
+			vehicle="MtvrRefuel";
+			skill=0.60000002;
+			description="SEI MTVR_Refuel_F - Isla_delZorra";
+		};
+		class Item2
+		{
+			position[]={16578.613,6.4552855,4738.8843};
+			azimut=701.46143;
+			id=2;
+			side="EMPTY";
+			vehicle="MtvrRefuel";
+			skill=0.60000002;
+			description="SEI MTVR_Refuel_F - Isla_delZorra";
+		};
+		class Item3
+		{
+			position[]={16765.971,0.46320659,4599.5166};
+			azimut=135.9906;
+			id=3;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="SEI PBX 1 - Isla_delZorra";
+		};
+		class Item4
+		{
+			position[]={16114.885,0.95297861,3925.7983};
+			azimut=226.65199;
+			id=4;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="SEI PBX 1 - El_Gordo";
+		};
+		class Item5
+		{
+			position[]={17392.313,-2.2527282,4848.5684};
+			azimut=140;
+			id=5;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="SEI PBX 1 - Tojos";
+		};
+		class Item6
+		{
+			position[]={16637.912,8.0715895,4657.8511};
+			azimut=42.088799;
+			id=6;
+			side="EMPTY";
+			vehicle="BMP2_RU";
+			skill=0.60000002;
+			description="SEI BMP2 - ZorraE";
+		};
+		class Item7
+		{
+			position[]={16658.688,8.0146894,4637.688};
+			azimut=7.74332;
+			id=7;
+			side="EMPTY";
+			vehicle="GAZ_Vodnik";
+			skill=0.60000002;
+			description="SEI Vodnik_PKx2 - ZorraE";
+		};
+		class Item8
+		{
+			position[]={16669.578,7.9163508,4636.5122};
+			azimut=7.74332;
+			id=8;
+			side="EMPTY";
+			vehicle="GAZ_Vodnik";
+			skill=0.60000002;
+			description="SEI Vodnik_PKx2 - ZorraE";
+		};
+		class Item9
+		{
+			position[]={16661.965,7.9897738,4637.3564};
+			azimut=7.74332;
+			id=9;
+			side="EMPTY";
+			vehicle="GAZ_Vodnik";
+			skill=0.60000002;
+			description="SEI Vodnik_PKx2 - ZorraE";
+		};
+		class Item10
+		{
+			position[]={16665.664,7.9537697,4636.9492};
+			azimut=7.74332;
+			id=10;
+			side="EMPTY";
+			vehicle="GAZ_Vodnik";
+			skill=0.60000002;
+			description="SEI Vodnik_PKx2 - ZorraE";
+		};
+		class Item11
+		{
+			position[]={16636.273,7.8783636,4635.9995};
+			azimut=-261.96701;
+			id=11;
+			side="EMPTY";
+			vehicle="M113_RACS";
+			skill=0.60000002;
+			description="SEI M113 - ZorraE";
+		};
+		class Item12
+		{
+			position[]={16635.729,7.7790937,4631.0288};
+			azimut=-621.47601;
+			id=12;
+			side="EMPTY";
+			vehicle="Vulcan_RACS";
+			skill=0.60000002;
+			description="SEI M163 Vulcan - ZorraE";
+		};
+		class Item13
+		{
+			position[]={16637.703,7.9601097,4640.4565};
+			azimut=-263.69;
+			id=13;
+			side="EMPTY";
+			vehicle="T72_RACS";
+			skill=0.60000002;
+			description="SEI T72 - ZorraE";
+		};
+		class Item14
+		{
+			position[]={16635.055,8.0630531,4660.7036};
+			azimut=42.088799;
+			id=14;
+			side="EMPTY";
+			vehicle="BRDM2_RU";
+			skill=0.60000002;
+			description="SEI BRDM2 - ZorraE";
+		};
+		class Item15
+		{
+			position[]={16632.195,8.0470896,4663.166};
+			azimut=42.088799;
+			id=15;
+			side="EMPTY";
+			vehicle="GAZ_Vodnik_HMG";
+			skill=0.60000002;
+			description="SEI Vodnik_BPPU - ZorraE";
+		};
+		class Item16
+		{
+			position[]={16372.389,7.590569,4578.4409};
+			azimut=-2.26053;
+			id=16;
+			side="EMPTY";
+			vehicle="BMP2_RU";
+			skill=0.60000002;
+			description="SEI BMP2 - ZorraW";
+		};
+		class Item17
+		{
+			position[]={16401.336,7.7500901,4578.5439};
+			azimut=-36.605999;
+			id=17;
+			side="EMPTY";
+			vehicle="GAZ_Vodnik";
+			skill=0.60000002;
+			description="SEI Vodnik_PKx2 - ZorraW";
+		};
+		class Item18
+		{
+			position[]={16409.945,7.640358,4585.3149};
+			azimut=-36.605999;
+			id=18;
+			side="EMPTY";
+			vehicle="GAZ_Vodnik";
+			skill=0.60000002;
+			description="SEI Vodnik_PKx2 - ZorraW";
+		};
+		class Item19
+		{
+			position[]={16403.906,7.7178688,4580.5933};
+			azimut=-36.605999;
+			id=19;
+			side="EMPTY";
+			vehicle="GAZ_Vodnik";
+			skill=0.60000002;
+			description="SEI Vodnik_PKx2 - ZorraW";
+		};
+		class Item20
+		{
+			position[]={16406.844,7.6801629,4582.8911};
+			azimut=-36.605999;
+			id=20;
+			side="EMPTY";
+			vehicle="GAZ_Vodnik";
+			skill=0.60000002;
+			description="SEI Vodnik_PKx2 - ZorraW";
+		};
+		class Item21
+		{
+			position[]={16386.492,7.6331921,4561.6699};
+			azimut=-306.31699;
+			id=21;
+			side="EMPTY";
+			vehicle="M113_RACS";
+			skill=0.60000002;
+			description="SEI M113 - ZorraW";
+		};
+		class Item22
+		{
+			position[]={16389.578,7.5946469,4557.7334};
+			azimut=-665.82501;
+			id=22;
+			side="EMPTY";
+			vehicle="Vulcan_RACS";
+			skill=0.60000002;
+			description="SEI M163Vulcan - ZorraW";
+		};
+		class Item23
+		{
+			position[]={16384.398,7.6739626,4565.855};
+			azimut=-308.04001;
+			id=23;
+			side="EMPTY";
+			vehicle="T72_RACS";
+			skill=0.60000002;
+			description="SEI T72 - ZorraW";
+		};
+		class Item24
+		{
+			position[]={16368.355,7.4405851,4578.4824};
+			azimut=-2.26053;
+			id=24;
+			side="EMPTY";
+			vehicle="BRDM2_RU";
+			skill=0.60000002;
+			description="SEI BRDM2 - ZorraW";
+		};
+		class Item25
+		{
+			position[]={16364.589,7.2355084,4578.2461};
+			azimut=-2.26053;
+			id=25;
+			side="EMPTY";
+			vehicle="GAZ_Vodnik_HMG";
+			skill=0.60000002;
+			description="SEI Vodnik_BPPU - ZorraW";
+		};
+		class Item26
+		{
+			position[]={16015.623,0.19658658,3937.0874};
+			azimut=154.573;
+			id=26;
+			side="EMPTY";
+			vehicle="RHIB";
+			skill=0.60000002;
+			description="SEI RHIB 2 - El Gordo";
+		};
+		class Item27
+		{
+			position[]={16773.408,0.34609917,4600.8789};
+			azimut=145.552;
+			id=27;
+			side="EMPTY";
+			vehicle="RHIB";
+			skill=0.60000002;
+			description="SEI RHIB 3 - Zorra";
+		};
+		class Item28
+		{
+			position[]={16781.217,0.24793494,4600.7417};
+			azimut=155.74983;
+			id=28;
+			side="EMPTY";
+			vehicle="RHIB";
+			skill=0.60000002;
+			description="SEI RHIB 4 - Zorra";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=15248578;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10013427;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10698790;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

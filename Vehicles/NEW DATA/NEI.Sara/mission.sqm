@@ -1,0 +1,485 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"ca_modules_silvie",
+		"CABuildings",
+		"Extra_Vehicles",
+		"ca_air2_su25",
+		"CAAir3_Su34",
+		"CAAir_E_AH6J",
+		"CAAir_E_UH1H_EP1",
+		"caair",
+		"caair_e_an2",
+		"caair_e",
+		"CAWheeled_E_ATV",
+		"caa1_c_ah6",
+		"CAWater",
+		"CAWheeled_E",
+		"CAWheeled_E_Old_moto",
+		"castructureshouse_housev",
+		"castructureshouse_shed_ind",
+		"CAAir2_MV22",
+		"CAWheeled2_GAZ39371",
+		"CAWheeled2_Kamaz",
+		"cawheeled_e_v3s",
+		"cacharacters2"
+	};
+	addOnsAuto[]=
+	{
+		"Extra_Vehicles",
+		"CAAir_E_AH6J",
+		"CAAir_E_UH1H_EP1",
+		"caair",
+		"caair_e_an2",
+		"CAWheeled_E_ATV",
+		"CAWater",
+		"CAWheeled_E",
+		"caair_e",
+		"CAAir2_MV22",
+		"ca_air2_su25",
+		"CAAir3_Su34",
+		"oac_core"
+	};
+	randomSeed=7882067;
+	class Intel
+	{
+		startWeather=0.10000002;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=14;
+	};
+	class Vehicles
+	{
+		items=35;
+		class Item0
+		{
+			position[]={18072.945,8.6999998,18117.68};
+			azimut=270;
+			special="NONE";
+			id=0;
+			side="EMPTY";
+			vehicle="Mi17_Ru";
+			lock="LOCKED";
+			skill=0.2;
+			health=0.221935;
+			fuel=0;
+		};
+		class Item1
+		{
+			position[]={18067.971,8.6999998,18135.727};
+			azimut=-75.596436;
+			id=1;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			skill=0.60000002;
+			description="NEI  AH6X_1 - Antigua";
+		};
+		class Item2
+		{
+			position[]={18021.395,8.6999998,18823.867};
+			azimut=244.94043;
+			id=2;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			skill=0.60000002;
+			description="NEI  AH6X_2 - Antigua";
+		};
+		class Item3
+		{
+			position[]={17785.273,5.9639049,18298.289};
+			azimut=175;
+			id=3;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			skill=0.60000002;
+			description="NEI  AH6X_3 - Antigua";
+		};
+		class Item4
+		{
+			position[]={17304.639,52.359386,17912.613};
+			azimut=175;
+			id=4;
+			side="EMPTY";
+			vehicle="AH6X_EP1";
+			skill=0.60000002;
+			description="NEI  AH6X_4 - Antigua";
+		};
+		class Item5
+		{
+			position[]={18086.969,8.6999998,18100.256};
+			azimut=345.97437;
+			id=5;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NEI UH1H_1 - Antigua";
+		};
+		class Item6
+		{
+			position[]={17970.518,6.8975868,18382.703};
+			azimut=439.10825;
+			id=6;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="Antigua UH1 Spawn 2";
+		};
+		class Item7
+		{
+			position[]={18041.736,8.6999998,18307.447};
+			azimut=270;
+			id=7;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NEI UH1H_2 - Antigua";
+		};
+		class Item8
+		{
+			position[]={17982.734,8.6999998,18806.961};
+			azimut=270;
+			id=8;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NEI UH1H_3 - Antigua";
+		};
+		class Item9
+		{
+			position[]={17664.611,6.2059817,18234.93};
+			azimut=270;
+			id=9;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="NEI UH1H_4 - Antigua";
+		};
+		class Item10
+		{
+			position[]={18052.561,8.6999998,18367.955};
+			azimut=306.44092;
+			id=10;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="NEI Mi17_2 - Antigua";
+		};
+		class Item11
+		{
+			position[]={17490.604,7.1381068,18228.338};
+			azimut=345;
+			id=11;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="NEI Mi17_3 - Antigua";
+		};
+		class Item12
+		{
+			position[]={18051.662,8.6999998,18289.055};
+			azimut=288.49591;
+			id=12;
+			side="EMPTY";
+			vehicle="Mi17_CDF";
+			skill=0.60000002;
+			description="NEI Mi17_4 - Antigua";
+		};
+		class Item13
+		{
+			position[]={18051.346,8.6999998,18443.977};
+			azimut=165;
+			id=13;
+			side="EMPTY";
+			vehicle="An2_1_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI An2 Aero_1 - Antigua";
+		};
+		class Item14
+		{
+			position[]={18115.471,8.6999998,18028.527};
+			azimut=443.70901;
+			id=14;
+			side="EMPTY";
+			vehicle="An2_1_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI An2 Aero_2 - Antigua";
+		};
+		class Item15
+		{
+			position[]={18035.197,9.1653767,18250.441};
+			azimut=418.7746;
+			id=15;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="NEI ATV_1 - Antigua";
+		};
+		class Item16
+		{
+			position[]={18071.75,8.6999998,18251.24};
+			azimut=99.518181;
+			id=16;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="NEI ATV_2 - Antigua";
+		};
+		class Item17
+		{
+			position[]={17953.172,9.6148701,18768.285};
+			azimut=171.46269;
+			id=17;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="NEI ATV_3 - Antigua";
+		};
+		class Item18
+		{
+			position[]={17861.482,7.7046924,18907.068};
+			azimut=195;
+			id=18;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="NEI ATV_4 - Antigua";
+		};
+		class Item19
+		{
+			position[]={17900.205,0.20213604,19009.08};
+			id=19;
+			side="EMPTY";
+			vehicle="PBX";
+			leader=1;
+			skill=0.60000002;
+			description="Antigua PBX 1";
+		};
+		class Item20
+		{
+			position[]={16935.137,0.28113696,19724.566};
+			azimut=330;
+			id=20;
+			side="EMPTY";
+			vehicle="RHIB";
+			skill=0.60000002;
+			description="NEI RHIB_1 - Antigua";
+		};
+		class Item21
+		{
+			position[]={17969.469,8.7179403,18790.252};
+			azimut=443.27191;
+			id=21;
+			side="EMPTY";
+			vehicle="MtvrRefuel_DES_EP1";
+			skill=0.60000002;
+			description="NEI MTVR_Refuel_D - Antigua";
+		};
+		class Item22
+		{
+			position[]={18139.42,8.6999998,18005.684};
+			azimut=103.66107;
+			id=22;
+			side="EMPTY";
+			vehicle="C130J_US_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI C130_1 - Antigua";
+		};
+		class Item23
+		{
+			position[]={18070.248,8.6999998,18310.572};
+			azimut=-55.487064;
+			id=23;
+			side="EMPTY";
+			vehicle="C130J_US_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="NEI C130_2 - Antigua";
+		};
+		class Item24
+		{
+			position[]={17335.674,0.22044009,19516.004};
+			azimut=428.46201;
+			id=24;
+			side="EMPTY";
+			vehicle="PBX";
+			skill=0.60000002;
+			description="NEI PBX_1 - Antigua";
+		};
+		class Item25
+		{
+			position[]={18072.107,-7.9137406,17736.395};
+			azimut=428.46201;
+			id=25;
+			side="EMPTY";
+			vehicle="PBX";
+			skill=0.60000002;
+			description="NEI PBX_2 - Antigua";
+		};
+		class Item26
+		{
+			position[]={17809.41,0.57208014,17862.268};
+			azimut=494.33234;
+			id=26;
+			side="EMPTY";
+			vehicle="PBX";
+			skill=0.60000002;
+			description="NEI PBX_3 - Antigua";
+		};
+		class Item27
+		{
+			position[]={17889.811,-3.1902046,17780.809};
+			azimut=428.46201;
+			id=27;
+			side="EMPTY";
+			vehicle="PBX";
+			skill=0.60000002;
+			description="NEI PBX_4 - Antigua";
+		};
+		class Item28
+		{
+			position[]={18150.467,8.6999998,17975.871};
+			azimut=63.484261;
+			id=28;
+			side="EMPTY";
+			vehicle="MV22";
+			skill=0.60000002;
+			description="NEI - MV22 - Antigua";
+		};
+		class Item29
+		{
+			position[]={18053.074,8.6999998,18340.279};
+			azimut=82.334602;
+			id=29;
+			side="EMPTY";
+			vehicle="MH60S";
+			skill=0.60000002;
+			description="NEI - MH60 - Antigua";
+		};
+		class Item30
+		{
+			position[]={18163.703,8.6999998,17951.238};
+			azimut=55.796371;
+			id=30;
+			side="EMPTY";
+			vehicle="Su39";
+			skill=0.60000002;
+			description="NEI SU25 - Antigua";
+		};
+		class Item31
+		{
+			position[]={18177.561,8.6999998,17937.191};
+			azimut=27.8487;
+			id=31;
+			side="EMPTY";
+			vehicle="Su34";
+			skill=0.60000002;
+			description="NEI SU34 - Antigua";
+		};
+		class Item32
+		{
+			position[]={18021.857,8.4541578,18358.926};
+			azimut=0.74698102;
+			id=32;
+			side="EMPTY";
+			vehicle="MH6J_EP1";
+			skill=0.60000002;
+			description="NEI MH6J_1 - Antigua";
+		};
+		class Item33
+		{
+			position[]={18032.996,8.8271036,18347.783};
+			azimut=0.74698102;
+			id=33;
+			side="EMPTY";
+			vehicle="MH6J_EP1";
+			skill=0.60000002;
+			description="NEI MH6J_2 - Antigua";
+		};
+		class Item34
+		{
+			position[]={18059.947,8.6999998,18149.734};
+			azimut=-76.709694;
+			id=34;
+			side="EMPTY";
+			vehicle="MH6J_EP1";
+			skill=0.60000002;
+			description="NEI MH6J_5 - Antigua";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=15248578;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10013427;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=10698790;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
