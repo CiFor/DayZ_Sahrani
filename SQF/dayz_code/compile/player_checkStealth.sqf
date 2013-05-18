@@ -2,7 +2,7 @@ private["_vel","_speed","_scalePose","_scaleMvmt","_scaleLight","_scaleAlert","_
 _vel = velocity (vehicle player);
 _speed = (_vel distance [0,0,0]);
 _pos = getPosATL player;
-_scalePose = 0.9;
+_scalePose = 0.7;
 _scaleMvmt = 0.2;	//0.4;
 _scaleLight = 0.5;
 _scaleAlert = 1;
@@ -49,7 +49,7 @@ _scaleSound = (1
 
 if (_scaleLight < 0.9) then {
 	//Assess if near lightsource
-	_nearFlare = nearestObject [getPos (vehicle player),"RoadFlare"];
+	_nearFlare = nearestObject [(vehicle player),"RoadFlare"];
 	if (!isNull _nearFlare) then {
 		_scaler = (_nearFlare distance (vehicle player));
 		if (_scaler <= 30) then {
@@ -57,7 +57,7 @@ if (_scaleLight < 0.9) then {
 			_scaleLight = ((_scaler / 30) * 2) + _scaleLight;
 		};
 	};
-	_nearFire = nearestObject [getPos (vehicle player),"Land_Fire"];
+	_nearFire = nearestObject [(vehicle player),"Land_Fire"];
 	if (!isNull _nearFire) then {
 		_scaler = 50 - (_nearFire distance (vehicle player));
 		_scaleLight = ((_scaler / 50) * 2) + _scaleLight;
@@ -106,7 +106,7 @@ if (_speed > 5) then {
 */
 
 //Are they inside a building
-_building = nearestObject [getPos (vehicle player), "Building"];
+_building = nearestObject [(vehicle player), "Building"];
 _isPlayerInside = [(vehicle player),_building] call fnc_isInsideBuilding;
 if (_isPlayerInside) then {
 	_initial = 5;

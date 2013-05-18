@@ -764,7 +764,7 @@ class CfgMagazines
 	class 150Rnd_23mm_GSh23L: FakeMagazine {};
 	
 	/*oac_core*/
-	class WGL_AK47mag: FakeMagazine {};
+	/*class WGL_AK47mag: FakeMagazine {};
 	class WGL_AK74mag: FakeMagazine {};
 	class WGL_AK74SDmag: FakeMagazine {};
 	class WGL_AKS74UMag: FakeMagazine {};
@@ -1326,7 +1326,7 @@ class CfgMagazines
 	class JAM_MP5SA_Cmag : FakeMagazine {};
 	class JAM_MP5SA_HDCmag : FakeMagazine {};
 	class JAM_MP5SBA_Cmag : FakeMagazine {};
-	class JAM_MP5SBA_HDCmag : FakeMagazine {};
+	class JAM_MP5SBA_HDCmag : FakeMagazine {};*/
 };
 
 class CfgWeapons {
@@ -1639,7 +1639,7 @@ class CfgWeapons {
 	//class FN_FAL: FakeWeapon {};
 	//class FN_FAL_ANPVS4: FakeWeapon {};
 	//class G36C_camo: FakeWeapon {};
-	class G36_C_SD_camo: FakeWeapon {};
+	//class G36_C_SD_camo: FakeWeapon {};
 	//class G36A_camo: FakeWeapon {};
 	//class G36K_camo: FakeWeapon {};
 	//class G36C: FakeWeapon {};
@@ -1691,7 +1691,7 @@ class CfgWeapons {
 	class m8_tws: FakeWeapon {};
 	class GSh23L_L39: FakeWeapon {};
 	/*oac_core*/
-	class WGL_AK47: FakeWeapon {};
+	/*class WGL_AK47: FakeWeapon {};
 	class WGL_AK47GL: FakeWeapon {};
 	class WGL_AK74: FakeWeapon {};
 	class WGL_AKS74: FakeWeapon {};
@@ -1743,7 +1743,7 @@ class CfgWeapons {
 	class WGL_ANPRC77_Raid: FakeWeapon {};
 	class WGL_P159_RD90: FakeWeapon {};
 	class WGL_P159_RD54: FakeWeapon {};
-	class WGL_P159_RD99: FakeWeapon {};
+	class WGL_P159_RD99: FakeWeapon {};*/
 };
 class CfgVehicles {
 	class All;
