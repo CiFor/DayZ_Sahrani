@@ -1084,28 +1084,28 @@ class CfgBuildingLoot {
 	};
 	
 	//Extra No loot buildings
-	class land_dum_mesto3 : Residential {};
-	class land_sara_domek_kovarna : Residential {};
-	class land_dum02 : Residential {};
-	class land_dum_mesto : Residential {};
-	class land_dum_mesto2l : Residential {};
-	class land_dum_olezlina : Residential {};
+	class Land_dum_mesto3 : Residential {};
+	class Land_sara_domek_kovarna : Residential {};
+	class Land_dum02 : Residential {};
+	class Land_dum_mesto : Residential {};
+	class Land_dum_mesto2l : Residential {};
+	class Land_dum_olezlina : Residential {};
 	class Land_deutshe : Residential {};
-	class land_dum_istan2_01 : Residential {};
-	class land_dum_istan2_03 : Residential {};
-	class land_dum_olez_istan1 : Residential {};
-	class land_dum_istan2_04a : Residential {};
+	class Land_dum_istan2_01 : Residential {};
+	class Land_dum_istan2_03 : Residential {};
+	class Land_dum_olez_istan1 : Residential {};
+	class Land_dum_istan2_04a : Residential {};
 	class Land_garaz : Residential {};
 	class Land_garaz_mala : Residential {};
-	class land_budova5 : Industrial {};
-	class land_bouda3 : Industrial {};
+	class Land_budova5 : Industrial {};
+	class Land_bouda3 : Industrial {};
 	
 	//Loot added
-	class land_sara_domek_hospoda : Residential {
+	class Land_sara_domek_hospoda : Residential {
 		lootPos[] = {{3.89746,-3.92383,-2.55354},{-0.0595703,-4.04492,-2.49121},{-5.12012,-3.85156,-2.4221}};
 	};
-	class land_afdum_mesto3 : Residential {
-		lootPos[] = {{-0.352539,0.0458984,-5.85629}};
+	class Land_afdum_mesto3 : Residential {
+		lootPos[] = {{-0.3525,0.0459,-5.8567}};
 	};
 	class Land_dum_istan4_detaily1 : Residential {
 		lootPos[] = {{2.70703,-3.2666,-4.33588},{2.68359,-8.11523,-5.92871},{-4.61719,6.00488,-7.28588},{3.71582,5.9082,-7.28588}};
@@ -1116,7 +1116,7 @@ class CfgBuildingLoot {
 	class Land_dum_istan4_inverse : Residential {
 		lootPos[] = {{-2.46582,-2.38379,-4.33588},{-2.75195,-7.81934,-5.92871},{4.04785,6.09424,-7.28588},{-2.27246,5.96436,-7.28588}};
 	};
-	class land_dum_istan2_02 : Residential {
+	class Land_dum_istan2_02 : Residential {
 		lootPos[] = {{-1.55566,-2.97949,-4.21303},{-2.35156,0.222656,1.52753}};
 	};
 	class Land_Panelak3 : Office {
@@ -2845,13 +2845,13 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object3 {
-			Type="land_dum_istan3_hromada";
+			Type="Land_dum_istan3_hromada";
 			position[] = {13162.029,6879.5967,0.1351874};
 			direction = 0.04456012;
 			SetZUp = 1;
 		};
 		class Object4 {
-			Type="land_dum_istan3_Pumpa";
+			Type="Land_dum_istan3_Pumpa";
 			position[] = {13271.853,6862.9492,0};
 			direction = 180.15823;
 			SetZUp = 1;
@@ -2910,13 +2910,13 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object1 {
-			Type="land_dum_istan3_Pumpa";
+			Type="Land_dum_istan3_Pumpa";
 			position[] = {11340.349,5780.0024,0};
 			direction = 329.75522;
 			SetZUp = 1;
 		};
 		class Object2 {
-			Type="land_dum_istan3_Pumpa";
+			Type="Land_dum_istan3_Pumpa";
 			position[] = {11221.264,5148.1104,0.027369408};
 			direction = 139.34927;
 			SetZUp = 1;
@@ -2940,7 +2940,7 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object6 {
-			Type="land_dum_istan3_hromada";
+			Type="Land_dum_istan3_hromada";
 			position[] = {11234.513,5162.3623,0.16766134};
 			direction = 139.26746;
 			SetZUp = 1;
