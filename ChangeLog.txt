@@ -5,13 +5,15 @@
 
 [Changed] All Extra building locations have been redone.
 [Changed] Custom buildings now spawned server side. (Should stop out of sync doors)
+[Changed] Reduced ammo from UH1H Camo (UH1H_TK_DZ)
+[Changed] Reduced ammo from MH6J (MH6J_DZ)
 [Changed] Reduced ammo from RHIB (RHIB_DZ)
 [Chabged] Bag of nails now has a ~7% chance spawn chance (Same as knife)
 
-[Removed] Ariginal DayZ code for local vechicle creation to generate junk.
+[Removed] Original DayZ code for local vechicle creation to generate junk.
 [Removed] All of the CAA1 custom weapons.
-[Removed] Removed CAA1 balaclava.
-[Removed] Ammo and radar from UH1H Camo (UH1H_TK_DZ)
-[Removed] Ammo and radar from MH6J (MH6J_DZ)
+[Removed] CAA1 balaclava.
+[Removed] Radar from UH1H Camo (UH1H_TK_DZ)
+[Removed] Radar from MH6J (MH6J_DZ)
 [Removed] GPS from RHIB (RHIB_DZ)
-[Removed] MK16 Holo until hive problems can be fixed.
+[Removed] MK16 until hive problems can be fixed.
