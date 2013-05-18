@@ -1,0 +1,9 @@
+0.2.1 Change Log
+
+[Fixed]
+  + Zeds are easier to avoid.
+  + All Extra building locations have been redone.
+  + Custom buildings now spawned server side. (Should stop out of sync doors)
+  + Removed original DayZ code for local vechicle creation to generate junk.
+  + Banned and removed all of the CAA1 custom weapons.
+  + 
