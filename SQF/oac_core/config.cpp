@@ -5186,7 +5186,7 @@ class CfgVehicles {
 		faction = GUE;
 		accuracy = 3.9;	// accuracy needed to recognize type of this target
 		model = "\ca\characters2\IndepIns\Soldier.p3d";
-		faceType = "HeadMask1Black";
+		faceType = "Man";//"HeadMask1Black";
 		glassesEnabled = 0;
 		weapons[] = {AKS_74_U, "Throw", "Put", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
 		magazines[] = {"30Rnd_545x39_AK", "30Rnd_545x39_AK", "30Rnd_545x39_AK", "30Rnd_545x39_AK", "30Rnd_545x39_AK", "30Rnd_545x39_AK", "HandGrenade_East", "HandGrenade_East"};
