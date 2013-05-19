@@ -16,8 +16,8 @@ if (!_hasclothesitem) exitWith {cutText [format[(localize "str_player_31"),_text
 
 if (vehicle player != player) exitWith {cutText ["You may not change clothes while in a vehicle", "PLAIN DOWN"]};
 
-_isFemale = ((typeOf player == "SurvivorW2_DZ")||(typeOf player == "BanditW1_DZ"));
-if (_isFemale) exitWith {cutText ["Currently Female Characters cannot change to this skin. This will change in a future update.", "PLAIN DOWN"]};
+_isFemale = ((typeOf player == "SurvivorW2_DZ")||(typeOf player == "BanditW1_DZ")||(typeOf player == "Sniper1W_DZ")||(typeOf player == "SniperBanditW_DZ"));
+//if (_isFemale) exitWith {cutText ["Currently Female Characters cannot change to this skin. This will change in a future update.", "PLAIN DOWN"]};
 
 private["_itemNew","_myModel","_humanity","_isBandit","_isHero"];
 _myModel = (typeOf player);
@@ -26,13 +26,26 @@ _isBandit = _humanity < -2000;
 _isHero = _humanity > 5000;
 _itemNew = "Skin_" + _myModel;
 
-if ( !(isClass(_config >> _itemNew)) ) then {
+if(_itemNew == "Skin_SurvivorW2_DZ" || _itemNew == "Skin_Bandit1_DZ" || _itemNew == "Skin_BanditW1_DZ") then { _itemNew = "Skin_Survivor2_DZ"; }; //Fix For Woman Skin
+if(_itemNew == "Skin_SniperBanditW_DZ") then { _itemNew = "Skin_Sniper1_DZ"; };
+/*if ( !(isClass(_config >> _itemNew)) ) then {
 	_itemNew = if (!_isFemale) then {"Skin_Survivor2_DZ"} else {"Skin_SurvivorW2_DZ"}; 
-};
+};*/
 
 switch (_item) do {
 	case "Skin_Sniper1_DZ": {
-		_model = "Sniper1_DZ";
+		if (_isBandit && !_isFemale) then {
+			_model = "SniperBandit_DZ";
+		};
+		if (_isBandit && _isFemale) then {
+			_model = "SniperBanditW_DZ";
+		};
+		if (!_isBandit && !_isFemale) then {
+			_model = "Sniper1_DZ";
+		};
+		if (!_isBandit && _isFemale) then {
+			_model = "Sniper1W_DZ";
+		};
 	};
 	case "Skin_Camo1_DZ": {
 		_model = "Camo1_DZ";
@@ -48,6 +61,18 @@ switch (_item) do {
 		if (_isHero) then {
 			_model = "Survivor3_DZ";
 		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_Rocket_DZ": {
+		_model = "Rocket_DZ";
+	};
+	case "Skin_BanditSkin_DZ": {
+		_model = "BanditSkin_DZ";
 	};
 };
 

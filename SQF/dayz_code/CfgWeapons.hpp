@@ -87,4 +87,28 @@ class CfgWeapons {
 			};
 		};
 	};
+	
+	class Makarov;
+	class MakarovSD : Makarov {
+		model = "\ca\weapons\makarov_silenced";
+		fireLightDuration = 0.0;
+		fireLightIntensity = 0.0;
+		displayName = $STR_DN_MAKAROVSD;
+		picture = "\CA\weapons\data\equip\w_makarovSD_ca.paa";
+		begin1[] = {"ca\sounds\weapons\pistols\makarovSD_single1", 0.316228, 1, 200};
+		soundBegin[] = {"begin1", 1};
+		reloadMagazineSound[] = {"\ca\Weapons\Data\Sound\pistol_reload", 0.0316228, 1, 20};
+		minRange = 0;
+		minRangeProbab = 0.1;
+		midRange = 15;
+		midRangeProbab = 0.3;
+		maxRange = 20;
+		maxRangeProbab = 0.04;
+		magazines[] = {"8Rnd_9x18_MakarovSD", "8Rnd_9x18_Makarov"};
+		
+		class Library {
+			libTextDesc = $STR_LIB_MAKAROVSD;
+		};
+		descriptionShort = $STR_DSS_MAKAROVSD;
+	};
 };

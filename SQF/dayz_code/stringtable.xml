@@ -1432,4 +1432,23 @@
       <French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
     </Key>
   </Package>
+	<Package name="equipment">
+		<Key ID="STR_EQUIP_NAME_BANDIT">
+			<Original>Bandit Clothing</Original>
+			<English>Bandit Clothing</English>
+			<German>Bandit Kleidung</German>
+            <Dutch>Bandieten Kleding</Dutch>
+			<Russian>Bandit Clothing</Russian>
+			<French>Bandit Clothing</French>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_BANDIT">
+			<Original>Clothes of the Bandits. Can be unpacked and worn.</Original>
+			<English>Clothes of the Bandits. Can be unpacked and worn.</English>
+			<German>Kleidung der Banditen. Kann ausgepackt und getragen werden.</German>
+			<Russian>Clothes of the Bandits. Can be unpacked and worn.</Russian>
+			<Spanish>Clothes of the Bandits. Can be unpacked and worn.</Spanish>
+			<Dutch>Kleding van de Bandieten.Kan uitgepakt en gedragen worden.</Dutch>
+			<French>Clothes of the Bandits. Can be unpacked and worn.</French>
+		</Key>
+	</Package>
 </Project>

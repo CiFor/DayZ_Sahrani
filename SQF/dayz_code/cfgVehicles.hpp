@@ -107,6 +107,41 @@ class CfgVehicles {
 			};
 		};
 	};
+	
+	/*new Zeds*/
+	/*class z_woman1 : zZombie_Base {
+		model = "\ca\characters2\civil\Woman\Hooker\Hooker";
+		faceType = "WomanZedHead";
+		woman = true;
+		moves = "CfgMovesZombie2";
+		identityTypes[] = {"WomanZed"};
+		portrait = "\Ca\characters\data\portraits\comBarHead_civ_woman_ca";
+		hiddenSelections[] = {"Camo"};
+		//hiddenSelectionsTextures[] = {"\Ca\characters2\Civil\Woman\Hooker\data\Hooker1_co.paa"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_code\textures\hooker1_co.paa"};
+		zombieLoot = "generic";
+		
+		minHeadTurnAI = -40;
+		maxHeadTurnAI = 40;
+		leftArmToElbow[] = {"LeftArm", 0.5, "LeftArmRoll", 0};
+		leftArmFromElbow[] = {"LeftForeArm", 0, "LeftForeArmRoll", 0.5};
+		leftWrist = "LeftHand";
+		leftShoulder = "LeftShoulder";
+		leftHand[] = {"LeftHandThumb3", "LeftHandThumb2", "LeftHandThumb1", "LeftHandIndex3", "LeftHandIndex2", "LeftHandIndex1", "LeftHandMiddle3", "LeftHandMiddle2", "LeftHandMiddle1", "LeftHandRing3", "LeftHandRing2", "LeftHandRing1", "LeftInHandRing", "LeftHandPinky3", "LeftHandPinky2", "LeftHandPinky1"};
+		leftArmPoints[] = {"LeftShoulder", "lelbow", "lelbow_axis", "lwrist"};
+		rightArmToElbow[] = {"rightArm", 0.5, "rightArmRoll", 0};
+		rightArmFromElbow[] = {"rightForeArm", 0, "rightForeArmRoll", 0.5};
+		rightWrist = "rightHand";
+		rightShoulder = "rightShoulder";
+		rightHand[] = {"rightHandThumb3", "rightHandThumb2", "rightHandThumb1", "rightHandIndex3", "rightHandIndex2", "rightHandIndex1", "rightHandMiddle3", "rightHandMiddle2", "rightHandMiddle1", "rightHandRing3", "rightHandRing2", "rightHandRing1", "rightInHandRing", "rightHandPinky3", "rightHandPinky2", "rightHandPinky1"};
+		rightArmPoints[] = {"rightShoulder", "relbow", "relbow_axis", "rwrist"};
+
+		class Wounds {
+			tex[] = {};
+			mat[] = {"Ca\characters2\Civil\Woman\Hooker\Data\Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w1_Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w2_Hooker.rvmat"};
+		};
+	};*/
+	
 	class AllVehicles;
 	class Air : AllVehicles 
 	{
@@ -878,13 +913,13 @@ class CfgVehicles {
 		fsmFormation = "";
 	};
 
-	class Soldier_Crew_PMC;
-	class Bandit1_DZ : Soldier_Crew_PMC {
+	class GER_Soldier_EP1;
+	class Bandit1_DZ : GER_Soldier_EP1 {
 		displayName = "$STR_CHAR_2";
 		side = 1;
 		weapons[] = {"Throw","Put"};
-		model = "\dayz\characters\man_bandit";
-		portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
+		//model = "\dayz\characters\man_bandit";
+		//portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
 		magazines[] = {};
 		backpack = "";
 		respawnWeapons[] = {"Throw","Put"};
@@ -892,10 +927,12 @@ class CfgVehicles {
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
+	
+	class BanditSkin_DZ : Bandit1_DZ {};
 
 	class BAF_Soldier_Officer_W;
 	class Rocket_DZ: BAF_Soldier_Officer_W {
-		displayName = "Rocket";
+		displayName = "Survivor";
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -907,7 +944,7 @@ class CfgVehicles {
 	};
 	class BAF_Soldier_W;
 	class Soldier1_DZ: BAF_Soldier_W {
-		displayName = "Soldier";
+		displayName = "Survivor";
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -929,6 +966,13 @@ class CfgVehicles {
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
+	class SniperBandit_DZ: Sniper1_DZ {
+		displayName = "Bandit Sniper";
+		model = "\ca\characters2\Ghillie_Top";
+	};
+	class Sniper1W_DZ : Sniper1_DZ {}; //Woman Ghillie
+	class SniperBanditW_DZ : SniperBandit_DZ {}; //Woman Bandit Ghillie
+	
 	class BAF_Soldier_L_W;
 	class Camo1_DZ: BAF_Soldier_L_W {
 		displayName = "Survivor";

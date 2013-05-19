@@ -179,6 +179,7 @@ class RscStructuredTextGUI: RscStructuredText
 //#include "CfgWorlds.hpp"
 #include "cfgMoves.hpp"
 #include "rscTitles.hpp"
+//#include "CfgZombies.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
@@ -236,7 +237,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.2;
 		minRoaming = 0;
 		maxRoaming = 2;
-		zombieClass[] = {"zZombie_Base","z_hunter","z_teacher","z_suit1","z_suit2","z_worker1","z_worker2","z_worker3","z_villager1","z_villager2","z_villager3"};
+		zombieClass[] = {"zZombie_Base","z_hunter","z_teacher","z_suit1","z_suit2","z_worker1","z_worker2","z_worker3","z_villager1","z_villager2","z_villager3"}; //,"z_woman1"
 		lootChance = 0;
 		lootPos[] = {};
 		itemType[] = {};
@@ -290,6 +291,8 @@ class CfgBuildingLoot {
 			{"PartWoodPile","magazine"},
 			{"Skin_Camo1_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
+			{"Skin_Rocket_DZ","magazine"},
+			{"Skin_Bandit_DZ","magazine"},
 			{"WeaponHolder_ItemCrowbar","object"},
 			{"MR43","weapon"}
 		};
@@ -322,6 +325,8 @@ class CfgBuildingLoot {
 			0.01,
 			0.06,
 			0.06,
+			0.01,
+			0.01,
 			0.01,
 			0.01,
 			0.08,
@@ -503,6 +508,8 @@ class CfgBuildingLoot {
 			{"AmmoBoxSmall_762","object"},
 			{"Skin_Camo1_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
+			{"Skin_Rocket_DZ","magazine"},
+			{"Skin_Bandit_DZ","magazine"},
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
 			{"G36A_camo","weapon"},
@@ -535,7 +542,9 @@ class CfgBuildingLoot {
 			0.1,	//AmmoBoxSmall_556
 			0.1,	//AmmoBoxSmall_762
 			0.08,	//Skin_Camo1_DZ
-			0.05,	//Skin_Sniper1_DZ
+			0.03,	//Skin_Sniper1_DZ
+			0.03,	//Skin_Rocket_DZ
+			0.03,	//Skin_Bandit_DZ
 			0.03,	//G36C"
 			0.02,	//G36C_camo
 			0.02,	//G36A_camo
@@ -574,6 +583,8 @@ class CfgBuildingLoot {
 			{"AmmoBoxSmall_762","object"},
 			{"Skin_Camo1_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
+			{"Skin_Rocket_DZ","magazine"},
+			{"Skin_Bandit_DZ","magazine"},
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
 			//{"G36_C_SD_camo","weapon"},
@@ -604,8 +615,10 @@ class CfgBuildingLoot {
 			0.02,		//{"NVGoggles","weapon"}
 			0.1,	//AmmoBoxSmall_556
 			0.1,	//AmmoBoxSmall_762
-			0.08,	//Skin_Camo1_DZ
-			0.05,	//Skin_Sniper1_DZ
+			0.05,	//Skin_Camo1_DZ
+			0.03,	//Skin_Sniper1_DZ
+			0.03,	//Skin_Rocket_DZ
+			0.03,	//Skin_Bandit_DZ
 			0.03,	//G36C"
 			0.02,	//G36C_camo
 			//0.01,	//G36_C_SD_camo
@@ -893,7 +906,7 @@ class CfgBuildingLoot {
 		zombieClass[] = {"z_priest","z_priest","z_priest"};
 	};
 	
-		class Land_army_hut_int : Military {
+	class Land_army_hut_int : Military {
 		lootPos[] = {{1.64453,-5.52002,-1.33056},{0.53125,1.72607,-1.36391}};
 	};
 	

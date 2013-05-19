@@ -1097,19 +1097,19 @@ class CfgWeapons {
 	class MAAWS: FakeWeapon {};
 	//class SCAR_Base: FakeWeapon {};
 	//class SCAR_L_Base: FakeWeapon {};
-	class SCAR_L_CQC: FakeWeapon {};
+	//class SCAR_L_CQC: FakeWeapon {};
 	//class SCAR_L_CQC_Holo: FakeWeapon {};
-	class SCAR_L_STD_Mk4CQT: FakeWeapon {};
+	//class SCAR_L_STD_Mk4CQT: FakeWeapon {};
 	//class SCAR_L_STD_EGLM_RCO: FakeWeapon {};
 	class SCAR_L_CQC_EGLM_Holo: FakeWeapon {};
 	class SCAR_L_STD_EGLM_TWS: FakeWeapon {};
 	class SCAR_L_STD_HOLO: FakeWeapon {};
 	class SCAR_L_CQC_CCO_SD: FakeWeapon {};
-	class SCAR_H_Base: FakeWeapon {};
+	//class SCAR_H_Base: FakeWeapon {};
 	class SCAR_H_CQC_CCO: FakeWeapon {};
 	class SCAR_H_CQC_CCO_SD: FakeWeapon {};
 	class SCAR_H_STD_EGLM_Spect: FakeWeapon {};
-	class SCAR_H_LNG_Sniper: FakeWeapon {};
+	//class SCAR_H_LNG_Sniper: FakeWeapon {};
 	class SCAR_H_LNG_Sniper_SD: FakeWeapon {};
 	class SCAR_H_STD_TWS_SD: FakeWeapon {};
 	class PKT_high_AI_dispersion: FakeWeapon {};
@@ -1623,7 +1623,7 @@ class CfgVehicles {
 	class TK_Special_Forces_MG_EP1: Banned {};
 	class TK_Aziz_EP1: Banned {};
 	class TK_Commander_EP1: Banned {};
-	class GER_Soldier_EP1: Banned {};
+	//class GER_Soldier_EP1: Banned {};
 	class GER_Soldier_Medic_EP1: Banned {};
 	class GER_Soldier_TL_EP1: Banned {};
 	class GER_Soldier_Scout_EP1: Banned {};
@@ -2348,6 +2348,112 @@ class CfgSkeletons
  
 		pivotsModel = "";
 	};
+	/*class WomanSkeletonZed
+	{
+		isDiscrete = 0;
+		skeletonInherit = "";
+		skeletonBones[] =
+		{
+			"pelvis","",
+			"spine","pelvis",
+			"spine1","spine",
+			"spine2","spine1",
+			"spine3","spine2",
+			"neck","spine3",
+			"neck1","neck",
+			"head","neck1",
+			"jaw","head",
+			"chin","head",
+			"jaw_rm","head",
+			"jaw_lm","head",
+			"lip_lc","head",
+			"lip_lwlb","head",
+			"lip_lwlf","head",
+			"lip_lwm","head",
+			"lip_lwrf","head",
+			"lip_lwrb","head",
+			"lip_rc","head",
+			"lip_uprf","head",
+			"lip_upm","head",
+			"lip_uplf","head",
+			"nose_r","head",
+			"nose_l","head",
+			"zig_lt","head",
+			"zig_rt","head",
+			"cheek_r","head",
+			"cheek_l","head",
+			"eyebrow_lm","head",
+			"corr","head",
+			"eyebrow_rm","head",
+			"eye_upr","head",
+			"eye_lwr","head",
+			"eye_upl","head",
+			"eye_lwl","head",
+			"cheek_rf","head",
+			"cheek_lf","head",
+			"forehead_m","head",
+			"l_eye","head",
+			"r_eye","head",
+			"leftshoulder","spine3",
+			"leftarm","leftshoulder",
+			"leftarmroll","leftarm",
+			"leftforearm","leftarmroll",
+			"leftforearmroll","leftforearm",
+			"lefthand","leftforearmroll",
+			"leftinhandring","lefthand",
+			"lefthandring1","leftinhandring",
+			"lefthandring2","lefthandring1",
+			"lefthandring3","lefthandring2",
+			"lefthandpinky1","leftinhandring",
+			"lefthandpinky2","lefthandpinky1",
+			"lefthandpinky3","lefthandpinky2",
+			"lefthandmiddle1","lefthand",
+			"lefthandmiddle2","lefthandmiddle1",
+			"lefthandmiddle3","lefthandmiddle2",
+			"lefthandindex1","lefthand",
+			"lefthandindex2","lefthandindex1",
+			"lefthandindex3","lefthandindex2",
+			"lefthandthumb1","lefthand",
+			"lefthandthumb2","lefthandthumb1",
+			"lefthandthumb3","lefthandthumb2",
+			"rightshoulder","spine3",
+			"rightarm","rightshoulder",
+			"rightarmroll","rightarm",
+			"rightforearm","rightarmroll",
+			"rightforearmroll","rightforearm",
+			"righthand","rightforearmroll",
+			"rightinhandring","righthand",
+			"righthandring1","rightinhandring",
+			"righthandring2","righthandring1",
+			"righthandring3","righthandring2",
+			"righthandpinky1","rightinhandring",
+			"righthandpinky2","righthandpinky1",
+			"righthandpinky3","righthandpinky2",
+			"righthandmiddle1","righthand",
+			"righthandmiddle2","righthandmiddle1",
+			"righthandmiddle3","righthandmiddle2",
+			"righthandindex1","righthand",
+			"righthandindex2","righthandindex1",
+			"righthandindex3","righthandindex2",
+			"righthandthumb1","righthand",
+			"righthandthumb2","righthandthumb1",
+			"righthandthumb3","righthandthumb2",
+			"camera","pelvis",
+			"leftupleg","pelvis",
+			"leftuplegroll","leftupleg",
+			"leftleg","leftuplegroll",
+			"leftlegroll","leftleg",
+			"leftfoot","leftlegroll",
+			"lefttoebase","leftfoot",
+			"rightupleg","pelvis",
+			"rightuplegroll","rightupleg",
+			"rightleg","rightuplegroll",
+			"rightlegroll","rightleg",
+			"rightfoot","rightlegroll",
+			"righttoebase","rightfoot"
+		};
+		pivotsModel = "";
+	};*/
 };
  
 class CfgModels
@@ -2387,6 +2493,10 @@ class CfgModels
 		};
  
 		skeletonName = "OFP2_ManSkeleton";
+	};
+	
+	class ArmaWoman : ArmaMan {
+		skeletonName = "WomanSkeletonZed";
 	};
  
 	class zmbStandIdleA : ArmaMan {};

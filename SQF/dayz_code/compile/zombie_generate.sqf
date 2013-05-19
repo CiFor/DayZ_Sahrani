@@ -30,6 +30,8 @@ if (_doLoiter) then {
 };
 //diag_log ("Spawned: " + str([_type, _position, [], _radius, _method]));
 _agent = createAgent [_type, _position, [], _radius, _method];
+_agent setDir random 360;
+_agent setvelocity [0, 0, 1]; // avoid stuck zombies legs 
 
 if (_doLoiter) then {
 	_agent setPosATL _position;
