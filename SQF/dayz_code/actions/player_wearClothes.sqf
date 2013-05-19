@@ -17,7 +17,7 @@ if (!_hasclothesitem) exitWith {cutText [format[(localize "str_player_31"),_text
 if (vehicle player != player) exitWith {cutText ["You may not change clothes while in a vehicle", "PLAIN DOWN"]};
 
 _isFemale = ((typeOf player == "SurvivorW2_DZ")||(typeOf player == "BanditW1_DZ")||(typeOf player == "Sniper1W_DZ")||(typeOf player == "SniperBanditW_DZ"));
-//if (_isFemale) exitWith {cutText ["Currently Female Characters cannot change to this skin. This will change in a future update.", "PLAIN DOWN"]};
+if (_isFemale && (_item == "Skin_Camo1_DZ" || _item == "Skin_Soldier1_DZ" || _item == "Skin_Rocket_DZ") ) exitWith {cutText ["Currently Female Characters cannot change to this skin. This will change in a future update.", "PLAIN DOWN"]};
 
 private["_itemNew","_myModel","_humanity","_isBandit","_isHero"];
 _myModel = (typeOf player);
@@ -28,9 +28,7 @@ _itemNew = "Skin_" + _myModel;
 
 if(_itemNew == "Skin_SurvivorW2_DZ" || _itemNew == "Skin_Bandit1_DZ" || _itemNew == "Skin_BanditW1_DZ") then { _itemNew = "Skin_Survivor2_DZ"; }; //Fix For Woman Skin
 if(_itemNew == "Skin_SniperBanditW_DZ") then { _itemNew = "Skin_Sniper1_DZ"; };
-/*if ( !(isClass(_config >> _itemNew)) ) then {
-	_itemNew = if (!_isFemale) then {"Skin_Survivor2_DZ"} else {"Skin_SurvivorW2_DZ"}; 
-};*/
+if(_itemNew == "Skin_BanditSkinW_DZ") then { _itemNew = "Skin_BanditSkin_DZ"; };
 
 switch (_item) do {
 	case "Skin_Sniper1_DZ": {
@@ -73,6 +71,9 @@ switch (_item) do {
 	};
 	case "Skin_BanditSkin_DZ": {
 		_model = "BanditSkin_DZ";
+		if (_isFemale && _isBandit) then {
+			_model = "BanditSkinW_DZ";
+		};
 	};
 };
 

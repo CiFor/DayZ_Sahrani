@@ -972,6 +972,8 @@ class CfgVehicles {
 	};
 	class Sniper1W_DZ : Sniper1_DZ {}; //Woman Ghillie
 	class SniperBanditW_DZ : SniperBandit_DZ {}; //Woman Bandit Ghillie
+	class BanditW1_DZ;
+	class BanditSkinW_DZ : BanditW1_DZ {};
 	
 	class BAF_Soldier_L_W;
 	class Camo1_DZ: BAF_Soldier_L_W {
