@@ -1,0 +1,517 @@
+
+Code/Script Changes/Additions
+
+CEG/SEG/AEG Power:
+==================
+
+Make Generators required to power substation. 
+Generators require repair as normal wheeled vehicle
+
+Grid Power Requirements
+ - Require 1 Generator for smaller grids, makes lights dim/flickery
+ - Require 3 generators for bright lights in small grids, dim/flickery on large grids
+ - Require 5 generators for bright lights in large grids
+
+Mods to AEG
+Dis-able ability to switch on/off manually
+Make Laptop ULTRA RARE item that can be found and give control of Power station/CCTV
+Impliment Humming and arch explosion possability
+Arch explosion (since no manual on/off) happens when power is supplied to substation. Requires 5 scrap to fix substation
+ - (Make variable chance. IE 
+    - if max (3/5) required generators present before power up then 1/20 chance of substation damage/arch explosion
+	- if mid (2/4) required generators present before power up then 1/10 chance of substation damage/arch explosion
+    - if min (1/3) required generators present before power up then 1/5 chance of substation damage/arch explosion)
+
+New Additions
+ - (eventually add cable spool as loot table item and require that for substation repair as well)
+ - Add humming/buzzing/flickering light sounds for street lights
+ - Make streetlight source better???
+ - Create interior lights? like Flourecent light boxes for market ceiling? - TALK TO Axeman!
+ - Use existing lamp objects inside houses? - See Above
+ 
+END GAME EVENT
+==============
+IF power restored to ALL grids,
+TV Station is repaired
+Radio Towers are repaired
+Player can trigger global evacuation event
+
+* At the triggering of the event, players are warned an event has been triggered.
+
+They are told 
+- IF they die during the event and choose to respawn they will lose all their stuff/location
+- IF they DO NOT RESPAWN and wait out the event or just log out, they will log back in when the event is over
+at the same location with the same gear as when the event started.
+
+IE the "event" locks the player DB from updates. It is a true side mission and has no bearings on the normal persistant gameplay.
+
+Optional we could allow for people who make it to the evac choppers to pick up gear from there.
+
+1. Announcement goes out over "Public Broadcast System"
+ - TV - ALL Players get AAN via GPS windows 
+ - Radio - ALL radios in cars, on persons (Re-Add Radios to game), and in houses on TV's or Radios if poss.
+ - Public Broadcast - if there are broadcast towers (put in if not) it gets broadcast
+ - Air Raid Horns go off
+ - Church Bells Ring?
+
+2. Each Zone of map gets Evac Site marked on map and announced on "public broadcast system"
+
+3. Zombie Spawns Increase
+
+4. UN AI start dropping troops to fight zombies, and will kill you if you shoot at them
+
+5. Players must make it to Evac Zone (different end game for players left behind)
+
+6. Once at Evac Zone heli's all start flying towards open ocean
+
+7. Players in Heli's see/hear weird shit/they're teleported back to where they were when the "event" started with the same gear they had at the beginning of the event
+
+8. Players who missed heli's see/hear weird shit/they're teleported back to where they were when the "event" started with same gear they had at the beginning of the event
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Vehicle Spawns:
+===============
+Add Spawn Inventories (randomize inventory for each vehicle/each restart?)
+
+Ex: (Pick 3-5 out of poss 10 items/Weapons for each vehicle type spawned)
+
+Wheeled
+=======
+- ATV - Farm
+- Bus - Utility
+- Car (Blue) - Civilian (Low Value)
+- Gaz (Limo) - Civilian (Low Value)
+- Hatchback (VW) - Civilian (High Value)
+- HMMWV - Military (US)
+- Lada - Civilian (Low Value)
+- Military Offroad (M2 MG) - Military (UN)
+- Motorcycle - Farm
+- MTVR Refuel (US desert) - Utility
+- MTVR Refuel (USMC forest) - Utility
+- MTVR Repair (US desert) - Utility
+- MTVR Repair (USMC forest) - Utility
+- Old Moto (Motorcycle) - Farm
+- PickUp Hilux - Civilian (High Value)
+- PickUp Tubeframe - Farm
+- Pickup PK Guerilla - Military (US)
+- Pickup PK Insurgent - Military (RUS)
+- Sedan - Civilian (Low Value)
+- SUV - Civilian (High Value)
+- Tractor - Farm
+- UAZ - Military (RUS)
+- UAZ (Red) - Civilian (Low Value)
+- V3S - Military (RUS)
+
+Civilian (Low Value):
+=====================
+0 1 or 1of ea upto 2/1?
+  - CZ550 w/ammo (low chance)
+    Double Barrel
+	M1014
+	Colt
+	Revolver
+	Makarov
+3-5 out of 10?
+  - Axe
+  - Bandages
+  - Flares
+  - Flashlight
+  - Food
+  - Hunting Knife
+  - Matches
+  - Painkiller
+  - Soda
+  - Toolbox
+
+Civilian (High Value):
+======================
+2 or 3 of ea upto 4/6?
+  - DMR
+    M24
+    M4s
+	MP5
+	M1014
+	Saiga
+	Colt
+	Glock
+	M9
+	Revolver
+5-7 out of 15?
+  - Antibiotics
+  - Axe
+  - Bandages
+  - Camping Tent
+  - Compass
+  - Entrenching tool
+  - Flares
+  - GPS (Guaranteed?)
+  - Hunting Knife
+  - Map
+  - Matches
+  - Military Flashlight
+  - Painkillers
+  - Soda
+  - Toolbox
+
+Farm:
+=====
+0 1 or 1of ea upto 2/1?
+  - CZ550 w/ammo (low chance)
+    Double Barrel
+	M1014
+	Colt
+	Revolver
+	Makarov
+3-5 out of 10?
+  - Axe
+  - Bandages
+  - Camping Tent
+  - Entrenching tool
+  - Flashlight
+  - Hunting Knife
+  - Matches
+  - Nails
+  - Sandbags
+  - Toolbox
+  - Water Bottle
+  
+Military (US) Set for Forest/Dessert:
+=====================================
+3-5 out of 10
+  - AS50
+    M4's 
+    M8's
+	M24
+	M249 Saw/MK Mod40
+	M40A3
+	Colt 1911
+	Glock
+	M9/Silenced
+5-10 out of 20
+  - Antibiotics
+  - Bandages
+  - Bloodbags
+  - Camping Tent
+  - Entrenching tool
+  - GPS
+  - m203 HE rounds
+  - M67 frag grenades
+  - Matches
+  - Map
+  - Military Flashlight
+  - Morphine
+  - MRE
+  - Painkillers
+  - Satchel Charges
+  - Smoke Grenades
+  - Soldier Clothing
+  - Stanag/DMR Mags
+  - Toolbox
+  - Water Bottle
+
+Military (RUS):
+===============
+3-5 out of 10
+  - AK74s 
+    AKS
+	KSVK
+	PKM
+	SVD
+	PDW
+	Sa61
+	Makarov
+	M9/Silenced
+5-10 out of 20
+  - Antibiotics
+  - Bandages
+  - Bloodbags
+  - Camping Tent
+  - Entrenching tool
+  - GPS
+  - PSO HE rounds
+  - RGO frag grenades
+  - Matches
+  - Map
+  - Military Flashlight
+  - Morphine
+  - Sardines
+  - Painkillers
+  - Satchel Charges
+  - Smoke Grenades
+  - Soldier Clothing
+  - Appropriate Mags
+  - Toolbox
+  - Water Bottle
+  
+Military (UN):
+==============
+3-5 out of 10
+  - M4's 
+    M8's
+	M24
+	M249 Saw/MK Mod40
+	M40A3
+	Colt 1911
+	Glock
+	M9/Silenced
+5-10 out of 20
+  - Antibiotics
+  - Bandages
+  - Bloodbags
+  - Camping Tent
+  - Entrenching tool
+  - GPS
+  - m203 HE rounds
+  - M67 frag grenades
+  - Matches
+  - Map
+  - Military Flashlight
+  - Morphine
+  - MRE
+  - NVGs
+  - Painkillers
+  - Smoke Grenades
+  - Soldier Clothing
+  - Stanag/DMR Mags
+  - Toolbox
+  - Water Bottle
+  
+Utility:
+========
+0 1 or 1of ea upto 2/1?
+  - CZ550
+    M1014
+	Saiga
+	Colt
+	Glock
+	M9
+	Revolver
+5-7 out of 15?
+  - Antibiotics
+  - Axe
+  - Bandages
+  - Camping Tent
+  - Compass
+  - Entrenching tool
+  - Flares
+  - GPS
+  - Hunting Knife
+  - Map
+  - Matches
+  - Military Flashlight
+  - Painkillers
+  - Toolbox
+  - Water Bottle
+
+Air
+===
+- AH-6X - Civilian
+- An-2 (Aeroshot) - Civilian
+- Mi-17 - Mil (RUS)
+- UH-1H - Mil (US)
+- C-130J - MIl (UN)
+
+
+Civilian
+========
+  - Bandage
+  - Compass
+  - Flares
+  - GPS
+  - Map
+  - NVG
+  - Smoke Grenades
+  - Toolbox
+  - Water Bottle
+  
+Military (US):
+==============
+3-5 out of 10
+  - AS50
+    M4's 
+    M8's
+	M24
+	M249 Saw/MK Mod40
+	M40A3
+	Colt 1911
+	Glock
+	M9/Silenced
+5-10 out of 20
+  - Antibiotics
+  - Bandages
+  - Bloodbags
+  - Camping Tent
+  - Entrenching tool
+  - GPS
+  - m203 HE rounds
+  - M67 frag grenades
+  - Matches
+  - Map
+  - Military Flashlight
+  - Morphine
+  - MRE
+  - Painkillers
+  - Satchel Charges
+  - Smoke Grenades
+  - Soldier Clothing
+  - Stanag/DMR Mags
+  - Toolbox
+  - Water Bottle
+
+Military (RUS):
+===============
+3-5 out of 10
+  - AK74s 
+    AKS
+	KSVK
+	PKM
+	SVD
+	PDW
+	Sa61
+	Makarov
+	M9/Silenced
+5-10 out of 20
+  - Antibiotics
+  - Bandages
+  - Bloodbags
+  - Camping Tent
+  - Entrenching tool
+  - GPS
+  - PSO HE rounds
+  - RGO frag grenades
+  - Matches
+  - Map
+  - Military Flashlight
+  - Morphine
+  - Sardines
+  - Painkillers
+  - Satchel Charges
+  - Smoke Grenades
+  - Soldier Clothing
+  - Appropriate Mags
+  - Toolbox
+  - Water Bottle
+  
+Military (UN):
+==============
+3-5 out of 10
+  - M4's 
+    M8's
+	M24
+	M249 Saw/MK Mod40
+	M40A3
+	Colt 1911
+	Glock
+	M9/Silenced
+5-10 out of 20
+  - Antibiotics
+  - Bandages
+  - Bloodbags
+  - Camping Tent
+  - Entrenching tool
+  - GPS
+  - m203 HE rounds
+  - M67 frag grenades
+  - Matches
+  - Map
+  - Military Flashlight
+  - Morphine
+  - MRE
+  - NVGs
+  - Painkillers
+  - Smoke Grenades
+  - Soldier Clothing
+  - Stanag/DMR Mags
+  - Toolbox
+  - Water Bottle
+
+Sea
+===
+- Fishing Boat
+==============
+  - Antibiotics
+  - Bandage
+  - Compass
+  - Flares
+  - GPS
+  - Heatpacks
+  - Map
+  - NVG
+  - Smoke Grenades
+  - Toolbox
+  - Water Bottle
+  
+- PBX
+=====
+  - Antibiotics
+  - Bandage
+  - Compass
+  - Flares
+  - GPS
+  - Heatpacks
+  - Map
+  - NVG
+  - Smoke Grenades
+  - Toolbox
+  - Water Bottle
+  
+- RHIB
+======
+  - M4's 
+    M8's
+	M24
+	M249 Saw/MK Mod40
+	M40A3
+	Colt 1911
+	Glock
+	M9/Silenced
+5/15
+  - Antibiotics
+  - Bandage
+  - Bloodbags
+  - Compass
+  - Flares
+  - GPS
+  - Heatpacks
+  - Jerry Can
+  - Map
+  - Matches
+  - MRE
+  - NVG
+  - Smoke Grenades
+  - Toolbox
+  - Water Bottle
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+Loot table objects:
+Make Mass Graves shoud Spawn:
+- Watch
+- Compass
+- Entrenching tool (surrounding pile)
+- empty soda/tin cans
+- razors
+- Binoculars?
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+New Items:
+
+Cable Spool - for repair of substations
+Camera - takes screenshots and makes ingame version you can type a note on and leave behind
+Picture book/album - Store pictures found or taken
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Mods to Vehicles
+- MTVR - Repair - Make it allow for manual repair of each part.. NOT instant repair (Poss. Required 2 man team for MTVR to work. one man IN MTVR one man OUT doing repairs one at a time)
+- MTVR - Refuel - Make Slow and require person in car (OR make it act like a static fuel tank and only allow for jerry can filling)
+- HMMWV - Reduce armor
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Mods to Weapons/ammo
+- AS50 - Reduce damage points
+- Lapua - Reduce damage points
