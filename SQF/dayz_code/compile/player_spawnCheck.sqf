@@ -38,6 +38,13 @@ switch (_nearbytype) do {
 };
 */
 
+if (_inVehicle) then {
+	_maxZombies = _maxZombies / 2;
+};
+if (_isAir) then {
+	_maxZombies = 5
+};
+
 _spawnZombies = count (_position nearEntities ["zZombie_Base",_radius+100]) < _maxZombies;
 
 if ("ItemMap_Debug" in items player) then {

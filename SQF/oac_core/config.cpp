@@ -1830,6 +1830,17 @@ class CfgVehicles {
 		displayName = "hut04_ruins";
 	};
 	
+	class Land_hut_old02_ruins : Ruins {
+		scope = protected;
+		
+		class Armory {
+			disabled = 1;
+		};
+		vehicleclass = "Ruins";
+		model = "\ca\buildings\Ruins\hut_old02_ruins";
+		displayName = "hut04_ruins";
+	};
+	
 	class Land_kasarna_brana_ruins : Ruins {
 		scope = protected;
 		
@@ -3338,6 +3349,27 @@ class CfgVehicles {
 			class Ruin1 {
 				simulation = "ruin";
 				type = "\ca\buildings\ruins\hut04_ruins.p3d";
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+	};
+	
+	class Land_hut_old02_a1 : House {
+		scope = protected;
+		
+		class Armory {
+			disabled = 1;
+		};
+		model = "\ca\buildings\hut_old02_a1.p3d";
+		armor = 200;
+		
+		class DestructionEffects : DestructionEffects {
+			class Ruin1 {
+				simulation = "ruin";
+				type = "\ca\buildings\ruins\hut_old02_ruins.p3d";
 				position = "";
 				intensity = 1;
 				interval = 1;

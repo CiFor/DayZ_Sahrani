@@ -70,7 +70,8 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	diag_log (str(_backpackMag));
 
 //Secure Player for Transformation
-	player setPosATL dayz_spawnPos;
+	//player setPosATL dayz_spawnPos;
+	player setPosATL (getMarkerpos "respawn_west");
 
 //BackUp Player Object
 	_oldUnit = player;

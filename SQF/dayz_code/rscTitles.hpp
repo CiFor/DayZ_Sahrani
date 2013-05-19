@@ -87,7 +87,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "DayZ Sahrani 0.2.1 - 20130517";
+			text = "DayZ Sahrani 0.2.1 - 20130518";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		class CA_TitleMainMenu;

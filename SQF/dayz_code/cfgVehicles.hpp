@@ -1984,6 +1984,163 @@ class CfgVehicles {
 			};
 		};
 	};
+	/* DayZ Sahrani Buildings */
+	
+	class BuiltItems : NonStrategic {};
+	
+	class BoxStorage : BuiltItems {
+		displayName = "Arms cache";
+		model = "\ca\weapons\AmmoBoxes\GuerillaCache.p3d"; 
+		icon = "\ca\data\data\Unknown_object.paa";
+		armor = 400; 
+		vehicleClass = "Survival";
+		transportMaxMagazines = 75;
+		transportMaxWeapons = 5;
+		transportMaxBackpacks = 5;
+	};
+	class Gunrack_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		vehicleClass = "Survival";
+		model = "\ca\misc2\Gunrack1";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		displayName = $STR_DN_GUNRACK1;
+		transportMaxWeapons = 20;
+		transportMaxMagazines = 0;
+		
+		class AnimationSources {
+			class TakeWeapon_hide {
+				source = "User";
+				animPeriod = 0.0001;
+				initPhase = 0;
+			};
+		};
+	};
+	
+	class Bench_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		model = "\ca\buildings\misc\Lavicka_4";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		displayName = "Bench (Wood)";
+		vehicleClass = "Fortifications";
+	}
+	
+	class BagFenceLong_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		model = "\ca\misc2\BagFenceLong.p3d";
+		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
+		mapSize = 2;
+		displayName = $STR_DN_BAGFENCELONG;
+		vehicleClass = "Fortifications";
+	};
+	
+	class BagFenceLongCorner_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		model = "\ca\misc2\BagFenceCorner.p3d";
+		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceCorner_ca.paa";
+		mapSize = 2;
+		displayName = $STR_DN_BAGFENCECORNER;
+		vehicleClass = "Fortifications";
+	};
+	
+	class BagFenceLongRound_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		model = "\Ca\misc3\fort_bagfence_round";
+		displayName = $STR_DN_FORT_BAGFENCE_ROUND;
+		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceRound_ca.paa";
+		mapSize = 3.2;
+		vehicleClass = "Fortifications";
+	};
+	
+	class Fort_RazorWire_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400; 
+		animated = 0;
+		model = "\ca\misc\Fort_Razorwire";
+		icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
+		accuracy = 0.3;
+		mapSize = 5.5;
+		displayName = $STR_DN_WIRE;
+		vehicleClass = "Fortifications";
+	};
+	
+	class Fortified_nest_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		model = "\Ca\misc3\fortified_nest_small";
+		displayName = $STR_DN_FORTIFIED_NEST_SMALL;
+		icon = "\Ca\misc3\data\Icons\icon_fortNestSmall_ca.paa";
+		armor = 500;
+		irTarget = 0;
+		vehicleClass = "Fortifications";
+	};
+	
+	class CampWoodTower_DZ : BuiltItems {
+		scope = 2;
+		destrType = "DestructTent";
+		armor = 400;
+		model = "\ca\structures\Misc\Misc_DeerStand\misc_deerstand";
+		ladders[] = {{"start1", "end1"}};
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		displayName = "Tower (Wood)";
+		vehicleClass = "Fortifications";
+	};
+	
+	class Barb_Gate_DZ : BuiltItems {
+		animated = 1;
+		scope = 2;
+		model = "\ca\misc2\BarbGate.p3d";
+		icon = "\Ca\misc2\data\Icons\icon_barGate2_ca.paa";
+		mapSize = 3;
+		displayName = $STR_DN_BARGATE2;
+		destrType = "DestructTent";
+		vehicleClass = "Fortifications";
+		
+		class AnimationSources {
+			class Door01 {
+				animPeriod = 1;
+				initPhase = 0;
+			};
+		};
+		
+		class UserActions {
+			class OpenDoors1 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "Door01_axis";
+				radius = 3;
+				onlyForPlayer = 1;
+				condition = "this animationPhase ""Door01"" < 0.5";
+				statement = "this animate [""Door01"", 1]";
+			};
+			
+			class CloseDoors1 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "Door01_axis";
+				radius = 3;
+				onlyForPlayer = 1;
+				condition = "this animationPhase ""Door01"" >= 0.5";
+				statement = "this animate [""Door01"", 0]";
+			};
+		};
+		actionBegin1 = "OpenDoors1";
+		actionEnd1 = "OpenDoors1";
+	};
+	/* End */
 };
 class CfgNonAIVehicles {
 	
