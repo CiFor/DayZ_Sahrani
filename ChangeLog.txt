@@ -5,17 +5,21 @@
 [Fixed] Global FPS Drop on all clients when player changes clothes
 [Fixed] Large Nested Base craftable without required loot.
 [Fixed] Some Craftables Not spawning.
+[Fixed] Missing Texture error at millitary zones.
 
 [Changed] All Extra building locations have been redone.
 [Changed] Custom buildings now spawned server side. (Should stop out of sync doors)
 [Changed] Reduced ammo from UH1H Camo (UH1H_TK_DZ)
 [Changed] Reduced ammo from MH6J (MH6J_DZ)
 [Changed] Reduced ammo from RHIB (RHIB_DZ)
-[Chabged] Bag of nails now has a ~7% chance spawn chance (Same as knife)
+[Changed] Bag of nails now has a ~7% chance spawn chance (Same as knife)
+[Changed] Reduced chance of zombies spawning under floor of buildings.
 
 [Added] VSS_vintorez
 [Added] SCAR_L_CQC_Holo
 [Added] SCAR_L_STD_EGLM_RCO
+[Added] Different Ghillie suits for bandits
+[Added] Female Players can now wear ghillies
 
 [Removed] Original DayZ code for local vechicle creation to generate junk.
 [Removed] All of the CAA1 custom weapons.
