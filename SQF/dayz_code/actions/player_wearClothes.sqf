@@ -16,7 +16,7 @@ if (!_hasclothesitem) exitWith {cutText [format[(localize "str_player_31"),_text
 
 if (vehicle player != player) exitWith {cutText ["You may not change clothes while in a vehicle", "PLAIN DOWN"]};
 
-_isFemale = ((typeOf player == "SurvivorW2_DZ")||(typeOf player == "BanditW1_DZ")||(typeOf player == "Sniper1W_DZ")||(typeOf player == "SniperBanditW_DZ"));
+_isFemale = ((typeOf player == "SurvivorW2_DZ")||(typeOf player == "BanditW1_DZ")||(typeOf player == "Sniper1W_DZ")||(typeOf player == "SniperBanditW_DZ")||(typeOf player == "BanditSkinW_DZ"));
 if (_isFemale && (_item == "Skin_Camo1_DZ" || _item == "Skin_Soldier1_DZ" || _item == "Skin_Rocket_DZ") ) exitWith {cutText ["Currently Female Characters cannot change to this skin. This will change in a future update.", "PLAIN DOWN"]};
 
 private["_itemNew","_myModel","_humanity","_isBandit","_isHero"];

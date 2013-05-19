@@ -34,7 +34,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "";
-		version = "0.2.1-20130518";
+		version = "0.2.1-20130520";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -1159,7 +1159,7 @@ class CfgBuildingLoot {
 	class Land_hut_old02_a1 : Industrial {
 		lootPos[] = {{1.75781,-7.79785,-3.0332},{-2.80469,-2.53906,-3.0332},{-7.43555,8.79199,-3.0332},{-5.18359,-1.56348,-3.0332},{5.01953,8.36328,-3.0332},{4.43945,-7.30469,-3.0332}};
 	};
-	class Land_vez : Industrial {
+	class Land_vez : Military {
 		lootPos[] = {{0.00292969,1.54297,1.36331}};
 	};
 	/*
