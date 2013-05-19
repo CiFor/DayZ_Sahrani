@@ -13,7 +13,7 @@ Grid Power Requirements
  - Require 5 generators for bright lights in large grids
 
 Mods to AEG
-Dis-able ability to switch on/off manually
+Disable ability to switch on/off manually
 Make Laptop ULTRA RARE item that can be found and give control of Power station/CCTV
 Impliment Humming and arch explosion possability
 Arch explosion (since no manual on/off) happens when power is supplied to substation. Requires 5 scrap to fix substation

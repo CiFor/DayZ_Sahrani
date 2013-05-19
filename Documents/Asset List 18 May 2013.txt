@@ -1,0 +1,49 @@
+
+Skins:
+New 18 May 2013
+Survivor2_DZ - Standard Skin
+Camo1_DZ - Camo Clothing Skin
+Sniper1_DZ - Ghillie Clothing Skin
+Rocket_DZ - Rocket's Personal favorite Skin
+Soldier1_DZ - Soldier Skin
+SurvivorW2_DZ - 2nd Survivor Skin
+Bandit1_DZ - Bandit Skin
+
+Vehicles:
+Wheeled:
+
+New 18 May 2013
+hilux1_civil_3_open_EP1
+KamazOpen
+LandRover_MG_TK_EP1
+MtvrRefuel
+MtvrRefuel_DES_EP1
+MtvrRepair_DES_EP1
+Pickup_PK_GUE
+SUV_PMC - CHECK DAYZ Ver.
+Ural_TK_CIV_EP1
+Ural_UN_EP1
+V3S_TK_GUE_EP1
+
+Armored:
+New 18 May 2013
+BRDM2_RU
+BMP2_RU
+GAZ_Vodnik
+GAZ_Vodnik_HMG
+M113_RACS
+Vulcan_RACS
+T72_RACS
+
+Air:
+New 18 May 2013
+C130J_US_EP1
+MH6J_DZ
+MH60S
+MV22
+
+Sea:
+
+Weapons:
+New 18 May 2013
+
