@@ -21,6 +21,41 @@ if ((count playableUnits == 0) and !isDedicated) then {
 
 waitUntil{initialized}; //means all the functions are now defined
 
+// Load Custom Buildings
+_funcGetBuildings =
+{
+	diag_log "Buildings: Running Setup";
+	for "_i" from 0 to ((count _this) - 1) do 
+	{	
+		private ["_zone"];
+		_zone = (_this select _i);
+		for "_j" from 0 to ((count _zone) - 1) do 
+		{
+			private ["_config","_type","_position","_dir","_SetZUp","_object"];
+			_config =  (_zone select _j);
+			if (isClass(_config)) then {
+				_type = 	getText		(_config >> "type");
+				_position = [] + getArray	(_config >> "position");
+				_dir = 		getNumber	(_config >> "direction");
+				_SetZUp = 	getNumber	(_config >> "SetZUp");
+				
+				_object =  _type createVehicle _position;
+				_object setPos _position;
+				_object setDir _dir;
+				_object allowDamage true;
+				
+				//diag_log format["CreateObj: %1 / %2",_type,_position];
+				
+				if (_SetZUp > 0) then {
+					_object setVectorUp [0,0,1];
+				};
+			};
+		};
+	};
+};
+_cfgLocation = configFile >> "CfgTownGeneratorSara";
+_cfgLocation call _funcGetBuildings;
+
 diag_log "HIVE: Starting";
 
 //Stream in objects

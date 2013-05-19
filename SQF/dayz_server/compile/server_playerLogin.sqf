@@ -80,7 +80,7 @@ if (!_isNew) then {
 	_model =		_primary select 7;
 	_hiveVer =		_primary select 8;
 	
-	if (!(_model in ["SurvivorW2_DZ","Survivor2_DZ","Sniper1_DZ","Soldier1_DZ","Camo1_DZ","BanditW1_DZ","Bandit1_DZ","SurvivorW2_DZ"])) then {
+	if (!(_model in ["SurvivorW2_DZ","Survivor2_DZ","Sniper1_DZ","Soldier1_DZ","Camo1_DZ","BanditW1_DZ","Bandit1_DZ","SurvivorW2_DZ","Rocket_DZ","BanditSkin_DZ","SniperBandit_DZ","SniperBanditW_DZ","Sniper1W_DZ","BanditSkinW_DZ"])) then {
 		_model = "Survivor2_DZ";
 	};
 	
