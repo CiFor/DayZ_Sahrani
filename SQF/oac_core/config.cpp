@@ -34,9 +34,9 @@
 class CfgPatches {
 	class oac_core {
 		units[] = {"_GeneralE", "_ResHouseruiny_obvod_3", A10LGB, "AdjutantPrisoner", "AdjutantUniform", AGS, AH1W, AH6, AH6_RACS, "Ah64", "AK_hemp_medium", "Alarm", "AmmoBoxAddE", "AmmoBoxAddW", "AmmoBoxEast", "AmmoBoxGuer", "AmmoBoxOUTE", "AmmoBoxOUTEW", "AmmoBoxOUTGW", "AmmoBoxOUTW", "AmmoBoxOUTWW", "AmmoBoxWest", "Anchorman", "Anchorman2", "Angelina", "ArmsTrader", "ASF_ResBMP", "BadDog", "Barracks", "Barrel2", "Barrel3", "Barrel6", "BirdSinging", "BISCamelPilot", "BISCamelPilot2", "BlackhawkWreck", BMP, BMP1, BMP2, BMP2_MHQ, "BMP2_MHQ_unfolded", "BMP2Ambul", "BMPAmbul", "BMPRes", "BoatE", "BoatW", "BoatWAuto", "Bradley", BRDM, BRDM2, BRDM2_ATGM, "Bus_city", "c130v2", "Camel", "Camel2", "Camera1", "CampEastC", "CampEmpty", "CarrierW", "CATest_Object", "CATest_Thing", "Cessna", "Ch47D", "Chair", "ChairHangar", "ChairSmall", "ChairX", "Chancellor", "Chicken", "Church001", "Church002", "Church003", "civil_nprem2", "civil_nprem2_NoGeom", "Civil_Undead_1", "Civil_Undead_2", "Civil_Undead_3", "Civil_Undead_4", "Civilian1", "Civilian10", "Civilian11", "Civilian12", "Civilian13", "Civilian14", "Civilian15", "Civilian16", "Civilian17", "Civilian18", "Civilian19", "Civilian2", "Civilian20", "Civilian21", "Civilian3", "Civilian4", "Civilian5", "Civilian6", "Civilian7", "Civilian8", "Civilian9", "ClutterCutter", "Cobra", COC_M101HOWITZER, "COC_ObeliskW", "COCM16A1Betty", "COCM18A1Claymore", "COCMine", "COCPomz", "Computer", "Crawling", "Crickets1", "Crickets2", "Crickets3", "Crickets4", "D2_RCM03_Civilian1", "D2_RCM03_Civilian2", D30, "Danger", "DangerEAST", "DangerGUE", "DangerWest", DATSUN_DSHKM1, DATSUN_DSHKM2, DATSUN_PK1, DC3, "Dog", DSHKM, "Dum01", "Dum02", "Dum03", "Dum04", "Dum05", "Dum06", "Dum07", "Dum08", "Dum09", "Dum10", "Dum11", "Dum12", "Dum13", "Dum14", "Dum15", "Dum16", "Dum17", "ExcerciseTrack", "ExcerciseTrack2", "ExcerciseTrack3", "FenceWood", "FenceWoodPalet", "FieldReporter", "Fire", "FireLit", "FlagCarrierEast", "FlagCarrierNorth", "FlagCarrierSouth", "FlagCarrierWest", "Flags1", "Fortress2", "Frog", "Frogs", "FuelStationNew", "Fuelstationnew2", "G1Medic", "G1Soldier", GAA130, GAX130, "GeneralE", "GJeep", "Hangar_Hall", "HeavyGrenadier", "HeavyGW", "HeavyReammoBoxEast", "HeavyReammoBoxGuer", "HeavyReammoBoxRes", "HeavyReammoBoxWest", "HeavyWeaponBoxEast", "HeavyWeaponBoxGuer", "HeavyWeaponBoxWest", "Heli_H_civil", "Heli_H_rescue", HILUX_DSHKM1, HILUX_DSHKM2, HILUX_PK1, HILUX_PK2, "HMMWV_civil", HMMWV50, HMMWVMK, HMMWVTOW, "houseafbarabizna", "houseafdum_mesto2", "Houseafdum_mesto3", "houseafhospoda_mesto", "Housebouda1", "Housebouda2_vnitrek", "Housebudova1", "Housebudova2", "Housebudova3", "Housebudova4", "Housebudova5", "Housecihlovej_dum", "Housecihlovej_dum_in", "Housecihlovej_dum_mini", "Housedeutshe", "Housedeutshe_mini", "Housedulni_bs", "Housedum_m2", "Housedum_mesto", "Housedum_mesto_in", "Housedum_mesto2", "Housedum_mesto2l", "Housedum_mesto3", "Housedum_olezlina", "Housedum_rasovna", "Housedum_rasovna_in", "Housedum01", "Housedum02", "Housedumruina", "Housedumruina_mini", "Housegaraz", "Housegaraz_bez_tanku", "Housegaraz_s_tankem", "Househelfenburk", "Househospital", "Househospoda_mesto", "Househruzdum", "Housemesto_dum", "Houserepair_center", "Houseryb_domek", "Housestanice", "Housestatek_hl_bud", "Housestatek_kulna", "Housestodola", "Housestodola_open", "Hunter", "Jawa", "Jeep", "JeepMG", "JeepPolice", "JeepWreck1", "JeepWreck2", "JeepWreck3", "JetRanger", "JetRangerSilent", "Ka50", "Kamov", "King", "KinoScreen_Cut1a", "KinoScreen_Cut1b", "KinoScreen_Cut1c", "KinoScreen_Cut2a", "KinoScreen_Cut2b", "KinoScreen_Cut3a", "KinoScreen_Cut3b", "KinoScreen_Cut4a", "KinoScreen_Cut4b", "KinoScreen_Cut5a", "KinoScreen_Cut5b", KLR250, "Kolo", KORDR, "Land_ammostore2", "Land_army_hut_int", "Land_army_hut_int_ruins", "Land_army_hut_storrage", "Land_army_hut_storrage_ruins", "Land_army_hut2", "Land_army_hut2_int", "Land_army_hut2_int_ruins", "Land_army_hut2_ruins", "Land_army_hut3_long", "Land_army_hut3_long_int", "Land_army_hut3_long_int_ruins", "Land_army_hut3_long_ruins", "Land_aut_zast", "Land_benzina", "Land_benzina_schnell", "Land_benzina_schnell_ruins", "Land_brana_krat_1_7", "Land_brana02", "Land_brana02_ruins", "Land_budova3", "Land_budova3_ruins", "Land_cihlovej_dum_mini", "Land_Cihlovej_dum_mini_ruins", "Land_domek_radnice", "Land_Domek_sedy", "Land_domek_zluty", "Land_dum_istan2", "Land_dum_istan2_01", "Land_Dum_istan2_01_ruins", "Land_dum_istan2_02", "Land_Dum_istan2_02_ruins", "Land_dum_istan2_03", "Land_Dum_istan2_03_ruins", "Land_dum_istan2_03a", "Land_Dum_istan2_03a_ruins", "Land_dum_istan2_04a", "Land_dum_istan2_04a_ruins", "Land_dum_istan2_ruins", "Land_dum_istan2b", "Land_dum_istan2b_ruins", "Land_dum_istan3", "Land_dum_istan3_hromada", "Land_dum_istan3_hromada_ruins", "Land_dum_istan3_ruins", "Land_dum_istan4", "Land_dum_istan4_big", "Land_dum_istan4_big_inverse", "Land_dum_istan4_big_inverse_ruins", "Land_dum_istan4_big_ruins", "Land_dum_istan4_detaily1", "Land_dum_istan4_detaily1_ruins", "Land_dum_istan4_inverse", "Land_dum_istan4_inverse_ruins", "Land_dum_istan4_ruins", "Land_dum_mesto3_istan", "Land_Dum_mesto3_istan_ruins", "Land_dum_patr_nizky_prujezd", "Land_dum02", "Land_dum02_ruins", "Land_dumruina", "Land_Dumruina_ruins", "Land_fuelstation", "Land_fuelstation_army", "Land_garaz_bez_tanku", "Land_garaz_s_tankem", "Land_HANGAR", "Land_helfenburk", "Land_helfenburk_brana", "Land_helfenburk_budova2", "Land_helfenburk_cimburi", "Land_helfenburk_zed", "Land_HiddenPath_5", "Land_HiddenPath_corner", "Land_hlaska", "Land_hlaska_ruins", "Land_hospoda_mesto", "Land_hospoda_mesto_ruins", "Land_Hotel", "Land_hotel_riviera1", "Land_hotel_riviera1_ruins", "Land_hotel_riviera2", "Land_hotel_riviera2_ruins", "Land_Hotel_ruins", "Land_houpacka", "Land_house_y", "Land_house_y_ruins", "Land_hut01", "Land_hut01_ruins", "Land_hut02", "Land_hut02_ruins", "Land_hut03", "Land_hut03_ruins", "Land_hut04", "Land_hut04_ruins", "Land_invisible_house", "Land_Javor01Posed", "Land_jezekbeton", "Land_jizak_test", "Land_Kamenolom_budova", "Land_kasarna", "Land_kasarna_brana", "Land_kasarna_brana_ruins", "Land_kasarna_prujezd", "Land_kasarna_prujezd_ruins", "Land_kasarna_rohova", "Land_kasarna_rohova_ruins", "Land_kasarna_ruins", "Land_kostel_mexico", "Land_kostel_mexico_ruins", "Land_kostel2", "Land_Kostel2_ruins", "Land_kostelik", "Land_kostelik_ruins", "Land_kulata_prolezacka", "Land_letistni_hala", "Land_Letistni_hala_ruins", "Land_majak_v_celku", "Land_Majak_v_celku_ruins", "Land_maly_kolotoc", "Land_molo_drevo", "Land_molo_drevo_krychle", "Land_molo_drevo_krychle2", "Land_molo_krychle2", "Land_nabrezi", "Land_nabrezi_najezd", "Land_OrlHot", "Land_OrlHot_ruins", "Land_parez_str_test", "Land_pila", "Land_Piskoviste", "Land_pletivo_dira", "Land_plot_istan1b_hole", "Land_podesta_1_cornl", "Land_podesta_1_cornp", "Land_podesta_1_cube", "Land_podesta_1_cube_long", "Land_podesta_1_mid", "Land_podesta_1_mid_cornl", "Land_podesta_1_mid_cornp", "Land_podesta_1_stairs", "Land_podesta_1_stairs2", "Land_podesta_1_stairs3", "Land_podesta_1_stairs4", "Land_podesta_10", "Land_podesta_5", "Land_podesta_s10", "Land_podesta_s5", "Land_posed", "Land_posed_ruins", "Land_pristresek", "Land_pristresek_camo", "Land_R_Minaret", "Land_R_Minaret_Ruins", "Land_ruiny_3_dvere", "Land_ruiny_3_prasklina", "Land_ruiny_3_roh", "Land_ruiny_3_stena", "Land_ruiny_3_stenazbor", "Land_ruiny_obvod_3", "Land_ryb_domek", "Land_Ryb_domek_ruins", "Land_sara_domek_rosa", "Land_Sara_domek_rosa_ruins", "Land_sara_domek_sedy_bez", "Land_Sara_domek_sedy_BEZ_ruins", "Land_sara_domek_zluty_bez", "Land_Sara_domek_zluty_BEZ_ruins", "Land_sara_domek01", "Land_Sara_domek01_ruins", "Land_sara_domek02", "Land_Sara_domek02_ruins", "Land_sara_domek03", "Land_Sara_domek03_ruins", "Land_sara_domek04", "Land_Sara_domek04_ruins", "Land_sara_domek05", "Land_Sara_domek05_ruins", "Land_sara_dum_patr_nizky_prujezd", "Land_sara_dum_podloubi03klaster", "Land_Sara_dum_podloubi03klaster_ruins", "Land_sara_dum_podloubi03rovny", "Land_Sara_dum_podloubi03rovny_ruins", "Land_sara_stodola2", "Land_Sara_stodola2_ruins", "Land_sara_zluty_statek", "Land_sara_zluty_statek_in", "Land_Sara_zluty_statek_in_ruins", "Land_Sara_zluty_statek_ruins", "Land_skola", "Land_skola_ruins", "Land_SleepingBag", "Land_SS_hangarD", "Land_SS_hangarD_ruins", "Land_stanek_1", "Land_stanek_1B", "Land_stanek_1C", "Land_stodola_old", "Land_stodola_old_ruins", "Land_strazni_vez", "Land_strazni_vez_ruins", "Land_strelecky_post_new", "Land_Tovarna1", "Land_Tovarna1_ruins", "Land_townhall", "Land_trafostanica_velka_a1", "Land_trafostanica_velka_draty_a1", "Land_vez_ropa", "Land_Vez_svetla", "Land_vodni_vez", "Land_Vysilac_budova", "Land_Vysilac_chodba", "Land_Vysilac_vez", "Land_water_tank2", "Land_watertower1", "Land_watertower1_ruins", "Land_zastavka_jih", "Land_zastavka_sever", "Land_zed_dira", "Land_zed_dira_desert", "Land_zidka_branka", "Land_zidka03", "Land_zluty_statek_in", "Landrover", "Landrover_Closed", "Landrover_Police", "LandroverMG", "LittleDog", "LODy_test", M113, M113_MHQ, "M113_MHQ_unfolded", M113_RACS, "M113Ambul", "M113Ambul_RACS", "M113Wreck", "M1Abrams", "M1AbramsAuto", "M2StaticMGE", M60, MAA_DATSUN_PK2, "MachineGunBox", "MarianQuandt", "MarianQuandt02", "MarianQuandt03", "MarianQuandt04", MH6, MH6_RACS, "Mi17", "Mi17_MG", "Mi24", "Mini", "misc01", "MTB_M2StaticMGHD", "Music", "NorthPrimeMinister", "OfficerE", "OfficerECheat", "OfficerEHG", "OfficerENight", "OfficerG", "OfficerGCheat", "OfficerGHG", "OfficerGNight", "OfficerW", "OfficerWHG", "OfficerWNight", OH58, "Owl", "PaletaHelper", "Phone", "PhoneBase", "Prince_army", "Prince_civil", "Prince_resistance", "Prisoner01", "Prisoner02", "Prisoner03", "Prisoner04", "Prisoner05", "Radio_Old", "RahmadiMap", "Rapid", "RapidY", "ReammoBoxEast", "ReammoBoxGuer", "ReammoBoxOUTGuer", "ReammoBoxWest", "ResHousedomek_hospoda", "ResHousedomek_kovarna", "ResHousedomek_podhradi_1", "ResHousedomek_rosa", "ResHousedomek_ruina", "ResHousedomek_vilka", "ResHousedum_patr_nizky_prujezd", "ResHousedum_podloubi02", "ResHousekostelin", "ResHouseruiny_3_prasklina", "ResHouseruiny_obvod_3", "ResHousestodola", "ResHousestodola2", "ResHousezluty_statek", "Riboli", "Scud", "SGOfficerGNight", SGUAZG, "Shed", "ShedBig", "ShedSmall", "SkodaHelper", "SoldierE", "SoldierEAA", "SoldierEAT", "SoldierECaptive", "SoldierECrew", "SoldierEFakeW", "SoldierEG", "SoldierELAW", "SoldierEMedic", "SoldierEMG", "SoldierEMiner", "SoldierENOG", "SoldierEPilot", "SoldierESaboteur", "SoldierESaboteurBizon", "SoldierESaboteurCheat", "SoldierESaboteurMarksman", "SoldierESaboteurPipe", "SoldierESaboteurPipeHG", "SoldierESniper", "SoldierG", "SoldierGAA", "SoldierGAT", "SoldierGCaptive", "SoldierGCheat", "SoldierGCommando", "SoldierGCrew", "SoldierGFakeC", "SoldierGFakeC2", "SoldierGFakeC3", "SoldierGFakeE", "SoldierGG", "SoldierGGuard", "SoldierGLAW", "SoldierGMarksman", "SoldierGMedic", "SoldierGMG", "SoldierGMiner", "SoldierGNOG", "SoldierGPilot", "SoldierGSniper", "SoldierLAW", "SoldierMB", "SoldierMD", "SoldierMG", "SoldierMMG", "SoldierMR", "SoldierMS", "SoldierMTeamLeader", "SoldierPAT", "SoldierPB", "SoldierPMedic", "SoldierPMG", "SoldierPSaboteur", "SoldierPTeamLeader", "SoldierSpy", "SoldierW", "SoldierWAA", "SoldierWAR", "SoldierWAT", "SoldierWCaptive", "SoldierWCrew", "SoldierWFakeE", "SoldierWG", "SoldierWG36a", "SoldierWLAW", "SoldierWLAWSniper", "SoldierWMedic", "SoldierWMG", "SoldierWMiner", "SoldierWMortar", "SoldierWNOG", "SoldierWPilot", "SoldierWSaboteur", "SoldierWSaboteurAssault", "SoldierWSaboteurCheat", "SoldierWSaboteurDay", "SoldierWSaboteurLaser", "SoldierWSaboteurMarksman", "SoldierWSaboteurPipe", "SoldierWSaboteurPipe2", "SoldierWSaboteurPipeHG", "SoldierWSaboteurPipeHGS", "SoldierWSaboteurRecon", "SoldierWSaboteurXMS", "SoldierWSniper", "SoldierWSteyr", "SoldierWXMS", "SorrowDog", "SpecialBoxEast", "SpecialBoxGuer", "SpecialBoxWest", "SquadleaderE", "SquadLeaderG", "SquadLeaderW", "StaticWeapon2", "Stinger_Pod_East", "Stream", "Stryker_ICV_M2", "Stryker_ICV_MK19", "Stryker_TOW", "Su25", "Su34B", T55, T55G, T72, T72_RACS, "T72Res", T80, "T80Auto", "T80Res", "Table", "Tablemap", "TableMapRes", "TablePub", "TableX", "Target", "TargetTraining", "TeamLeaderE", "TeamLeaderG", "TeamLeaderW", "TOW_TriPod_East", "Trabant", "Truck5t", "Truck5tMG", "Truck5tOpen", "Truck5tReammo", "Truck5tRefuel", "Truck5tRepair", "Truck5tRich", "TruckV3SCivil", "TruckV3SG", "TruckV3SGReammo", "TruckV3SGRefuel", "TruckV3SGRepair", TT650C, TT650G, "TVStudio", UAZ, UAZ_AGS30, "UAZCheat", UAZG, UAZMG, UH60, UH60MG, UH60MGRACS, "UH60Racs", "Ural", "UralOpen", "UralReammo", "UralRefuel", "UralRepair", "US_Soldier_WDL", "US_Soldier_WDL_AA", "US_Soldier_WDL_AR", "US_Soldier_WDL_AT", "US_Soldier_WDL_Engineer", "US_Soldier_WDL_GL", "US_Soldier_WDL_Med", "US_Soldier_WDL_MG", "US_Soldier_WDL_SL", "US_Soldier_WDL_Sniper", "US_Soldier_WDL_TL", "USMCD_Soldier", "USMCD_Soldier_AA", "USMCD_Soldier_AR", "USMCD_Soldier_AT", "USMCD_Soldier_Engineer", "USMCD_Soldier_GL", "USMCD_Soldier_HAT", "USMCD_Soldier_Med", "USMCD_Soldier_MG", "USMCD_Soldier_R", "USMCD_Soldier_SL", "USMCD_Soldier_Sniper", "USMCD_Soldier_Spotter", "USMCD_Soldier_TL", "Vec03", "VideoTable", "ViewTower", "ViewTower2", "Vulcan", "Vulcan_RACS", "Vysilacka", "Wall1", "Wallend", "WallMap", "WarfareBAircraftFactory", "WarfareBBarracks", "WarfareBCampGreen", "WarfareBCampRed", "WarfareBCrate", "WarfareBDepotGreen", "WarfareBDepotRed", "WarfareBEastAircraftFactory", "WarfareBEastAircraftFactoryGreen", "WarfareBEastAircraftFactoryRed", "WarfareBEastBarracks", "WarfareBEastBarracksGreen", "WarfareBEastBarracksRed", "WarfareBEastContructionSite", "WarfareBEastContructionSite1", "WarfareBEastHeadquarters", "WarfareBEastHeadquartersGreen", "WarfareBEastHeadquartersRed", "WarfareBEastHeavyFactory", "WarfareBEastHeavyFactoryGreen", "WarfareBEastHeavyFactoryRed", "WarfareBEastHesco10x", "WarfareBEastHesco10xTall", "WarfareBEastHesco5x", "WarfareBEastHescoSite", "WarfareBEastLightFactory", "WarfareBEastLightFactoryGreen", "WarfareBEastLightFactoryRed", "WarfareBEastLowNest", "WarfareBEastMGNest_PK", "WarfareBEastNest", "WarfareBEastSandbagSite", "WarfareBHeavyFactory", "WarfareBHesco10x", "WarfareBHesco10xGreen", "WarfareBHesco10xRed", "WarfareBHesco10xTall", "WarfareBHesco10xTallGreen", "WarfareBHesco10xTallRed", "WarfareBHesco5x", "WarfareBHesco5xGreen", "WarfareBHesco5xRed", "WarfareBHescoSite", "WarfareBHescoSiteGreen", "WarfareBHescoSiteRed", "WarfareBLightFactory", "WarfareBLowNest", "WarfareBLowNestGreen", "WarfareBLowNestRed", "WarfareBNest", "WarfareBNestGreen", "WarfareBNestRed", "WarfareBResistanceM2StaticMG", "WarfareBResistanceMGNest_M240", "WarfareBSandbagSite", "WarfareBSandbagSiteGreen", "WarfareBSandbagSiteRed", "WarfareBWestAircraftFactory", "WarfareBWestAircraftFactoryGreen", "WarfareBWestAircraftFactoryRed", "WarfareBWestBarracks", "WarfareBWestBarracksGreen", "WarfareBWestBarracksRed", "WarfareBWestContructionSite", "WarfareBWestContructionSite1", "WarfareBWestHeadquarters", "WarfareBWestHeadquartersGreen", "WarfareBWestHeadquartersRed", "WarfareBWestHeavyFactory", "WarfareBWestHeavyFactoryGreen", "WarfareBWestHeavyFactoryRed", "WarfareBWestHesco10x", "WarfareBWestHesco10xTall", "WarfareBWestHesco5x", "WarfareBWestHescoSite", "WarfareBWestLightFactory", "WarfareBWestLightFactoryGreen", "WarfareBWestLightFactoryRed", "WarfareBWestLowNest", "WarfareBWestMGNest_M240", "WarfareBWestNest", "WarfareBWestSandbagSite", "WarfareEastSalvageTruck", "WarfareEastSupplyTruck", "WarfareTruck5tReammo", "WarfareUralReammo", "WarfareWestSalvageTruck", "WarfareWestSupplyTruck", "WeaponBoxEast", "WeaponBoxGuer", "WeaponBoxWest", WGL_A10, WGL_A10GBU, WGL_AH1, WGL_AH64, WGL_BMP1, WGL_BMP1FIA, WGL_BMP2, "WGL_BMPAmbul", WGL_BTR80, WGL_CH47D, "WGL_GJeep", WGL_HMMWV, WGL_HMMWVM2, "WGL_Jeep", "WGL_Ka50", WGL_M113A3, "WGL_M113Ambul", WGL_M1A2SEP_AI, WGL_M2A2, WGL_M2A3, "WGL_M2StaticMGE", "WGL_M2StaticMGW", WGL_M60_AI, "WGL_Mi17", "WGL_Mi24", WGL_OH58, WGL_PBREFAST, WGL_PBRFAST, WGL_SGUAZG, WGL_SU25, WGL_T55_AI, WGL_T55G_AI, WGL_T72_AI, WGL_T72FIA_AI, WGL_T80B_AI, WGL_T80BFIA_AI, WGL_T80U_AI, "WGL_Truck5T", "WGL_Truck5TO", "WGL_Truck5TOpen", "WGL_Truck5TReammo", "WGL_Truck5TRefuel", "WGL_Truck5TRepair", WGL_UAZ, WGL_UAZG, WGL_UH60L, WGL_UH60MG, "WGL_Ural", "WGL_UralReammo", "WGL_UralRefuel", "WGL_UralRepair", "WGL_Vulcan", WGL_ZSU, "Wire", "WireFence", "Wolf", "Woman1", "Woman2", "Woman3", "Woman4", "Woman5", "xxxPhotos", "ZavoraAnim_a1", "Zodiac2", ZSU, "ZWA_bench"};
-		weapons[] = {6G30, "6G30Base", "9K32Launcher", "AALauncher", AK47, "AK47cz", "AK47GrenadeLauncher", AK74, AK74GL, "AK74GrenadeLauncher", "Ak74Su", "AKS74pso", AKS74U, AKS74UN, "AT3Launcher", "AT4Launcher", "ATLauncherSingle_Static", "Beretta", "BerettaBase", "Cannon25HE", "CarlGustavLauncher", "Ch29TLauncher", CZ75, FAL, "G36aBase", "Glock", "Glocks", "Gun105", "Gun120", "Gun125", "Gun73", "HandGrenade", "HandGrenadeTimed", "HellfireLauncherApach", "HellfireLauncherHind", "HellfireLauncherM2A2", "HK", HKG3, "HKG3Base", "HuntingRifleBase", "Ingram", "Kozlice", "LaserGuidedBombLauncher", "LAWLauncher", M16, "M16GrenadeLauncher", M21, "M4", M4A1GL, M4A1SD, M4AIM, M4GL, M60, "MachineGun12_7", "MachineGun12_7_CMD", "MachineGun30", "MachineGun30A10", "MachineGun30A10Burst", "MachineGun30E", "MachineGun30W", "MachineGun7_6", "MachineGun7_6_CMD", "Maverick", MM1, "MM1Base", "MM1Magazine", "OAC_SmokeLauncher", "Phone", "PK_veh", "PROPER_Veh_Laser", "Revolver", "Rocket57x64", "RPGLauncher", "Skorpion", "SmokeShell", "SmokeShellGreen", "SmokeShellRed", "Steyr", "SteyrBase", "SVDDragunov", "Tokarev", "TOWLauncherSingle_Static", UZI, XMS, "ZuniLauncher38"};
+		weapons[] = {};
 		requiredVersion = 1.03;
-		requiredAddons[] = {"CA_Animals2", "CAWeapons2_RPG18", "CATracked", "CAWeapons_bizon", "CAWheeled2_BTR90", "CATracked2_BMP3", "CA_Modules_ARTY", "CAAir", "CA_AIR2_Su25", "CATracked2_2S6M_Tunguska", "CAAir2_F35B", "CAweapons_m107", "CAWheeled2_V3S", "CABuildings", "CAWeapons_VSS_vintorez", "CAAir2_MQ9PredatorB", "CAWeapons_SPG9", "CAWeapons_Kord", "CAAir2_C130J", "CAWheeled2_M1114_Armored", "Warfare2", "CAAir3_Su34", "CAWeapons_2b14_82mm_Mortar", "CAWheeled3_TT650", "CAWheeled2_MTVR", "CAWeapons2", "CATracked2_us_m270mlrs", "CASounds", CAUI, "CATracked2_T90", "CAWater2_smallboat_1", "Arma2_Ka52", "CAWheeled2_TowingTractor", "CAWheeled2_GAZ39371", "CA_Modules_Alice", "CACharacters", "CAAir2", "CAAir2_Pchela1T", "CAAir2_MV22", "CAWheeled2_MMT", "CAWater", "CAWheeled", "CAWheeled_Offroad", "CAWheeled2_Kamaz", "CAAir2_UH1Y", "CAWeapons", "CAWeapons_M252_81mm_Mortar", "CAWeapons_M1014", "HALO_Test", "CAWheeled2_LAV25", "CA_CruiseMissile", "CAWeapons_AK", "CAWheeled2_VWGolf", "CAWeapons_Warfare_weapons", "CATracked2_AAV", "CAWeapons2_SMAW", "CAData", CAA10, "CAweapons_ksvk", "CAAnimals", "CAWater2_fishing_boat", "CACharacters2", "CAWeapons_Colt1911", "CAWheeled3_M1030", "CATracked2_T34", "CAWeapons_Saiga12K", "CAWater2_seafox", "CAWeapons_DMR", "CAWheeled2_Ikarus", "CAWeapons2_HuntingRifle", "CAWheeled_Pickup", "CAWheeled2_LADA"};
+		requiredAddons[] = {"CA_Animals2", "CATracked", "CAWheeled2_BTR90", "CATracked2_BMP3", "CA_Modules_ARTY", "CAAir", "CA_AIR2_Su25", "CATracked2_2S6M_Tunguska", "CAAir2_F35B", "CAweapons_m107", "CAWheeled2_V3S", "CABuildings", "CAWeapons_VSS_vintorez", "CAAir2_MQ9PredatorB", "CAWeapons_SPG9", "CAWeapons_Kord", "CAAir2_C130J", "CAWheeled2_M1114_Armored", "Warfare2", "CAAir3_Su34", "CAWeapons_2b14_82mm_Mortar", "CAWheeled3_TT650", "CAWheeled2_MTVR", "CAWeapons2", "CATracked2_us_m270mlrs", "CASounds", CAUI, "CATracked2_T90", "CAWater2_smallboat_1", "Arma2_Ka52", "CAWheeled2_TowingTractor", "CAWheeled2_GAZ39371", "CA_Modules_Alice", "CACharacters", "CAAir2", "CAAir2_Pchela1T", "CAAir2_MV22", "CAWheeled2_MMT", "CAWater", "CAWheeled", "CAWheeled_Offroad", "CAWheeled2_Kamaz", "CAAir2_UH1Y", "CAWeapons", "CAWeapons_M252_81mm_Mortar", "CAWeapons_M1014", "HALO_Test", "CAWheeled2_LAV25", "CA_CruiseMissile", "CAWeapons_AK", "CAWheeled2_VWGolf", "CAWeapons_Warfare_weapons", "CATracked2_AAV", "CAWeapons2_SMAW", "CAData", CAA10, "CAweapons_ksvk", "CAAnimals", "CAWater2_fishing_boat", "CACharacters2", "CAWeapons_Colt1911", "CAWheeled3_M1030", "CATracked2_T34", "CAWeapons_Saiga12K", "CAWater2_seafox", "CAWeapons_DMR", "CAWheeled2_Ikarus", "CAWeapons2_HuntingRifle", "CAWheeled_Pickup", "CAWheeled2_LADA"};
 		version = 2009-09-04;
 		fileName = "oac_core.pbo";
 		author = "OAC Project - by kju";
@@ -345,69 +345,6 @@ class CfgPatches {
 	};
 	
 	class CAVoice {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-	};
-	
-	class CAWeapons3 {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-	};
-	
-	class CAweapons3_aks74pso {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-	};
-	
-	class CAWeapons3_ammocrates {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-	};
-	
-	class CAweapons3_ksvk {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-	};
-	
-	class CAweapons3_m107 {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-	};
-	
-	class CAweapons3_m16a4 {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-	};
-	
-	class CAweapons3_m16a4_acg {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-	};
-	
-	class CAweapons3_m16a4_acg_gl {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-	};
-	
-	class CAweapons3_m16a4_gl {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
@@ -1155,7 +1092,6 @@ class CfgVehicles {
 		displayName = "Fuel station";
 		accuracy = 0.5;	// accuracy needed to recognize type of this target
 		model = "\ca\structures\House\A_FuelStation\A_FuelStation_Feed";
-		transportFuel = 50000;
 		nameSound = "fuelstation";
 		
 		class DestructionEffects {
@@ -3759,7 +3695,6 @@ class CfgVehicles {
 		};
 		model = "\ca\buildings\benzina";
 		nameSound = "fuelstation";
-		supplyRadius = 5.5;
 		armor = 20;
 	};
 	
@@ -3870,7 +3805,6 @@ class CfgVehicles {
 			disabled = 1;
 		};
 		model = "\ca\structures\House\A_FuelStation\A_FuelStation_Shed";
-		supplyRadius = 3.3;
 		ladders[] = {{"start", "end"}};
 	};
 	
@@ -3884,7 +3818,6 @@ class CfgVehicles {
 		armor = 50;
 		displayName = "Fuel station (3)";
 		accuracy = 1000;	// accuracy needed to recognize type of this target
-		supplyRadius = 3.3;
 		ladders[] = {{"start", "end"}};
 	};
 	
@@ -14084,7 +14017,7 @@ class RscTitles {
 	};
 };
 class DefaultClutter;	// External class reference
-class Grid;	// External class reference
+class Grid {};	// External class reference
 
 class CfgWorlds {
 	class utes;	// External class reference
@@ -14403,28 +14336,37 @@ class CfgWorlds {
 		plateFormat = "SA$ - #####";
 		longitude = -40.02;	// positive is east
 		latitude = -39.95;	// positive is south
-		landGrid = 40;
+		//landGrid = 40;
 		
-		class Grid : Grid {
+		class Grid {
 			offsetX = 0;
 			offsetY = 0;
 			
 			class Zoom1 {
-				zoomMax = 0.1;
+				zoomMax = 0.15;
 				format = "XY";
-				formatX = "00";
-				formatY = "00";
-				stepX = 200;
-				stepY = 200;
+				formatX = "000";
+				formatY = "000";
+				stepX = 100;
+				stepY = 100;
 			};
 			
 			class Zoom2 {
-				zoomMax = "1e+030";
+				zoomMax = 0.85;
+				format = "XY";
+				formatX = "00";
+				formatY = "00";
+				stepX = 1000;
+				stepY = 1000;
+			};
+			
+			class Zoom3 {
+				zoomMax = 1e+030;
 				format = "XY";
 				formatX = "0";
 				formatY = "0";
-				stepX = 2000;
-				stepY = 2000;
+				stepX = 10000;
+				stepY = 10000;
 			};
 		};
 		centerPosition[] = {13200, 8850, 300};
@@ -17397,12 +17339,13 @@ class CfgWorlds {
 			class Zoom2 {
 				zoomMax = "1e+030";
 				format = "XY";
-				formatX = "A";
-				formatY = "0";
+				formatX = "Aa";
+				formatY = "00";
 				stepX = 2000;
 				stepY = 2000;
 			};
 		};
+		
 		startTime = 15:30;
 		startDate = 24/06/2008;
 		forecastWeather = 0.1;

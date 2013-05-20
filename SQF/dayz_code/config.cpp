@@ -292,7 +292,7 @@ class CfgBuildingLoot {
 			{"Skin_Camo1_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
 			{"Skin_Rocket_DZ","magazine"},
-			{"Skin_Bandit_DZ","magazine"},
+			{"Skin_BanditSkin_DZ","magazine"},
 			{"WeaponHolder_ItemCrowbar","object"},
 			{"MR43","weapon"}
 		};
@@ -494,7 +494,7 @@ class CfgBuildingLoot {
 			{"M14_EP1","weapon"},
 			{"FN_FAL_ANPVS4","weapon"},
 			{"M107_DZ","weapon"},
-			{"BAF_AS50_scoped","weapon"},
+			{"BAF_AS50_scoped_DZ","weapon"},
 			{"Mk_48_DZ","weapon"},
 			{"M249_DZ","weapon"},
 			//{"BAF_L85A2_RIS_CWS","weapon"},
@@ -509,7 +509,7 @@ class CfgBuildingLoot {
 			{"Skin_Camo1_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
 			{"Skin_Rocket_DZ","magazine"},
-			{"Skin_Bandit_DZ","magazine"},
+			{"Skin_BanditSkin_DZ","magazine"},
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
 			{"G36A_camo","weapon"},
@@ -520,6 +520,12 @@ class CfgBuildingLoot {
 			{"m8_sharpshooter","weapon"},
 			{"BAF_L85A2_RIS_ACOG","weapon"},
 			{"VSS_vintorez","weapon"},
+			{"SCAR_L_CQC","weapon"},
+			{"SCAR_L_CQC_Holo","weapon"},
+			{"SCAR_L_STD_Mk4CQT","weapon"},
+			{"SCAR_L_STD_EGLM_RCO","weapon"},
+			{"SCAR_H_LNG_Sniper","weapon"},
+			{"ksvk_DZ","weapon"},
 			{"SVD","weapon"},
 			{"SVD_CAMO","weapon"}
 		};
@@ -530,7 +536,7 @@ class CfgBuildingLoot {
 			0.05,		//{"M14_EP1","weapon"},
 			0.02,		//{"FN_FAL_ANPVS4","weapon"},
 			0.02,		//{"m107","weapon"},
-			0.01,		//{"BAF_AS50_scoped","weapon"},
+			0.01,		//{"BAF_AS50_scoped_DZ","weapon"},
 			0.03,		//{"Mk_48_DZ","weapon"},
 			0.05,		//{"M249_DZ","weapon"},
 			0.01,		//{"BAF_L85A2_RIS_CWS","weapon"}, BAF_L85A2_RIS_SUSAT
@@ -544,7 +550,7 @@ class CfgBuildingLoot {
 			0.08,	//Skin_Camo1_DZ
 			0.03,	//Skin_Sniper1_DZ
 			0.03,	//Skin_Rocket_DZ
-			0.03,	//Skin_Bandit_DZ
+			0.03,	//Skin_BanditSkin_DZ
 			0.03,	//G36C"
 			0.02,	//G36C_camo
 			0.02,	//G36A_camo
@@ -555,6 +561,12 @@ class CfgBuildingLoot {
 			0.01,	//("m8_sharpshooter","weapon"}
 			0.01,	//("BAF_L85A2_RIS_ACOG","weapon"}
 			0.01,	//("VSS_vintorez","weapon"}
+			0.04,	//("SCAR_L_CQC","weapon"}
+			0.03,	//("SCAR_L_CQC_Holo","weapon"}
+			0.02,	//("SCAR_L_STD_Mk4CQT","weapon"}
+			0.01,	//("SCAR_L_STD_EGLM_RCO","weapon"}
+			0.01,	//("SCAR_H_LNG_Sniper","weapon"}
+			0.01,	//("ksvk_DZ","weapon"}
 			0.01,	//("SVD","weapon"}
 			0.01	//("SVD_CAMO","weapon"}
 		};
@@ -584,7 +596,7 @@ class CfgBuildingLoot {
 			{"Skin_Camo1_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
 			{"Skin_Rocket_DZ","magazine"},
-			{"Skin_Bandit_DZ","magazine"},
+			{"Skin_BanditSkin_DZ","magazine"},
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
 			//{"G36_C_SD_camo","weapon"},
@@ -618,7 +630,7 @@ class CfgBuildingLoot {
 			0.05,	//Skin_Camo1_DZ
 			0.03,	//Skin_Sniper1_DZ
 			0.03,	//Skin_Rocket_DZ
-			0.03,	//Skin_Bandit_DZ
+			0.03,	//Skin_BanditSkin_DZ
 			0.03,	//G36C"
 			0.02,	//G36C_camo
 			//0.01,	//G36_C_SD_camo
@@ -930,7 +942,7 @@ class CfgBuildingLoot {
 		lootPos[] = {{0.0810547,0.408203,0.874388}};
 	};
 	
-	class Land_army_hut_storrage : Military {
+	class Land_army_hut_storrage : Industrial { //Military
 		lootPos[] = {{0.847168,-2.55713,-1.96141},{0.608887,2.79443,-1.96141}};
 	};
 	
@@ -978,11 +990,11 @@ class CfgBuildingLoot {
 	};
 	
 	class Land_hotel_riviera1 : Residential {
-		lootPos[] = {{6.10645,-5.99854,-0.321464},{-3.08594,-6.40771,-0.321464},{-6.52734,5.13611,-0.358277},{-12.2471,-2.67871,-0.322226},{13.124,7.67676,-3.34035},{-2.03223,8.16943,-3.3383},{-3.36816,-6.23193,-3.33647},{6.81152,-6.18652,-3.33864},{12.333,5.94678,3.28125},{1.16504,-1.51396,3.28125}};
+		lootPos[] = {{14.3193,-7.54932,-0.321754},{6.66992,-6.42041,-0.321464},{-1.43945,-6.1167,-0.321464},{-11.0947,-7.84473,-0.322234},{-13.1543,-0.769531,-0.322207},{-7.09668,7.83643,-3.34139},{-0.0673828,8.64453,-3.33423},{5.52344,8.5127,-3.33536},{12.46,7.69141,-3.34103}};
 	};
 	
 	class Land_hotel_riviera2 : Residential {
-		lootPos[] = {{-6.81641,-8.87415,-0.227416},{-6.94629,2.83325,-0.395831},{-12.4629,4.70825,3.28149},{-0.634766,-1.16333,3.28149},{-8.18359,7.3291,-3.34339},{3.54785,7.59863,-3.3374},{-1.63672,-6.58521,-3.34106},{5.48242,-6.93433,-3.33635},{4.53516,-6.802,-0.321464}};
+		lootPos[] = {{3.55566,-6.7644,-0.321464},{-4.01855,-6.93018,-0.321464},{-11.8311,-8.03491,-0.32216},{-10.0293,6.99585,-3.34129},{-2.73242,7.69849,-3.33373},{2.56641,7.83105,-3.33516},{9.49219,6.99854,-3.34114}};
 	};
 	
 	class Land_sara_stodola : Farm {
@@ -1055,7 +1067,7 @@ class CfgBuildingLoot {
 	// Third story map up
 	class Land_Hotel : Residential {
 		lootChance = 0.5;
-		lootPos[] = {{-12.1133,12.4419,-7.53042},{-18.6973,-2.91846,-7.64675},{-6.98535,7.09436,-7.62252},{-9.23145,-14.5624,-7.69155},{-1.65137,-22.9067,-7.67668},{5.53125,-9.09363,-7.86828},{18.4141,2.01929,-7.9357},{1.40527,22.5328,-7.61164},{-6.51465,13.7125,-7.58348},{1.10156,4.91199,-7.72602},{8.56738,-0.873779,-7.97877},{7.4209,0.354736,-5.95206},{-0.185547,-1.58337,-4.26797},{4.11328,-17.9395,-4.31124},{-1.14551,-23.3689,-4.18952},{-7.72461,-14.7784,-4.21829},{-18.4707,-4.15723,-4.16677},{-20.043,-1.46997,-4.15566},{-17.9609,6.81995,-4.09122},{-13.1279,7.21838,-4.0675},{0.290039,6.35986,-4.22014},{-3.70508,18.1742,-4.09729},{1.52637,20.1591,-4.14155},{21.5801,0.0534668,-4.49635},{-0.462891,-1.63513,-0.764894},{-0.90332,-21.0625,-0.718954},{14.1846,-6.54431,-0.958742},{18.6895,4.2146,-0.936404},{20.874,-1.52063,-0.998734},{1.39063,20.551,-0.637069},{0.426758,7.36646,-0.714541},{-9.5293,1.23804,-0.646017},{7.3584,-0.228271,1.0327},{1.69434,-3.09766,2.70149},{-9.79492,-14.3831,2.80007},{-5.7373,-15.0978,2.76387},{4.50781,-18.5471,2.69182},{-1.4834,-21.1569,2.78841},{13.7695,-9.43396,2.52639},{17.1025,3.14478,2.57377},{5.09277,8.44556,2.74124},{6.38574,18.0823,2.7914},{2.24902,23.494,2.85944},{-2.27344,21.774,2.91127},{0.607422,7.0752,2.7814},{-10.7324,7.24023,2.90718},{-17.8311,-3.34961,2.84166},{-20.7715,1.62964,2.86212},{6.3877,1.60095,4.54189},{0.129883,-1.36096,6.23433},{0.232422,6.25537,6.28407},{-2.66504,-16.9747,6.25621},{-7.40723,-0.0731201,6.3258},{-13.5254,8.42249,6.44309},{1.26855,20.7711,6.36965},{11.7334,3.17261,6.13703}};
+		lootPos[] = {{-17.9365,17.6123,-7.74672},{-1.02588,9.09961,-7.74672},{-11.6431,-18.4033,-7.74672},{12.2471,-17.6816,-7.74672},{13.5146,1.42383,-7.7467},{17.5029,17.1855,-7.74672},{4.26514,16.3115,-7.74672},{4.68604,9.61719,-7.74672},{3.53467,5.01074,-7.74672},{2.57471,0.442383,-7.74672},{3.58398,-2.65234,-8.00944},{-0.572266,-1.66309,-4.25943},{-17.1128,-4.73145,-4.25943},{-12.4233,-4.13672,-4.25943},{-12.6733,-16.5645,-4.25943},{-17.5176,-13.5488,-4.25943},{-16.9019,12.5859,-4.25943},{-13.2129,17.668,-4.25943},{-8.53662,16.8477,-4.25943},{-3.86768,13.0488,-4.25943},{12.1084,16.7129,-4.25943},{17.0928,13.1836,-4.25943},{17.7715,8.25977,-4.25943},{12.8745,3.32031,-4.25943},{17.0962,-11.957,-4.25943},{12.9512,-17.2568,-4.25944},{8.30176,-17.5576,-4.25944},{3.29736,-12.5918,-4.25944},{-0.941895,-0.0791016,-0.75906},{-12.166,-16.6973,-0.75906},{-16.7827,-13.0938,-0.75906},{-16.5698,-8.72656,-0.75906},{-11.665,-3.43164,-0.75906},{-17.019,12.2656,-0.75906},{-12.7935,17.5166,-0.75906},{-8.92383,17.0908,-0.75906},{-3.53516,13.6943,-0.75906},{11.9971,17.4902,-0.75906},{17.5825,12.7646,-0.75906},{17.8564,8.1582,-0.75906},{12.6943,3.24414,-0.75906},{17.5063,-12.5947,-0.75906},{12.314,-17.7178,-0.759064},{8.69678,-17.3955,-0.759064},{3.09521,-12.3662,-0.759064},{3.61914,4.39551,-0.75906},{3.5166,4.16699,-4.25943},{-0.753418,-0.841797,2.74081},{-12.2056,-17.457,2.74081},{-17.3398,-12.625,2.74081},{-17.3315,-8.61719,2.74081},{-12.5444,-3.09766,2.74081},{-17.9858,12.7178,2.74081},{-12.1934,17.4053,2.74081},{-8.47217,17.5635,2.74081},{-3.58838,13.0947,2.74081},{12.0166,17.1836,2.74081},{17.3477,12.9678,2.74081},{17.7378,8.63086,2.74081},{12.4536,3.00586,2.74081},{17.3003,-11.9092,2.74081},{12.6323,-17.5693,2.74081},{9.22412,-17.1357,2.74081},{3.8418,-12.7959,2.74081},{3.31885,4.92676,2.74081},{-1.16211,-1.23242,6.24485},{-15.6294,-15.5459,6.24485},{-15.8813,14.96,6.24485},{15.6616,15.9541,6.24485},{16.6475,-15.9473,6.24485}};
 	};
 	
 	class Land_dum_istan2 : Residential {
@@ -1148,7 +1160,7 @@ class CfgBuildingLoot {
 		lootPos[] = {{-2.89063,-5.32422,-1.40696}};
 	};
 	class Land_repair_center : Industrial {
-		lootPos[] = {{-2.66309,1.68018,-1.52848}};
+		lootPos[] = {{-2.75781,1.24219,-1.52847}};
 	};
 	class Land_sara_hasic_zbroj : Residential {
 		lootPos[] = {{-2.66113,2.43457,-2.65287},{6.56348,1.97998,-2.65287},{6.97168,-2.06836,-2.65287}};
@@ -1456,7 +1468,7 @@ class CfgBuildingLoot {
 	class MASH: Hospital {
 		maxRoaming = 1;
 		lootChance = 0.4;
-		lootPos[] = {{1.18213,-1.65039,-1.17793},{0.24707,0.799316,-1.17803}};
+		lootPos[] = {{1.18213,-1.65039,-1.176},{0.24707,0.799316,-1.176}};
 	}; // Qty: 1
 	class MASH_EP1: MASH {};
 
@@ -1560,7 +1572,7 @@ class CfgTownGeneratorSara {
 
 		class Object0 {
 			Type="Land_Mil_Barracks";
-			position[] = {8136.9282,17021.492,0};
+			position[] = {8136.9282,17021.492,0.051464468};
 			direction = 25.480267;
 			SetZUp = 1;
 		};
@@ -1578,31 +1590,31 @@ class CfgTownGeneratorSara {
 		};
 		class Object3 {
 			Type="Land_Mil_Barracks_i";
-			position[] = {8119.8521,16981.25,0};
+			position[] = {8119.8521,16981.25,-0.01};
 			direction = 385.50812;
 			SetZUp = 1;
 		};
 		class Object4 {
 			Type="Land_Mil_Barracks";
-			position[] = {8128.2817,17000.977,0};
+			position[] = {8128.2817,17000.977,0.051464468};
 			direction = 25.676624;
 			SetZUp = 1;
 		};
 		class Object5 {
 			Type="Land_Mil_Barracks";
-			position[] = {8150.4414,16966.789,0.033765372};
+			position[] = {8150.4414,16966.789,0.051464468};
 			direction = 205.51234;
 			SetZUp = 1;
 		};
 		class Object6 {
 			Type="Land_Mil_Barracks";
-			position[] = {8159.6616,16986.334,0};
+			position[] = {8159.6616,16986.334,0.051464468};
 			direction = 205.36;
 			SetZUp = 1;
 		};
 		class Object7 {
 			Type="Land_Mil_Barracks";
-			position[] = {8145.5571,17039.877,0};
+			position[] = {8145.5571,17039.877,0.051464468};
 			direction = 25.595608;
 			SetZUp = 1;
 		};
@@ -1614,20 +1626,20 @@ class CfgTownGeneratorSara {
 		};
 		class Object9 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {8177.0244,16941.336,0};
+			position[] = {8177.0244,16941.336,-0.01};
 			direction = 27.142403;
 			SetZUp = 1;
 		};
 		class Object10 {
 			Type="Land_Hlidac_budka";
-			position[] = {8197.2998,17055.521,0};
+			position[] = {8195.9395,17054.516,-0.18657924};
 			direction = -67.749222;
 			SetZUp = 1;
 		};
 		class Object11 {
 			Type="Land_Church_05R";
-			position[] = {11394.084,14391.469,0.071709715};
-			direction = 166.13477;
+			position[] = {11383.008,14389.158,0.071709715};
+			direction = 163.41272;
 			SetZUp = 1;
 		};
 		class Object12 {
@@ -1650,7 +1662,7 @@ class CfgTownGeneratorSara {
 		};
 		class Object15 {
 			Type="Land_A_Pub_01";
-			position[] = {12545.523,13417.728,0};
+			position[] = {12545.523,13417.728,-0.071453176};
 			direction = -9.4623184;
 			SetZUp = 1;
 		};
@@ -1666,342 +1678,408 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object1 {
-			Type="Land_Mil_Barracks";
-			position[] = {12128.015,17572.066,0};
-			direction = 90.346191;
+			Type="Land_Mil_Barracks_L";
+			position[] = {12146.324,17573.9,-0.12885633};
+			direction = 0.01;
 			SetZUp = 1;
 		};
 		class Object2 {
-			Type="Land_A_Pub_01";
-			position[] = {12599.477,15024.15,0};
-			direction = -0.22539687;
+			Type="Land_Mil_Barracks";
+			position[] = {12128.015,17572.066,0.018448371};
+			direction = 90.346191;
 			SetZUp = 1;
 		};
 		class Object3 {
+			Type="Land_Church_05R";
+			position[] = {12576.253,14966.313,0};
+			direction = 0.01;
+			SetZUp = 1;
+		};
+		class Object4 {
+			Type="Land_A_Pub_01";
+			position[] = {12599.477,15024.15,-0.094768927};
+			direction = -0.22539687;
+			SetZUp = 1;
+		};
+		class Object5 {
 			Type="Land_a_stationhouse";
 			position[] = {12240.402,17655.639,0.085686944};
 			direction = 0.24140808;
 			SetZUp = 1;
 		};
-		class Object4 {
+		class Object6 {
 			Type="Land_Misc_deerstand";
 			position[] = {12135.249,17607.545,0};
 			direction = -0.94769245;
 			SetZUp = 1;
 		};
-		class Object5 {
-			Type="Land_Mil_Barracks";
-			position[] = {12170.726,17527.301,-0.00015830994};
-			direction = 90.346191;
-			SetZUp = 1;
-		};
-		class Object6 {
-			Type="Land_Mil_Barracks";
-			position[] = {12114.288,17526.564,0.0001411438};
-			direction = 90.346191;
-			SetZUp = 1;
-		};
 		class Object7 {
 			Type="Land_Mil_Barracks";
-			position[] = {12130.278,17526.961,0};
+			position[] = {12170.726,17527.301,0.021541674};
 			direction = 90.346191;
 			SetZUp = 1;
 		};
 		class Object8 {
 			Type="Land_Mil_Barracks";
-			position[] = {12128.022,17550.482,0};
+			position[] = {12114.288,17526.564,0.024708863};
 			direction = 90.346191;
 			SetZUp = 1;
 		};
 		class Object9 {
 			Type="Land_Mil_Barracks";
-			position[] = {12168.463,17574.844,0};
+			position[] = {12130.278,17526.961,0.036623254};
 			direction = 90.346191;
 			SetZUp = 1;
 		};
 		class Object10 {
 			Type="Land_Mil_Barracks";
-			position[] = {12184.073,17574.959,0};
+			position[] = {12128.022,17550.482,0.024402335};
 			direction = 90.346191;
 			SetZUp = 1;
 		};
 		class Object11 {
 			Type="Land_Mil_Barracks";
-			position[] = {12184.242,17551.633,0.00012588501};
+			position[] = {12168.463,17574.844,0.033299409};
 			direction = 90.346191;
 			SetZUp = 1;
 		};
 		class Object12 {
+			Type="Land_Mil_Barracks";
+			position[] = {12184.073,17574.959,0.018678762};
+			direction = 90.346191;
+			SetZUp = 1;
+		};
+		class Object13 {
+			Type="Land_Mil_Barracks";
+			position[] = {12184.242,17551.633,0.021324076};
+			direction = 90.346191;
+			SetZUp = 1;
+		};
+		class Object14 {
 			Type="Land_Mil_Barracks_i";
 			position[] = {12168.843,17550.996,0.00017166138};
 			direction = -91.046577;
 			SetZUp = 1;
 		};
-		class Object13 {
-			Type="Land_Mil_Barracks_L";
-			position[] = {12148.973,17523.09,0.00017547607};
-			direction = -179.67464;
-			SetZUp = 1;
-		};
-		class Object14 {
-			Type="Land_dum_mesto_in";
-			position[] = {12412.932,17430.512,0};
-			direction = -539.61981;
-			SetZUp = 1;
-		};
 		class Object15 {
-			Type="Land_Misc_deerstand";
-			position[] = {12146.906,17607.535,0};
-			direction = -0.94769245;
+			Type="Land_Mil_Barracks_L";
+			position[] = {12102.276,17572.033,-0.058267947};
+			direction = 0.01;
 			SetZUp = 1;
 		};
 		class Object16 {
-			Type="Land_Mil_Barracks";
-			position[] = {12176.559,17695.16,0};
-			direction = 0.55706161;
+			Type="Land_Mil_Barracks_L";
+			position[] = {12148.973,17523.09,-0.058267947};
+			direction = -179.67464;
 			SetZUp = 1;
 		};
 		class Object17 {
-			Type="Land_Mil_Barracks";
-			position[] = {12176.736,17716.307,0};
-			direction = 0.55706161;
+			Type="Land_dum_mesto_in";
+			position[] = {12404.832,17440.396,-0.058267947};
+			direction = -539.61981;
 			SetZUp = 1;
 		};
 		class Object18 {
-			Type="Land_Mil_Barracks";
-			position[] = {12177.082,17738.258,0};
-			direction = 0.55706161;
+			Type="Land_Misc_deerstand";
+			position[] = {12146.906,17607.535,-0.058267947};
+			direction = -0.94769245;
 			SetZUp = 1;
 		};
 		class Object19 {
-			Type="Land_Mil_Barracks";
-			position[] = {12177.109,17758.725,0};
-			direction = 0.55706161;
+			Type="Land_Mil_Barracks_L";
+			position[] = {12175.879,17626.92,0.0001373291};
+			direction = 0.01;
 			SetZUp = 1;
 		};
 		class Object20 {
-			Type="Land_Mil_Barracks";
-			position[] = {12212.731,17694.158,0};
-			direction = 0.55706161;
+			Type="Land_Mil_Barracks_L";
+			position[] = {12176.6,17670.105,-0.058267947};
+			direction = 0.01;
 			SetZUp = 1;
 		};
 		class Object21 {
-			Type="Land_Mil_Barracks";
-			position[] = {12249.67,17716.127,0};
-			direction = 0.55706161;
+			Type="Land_Mil_Barracks_L";
+			position[] = {12247.037,17691.467,0.00022506714};
+			direction = 0.01;
 			SetZUp = 1;
 		};
 		class Object22 {
-			Type="Land_Mil_Barracks";
-			position[] = {12249.865,17779.955,0.000207901};
-			direction = 0.55706161;
+			Type="Land_Mil_Barracks_L";
+			position[] = {12250.379,17756.918,-0.058267947};
+			direction = 0.5422641;
 			SetZUp = 1;
 		};
 		class Object23 {
 			Type="Land_Mil_Barracks";
-			position[] = {12216.349,17780.246,0};
+			position[] = {12176.559,17695.16,-0.058267947};
 			direction = 0.55706161;
 			SetZUp = 1;
 		};
 		class Object24 {
 			Type="Land_Mil_Barracks";
-			position[] = {12251.694,17738.24,0};
+			position[] = {12176.736,17716.307,-0.058267947};
 			direction = 0.55706161;
 			SetZUp = 1;
 		};
 		class Object25 {
-			Type="MASH";
-			position[] = {12219.451,17744.943,0};
-			direction = -87.940636;
+			Type="Land_Mil_Barracks";
+			position[] = {12177.082,17738.258,-0.058267947};
+			direction = 0.55706161;
 			SetZUp = 1;
 		};
 		class Object26 {
 			Type="Land_Mil_Barracks";
-			position[] = {12105.382,17761.873,0};
+			position[] = {12177.109,17758.725,-0.058267947};
 			direction = 0.55706161;
 			SetZUp = 1;
 		};
 		class Object27 {
 			Type="Land_Mil_Barracks";
-			position[] = {12105.048,17743.348,0.00011825562};
+			position[] = {12212.731,17694.158,-0.058267947};
 			direction = 0.55706161;
 			SetZUp = 1;
 		};
 		class Object28 {
 			Type="Land_Mil_Barracks";
-			position[] = {12112.417,17673.002,0};
-			direction = 0.55706161;
+			position[] = {12249.67,17716.127,-0.058267947};
+			direction = 180.73732;
 			SetZUp = 1;
 		};
 		class Object29 {
+			Type="Land_Mil_Barracks";
+			position[] = {12251.353,17780.057,0.000207901};
+			direction = 0.55706161;
+			SetZUp = 1;
+		};
+		class Object30 {
+			Type="Land_Mil_Barracks";
+			position[] = {12216.349,17780.246,-0.058267947};
+			direction = 0.55706161;
+			SetZUp = 1;
+		};
+		class Object31 {
+			Type="Land_Mil_Barracks";
+			position[] = {12250.265,17738.094,-0.058267947};
+			direction = 180.64967;
+			SetZUp = 1;
+		};
+		class Object32 {
+			Type="HeliH";
+			position[] = {12205.919,17747.469,-0.058267947};
+			direction = 0.01;
+			SetZUp = 1;
+		};
+		class Object33 {
+			Type="CampEast";
+			position[] = {12218.479,17759.818,-0.012296874};
+			direction = 0.01;
+			SetZUp = 1;
+		};
+		class Object34 {
+			Type="MASH";
+			position[] = {12219.451,17744.943,-0.033680286};
+			direction = -87.940636;
+			SetZUp = 1;
+		};
+		class Object35 {
+			Type="CampEast";
+			position[] = {12198.721,17758.707,0.017724983};
+			direction = 0.01;
+			SetZUp = 1;
+		};
+		class Object36 {
+			Type="Land_Mil_Barracks";
+			position[] = {12105.382,17761.873,0.018946506};
+			direction = 0.55706161;
+			SetZUp = 1;
+		};
+		class Object37 {
+			Type="Land_Mil_Barracks";
+			position[] = {12105.048,17743.348,0.01856111};
+			direction = 0.55706161;
+			SetZUp = 1;
+		};
+		class Object38 {
+			Type="Land_Mil_Barracks_L";
+			position[] = {12111.455,17654.377,-0.058267947};
+			direction = 0.01;
+			SetZUp = 1;
+		};
+		class Object39 {
+			Type="Land_Mil_Barracks";
+			position[] = {12112.417,17673.002,0.032361805};
+			direction = 1.0278528;
+			SetZUp = 1;
+		};
+		class Object40 {
 			Type="Land_Mil_Barracks_L";
 			position[] = {12066.741,17671.254,-0.0032323832};
 			direction = 0.12843798;
 			SetZUp = 1;
 		};
-		class Object30 {
+		class Object41 {
 			Type="Land_Shed_Ind02";
-			position[] = {12522.335,17701.549,0};
+			position[] = {12522.335,17701.549,-0.058267947};
 			direction = 89.30056;
 			SetZUp = 1;
 		};
-		class Object31 {
+		class Object42 {
 			Type="Land_Shed_Ind02";
 			position[] = {12523.563,17739.436,0.013197624};
 			direction = 91.920059;
 			SetZUp = 1;
 		};
-		class Object32 {
+		class Object43 {
 			Type="Land_Ind_Workshop01_04";
-			position[] = {11881.938,15369.988,0};
+			position[] = {11881.938,15369.988,-0.058267947};
 			direction = -78.659843;
 			SetZUp = 1;
 		};
-		class Object33 {
+		class Object44 {
 			Type="Land_Ind_Workshop01_02";
-			position[] = {11871.147,15433.208,0};
+			position[] = {11871.147,15433.208,-0.021213137};
 			direction = -77.484657;
 			SetZUp = 1;
 		};
-		class Object34 {
+		class Object45 {
 			Type="Land_Mil_Barracks";
-			position[] = {12153.366,17551.842,0};
+			position[] = {12153.366,17551.842,0.036696579};
 			direction = 90.346191;
 			SetZUp = 1;
 		};
-		class Object35 {
+		class Object46 {
 			Type="Land_Mil_Barracks";
-			position[] = {11900.317,15406.305,-0.00010681152};
+			position[] = {11900.317,15406.305,0.0094899554};
 			direction = 99.815247;
 			SetZUp = 1;
 		};
-		class Object36 {
+		class Object47 {
 			Type="Land_Mil_Barracks_i";
-			position[] = {11886.834,15408.376,0};
+			position[] = {11886.834,15408.376,-0.058267947};
 			direction = 460.09265;
 			SetZUp = 1;
 		};
-		class Object37 {
+		class Object48 {
 			Type="Land_Mil_Barracks";
 			position[] = {11873.992,15411.84,0};
 			direction = 100.17564;
 			SetZUp = 1;
 		};
-		class Object38 {
+		class Object49 {
 			Type="Land_Mil_Barracks_L";
-			position[] = {11882.297,15454.726,0};
+			position[] = {11882.297,15454.726,-0.058267947};
 			direction = -168.94826;
 			SetZUp = 1;
 		};
-		class Object39 {
+		class Object50 {
 			Type="Land_Mil_Barracks_L";
-			position[] = {11850.465,15375.853,0};
+			position[] = {11850.465,15375.853,-0.058267947};
 			direction = 10.883802;
 			SetZUp = 1;
 		};
-		class Object40 {
+		class Object51 {
 			Type="Land_Mil_Barracks";
-			position[] = {11954.109,15351.448,0.00021362305};
+			position[] = {11954.109,15351.448,0.018874003};
 			direction = 190.63617;
 			SetZUp = 1;
 		};
-		class Object41 {
+		class Object52 {
 			Type="Land_Mil_Barracks_i";
 			position[] = {11950.703,15335.005,0.00012207031};
 			direction = 550.55267;
 			SetZUp = 1;
 		};
-		class Object42 {
+		class Object53 {
 			Type="Land_Mil_Barracks";
-			position[] = {11947.878,15317.584,0.00010681152};
+			position[] = {11947.878,15317.584,0.015664864};
 			direction = 190.27579;
 			SetZUp = 1;
 		};
-		class Object43 {
+		class Object54 {
 			Type="Land_Ind_Workshop01_04";
-			position[] = {11956.812,15374.776,0};
+			position[] = {11956.812,15374.776,-0.058267947};
 			direction = -78.659843;
 			SetZUp = 1;
 		};
-		class Object44 {
+		class Object55 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {12643.664,15012.067,0};
+			position[] = {12643.664,15012.067,-0.058020923};
 			direction = 23.152876;
 			SetZUp = 1;
 		};
-		class Object45 {
+		class Object56 {
 			Type="Land_Ind_Workshop01_L";
 			position[] = {12373.518,15002.837,0.0075658699};
 			direction = 180.52242;
 			SetZUp = 1;
 		};
-		class Object46 {
+		class Object57 {
 			Type="Land_Ind_Workshop01_02";
-			position[] = {12354.326,14980.562,0.21815737};
+			position[] = {12354.326,14980.562,0.079838082};
 			direction = -90.072746;
 			SetZUp = 1;
 		};
-		class Object47 {
+		class Object58 {
 			Type="Land_A_GeneralStore_01";
-			position[] = {12505.105,14898.904,-0.24872524};
+			position[] = {12505.943,14898.862,-0.11913754};
 			direction = 3.1111417;
 			SetZUp = 1;
 		};
-		class Object48 {
+		class Object59 {
 			Type="Land_HouseV_1I4";
 			position[] = {12392.339,14874.766,0.41723973};
 			direction = 119.51625;
 			SetZUp = 1;
 		};
-		class Object49 {
+		class Object60 {
 			Type="Land_Barn_W_02";
 			position[] = {12267.593,14943.355,0.00019836426};
 			direction = 0.65209574;
 			SetZUp = 1;
 		};
-		class Object50 {
+		class Object61 {
 			Type="Land_Barn_W_01";
-			position[] = {12301.173,14919.947,0};
+			position[] = {12301.173,14919.947,-0.058267947};
 			direction = -0.044560127;
 			SetZUp = 1;
 		};
-		class Object51 {
+		class Object62 {
 			Type="Land_a_stationhouse";
 			position[] = {12754.386,15012.405,0.18223022};
 			direction = -9.2709045;
 			SetZUp = 1;
 		};
-		class Object52 {
+		class Object63 {
 			Type="Land_Ind_Workshop01_04";
-			position[] = {13990.789,16442.723,0};
+			position[] = {13990.789,16442.723,-0.058267947};
 			direction = -178.7836;
 			SetZUp = 1;
 		};
-		class Object53 {
+		class Object64 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {14007.982,16417.313,0};
+			position[] = {14007.982,16417.313,-0.036741082};
 			direction = -170.46751;
 			SetZUp = 1;
 		};
-		class Object54 {
+		class Object65 {
 			Type="Land_A_FuelStation_Build";
 			position[] = {12572.716,15151.308,0};
 			direction = -51.519573;
 			SetZUp = 1;
 		};
-		class Object55 {
+		class Object66 {
 			Type="Land_Ind_TankSmall2";
 			position[] = {12569.632,15148.051,-0.085158229};
 			direction = -141.53276;
 			SetZUp = 1;
 		};
-		class Object56 {
+		class Object67 {
 			Type="Land_A_FuelStation_Feed";
 			position[] = {12577.834,15151.841,-0.054911073};
 			direction = -230.25858;
 			SetZUp = 1;
 		};
-		class Object57 {
+		class Object68 {
 			Type="Land_Ind_Workshop01_02";
 			position[] = {12730.648,15095.472,0.073698193};
 			direction = -150.61859;
@@ -2014,163 +2092,181 @@ class CfgTownGeneratorSara {
 
 		class Object0 {
 			Type="Land_A_GeneralStore_01a";
-			position[] = {17374.699,14197.158,0};
+			position[] = {17374.699,14197.158,-0.0001220};
 			direction = -1.1227432;
 			SetZUp = 1;
 		};
 		class Object1 {
 			Type="Land_A_Hospital";
-			position[] = {17105.551,14340.854,0};
+			position[] = {17105.551,14340.854,-0.19380733};
 			direction = -8.8722639;
 			SetZUp = 1;
 		};
 		class Object2 {
 			Type="Land_Mil_Barracks_i";
-			position[] = {17800.656,12404.806,0};
+			position[] = {17800.656,12404.806,-0.0001220};
 			direction = -179.72816;
 			SetZUp = 1;
 		};
 		class Object3 {
-			Type="Land_Mil_Barracks";
-			position[] = {17776.217,12386.715,0};
-			direction = 0.55706161;
+			Type="Land_Mil_Barracks_L";
+			position[] = {17774.535,12366.071,-0.0001220};
+			direction = 0.001;
 			SetZUp = 1;
 		};
 		class Object4 {
-			Type="Land_Mil_Barracks";
-			position[] = {17799.146,12422.35,-0.00012207031};
-			direction = 180.04794;
+			Type="Land_Mil_Barracks_L";
+			position[] = {17820.105,12419.598,-0.0001220};
+			direction = 0.001;
 			SetZUp = 1;
 		};
 		class Object5 {
-			Type="Land_Mil_Barracks";
-			position[] = {17800.506,12368.888,0};
-			direction = 180.51045;
+			Type="Land_Mil_Barracks_L";
+			position[] = {17774.93,12402.717,-0.0001220};
+			direction = 0.001;
 			SetZUp = 1;
 		};
 		class Object6 {
 			Type="Land_Mil_Barracks";
-			position[] = {17800.926,12386.839,0};
-			direction = 180.528;
+			position[] = {17776.217,12386.715,0.023590565};
+			direction = 0.55706161;
 			SetZUp = 1;
 		};
 		class Object7 {
 			Type="Land_Mil_Barracks";
-			position[] = {17776.561,12421.918,0};
-			direction = 0.59525597;
+			position[] = {17799.146,12422.35,0.021566618};
+			direction = 180.04794;
 			SetZUp = 1;
 		};
 		class Object8 {
 			Type="Land_Mil_Barracks";
-			position[] = {17823.809,12405.631,0};
-			direction = 180.05901;
+			position[] = {17800.506,12368.888,0.033044424};
+			direction = 180.51045;
 			SetZUp = 1;
 		};
 		class Object9 {
 			Type="Land_Mil_Barracks";
-			position[] = {17823.139,12387.69,0};
-			direction = 180.74718;
+			position[] = {17800.926,12386.839,0.036740869};
+			direction = 180.528;
 			SetZUp = 1;
 		};
 		class Object10 {
 			Type="Land_Mil_Barracks";
-			position[] = {17823.221,12368.883,0};
-			direction = 179.87558;
+			position[] = {17776.561,12421.918,0.024095722};
+			direction = 0.59525597;
 			SetZUp = 1;
 		};
 		class Object11 {
-			Type="Land_Mil_ControlTower";
-			position[] = {19301.592,13900.779,0};
-			direction = -138.96796;
+			Type="Land_Mil_Barracks";
+			position[] = {17823.809,12405.631,0.021194113};
+			direction = 180.05901;
 			SetZUp = 1;
 		};
 		class Object12 {
 			Type="Land_Mil_Barracks";
-			position[] = {19303.412,13982.679,0.00011539459};
-			direction = 131.23599;
+			position[] = {17823.139,12387.69,0.024265077};
+			direction = 180.74718;
 			SetZUp = 1;
 		};
 		class Object13 {
-			Type="Land_Mil_Barracks_i";
-			position[] = {19290.621,13995.508,0};
-			direction = -227.98196;
+			Type="Land_Mil_Barracks";
+			position[] = {17823.221,12368.883,0.018495725};
+			direction = 179.87558;
 			SetZUp = 1;
 		};
 		class Object14 {
+			Type="Land_Mil_ControlTower";
+			position[] = {19301.592,13900.779,-0.0001220};
+			direction = -138.96796;
+			SetZUp = 1;
+		};
+		class Object15 {
+			Type="Land_Mil_Barracks";
+			position[] = {19303.412,13982.679,0.015481509};
+			direction = 131.23599;
+			SetZUp = 1;
+		};
+		class Object16 {
+			Type="Land_Mil_Barracks_i";
+			position[] = {19290.621,13995.508,-0.0001220};
+			direction = -227.98196;
+			SetZUp = 1;
+		};
+		class Object17 {
 			Type="Land_Mil_Barracks";
 			position[] = {19323.928,14006.171,-0.00010490417};
 			direction = 131.23599;
 			SetZUp = 1;
 		};
-		class Object15 {
+		class Object18 {
 			Type="Land_Mil_Barracks";
 			position[] = {19307.992,14019.728,0.00017356873};
 			direction = 131.23599;
 			SetZUp = 1;
 		};
-		class Object16 {
-			Type="Land_Mil_Barracks";
-			position[] = {19292.5,14033.305,-0.00012779236};
-			direction = 131.23599;
-			SetZUp = 1;
-		};
-		class Object17 {
-			Type="Land_Mil_Barracks";
-			position[] = {19256.492,14023.703,0};
-			direction = 131.23599;
-			SetZUp = 1;
-		};
-		class Object18 {
-			Type="Land_Mil_Barracks_i";
-			position[] = {19159.248,13950.89,-0.027695656};
-			direction = -408.3688;
-			SetZUp = 1;
-		};
 		class Object19 {
 			Type="Land_Mil_Barracks";
-			position[] = {19227.32,14051.441,-0.020446777};
+			position[] = {19292.5,14033.305,0.070699908};
 			direction = 131.23599;
 			SetZUp = 1;
 		};
 		class Object20 {
 			Type="Land_Mil_Barracks";
-			position[] = {19277.008,14047.194,0.058236122};
+			position[] = {19256.492,14023.703,0.04523997};
 			direction = 131.23599;
 			SetZUp = 1;
 		};
 		class Object21 {
-			Type="Land_Mil_Barracks";
-			position[] = {19246.428,14072.944,-0.42259026};
-			direction = 131.23599;
+			Type="Land_Mil_Barracks_i";
+			position[] = {19159.248,13950.89,-0.027695656};
+			direction = -408.3688;
 			SetZUp = 1;
 		};
 		class Object22 {
-			Type="Land_Mil_Barracks_L";
-			position[] = {19240.336,14036.858,0};
-			direction = 43.097996;
+			Type="Land_Mil_Barracks";
+			position[] = {19227.32,14051.441,0.062514454};
+			direction = 131.23599;
 			SetZUp = 1;
 		};
 		class Object23 {
+			Type="Land_Mil_Barracks";
+			position[] = {19277.008,14047.194,0.22022116};
+			direction = 131.23599;
+			SetZUp = 1;
+		};
+		class Object24 {
+			Type="Land_Mil_Barracks";
+			position[] = {19246.428,14072.944,0.090966634};
+			direction = 131.23599;
+			SetZUp = 1;
+		};
+		class Object25 {
+			Type="Land_Mil_Barracks_L";
+			position[] = {19240.336,14036.858,-0.0001220};
+			direction = 43.097996;
+			SetZUp = 1;
+		};
+		class Object26 {
 			Type="Land_Mil_Barracks_L";
 			position[] = {19270.477,14008.193,0.00011253357};
 			direction = 43.097996;
 			SetZUp = 1;
 		};
-		class Object24 {
+		class Object27 {
 			Type="Land_Mil_Barracks";
-			position[] = {19260.592,14061.34,0};
+			position[] = {19260.592,14061.34,0.11987779};
 			direction = 131.23599;
 			SetZUp = 1;
 		};
-		class Object25 {
+		class Object28 {
 			Type="Land_Ind_Workshop01_04";
-			position[] = {19236.166,13599.637,0};
+			position[] = {19236.166,13599.637,-0.0001220};
 			direction = -178.7836;
 			SetZUp = 1;
 		};
-		class Object26 {
+		class Object29 {
 			Type="Land_stodola_open";
-			position[] = {17762.678,12142.111,0.21676299};
+			position[] = {17762.678,12142.111,-0.050569069};
 			direction = -197.38129;
 			SetZUp = 1;
 		};
@@ -2181,19 +2277,19 @@ class CfgTownGeneratorSara {
 
 		class Object0 {
 			Type="Land_Mil_Barracks";
-			position[] = {17544.205,9566.8457,0};
+			position[] = {17544.205,9566.8457,0.027192807};
 			direction = 449.38632;
 			SetZUp = 1;
 		};
 		class Object1 {
 			Type="Land_Mil_Barracks";
-			position[] = {17566.342,9568.123,0};
+			position[] = {17566.342,9568.123,0.039313238};
 			direction = 450.23093;
 			SetZUp = 1;
 		};
 		class Object2 {
 			Type="Land_Mil_Barracks";
-			position[] = {17596.912,9567.7393,0};
+			position[] = {17596.912,9567.7393,0.044327673};
 			direction = 450.26733;
 			SetZUp = 1;
 		};
@@ -2205,7 +2301,7 @@ class CfgTownGeneratorSara {
 		};
 		class Object4 {
 			Type="Land_A_Pub_01";
-			position[] = {15607.009,8834.6787,0};
+			position[] = {15607.009,8834.6787,-0.028606441};
 			direction = 88.496819;
 			SetZUp = 1;
 		};
@@ -2217,7 +2313,7 @@ class CfgTownGeneratorSara {
 		};
 		class Object6 {
 			Type="Land_Barn_W_01";
-			position[] = {15504.23,8880.8193,0.069094047};
+			position[] = {15504.23,8880.8193,0.0076356526};
 			direction = -41.173008;
 			SetZUp = 1;
 		};
@@ -2229,7 +2325,7 @@ class CfgTownGeneratorSara {
 		};
 		class Object8 {
 			Type="Land_dum_mesto2";
-			position[] = {14389.838,9440.582,0.39492849};
+			position[] = {14389.838,9440.582,0.30637202};
 			direction = 84.818588;
 			SetZUp = 1;
 		};
@@ -2246,25 +2342,25 @@ class CfgTownGeneratorSara {
 		};
 		class Object1 {
 			Type="Land_Ind_Workshop01_L";
-			position[] = {13780.049,11542.577,0};
+			position[] = {13780.049,11542.577,-0.01};
 			direction = 180.52242;
 			SetZUp = 1;
 		};
 		class Object2 {
 			Type="Land_A_FuelStation_Build";
-			position[] = {13501.751,11502.97,-0.011188855};
+			position[] = {13501.751,11502.97,0.028872779};
 			direction = 112.26083;
 			SetZUp = 1;
 		};
 		class Object3 {
 			Type="Land_A_FuelStation_Shed";
-			position[] = {13492.592,11520.933,0};
+			position[] = {13492.592,11520.933,-0.01};
 			direction = 21.719521;
 			SetZUp = 1;
 		};
 		class Object4 {
 			Type="Land_Ind_TankSmall2";
-			position[] = {13504.441,11506.611,0};
+			position[] = {13504.441,11506.611,-0.01};
 			direction = 22.400288;
 			SetZUp = 1;
 		};
@@ -2288,43 +2384,43 @@ class CfgTownGeneratorSara {
 		};
 		class Object8 {
 			Type="Land_Mil_Barracks";
-			position[] = {12944.033,11302.412,0};
+			position[] = {12944.033,11302.412,0.01768269};
 			direction = 321.08997;
 			SetZUp = 1;
 		};
 		class Object9 {
 			Type="Land_Mil_Barracks";
-			position[] = {12953.717,11288.011,0};
+			position[] = {12953.717,11288.011,0.022969451};
 			direction = 320.11044;
 			SetZUp = 1;
 		};
 		class Object10 {
 			Type="Land_Mil_Barracks";
-			position[] = {12980.921,11328.579,0};
+			position[] = {12980.921,11328.579,0.02366706};
 			direction = 500.07446;
 			SetZUp = 1;
 		};
 		class Object11 {
 			Type="Land_Mil_Barracks";
-			position[] = {14587.67,10622.658,0.2360439};
+			position[] = {14587.67,10622.658,0.0053548296};
 			direction = 129.64299;
 			SetZUp = 1;
 		};
 		class Object12 {
 			Type="Land_Mil_Barracks";
-			position[] = {14601.24,10614.478,0};
+			position[] = {14601.24,10614.478,0.018033851};
 			direction = 129.75981;
 			SetZUp = 1;
 		};
 		class Object13 {
 			Type="Land_Mil_Barracks";
-			position[] = {14613.225,10604.556,0};
+			position[] = {14613.225,10604.556,0.035364479};
 			direction = 130.07422;
 			SetZUp = 1;
 		};
 		class Object14 {
 			Type="Land_Mil_Barracks";
-			position[] = {14625.083,10594.835,-0.00011444092};
+			position[] = {14625.083,10594.835,-0.11684123};
 			direction = 129.80251;
 			SetZUp = 1;
 		};
@@ -2336,7 +2432,7 @@ class CfgTownGeneratorSara {
 		};
 		class Object16 {
 			Type="Land_A_Pub_01";
-			position[] = {14446.903,10867.791,-0.011516571};
+			position[] = {14446.84,10867.439,-0.072935879};
 			direction = -149.56293;
 			SetZUp = 1;
 		};
@@ -2347,25 +2443,25 @@ class CfgTownGeneratorSara {
 
 		class Object0 {
 			Type="Land_A_Pub_01";
-			position[] = {14111.281,12495.537,0};
+			position[] = {14111.281,12495.537,-0.11815493};
 			direction = -91.763176;
 			SetZUp = 1;
 		};
 		class Object1 {
 			Type="Land_Shed_Ind02";
-			position[] = {13698.369,12626.954,0.19447209};
+			position[] = {13698.369,12626.954,0.10880119};
 			direction = 177.29395;
 			SetZUp = 1;
 		};
 		class Object2 {
 			Type="Land_Shed_Ind02";
-			position[] = {13718.194,12628.456,0.57550657};
+			position[] = {13718.194,12628.456,0.18947728};
 			direction = 176.95952;
 			SetZUp = 1;
 		};
 		class Object3 {
 			Type="Land_dum_mesto_in";
-			position[] = {13886.564,12480.166,-0.020936389};
+			position[] = {13889.361,12473.986,0.040347431};
 			direction = -713.91479;
 			SetZUp = 1;
 		};
@@ -2395,7 +2491,7 @@ class CfgTownGeneratorSara {
 		};
 		class Object8 {
 			Type="Land_A_GeneralStore_01a";
-			position[] = {14383.14,12589.358,0.084598169};
+			position[] = {14383.14,12589.358,0.051491007};
 			direction = 51.201694;
 			SetZUp = 1;
 		};
@@ -2407,7 +2503,7 @@ class CfgTownGeneratorSara {
 		};
 		class Object10 {
 			Type="Land_rail_station_big";
-			position[] = {14107.46,12537.889,0};
+			position[] = {14107.46,12537.889,-0.044390291};
 			direction = -89.815132;
 			SetZUp = 1;
 		};
@@ -2419,103 +2515,121 @@ class CfgTownGeneratorSara {
 		};
 		class Object12 {
 			Type="Land_dum_mesto_in";
-			position[] = {14153.38,12500.779,0.0058159484};
+			position[] = {14154.884,12501.169,0.0058159484};
 			direction = 344.83966;
 			SetZUp = 1;
 		};
 		class Object13 {
-			Type="MASH";
-			position[] = {14277.733,12731.597,0};
-			direction = -101.5187;
+			Type="HeliH";
+			position[] = {14268.603,12716.016,-0.01};
+			direction = 0.01;
 			SetZUp = 1;
 		};
 		class Object14 {
 			Type="MASH";
-			position[] = {14278.93,12725.351,0};
-			direction = -102.18977;
+			position[] = {14277.733,12731.597,-0.01};
+			direction = -101.5187;
 			SetZUp = 1;
 		};
 		class Object15 {
 			Type="MASH";
-			position[] = {14283.073,12706.212,0};
-			direction = -102.56635;
+			position[] = {14278.93,12725.351,-0.01};
+			direction = -102.18977;
 			SetZUp = 1;
 		};
 		class Object16 {
-			Type="CampEast";
-			position[] = {14254.024,12729.128,0};
-			direction = 259.13318;
+			Type="MASH";
+			position[] = {14280.389,12718.989,-0.01};
+			direction = -102.56635;
 			SetZUp = 1;
 		};
 		class Object17 {
-			Type="CampEast";
-			position[] = {14260.703,12698.821,0};
-			direction = -100.77284;
+			Type="MASH";
+			position[] = {14281.788,12712.48,-0.01};
+			direction = -102.56635;
 			SetZUp = 1;
 		};
 		class Object18 {
 			Type="MASH";
-			position[] = {14260.153,12707.241,0};
-			direction = 78.151505;
+			position[] = {14283.073,12706.212,-0.01};
+			direction = -102.56635;
 			SetZUp = 1;
 		};
 		class Object19 {
-			Type="MASH";
-			position[] = {14258.528,12713.731,0};
-			direction = 78.151505;
+			Type="CampEast";
+			position[] = {14254.024,12729.128,-0.01};
+			direction = 259.13318;
 			SetZUp = 1;
 		};
 		class Object20 {
-			Type="MASH";
-			position[] = {14257.203,12719.968,0};
-			direction = 78.151505;
+			Type="CampEast";
+			position[] = {14260.703,12698.821,-0.01};
+			direction = -100.77284;
 			SetZUp = 1;
 		};
 		class Object21 {
-			Type="Land_A_Pub_01";
-			position[] = {14247.062,12663.457,0};
-			direction = -261.4249;
+			Type="MASH";
+			position[] = {14260.153,12707.241,-0.01};
+			direction = 78.151505;
 			SetZUp = 1;
 		};
 		class Object22 {
-			Type="Land_Ind_Workshop01_L";
-			position[] = {13936.005,12611.745,0};
-			direction = 232.67963;
+			Type="MASH";
+			position[] = {14258.528,12713.731,-0.01};
+			direction = 78.151505;
 			SetZUp = 1;
 		};
 		class Object23 {
-			Type="Land_Ind_Workshop01_01";
-			position[] = {13923.075,12686.629,0.04991281};
-			direction = -133.58383;
+			Type="MASH";
+			position[] = {14257.203,12719.968,-0.01};
+			direction = 78.151505;
 			SetZUp = 1;
 		};
 		class Object24 {
-			Type="Land_A_BuildingWIP";
-			position[] = {13812.506,12853.797,0.37321466};
-			direction = -247.28619;
+			Type="Land_A_Pub_01";
+			position[] = {14247.062,12663.457,-0.05721648};
+			direction = -261.4249;
 			SetZUp = 1;
 		};
 		class Object25 {
-			Type="Land_A_Office01";
-			position[] = {14028.728,12605.14,0};
-			direction = 97.814407;
+			Type="Land_Ind_Workshop01_L";
+			position[] = {13936.005,12611.745,0.0022899311};
+			direction = 232.67963;
 			SetZUp = 1;
 		};
 		class Object26 {
-			Type="Land_A_Hospital";
-			position[] = {14088.811,12448.2,0};
-			direction = 158.0571;
+			Type="Land_Ind_Workshop01_01";
+			position[] = {13923.075,12686.629,0.0068891854};
+			direction = -133.58383;
 			SetZUp = 1;
 		};
 		class Object27 {
+			Type="Land_A_BuildingWIP";
+			position[] = {13824.438,12821.023,0.28120998};
+			direction = -264.93076;
+			SetZUp = 1;
+		};
+		class Object28 {
+			Type="Land_A_Office01";
+			position[] = {14028.728,12605.14,-0.14629401};
+			direction = 97.814407;
+			SetZUp = 1;
+		};
+		class Object29 {
+			Type="Land_A_Hospital";
+			position[] = {14088.811,12448.2,-0.01};
+			direction = 158.0571;
+			SetZUp = 1;
+		};
+		class Object30 {
 			Type="Land_dum_mesto2";
 			position[] = {14326.09,12454.547,0.0002746582};
 			direction = 180.20685;
 			SetZUp = 1;
 		};
-		class Object28 {
+		class Object31 {
 			Type="Land_A_Pub_01";
-			position[] = {14250.663,12637.759,0};
+			position[] = {14250.317,12637.221,-0.0099999998};
 			direction = -169.84204;
 			SetZUp = 1;
 		};
@@ -2526,79 +2640,79 @@ class CfgTownGeneratorSara {
 
 		class Object0 {
 			Type="Land_A_FuelStation_Build";
-			position[] = {13761.046,9363.1738,0.091485769};
+			position[] = {13761.046,9363.1738,0.071678549};
 			direction = 129.7719;
 			SetZUp = 1;
 		};
 		class Object1 {
 			Type="Land_A_FuelStation_Shed";
-			position[] = {13758.384,9381.1289,-0.16229248};
+			position[] = {13758.384,9381.1289,-0.022305794};
 			direction = 39.23053;
 			SetZUp = 1;
 		};
 		class Object2 {
 			Type="Land_Ind_TankSmall2";
-			position[] = {13764.708,9365.832,0.033283927};
+			position[] = {13764.708,9365.832,-0.085744448};
 			direction = 39.911297;
 			SetZUp = 1;
 		};
 		class Object3 {
 			Type="Land_A_FuelStation_Feed";
-			position[] = {13758.242,9381.1592,0.07201004};
+			position[] = {13758.242,9381.1592,0.1973476};
 			direction = -49.531528;
 			SetZUp = 1;
 		};
 		class Object4 {
 			Type="Land_A_FuelStation_Feed";
-			position[] = {13753.038,9385.6846,-0.032577515};
+			position[] = {13753.038,9385.6846,0.24049598};
 			direction = -48.967182;
 			SetZUp = 1;
 		};
 		class Object5 {
 			Type="Land_A_FuelStation_Feed";
-			position[] = {13763.732,9376.7627,0.21588707};
+			position[] = {13763.732,9376.7627,0.27972361};
 			direction = -48.967182;
 			SetZUp = 1;
 		};
 		class Object6 {
 			Type="Land_A_GeneralStore_01";
-			position[] = {13520.994,9204.7188,0};
+			position[] = {13519.101,9206.6807,-0.11402529};
 			direction = -136.02129;
 			SetZUp = 1;
 		};
 		class Object7 {
 			Type="Land_A_Pub_01";
-			position[] = {13544.621,9208.8955,0};
+			position[] = {13544.621,9208.8955,-0.015};
 			direction = -15.523249;
 			SetZUp = 1;
 		};
 		class Object8 {
 			Type="Land_A_Pub_01";
-			position[] = {13499.382,8993.8311,0};
+			position[] = {13499.382,8993.8311,-0.059361249};
 			direction = 140.1241;
 			SetZUp = 1;
 		};
 		class Object9 {
 			Type="Land_dum_mesto2";
-			position[] = {13410.084,9055.4961,0};
+			position[] = {13410.084,9055.4961,-0.01};
 			direction = 139.88057;
 			SetZUp = 1;
 		};
 		class Object10 {
 			Type="Land_dum_mesto2";
-			position[] = {13485.535,8892.9492,0};
+			position[] = {13485.535,8892.9492,-0.01};
 			direction = 230.83627;
 			SetZUp = 1;
 		};
 		class Object11 {
 			Type="Land_dum_mesto_in";
-			position[] = {13696.521,8972.9268,0};
-			direction = 526.40009;
+			position[] = {13688.798,8981.7324,0.04808744};
+			direction = 572.72217;
 			SetZUp = 1;
 		};
 		class Object12 {
 			Type="Land_Ind_Workshop01_L";
-			position[] = {13639.029,9192.3057,0.00013923645};
+			position[] = {13639.029,9192.3057,-0.067450002};
 			direction = 38.940308;
 			SetZUp = 1;
 		};
@@ -2616,61 +2730,67 @@ class CfgTownGeneratorSara {
 		};
 		class Object15 {
 			Type="Land_Ind_Workshop01_04";
-			position[] = {13583.15,9123.3457,0};
+			position[] = {13583.15,9123.3457,-0.01};
 			direction = -222.46309;
 			SetZUp = 1;
 		};
 		class Object16 {
 			Type="Land_ladderEP1";
+			position[] = {13182.618,8898.6982,-0.40864643};
+			direction = 0.01;
+			SetZUp = 1;
+		};
+		class Object17 {
+			Type="Land_ladderEP1";
 			position[] = {13176.354,8909.0195,-0.46033561};
 			direction = 179.91095;
 			SetZUp = 1;
 		};
-		class Object17 {
+		class Object18 {
 			Type="Land_ladderEP1";
 			position[] = {13146.497,8984.6514,-0.13116965};
 			direction = 178.64415;
 			SetZUp = 1;
 		};
-		class Object18 {
+		class Object19 {
 			Type="Land_ladderEP1";
-			position[] = {12962.374,8752.0498,0};
+			position[] = {12962.374,8752.0498,-0.01};
 			direction = 30.402079;
 			SetZUp = 1;
 		};
-		class Object19 {
+		class Object20 {
 			Type="Land_A_GeneralStore_01";
-			position[] = {12990.525,8503.3477,-0.48612612};
+			position[] = {12990.772,8483.0664,-0.093081169};
 			direction = 89.114182;
 			SetZUp = 1;
 		};
-		class Object20 {
+		class Object21 {
 			Type="Land_Mil_ControlTower";
-			position[] = {12516.867,8516.2188,0};
-			direction = -2.9619973;
+			position[] = {12469.941,8511.7705,-0.0099999998};
+			direction = -0.047732286;
 			SetZUp = 1;
 		};
-		class Object21 {
+		class Object22 {
 			Type="Land_A_Hospital";
 			position[] = {12728.689,8089.4097,0.00019454956};
 			direction = 290.91562;
 			SetZUp = 1;
 		};
-		class Object22 {
+		class Object23 {
 			Type="Land_Ind_Workshop01_L";
-			position[] = {12753.248,8075.9043,0};
+			position[] = {12753.248,8075.9043,-0.065661252};
 			direction = 22.619411;
 			SetZUp = 1;
 		};
-		class Object23 {
+		class Object24 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {12769.159,8072.3403,0};
 			direction = -429.39523;
 			SetZUp = 1;
 		};
-		class Object24 {
+		class Object25 {
 			Type="Land_ladderEP1";
-			position[] = {12970.866,8870.1895,-0.49671781};
+			position[] = {12970.898,8870.3271,-0.49671781};
 			direction = 541.30365;
 			SetZUp = 1;
 		};
@@ -2681,13 +2801,13 @@ class CfgTownGeneratorSara {
 
 		class Object0 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {8113.8984,9312.7178,0};
+			position[] = {8113.8984,9312.7178,-0.01};
 			direction = -90.368271;
 			SetZUp = 1;
 		};
 		class Object1 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {8055.6089,9320.1982,0};
+			position[] = {8055.6089,9320.1982,-0.01};
 			direction = -4.136138;
 			SetZUp = 1;
 		};
@@ -2705,8 +2825,8 @@ class CfgTownGeneratorSara {
 		};
 		class Object4 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {8464.4512,9445.4727,0};
-			direction = 31.664022;
+			position[] = {8464.4512,9445.4727,0.048190281};
+			direction = 24.297029;
 			SetZUp = 1;
 		};
 	};
@@ -2716,13 +2836,13 @@ class CfgTownGeneratorSara {
 
 		class Object0 {
 			Type="Land_Mil_ControlTower";
-			position[] = {9903.9619,10080.465,0};
+			position[] = {9903.9619,10080.465,-0.001};
 			direction = -0.46591365;
 			SetZUp = 1;
 		};
 		class Object1 {
 			Type="Land_Ind_Workshop01_L";
-			position[] = {9463.9111,9911.6846,0};
+			position[] = {9463.9111,9911.6846,-0.040945131};
 			direction = 90.43174;
 			SetZUp = 1;
 		};
@@ -2734,125 +2854,119 @@ class CfgTownGeneratorSara {
 		};
 		class Object3 {
 			Type="Land_Ind_Workshop01_L";
-			position[] = {9552.2695,9885.9229,0};
+			position[] = {9552.2695,9885.9229,-0.043993518};
 			direction = 90.43174;
 			SetZUp = 1;
 		};
 		class Object4 {
 			Type="Land_Shed_Ind02";
-			position[] = {9553.4814,9866.9473,0};
+			position[] = {9553.4814,9866.9473,0.12183861};
 			direction = 89.769318;
 			SetZUp = 1;
 		};
 		class Object5 {
 			Type="Land_Shed_Ind02";
-			position[] = {9553.4834,9850.374,0};
+			position[] = {9553.4834,9850.374,0.15376762};
 			direction = 90.753822;
 			SetZUp = 1;
 		};
 		class Object6 {
-			Type="Land_A_Hospital";
-			position[] = {10630.088,9324.2734,0};
-			direction = 359.89655;
-			SetZUp = 1;
-		};
-		class Object7 {
 			Type="Land_A_GeneralStore_01";
-			position[] = {10753.238,9326.7861,0.070243925};
+			position[] = {10750.721,9330.2539,0.22309197};
 			direction = -563.96234;
 			SetZUp = 1;
 		};
-		class Object8 {
+		class Object7 {
 			Type="Land_Ind_Workshop01_L";
 			position[] = {10141.276,9372.0039,0.00018310547};
 			direction = 0.56901193;
 			SetZUp = 1;
 		};
+		class Object8 {
+			Type="Land_Ind_Workshop01_01";
+			position[] = {10756.292,9068.9951,-0.001};
+			direction = -69.280823;
+			SetZUp = 1;
+		};
 		class Object9 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {10756.292,9068.9951,0};
-			direction = -69.280823;
+			position[] = {10614.809,9743.3994,-0.001};
+			direction = -137.04869;
 			SetZUp = 1;
 		};
 		class Object10 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {10614.809,9743.3994,0};
-			direction = -137.04869;
+			position[] = {10495.926,9690.1719,-0.001};
+			direction = -184.29146;
 			SetZUp = 1;
 		};
 		class Object11 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {10495.926,9690.1719,0};
-			direction = -184.29146;
+			position[] = {10289.925,9508.9063,-0.001};
+			direction = -266.4577;
 			SetZUp = 1;
 		};
 		class Object12 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {10289.925,9508.9063,0};
-			direction = -266.4577;
+			position[] = {10378.771,9442.6416,-0.001};
+			direction = -270.23721;
 			SetZUp = 1;
 		};
 		class Object13 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {10378.771,9442.6416,0};
-			direction = -270.23721;
+			position[] = {10386.929,9499.6748,-0.001};
+			direction = -179.45338;
 			SetZUp = 1;
 		};
 		class Object14 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {10386.929,9499.6748,0};
-			direction = -179.45338;
+			position[] = {10567.635,9664.4453,-0.001};
+			direction = -90.368271;
 			SetZUp = 1;
 		};
 		class Object15 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {10567.635,9664.4453,0};
-			direction = -90.368271;
-			SetZUp = 1;
-		};
-		class Object16 {
-			Type="Land_Ind_Workshop01_01";
-			position[] = {10658.138,9662.9082,0};
+			position[] = {10658.138,9662.9082,-0.001};
 			direction = -172.70374;
 			SetZUp = 1;
 		};
-		class Object17 {
+		class Object16 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {10604.515,9262.4912,0};
 			direction = -359.81195;
 			SetZUp = 1;
 		};
-		class Object18 {
+		class Object17 {
 			Type="Land_Ind_Workshop01_01";
-			position[] = {10103.772,9357.8105,0};
+			position[] = {10103.772,9357.8105,-0.001};
 			direction = -178.17758;
 			SetZUp = 1;
 		};
-		class Object19 {
+		class Object18 {
 			Type="Land_Ind_Workshop01_L";
 			position[] = {10709.068,8930.7793,0};
 			direction = -89.273499;
 			SetZUp = 1;
 		};
-		class Object20 {
+		class Object19 {
 			Type="Land_Ind_Workshop01_L";
-			position[] = {10597.076,8931.3652,0};
+			position[] = {10597.076,8931.3652,-0.001};
 			direction = -0.27332029;
+			SetZUp = 1;
+		};
+		class Object20 {
+			Type="Land_Ind_Workshop01_04";
+			position[] = {10686.805,8928.1055,-0.001};
+			direction = -270.28156;
 			SetZUp = 1;
 		};
 		class Object21 {
 			Type="Land_Ind_Workshop01_04";
-			position[] = {10686.805,8928.1055,0};
-			direction = -270.28156;
-			SetZUp = 1;
-		};
-		class Object22 {
-			Type="Land_Ind_Workshop01_04";
-			position[] = {10036.982,9411.1621,0};
+			position[] = {10036.982,9411.1621,-0.001};
 			direction = -178.7836;
 			SetZUp = 1;
 		};
-		class Object23 {
+		class Object22 {
 			Type="Land_Ind_Workshop01_L";
 			position[] = {10046.338,9425.0195,0};
 			direction = -269.19315;
@@ -2865,74 +2979,86 @@ class CfgTownGeneratorSara {
 
 		class Object0 {
 			Type="Land_A_BuildingWIP";
-			position[] = {13342.701,7331.5488,0.32484424};
+			position[] = {13339.623,7331.7642,0.32484424};
 			direction = -252.44598;
 			SetZUp = 1;
 		};
 		class Object1 {
 			Type="Land_A_BuildingWIP";
-			position[] = {13372.396,7271.5654,0.45917961};
+			position[] = {13372.396,7271.5654,0.47128281};
 			direction = -431.48724;
 			SetZUp = 1;
 		};
 		class Object2 {
 			Type="Land_A_CraneCon";
-			position[] = {13395.852,7310.1274,0};
+			position[] = {13395.852,7310.1274,-0.01};
 			direction = -252.41083;
 			SetZUp = 1;
 		};
 		class Object3 {
-			Type="Land_dum_istan3_hromada";
+			Type="Land_A_CraneCon";
+			position[] = {13323.892,7295.1602,-0.01};
+			direction = -341.93988;
+			SetZUp = 1;
+		};
+		class Object4 {
+			Type="land_dum_istan3";
+			position[] = {13317.069,6879.2656,-0.01};
+			direction = 0.04456012;
+			SetZUp = 1;
+		};
+		class Object5 {
+			Type="land_dum_istan3_hromada";
 			position[] = {13162.029,6879.5967,0.1351874};
 			direction = 0.04456012;
 			SetZUp = 1;
 		};
-		class Object4 {
-			Type="Land_dum_istan3_Pumpa";
-			position[] = {13271.853,6862.9492,0};
+		class Object6 {
+			Type="land_dum_istan3_Pumpa";
+			position[] = {13271.853,6862.9492,-0.01};
 			direction = 180.15823;
 			SetZUp = 1;
 		};
-		class Object5 {
+		class Object7 {
 			Type="Land_ladderEP1";
 			position[] = {13321.189,6921.4307,-0.62517089};
 			direction = 183.55273;
 			SetZUp = 1;
 		};
-		class Object6 {
+		class Object8 {
 			Type="Land_ladderEP1";
 			position[] = {13165.634,6872.6318,-0.32561156};
 			direction = 358.79459;
 			SetZUp = 1;
 		};
-		class Object7 {
+		class Object9 {
 			Type="Land_ladderEP1";
 			position[] = {13207.261,6869.9058,-0.6364274};
 			direction = 358.2644;
 			SetZUp = 1;
 		};
-		class Object8 {
+		class Object10 {
 			Type="Land_ladderEP1";
 			position[] = {13237.074,6894.3999,-0.60852146};
 			direction = 358.79459;
 			SetZUp = 1;
 		};
-		class Object9 {
+		class Object11 {
 			Type="Land_ladderEP1";
 			position[] = {13201.047,6956.3315,-0.65201396};
 			direction = 358.79459;
 			SetZUp = 1;
 		};
-		class Object10 {
+		class Object12 {
 			Type="Land_A_GeneralStore_01";
 			position[] = {12675.729,6814.9468,0.04664503};
 			direction = 172.32988;
 			SetZUp = 1;
 		};
-		class Object11 {
+		class Object13 {
 			Type="Land_rail_station_big";
-			position[] = {12317.244,6824.29,0};
-			direction = -259.16739;
+			position[] = {12314.656,6824.6787,-0.042358067};
+			direction = -259.74973;
 			SetZUp = 1;
 		};
 	};
@@ -2947,13 +3073,13 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object1 {
-			Type="Land_dum_istan3_Pumpa";
+			Type="land_dum_istan3_Pumpa";
 			position[] = {11340.349,5780.0024,0};
 			direction = 329.75522;
 			SetZUp = 1;
 		};
 		class Object2 {
-			Type="Land_dum_istan3_Pumpa";
+			Type="land_dum_istan3_Pumpa";
 			position[] = {11221.264,5148.1104,0.027369408};
 			direction = 139.34927;
 			SetZUp = 1;
@@ -2977,7 +3103,7 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object6 {
-			Type="Land_dum_istan3_hromada";
+			Type="land_dum_istan3_hromada";
 			position[] = {11234.513,5162.3623,0.16766134};
 			direction = 139.26746;
 			SetZUp = 1;

@@ -111,4 +111,23 @@ class CfgWeapons {
 		};
 		descriptionShort = $STR_DSS_MAKAROVSD;
 	};
+	class BAF_AS50_scoped;
+	class BAF_AS50_scoped_DZ : BAF_AS50_scoped {
+		type = "1";
+		canlock = 0;
+		cursor = "RifleCursor";
+	};
+	class M107;
+	class M107_DZ : M107 {
+		type = "1";
+		canlock = 0;
+		cursor = "RifleCursor";
+		cursoraim = "Foresight";
+	};
+	class ksvk;
+	class ksvk_DZ	: ksvk {
+		type = "1";
+		canlock = 0;
+		cursor = "RifleCursor";
+	};
 };

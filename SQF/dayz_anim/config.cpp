@@ -516,7 +516,7 @@ class CfgMagazines
 	class AT13: FakeMagazine {};
 	class PG7V: FakeMagazine {};
 	class PG7VL: FakeMagazine {};
-	//class PG7VR: FakeMagazine {};
+	class PG7VR: FakeMagazine {};
 	class OG7: FakeMagazine {};
 	class PG9_AT: FakeMagazine {};
 	class OG9_HE: FakeMagazine {};
@@ -624,26 +624,26 @@ class CfgMagazines
 	class 6Rnd_Ch29: FakeMagazine {};
 	class 2Rnd_Maverick_A10: FakeMagazine {};
 	class 8Rnd_9M311: FakeMagazine {};
-	/*
-	class TimeBomb: FakeMagazine {};
+	
+	//class TimeBomb: FakeMagazine {};
 	class Mine: FakeMagazine {};
 	class MineE: FakeMagazine {};
-	class PipeBomb: FakeMagazine {};
-	class HandGrenade: FakeMagazine {};
+	//class PipeBomb: FakeMagazine {};
+	//class HandGrenade: FakeMagazine {};
 	class HandGrenade_Stone: FakeMagazine {};
-	class HandGrenade_West: FakeMagazine {};
+	//class HandGrenade_West: FakeMagazine {};
 	class HandGrenade_East: FakeMagazine {};
-	class SmokeShell: FakeMagazine {};
-	class SmokeShellRed: FakeMagazine {};
-	class SmokeShellGreen: FakeMagazine {};
-	class SmokeShellYellow: FakeMagazine {};
+	//class SmokeShell: FakeMagazine {};
+	//class SmokeShellRed: FakeMagazine {};
+	//class SmokeShellGreen: FakeMagazine {};
+	//class SmokeShellYellow: FakeMagazine {};
 	class SmokeShellPurple: FakeMagazine {};
 	class SmokeShellBlue: FakeMagazine {};
 	class SmokeShellOrange: FakeMagazine {};
 	class Laserbatteries: FakeMagazine {};
-	class 20Rnd_762x51_DMR: FakeMagazine {};
-	class 5x_22_LR_17_HMR: FakeMagazine {};
-	*/
+	//class 20Rnd_762x51_DMR: FakeMagazine {};
+	//class 5x_22_LR_17_HMR: FakeMagazine {};
+	
 	class 1200Rnd_30x113mm_M789_HEDP: FakeMagazine {};
 	class 8Rnd_Sidewinder_AH64: FakeMagazine {};
 	class ARTY_30Rnd_105mmHE_M119: FakeMagazine {};
@@ -672,7 +672,7 @@ class CfgMagazines
 	//class 5Rnd_86x70_L115A1: FakeMagazine {};
 	class NLAW: FakeMagazine {};
 	class 200Rnd_556x45_L110A1: FakeMagazine {};
-	//class 200Rnd_762x54_GPMG: FakeMagazine {};
+	class 200Rnd_762x54_GPMG: FakeMagazine {};
 	class 32Rnd_40mm_GMG: FakeMagazine {};
 	class 12Rnd_CRV7: FakeMagazine {};
 	class 38Rnd_CRV7: FakeMagazine {};
@@ -715,6 +715,7 @@ class CfgMagazines
 	class 60Rnd_CMFlare_Chaff_Magazine: FakeMagazine {};
 	class 120Rnd_CMFlare_Chaff_Magazine: FakeMagazine {};
 	class 240Rnd_CMFlare_Chaff_Magazine: FakeMagazine {};
+	*/
 	class 6Rnd_HE_M203: FakeMagazine {};
 	class 6Rnd_FlareWhite_M203: FakeMagazine {};
 	class 6Rnd_FlareGreen_M203: FakeMagazine {};
@@ -724,7 +725,6 @@ class CfgMagazines
 	class 6Rnd_SmokeRed_M203: FakeMagazine {};
 	class 6Rnd_SmokeGreen_M203: FakeMagazine {};
 	class 6Rnd_SmokeYellow_M203: FakeMagazine {};
-	*/
 	class 24Rnd_120mmHE_M120: FakeMagazine {};
 	class 24Rnd_120mmHE_M120_02: FakeMagazine {};
 	class 8Rnd_81mmHE_M252: FakeMagazine {};
@@ -820,7 +820,7 @@ class CfgWeapons {
 	//class SVD_CAMO: FakeWeapon {};
 
 	//class Launcher: FakeWeapon {};
-	class ksvk: FakeWeapon {};
+	//class ksvk: FakeWeapon {};
 	class M136: FakeWeapon {};
 	class Javelin: FakeWeapon {};
 	class Stinger: FakeWeapon {};
@@ -971,7 +971,7 @@ class CfgWeapons {
 	//class AKS_74_kobra: FakeWeapon {};
 	//class AKS_74_pso: FakeWeapon {};
 	//class AKS_74_U: FakeWeapon {};
-	class AKS_74_UN_kobra: FakeWeapon {};
+	//class AKS_74_UN_kobra: FakeWeapon {};
 	//class RPK_74: FakeWeapon {};
 	//class bizon: FakeWeapon {};
 	//class bizon_silenced: FakeWeapon {};

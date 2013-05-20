@@ -40,8 +40,15 @@ if ( _rawfood and (random 15 < 1)) then {
 
 [player,"eat",0,false] call dayz_zombieSpeak;
 
-if (!_rawfood and !_cookedfood) then{
-	player addMagazine "TrashTinCan";
+if (!_rawfood and !_cookedfood) then {
+    _nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],3];
+    if (count _nearByPile ==0) then { 
+        _item = createVehicle ["WeaponHolder", position player, [], 0.0, "CAN_COLLIDE"];
+    } else {
+        _item = _nearByPile select 0;
+    };
+    _item addMagazineCargoGlobal ["TrashTinCan",1];
+	_item setvelocity [0,0,1];
 };
 
 r_player_blood = r_player_blood + _regen;

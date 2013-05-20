@@ -2,10 +2,12 @@
 
 [Fixed] Zeds are easier to avoid.
 [Fixed] Some buildings not Spawning Loot.
-[Fixed] Global FPS Drop on all clients when player changes clothes
+[Fixed] Global FPS Drop on all clients when player changes clothes.
 [Fixed] Large Nested Base craftable without required loot.
 [Fixed] Some Craftables Not spawning.
 [Fixed] Missing Texture error at millitary zones.
+[Fixed] M16 Spawning with MG36 rounds.
+[Fixed] MakarovSD Spawning with Standard rounds.
 
 [Changed] All Extra building locations have been redone.
 [Changed] Custom buildings now spawned server side. (Should stop out of sync doors)
@@ -14,15 +16,17 @@
 [Changed] Reduced ammo from RHIB (RHIB_DZ)
 [Changed] Bag of nails now has a ~7% chance spawn chance (Same as knife)
 [Changed] Reduced chance of zombies spawning under floor of buildings.
+[Changes] New Loading Screen.
 
 [Added] VSS_vintorez
+[Added] KSVK
 [Added] SCAR_L_CQC
 [Added] SCAR_L_CQC_Holo
 [Added] SCAR_L_STD_Mk4CQT
 [Added] SCAR_L_STD_EGLM_RCO
 [Added] SCAR_H_LNG_Sniper
-[Added] Different Ghillie suits for bandits
-[Added] Female Players can now wear ghillies
+[Added] Different Ghillie suits for bandits.
+[Added] Female Players can now wear ghillies.
 
 [Removed] Original DayZ code for local vechicle creation to generate junk.
 [Removed] All of the CAA1 custom weapons.
@@ -30,3 +34,4 @@
 [Removed] Radar from UH1H Camo (UH1H_TK_DZ)
 [Removed] Radar from MH6J (MH6J_DZ)
 [Removed] GPS from RHIB (RHIB_DZ)
+[Removed] Lockon for KSVK M107 AS50
