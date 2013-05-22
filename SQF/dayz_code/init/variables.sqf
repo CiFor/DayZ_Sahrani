@@ -3,16 +3,21 @@ disableSerialization;
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";
 BanditW1_DZ = 	"BanditW1_DZ";
+BanditSkin_DZ = 	"BanditSkin_DZ";
+BanditSkinW_DZ = 	"BanditSkinW_DZ";
 Survivor1_DZ = 	"Survivor2_DZ";
 Survivor2_DZ = 	"Survivor2_DZ";
 SurvivorW2_DZ = "SurvivorW2_DZ";
 Sniper1_DZ = 	"Sniper1_DZ";
+Sniper1W_DZ = 	"Sniper1W_DZ";
+SniperBandit_DZ = 	"SniperBandit_DZ";
+SniperBanditW_DZ = 	"SniperBanditW_DZ";
 Camo1_DZ = 		"Camo1_DZ";
 Soldier1_DZ = 	"Soldier1_DZ";
 Rocket_DZ = 	"Rocket_DZ";
 
-AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ"];
-AllPlayersVehicles = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
+AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","BanditSkin_DZ","BanditSkinW_DZ","Sniper1W_DZ","SniperBandit_DZ","SniperBanditW_DZ"];
+AllPlayersVehicles = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","BanditSkin_DZ","BanditSkinW_DZ","Sniper1W_DZ","SniperBandit_DZ","SniperBanditW_DZ","AllVehicles"];
 
 //Cooking
 meatraw = ["FoodSteakRaw",	"FoodmeatRaw","FoodbeefRaw","FoodmuttonRaw","FoodchickenRaw","FoodrabbitRaw","FoodbaconRaw"];
@@ -244,7 +249,7 @@ if(!isDedicated) then {
 		};*/
 	};
 	_cfgLocation = configFile >> "CfgTownGeneratorSara";
-	_cfgLocation call _funcGetLocation;
+	//_cfgLocation call _funcGetLocation;
 	
 	dayz_buildingMonitor = [];	//Buildings to check
 	dayz_bodyMonitor = [];

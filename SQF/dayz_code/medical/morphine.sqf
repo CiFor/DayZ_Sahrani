@@ -1,5 +1,6 @@
 // bleed.sqf
 _unit = (_this select 3) select 0;
+player removeMagazine "ItemMorphine";
 
 _unit setVariable ["hit_legs",0];
 _unit setVariable ["hit_hands",0];
@@ -41,11 +42,10 @@ if (_finished) then {
 		["dayzHumanity",[player,50]] call dayzHumanity_code;
 	};
 
-	player removeMagazine "ItemMorphine";
-
 	["usecMorphine",[_unit,player]] call broadcastRpcCallAll;
 } else {
 	r_interrupt = false;
 	[objNull, player, rSwitchMove,""] call RE;
 	player playActionNow "stop";
+	player addMagazine "ItemMorphine";
 };
