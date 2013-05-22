@@ -8,7 +8,8 @@
 [Fixed] Missing Texture error at millitary zones.
 [Fixed] M16 Spawning with MG36 rounds.
 [Fixed] MakarovSD Spawning with Standard rounds.
-[Fixed] Combat Roll Glitching
+[Fixed] Combat Roll Glitching.
+[Fixed] Infinite Morphine.
 
 [Changed] All Extra building locations have been redone.
 [Changed] Custom buildings now spawned server side. (Should stop out of sync doors)
@@ -17,7 +18,8 @@
 [Changed] Reduced ammo from RHIB (RHIB_DZ)
 [Changed] Bag of nails now has a ~7% chance spawn chance (Same as knife)
 [Changed] Reduced chance of zombies spawning under floor of buildings.
-[Changes] New Loading Screen.
+[Changed] New Loading Screen.
+[Changed] Player crafted deerstands don't spawn loot or zeds.
 
 [Added] VSS_vintorez
 [Added] KSVK
@@ -28,9 +30,12 @@
 [Added] SCAR_H_LNG_Sniper
 [Added] Different Ghillie suits for bandits.
 [Added] Female Players can now wear ghillies.
+[Added] Bandit Clothing now lootable.
+[Added] Soldier Clothing now lootable.
+[Added] Rocket Clothing now lootable.
 [Added] Can now cancel crafting.
 [Added] Debug land now resets player to mainland if they logout there. Also given warning.
-[Added] Random loot on new character Bandage + 1 random of [Painkillers,roadflares,spare bandage].
+[Added] Random loot on new character Bandage + 2 random of [Painkillers,roadflares,spare bandage].
 
 [Removed] Original DayZ code for local vechicle creation to generate junk.
 [Removed] All of the CAA1 custom weapons.
