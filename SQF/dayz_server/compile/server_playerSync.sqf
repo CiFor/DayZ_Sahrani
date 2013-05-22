@@ -48,11 +48,14 @@ if (_characterID == "0") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " as no characterID");
 };
 
-private["_debug","_distance"];
+private["_debug","_distance","_resetPos"];
+_resetPos = false;
 _debug = getMarkerpos "respawn_west";
 _distance = _debug distance _charPos;
-if (_distance < 2000) exitWith { 
-	diag_log format["ERROR: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3",name _character,_characterID,_charPos];
+if (_distance < 450) then { 
+	//diag_log format["ERROR: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3",name _character,_characterID,_charPos];
+	diag_log format["Player In Debug: Resetting %1 [%2] to mainland! %3",name _character,_characterID,_charPos];
+	_resetPos = true;
 };
 
 //Check for server initiated updates
@@ -186,6 +189,39 @@ if (_characterID != "0") then {
 			} forEach (_playerPos select 1);
 			_playerPos set [1,_array];
 		};
+		//Debug Zone reset
+		if (_resetPos) then {
+			private["_counter","_position","_isNear","_isZero","_mkr"];
+			//spawn into random
+			_findSpot = true;
+			_mkr = "";
+			while {_findSpot} do {
+				_counter = 0;
+				while {_counter < 20 and _findSpot} do {
+					_mkr = "spawn" + str(round(random 4));
+					_position = ([(getMarkerPos _mkr),0,600,10,0,800,1] call BIS_fnc_findSafePos);
+					_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
+				//Island Check		//TeeChange
+					_pos 		= _position;
+					_isIsland	= false;		//Can be set to true during the Check
+					for [{_w=0},{_w<=150},{_w=_w+2}] do {
+						_pos = [(_pos select 0),((_pos select 1) + _w),(_pos select 2)];
+						if(surfaceisWater _pos) exitWith {
+							_isIsland = true;
+						};
+					};
+					
+					if (!_isZero || _isIsland) then {_findSpot = false};
+					_counter = _counter + 1;
+				};
+			};
+			_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
+			_position = [_position select 0,_position select 1,0];
+			if (!_isZero) then {
+				//_playerObj setPosATL _position;
+				_playerPos set [1,_position];
+			};
+		};		
 		if (!isNull _character) then {
 			if (alive _character) then {
 				//Wait for HIVE to be free
@@ -205,7 +241,7 @@ if (_characterID != "0") then {
 		_pos = _this select 0;
 		{
 			[_x, "gear"] call server_updateObject;
-		} forEach nearestObjects [_pos, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage"], 10];
+		} forEach nearestObjects [_pos, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "BoxStorage", "Gunrack_DZ"], 10];
 		//[_charPos] call server_updateNearbyObjects;
 
 		//Reset timer

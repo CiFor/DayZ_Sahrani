@@ -91,6 +91,7 @@ call dayz_resetSelfActions;
 //Engineering variables
 s_player_lastTarget =	objNull;
 s_player_repairActions = [];
+s_player_craftActions = [];
 
 //Initialize Medical Variables
 r_interrupt = 			false;

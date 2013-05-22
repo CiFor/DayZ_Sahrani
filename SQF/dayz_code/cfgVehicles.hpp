@@ -2031,10 +2031,10 @@ class CfgVehicles {
 		};
 	};
 	/* DayZ Sahrani Buildings */
-	
+	class Land_A_tent;
 	class BuiltItems : NonStrategic {};
 	
-	class BoxStorage : BuiltItems {
+	class BoxStorage : Land_A_tent {
 		displayName = "Arms cache";
 		model = "\ca\weapons\AmmoBoxes\GuerillaCache.p3d"; 
 		icon = "\ca\data\data\Unknown_object.paa";
@@ -2044,7 +2044,7 @@ class CfgVehicles {
 		transportMaxWeapons = 5;
 		transportMaxBackpacks = 5;
 	};
-	class Gunrack_DZ : BuiltItems {
+	class Gunrack_DZ : Land_A_tent {
 		scope = 2;
 		destrType = "DestructTent";
 		armor = 400; 

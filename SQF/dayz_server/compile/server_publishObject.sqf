@@ -24,7 +24,7 @@ _key call server_hiveWrite;
 
 _object setVariable ["ObjectUID", _uid,true];
 
-if (_object isKindOf "TentStorage") then {
+if (_object isKindOf "TentStorage" || _object isKindOf "BoxStorage" || _object isKindOf "Gunrack_DZ") then {
 	_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 };
 

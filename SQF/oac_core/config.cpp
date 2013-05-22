@@ -1091,6 +1091,7 @@ class CfgVehicles {
 		armor = 20;
 		displayName = "Fuel station";
 		accuracy = 0.5;	// accuracy needed to recognize type of this target
+
 		model = "\ca\structures\House\A_FuelStation\A_FuelStation_Feed";
 		nameSound = "fuelstation";
 		
@@ -1341,6 +1342,19 @@ class CfgVehicles {
 		};
 		icon = "\Ca\buildings\Icons\i_wall_CA.paa";
 		model = "\ca\buildings\Misc\zidka01.p3d";
+		displayName = "Wall";
+		mapSize = 2.684;
+	};
+	
+	class Wall2 : Wall {
+		scope = protected;
+		
+		class Armory {
+			disabled = 1;
+		};
+		armor = 200;
+		icon = "\Ca\buildings\Icons\i_wall_CA.paa";
+		model = "\ca\Misc\zidka_klek.p3d";
 		displayName = "Wall";
 		mapSize = 2.684;
 	};

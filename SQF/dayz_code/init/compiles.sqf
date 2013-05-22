@@ -231,21 +231,13 @@ if (!isDedicated) then {
 		_dikCode = 	_this select 1;
 		_handled = false;
 		if (_dikCode in (actionKeys "GetOver")) then {
-			DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",500]) > 1);
-			if (canRoll && animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
-				canRoll = false;
-				null = [] spawn {
-					if (DoRE) then {
-						[nil, player, rSWITCHMOVE, "ActsPercMrunSlowWrflDf_FlipFlopPara"] call RE;
-					} else {
-						player switchMove "ActsPercMrunSlowWrflDf_FlipFlopPara";
-					};
-					sleep 0.3;
-					player setVelocity [(velocity player select 0) + 1.5 * sin direction player, (velocity player select 1) + 1.5 * cos direction player, (velocity player select 2) + 4];
-					sleep 1;
-					canRoll = true;
+			if (!r_fracture_legs and (time - dayz_lastCheckBit > 4)) then {
+				_inBuilding = [player] call fnc_isInsideBuilding;
+				_nearbyObjects = nearestObjects[getPosATL player, ["TentStorage", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Wire_cat1"], 8];
+				if (!_inBuilding and (count _nearbyObjects == 0)) then {
+					dayz_lastCheckBit = time;
+					call player_CombatRoll;
 				};
-				_handled = true;
 			};
 		};
 		//if (_dikCode == 57) then {_handled = true}; // space
@@ -294,6 +286,25 @@ if (!isDedicated) then {
 		};
 		*/
 		_handled
+	};
+	
+	player_CombatRoll = {
+		DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",100]) > 1);
+		if (canRoll && animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
+			canRoll = false;
+			null = [] spawn {
+				if (DoRE) then {
+					[nil, player, rSWITCHMOVE, "ActsPercMrunSlowWrflDf_FlipFlopPara"] call RE;
+				} else {
+					player switchMove "ActsPercMrunSlowWrflDf_FlipFlopPara";
+				};
+				sleep 0.3;
+				player setVelocity [(velocity player select 0) + 1.5 * sin direction player, (velocity player select 1) + 1.5 * cos direction player, (velocity player select 2) + 4];
+				sleep 1;
+				canRoll = true;
+			};
+			_handled = true;
+		};
 	};
 	
 	player_serverModelChange = {

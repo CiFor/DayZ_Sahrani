@@ -1,4 +1,4 @@
-private["_refObj","_size","_vel","_speed","_hunger","_thirst","_array","_unsaved","_timeOut","_result","_lastSave"];
+private["_refObj","_size","_vel","_speed","_hunger","_thirst","_array","_unsaved","_timeOut","_result","_lastSave","_spawnIsland"];
 disableSerialization;
 _timeOut = 	0;
 _messTimer = 0;
@@ -7,6 +7,7 @@ _lastTemp = dayz_temperatur;
 _debug = getMarkerpos "respawn_west";
 _isBandit = false;
 _isHero = false;
+_warned = false;
 
 player setVariable ["temperature",dayz_temperatur,true];
 
@@ -326,6 +327,10 @@ while {true} do {
 				player setPosATL _mylastPos;
 			};
 		};
+	};
+	
+	if( _debug distance _lastPos < 450 ) then {
+		cutText [str (parseText(Format["You are in a <t color='#FF3B3E'>Restricted</t> Area!<br/>You will spawned back at the mainland if you logout here."])), "PLAIN DOWN"];
 	};
 	
 	//Hatchet ammo fix	

@@ -34,7 +34,10 @@ diag_log ("Build Crate surface: " + str(_isok) );
 if (!_isOk) then {
 	_objectTemp = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 	_objectTemp attachTo [player,[0,2.5,0.5]];
-	_action_menu = player addAction ["Start Building", "\z\addons\dayz_code\actions\build\drop.sqf",[_objectTemp,_classname,_action_menu], 5, true, true];
+	_handle = player addAction ["Start Building", "\z\addons\dayz_code\actions\build\drop.sqf",[_objectTemp,_classname], 5, true, true];
+	s_player_craftActions set [count s_player_craftActions,_handle];
+	_handle = player addAction ["Cancel Building", "\z\addons\dayz_code\actions\build\cancel.sqf",[_objectTemp,_classname], 4, true, true];
+	s_player_craftActions set [count s_player_craftActions,_handle];
 } else {
 	cutText ["You cannot build here !", "PLAIN DOWN"];
 };

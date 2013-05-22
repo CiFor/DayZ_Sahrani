@@ -189,11 +189,12 @@ class RscStructuredTextGUI: RscStructuredText
 class CfgSurvival {
 	class Inventory {
 		class Default {
-			//weapons[] = {"Makarov"};
-			magazines[] = {"ItemBandage","ItemPainkiller"};
-			weapons[] = {"ItemFlashlight"};
+			RandomMagazines = 3;
+			//weapons[] = {"Makarov"}; //8Rnd_9x18_Makarov
+			GuaranteedMagazines[] = {"ItemBandage"};
+			RandomPossibilitieMagazines[] = {"ItemBandage","ItemPainkiller","HandRoadFlare"};
 			backpackWeapon = "";
-			backpack = "DZ_Patrol_Pack_EP1";
+			//backpack = "DZ_Patrol_Pack_EP1";
 		};
 	};
 	class Meat {
@@ -1260,7 +1261,7 @@ class CfgBuildingLoot {
 	};
 	class Land_SS_hangar: Military {
 		maxRoaming = 3;
-		lootPos[] = {{11.7344,-17.165,-5.87253},{-11.7158,-18.9541,-5.87253},{-14.2461,23.0439,-5.87253},{-14.5156,18.1631,-5.87253}};
+		lootPos[] = {{11.7344,-17.165,-5.87253},{-11.7158,-18.9541,-5.87253},{-14.2461,23.0439,-5.87253},{-14.5156,-18.9631,-5.87253}};
 	};
 	class Land_SS_hangarD: Land_SS_hangar {
 		maxRoaming = 3;
