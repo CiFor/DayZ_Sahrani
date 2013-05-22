@@ -10,6 +10,7 @@
 [Fixed] MakarovSD Spawning with Standard rounds.
 [Fixed] Combat Roll Glitching.
 [Fixed] Infinite Morphine.
+[Fixed] Zeds Hitting through walls
 
 [Changed] All Extra building locations have been redone.
 [Changed] Custom buildings now spawned server side. (Should stop out of sync doors)

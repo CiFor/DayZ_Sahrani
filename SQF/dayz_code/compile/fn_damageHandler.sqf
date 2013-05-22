@@ -235,3 +235,5 @@ if (!_unconscious and !_isMinor and ((_damage > 2) or ((_damage > 0.5) and _isHe
 	//set unconsious
 	[_unit,_damage] call fnc_usec_damageUnconscious;
 };
+
+player setVariable["USEC_BloodQty",r_player_blood,true];

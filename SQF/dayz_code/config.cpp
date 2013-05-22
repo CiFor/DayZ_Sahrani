@@ -1777,7 +1777,7 @@ class CfgTownGeneratorSara {
 		class Object17 {
 			Type="Land_dum_mesto_in";
 			position[] = {12404.832,17440.396,-0.058267947};
-			direction = -539.61981;
+			direction = 180;
 			SetZUp = 1;
 		};
 		class Object18 {
@@ -2872,102 +2872,108 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object6 {
+			Type="Land_A_Hospital";
+			position[] = {10630.989,9324.4883,-0.001};
+			direction = 359.89655;
+			SetZUp = 1;
+		};
+		class Object7 {
 			Type="Land_A_GeneralStore_01";
 			position[] = {10750.721,9330.2539,0.22309197};
 			direction = -563.96234;
 			SetZUp = 1;
 		};
-		class Object7 {
+		class Object8 {
 			Type="Land_Ind_Workshop01_L";
 			position[] = {10141.276,9372.0039,0.00018310547};
 			direction = 0.56901193;
 			SetZUp = 1;
 		};
-		class Object8 {
+		class Object9 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {10756.292,9068.9951,-0.001};
 			direction = -69.280823;
 			SetZUp = 1;
 		};
-		class Object9 {
+		class Object10 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {10614.809,9743.3994,-0.001};
 			direction = -137.04869;
 			SetZUp = 1;
 		};
-		class Object10 {
+		class Object11 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {10495.926,9690.1719,-0.001};
 			direction = -184.29146;
 			SetZUp = 1;
 		};
-		class Object11 {
+		class Object12 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {10289.925,9508.9063,-0.001};
 			direction = -266.4577;
 			SetZUp = 1;
 		};
-		class Object12 {
+		class Object13 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {10378.771,9442.6416,-0.001};
 			direction = -270.23721;
 			SetZUp = 1;
 		};
-		class Object13 {
+		class Object14 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {10386.929,9499.6748,-0.001};
 			direction = -179.45338;
 			SetZUp = 1;
 		};
-		class Object14 {
+		class Object15 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {10567.635,9664.4453,-0.001};
 			direction = -90.368271;
 			SetZUp = 1;
 		};
-		class Object15 {
+		class Object16 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {10658.138,9662.9082,-0.001};
 			direction = -172.70374;
 			SetZUp = 1;
 		};
-		class Object16 {
+		class Object17 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {10604.515,9262.4912,0};
 			direction = -359.81195;
 			SetZUp = 1;
 		};
-		class Object17 {
+		class Object18 {
 			Type="Land_Ind_Workshop01_01";
 			position[] = {10103.772,9357.8105,-0.001};
 			direction = -178.17758;
 			SetZUp = 1;
 		};
-		class Object18 {
+		class Object19 {
 			Type="Land_Ind_Workshop01_L";
 			position[] = {10709.068,8930.7793,0};
 			direction = -89.273499;
 			SetZUp = 1;
 		};
-		class Object19 {
+		class Object20 {
 			Type="Land_Ind_Workshop01_L";
 			position[] = {10597.076,8931.3652,-0.001};
 			direction = -0.27332029;
 			SetZUp = 1;
 		};
-		class Object20 {
+		class Object21 {
 			Type="Land_Ind_Workshop01_04";
 			position[] = {10686.805,8928.1055,-0.001};
 			direction = -270.28156;
 			SetZUp = 1;
 		};
-		class Object21 {
+		class Object22 {
 			Type="Land_Ind_Workshop01_04";
 			position[] = {10036.982,9411.1621,-0.001};
 			direction = -178.7836;
 			SetZUp = 1;
 		};
-		class Object22 {
+		class Object23 {
 			Type="Land_Ind_Workshop01_L";
 			position[] = {10046.338,9425.0195,0};
 			direction = -269.19315;
