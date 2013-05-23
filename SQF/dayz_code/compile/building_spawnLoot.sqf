@@ -5,7 +5,7 @@ _type = 		typeOf _obj;
 _config = 		configFile >> "CfgBuildingLoot" >> _type;
 _positions =	[] + getArray (_config >> "lootPos");
 _itemTypes =	[] + getArray (_config >> "itemType");
-_lootChance =	1;//getNumber (_config >> "lootChance");
+_lootChance =	getNumber (_config >> "lootChance");
 {
 	if ((random 1) < _lootChance) then {
 		_iPos = _obj modelToWorld _x;

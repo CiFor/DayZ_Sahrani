@@ -330,7 +330,7 @@ while {true} do {
 	};
 	
 	if( _debug distance _lastPos < 450 ) then {
-		cutText [str (parseText(Format["You are in a <t color='#FF3B3E'>Restricted</t> Area!<br/>You will spawned back at the mainland if you logout here."])), "PLAIN DOWN"];
+		cutText ["You are in a Restricted Area!\nYou will spawn back at the mainland if you logout here.", "PLAIN DOWN"];
 	};
 	
 	//Hatchet ammo fix	

@@ -58,6 +58,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
 	_isTent = cursorTarget isKindOf "TentStorage";
 	_isFuel = false;
+	//_isWell = (cursorTarget isKindOf "Land_Kasna_new") or (cursorTarget isKindOf "Land_fuel_tank_big");
 	_isAlive = alive cursorTarget;
 	_canmove = canmove cursorTarget;
 	_text = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");
@@ -107,7 +108,16 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_flipveh;
 		s_player_flipveh = -1;
 	};
-	
+	/*// Drink without bottle
+	if(_isWell) then {
+		if (s_player_drinkwater < 0) then {
+			s_player_drinkwater = player addAction ["Drink Water", "\z\addons\dayz_code\actions\drink_water.sqf",[], 1, false, true, "", ""];
+		};
+	} else {
+		player removeAction s_player_drinkwater;
+		s_player_drinkwater = -1;
+	};
+	*/
 	//Allow player to fill jerrycan
 	if(_hasFuelE and _isFuel and _canDo) then {
 		if (s_player_fillfuel < 0) then {
@@ -324,6 +334,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_fillfuel = -1;
 	player removeAction s_player_studybody;
 	s_player_studybody = -1;
+	//player removeAction s_player_drinkwater;
+	//s_player_drinkwater = -1;
 	//Dog
 	player removeAction s_player_tamedog;
 	s_player_tamedog = -1;
@@ -370,4 +382,24 @@ if (_dogHandle > 0) then {
 	s_player_speeddog =		-1;
 	player removeAction s_player_calldog;
 	s_player_calldog = 		-1;
+};
+
+//Custom
+private["_playerPos","_canDrink","_objectsWell","_well","_wellPos"];
+_playerPos = position player;
+_objectsWell = 	nearestObjects [_playerPos, [], 4];
+_canDrink = false;
+{
+	//Check for Well
+	_isWell = ["kasna",str(_x),false] call fnc_inString;
+	if (_isWell) then {_canDrink = true};
+} forEach _objectsWell;
+
+if(_canDrink) then {
+	if (s_player_drinkwater < 0) then {
+		s_player_drinkwater = player addAction ["Drink Water", "\z\addons\dayz_code\actions\drink_water.sqf",[], 1, false, true, "", ""];
+	};
+} else {
+	player removeAction s_player_drinkwater;
+	s_player_drinkwater = -1;
 };

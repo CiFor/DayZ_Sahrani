@@ -37,6 +37,7 @@
 [Added] Can now cancel crafting.
 [Added] Debug land now resets player to mainland if they logout there. Also given warning.
 [Added] Random loot on new character Bandage + 2 random of [Painkillers,roadflares,spare bandage].
+[Added] Ability to drink from well's without waterbottle.
 
 [Removed] Original DayZ code for local vechicle creation to generate junk.
 [Removed] All of the CAA1 custom weapons.
