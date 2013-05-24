@@ -1,0 +1,237 @@
+class _prefix_0
+{
+	objectType="prefix";
+	class Arguments
+	{
+	};
+};
+class _center_0
+{
+	objectType="center";
+	class Arguments
+	{
+		SIDE="west";
+	};
+};
+class _group_0
+{
+	objectType="group";
+	class Arguments
+	{
+		CENTER="_center_0";
+	};
+};
+class _unit_3
+{
+	objectType="unit";
+	class Arguments
+	{
+		POSITION="[8085.1489, 9379.293, -0.01]";
+		GROUP="_group_0";
+		TYPE="Sniper1_DZ";
+		AZIMUT="10.054947";
+		SKILL="0.60000002";
+		PLAYER="true";
+		PLAYABLE="true";
+		LEADER="true";
+	};
+};
+class _vehicle_123
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8136.9282, 17021.492, 0.051464468]";
+		TYPE="Land_Mil_Barracks";
+		AZIMUT="25.480267";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_124
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8168.2139, 17005.352, 0.00034713745]";
+		TYPE="Land_Mil_Barracks_i";
+		AZIMUT="205.83635";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_125
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8153.1055, 17056.426, 0.00017166138]";
+		TYPE="Land_Mil_Barracks_L";
+		AZIMUT="26.801596";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_130
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8119.8521, 16981.25, -0.01]";
+		TYPE="Land_Mil_Barracks_i";
+		AZIMUT="385.50812";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_133
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8128.2817, 17000.977, 0.051464468]";
+		TYPE="Land_Mil_Barracks";
+		AZIMUT="25.676624";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_135
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8150.4414, 16966.789, 0.051464468]";
+		TYPE="Land_Mil_Barracks";
+		AZIMUT="205.51234";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_137
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8159.6616, 16986.334, 0.051464468]";
+		TYPE="Land_Mil_Barracks";
+		AZIMUT="205.36";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_140
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8145.5571, 17039.877, 0.051464468]";
+		TYPE="Land_Mil_Barracks";
+		AZIMUT="25.595608";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_142
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8203.2783, 16998.881, -4.9591064e-005]";
+		TYPE="Land_Ind_Workshop01_L";
+		AZIMUT="207.50302";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_143
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8177.0244, 16941.336, -0.01]";
+		TYPE="Land_Ind_Workshop01_01";
+		AZIMUT="27.142403";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_146
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[8195.9395, 17054.516, -0.18657924]";
+		TYPE="Land_Hlidac_budka";
+		AZIMUT="-67.749222";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_214
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[11383.008, 14389.158, 0.071709715]";
+		TYPE="Land_Church_05R";
+		AZIMUT="163.41272";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_216
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[7756.0215, 15795.915, 0.15107772]";
+		TYPE="Land_dum_mesto2";
+		AZIMUT="89.105179";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_219
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[7731.9771, 15907.037, 0.24343386]";
+		TYPE="Land_dum_mesto2";
+		AZIMUT="86.993599";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_221
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[7578.7363, 15651.114, 0.19101964]";
+		TYPE="Land_dum_mesto2";
+		AZIMUT="73.088074";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _vehicle_223
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[12545.523, 13417.728, -0.071453176]";
+		TYPE="Land_A_Pub_01";
+		AZIMUT="-9.4623184";
+		INIT="this setVectorUp [0,0,1];";
+		PARENT="";
+	};
+};
+class _postfix_0
+{
+	objectType="postfix";
+	class Arguments
+	{
+	};
+};
