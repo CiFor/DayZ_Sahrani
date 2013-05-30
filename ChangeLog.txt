@@ -10,7 +10,7 @@
 [Fixed] MakarovSD Spawning with Standard rounds.
 [Fixed] Combat Roll Glitching.
 [Fixed] Infinite Morphine.
-[Fixed] Zeds Hitting through walls
+[Fixed] Zeds Hitting through walls - partial fix
 
 [Changed] All Extra building locations have been redone.
 [Changed] Custom buildings now spawned server side. (Should stop out of sync doors)
@@ -47,3 +47,4 @@
 [Removed] GPS from RHIB (RHIB_DZ)
 [Removed] Lockon for KSVK M107 AS50
 [Removed] Auto filling at fuelstations
+[Removed] Full removed Peripheral dots.
