@@ -107,41 +107,6 @@ class CfgVehicles {
 			};
 		};
 	};
-	
-	/*new Zeds*/
-	/*class z_woman1 : zZombie_Base {
-		model = "\ca\characters2\civil\Woman\Hooker\Hooker";
-		faceType = "WomanZedHead";
-		woman = true;
-		moves = "CfgMovesZombie2";
-		identityTypes[] = {"WomanZed"};
-		portrait = "\Ca\characters\data\portraits\comBarHead_civ_woman_ca";
-		hiddenSelections[] = {"Camo"};
-		//hiddenSelectionsTextures[] = {"\Ca\characters2\Civil\Woman\Hooker\data\Hooker1_co.paa"};
-		hiddenSelectionsTextures[] = {"\z\addons\dayz_code\textures\hooker1_co.paa"};
-		zombieLoot = "generic";
-		
-		minHeadTurnAI = -40;
-		maxHeadTurnAI = 40;
-		leftArmToElbow[] = {"LeftArm", 0.5, "LeftArmRoll", 0};
-		leftArmFromElbow[] = {"LeftForeArm", 0, "LeftForeArmRoll", 0.5};
-		leftWrist = "LeftHand";
-		leftShoulder = "LeftShoulder";
-		leftHand[] = {"LeftHandThumb3", "LeftHandThumb2", "LeftHandThumb1", "LeftHandIndex3", "LeftHandIndex2", "LeftHandIndex1", "LeftHandMiddle3", "LeftHandMiddle2", "LeftHandMiddle1", "LeftHandRing3", "LeftHandRing2", "LeftHandRing1", "LeftInHandRing", "LeftHandPinky3", "LeftHandPinky2", "LeftHandPinky1"};
-		leftArmPoints[] = {"LeftShoulder", "lelbow", "lelbow_axis", "lwrist"};
-		rightArmToElbow[] = {"rightArm", 0.5, "rightArmRoll", 0};
-		rightArmFromElbow[] = {"rightForeArm", 0, "rightForeArmRoll", 0.5};
-		rightWrist = "rightHand";
-		rightShoulder = "rightShoulder";
-		rightHand[] = {"rightHandThumb3", "rightHandThumb2", "rightHandThumb1", "rightHandIndex3", "rightHandIndex2", "rightHandIndex1", "rightHandMiddle3", "rightHandMiddle2", "rightHandMiddle1", "rightHandRing3", "rightHandRing2", "rightHandRing1", "rightInHandRing", "rightHandPinky3", "rightHandPinky2", "rightHandPinky1"};
-		rightArmPoints[] = {"rightShoulder", "relbow", "relbow_axis", "rwrist"};
-
-		class Wounds {
-			tex[] = {};
-			mat[] = {"Ca\characters2\Civil\Woman\Hooker\Data\Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w1_Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w2_Hooker.rvmat"};
-		};
-	};*/
-	
 	class AllVehicles;
 	class Air : AllVehicles 
 	{
@@ -180,7 +145,7 @@ class CfgVehicles {
 	
 	class Mi17_DZ: Mi17_base	
 	{
-		displayname = "Mi-8M";
+		displayname = "Mi17";
 		displaynameshort = "Mi17";
 		scope = 2;
 		side = 2;
@@ -253,9 +218,6 @@ class CfgVehicles {
 			};
 		};
 		hiddenSelectionsTextures[] = {"ca\air_E\UH1H\data\UH1D_CO.paa", "ca\air_E\UH1H\data\UH1D_in_CO.paa", "ca\air_E\UH1H\data\default_co.paa"};
-	};
-	class UH1H_TK_DZ: UH1H_DZ { // Camo Huey - Copy UH1H_DZ
-		hiddenSelectionsTextures[] = {"ca\air_E\UH1H\data\UH1D_TKA_CO.paa", "ca\air_E\UH1H\data\UH1D_in_TKA_CO.paa", "ca\air_E\UH1H\data\default_TKA_co.paa"};
 	};
 	class AH6_Base_EP1;
 	//class AH6X_EP1: AH6_Base_EP1 {};
@@ -417,199 +379,6 @@ class CfgVehicles {
 			tex[] = {};
 		};
 	};
-	class Ship;
-	class Boat : Ship {
-		precision = 6;
-		brakeDistance = 20;	// vehicle movement precision
-		class Turrets;
-		class NewTurret;
-	};
-	class RHIB_DZ : Boat {
-		scope = 2;
-		displayName = $STR_DN_RHIB;
-		vehicleClass = "Ship";
-		accuracy = 0.5;	// accuracy needed to recognize type of this target
-		crew = "";
-		faction = "USMC";
-		side = 0;
-		model = "\ca\water\rhib";
-		picture = "\ca\water\data\ico\rhib_CA.paa";
-		Icon = "\Ca\water\Data\map_ico\icomap_RHIB_CA.paa";
-		mapSize = 8;
-		unitInfoType = "UnitInfoShip";
-		soundEnviron[] = {"", db-25, 0.9};
-		
-		class SoundEvents {};
-		insideSoundCoef = 1;
-		soundEngineOnInt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-start-01", 0.1, 1.0};
-		soundEngineOnExt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-start-01", 1.0, 1.0, 150};
-		soundEngineOffInt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-stop-01", 0.1, 1.0};
-		soundEngineOffExt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-stop-01", 1.0, 1.0, 150};
-		
-		class Sounds {
-			class Engine {
-				sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-low-01", db0, 0.9, 300};
-				frequency = "(randomizer*0.05+0.95)*rpm";
-				volume = "engineOn*(rpm factor[0.5, 0.1])";
-			};
-			
-			class EngineHighOut {
-				sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-high-01", db0, 0.8, 300};
-				frequency = "(randomizer*0.05+0.95)*rpm";
-				volume = "engineOn*(rpm factor[0.4, 1.3])";
-			};
-			
-			class IdleOut {
-				sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-idle-03", 0.562341, 1.0, 150};
-				frequency = "1";
-				volume = "engineOn*(rpm factor[0.3, 0])";
-			};
-			
-			class WaternoiseOutW0 {
-				sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-water-noise-nospeed", 0.398107, 1.0, 100};
-				frequency = "1";
-				volume = "(speed factor[7, 0])";
-			};
-			
-			class WaternoiseOutW1 {
-				sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-boat-lospd-noise-02", 0.398107, 1.0, 100};
-				frequency = "1";
-				volume = "((speed factor[2, 12]) min (speed factor[12, 2]))";
-			};
-			
-			class WaternoiseOutW2 {
-				sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-boat-hispd-noise-02", 0.398107, 1.0, 100};
-				frequency = "1";
-				volume = "(speed factor[9, 18.7])";
-			};
-		};
-		driverAction = "RHIB_Driver";
-		cargoAction[] = {"RHIB_Cargo"};
-		getInAction = "GetInMedium";
-		getOutAction = "GetOutMedium";
-		cargoGetInAction[] = {"GetInMedium"};
-		cargoGetOutAction[] = {"GetOutMedium"};
-		castDriverShadow = true;
-		castCargoShadow = true;
-		gunnerHasFlares = false;
-		maxSpeed = 60;	// max speed on level road, km/h
-		enableGPS = 0;
-		transportSoldier = 10;
-		typicalCargo[] = {};
-		supplyRadius = 3;
-		
-		class Exhausts {
-			class Exhaust1 {
-				position = "vyfuk start";
-				direction = "vyfuk konec";
-				effect = "";
-			};
-		};
-		armor = 30;
-		
-		class TransportMagazines {};
-		
-		class AnimationSources {
-			class ReloadAnim {
-				source = "reload";
-				weapon = "M2";
-			};
-			
-			class ReloadMagazine {
-				source = "reloadmagazine";
-				weapon = "M2";
-			};
-			
-			class Revolving {
-				source = "revolving";
-				weapon = "M2";
-			};
-		};
-		class Turrets : Turrets {
-			class MainTurret : NewTurret {
-				class HitPoints {
-					class HitTurret {
-						armor = 0.8;
-						material = 60;
-						name = "vez";
-						visual = "vez";
-						passThrough = true;
-					};
-					
-					class HitGun {
-						armor = 0.6;
-						material = 60;
-						name = "zbran";
-						visual = "zbran";
-						passThrough = true;
-					};
-				};
-				stabilizedInAxes = 0;
-				body = "MainTurret";
-				gun = "MainGun";
-				animationSourceBody = "mainTurret";
-				animationSourceGun = "mainGun";
-				gunnerAction = "RHIB_Gunner";
-				gunnerGetInAction = "GetInMedium";
-				gunnerGetOutAction = "GetOutMedium";
-				ejectDeadGunner = true;
-				outGunnerMayFire = true;
-				inGunnerMayFire = false;
-				minElev = -25;
-				maxElev = 60;
-				initElev = 5;
-				minTurn = -135;
-				maxTurn = 135;
-				initTurn = 0;
-				soundServo[] = {"\ca\sounds\vehicles\servos\turret-1", db-45, 1.0};
-				gunBeg = "usti hlavne";	// endpoint of the gun
-				gunEnd = "konec hlavne";	// chamber of the gun
-				weapons[] = {"M2"};
-				magazines[] = {"100Rnd_127x99_M2", "100Rnd_127x99_M2"};
-				gunnerName = $STR_POSITION_FRONTGUNNER;
-				gunnerOpticsModel = "\ca\weapons\optika_empty";
-				gunnerForceOptics = false;
-				startEngine = false;
-				commanding = 2;
-				primaryGunner = 0;
-				primaryObserver = 1;
-				
-				class ViewOptics {
-					initAngleX = 0;
-					minAngleX = -30;
-					maxAngleX = 30;
-					initAngleY = 0;
-					minAngleY = -100;
-					maxAngleY = 100;
-					initFov = 0.7;
-					minFov = 0.25;
-					maxFov = 1.1;
-				};
-				
-				class ViewGunner {
-					initAngleX = 5;
-					minAngleX = -65;
-					maxAngleX = 85;
-					initAngleY = 0;
-					minAngleY = -150;
-					maxAngleY = 150;
-					initFov = 0.7;
-					minFov = 0.25;
-					maxFov = 1.1;
-				};
-			};
-		};
-		
-		class Library {
-			libTextDesc = $STR_LIB_RHIB;
-		};
-		extCameraPosition[] = {0, 4.0, -14.0};
-		
-		class Damage {
-			tex[] = {};
-			mat[] = {"ca\water\data\rhib.rvmat", "ca\water\data\rhib.rvmat", "ca\water\data\rhib_destruct.rvmat", "ca\water\data\rhib_dash.rvmat", "ca\water\data\rhib_dash.rvmat", "ca\water\data\rhib_dash_destruct.rvmat"};
-		};
-	}
 	class TT650_Base;
 	class TT650_Ins: TT650_Base {
 		crew = "";
@@ -966,15 +735,6 @@ class CfgVehicles {
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
-	class SniperBandit_DZ: Sniper1_DZ {
-		displayName = "Bandit Sniper";
-		model = "\ca\characters2\Ghillie_Top";
-	};
-	class Sniper1W_DZ : Sniper1_DZ {}; //Woman Ghillie
-	class SniperBanditW_DZ : SniperBandit_DZ {}; //Woman Bandit Ghillie
-	class BanditW1_DZ;
-	class BanditSkinW_DZ : BanditW1_DZ {};
-	
 	class BAF_Soldier_L_W;
 	class Camo1_DZ: BAF_Soldier_L_W {
 		displayName = "Survivor";
@@ -986,7 +746,16 @@ class CfgVehicles {
 		respawnMagazines[] = {};
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
-	};	
+	};
+	class SniperBandit_DZ: Sniper1_DZ {
+		displayName = "Bandit Sniper";
+		model = "\ca\characters2\Ghillie_Top";
+	};
+	class Sniper1W_DZ : Sniper1_DZ {}; //Woman Ghillie
+	class SniperBanditW_DZ : SniperBandit_DZ {}; //Woman Bandit Ghillie
+	class BanditW1_DZ;
+	class BanditSkinW_DZ : BanditW1_DZ {};
+	
 	class Bag_Base_EP1;
 	class Bag_Base_BAF;
 	class DZ_Patrol_Pack_EP1: Bag_Base_EP1
@@ -1108,7 +877,6 @@ class CfgVehicles {
 		transportmaxbackpacks = 15;
 	};
 	class House {
-		scope = 1;
 		class DestructionEffects;
 	};
 	
@@ -1161,7 +929,7 @@ class CfgVehicles {
 	};
 	class Strategic;
 	class NonStrategic;
-	
+
 	class FuelStation : Strategic {
 		icon = "\Ca\buildings\Icons\i_fuel_CA.paa";
 		transportFuel = 0; //50000;
@@ -2028,6 +1796,268 @@ class CfgVehicles {
 				brightness = 0;
 				blinking = 0;
 			};
+		};
+	};
+	class WeaponHolderBase;
+	class WoodenArrowF : WeaponHolderBase {
+		scope = public;
+		displayName = "WoodenArrowF";
+		model = "\dayz_weapons\models\bolt";
+		
+		class eventHandlers {
+			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};	
+	class WeaponHolder_ItemCrowbar: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Crowbar";
+		model="\dayz_equip\models\crowbar.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemMachete: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Machete";
+		model="\z\addons\dayz_communityassets\models\machete.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	
+	/*new Zeds*/
+	/*class z_woman1 : zZombie_Base {
+		model = "\ca\characters2\civil\Woman\Hooker\Hooker";
+		faceType = "WomanZedHead";
+		woman = true;
+		moves = "CfgMovesZombie2";
+		identityTypes[] = {"WomanZed"};
+		portrait = "\Ca\characters\data\portraits\comBarHead_civ_woman_ca";
+		hiddenSelections[] = {"Camo"};
+		//hiddenSelectionsTextures[] = {"\Ca\characters2\Civil\Woman\Hooker\data\Hooker1_co.paa"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_code\textures\hooker1_co.paa"};
+		zombieLoot = "generic";
+		
+		minHeadTurnAI = -40;
+		maxHeadTurnAI = 40;
+		leftArmToElbow[] = {"LeftArm", 0.5, "LeftArmRoll", 0};
+		leftArmFromElbow[] = {"LeftForeArm", 0, "LeftForeArmRoll", 0.5};
+		leftWrist = "LeftHand";
+		leftShoulder = "LeftShoulder";
+		leftHand[] = {"LeftHandThumb3", "LeftHandThumb2", "LeftHandThumb1", "LeftHandIndex3", "LeftHandIndex2", "LeftHandIndex1", "LeftHandMiddle3", "LeftHandMiddle2", "LeftHandMiddle1", "LeftHandRing3", "LeftHandRing2", "LeftHandRing1", "LeftInHandRing", "LeftHandPinky3", "LeftHandPinky2", "LeftHandPinky1"};
+		leftArmPoints[] = {"LeftShoulder", "lelbow", "lelbow_axis", "lwrist"};
+		rightArmToElbow[] = {"rightArm", 0.5, "rightArmRoll", 0};
+		rightArmFromElbow[] = {"rightForeArm", 0, "rightForeArmRoll", 0.5};
+		rightWrist = "rightHand";
+		rightShoulder = "rightShoulder";
+		rightHand[] = {"rightHandThumb3", "rightHandThumb2", "rightHandThumb1", "rightHandIndex3", "rightHandIndex2", "rightHandIndex1", "rightHandMiddle3", "rightHandMiddle2", "rightHandMiddle1", "rightHandRing3", "rightHandRing2", "rightHandRing1", "rightInHandRing", "rightHandPinky3", "rightHandPinky2", "rightHandPinky1"};
+		rightArmPoints[] = {"rightShoulder", "relbow", "relbow_axis", "rwrist"};
+
+		class Wounds {
+			tex[] = {};
+			mat[] = {"Ca\characters2\Civil\Woman\Hooker\Data\Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w1_Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w2_Hooker.rvmat"};
+		};
+	};*/
+	
+	class UH1H_TK_DZ: UH1H_DZ { // Camo Huey - Copy UH1H_DZ
+		hiddenSelectionsTextures[] = {"ca\air_E\UH1H\data\UH1D_TKA_CO.paa", "ca\air_E\UH1H\data\UH1D_in_TKA_CO.paa", "ca\air_E\UH1H\data\default_TKA_co.paa"};
+	};
+	
+	class Ship;
+	class Boat : Ship {
+		precision = 6;
+		brakeDistance = 20;	// vehicle movement precision
+		class Turrets;
+		class NewTurret;
+	};
+	class RHIB_DZ : Boat {
+		scope = 2;
+		displayName = $STR_DN_RHIB;
+		vehicleClass = "Ship";
+		accuracy = 0.5;	// accuracy needed to recognize type of this target
+		crew = "";
+		faction = "USMC";
+		side = 0;
+		model = "\ca\water\rhib";
+		picture = "\ca\water\data\ico\rhib_CA.paa";
+		Icon = "\Ca\water\Data\map_ico\icomap_RHIB_CA.paa";
+		mapSize = 8;
+		unitInfoType = "UnitInfoShip";
+		soundEnviron[] = {"", db-25, 0.9};
+		
+		class SoundEvents {};
+		insideSoundCoef = 1;
+		soundEngineOnInt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-start-01", 0.1, 1.0};
+		soundEngineOnExt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-start-01", 1.0, 1.0, 150};
+		soundEngineOffInt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-stop-01", 0.1, 1.0};
+		soundEngineOffExt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-stop-01", 1.0, 1.0, 150};
+		
+		class Sounds {
+			class Engine {
+				sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-low-01", db0, 0.9, 300};
+				frequency = "(randomizer*0.05+0.95)*rpm";
+				volume = "engineOn*(rpm factor[0.5, 0.1])";
+			};
+			
+			class EngineHighOut {
+				sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-high-01", db0, 0.8, 300};
+				frequency = "(randomizer*0.05+0.95)*rpm";
+				volume = "engineOn*(rpm factor[0.4, 1.3])";
+			};
+			
+			class IdleOut {
+				sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-idle-03", 0.562341, 1.0, 150};
+				frequency = "1";
+				volume = "engineOn*(rpm factor[0.3, 0])";
+			};
+			
+			class WaternoiseOutW0 {
+				sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-water-noise-nospeed", 0.398107, 1.0, 100};
+				frequency = "1";
+				volume = "(speed factor[7, 0])";
+			};
+			
+			class WaternoiseOutW1 {
+				sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-boat-lospd-noise-02", 0.398107, 1.0, 100};
+				frequency = "1";
+				volume = "((speed factor[2, 12]) min (speed factor[12, 2]))";
+			};
+			
+			class WaternoiseOutW2 {
+				sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-boat-hispd-noise-02", 0.398107, 1.0, 100};
+				frequency = "1";
+				volume = "(speed factor[9, 18.7])";
+			};
+		};
+		driverAction = "RHIB_Driver";
+		cargoAction[] = {"RHIB_Cargo"};
+		getInAction = "GetInMedium";
+		getOutAction = "GetOutMedium";
+		cargoGetInAction[] = {"GetInMedium"};
+		cargoGetOutAction[] = {"GetOutMedium"};
+		castDriverShadow = true;
+		castCargoShadow = true;
+		gunnerHasFlares = false;
+		maxSpeed = 60;	// max speed on level road, km/h
+		enableGPS = 0;
+		transportSoldier = 10;
+		typicalCargo[] = {};
+		supplyRadius = 3;
+		
+		class Exhausts {
+			class Exhaust1 {
+				position = "vyfuk start";
+				direction = "vyfuk konec";
+				effect = "";
+			};
+		};
+		armor = 30;
+		
+		class TransportMagazines {};
+		
+		class AnimationSources {
+			class ReloadAnim {
+				source = "reload";
+				weapon = "M2";
+			};
+			
+			class ReloadMagazine {
+				source = "reloadmagazine";
+				weapon = "M2";
+			};
+			
+			class Revolving {
+				source = "revolving";
+				weapon = "M2";
+			};
+		};
+		class Turrets : Turrets {
+			class MainTurret : NewTurret {
+				class HitPoints {
+					class HitTurret {
+						armor = 0.8;
+						material = 60;
+						name = "vez";
+						visual = "vez";
+						passThrough = true;
+					};
+					
+					class HitGun {
+						armor = 0.6;
+						material = 60;
+						name = "zbran";
+						visual = "zbran";
+						passThrough = true;
+					};
+				};
+				stabilizedInAxes = 0;
+				body = "MainTurret";
+				gun = "MainGun";
+				animationSourceBody = "mainTurret";
+				animationSourceGun = "mainGun";
+				gunnerAction = "RHIB_Gunner";
+				gunnerGetInAction = "GetInMedium";
+				gunnerGetOutAction = "GetOutMedium";
+				ejectDeadGunner = true;
+				outGunnerMayFire = true;
+				inGunnerMayFire = false;
+				minElev = -25;
+				maxElev = 60;
+				initElev = 5;
+				minTurn = -135;
+				maxTurn = 135;
+				initTurn = 0;
+				soundServo[] = {"\ca\sounds\vehicles\servos\turret-1", db-45, 1.0};
+				gunBeg = "usti hlavne";	// endpoint of the gun
+				gunEnd = "konec hlavne";	// chamber of the gun
+				weapons[] = {"M2"};
+				magazines[] = {"100Rnd_127x99_M2", "100Rnd_127x99_M2"};
+				gunnerName = $STR_POSITION_FRONTGUNNER;
+				gunnerOpticsModel = "\ca\weapons\optika_empty";
+				gunnerForceOptics = false;
+				startEngine = false;
+				commanding = 2;
+				primaryGunner = 0;
+				primaryObserver = 1;
+				
+				class ViewOptics {
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.7;
+					minFov = 0.25;
+					maxFov = 1.1;
+				};
+				
+				class ViewGunner {
+					initAngleX = 5;
+					minAngleX = -65;
+					maxAngleX = 85;
+					initAngleY = 0;
+					minAngleY = -150;
+					maxAngleY = 150;
+					initFov = 0.7;
+					minFov = 0.25;
+					maxFov = 1.1;
+				};
+			};
+		};
+		
+		class Library {
+			libTextDesc = $STR_LIB_RHIB;
+		};
+		extCameraPosition[] = {0, 4.0, -14.0};
+		
+		class Damage {
+			tex[] = {};
+			mat[] = {"ca\water\data\rhib.rvmat", "ca\water\data\rhib.rvmat", "ca\water\data\rhib_destruct.rvmat", "ca\water\data\rhib_dash.rvmat", "ca\water\data\rhib_dash.rvmat", "ca\water\data\rhib_dash_destruct.rvmat"};
 		};
 	};
 	/* DayZ Sahrani Buildings */

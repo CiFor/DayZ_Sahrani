@@ -22,6 +22,13 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {"dayz_equip","dayz_weapons","CAMisc3","CABuildingParts","CABuildingParts_Signs","CAStructuresHouse","CAStructuresLand_Ind_Stack_Big","CAStructures_Misc_Powerlines","CAStructures","CABuildings","CABuildings2","Ind_MalyKomin","CAStructures_A_CraneCon","CAStructures_Mil","CAStructures_Nav","CAStructures_Rail","A_Crane_02","A_TVTower","CAStructures_Railway","CAStructuresHouse","CAStructuresHouse_HouseBT"};
 	};
+	class DZ_DebriefingRemoved
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"CAUI"};
+	};
 };
 
 class CfgMods
@@ -34,9 +41,34 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "";
-		version = "0.2.1-20130520";
+		version = "0.2.2-20130604";
 		hiveVersion = 0.96; //0.93
 	};
+	class DZ_InitWorld
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"Chernarus"};
+	};
+};
+
+
+class CfgMissions
+{
+	 class Cutscenes
+	 {
+	  class ChernarusIntro1
+		  {
+			directory = "z\addons\dayz_code\cfgworlds\intro.Chernarus";
+		  };
+	 };
+};
+
+class CfgWorlds
+{
+        initWorld = "Chernarus";
+        demoWorld = "Chernarus";
 };
 
 class CfgAddons
@@ -76,22 +108,17 @@ class CfgInGameUI
         cueEnemyColor[] = {0,0,0,0};
     };
 	
+	
 	class MPTable
 	{
 		color[] = {0,0,0,0}; //{0.7,0.7,0.7,1};
 		colorTitleBg[] = {0,0,0,0}; //{0.1,0.15,0.15,1};
 		colorBg[] = {0,0,0,0}; //{0.1,0.15,0.1,0.9};
-		colorBorder[] = {0,0,0,0}; //{0.1,0.15,0.1,0.9};
 		colorSelected[] = {0,0,0,0}; //{0.7,0.7,0.7,0.4};
-		colorSeparator[] = {0,0,0,0}; //{0.7,0.7,0.7,0.4};
 		colorWest[] = {0,0,0,0}; //{0.7,0.95,0.7,1};
 		colorEast[] = {0,0,0,0}; //{0.95,0.7,0.7,1};
 		colorCiv[] = {0,0,0,0}; //{0.8,0.8,0.8,1};
 		colorRes[] = {0,0,0,0}; //{0.7,0.7,0.95,1};
-		hBg[] = {0,0,0,0};
-		wBg[] = {0,0,0,0};
-		yBg[] = {0,0,0,0};
-		xBg[] = {0,0,0,0};
 		font = "EtelkaNarrowMediumPro";
 		size = "0"; //"( 21 / 408 )";
 		class Columns
@@ -171,6 +198,8 @@ class RscPictureGUI
 	w = 0.2;
 	h = 0.15;
 };
+
+
 class RscStructuredText {
 	class Attributes;
 };
@@ -187,22 +216,20 @@ class RscStructuredTextGUI: RscStructuredText
 //#include "CfgWorlds.hpp"
 #include "cfgMoves.hpp"
 #include "rscTitles.hpp"
-//#include "CfgZombies.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "cfgLoot.hpp"
 #include "CfgMarkers.hpp"
+#include "CfgAmmo.hpp"
 
 class CfgSurvival {
 	class Inventory {
 		class Default {
 			RandomMagazines = 3;
-			//weapons[] = {"Makarov"}; //8Rnd_9x18_Makarov
 			GuaranteedMagazines[] = {"ItemBandage"};
 			RandomPossibilitieMagazines[] = {"ItemBandage","ItemPainkiller","HandRoadFlare"};
 			backpackWeapon = "";
-			//backpack = "DZ_Patrol_Pack_EP1";
 		};
 	};
 	class Meat {
@@ -405,11 +432,11 @@ class CfgBuildingLoot {
 			{"LeeEnfield","weapon"},
 			{"Winchester1866","weapon"},
 			{"","trash"},
-			{"Crossbow","weapon"},
+			{"Crossbow_DZ","weapon"},
 			{"PartWoodPile","magazine"},
 			{"WeaponHolder_ItemHatchet","object"},
 			{"MR43","weapon"},
-			//{"TrapBear","magazine"}
+			{"WeaponHolder_ItemMachete"}
 		};
 		itemChance[] =	{
 			0.06,
@@ -422,11 +449,11 @@ class CfgBuildingLoot {
 			0.11,
 			0.17,
 			0.06,
-			//0.01
+			0.03
 		};
 	};
 	class Supermarket: Default {
-		lootChance = 0.5;
+		lootChance = 0.6;
 		minRoaming = 2;
 		maxRoaming = 5;
 		zombieChance = 0.3;
@@ -445,7 +472,6 @@ class CfgBuildingLoot {
 			{"LeeEnfield","weapon"},
 			{"revolver_EP1","weapon"},
 					
-
 			{"DZ_Assault_Pack_EP1","object"}, // 12
 			{"DZ_Czech_Vest_Puch","object"}, // 12-0
 			{"DZ_ALICE_Pack_EP1","object"}, // 16
@@ -456,7 +482,7 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemTent","object"},
 			{"","food"},
 			{"","trash"},
-			{"Crossbow","weapon"},
+			{"Crossbow_DZ","weapon"},
 			{"Binocular","weapon"},
 			{"PartWoodPile","magazine"},
 			{"MR43","weapon"}
@@ -476,7 +502,6 @@ class CfgBuildingLoot {
 			0.01,
 			0.05, //12
 			0.04, // 12-0
-
 			0.02, //16
 			0.02, //16
 			0.01, //18
@@ -521,6 +546,7 @@ class CfgBuildingLoot {
 			{"Skin_BanditSkin_DZ","magazine"},
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
+
 			{"G36A_camo","weapon"},
 			{"G36K_camo","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
@@ -562,6 +588,7 @@ class CfgBuildingLoot {
 			0.03,	//Skin_BanditSkin_DZ
 			0.03,	//G36C"
 			0.02,	//G36C_camo
+
 			0.02,	//G36A_camo
 			0.02,	//G36K_camo
 			0.01,	//("100Rnd_762x54_PK","magazine"}
@@ -660,6 +687,7 @@ class CfgBuildingLoot {
 		minRoaming = 2;
 		maxRoaming = 6;
 		zombieClass[] = {"z_doctor","z_doctor","z_doctor"};
+
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
@@ -717,10 +745,12 @@ class CfgBuildingLoot {
 			{"","medical"},
 			{"","generic"},
 			{"","military"},
+
 			{"ItemEtool","weapon"},
 			{"ItemSandbag","magazine"},
 			{"Sa58P_EP1","weapon"},
 			{"Sa58V_EP1","weapon"},
+
 			
 			{"MakarovSD","weapon"},
 			{"Sa61_EP1","weapon"},
@@ -770,6 +800,7 @@ class CfgBuildingLoot {
 			0.10, 
 			1.00,
 			2.50,
+
 			0.05,
 			0.02,
 			0.03,
@@ -800,6 +831,7 @@ class CfgBuildingLoot {
 			{"M16A2GL","weapon"},
 			{"M249_DZ","weapon"},
 			{"M9SD","weapon"},
+
 			{"AK_74","weapon"},
 			{"M4A1_Aim","weapon"},
 			{"AKS_74_kobra","weapon"},
@@ -825,6 +857,7 @@ class CfgBuildingLoot {
 			{"AmmoBoxSmall_556","object"},
 			{"AmmoBoxSmall_762","object"},
 
+
 			{"Binocular","weapon"},
 			{"ItemFlashlightRed","military"},
 			{"ItemKnife","military"},
@@ -841,12 +874,15 @@ class CfgBuildingLoot {
 			{"","medical"},
 			{"","generic"},
 			{"","military"},
+
 			{"PipeBomb","magazine"},
 			{"Sa58V_RCO_EP1","weapon"},
 			{"Sa58V_CCO_EP1","weapon"},
 			{"G36_C_SD_camo","weapon"},
 			{"M40A3","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
+			
+			{"ItemCraftingBook3","weapon"},
 			
 			{"MakarovSD","weapon"},
 			{"Sa61_EP1","weapon"},
@@ -865,6 +901,7 @@ class CfgBuildingLoot {
 			0.05,
 			0.01,
 			0.02,
+
 			0.10,
 			0.02,
 			0.10,
@@ -888,6 +925,7 @@ class CfgBuildingLoot {
 			0.08,
 			0.04,
 			0.02,
+
 			0.10,
 			0.05,
 			0.15,
@@ -903,13 +941,14 @@ class CfgBuildingLoot {
 			0.30,
 			1.00,
 			5.00, //military
+
 			0.01, //PipeBomb
 			0.01, //Sa58V_RCO_EP1
 			0.01, //Sa58V_CCO_EP1
 			0.01, //{"G36_C_SD_camo","weapon"},
 			0.02, // M40A3
 			0.01,  //("100Rnd_762x54_PK","magazine"}
-			
+			0.01,
 			0.03, //MakarovSD
 			0.03, //Sa61_EP1
 			0.01, //AK_107_pso
@@ -923,7 +962,41 @@ class CfgBuildingLoot {
 			0.01  //SVD
 		};
 	};
+	class Hunting: Default {
+		zombieChance = 0.4;
+		minRoaming = 1;
+		maxRoaming = 3;
+		zombieClass[] = {"z_hunter","z_hunter","z_hunter"};
+		lootChance = 1;
+		lootPos[] = {};
+		itemType[] =	{
+			{"ItemMap","weapon"},
+			{"ItemFlashlight","generic"},
+			{"ItemKnife","generic"},
+			{"ItemMatchbox","generic"},
+			{"Crossbow_DZ","weapon"},
+			{"","military"},
+			{"WeaponHolder_ItemMachete", "object"},
+			{"huntingrifle","weapon"},
+			{"","hunter"},
+			{"ItemCraftingBook3","weapon"}
+		};
+		itemChance[] =	{
+			0.08,
+			0.05,
+			0.04,
+			0.06,
+			0.03,
+			2.00,
+			0.03,
+			0.04,
+			3.00,
+			0.01
+		};
+	};	
 	class Church: Residential {
+		minRoaming = 1;
+		maxRoaming = 3;
 		zombieClass[] = {"z_priest","z_priest","z_priest"};
 	};
 	

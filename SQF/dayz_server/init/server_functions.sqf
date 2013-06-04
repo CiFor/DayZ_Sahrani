@@ -18,7 +18,7 @@ server_playerSync =			compile preprocessFileLineNumbers "\z\addons\dayz_server\c
 zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
 server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
 server_spawnCrashSite  =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnCrashSite.sqf";
-server_handleZedSpawn =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_handleZedSpawn.sqf";
+server_findSpawn = 			compile preprocessFile "\z\addons\dayz_server\compile\server_findSpawn.sqf";
 
 vehicle_handleInteract = {
 	private["_object"];
@@ -108,7 +108,7 @@ server_hiveWrite = {
 	private["_data"];
 	//diag_log ("ATTEMPT WRITE: " + _this);
 	_data = "HiveExt" callExtension _this;
-	diag_log ("WRITE: " +str(_data));
+	//diag_log ("WRITE: " +str(_data));
 };
 
 server_hiveReadWrite = {
@@ -116,7 +116,7 @@ server_hiveReadWrite = {
 	_key = _this;
 	//diag_log ("ATTEMPT READ/WRITE: " + _key);
 	_data = "HiveExt" callExtension _key;
-	diag_log ("READ/WRITE: " +str(_data));
+	//diag_log ("READ/WRITE: " +str(_data));
 	_resultArray = call compile format ["%1",_data];
 	_resultArray
 };

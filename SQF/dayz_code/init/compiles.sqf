@@ -1,4 +1,4 @@
-/*	
+ /*	
 	FUNCTION COMPILES
 */
 //Player only
@@ -56,7 +56,7 @@ if (!isDedicated) then {
 	zombie_findTargetAgent = 	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_findTargetAgent.sqf";
 	zombie_loiter = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_loiter.sqf";			//Server compile, used for loiter behaviour
 	zombie_generate = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_generate.sqf";			//Server compile, used for loiter behaviour
-	
+	wild_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\wild_spawnZombies.sqf";			//Server compile, used for loiter behaviour
 	
 	//
 	dog_findTargetAgent =   compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
@@ -83,7 +83,7 @@ if (!isDedicated) then {
 	object_pickup = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_pickup.sqf";
 	player_flipvehicle = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_flipvehicle.sqf";
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
-	
+
 	//base building actions 
 	player_buildBoxStorage =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBoxStorage.sqf";
 	player_buildGunrack_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildGunrack_DZ.sqf";
@@ -120,8 +120,8 @@ if (!isDedicated) then {
 		_display = uiNameSpace getVariable "BIS_loadingScreen";
 		_control1 = _display displayctrl 8400;
 		_control2 = _display displayctrl 102;
-	// 120 sec timeout
-		while { _timeOut < 1200 && !dayz_clientPreload } do {
+	// 40 sec timeout
+		while { _timeOut < 400 && !dayz_clientPreload } do {
 			if ( isNull _display ) then {
 				waitUntil { !dialog; };
 				startLoadingScreen ["","RscDisplayLoadCustom"];
@@ -242,16 +242,9 @@ if (!isDedicated) then {
 		};
 		//if (_dikCode == 57) then {_handled = true}; // space
 		//if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
-		if ("ItemMap_Debug" in items player) then {
-			if (_dikCode == 210) then //SCROLL LOCK
-			{
-				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
-			};
-		} else {
-			if (_dikCode == 210) then //SCROLL LOCK
-			{
-				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
-			};
+		if (_dikCode == 210) then //SCROLL LOCK
+		{
+			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 		};
 		if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveRight") then {r_interrupt = true};
@@ -274,8 +267,10 @@ if (!isDedicated) then {
 			dayz_lastCheckBit = time;
 			[player,15,false,(getPosATL player)] spawn player_alertZombies;
 		};
-		
-		
+		if (_dikCode in actionKeys "User20" and (time - dayz_lastCheckBit > 5)) then {
+			dayz_lastCheckBit = time;
+			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
+		};
 		if ((_dikCode == 0x38 or _dikCode == 0xB8) and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;
 			call dayz_forceSave;

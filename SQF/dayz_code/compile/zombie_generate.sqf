@@ -58,7 +58,8 @@ if (_nearByPlayer) then {
 //_agent setVariable["host",player,true];
 if (!_doLoiter) then {
 	_agent setPosATL _position;
-	_agent setDir round(random 180);
+	_agent setDir random 360;
+	_agent setvelocity [0, 0, 1]; // avoid stuck zombies legs 
 	if (_nearByPlayer) then {
 		deleteVehicle _agent;
 	};

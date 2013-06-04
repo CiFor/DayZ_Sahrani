@@ -4,17 +4,6 @@ dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 _script = getText(missionConfigFile >> "onPauseScript");
 
-if (_script != "") then
-{
-	diag_log "MISSION: File Updated";
-} else {
-	while {true} do
-	{
-		diag_log "MISSION: File Needs Updating";
-		sleep 1;
-	};
-};
-
 if ((count playableUnits == 0) and !isDedicated) then {
 	isSinglePlayer = true;
 };
@@ -58,7 +47,18 @@ _cfgLocation call _funcGetBuildings;
 
 diag_log "HIVE: Starting";
 
-//Stream in objects
+if (_script != "") then
+{
+	diag_log "MISSION: File Updated";
+} else {
+	while {true} do
+	{
+		diag_log "MISSION: File Needs Updating";
+		sleep 1;
+	};
+};
+
+	//Stream in objects
 	/* STREAM OBJECTS */
 		//Send the key
 		_key = format["CHILD:302:%1:",dayZ_instance];
@@ -143,6 +143,7 @@ diag_log "HIVE: Starting";
 					_objWpnQty = (_intentory select 0) select 1;
 					_countr = 0;					
 					{
+						if (_x == "Crossbow") then { _x = "Crossbow_DZ" }; // Convert Crossbow to Crossbow_DZ
 						_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
 						if (_isOK) then {
 							_block = 	getNumber(configFile >> "CfgWeapons" >> _x >> "stopThis") == 1;
@@ -158,6 +159,7 @@ diag_log "HIVE: Starting";
 					_objWpnQty = (_intentory select 1) select 1;
 					_countr = 0;
 					{
+						if (_x == "BoltSteel") then { _x = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
 						_isOK = 	isClass(configFile >> "CfgMagazines" >> _x);
 						if (_isOK) then {
 							_block = 	getNumber(configFile >> "CfgMagazines" >> _x >> "stopThis") == 1;
@@ -212,7 +214,10 @@ diag_log "HIVE: Starting";
 	if(_outcome == "PASS") then {
 		_date = _result select 1; 
 		if(isDedicated) then {
-			["dayzSetDate",_date] call broadcastRpcCallAll;
+			//["dayzSetDate",_date] call broadcastRpcCallAll;
+			setDate _date;
+			dayzSetDate = _date;
+			publicVariable "dayzSetDate";
 		};
 
 		diag_log ("HIVE: Local Time set to " + str(_date));

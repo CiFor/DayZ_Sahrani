@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "F:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"init"};
@@ -24,7 +24,7 @@ item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,350.000000,275.000000,400.00000
 item20[] = {"Hive_Ok",4,218,-175.000000,400.000000,-75.000000,450.000000,0.000000,"Hive" \n "Ok"};
 item21[] = {"Phase_One",2,250,-75.000000,450.000000,25.000000,500.000000,0.000000,"Phase One"};
 item22[] = {"Response",4,218,-175.000000,500.000000,-75.000000,550.000000,0.000000,"Response"};
-item23[] = {"Phase_Two",2,4346,-75.000000,550.000000,25.000000,600.000000,0.000000,"Phase Two"};
+item23[] = {"Phase_Two",2,250,-75.000000,550.000000,25.000000,600.000000,0.000000,"Phase Two"};
 item24[] = {"Dead_Player",4,218,50.000000,550.000000,150.000000,600.000000,0.000000,"Dead" \n "Player"};
 item25[] = {"ERROR__Player_Already",2,250,175.000000,550.000000,275.000000,600.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
 item26[] = {"Alive",4,218,-175.000000,600.000000,-75.000000,650.000000,0.000000,"Alive"};
@@ -36,7 +36,7 @@ item31[] = {"ERROR__Bad_Versi",2,250,175.000000,650.000000,275.000000,700.000000
 item32[] = {"Display_Ready",4,218,-175.000000,900.000000,-75.000000,950.000000,0.000000,"Display" \n "Ready"};
 item33[] = {"Preload_Display",2,250,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Preload" \n "Display"};
 item34[] = {"Preload_Done",4,218,-175.000000,1000.000000,-75.000000,1050.000000,0.000000,"Preload" \n "Done"};
-item35[] = {"Initialize",2,250,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
+item35[] = {"Initialize",2,4346,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
 item36[] = {"Finish",1,250,-75.000000,1150.000000,25.000000,1200.000000,0.000000,"Finish"};
 item37[] = {"True",8,218,25.000000,1100.000000,125.000000,1150.000000,0.000000,"True"};
 item38[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
@@ -114,8 +114,8 @@ link56[] = {49,50};
 link57[] = {50,49};
 link58[] = {51,52};
 link59[] = {52,29};
-globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-385.419434,210.228760,-13.625916,-910.018066,612,921,1};
-window[] = {2,-1,-1,-1,-1,855,1995,2966,75,3,630};
+globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-190.908371,174.873718,1294.537354,842.201965,486,601,1};
+window[] = {2,-1,-1,-1,-1,802,22,1394,22,3,503};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -280,9 +280,14 @@ class FSM
            "	_temp = round(player getVariable [""temperature"",100]);" \n
            "	_currentState = [_currentWpn,_currentAnim,_temp];" \n
            "	" \n
-           "	//[""dayzCharDisco"",[dayz_characterID,_playerPos,[weapons player,_magazineArray],[typeOf (unitbackpack player),getWeaponCargo (unitbackpack player),getMagazineCargo (unitbackpack player)],_medical,_currentState,_currentModel]] call callRpcProcedure;" \n
-           "	//diag_log str(dayzCharDisco);	" \n
-           "" \n
+           "	dayz_Magazines = _magazineArray;" \n
+           "	dayzPlayerSave = [player,dayz_Magazines,false];" \n
+           "	publicVariableServer ""dayzPlayerSave"";" \n
+           "			" \n
+           "	if (isServer) then {" \n
+           "		dayzPlayerSave call server_playerSync;" \n
+           "	};" \n
+           "						" \n
            "	dayz_lastSave = time;" \n
            "	dayz_Magazines = [];" \n
            "};"/*%FSM</ACTION""">*/;
@@ -418,7 +423,11 @@ class FSM
        "" \n
        "_msg = [];" \n
        "" \n
-       "[""dayzLogin"",[_playerUID,player]] call callRpcProcedure;" \n
+       "//[""dayzLogin"",[_playerUID,player]] call callRpcProcedure;" \n
+       "" \n
+       "dayzLogin = [_playerUID,player];" \n
+       "publicVariable ""dayzLogin"";" \n
+       "" \n
        "dayzPlayerLogin = [];" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -599,6 +608,7 @@ class FSM
        "			};" \n
        "			_countr = 0;" \n
        "			{" \n
+       "				if (_x == ""Crossbow"") then { _x = ""Crossbow_DZ"" };" \n
        "				dayz_myBackpack addWeaponCargoGlobal [_x,(_backpackWpnQtys select _countr)];" \n
        "				_countr = _countr + 1;" \n
        "			} forEach _backpackWpnTypes;" \n
@@ -606,6 +616,7 @@ class FSM
        "			//Magazines" \n
        "			_countr = 0;" \n
        "			{" \n
+       "				if (_x == ""BoltSteel"") then { _x = ""WoodenArrow"" }; // Convert BoltSteel to WoodenArrow" \n
        "				dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" \n
        "				_countr = _countr + 1;" \n
        "			} forEach _backpackMagTypes;" \n
@@ -629,7 +640,10 @@ class FSM
        "};" \n
        "" \n
        "dayzPlayerLogin2 = [];" \n
-       "[""dayzLogin2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
+       "//[""dayzLogin2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
+       "" \n
+       "dayzLogin2 = [_charID,player,_playerUID];" \n
+       "publicVariable ""dayzLogin2"";" \n
        "" \n
        "dayz_loadScreenMsg =  ""Requesting Character data from server"";" \n
        "progressLoadingScreen 0.8;" \n
@@ -685,6 +699,7 @@ class FSM
        "dayz_myMagazines = 	magazines player;" \n
        "" \n
        "dayz_playerUID = _playerUID;" \n
+       "" \n
        "if ((_isNew) OR (count _inventory == 0)) then {" \n
        "	//player is new, add initial loadout" \n
        "	_config = (configFile >> ""CfgSurvival"" >> ""Inventory"" >> ""Default"");" \n
@@ -961,11 +976,14 @@ class FSM
        "	};" \n
        "};" \n
        "" \n
-       "if (_currentWpn == ""MeleeCrowbar"") then {" \n
+       "if (player hasWeapon ""MeleeCrowbar"") then {" \n
        "	player addMagazine 'crowbar_swing';" \n
        "};" \n
-       "if (_currentWpn == ""MeleeHatchet"") then {" \n
+       "if (player hasWeapon ""MeleeHatchet"") then {" \n
        "	player addMagazine 'hatchet_swing';" \n
+       "};" \n
+       "if (player hasWeapon ""MeleeMachete"") then {" \n
+       "	player addMagazine 'machete_swing';" \n
        "};" \n
        "" \n
        "reload player;" \n
@@ -1076,7 +1094,7 @@ class FSM
        "" \n
        "dayz_slowCheck = 	[] spawn player_spawn_2;" \n
        "" \n
-       "_world = ""Sahrani"";//toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
+       "_world = ""Sahrani""; //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
        "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000];" \n
        "_town = ""Wilderness"";" \n
        "" \n
@@ -1095,12 +1113,23 @@ class FSM
        "		sleep 8;" \n
        "	};" \n
        "};" \n
+       "" \n
        "dayz_locationCheck = [] spawn {" \n
        "	while {true} do {" \n
        "		call stream_locationCheck;" \n
        "		sleep 2;" \n
        "	};" \n
        "};" \n
+       "" \n
+       "dayz_Totalzedscheck = [] spawn {" \n
+       "	while {true} do {" \n
+       "		dayz_maxCurrentZeds = {alive _x} count entities ""zZombie_Base"";" \n
+       "		sleep 60;" \n
+       "	};" \n
+       "};" \n
+       "//Removed for now" \n
+       "[] execVM ""\z\addons\dayz_code\system\antihack.sqf"";" \n
+       "" \n
        "// TODO: questionably" \n
        "{ _x call fnc_vehicleEventHandler; } forEach vehicles;" \n
        "" \n
@@ -1135,7 +1164,10 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"dayzGearSave = true;" \n
        "dayz_myPosition = getPosATL player;" \n
        "" \n
-       "[""dayzLoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
+       "//[""dayzLoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
+       "" \n
+       "dayzLoginRecord = [_playerUID,_charID,0];" \n
+       "publicVariable ""dayzLoginRecord"";" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links

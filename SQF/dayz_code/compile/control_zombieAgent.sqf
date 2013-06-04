@@ -1,6 +1,5 @@
-private["_agent","_id","_list","_isSomeone","_isAlive","_target","_targetPos","_myDest"];
-
-
+private["_position","_unitTypes","_group","_unit","_target","_bodies","_targetPos","_codeSpawns","_unitSpawn","_lead","_isAlive","_units"];
+//Definitions
 _agent = _this select 0;
 
 //Add handlers
@@ -9,7 +8,6 @@ _agent = _this select 0;
 //Loop behaviour
 _list = (getposATL _agent) nearEntities ["Man",200];
 _isSomeone = ({isPlayer _x} count _list) > 0;
-_isAlive = alive _agent;
 while {_isAlive and _isSomeone} do {
 //NO TARGET
 	_agent disableAI "FSM";
@@ -26,7 +24,7 @@ while {_isAlive and _isSomeone} do {
 		_isSomeone = ({isPlayer _x} count _list) > 0;
 		_target = _agent call zombie_findTargetAgent;
 		if (_isAlive and (_agent distance _myDest < 5)) then {
-			[_agent,_myDest] call zombie_loiter;
+			[_agent,_position] call zombie_loiter;
 		};
 		_agent forceSpeed 2;
 		sleep 1;
@@ -35,7 +33,7 @@ while {_isAlive and _isSomeone} do {
 //CHASE TARGET
 	
 	//Leader cries out
-	//[_agent,"attack",0,false] call dayz_zombieSpeak;
+	[_agent,"attack",0,false] call dayz_zombieSpeak;
 	
 	//Start Movement loop
 	while {!isNull _target and _isAlive and _isSomeone} do {

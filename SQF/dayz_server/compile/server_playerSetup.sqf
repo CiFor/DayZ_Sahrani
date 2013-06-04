@@ -110,7 +110,9 @@ if (count _medical > 0) then {
 	//Add Wounds
 	{
 		_playerObj setVariable[_x,true,true];
-		["usecBleed",[_playerObj,_x,_hit]] call broadcastRpcCallAll;
+		//["usecBleed",[_playerObj,_x,_hit]] call broadcastRpcCallAll;
+		usecBleed = [_playerObj,_x,_hit];
+		publicVariable "usecBleed";
 	} forEach (_medical select 8);
 	
 	//Add fractures
@@ -172,22 +174,22 @@ if (count _stats > 0) then {
 };
 
 if (_randomSpot) then {
-	private["_counter","_position","_isNear","_isZero","_mkr"];
+	private["_counter","_position","_isNear","_isZero","_spawnData","_dir","_pos","_isIsland"];
 	if (!isDedicated) then {
 		endLoadingScreen;
 	};
 	
 	//spawn into random
 	_findSpot = true;
-	_mkr = "";
 	while {_findSpot} do {
 		_counter = 0;
 		while {_counter < 20 and _findSpot} do {
-			_mkr = "spawn" + str(round(random 4));
-			_position = ([(getMarkerPos _mkr),0,600,10,0,800,1] call BIS_fnc_findSafePos);
+			_spawnData = [] + call server_findSpawn;
+			_position = _spawnData select 0;
+			_dir = _spawnData select 1;
 			_isNear = count (_position nearEntities ["Man",100]) == 0;
 			_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
-		//Island Check		//TeeChange
+			//Island Check		//TeeChange
 			_pos 		= _position;
 			_isIsland	= false;		//Can be set to true during the Check
 			for [{_w=0},{_w<=150},{_w=_w+2}] do {
@@ -205,7 +207,7 @@ if (_randomSpot) then {
 	_position = [_position select 0,_position select 1,0];
 	if (!_isZero) then {
 		//_playerObj setPosATL _position;
-		_worldspace = [0,_position];
+		_worldspace = [_dir,_position];
 	};
 };
 

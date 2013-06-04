@@ -39,7 +39,6 @@ item34[] = {"finished",4,218,-425.000000,525.000000,-325.000000,575.000000,1.000
 item35[] = {"",7,210,-479.000000,546.000000,-471.000000,554.000000,0.000000,""};
 item36[] = {"",7,210,-29.000002,546.000000,-20.999998,554.000000,0.000000,""};
 item37[] = {"",7,210,-304.000000,146.000000,-296.000000,154.000000,0.000000,""};
-
 item38[] = {"someone_here",4,218,300.000000,200.000000,400.000000,250.000000,0.000000,"someone" \n "here"};
 item39[] = {"wait",2,250,300.000000,125.000000,400.000000,175.000000,0.000000,"wait"};
 item40[] = {"time_up",4,218,300.000000,-25.000000,400.000000,25.000000,0.000000,"time" \n "up"};
@@ -114,11 +113,9 @@ link50[] = {36,10};
 link51[] = {37,7};
 link52[] = {38,39};
 link53[] = {39,41};
-
 link54[] = {39,43};
 link55[] = {40,44};
 link56[] = {41,40};
-
 link57[] = {41,42};
 link58[] = {41,53};
 link59[] = {42,30};
@@ -293,10 +290,7 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
        "_target = _agent call zombie_findTargetAgent;" \n
        "" \n
-
-
        "_agent forceSpeed 2;" \n
-
        "" \n
        "_newDest = _agent getVariable [""myDest"",getposATL _agent];" \n
        "if (!isNil ""_newDest"") then {" \n
@@ -353,10 +347,6 @@ class FSM
            "if (!_hasMoved) then {" \n
            "	_agent setVariable[""doLoiter"",true,true];" \n
            "};" \n
-
-
-
-
            "_countr = 0;" \n
            "_losCheck = 0;" \n
            "_cantSee = false;"/*%FSM</ACTION""">*/;
@@ -414,7 +404,6 @@ class FSM
        "" \n
        "_hasMoved = _doLoiter;" \n
        "" \n
-
        "_agent disableAI ""FSM"";" \n
        "_agent setBehaviour ""CARELESS"";" \n
        "_agent setCombatMode ""RED"";" \n
@@ -474,7 +463,6 @@ class FSM
     {
       name = "Chase";
       init = /*%FSM<STATEINIT""">*/"_timeN = time;" \n
-
        "" \n
        "if (speed _agent < 0.1) then {_countr = _countr + 1} else {_countr = 0};" \n
        "_target = _agent call zombie_findTargetAgent;" \n
@@ -483,18 +471,9 @@ class FSM
        "" \n
        "" \n
        "//Move to target" \n
-
-
-
        "_agent moveTo _targetPos;" \n
        "_agent forceSpeed 10;" \n
-
-
-
-
-
        "" \n
-
        "if (_losCheck == 2) then {" \n
        "	_losCheck = 0;" \n
        "	_cantSee = [_agent,_target] call dayz_losCheck;" \n
@@ -560,8 +539,6 @@ class FSM
     class Cleanup_
     {
       name = "Cleanup_";
-
-
       init = /*%FSM<STATEINIT""">*/"_waitStart = time;" \n
        "" \n
        "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
@@ -569,16 +546,6 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-
-
-
-
-
-
-
-
-
-
         /*%FSM<LINK "nobody_around">*/
         class nobody_around
         {
@@ -704,9 +671,6 @@ class FSM
     class Reset_Targeting
     {
       name = "Reset_Targeting";
-
-
-
       init = /*%FSM<STATEINIT""">*/"if (!isNull _target) then {" \n
        "	_targetPos = getPosATL _target;" \n
        "	_agent setVariable [""myDest"",_targetPos];" \n
@@ -720,7 +684,6 @@ class FSM
       class Links
       {
         /*%FSM<LINK "true">*/
-
         class true
         {
           priority = 0.000000;

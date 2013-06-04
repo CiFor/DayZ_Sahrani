@@ -21,14 +21,16 @@ _list = nearestObjects [getPos player, [], 10];
 { if(!_found) then {[_x,_list] call _fncFindTrees;}; } forEach _trees;
 
 if (_found) then {
-		diag_log "CHOPWOOD-DEBUG: FOUND = TRUE";
 		_result = [player,"PartWoodPile"] call BIS_fnc_invAdd;
+		[player,"chopwood",0,false] call dayz_zombieSpeak;
 		if (_result) then {
 			cutText [localize "str_player_25", "PLAIN DOWN"];
 		} else {
 			cutText [localize "str_player_24", "PLAIN DOWN"];
 		};
-		_id = [player,20,true,(getPosATL player)] spawn player_alertZombies;
+		[player,20,false,(getPosATL player)] spawn player_alertZombies;
+		player playActionNow "Medic";
+		sleep 3;
 } else {
 	cutText [localize "str_player_23", "PLAIN DOWN"];
 };
