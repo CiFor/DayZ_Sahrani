@@ -168,9 +168,9 @@ dayz_Locations = [];
 dayz_locationsActive = [];
 
 //GUI
-Dayz_GUI_R = 0.38; // 0.7
-Dayz_GUI_G = 0.63; // -0.63
-Dayz_GUI_B = 0.26; // -0.26
+Dayz_GUI_R = 1;//0.38; // 0.7
+Dayz_GUI_G = 1;//0.63; // -0.63
+Dayz_GUI_B = 1;//0.26; // -0.26
 
 //Player self-action handles
 dayz_resetSelfActions = {
