@@ -3,7 +3,6 @@ class Mission
 {
 	addOns[]=
 	{
-		"dayz_weapons",
 		"oac_core",
 		"dayz_code",
 		"CAWheeled_E_ATV",
@@ -27,7 +26,6 @@ class Mission
 	};
 	addOnsAuto[]=
 	{
-		"dayz_weapons",
 		"dayz_code",
 		"CAWheeled_E_ATV",
 		"CAWheeled2_Ikarus",
@@ -49,15 +47,15 @@ class Mission
 		"cawheeled_w_baf",
 		"oac_core"
 	};
-	randomSeed=12067725;
+	randomSeed=10670063;
 	class Intel
 	{
-		startWeather=0.10000002;
+		startWeather=0.1;
 		forecastWeather=0.30000001;
 		year=2007;
 		month=6;
 		day=7;
-		hour=14;
+		hour=8;
 	};
 	class Groups
 	{
@@ -70,11 +68,11 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9304.5625,139.995,10145.604};
-					azimut=179.74059;
-					id=0;
+					position[]={9307.873,139.995,10142.002};
+					azimut=551.8103;
+					id=55;
 					side="WEST";
-					vehicle="BanditW1_DZ";
+					vehicle="BanditSkin_DZ";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
@@ -88,462 +86,519 @@ class Mission
 		class Item0
 		{
 			position[]={9235.3242,139.995,10155.129};
-			id=1;
+			id=0;
 			side="EMPTY";
 			vehicle="UH1H_TK_DZ";
 			leader=1;
 			skill=0.60000002;
+			description="EML_Z1 - UHIH_TK_01 - ";
 		};
 		class Item1
 		{
 			position[]={9245.0693,139.995,10156.095};
-			id=2;
+			id=1;
 			side="EMPTY";
 			vehicle="UH1H_DZ";
 			leader=1;
 			skill=0.60000002;
+			description="EML_Z1 - UHIH_DZ_01 - ";
 		};
 		class Item2
 		{
 			position[]={9255.0693,139.995,10156.095};
-			id=2;
+			id=1;
 			side="EMPTY";
 			vehicle="AH6X_DZ";
 			leader=1;
 			skill=0.60000002;
+			description="EML_Z1 - AH6X_01 - ";
 		};
 		class Item3
 		{
 			position[]={9265.0693,139.995,10156.095};
-			id=2;
+			id=1;
 			side="EMPTY";
 			vehicle="MH6J_DZ";
 			leader=1;
 			skill=0.60000002;
+			description="EML_Z1 - MH6J_01 - ";
 		};
 		class Item4
 		{
 			position[]={9274.3281,139.995,10155.164};
-			id=3;
+			id=2;
 			side="EMPTY";
 			vehicle="Mi17_DZ";
 			skill=0.60000002;
+			description="EML_Z1 - Mi17_01 - ";
 		};
 		class Item5
 		{
-			position[]={9233.9902,139.995,10138.056};
-			id=4;
+			position[]={9233.7197,139.995,10136.811};
+			id=3;
 			side="EMPTY";
 			vehicle="ATV_CZ_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - ATV_ACR_01 - ";
 		};
 		class Item6
 		{
-			position[]={9234.0078,139.995,10134.562};
-			id=5;
+			position[]={9233.7373,139.995,10133.316};
+			id=4;
 			side="EMPTY";
 			vehicle="ATV_US_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - ATV_US_01 - ";
 		};
 		class Item7
 		{
 			position[]={9237.9746,139.995,10134.682};
-			id=6;
+			id=5;
 			side="EMPTY";
 			vehicle="Ikarus";
 			skill=0.60000002;
+			description="EML_Z1 - Ikarus_Chrno_01 - ";
 		};
 		class Item8
 		{
 			position[]={9243.2559,139.995,10134.56};
-			id=7;
+			id=6;
 			side="EMPTY";
 			vehicle="Ikarus_TK_CIV_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - Ikarus_Tak_01 - ";
 		};
 		class Item9
 		{
 			position[]={9247.9854,139.995,10137.432};
-			id=8;
+			id=7;
 			side="EMPTY";
 			vehicle="SkodaBlue";
 			skill=0.60000002;
+			description="EML_Z1 - Skoda_Blue_01 - ";
 		};
 		class Item10
 		{
 			position[]={9252.0137,139.995,10137.402};
-			id=9;
+			id=8;
 			side="EMPTY";
 			vehicle="SkodaGreen";
 			skill=0.60000002;
+			description="EML_Z1 - Skoda_Green_01 - ";
 		};
 		class Item11
 		{
 			position[]={9248.0469,139.995,10131.203};
-			id=10;
+			id=9;
 			side="EMPTY";
 			vehicle="SkodaRed";
 			skill=0.60000002;
+			description="EML_Z1 - Skoda_Red_01 - ";
 		};
 		class Item12
 		{
 			position[]={9252.0752,139.995,10131.264};
-			id=11;
+			id=10;
 			side="EMPTY";
 			vehicle="Skoda";
 			skill=0.60000002;
+			description="EML_Z1 - Skoda_White_01 - ";
 		};
 		class Item13
 		{
 			position[]={9255.4619,139.995,10137.493};
-			id=12;
+			id=11;
 			side="EMPTY";
 			vehicle="Volha_1_TK_CIV_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - Gaz_Blue_01 - ";
 		};
 		class Item14
 		{
 			position[]={9255.4609,139.995,10131.019};
-			id=13;
+			id=12;
 			side="EMPTY";
 			vehicle="Volha_2_TK_CIV_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - Gaz_Grey_01 - ";
 		};
 		class Item15
 		{
 			position[]={9258.4209,139.995,10137.463};
-			id=14;
+			id=13;
 			side="EMPTY";
 			vehicle="VolhaLimo_TK_CIV_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - Gaz_Black_01 - ";
 		};
 		class Item16
 		{
 			position[]={9258.3613,139.995,10131.172};
-			id=15;
+			id=14;
 			side="EMPTY";
 			vehicle="VWGolf";
 			skill=0.60000002;
+			description="EML_Z1 - HatchBack_VW_Red_01 - ";
 		};
 		class Item17
 		{
 			position[]={9261.7471,139.995,10137.401};
-			id=16;
+			id=15;
 			side="EMPTY";
 			vehicle="HMMWV_DZ";
 			skill=0.60000002;
+			description="EML_Z1 - HMMWV_01 - ";
 		};
 		class Item18
 		{
-			position[]={9261.7168,139.995,10131.447};
-			id=17;
+			position[]={9269.0039,139.995,10130.608};
+			id=16;
 			side="EMPTY";
 			vehicle="Lada1_TK_CIV_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - Lada_Green_01 - ";
 		};
 		class Item19
 		{
-			position[]={9265.0117,139.995,10137.279};
-			id=18;
+			position[]={9273.2041,139.995,10138.119};
+			id=17;
 			side="EMPTY";
 			vehicle="LandRover_CZ_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - LRover_Brown_01 - ";
 		};
 		class Item20
 		{
-			position[]={9264.9199,139.995,10131.385};
-			id=19;
+			position[]={9273.1123,139.995,10132.225};
+			id=18;
 			side="EMPTY";
 			vehicle="LandRover_TK_CIV_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - LRover_Red_01 - ";
 		};
 		class Item21
 		{
-			position[]={9267.9102,139.995,10137.126};
-			id=20;
+			position[]={9276.1025,139.995,10137.966};
+			id=19;
 			side="EMPTY";
 			vehicle="LandRover_MG_TK_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - LRover_TKCamoMG__01 - ";
 		};
 		class Item22
 		{
-			position[]={9267.209,139.995,10132.607};
-			id=21;
+			position[]={9275.4014,139.995,10133.447};
+			id=20;
 			side="EMPTY";
 			vehicle="TT650_Civ";
 			skill=0.60000002;
+			description="EML_Z1 - Moto_RedWhite_01 - ";
 		};
 		class Item23
 		{
-			position[]={9267.1484,139.995,10129.495};
-			id=22;
+			position[]={9275.3408,139.995,10130.335};
+			id=21;
 			side="EMPTY";
 			vehicle="TT650_Ins";
 			skill=0.60000002;
+			description="EML_Z1 - Moto_Flames_01 - ";
 		};
 		class Item24
 		{
-			position[]={9268.4902,139.995,10129.555};
-			id=23;
+			position[]={9276.6826,139.995,10130.395};
+			id=22;
 			side="EMPTY";
 			vehicle="TT650_TK_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - Moto_BeatUp_01 - ";
 		};
 		class Item25
 		{
-			position[]={9268.5215,139.995,10132.883};
-			id=24;
+			position[]={9276.7139,139.995,10133.723};
+			id=23;
 			side="EMPTY";
 			vehicle="M1030_US_DES_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - Moto_USMC_01 - ";
 		};
 		class Item26
 		{
-			position[]={9271.2393,139.995,10135.846};
-			id=25;
+			position[]={9279.4316,139.995,10136.686};
+			id=24;
 			side="EMPTY";
 			vehicle="MTVR";
 			skill=0.60000002;
+			description="EML_Z1 - MTVR_01 - ";
 		};
 		class Item27
 		{
-			position[]={9274.626,139.995,10136.731};
-			id=26;
+			position[]={9282.8184,139.995,10137.571};
+			id=25;
 			side="EMPTY";
 			vehicle="hilux1_civil_2_covered";
 			skill=0.60000002;
+			description="EML_Z1 - Pickup_Hilux_C_Red_01 - ";
 		};
 		class Item28
 		{
-			position[]={9274.7178,139.995,10129.435};
-			id=27;
+			position[]={9282.9102,139.995,10130.274};
+			id=26;
 			side="EMPTY";
 			vehicle="hilux1_civil_1_open";
 			skill=0.60000002;
+			description="EML_Z1 - Pickup_Hilux_O_Tan_01 - ";
 		};
 		class Item29
 		{
-			position[]={9277.8613,139.995,10136.762};
-			id=28;
+			position[]={9286.0537,139.995,10137.602};
+			id=27;
 			side="EMPTY";
 			vehicle="hilux1_civil_3_open";
 			skill=0.60000002;
+			description="EML_Z1 - Pickup_Hilux_O_White_01 - ";
 		};
 		class Item30
 		{
-			position[]={9277.1582,139.995,10129.494};
-			id=29;
+			position[]={9285.3506,139.995,10130.334};
+			id=28;
 			side="EMPTY";
 			vehicle="Old_bike_TK_CIV_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - Bicycle_01 - ";
 		};
 		class Item31
 		{
-			position[]={9281.249,139.995,10137.098};
-			id=30;
+			position[]={9289.4414,139.995,10137.938};
+			id=29;
 			side="EMPTY";
 			vehicle="car_hatchback";
 			skill=0.60000002;
+			description="EML_Z1 - HatchBack_Old_Orange_01 - ";
 		};
 		class Item32
 		{
-			position[]={9278.502,139.995,10129.555};
-			id=31;
+			position[]={9275.3281,139.995,10126.567};
+			id=30;
 			side="EMPTY";
 			vehicle="Old_moto_TK_Civ_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - Moto_Old_01 - ";
 		};
 		class Item33
 		{
-			position[]={9281.3389,139.995,10129.892};
-			id=32;
+			position[]={9289.5313,139.995,10130.731};
+			id=31;
 			side="EMPTY";
 			vehicle="datsun1_civil_1_open";
 			skill=0.60000002;
+			description="EML_Z1 - Pickup_Datsun_O_Blue_01 - ";
 		};
 		class Item34
 		{
-			position[]={9284.9385,139.995,10136.547};
-			id=33;
+			position[]={9293.1309,139.995,10137.387};
+			id=32;
 			side="EMPTY";
 			vehicle="datsun1_civil_2_covered";
 			skill=0.60000002;
+			description="EML_Z1 - Pickup_Datsun_C_Brown_01 - ";
 		};
 		class Item35
 		{
-			position[]={9285.0918,139.995,10129.463};
-			id=34;
+			position[]={9293.2842,139.995,10130.303};
+			id=33;
 			side="EMPTY";
 			vehicle="datsun1_civil_3_open";
 			skill=0.60000002;
+			description="EML_Z1 - Pickup_Datsun_O_Green_01 - ";
 		};
 		class Item36
 		{
-			position[]={9288.2607,139.995,10129.531};
-			id=35;
+			position[]={9296.4531,139.995,10130.371};
+			id=34;
 			side="EMPTY";
 			vehicle="S1203_TK_CIV_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - BettyVan_Blue_01 - ";
 		};
 		class Item37
 		{
-			position[]={9291.208,139.995,10136.637};
-			id=36;
+			position[]={9299.4004,139.995,10137.477};
+			id=35;
 			side="EMPTY";
 			vehicle="car_sedan";
 			skill=0.60000002;
+			description="EML_Z1 - Hatchback_Orange_01 - ";
 		};
 		class Item38
 		{
-			position[]={9291.2471,139.995,10129.028};
-			id=37;
+			position[]={9299.4395,139.995,10129.868};
+			id=36;
 			side="EMPTY";
 			vehicle="SUV_PMC";
 			skill=0.60000002;
+			description="EML_Z1 - SUV_Black_01 - ";
 		};
 		class Item39
 		{
-			position[]={9294.5439,139.995,10136.286};
-			id=38;
+			position[]={9302.7363,139.995,10137.126};
+			id=37;
 			side="EMPTY";
 			vehicle="Tractor";
 			skill=0.60000002;
+			description="EML_Z1 - Tractor_C_01 - ";
 		};
 		class Item40
 		{
-			position[]={9294.584,139.995,10128.912};
-			id=39;
+			position[]={9302.7764,139.995,10129.752};
+			id=38;
 			side="EMPTY";
 			vehicle="UAZ_CDF";
 			skill=0.60000002;
+			description="EML_Z1 - UAZ_Dark2tone_Camo_01 - ";
 		};
 		class Item41
 		{
-			position[]={9298.0752,139.995,10136.752};
-			id=40;
+			position[]={9306.2676,139.995,10137.592};
+			id=39;
 			side="EMPTY";
 			vehicle="UAZ_RU";
 			skill=0.60000002;
+			description="EML_Z1 - UAZ_Dark3tone_Camo_01 - ";
 		};
 		class Item42
 		{
-			position[]={9297.7256,139.995,10128.988};
-			id=41;
+			position[]={9305.918,139.995,10129.828};
+			id=40;
 			side="EMPTY";
 			vehicle="UAZ_Unarmed_TK_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - UAZ_Light3tone_Camo_01 - ";
 		};
 		class Item43
 		{
-			position[]={9301.1016,139.995,10136.479};
-			id=42;
+			position[]={9309.2939,139.995,10137.318};
+			id=41;
 			side="EMPTY";
 			vehicle="UAZ_Unarmed_TK_CIV_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - UAZ_Tan_01 - ";
 		};
 		class Item44
 		{
-			position[]={9300.9453,139.995,10129.298};
-			id=43;
+			position[]={9309.1377,139.995,10130.138};
+			id=42;
 			side="EMPTY";
 			vehicle="UAZ_Unarmed_UN_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - UAZ_UN_01 - ";
 		};
 		class Item45
 		{
-			position[]={9304.0098,139.995,10137.022};
-			id=44;
+			position[]={9265.8691,139.995,10137.972};
+			id=43;
 			side="EMPTY";
 			vehicle="LadaLM";
 			skill=0.60000002;
+			description="EML_Z1 - LadaL_Police_01 - ";
 		};
 		class Item46
 		{
-			position[]={9304.127,139.995,10129.531};
-			id=45;
+			position[]={9265.9863,139.995,10130.48};
+			id=44;
 			side="EMPTY";
 			vehicle="Lada2";
 			skill=0.60000002;
+			description="EML_Z1 - Lada_Red_01 - ";
 		};
 		class Item47
 		{
-			position[]={9307.0752,139.995,10136.944};
-			id=46;
+			position[]={9268.9346,139.995,10137.894};
+			id=45;
 			side="EMPTY";
 			vehicle="Lada1";
 			skill=0.60000002;
+			description="EML_Z1 - Lada1_White_01 - ";
 		};
 		class Item48
 		{
-			position[]={9307.2295,139.995,10129.375};
-			id=47;
+			position[]={9315.4219,139.995,10130.215};
+			id=46;
 			side="EMPTY";
 			vehicle="Ural_CDF";
 			skill=0.60000002;
+			description="EML_Z1 - Ural_C_Dark_Camo_01 - ";
 		};
 		class Item49
 		{
-			position[]={9310.6338,139.995,10136.967};
-			id=48;
+			position[]={9318.8262,139.995,10137.807};
+			id=47;
 			side="EMPTY";
 			vehicle="Ural_INS";
 			skill=0.60000002;
+			description="EML_Z1 - Ural_C_Light_Camo_01 - ";
 		};
 		class Item50
 		{
-			position[]={9310.459,139.995,10129.09};
-			id=49;
+			position[]={9318.6514,139.995,10129.93};
+			id=48;
 			side="EMPTY";
 			vehicle="Ural_TK_CIV_EP1";
 			skill=0.60000002;
+			description="EML_Z1 - Ural_C_Blue_WhiteTop_01 - ";
 		};
 		class Item51
 		{
-			position[]={9314.2646,139.995,10136.836};
-			id=50;
+			position[]={9322.457,139.995,10137.676};
+			id=49;
 			side="EMPTY";
 			vehicle="UralCivil2";
 			skill=0.60000002;
+			description="EML_Z1 - Ural_O_Blue_RedDoors_01 - ";
 		};
 		class Item52
 		{
-			position[]={9314.2646,139.995,10128.872};
-			id=51;
+			position[]={9322.457,139.995,10129.712};
+			id=50;
 			side="EMPTY";
 			vehicle="UralCivil";
 			skill=0.60000002;
+			description="EML_Z1 - Ural_C_Orange_WhiteTop_01 - ";
 		};
 		class Item53
 		{
-			position[]={9318.0703,139.995,10137.01};
-			id=52;
+			position[]={9326.2627,139.995,10137.85};
+			id=51;
 			side="EMPTY";
 			vehicle="UralOpen_INS";
 			skill=0.60000002;
+			description="EML_Z1 - Ural_O_Light_Camo_01 - ";
 		};
 		class Item54
 		{
-			position[]={9318.2002,139.995,10128.692};
-			id=53;
+			position[]={9326.3926,139.995,10129.532};
+			id=52;
 			side="EMPTY";
 			vehicle="V3S_Civ";
 			skill=0.60000002;
+			description="EML_Z1 - V3S_O_Green_01 - ";
 		};
 		class Item55
 		{
-			position[]={9271.1436,139.995,10128.586};
-			id=54;
+			position[]={9279.3359,139.995,10129.426};
+			id=53;
 			side="EMPTY";
 			vehicle="BAF_Offroad_D";
 			skill=0.60000002;
+			description="EML_Z1 - LRover_Desert_01 - ";
 		};
 		class Item56
 		{
-			position[]={9264.7988,139.995,10125.442};
-			id=55;
+			position[]={9272.9912,139.995,10126.282};
+			id=54;
 			side="EMPTY";
 			vehicle="BAF_Offroad_W";
 			skill=0.60000002;
+			description="EML_Z1 - LRover_Forrest_01 - ";
 		};
 	};
 };
@@ -557,7 +612,7 @@ class Intro
 	{
 		"oac_core"
 	};
-	randomSeed=15248578;
+	randomSeed=7158189;
 	class Intel
 	{
 		startWeather=0.1;
@@ -578,7 +633,7 @@ class OutroWin
 	{
 		"oac_core"
 	};
-	randomSeed=10013427;
+	randomSeed=3099465;
 	class Intel
 	{
 		startWeather=0.1;
@@ -599,7 +654,7 @@ class OutroLoose
 	{
 		"oac_core"
 	};
-	randomSeed=10698790;
+	randomSeed=6820293;
 	class Intel
 	{
 		startWeather=0.1;
