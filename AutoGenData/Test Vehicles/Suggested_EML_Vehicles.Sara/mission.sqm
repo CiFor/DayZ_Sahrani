@@ -1,0 +1,457 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"oac_core",
+		"dayz_code",
+		"CAWheeled_E_ATV",
+		"CAWheeled_E",
+		"CAWheeled",
+		"CAWheeled_E_Volha",
+		"CAWheeled2_MTVR",
+		"CAWheeled_E_Old_bike",
+		"CAWheeled_E_Old_moto",
+		"cawheeled_e_s1203",
+		"cawheeled_pmc",
+		"cadata",
+		"CAWheeled2_LADA",
+		"CAWheeled2_V3S"
+	};
+	addOnsAuto[]=
+	{
+		"dayz_code",
+		"CAWheeled_E_ATV",
+		"CAWheeled_E",
+		"CAWheeled_E_Volha",
+		"CAWheeled2_MTVR",
+		"CAWheeled_E_Old_bike",
+		"CAWheeled",
+		"CAWheeled_E_Old_moto",
+		"cawheeled_e_s1203",
+		"cawheeled_pmc",
+		"cadata",
+		"CAWheeled2_LADA",
+		"CAWheeled2_V3S",
+		"oac_core"
+	};
+	randomSeed=10670063;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9297.1104,139.995,10144.45};
+					azimut=551.8103;
+					id=33;
+					side="WEST";
+					vehicle="BanditSkin_DZ";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=35;
+		class Item0
+		{
+			position[]={9235.3242,139.995,10155.129};
+			id=0;
+			side="EMPTY";
+			vehicle="UH1H_TK_DZ";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z1 - UHIH_TK_01 - ";
+		};
+		class Item1
+		{
+			position[]={9245.0693,139.995,10156.095};
+			id=1;
+			side="EMPTY";
+			vehicle="UH1H_DZ";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z1 - UHIH_DZ_01 - ";
+		};
+		class Item2
+		{
+			position[]={9255.0693,139.995,10156.095};
+			id=1;
+			side="EMPTY";
+			vehicle="AH6X_DZ";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z1 - AH6X_01 - ";
+		};
+		class Item3
+		{
+			position[]={9265.0693,139.995,10156.095};
+			id=1;
+			side="EMPTY";
+			vehicle="MH6J_DZ";
+			leader=1;
+			skill=0.60000002;
+			description="EML_Z1 - MH6J_01 - ";
+		};
+		class Item4
+		{
+			position[]={9274.3281,139.995,10155.164};
+			id=2;
+			side="EMPTY";
+			vehicle="Mi17_DZ";
+			skill=0.60000002;
+			description="EML_Z1 - Mi17_01 - ";
+		};
+		class Item5
+		{
+			position[]={9233.7197,139.995,10136.811};
+			id=3;
+			side="EMPTY";
+			vehicle="ATV_CZ_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - ATV_ACR_01 - ";
+		};
+		class Item6
+		{
+			position[]={9233.7373,139.995,10133.316};
+			id=4;
+			side="EMPTY";
+			vehicle="ATV_US_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - ATV_US_01 - ";
+		};
+		class Item7
+		{
+			position[]={9243.2559,139.995,10134.56};
+			id=5;
+			side="EMPTY";
+			vehicle="Ikarus_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - Ikarus_Tak_01 - ";
+		};
+		class Item8
+		{
+			position[]={9255.4619,139.995,10137.493};
+			id=6;
+			side="EMPTY";
+			vehicle="Volha_1_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - Gaz_Blue_01 - ";
+		};
+		class Item9
+		{
+			position[]={9255.4609,139.995,10131.019};
+			id=7;
+			side="EMPTY";
+			vehicle="Volha_2_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - Gaz_Grey_01 - ";
+		};
+		class Item10
+		{
+			position[]={9258.4209,139.995,10137.463};
+			id=8;
+			side="EMPTY";
+			vehicle="VolhaLimo_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - Gaz_Black_01 - ";
+		};
+		class Item11
+		{
+			position[]={9261.7471,139.995,10137.401};
+			id=9;
+			side="EMPTY";
+			vehicle="HMMWV_DZ";
+			skill=0.60000002;
+			description="EML_Z1 - HMMWV_01 - ";
+		};
+		class Item12
+		{
+			position[]={9269.0039,139.995,10130.608};
+			id=10;
+			side="EMPTY";
+			vehicle="Lada1_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - Lada_Green_01 - ";
+		};
+		class Item13
+		{
+			position[]={9276.6826,139.995,10130.395};
+			id=11;
+			side="EMPTY";
+			vehicle="TT650_TK_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - Moto_BeatUp_01 - ";
+		};
+		class Item14
+		{
+			position[]={9279.4316,139.995,10136.686};
+			id=12;
+			side="EMPTY";
+			vehicle="MTVR";
+			skill=0.60000002;
+			description="EML_Z1 - MTVR_01 - ";
+		};
+		class Item15
+		{
+			position[]={9285.3506,139.995,10130.334};
+			id=13;
+			side="EMPTY";
+			vehicle="Old_bike_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - Bicycle_01 - ";
+		};
+		class Item16
+		{
+			position[]={9289.4414,139.995,10137.938};
+			id=14;
+			side="EMPTY";
+			vehicle="car_hatchback";
+			skill=0.60000002;
+			description="EML_Z1 - HatchBack_Orange_01 - ";
+		};
+		class Item17
+		{
+			position[]={9275.3281,139.995,10126.567};
+			id=15;
+			side="EMPTY";
+			vehicle="Old_moto_TK_Civ_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - Moto_Old_01 - ";
+		};
+		class Item18
+		{
+			position[]={9289.5313,139.995,10130.731};
+			id=16;
+			side="EMPTY";
+			vehicle="datsun1_civil_1_open";
+			skill=0.60000002;
+			description="EML_Z1 - Pickup_Datsun_O_Blue_01 - ";
+		};
+		class Item19
+		{
+			position[]={9293.1309,139.995,10137.387};
+			id=17;
+			side="EMPTY";
+			vehicle="datsun1_civil_2_covered";
+			skill=0.60000002;
+			description="EML_Z1 - Pickup_Datsun_C_Brown_01 - ";
+		};
+		class Item20
+		{
+			position[]={9293.2842,139.995,10130.303};
+			id=18;
+			side="EMPTY";
+			vehicle="datsun1_civil_3_open";
+			skill=0.60000002;
+			description="EML_Z1 - Pickup_Datsun_O_Green_01 - ";
+		};
+		class Item21
+		{
+			position[]={9296.4531,139.995,10130.371};
+			id=19;
+			side="EMPTY";
+			vehicle="S1203_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - BettyVan_Blue_01 - ";
+		};
+		class Item22
+		{
+			position[]={9299.4395,139.995,10129.868};
+			id=20;
+			side="EMPTY";
+			vehicle="SUV_PMC";
+			skill=0.60000002;
+			description="EML_Z1 - SUV_Black_01 - ";
+		};
+		class Item23
+		{
+			position[]={9302.7363,139.995,10137.126};
+			id=21;
+			side="EMPTY";
+			vehicle="Tractor";
+			skill=0.60000002;
+			description="EML_Z1 - Tractor_01 - ";
+		};
+		class Item24
+		{
+			position[]={9302.7764,139.995,10129.752};
+			id=22;
+			side="EMPTY";
+			vehicle="UAZ_CDF";
+			skill=0.60000002;
+			description="EML_Z1 - UAZ_Dark2tone_Camo_01 - ";
+		};
+		class Item25
+		{
+			position[]={9306.2676,139.995,10137.592};
+			id=23;
+			side="EMPTY";
+			vehicle="UAZ_RU";
+			skill=0.60000002;
+			description="EML_Z1 - UAZ_Dark3tone_Camo_01 - ";
+		};
+		class Item26
+		{
+			position[]={9305.918,139.995,10129.828};
+			id=24;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_TK_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - UAZ_Light3tone_Camo_01 - ";
+		};
+		class Item27
+		{
+			position[]={9309.2939,139.995,10137.318};
+			id=25;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_TK_CIV_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - UAZ_Tan_01 - ";
+		};
+		class Item28
+		{
+			position[]={9309.1377,139.995,10130.138};
+			id=26;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_UN_EP1";
+			skill=0.60000002;
+			description="EML_Z1 - UAZ_UN_01 - ";
+		};
+		class Item29
+		{
+			position[]={9265.8691,139.995,10137.972};
+			id=27;
+			side="EMPTY";
+			vehicle="LadaLM";
+			skill=0.60000002;
+			description="EML_Z1 - LadaL_Police_01 - ";
+		};
+		class Item30
+		{
+			position[]={9265.9863,139.995,10130.48};
+			id=28;
+			side="EMPTY";
+			vehicle="Lada2";
+			skill=0.60000002;
+			description="EML_Z1 - Lada_Red_01 - ";
+		};
+		class Item31
+		{
+			position[]={9268.9346,139.995,10137.894};
+			id=29;
+			side="EMPTY";
+			vehicle="Lada1";
+			skill=0.60000002;
+			description="EML_Z1 - Lada1_White_01 - ";
+		};
+		class Item32
+		{
+			position[]={9322.457,139.995,10137.676};
+			id=30;
+			side="EMPTY";
+			vehicle="UralCivil2";
+			skill=0.60000002;
+			description="EML_Z1 - Ural_O_Blue_RedDoors_01 - ";
+		};
+		class Item33
+		{
+			position[]={9326.2627,139.995,10137.85};
+			id=31;
+			side="EMPTY";
+			vehicle="UralOpen_INS";
+			skill=0.60000002;
+			description="EML_Z1 - Ural_O_Light_Camo_01 - ";
+		};
+		class Item34
+		{
+			position[]={9326.3926,139.995,10129.532};
+			id=32;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			skill=0.60000002;
+			description="EML_Z1 - V3S_O_Green_01 - ";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=7158189;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=3099465;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"oac_core"
+	};
+	addOnsAuto[]=
+	{
+		"oac_core"
+	};
+	randomSeed=6820293;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
