@@ -121,24 +121,66 @@ class CfgWeapons {
 		canlock = 0;
 		cursor = "RifleCursor";
 	};
-	class M107;
-	class M107_DZ : M107 {
-		type = "1";
+	
+	class RifleCore;	// External class reference
+	class M107_DZ : RifleCore {
+		irLaserPos = "laser pos";
+		irLaserEnd = "laser dir";
+		irDistance = 0;
+		htMin = 1;
+		htMax = 600;
+		afMax = 0;
+		mfMax = 0;
+		mFact = 1;
+		tBody = 100;
+		scope = public;
+		type = 1;
+		model = "\ca\weapons\m107\m107";
+		picture = "\CA\weapons\data\Equip\W_m107_CA.paa";
+		UiPicture = "\CA\weapons\data\Ico\i_sniper_CA.paa";
+		magazines[] = {"10Rnd_127x99_m107"};
+		dexterity = 0.45;
+		modelOptics = "\ca\Weapons\2Dscope_MilDot_14";
+		opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
+		opticsFlare = true;
+		opticsDisablePeripherialVision = true;
+		opticsZoomInit = 0.0553;
+		opticsZoomMin = 0.0178;
+		distanceZoomMin = 500;
+		opticsZoomMax = 0.0553;
+		distanceZoomMax = 200;
+		displayname = $STR_DN_M107;
+		autoFire = false;
+		begin1[] = {"ca\sounds\weapons\rifles\m107", 2.51189, 1, 1300};
+		soundBegin[] = {"begin1", 1};
+		reloadMagazineSound[] = {"ca\sounds\weapons\rifles\reload-m16-2", 0.0316228, 1, 20};
+		reloadTime = 0.5;
+		dispersion = 0.0005;
+		minRange = 0;
+		minRangeProbab = 0.1;
+		midRange = 1200;
+		midRangeProbab = 0.7;
+		maxRange = 1800;
+		maxRangeProbab = 0.05;
+		recoil = "recoil_single_primary_9outof10";
+		recoilProne = "recoil_single_primary_prone_7outof10";
+
 		canlock = 0;
 		cursor = "RifleCursor";
 		cursoraim = "Foresight";
+		
+		class Library {
+			libTextDesc = $STR_LIB_M107;
+		};
+		descriptionShort = $STR_DSS_M107;
 	};
+	
 	class ksvk;
 	class ksvk_DZ	: ksvk {
 		type = "1";
 		canlock = 0;
 		cursor = "RifleCursor";
 	};
-	
-	class FakeWeapon;
-	class BAF_AS50_scoped : FakeWeapon {};
-	class M107 : FakeWeapon {};
-	class ksvk : FakeWeapon {};
 	
 	class Crossbow;
 	class Crossbow_DZ : Crossbow {
@@ -372,5 +414,17 @@ class CfgWeapons {
 				"ItemSodaRabbitEmpty"
 			};          
 		};
-	}; 
+	};
+
+	class ItemMatchbox: ItemCore
+	{
+		scope=2;
+		displayName="$STR_EQUIP_NAME_3";
+		model="\dayz_equip\models\matchbox_gear.p3d";
+		picture="\dayz_equip\textures\equip_matchbox_ca.paa";
+		descriptionShort="$STR_EQUIP_DESC_3";
+		class ItemActions {
+			delete Use;
+		};
+	};
 };

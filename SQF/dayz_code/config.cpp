@@ -99,15 +99,48 @@ class CfgAISkill {
 	spottime[] = {0, 0, 1, 1};
 };
 
-class CfgInGameUI
-{
-    class PeripheralVision
-    {
-        cueColor[] = {0,0,0,0};
-        cueFriendlyColor[] = {0,0,0,0};
-        cueEnemyColor[] = {0,0,0,0};
-    };
+class CfgInGameUI {
+	imageCornerElement = "\ca\ui\data\igui_hud_corner.paa";
+	xboxStyle = 0;
+	colorBackground[] = {1, 1, 1, 0};
+	colorBackgroundCommand[] = {1, 1, 1, 1};
+	colorBackgroundHelp[] = {1, 1, 1, 1};
+	colorText[] = {0.95, 0.95, 0.95, 1};
 	
+	class SideColors {
+		colorFriendly[] = {0.95, 0.95, 0.95, 1};
+		colorEnemy[] = {0.706, 0.0745, 0.0196, 1};
+		colorNeutral[] = {0.606, 0.606, 0.606, 1};
+		colorCivilian[] = {0.606, 0.606, 0.606, 1};
+		colorUnknown[] = {0.863, 0.584, 0.0, 1};
+	};
+	
+	class IslandMap {
+		colorFriendly[] = {0, 0.5, 0, 1};
+		colorEnemy[] = {0.5, 0, 0, 1};
+		colorNeutral[] = {1.0, 0.5, 0, 1};
+		colorCivilian[] = {0, 0, 1, 1};
+		colorUnknown[] = {1.0, 0.5, 0, 0.8};
+		shadow = 2;
+		iconPlayer = "\ca\ui\data\map_player_ca.paa";
+		iconPlayerDirection = "\ca\ui\data\map_dir_ca.paa";
+		iconCheckpoint = "\ca\ui\data\map_target_ca.paa";
+		iconCamera = "\ca\ui\data\map_camera_ca.paa";
+		iconSelect = "\ca\ui\data\map_select_ca.paa";
+		iconSensor = "\ca\ui\data\map_trigger_ca.paa";
+		sizeLeader = 24;
+		size = 26;
+		sizePlayer = 26;
+		colorTracks[] = {0.2, 0.13, 0, 1};
+		colorRoads[] = {0.2, 0.13, 0, 1};
+		colorMainRoads[] = {0, 0, 0, 1};
+		colorTracksFill[] = {0, 0, 0, 0};
+		colorRoadsFill[] = {1, 0.88, 0.65, 1};
+		colorMainRoadsFill[] = {0.94, 0.69, 0.2, 1};
+		cursorLineWidth = 1;
+		colorGrid[] = {0.05, 0.1, 0, 0.6};
+		colorGridMap[] = {0.05, 0.1, 0, 0.4};
+	};
 	
 	class MPTable
 	{
@@ -179,6 +212,501 @@ class CfgInGameUI
 			};
 		};
 	};
+	
+	class TankDirection {
+		left = -10;
+		top = -10;
+		width = 0.235294;
+		height = 0.313726;
+		color[] = {0.95, 0.95, 0.95, 1};
+		colorHalfDammage[] = {0.863, 0.584, 0.0, 1};
+		colorFullDammage[] = {0.706, 0.0745, 0.0196, 1};
+		imageTower = "\ca\ui\data\igui_Tower_gs.paa";
+		imageTurret = "\ca\ui\data\igui_Turret_gs.paa";
+		imageGun = "\ca\ui\data\igui_Gun_gs.paa";
+		imageObsTurret = "\ca\ui\data\igui_ObsTurret_gs.paa";
+		imageLTrack = "\ca\ui\data\igui_LTrack_gs.paa";
+		imageRTrack = "\ca\ui\data\igui_RTrack_gs.paa";
+		imageHull = "\ca\ui\data\igui_Hull_gs.paa";
+		imageEngine = "\ca\ui\data\igui_Engine_gs.paa";
+		imageMoveStop = "#(argb,8,8,3)color(0,0,0,0)";
+		imageMoveBack = "#(argb,8,8,3)color(0,0,0,0)";
+		imageMoveForward = "#(argb,8,8,3)color(0,0,0,0)";
+		imageMoveFast = "#(argb,8,8,3)color(0,0,0,0)";
+		imageMoveLeft = "#(argb,8,8,3)color(0,0,0,0)";
+		imageMoveRight = "#(argb,8,8,3)color(0,0,0,0)";
+		imageMoveAuto = "#(argb,8,8,3)color(0,0,0,0)";
+	};
+	
+	class Picturem {
+		imageBusy = "\ca\ui\data\ui_busy_icon_ca.paa";
+		imageWaiting = "\ca\ui\data\ui_waiting_icon_ca.paa";
+		imageCommand = "\ca\ui\data\ui_command_icon_ca.paa";
+	};
+	
+	class ProgressFont {
+		font = "EtelkaNarrowMediumPro";
+		size = 0.034;
+	};
+	
+	class CheatXFont {
+		font = "EtelkaNarrowMediumPro";
+	};
+	
+	class FadeFont {
+		font = "EtelkaNarrowMediumPro";
+	};
+	
+	class DragAndDropFont {
+		font = "EtelkaNarrowMediumPro";
+		shadow = 2;
+		size = 0.034;
+		colorEnabled[] = {0, 0, 0, 0.9};
+		colorDisabled[] = {0, 0, 0, 0.6};
+		hideCursor = 0;
+	};
+	
+	class TooltipFont {
+		font = "EtelkaNarrowMediumPro";
+		size = 0.034;
+		shadow = 2;
+	};
+	
+	class Compass {
+		left = 0.273;
+		top = "0.058 + SafeZoneY";
+		width = 0.473;
+		height = 0.0522876;
+		shadow = 2;
+		color[] = {0.95, 0.95, 0.95, 1};
+		dirColor[] = {0.95, 0.95, 0.95, 1};
+		texture0 = "ca\ui\data\radar_compass1_ca.paa";
+		texture90 = "ca\ui\data\radar_compass2_ca.paa";
+		texture180 = "ca\ui\data\radar_compass3_ca.paa";
+		texture270 = "ca\ui\data\radar_compass4_ca.paa";
+	};
+	
+	class TacticalDisplay : SideColors {
+		left = (0.263);
+		top = "0.055 + SafeZoneY";
+		width = 0.473;
+		height = 0.008;
+		targetTexture = "\ca\ui\data\igui_target_ground_gs.paa";
+		targetAirTexture = "\ca\ui\data\igui_target_air_gs.paa";
+		
+		class Cursor {
+			width = 0.0196078;
+			height = 0.0261438;
+			color[] = {1, 1, 1, 1};
+		};
+		shadow = false;
+		colorCamera[] = {1, 1, 1, 0};
+	};
+	
+	class Radar {
+		left = "0.078 + SafeZoneX";
+		top = "0.012 + SafeZoneY";
+		width = "0.161*SafezoneH";
+		height = "0.215*SafezoneH";
+		radarAirBackgroundTexture = "\ca\ui\data\igui_radar_air_ca.paa";
+		radarTankBackgroundTexture = "\ca\ui\data\igui_radar_air_ca.paa";
+		radarIncommingMissile = "\ca\ui\data\igui_radar_missle_ca.paa";
+		radarAirDangerSector = "\ca\ui\data\igui_radar_danger_ca.paa";
+		radarLockDangerColor[] = {0.8, 0.6, 0, 0.75};
+		radarIncommingDangerColor[] = {0.7, 0.1, 0, 0.75};
+		radarVehicleTarget = "\ca\ui\data\igui_radar_target_ca.paa";
+		radarTargetingEnemy = "\ca\ui\data\igui_radar_targeting_ca.paa";
+		radarFOV = "\ca\ui\data\igui_radar_viewdir_ca.paa";
+		radarFOVPlayer[] = {0.95, 0.95, 0.95, 1};
+		radarFOVCrew[] = {0.4, 0.4, 0.4, 1};
+		shadow = false;
+	};
+	
+	class GroupDir {
+		left = "(SafeZoneW + SafeZoneX) - (1 - 0.890)";
+		top = "(SafeZoneH + SafeZoneY) - (1 - 0.708)";
+		width = 0.096187;
+		height = 0.1274;
+		colorBackground[] = {0.95, 0.95, 0.95, 1};
+		image = "\ca\ui\data\squad_orientation_ca.paa";
+		shadow = 2;
+	};
+	
+	class Hint {
+		sound[] = {"\Ca\sounds\sfx\hint.wss", db-10, 1};
+	};
+	
+	class PlayerInfo {
+		left = "0 + SafeZoneX";
+		top = "0.177 + SafeZoneY";
+		width = 0.15;
+		colorBackground[] = {1, 0, 1, 1};
+		
+		class UnitPicture {
+			width = 0.55;
+			height = 0.56;
+		};
+	};
+	
+	class Menu {
+		hide = "HTFade";
+		width = 0.45;
+		height = 0.4;
+		x = "0.012 + SafeZoneX";
+		y = 0.83188;
+		top = 0.23;
+		font = "EtelkaNarrowMediumPro";
+		size = 0.034;
+		shadow = 2;
+		align = 0;
+		widthMin = 0.155;
+		widthMax = 0.45;
+		colorChecked[] = {0.863, 0.584, 0.0, 1};
+		colorEnabled[] = {0.95, 0.95, 0.95, 1};
+		colorDisabled[] = {0.606, 0.606, 0.606, 1};
+		colorSelected[] = {0.424, 0.651, 0.247, 1};
+		colorSelectedText[] = {0.95, 0.95, 0.95, 1};
+		hideTime = 60;
+		quickMenuDelay = 0.5;
+	};
+	
+	class Capture {
+		colorBackground[] = {0, 0, 0, 0.0};
+		colorText[] = {0.95, 0.95, 0.95, 1};
+		colorLine[] = {0.8, 0.8, 0.8, 1};
+	};
+	
+	class Bar {
+		imageBar = "#(argb,8,8,3)color(1,1,1,1)";
+		colorBackground[] = {0, 0, 0, 0.0};
+		colorGreen[] = {0.95, 0.95, 0.95, 1};
+		colorYellow[] = {0.95, 0.95, 0.95, 1};
+		colorRed[] = {0.706, 0.0745, 0.0196, 1};
+		colorBlinkOn[] = {0.863, 0.584, 0.0, 1};
+		colorBlinkOff[] = {0.706, 0.0745, 0.0196, 1};
+		height = 0.01;
+	};
+	
+	class Actions {
+		align = 0x00 + 0x08;
+		shadow = 0;
+		x = "0.012 + SafeZoneX";
+		y = 0.411;
+		font = "EtelkaNarrowMediumPro";
+		size = 0.034;
+		rows = "5*SafeZoneH";
+		arrowWidth = 0.015;
+		arrowHeight = 0.02;
+		iconArrowUp = "\ca\ui\data\ui_action_arrow_up_gs.paa";
+		iconArrowDown = "\ca\ui\data\ui_action_arrow_down_gs.paa";
+		colorBackground[] = {0, 0, 0, 0.0};
+		colorText[] = {0.95, 0.95, 0.95, 1};
+		colorSelect[] = {0.1, 0.1, 0.1, 1};
+		colorBackgroundSelected[] = {0.95, 0.95, 0.95, 1};
+		background = "\ca\ui\data\igui_hud_corner.paa";
+		underlineSelected = 0;
+	};
+	
+	class DefaultAction {
+		font = "EtelkaNarrowMediumPro";
+		size = 0.034;
+		colorText[] = {0.95, 0.95, 0.95, 1};
+		shadow = 2;
+		showHint = 0;
+		showNext = 0;
+		showLine = 0;
+		relativeToCursor = 1;
+		offsetX = -0.043;
+		offsetY = 0.07;
+		hotspotX = 0.0;
+		hotspotY = 0.0;
+	};
+	
+	class GroupInfo {
+		class Semaphore {};
+		imageDefaultWeapons = "\ca\ui\data\cmdbar_unarmed_ca.paa";
+		imageNoWeapons = "\ca\ui\data\cmdbar_unarmed_ca.paa";
+	};
+	
+	class CommandBar {
+		left = "-0.032 + SafeZoneX";
+		top = "(SafeZoneH + SafeZoneY) - (1 - 0.851)";
+		width = 1.06;
+		height = 0.08;
+		imageDefaultWeapons = "ca\ui\data\cmdbar_clean_ca.paa";
+		imageNoWeapons = "ca\ui\data\cmdbar_unit_noweapon_ca.paa";
+		imageCommander = "ca\ui\data\cmdbar_commander_ca.paa";
+		imageDriver = "ca\ui\data\cmdbar_driver_ca.paa";
+		imageGunner = "ca\ui\data\cmdbar_gunner_ca.paa";
+		imageCargo = "ca\ui\data\cmdbar_cargo_ca.paa";
+		dimm = 0.3;
+		colorRedTeam[] = {1.0, 0, 0, 1.0};
+		colorBlueTeam[] = {0, 0, 1.0, 1.0};
+		colorGreenTeam[] = {0.95, 0.95, 0.95, 1};
+		colorYellowTeam[] = {0.8, 0.8, 0, 1.0};
+		colorWhiteTeam[] = {0.95, 0.95, 0.95, 1};
+		
+		class prevPage {
+			x = 0.032;
+			y = 0.029;
+			w = 0.0196078;
+			h = 0.104575;
+			color[] = {0.95, 0.95, 0.95, 1};
+			texture = "ca\ui\data\cmdbar_leftarrow_ca.paa";
+		};
+		
+		class nextPage {
+			x = 0.0;
+			y = 0.029;
+			w = 0.0196078;
+			h = 0.104575;
+			color[] = {0.95, 0.95, 0.95, 1};
+			texture = "ca\ui\data\cmdbar_rightarrow_ca.paa";
+		};
+		
+		class UnitInfo {
+			class GroupIcon {
+				x = 0.016;
+				y = 0.012;
+				w = 0.05733;
+				h = 0.07623;
+			};
+			
+			class HcGroupText {
+				x = 0.045;
+				y = 0.083;
+				font = "Zeppelin32";
+				SizeEx = 0.03921;
+			};
+			
+			class UnitBackground {
+				x = 0;
+				y = 0;
+				w = 0.156863;
+				h = 0.20915;
+				textureNormal = "ca\ui\data\cmdbar_background_ca.paa";
+				textureSelected = "ca\ui\data\cmdbar_selected_ca.paa";
+				texturePlayer = "ca\ui\data\cmdbar_player_ca.paa";
+				textureFocus = "ca\ui\data\cmdbar_background_ca.paa";
+			};
+			
+			class UnitFocus {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				color[] = {1.0, 1.0, 1.0, 0};
+				texture = "#(argb,8,8,3)color(0,0,0,0)";
+			};
+			
+			class UnitIcon {
+				x = 0.0;
+				y = 0.0;
+				w = 0.091;
+				h = 0.121;
+				color[] = {0.95, 0.95, 0.95, 1};
+				colorPlayer[] = {0.95, 0.95, 0.95, 1};
+				colorNoAmmo[] = {0.8, 0.4, 0.0, 1};
+				colorWounded[] = {0.8, 0, 0, 1};
+				colorWoundedFade[] = {0, 0, 0, 1};
+				colorNoFuel[] = {0.8, 0.7, 0, 1};
+			};
+			
+			class Semaphore {
+				x = 0;
+				y = 0;
+				w = 0.156863;
+				h = 0.20915;
+				color[] = {0.8, 0, 0, 1};
+				texture = "ca\ui\data\cmdbar_donotfire_ca.paa";
+			};
+			
+			class CommandBackground {
+				x = 0;
+				y = 0;
+				w = 0.156863;
+				h = 0.0522876;
+				color[] = {1.0, 1.0, 1.0, 1};
+				texture = "ca\ui\data\cmdbar_order_background_ca.paa";
+			};
+			
+			class CommandText {
+				x = 0.045;
+				y = 0;
+				w = 0.091;
+				h = 0.033;
+				color[] = {1.0, 1.0, 1.0, 1};
+				font = "Zeppelin32";
+				SizeEx = 0.03921;
+			};
+			
+			class UnitSpecialRole {
+				x = 0.053;
+				y = 0.033;
+				w = 0.0392157;
+				h = 0.0522876;
+				color[] = {0.95, 0.95, 0.95, 1};
+			};
+			
+			class VehicleNumberBackground {
+				x = -0.002;
+				y = 0.072;
+				w = 0.0392157;
+				h = 0.0522876;
+				color[] = {0.023529, 0, 0.0313725, 1};
+				texture = "ca\ui\data\cmdbar_commander_number_ca.paa";
+			};
+			
+			class VehicleNumberText {
+				x = 0.017;
+				y = 0.08;
+				w = 0.022;
+				h = 0.029;
+				colorText[] = {0.023529, 0, 0.0313725, 1};
+				font = "Zeppelin32";
+				SizeEx = 0.03921;
+			};
+			
+			class UnitRole {
+				x = 0.026;
+				y = 0.072;
+				w = 0.0392157;
+				h = 0.0522876;
+				color[] = {0.023529, 0, 0.0313725, 1};
+			};
+			
+			class UnitNumberBackground {
+				x = 0.061;
+				y = 0.08;
+				w = 0.0392157;
+				h = 0.0522876;
+				color[] = {0.023529, 0, 0.0313725, 1};
+				texture = "ca\ui\data\cmdbar_unitnumberbackground_ca.paa";
+			};
+			
+			class UnitNumberText {
+				x = 0.077;
+				y = 0.083;
+				w = 0.022;
+				h = 0.029;
+				colorText[] = {0.023529, 0, 0.0313725, 1};
+				font = "Zeppelin32";
+				SizeEx = 0.03921;
+			};
+			
+			class CombatMode {
+				x = 0.064;
+				y = 0.005;
+				w = 0.0392157*0.6;
+				h = 0.0522876*0.6;
+				textureMCareless = "ca\ui\data\icon_combatmode_careless_ca.paa";
+				textureMSafe = "ca\ui\data\icon_combatmode_safe_ca.paa";
+				textureMAware = "ca\ui\data\icon_combatmode_aware_ca.paa";
+				textureMCombat = "ca\ui\data\icon_combatmode_combat_ca.paa";
+				textureMStealth = "ca\ui\data\icon_combatmode_stealth_ca.paa";
+			};
+		};
+	};
+	
+	class ConnectionLost {
+		font = "EtelkaNarrowMediumPro";
+		size = 0.034;
+		color[] = {0.8, 0, 0, 1.0};
+	};
+	
+	class Cursor {
+		font = "EtelkaNarrowMediumPro";
+		size = 0.034;
+		activeWidth = 0.0392157;
+		activeHeight = 0.0522876;
+		activeMinimum = 1.1;
+		activeMaximum = 1.1;
+		aim = "\ca\ui\data\cursor_aim_ca.paa";
+		weapon = "\ca\ui\data\cursor_w_airMG_gs.paa";
+		outArrow = "\ca\ui\data\icon_offarrow_ca.paa";
+		select_target = "\ca\ui\data\cursor_w_target_gs.paa";
+		lock_target = "\ca\ui\data\cursor_w_laserlock_gs.paa";
+		gunner_lock = "\ca\ui\data\gunner_lock.paa";
+		select = "\ca\ui\data\icon_unit_ca.paa";
+		selectOver = "\ca\ui\data\cursor_select_unit_ca.paa";
+		me = "\ca\ui\data\cursor_circle_ca.paa";
+		leader = "\ca\ui\data\icon_unit_teamleader_ca.paa";
+		mission = "\ca\ui\data\icon_task_ca.paa";
+		unitUnconscious = "\ca\ui\data\icon_unit_agony_ca.paa";
+		assault = "\ca\ui\data\icon_attack_ca.paa";
+		board = "\ca\ui\data\icon_task_board_ca.paa";
+		customMark = "\ca\ui\data\icon_custom_task_ca.paa";
+		iconBoardIn = "\ca\ui\data\icon_board_into_ca.paa";
+		iconBoardOut = "\ca\ui\data\icon_board_out_ca.paa";
+		iconMove = "\ca\ui\data\icon_mission_move_ca.paa";
+		iconJoin = "\ca\ui\data\icon_mission_join_ca.paa";
+		iconHealAt = "#(argb,8,8,3)color(0,0,0,0)";
+		iconRepairAt = "\ca\ui\data\icon_mission_repair_ca.paa";
+		iconRearmAt = "\ca\ui\data\icon_mission_rearm_ca.paa";
+		iconRefuelAt = "\ca\ui\data\icon_mission_refuel_ca.paa";
+		iconComplex = "ca\ui\data\Cursor_hand_CA.paa";
+		iconSupport = "#(argb,8,8,3)color(0,0,0,0)";
+		iconInFormation = "#(argb,8,8,3)color(0,0,0,0)";
+		iconCursorSupport = "\ca\ui\data\cursor_support_ca.paa";
+		iconRepairVehicle = "\ca\ui\data\icon_mission_repair_ca.paa";
+		tactical = "\ca\ui\data\cursor_tactical_ca.paa";
+		move = "\ca\ui\data\cursor_basic_ca.paa";
+		selected = "\ca\ui\data\cursor_selected_ca.paa";
+		attack = "\ca\ui\data\cursor_attack_ca.paa";
+		getIn = "\ca\ui\data\cursor_getin_ca.paa";
+		watch = "\ca\ui\data\cursor_igui_scroll_ca.paa";
+		meColor[] = {0, 0, 0, 0.2};
+		dimmMe = 0.2;
+		dimmMeStartTime = 5;
+		dimmMeEndTime = 10;
+		dimmCmdStartTime = 5;
+		dimmCmdEndTime = 10;
+		selectColor[] = {0.95, 0.95, 0.95, 1};
+		leaderColor[] = {0.863, 0.584, 0.0, 1};
+		missionColor1[] = {0.863, 0.584, 0.0, 1};
+		missionColor2[] = {0.863, 0.584, 0.0, 1};
+		unitUnconsciousColor[] = {0.196, 0.592, 0.706, 1};
+		enemyActiveColor[] = {0.706, 0.0745, 0.0196, 1};
+		customMarkColor[] = {0.95, 0.95, 0.95, 1};
+		assaultColor[] = {0.706, 0.0745, 0.0196, 1};
+		boardColor[] = {0.863, 0.584, 0.0, 1};
+		iconMoveColor[] = {0.863, 0.584, 0.0, 1};
+		iconJoinColor[] = {0.863, 0.584, 0.0, 1};
+		iconHealAtColor[] = {0.863, 0.584, 0.0, 1};
+		iconRepairAtColor[] = {0.863, 0.584, 0.0, 1};
+		iconRearmAtColor[] = {0.863, 0.584, 0.0, 1};
+		iconRefuelAtColor[] = {0.863, 0.584, 0.0, 1};
+		iconSupportColor[] = {0.863, 0.584, 0.0, 1};
+		iconInFormationColor[] = {0.863, 0.584, 0.0, 1};
+		blinkingPeriod = 2.0;
+		color[] = {0.95, 0.95, 0.95, 1};
+		colorBackground[] = {0, 0, 0, 0.0};
+		colorLocked[] = {1, 0, 0, 1};
+		dimm = 0.15;
+		shadow = 2;
+		infoTextShadow = 2;
+		
+		class Sign {
+			height = 2.7;
+			widthSector = 2.6;
+			widthGroup = 2.5;
+			widthUnit = 2.4;
+		};
+	};
+	
+	class PeripheralVision {
+		cueTexture = "ca\ui\data\tacticaldisplay_target_gs.paa";
+		bloodTexture = "ca\ui\data\periph_blood_ca.paa";
+		bloodColor[] = {0,0,0,0};
+		cueColor[] = {0,0,0,0};
+		cueEnemyColor[] = {0,0,0,0};
+		cueFriendlyColor[] = {0,0,0,0};
+	};
+	
+	class HitZones {
+		shadow = false;
+		hitZonesTexture = "ca\ui\data\igui_hitzones_ca.paa";
+	};
 };
 
 class RscPictureGUI
@@ -201,7 +729,21 @@ class RscPictureGUI
 
 
 class RscStructuredText {
-	class Attributes;
+	x = 0;
+	y = 0;
+	h = 0.035;
+	w = 0.1;
+	text = "";
+	size = 0.03921;
+	colorText[] = {0.95, 0.95, 0.95, 1};
+	shadow = 2;
+	
+	class Attributes {
+		font = "Zeppelin32";
+		color = "#e0d8a6";
+		align = "center";
+		shadow = true;
+	};
 };
 class RscStructuredTextGUI: RscStructuredText
 {

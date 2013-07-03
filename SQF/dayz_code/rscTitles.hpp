@@ -1,7 +1,54 @@
 class RscPicture;
 class RscButton;
 class CA_IGUI_Title;
-class RscText;
+
+class RscText {
+	x = 0;
+	y = 0;
+	h = 0.037;
+	w = 0.3;
+	style = 0;
+	shadow = 2;
+	font = "Zeppelin32";
+	SizeEx = 0.03921;
+	colorText[] = {0.95, 0.95, 0.95, 1};
+	colorBackground[] = {0, 0, 0, 0};
+};
+
+class RscLine : RscText {
+	idc = -1;
+	style = 176;
+	x = 0.17;
+	y = 0.48;
+	w = 0.66;
+	h = 0;
+	text = "";
+	colorBackground[] = {0, 0, 0, 0};
+	colorText[] = {0.95, 0.95, 0.95, 1};
+};
+class RscEdit {
+	style = 0x00 + 0x40;
+	font = "Zeppelin32";
+	shadow = 2;
+	sizeEx = 0.03921;
+	colorBackground[] = {0, 0, 0, 1};
+	colorText[] = {0.95, 0.95, 0.95, 1};
+	colorSelection[] = {1, 1, 1, 1.0};
+};
+
+class RscIGUIText : RscText {
+	sizeEx = 0.034;
+	colorText[] = {0.95, 0.95, 0.95, 1};
+	style = 0;
+};
+
+class RscIGUIValue : RscIGUIText {
+	sizeEx = 0.034;
+	colorText[] = {0.95, 0.95, 0.95, 1};
+	font = "Zeppelin32Mono";
+	style = 0;
+	fixedWidth = 1;
+};
 class RscControlsGroup;
 class RscLineBreak;
 class RscIGUIShortcutButton;
@@ -14,6 +61,45 @@ class RscStandardDisplay;
 class RscProgress;
 class RscProgressNotFreeze;
 class RscButtonTextOnly;
+
+class RscIGProgress : RscProgress {
+	style = 1;
+	w = 0.009;
+	h = 0.178;
+	colorText[] = {0.95, 0.95, 0.95, 1};
+	colorBar[] = {1, 1, 1, 1};
+	texture = "#(argb,8,8,3)color(1,1,1,1)";
+};
+
+class RscListBox {
+	style = 16;
+	font = "Zeppelin32";
+	shadow = 2;
+	sizeEx = 0.03921;
+	color[] = {1, 1, 1, 1};
+	colorText[] = {0.95, 0.95, 0.95, 1};
+	colorScrollbar[] = {0.95, 0.95, 0.95, 1};
+	colorSelect[] = {0.95, 0.95, 0.95, 1};
+	colorSelect2[] = {0.95, 0.95, 0.95, 1};
+	colorSelectBackground[] = {0, 0, 0, 1};
+	colorSelectBackground2[] = {0.8784, 0.8471, 0.651, 1.0};
+	period = 1.2;
+	colorBackground[] = {0, 0, 0, 1};
+	maxHistoryDelay = 1.0;
+	autoScrollSpeed = -1;
+	autoScrollDelay = 5;
+	autoScrollRewind = 0;
+	
+	class ScrollBar {
+		color[] = {1, 1, 1, 0.6};
+		colorActive[] = {1, 1, 1, 1};
+		colorDisabled[] = {1, 1, 1, 0.3};
+		thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
+		arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
+		arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
+		border = "\ca\ui\data\ui_border_scroll_ca.paa";
+	};
+};
 
 class RscDisplayLoading 
 {
@@ -365,6 +451,7 @@ class RscDisplayGear
 			x = 0.502419;
 			y = 0.0492156;
 			w = 0.456;
+			colorText[] = {1,1,1,0};
 		};
 		class Available_items_Text: RscText
 		{
@@ -1095,7 +1182,7 @@ class RscTitles
 				y = 0.418158 * safezoneH + safezoneY;
 				w = 0.0634286 * safezoneW;
 				h = 0.136829 * safezoneH;
-				colorText[] = {1,1,1,1};
+				colorText[] = {0.95, 0.95, 0.95, 1};
 			};
 			class RscText_1400: RscPictureGUI
 			{
@@ -1138,6 +1225,7 @@ class RscTitles
 				y = 0.93 * safezoneH + safezoneY; //1
 				w = 0.06;
 				h = 0.08;
+				colorText[] = {0.95, 0.95, 0.95, 1};
 			};
 			class RscPicture_1200: RscPictureGUI
 			{
@@ -1147,6 +1235,8 @@ class RscTitles
 				y = 0.86 * safezoneH + safezoneY;//2
 				w = 0.06;
 				h = 0.08;
+				colorText[] = {0.95, 0.95, 0.95, 1};
+
 			};
 			class RscPicture_1202: RscPictureGUI
 			{
@@ -1156,6 +1246,8 @@ class RscTitles
 				y = 0.79 * safezoneH + safezoneY; //3
 				w = 0.06;
 				h = 0.08;
+				colorText[] = {0.95, 0.95, 0.95, 1};
+
 			};
 			class RscPicture_1208: RscPictureGUI
 			{
@@ -1165,6 +1257,8 @@ class RscTitles
 				y = 0.72 * safezoneH + safezoneY; //3
 				w = 0.06;
 				h = 0.08;
+				colorText[] = {0.95, 0.95, 0.95, 1};
+
 			};
 			class RscPicture_1207 : RscPictureGUI {
 				idc = 1207;
@@ -1173,6 +1267,8 @@ class RscTitles
 				y = "0.65 * safezoneH + safezoneY";
 				w = 0.06;
 				h = 0.08;
+				colorText[] = {0.95, 0.95, 0.95, 1};
+
 			};
 			class RscPicture_1203: RscPictureGUI
 			{
@@ -1182,7 +1278,7 @@ class RscTitles
 				y = 0.58 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
-				colorText[] = {1,1,1,1};
+				colorText[] = {1,1,1,0.85};
 			};
 			class RscPicture_1204: RscPictureGUI
 			{
@@ -1192,7 +1288,7 @@ class RscTitles
 				y = 0.51 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
-				colorText[] = {1,1,1,1};
+				colorText[] = {1,1,1,0.85};
 			};
 			class RscPicture_1205: RscPictureGUI
 			{
@@ -1202,6 +1298,8 @@ class RscTitles
 				y = 0.30 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
+				colorText[] = {1,1,1,0.85};
+
 			};
 			class RscPicture_1206: RscPictureGUI
 			{
@@ -1211,6 +1309,8 @@ class RscTitles
 				y = 0.37 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
+				colorText[] = {1,1,1,0.85};
+
 			};
 			class RscPicture_1501: RscPictureGUI
 			{
@@ -1220,6 +1320,8 @@ class RscTitles
 				y = 0.95 * safezoneH + safezoneY; //1
 				w = 0.04;
 				h = 0.053333;
+				colorText[] = {0.95, 0.95, 0.95, 1};
+
 			};
 			class RscPicture_1502: RscPictureGUI
 			{
@@ -1229,6 +1331,8 @@ class RscTitles
 				y = 0.816666 * safezoneH + safezoneY; //3
 				w = 0.04;
 				h = 0.053333;
+				colorText[] = {0.95, 0.95, 0.95, 1};
+
 			};
 		};
 		class Controls{
@@ -1276,7 +1380,7 @@ class RscTitles
 				y = 0.86 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
-				colorText[] = {1,1,1,0.5};
+				colorText[] = {.1,.1,.1,0.5};
 			};
 			class RscPicture_1304: RscPictureGUI
 			{
@@ -1286,6 +1390,7 @@ class RscTitles
 				y = 0.3 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
+				colorText[] = {1,1,1,0.9};
 			};
 			class RscPicture_1305: RscPictureGUI
 			{
@@ -1295,6 +1400,7 @@ class RscTitles
 				y = 0.37 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
+				colorText[] = {1,1,1,0.9};
 			};
 			class RscPicture_1307 : RscPictureGUI {
 				idc = 1307;
@@ -1323,6 +1429,903 @@ class RscTitles
 				w = 0.04;
 				h = 0.053333;
 			};
+		};
+	};
+};
+
+class CA_Black_Back;
+class RscMapControl;
+class IGUIBack;
+class RscIGUIListBox;
+class RscHTML;
+class RscObject;
+class RscDisplayMainMap {
+	saveParams = 1;
+	
+	class controlsBackground {
+		class Map {};
+		
+		class CA_Black : CA_Black_Back {};
+		
+		class CA_Map : RscMapControl {
+			x = "SafeZoneXAbs";
+			y = "SafeZoneY";
+			w = "SafeZoneWAbs";
+			h = "SafeZoneH";
+		};
+	};
+	
+	class controls {
+		class DiaryIndex {};
+		class DiaryAdd {};
+		class DiarySort {};
+		class DiaryFilter {};
+		class Diary {};
+		
+		class CA_MainBackground : IGUIBack {
+			idc = 1020;
+			x = "SafeZoneX + 0.010 * SafeZoneW";
+			y = "SafeZoneY + 0.031";
+			w = "0.98*SafeZoneW";
+			h = 0.082;
+			colorbackground[] = {0.1961, 0.1451, 0.0941, 0.85};
+		};
+		
+		class CA_TopicsBackground : IGUIBack {
+			idc = 1021;
+			x = "0.010*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.117";
+			w = "0.146*SafeZoneW";
+			h = 0.53;
+			colorbackground[] = {0.1961, 0.1451, 0.0941, 0.85};
+		};
+		
+		class CA_SubTopicsBackground : IGUIBack {
+			idc = 1022;
+			x = "0.16*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.117";
+			w = "0.283*SafeZoneW";
+			h = 0.53;
+			colorbackground[] = {0.1961, 0.1451, 0.0941, 0.85};
+		};
+		
+		class CA_ContentBackground : IGUIBack {
+			idc = 1023;
+			x = "0.446*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.117";
+			w = "SafeZoneW * 0.544";
+			h = 0.832;
+			colorbackground[] = {0.1961, 0.1451, 0.0941, 0.85};
+		};
+		
+		class CA_PlayerName {};
+		class CA_PlayerRank {};
+		class CA_MissionName {};
+		class CA_CurrentTaskLabel {};
+		class CA_CurrentTask {};
+		
+		class DiaryList : RscIGUIListBox {
+			idc = 1001;
+			onLBSelChanged = "[_this select 0, _this select 1, 'List'] call compile preprocessFileLineNumbers 'ca\Warfare2\Scripts\Client\GUI\GUI_logEH.sqf';       private ['_dummy']; _dummy = [_this,'onLBSelChanged'] call compile preprocessfile '\ca\ui\scripts\server_interface.sqf';";
+			default = 1;
+			x = "0.010*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.137";
+			w = "0.146*SafeZoneW";
+			h = 0.6;
+		};
+		
+		class CA_DiaryIndex : RscIGUIListBox {
+			idc = 1002;
+			onLBSelChanged = "[_this select 0, _this select 1, 'Index'] call compile preprocessFileLineNumbers 'ca\Warfare2\Scripts\Client\GUI\GUI_logEH.sqf';";
+			default = 0;
+			x = "0.16*SafeZoneW  + SafeZoneX";
+			y = "SafeZoneY + 0.137";
+			w = "0.283*SafeZoneW";
+			h = 0.6;
+			sizeEx = 0.034;
+		};
+		
+		class CA_DiaryGroup : RscControlsGroup {
+			idc = 1013;
+			x = "0.446*SafeZoneW  + SafeZoneX";
+			y = "SafeZoneY + 0.137";
+			w = "0.534*SafeZoneW";
+			h = 0.718;
+			
+			class VScrollbar {
+				autoScrollSpeed = -1;
+				autoScrollDelay = 5;
+				autoScrollRewind = 0;
+				color[] = {1, 1, 1, 1};
+				width = 0.01;
+			};
+			
+			class HScrollbar {
+				color[] = {1, 1, 1, 0};
+				height = 0.001;
+			};
+			
+			class Controls {
+				class CA_Diary : RscHTML {
+					idc = 1003;
+					cycleLinks = 0;
+					cycleAllLinks = 0;
+					default = 0;
+					x = "0.01*SafeZoneW";
+					y = 0.0;
+					w = "0.514*SafeZoneW";
+					h = 1.807;
+					colorText[] = {0.95, 0.95, 0.95, 1};
+					
+					class H1 {
+						font = "Zeppelin32";
+						fontBold = "Zeppelin32";
+						sizeEx = 0.034;
+					};
+					
+					class P {
+						font = "Zeppelin32";
+						fontBold = "Zeppelin32";
+						sizeEx = 0.034;
+					};
+				};
+			};
+		};
+		
+		class HC_tooltip_back : IGUIBack {
+			idc = 1124;
+			x = 0.0;
+			y = 0.0;
+			w = 0.0;
+			h = 0.0;
+			colorBackground[] = {0.2, 0.15, 0.1, 0.8};
+		};
+		
+		class HC_tooltip_text : RscStructuredText {
+			idc = 1125;
+			x = 0.0;
+			y = 0.0;
+			w = 0.0;
+			h = 0.0;
+			size = 0.035;
+			
+			class Attributes {
+				font = "Zeppelin32";
+				color = "#B6F862";
+				align = "left";
+				shadow = true;
+			};
+		};
+	};
+	
+	class objects {
+		class Watch : RscObject {
+			model = "\ca\ui\Watch.p3d";
+			x = 0.08;
+			xBack = 0.4;
+			y = 0.925;
+			yBack = 0.5;
+			z = 0.21;
+			zBack = 0.11;
+			enableZoom = 1;
+			direction[] = {0, 1, 7.2};
+			up[] = {0, 0, -1};
+			scale = 0.4;
+		};
+		
+		class Compass : RscObject {
+			model = "\ca\ui\Compass.p3d";
+			selectionArrow = "";
+			x = 0.16;
+			xBack = 0.6;
+			y = 0.925;
+			yBack = 0.5;
+			z = 0.2;
+			zBack = 0.1;
+			enableZoom = 1;
+			direction[] = {1, 0, 0};
+			up[] = {0, 1, 0};
+			scale = 0.35;
+		};
+		
+		class GPS : RscObject {
+			model = "\ca\ui\gps.p3d";
+			x = 0.36;
+			xBack = 0.7;
+			y = 0.925;
+			yBack = 0.5;
+			z = 0.22;
+			zBack = 0.12;
+			scale = 0.3;
+			
+			class Areas {
+				class Display {
+					class controls {
+						class GPSSquare : RscText {
+							idc = 75;
+							x = 0;
+							y = 0.56;
+							w = 1;
+							h = 0.5;
+							colorText[] = {0.2314, 0.2588, 0.1373, 1.0};
+							sizeEx = 0.4;
+						};
+						
+						class GPS_ALT : RscText {
+							idc = 77;
+							x = 0.25;
+							y = 0.31;
+							w = 1;
+							h = 0.3;
+							colorText[] = {0.2314, 0.2588, 0.1373, 1.0};
+							sizeEx = 0.23;
+						};
+						
+						class GPS_Heading : RscText {
+							idc = 78;
+							x = 0.25;
+							y = 0.073;
+							w = 1;
+							h = 0.3;
+							colorText[] = {0.2314, 0.2588, 0.1373, 1.0};
+							sizeEx = 0.23;
+						};
+					};
+				};
+			};
+		};
+		
+		class WalkieTalkie : RscObject {
+			model = "\ca\ui\radio.p3d";
+			x = 0.56;
+			xBack = 0.8;
+			y = 0.925;
+			yBack = 0.5;
+			z = 0.22;
+			zBack = 0.12;
+			scale = 0.15;
+			
+			class Areas {
+				class Papir {
+					class controls {
+						class RscRadioText : RscActiveText {
+							sizeEx = 0.17;
+							x = 0.005;
+							y = 0.02;
+							h = 0.1;
+						};
+						
+						class RadioAlpha : RscRadioText {
+							y = 0.05;
+						};
+						
+						class RadioBravo : RscRadioText {
+							y = 0.17;
+						};
+						
+						class RadioCharlie : RscRadioText {
+							y = 0.29;
+						};
+						
+						class RadioDelta : RscRadioText {
+							y = 0.41;
+						};
+						
+						class RadioEcho : RscRadioText {
+							y = 0.53;
+						};
+						
+						class RadioFoxtrot : RscRadioText {
+							y = 0.65;
+						};
+						
+						class RadioGolf : RscRadioText {
+							y = 0.77;
+						};
+						
+						class RadioHotel : RscRadioText {
+							y = 0.89;
+						};
+						
+						class RadioIndia : RscRadioText {
+							y = 1.01;
+						};
+						
+						class RadioJuliet : RscRadioText {
+							y = 1.13;
+						};
+					};
+				};
+			};
+		};
+	};
+};
+
+class RscChatListDefault {
+	idc = 9977;
+};
+
+class CA_SpeedBackground : RscEdit {
+	idc = -1;
+	sizeEx = 0.034;
+	colorBackground[] = {0, 0, 0, 0};
+	colorText[] = {0, 0, 1, 1};
+	colorSelection[] = {0, 0, 0, 0};
+	style = 0x02 + 0x40;
+	shadow = 2;
+	type = VSoft;
+	x = 0.314;
+	y = "0.017 + SafeZoneY";
+	w = 0.06;
+	h = 0.033;
+};
+class RscInGameUI {
+	colorReady[] = {1, 1, 1, 1.0};
+	colorPrepare[] = {0.863, 0.584, 0.0, 1};
+	colorUnload[] = {0.706, 0.0745, 0.0196, 1};
+	class RscUnitInfo {
+		idd = 300;
+		updateWidthByWeapon = 0;
+		updateHeightByCrew = 0;
+		updateWidthByCrew = 0;
+		controls[] = {"CA_Weapon", "CA_Mode", "CA_Ammo", "CA_ValueFuelBackground", "CA_ValueFuel", "CA_GunnerWeapon", "CA_SpeedBackground", "CA_TextSpeed", "CA_Speed", "CA_ValueArmor", "CA_TextFlares", "CA_TextFlaresMode"};
+		
+		class CA_Mode : RscIGUIText {
+			idc = 149;
+			style = 0;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.054 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+		};
+		
+		class CA_Ammo : RscIGUIValue {
+			idc = 119;
+			style = 1;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.054 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+		};
+		
+		class CA_Weapon : RscIGUIText {
+			idc = 118;
+			style = 0;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.015 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+		};
+		
+		class CA_GunnerWeapon : RscIGUIText {
+			idc = 150;
+			style = 0;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.132 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+			SizeEx = 0.034;
+		};
+		
+		class CA_SpeedBackground : RscEdit {
+			idc = -1;
+			sizeEx = 0.034;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {0.95,0.95,0.95,1};
+			colorSelection[] = {0, 0, 0, 0};
+			style = 0x02 + 0x40;
+			shadow = 2;
+			type = VSoft;
+			x = 0.314;
+			y = "0.017 + SafeZoneY";
+			w = 0.06;
+			h = 0.033;
+		};
+		
+		class CA_TextSpeed : RscIGUIText {
+			style = 0;
+			x = 0.257;
+			y = "0.015 + SafeZoneY";
+			w = 0.12;
+			text = SPD;
+		};
+		
+		class CA_Speed : RscIGUIValue {
+			idc = 121;
+			style = 1;
+			x = 0.257;
+			y = "0.015 + SafeZoneY";
+			w = 0.12;
+		};
+		
+		class CA_ValueFuelBackground : RscPicture {
+			idc = -1;
+			shadow = 2;
+			x = "0.018 + SafeZoneX";
+			y = "0.01 + SafeZoneY";
+			w = 0.0196078;
+			h = 0.20915;
+			colorText[] = {0.95,0.95,0.95,1};
+			text = "\ca\ui\data\ui_fuel_background.paa";
+		};
+		
+		class CA_ValueFuel : RscIGProgress {
+			idc = 113;
+			x = "0.02 + SafeZoneX";
+			y = "0.036 + SafeZoneY";
+			w = 0.01;
+			h = 0.18;
+			texture = "\ca\ui\data\igui_fuel_progress.paa";
+		};
+		
+		class CA_ValueArmor : RscListBox {
+			idc = 111;
+			sizeEx = 0.03525;
+			x = "0.040 + SafeZoneX";
+			y = "0.016 + SafeZoneY";
+			w = 0.0357;
+			h = 0.76;
+		};
+		
+		class CA_TextFlaresMode : RscIGUIText {
+			idc = 152;
+			style = 0;
+			sizeEx = 0.02674;
+			x = "0.078 + SafeZoneX";
+			y = "0.012 + SafeZoneY";
+			w = "0.161*SafezoneW";
+		};
+		
+		class CA_TextFlares : RscIGUIValue {
+			idc = 151;
+			style = 1;
+			sizeEx = 0.02674;
+			x = "0.078  + SafeZoneX";
+			y = "0.012 + SafeZoneY";
+			w = "0.161*SafezoneW";
+		};
+	};
+
+	class RscUnitInfoTank {
+			idd = 300;
+			updateWidthByWeapon = 0;
+			updateHeightByCrew = 0;
+			updateWidthByCrew = 0;
+			controls[] = {"CA_Weapon", "CA_Mode", "CA_Ammo", "CA_ValueFuelBackground", "CA_ValueFuel", "CA_GunnerWeapon", "CA_SpeedBackground", "CA_TextSpeed", "CA_Speed", "CA_HeadingBackground", "CA_Heading", "CA_ValueArmor", "CA_TextFlares", "CA_TextFlaresMode"};
+			
+			class CA_Mode : RscIGUIText {
+				idc = 149;
+				style = 0;
+				x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+				y = "0.054 + SafeZoneY";
+				w = 0.214;
+				h = 0.039;
+			};
+			
+			class CA_Ammo : RscIGUIValue {
+				idc = 119;
+				style = 1;
+				x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+				y = "0.054 + SafeZoneY";
+				w = 0.214;
+				h = 0.039;
+			};
+			
+			class CA_Weapon : RscIGUIText {
+				idc = 118;
+				style = 0;
+				x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+				y = "0.015 + SafeZoneY";
+				w = 0.214;
+				h = 0.039;
+			};
+			
+			class CA_GunnerWeapon : RscIGUIText {
+				idc = 150;
+				style = 0;
+				x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+				y = "0.132 + SafeZoneY";
+				w = 0.214;
+				h = 0.039;
+				SizeEx = 0.034;
+			};
+			
+			class CA_SpeedBackground : RscEdit {
+				idc = -1;
+				sizeEx = 0.034;
+				colorBackground[] = {0, 0, 0, 0};
+				colorText[] = {0.95,0.95,0.95,1};
+				colorSelection[] = {0, 0, 0, 0};
+				style = 0x02 + 0x40;
+				shadow = 2;
+				type = VSoft;
+				x = 0.314;
+				y = "0.017 + SafeZoneY";
+				w = 0.06;
+				h = 0.033;
+			};
+			
+			class CA_TextSpeed : RscIGUIText {
+				style = 0;
+				x = 0.257;
+				y = "0.015 + SafeZoneY";
+				w = 0.12;
+				text = SPD;
+			};
+			
+			class CA_Speed : RscIGUIValue {
+				idc = 121;
+				style = 1;
+				x = 0.257;
+				y = "0.015 + SafeZoneY";
+				w = 0.12;
+			};
+			
+			class CA_HeadingBackground : RscEdit {
+				idc = -1;
+				sizeEx = 0.034;
+				colorBackground[] = {0, 0, 0, 0};
+				colorText[] = {0.95,0.95,0.95,1};
+				colorSelection[] = {0, 0, 0, 0};
+				style = 0x02 + 0x40;
+				type = VSoft;
+				x = 0.469;
+				y = "0.017 + SafeZoneY";
+				w = 0.061;
+				h = 0.033;
+			};
+			
+			class CA_Heading : RscIGUIValue {
+				idc = 148;
+				style = 2;
+				x = 0.45;
+				y = "0.015 + SafeZoneY";
+				w = 0.1;
+			};
+			
+			class CA_ValueFuelBackground : RscPicture {
+				idc = -1;
+				shadow = 2;
+				x = "0.018 + SafeZoneX";
+				y = "0.01 + SafeZoneY";
+				w = 0.0196078;
+				h = 0.20915;
+				colorText[] = {0.95,0.95,0.95,1};
+				text = "\ca\ui\data\ui_fuel_background.paa";
+			};
+			
+			class CA_ValueFuel : RscIGProgress {
+				idc = 113;
+				x = "0.02 + SafeZoneX";
+				y = "0.036 + SafeZoneY";
+				w = 0.01;
+				h = 0.18;
+				texture = "\ca\ui\data\igui_fuel_progress.paa";
+			};
+			
+			class CA_ValueArmor : RscListBox {
+				idc = 111;
+				sizeEx = 0.03525;
+				x = "0.040 + SafeZoneX";
+				y = "0.016 + SafeZoneY";
+				w = 0.0357;
+				h = 0.76;
+			};
+			
+			class CA_TextFlaresMode : RscIGUIText {
+				idc = 152;
+				style = 0;
+				sizeEx = 0.02674;
+				x = "0.078 + SafeZoneX";
+				y = "0.012 + SafeZoneY";
+				w = "0.161*SafezoneW";
+			};
+			
+			class CA_TextFlares : RscIGUIValue {
+				idc = 151;
+				style = 1;
+				sizeEx = 0.02674;
+				x = "0.078  + SafeZoneX";
+				y = "0.012 + SafeZoneY";
+				w = "0.161*SafezoneW";
+			};
+		};
+
+	class RscUnitVehicle {
+		idd = 300;
+		updateWidthByWeapon = 0;
+		updateHeightByCrew = 0;
+		updateWidthByCrew = 0;
+		controls[] = {"CA_Weapon", "CA_Mode", "CA_Ammo", "CA_ValueFuelBackground", "CA_ValueFuel", "CA_GunnerWeapon", "CA_TextSpeed", "CA_Speed", "CA_ValueArmor", "CA_TextFlares", "CA_TextFlaresMode"};
+		
+		class CA_Mode : RscIGUIText {
+			idc = 149;
+			style = 0;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.054 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+		};
+		
+		class CA_Ammo : RscIGUIValue {
+			idc = 119;
+			style = 1;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.054 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+		};
+		
+		class CA_Weapon : RscIGUIText {
+			idc = 118;
+			style = 0;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.015 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+		};
+		
+		class CA_GunnerWeapon : RscIGUIText {
+			idc = 150;
+			style = 0;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.132 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+			SizeEx = 0.034;
+		};
+		
+		class CA_SpeedBackground : RscEdit {
+			idc = -1;
+			sizeEx = 0.034;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {0.95, 0.95, 0.95, 1};
+			colorSelection[] = {0, 0, 0, 0};
+			style = 0x02 + 0x40;
+			shadow = 2;
+			type = VSoft;
+			x = 0.314;
+			y = "0.017 + SafeZoneY";
+			w = 0.06;
+			h = 0.033;
+		};
+		
+		class CA_TextSpeed : RscIGUIText {
+			style = 0;
+			x = 0.257;
+			y = "0.015 + SafeZoneY";
+			w = 0.12;
+			text = SPD;
+		};
+		
+		class CA_Speed : RscIGUIValue {
+			idc = 121;
+			style = 1;
+			x = 0.257;
+			y = "0.015 + SafeZoneY";
+			w = 0.12;
+		};
+		
+		class CA_ValueFuelBackground : RscPicture {
+			idc = -1;
+			shadow = 2;
+			x = "0.018 + SafeZoneX";
+			y = "0.01 + SafeZoneY";
+			w = 0.0196078;
+			h = 0.20915;
+			colorText[] = {0.95, 0.95, 0.95, 1};
+			text = "\ca\ui\data\ui_fuel_background.paa";
+		};
+		
+		class CA_ValueFuel : RscIGProgress {
+			idc = 113;
+			x = "0.02 + SafeZoneX";
+			y = "0.036 + SafeZoneY";
+			w = 0.01;
+			h = 0.18;
+			texture = "\ca\ui\data\igui_fuel_progress.paa";
+		};
+		
+		class CA_TextFlaresMode : RscIGUIText {
+			idc = 152;
+			style = 0;
+			sizeEx = 0.02674;
+			x = "0.078 + SafeZoneX";
+			y = "0.012 + SafeZoneY";
+			w = "0.161*SafezoneW";
+		};
+		
+		class CA_TextFlares : RscIGUIValue {
+			idc = 151;
+			style = 1;
+			sizeEx = 0.02674;
+			x = "0.078  + SafeZoneX";
+			y = "0.012 + SafeZoneY";
+			w = "0.161*SafezoneW";
+		};
+		
+		class CA_ValueArmor : RscListBox {
+			idc = 111;
+			sizeEx = 0.03525;
+			x = "0.040 + SafeZoneX";
+			y = "0.016 + SafeZoneY";
+			w = 0.0357;
+			h = 0.76;
+		};
+	};
+
+	class RscUnitInfoAir : RscUnitInfo {
+		idd = 300;
+		updateWidthByWeapon = 0;
+		updateHeightByCrew = 0;
+		updateWidthByCrew = 0;
+		controls[] = {"CA_Weapon", "CA_Mode", "CA_Ammo", "CA_ValueFuelBackground", "CA_ValueFuel", "CA_GunnerWeapon", "CA_SpeedBackground", "CA_TextSpeed", "CA_Speed", "CA_AltBackground", "CA_TextAlt", "CA_Alt", "CA_HeadingBackground", "CA_Heading", "CA_ValueArmor", "CA_TextFlares", "CA_TextFlaresMode"};
+		
+		class CA_Mode : RscIGUIText {
+			idc = 149;
+			style = 0;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.054 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+		};
+		
+		class CA_Ammo : RscIGUIValue {
+			idc = 119;
+			style = 1;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.054 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+		};
+		
+		class CA_Weapon : RscIGUIText {
+			idc = 118;
+			style = 0;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.015 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+		};
+		
+		class CA_GunnerWeapon : RscIGUIText {
+			idc = 150;
+			style = 0;
+			x = "(SafeZoneW + SafeZoneX) - (1 - 0.761)";
+			y = "0.132 + SafeZoneY";
+			w = 0.214;
+			h = 0.039;
+			SizeEx = 0.034;
+		};
+		
+		class CA_SpeedBackground : RscEdit {
+			idc = -1;
+			sizeEx = 0.034;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {0.95,0.95,0.95,1};
+			colorSelection[] = {0, 0, 0, 0};
+			style = 0x02 + 0x40;
+			shadow = 2;
+			type = VSoft;
+			x = 0.314;
+			y = "0.017 + SafeZoneY";
+			w = 0.06;
+			h = 0.033;
+		};
+		
+		class CA_TextSpeed : RscIGUIText {
+			style = 0;
+			x = 0.257;
+			y = "0.015 + SafeZoneY";
+			w = 0.12;
+			text = SPD;
+		};
+		
+		class CA_Speed : RscIGUIValue {
+			idc = 121;
+			style = 1;
+			x = 0.257;
+			y = "0.015 + SafeZoneY";
+			w = 0.12;
+		};
+		
+		class CA_AltBackground : RscEdit {
+			idc = -1;
+			sizeEx = 0.034;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {0.95,0.95,0.95,1};
+			colorSelection[] = {0, 0, 0, 0};
+			style = 0x02 + 0x40;
+			type = VSoft;
+			x = 0.625;
+			y = "0.017 + SafeZoneY";
+			w = 0.06;
+			h = 0.033;
+		};
+		
+		class CA_TextAlt : RscIGUIText {
+			style = 1;
+			x = 0.625;
+			y = "0.015 + SafeZoneY";
+			w = 0.12;
+			text = ALT;
+		};
+		
+		class CA_Alt : RscIGUIValue {
+			idc = 122;
+			style = 0;
+			x = 0.625;
+			y = "0.015 + SafeZoneY";
+			w = 0.12;
+		};
+		
+		class CA_HeadingBackground : RscEdit {
+			idc = -1;
+			sizeEx = 0.034;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {0.95,0.95,0.95,1};
+			colorSelection[] = {0, 0, 0, 0};
+			style = 0x02 + 0x40;
+			type = VSoft;
+			x = 0.469;
+			y = "0.017 + SafeZoneY";
+			w = 0.061;
+			h = 0.033;
+		};
+		
+		class CA_Heading : RscIGUIValue {
+			idc = 148;
+			style = 2;
+			x = 0.45;
+			y = "0.015 + SafeZoneY";
+			w = 0.1;
+		};
+		
+		class CA_ValueFuelBackground : RscPicture {
+			idc = -1;
+			shadow = 2;
+			x = "0.018 + SafeZoneX";
+			y = "0.01 + SafeZoneY";
+			w = 0.0196078;
+			h = 0.20915;
+			colorText[] = {0.95,0.95,0.95,1};
+			text = "\ca\ui\data\ui_fuel_background.paa";
+		};
+		
+		class CA_ValueFuel : RscIGProgress {
+			idc = 113;
+			x = "0.02 + SafeZoneX";
+			y = "0.036 + SafeZoneY";
+			w = 0.01;
+			h = 0.18;
+			texture = "\ca\ui\data\igui_fuel_progress.paa";
+		};
+		
+		class CA_ValueArmor : RscListBox {
+			idc = 111;
+			sizeEx = 0.03525;
+			x = "0.040 + SafeZoneX";
+			y = "0.016 + SafeZoneY";
+			w = 0.0357;
+			h = 0.76;
+		};
+		
+		class CA_TextFlaresMode : RscIGUIText {
+			idc = 152;
+			style = 0;
+			sizeEx = 0.02674;
+			x = "0.078 + SafeZoneX";
+			y = "0.012 + SafeZoneY";
+			w = "0.161*SafezoneW";
+		};
+		
+		class CA_TextFlares : RscIGUIValue {
+			idc = 151;
+			style = 1;
+			sizeEx = 0.02674;
+			x = "0.078  + SafeZoneX";
+			y = "0.012 + SafeZoneY";
+			w = "0.161*SafezoneW";
 		};
 	};
 };
