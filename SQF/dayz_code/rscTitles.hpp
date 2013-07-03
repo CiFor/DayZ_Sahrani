@@ -1226,6 +1226,7 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 				colorText[] = {0.95, 0.95, 0.95, 1};
+				shadow = 2;
 			};
 			class RscPicture_1200: RscPictureGUI
 			{
@@ -1236,7 +1237,7 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 				colorText[] = {0.95, 0.95, 0.95, 1};
-
+				shadow = 2;
 			};
 			class RscPicture_1202: RscPictureGUI
 			{
@@ -1247,7 +1248,7 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 				colorText[] = {0.95, 0.95, 0.95, 1};
-
+				shadow = 2;
 			};
 			class RscPicture_1208: RscPictureGUI
 			{
@@ -1258,7 +1259,7 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 				colorText[] = {0.95, 0.95, 0.95, 1};
-
+				shadow = 2;
 			};
 			class RscPicture_1207 : RscPictureGUI {
 				idc = 1207;
@@ -1268,7 +1269,7 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 				colorText[] = {0.95, 0.95, 0.95, 1};
-
+				shadow = 2;
 			};
 			class RscPicture_1203: RscPictureGUI
 			{
@@ -1279,6 +1280,7 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 				colorText[] = {1,1,1,0.85};
+				shadow = 2;
 			};
 			class RscPicture_1204: RscPictureGUI
 			{
@@ -1289,6 +1291,7 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 				colorText[] = {1,1,1,0.85};
+				shadow = 2;
 			};
 			class RscPicture_1205: RscPictureGUI
 			{
@@ -1299,7 +1302,7 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 				colorText[] = {1,1,1,0.85};
-
+				shadow = 2;
 			};
 			class RscPicture_1206: RscPictureGUI
 			{
@@ -1310,7 +1313,7 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 				colorText[] = {1,1,1,0.85};
-
+				shadow = 2;
 			};
 			class RscPicture_1501: RscPictureGUI
 			{
@@ -1321,7 +1324,7 @@ class RscTitles
 				w = 0.04;
 				h = 0.053333;
 				colorText[] = {0.95, 0.95, 0.95, 1};
-
+				shadow = 2;
 			};
 			class RscPicture_1502: RscPictureGUI
 			{
@@ -1332,7 +1335,7 @@ class RscTitles
 				w = 0.04;
 				h = 0.053333;
 				colorText[] = {0.95, 0.95, 0.95, 1};
-
+				shadow = 2;
 			};
 		};
 		class Controls{
@@ -1380,7 +1383,7 @@ class RscTitles
 				y = 0.86 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
-				colorText[] = {.1,.1,.1,0.5};
+				colorText[] = {0, 0, 0, 0.85};
 			};
 			class RscPicture_1304: RscPictureGUI
 			{

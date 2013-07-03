@@ -715,7 +715,7 @@ class RscPictureGUI
 	type = 0;
 	idc = -1;
 	colorBackground[] = {0,0,0,0};
-	colorText[] = {0.38,0.63,0.26,0.75};
+	colorText[] = {0.95 ,0.95 ,0.95 , 0.85};
 	font = "TahomaB";
 	sizeEx = 0;
 	lineSpacing = 0;
