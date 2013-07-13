@@ -85,7 +85,8 @@ if (!isDedicated) then {
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
 
 	//base building actions 
-	player_buildBoxStorage =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBoxStorage.sqf";
+	player_buildBoxStorage_DZ =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBoxStorage_DZ.sqf";
+	player_buildWeaponCache_DZ =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildWeaponCache_DZ.sqf";
 	player_buildGunrack_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildGunrack_DZ.sqf";
 	player_buildBench_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBench_DZ.sqf";
 	player_buildBagFenceLong_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBagFenceLong_DZ.sqf";

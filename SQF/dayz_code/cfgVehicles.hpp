@@ -2064,9 +2064,22 @@ class CfgVehicles {
 	class Land_A_tent;
 	class BuiltItems : NonStrategic {};
 	
-	class BoxStorage : Land_A_tent {
-		displayName = "Arms cache";
-		model = "\ca\weapons\AmmoBoxes\GuerillaCache.p3d"; 
+	class BoxStorage_DZ : Land_A_tent {
+		scope = 2;
+		displayName = "Storage Box";
+		model = "\ca\misc\drevena_bedna.p3d"; 
+		icon = "\ca\data\data\Unknown_object.paa";
+		armor = 400; 
+		vehicleClass = "Survival";
+		transportMaxMagazines = 100;
+		transportMaxWeapons = 20;
+		transportMaxBackpacks = 10;
+	};
+
+	class WeaponCache_DZ : Land_A_tent {
+		Scope = 2
+		displayName = "Weapon cache";
+		model = "\ca\buildings\furniture\ammobednaX.p3d"; 
 		icon = "\ca\data\data\Unknown_object.paa";
 		armor = 400; 
 		vehicleClass = "Survival";
@@ -2074,6 +2087,7 @@ class CfgVehicles {
 		transportMaxWeapons = 5;
 		transportMaxBackpacks = 5;
 	};
+
 	class Gunrack_DZ : Land_A_tent {
 		scope = 2;
 		destrType = "DestructTent";
@@ -2099,12 +2113,12 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructTent";
 		armor = 400; 
-		model = "\ca\buildings\misc\Lavicka_4";
+		model = "\ca\buildings\misc\lavicka_2.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		displayName = "Bench (Wood)";
 		vehicleClass = "Fortifications";
-	}
+	};
 	
 	class BagFenceLong_DZ : BuiltItems {
 		scope = 2;

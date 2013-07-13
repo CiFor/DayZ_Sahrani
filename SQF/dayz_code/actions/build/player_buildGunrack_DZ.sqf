@@ -12,7 +12,7 @@ _hasToolBox = 	"ItemToolbox" in items player;
 
 //_isOk = true;
 _classname = "Gunrack_DZ";
-diag_log ("Build Crate: " + str(_isok) );
+diag_log ("Build Gun Rack: " + str(_isok) );
 
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
@@ -29,7 +29,7 @@ if (["forest",dayz_surfaceType] call fnc_inString) then { _isOk = false; diag_lo
 if (["concrete",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_log ("surface concrete"); };
 //if (["wood",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_log ("surface concrete"); };
 
-diag_log ("Build Crate surface: " + str(_isok) );
+diag_log ("Build Gun Rack surface: " + str(_isok) );
 
 if (!_isOk) then {
 	_objectTemp = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
