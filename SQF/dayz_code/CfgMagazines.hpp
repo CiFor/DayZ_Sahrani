@@ -98,8 +98,8 @@ class CfgMagazines {
 	{
 		scope = public;
 		ammo = "WoodenArrow";
-		count = 6;
-		descriptionshort = "Small Quiver used with the Crossbow, Max arrows 6.";
+		count = 20;
+		descriptionshort = "Quiver used with the Crossbow, Max arrows 20.";
 		displayname = "Quiver";
 		initSpeed = 150;
 		model = "\z\addons\dayz_communityassets\models\quiver";
@@ -120,7 +120,7 @@ class CfgMagazines {
 			class ReloadMag {
 				text = "Combine into Quiver";
 				script = "spawn player_reloadMag;";
-				use[] = {"WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow"};
+				use[] = {"WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow"};
 				output[] = {"Quiver"};
 			};
 		};
