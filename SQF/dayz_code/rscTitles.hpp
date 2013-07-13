@@ -2434,7 +2434,16 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			colorBackground[] = {0, 0, 0, 0};
 			text = "";
 		};
-		delete CA_TextVotingTimeLeft;
+		class CA_TextVotingTimeLeft : CA_MP_roles_Title {
+			idc = 121;
+			style = 1;
+			x = "(50/100)	* SafeZoneW + SafeZoneX";
+			y = "(02/100)	* SafeZoneH + SafeZoneY";
+			w = "(45/100)	* SafeZoneW";
+			h = "(06/100)	* SafeZoneH";
+			colorBackground[] = {0, 0, 0, 0};
+		};
+		//delete CA_TextVotingTimeLeft;
 		delete TextMission;
 		delete ValueMission;
 		delete CA_TextDescription;

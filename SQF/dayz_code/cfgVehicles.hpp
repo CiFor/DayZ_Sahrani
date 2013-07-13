@@ -1828,6 +1828,16 @@ class CfgVehicles {
 			init="[(_this select 0),'cfgWeapons','ItemMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
+	class WeaponHolder_ItemPropane: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Propane Tank";
+		model="\SMD\assets\objects\propane.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgMagazines','ItemPropane'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
 	
 	/*new Zeds*/
 	/*class z_woman1 : zZombie_Base {

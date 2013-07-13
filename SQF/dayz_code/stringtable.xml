@@ -2492,4 +2492,18 @@
 			<French>Clothes of the Bandits. Can be unpacked and worn.</French>
 		</Key>
 	</Package>
+	<Package name ="UI">
+		<Key ID="str_disp_mp_timeout">
+		  <Original>Waiting for Players: %d</Original>
+		  <German>Warten auf Spieler: %d</German>
+		  <English>Waiting for Players: %d</English>
+		  <Italian>Tempo scaduto: %d</Italian>
+		  <Spanish>Tiempo agotado: %d</Spanish>
+		  <French>Dépass. délai : %d</French>
+		  <Czech>Limit: %d</Czech>
+		  <Russian>Перерыв: %d</Russian>
+		  <Polish>Koniec czasu: %d</Polish>
+		  <Hungarian>Időtúllépés: %d</Hungarian>
+    </Key>
+	</Package>
 </Project>

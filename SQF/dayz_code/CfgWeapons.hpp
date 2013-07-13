@@ -21,22 +21,22 @@ class CfgWeapons {
 	
 	class ItemCraftingBook : ItemCore {
 		scope = 2;
-		displayName = Crafting Book (Camp);
+		displayName = "Crafting Book (Camp)";
 		model = "\ca\misc\SmallObj_spukayev_docs_WPN.p3d";
 		picture = "\ca\misc\Data\icons\picture_spukayev_docs_ca.paa";
-		descriptionShort = CraftBook (Canp);
+		descriptionShort = "CraftBook (Camp)";
 		
 		class ItemActions {
 			class Build {
-				text = Gun Rack (NO AMMO!);
+				text = "Gun Rack (NO AMMO!)";
 				script = "spawn player_buildGunrack_DZ;";
 			};
 			class Build2 {
-				text = Weapon Cache;
+				text = "Weapon Cache";
 				script = "spawn player_buildWeaponCache_DZ;";
 			};
 			class Build3 {
-				text = Storage Box;
+				text = "Storage Box";
 				script = "spawn player_buildBoxStorage_DZ;";
 			};
 		};
@@ -44,26 +44,26 @@ class CfgWeapons {
 	
 	class ItemCraftingBook2 : ItemCore {
 		scope = 2;
-		displayName = Crafting Book (Barriers);
+		displayName = "Crafting Book (Barriers)";
 		model = "\ca\misc\SmallObj_moscow_docs_WPN.p3d";
 		picture = "\ca\misc\Data\icons\picture_moscow_docs_ca.paa";
-		descriptionShort = CraftBook (Barriers);
+		descriptionShort = "CraftBook (Barriers)";
 		
 		class ItemActions {
 			class Build {
-				text = Sandbag Wall (End);
+				text = "Sandbag Wall (End)";
 				script = "spawn player_buildBagFenceLongCorner_DZ;";
 			};
 			class Build2 {
-				text = SandBag Wall (Lng);
+				text = "SandBag Wall (Lng)";
 				script = "spawn player_buildBagFenceLong_DZ;";
 			};
 			class Build3 {
-				text = Sandbag Wall (Rnd);
+				text = "Sandbag Wall (Rnd)";
 				script = "spawn player_buildBagFenceLongRound_DZ;";
 			};
 			class Build4 {
-				text = RazorWire Wall (Tri);
+				text = "RazorWire Wall (Tri)";
 				script = "spawn player_buildFort_RazorWire_DZ;";
 			};
 		};
@@ -71,26 +71,26 @@ class CfgWeapons {
 	
 	class ItemCraftingBook3 : ItemCore {
 		scope = 2;
-		displayName = Crafting Book (Forts);
+		displayName = "Crafting Book (Forts)";
 		model = "\ca\misc\SmallObj_File_photos_WPN.p3d";
 		picture = "\ca\misc\Data\icons\picture_photo_folder_ca.paa";
-		descriptionShort = CraftBook (Forts);
+		descriptionShort = "CraftBook (Forts)";
 		
 		class ItemActions {
 			class Build {
-				text = Fortified Nest;
+				text = "Fortified Nest";
 				script = "spawn player_buildFortified_nest_DZ;";
 			};
 			class Build2 {
-				text = DeerStand;
+				text = "DeerStand";
 				script = "spawn player_buildCampWoodTower_DZ;";
 			};
 			class Build3 {
-				text = Gate;
+				text = "Gate";
 				script = "spawn player_buildBarb_Gate_DZ;";
 			};
 			class Build4 {
-				text = Bench;
+				text = "Bench";
 				script = "spawn player_buildBench_DZ;";
 			};
 		};
@@ -194,7 +194,92 @@ class CfgWeapons {
 			"WoodenArrow"
 		};
 	};
-	class MeleeWeapon;
+	class Pistol;
+	class DZ_SingleMelee;
+	class MeleeWeapon: Pistol
+	{
+		distanceZoomMin=50;
+		distanceZoomMax=50;
+		canDrop=0;
+		UiPicture="\CA\weapons\data\Ico\i_regular_CA.paa";
+		optics=1;
+		modelOptics="-";
+		modes[]=
+		{
+			"Single"
+		};
+		fireLightDuration=0;
+		fireLightIntensity=0;
+		reloadMagazineSound[]=
+		{
+			"",
+			1
+		};
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\dayz_weapons\anim\melee_hatchet_holding.rtm"
+		};
+		class Single: DZ_SingleMelee
+		{
+			multiplier=1;
+			burst=1;
+			displayName="Hack";
+			dispersion=0.2;
+			optics=1;
+			recoil="DZ_Swing";
+			autoFire=1;
+			aiRateOfFire=0.69999999;
+			aiRateOfFireDistance=2.2;
+			useAction=0;
+			useActionTitle="";
+			recoilProne="DZ_Swing";
+			swing0[]=
+			{
+				"dayz_weapons\sounds\swing_0",
+				1.77828,
+				1,
+				30
+			};
+			swing1[]=
+			{
+				"dayz_weapons\sounds\swing_1",
+				1.77828,
+				1,
+				30
+			};
+			soundBegin[]=
+			{
+				"swing0",
+				0.5,
+				"swing1",
+				0.5
+			};
+			drySound[]=
+			{
+				"",
+				1
+			};
+			reloadTime=0;
+			reloadMagazineSound[]=
+			{
+				"",
+				1
+			};
+			showToPlayer=1;
+			minRange=0;
+			minRangeProbab=0.80000001;
+			midRange=0.30000001;
+			midRangeProbab=0.80000001;
+			maxRange=3;
+			maxRangeProbab=0;
+			soundContinuous = 0;
+		};
+		cursor="Vehicle_Grenade_W";
+		cursoraim="Vehicle_Grenade_W";
+		cursorSize=1;
+	};
+	
 	class MeleeHatchet: MeleeWeapon
 	{
 		scope=2;

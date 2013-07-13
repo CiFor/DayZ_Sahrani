@@ -839,6 +839,31 @@ class CfgActions {
 	*/
 };
 
+class CfgGesturesMale
+{
+	skeletonName="OFP2_ManSkeleton";
+	class ManActions
+	{
+	};
+	class Actions;
+	class Default;
+	class States
+	{
+		class GestureSwing: Default
+		{
+			file="\dayz_weapons\anim\melee_hatchet_swing.rtm";
+			looped=0;
+			speed=1.282051;
+			mask="handsWeapon_pst";
+			headBobStrength=0.2;
+			headBobMode=2;
+			rightHandIKBeg=0;
+			rightHandIKEnd=0;
+		};
+	};
+	class BlendAnims;
+};
+
 class CfgBuildingLoot {
 	class Default {
 		zombieChance = 0.2;
