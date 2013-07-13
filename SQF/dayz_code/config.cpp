@@ -810,6 +810,35 @@ class CfgSurvival {
 	};
 };
 
+class CfgActions {
+	class None; // External class reference
+
+	class Rearm : None {
+		show = 0;
+	};
+	class Heal : None {
+		show = 0;
+	};
+	class HealSoldier : None {
+		show = 0;
+	};
+	class FirstAid : None {
+		show = 0;
+	};
+	class FireInflame : None {
+		show = 0;
+	};
+	class FirePutDown : None {
+		show = 0;
+	};
+	/*
+	//Will Override this soon
+	class Eject : None {
+		show = 0;
+	};
+	*/
+};
+
 class CfgBuildingLoot {
 	class Default {
 		zombieChance = 0.2;

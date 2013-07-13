@@ -386,6 +386,7 @@ _canDrink = false;
 {
 	//Check for Well
 	_isWell = ["kasna",str(_x),false] call fnc_inString;
+	if(!_isWell) then { _isWell = ["_well",str(_x),false] call fnc_inString; };
 	if (_isWell) then {_canDrink = true};
 } forEach _objectsWell;
 
@@ -396,4 +397,22 @@ if(_canDrink) then {
 } else {
 	player removeAction s_player_drinkwater;
 	s_player_drinkwater = -1;
+};
+_hasMatches = "ItemMatchbox" in items player;
+_hasFlares = "HandRoadFlare" in magazines player;
+if ( (cursorTarget isKindOf "Land_Fire_DZ") and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
+	if (s_player_light_fire < 0) then {
+		s_player_light_fire = player addAction [localize "str_action_fire_inflame", "\z\addons\dayz_code\actions\player_light_fire.sqf",cursorTarget, 3, true, true, "", ""];
+	};
+} else {
+	player removeAction s_player_light_fire;
+	s_player_light_fire = -1;
+};
+if (inflamed cursorTarget and _canDo) then {
+	if (s_player_extinguish_fire < 0) then {
+		s_player_extinguish_fire = player addAction [localize "str_action_fire_put_down", "\z\addons\dayz_code\actions\player_extinguish_fire.sqf",cursorTarget, 3, true, true, "", ""];
+	};
+} else {
+	player removeAction s_player_extinguish_fire;
+	s_player_extinguish_fire = -1;
 };

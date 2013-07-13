@@ -15,7 +15,7 @@ player removeMagazine "ItemJerrycan";
 player addMagazine "ItemJerrycanEmpty";
 
 player playActionNow "Medic";
-_dis=5;			//p2: Zombie alert distance, reduced from 10 meters to 5
+_dis=5;
 _sfx = "refuel";
 [player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
 [player,_dis,true,(getPosATL player)] spawn player_alertZombies;

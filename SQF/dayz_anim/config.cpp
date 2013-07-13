@@ -974,7 +974,7 @@ class CfgWeapons {
 	//class Colt1911: FakeWeapon {};
 	//class DMR: FakeWeapon {};
 	//class M1014: FakeWeapon {};
-	class m107: FakeWeapon {};
+	class m107 : FakeWeapon {};
 	class M252: FakeWeapon {};
 	class 2B14: FakeWeapon {};
 	class Saiga12K: FakeWeapon {};

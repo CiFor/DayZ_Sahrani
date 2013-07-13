@@ -2075,7 +2075,7 @@ class CfgVehicles {
 		transportMaxWeapons = 20;
 		transportMaxBackpacks = 10;
 	};
-
+	
 	class WeaponCache_DZ : Land_A_tent {
 		Scope = 2
 		displayName = "Weapon cache";

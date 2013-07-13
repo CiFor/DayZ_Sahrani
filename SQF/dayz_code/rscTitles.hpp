@@ -1,6 +1,7 @@
 class RscPicture;
 class RscButton;
 class CA_IGUI_Title;
+class CA_Title;
 
 class RscText {
 	x = 0;
@@ -2330,5 +2331,279 @@ class RscInGameUI {
 			y = "0.012 + SafeZoneY";
 			w = "0.161*SafezoneW";
 		};
+	};
+};
+
+//LULULULULULULULUL
+class nope {
+	type = 0;
+	x = -10000;
+	y = -10000;
+	h = 0;
+	w = 0;
+	size = 0;
+	style = 0;
+	shadow = 0;
+	font = "Zeppelin32";
+	SizeEx = 0;
+	colorText[] = {0, 0, 0, 0};
+	colorBackground[] = {0, 0, 0, 0};
+	color[] = {0,0,0,0};
+	text = "";
+};
+
+class RscDisplayMultiplayerSetup : RscStandardDisplay {
+	west = "ca\ui\data\flag_bluefor_ca.paa";
+	east = "ca\ui\data\flag_opfor_ca.paa";
+	guer = "ca\ui\data\flag_indep_ca.paa";
+	civl = "ca\ui\data\flag_civil_ca.paa";
+	none = "ca\ui\data\flag_civil_ca.paa";
+	westUnlocked = "ca\ui\data\flag_bluefor_ca.paa";
+	westLocked = "ca\ui\data\flag_bluefor_ca.paa";
+	eastUnlocked = "ca\ui\data\flag_opfor_ca.paa";
+	eastLocked = "ca\ui\data\flag_opfor_ca.paa";
+	guerUnlocked = "ca\ui\data\flag_indep_ca.paa";
+	guerLocked = "ca\ui\data\flag_indep_ca.paa";
+	civlUnlocked = "ca\ui\data\flag_civil_ca.paa";
+	civlLocked = "ca\ui\data\flag_civil_ca.paa";
+	disabledAllAI = $STR_DISP_MULTI_ENABLE_AI;
+	enabledAllAI = $STR_DISP_MULTI_DISABLE_AI;
+	hostLocked = $STR_DISP_MULTI_UNLOCK;
+	hostUnlocked = $STR_DISP_MULTI_LOCK;
+	colorNotAssigned[] = {0.4, 0.4, 0.4, 1};
+	colorAssigned[] = {0.78, 0.39, 0, 1};
+	colorConfirmed[] = {0, 1, 0, 1};
+	class controlsbackground {
+		class BlackBackground: RscText {
+			idc = -1;
+			x = "SafeZoneXAbs";
+			y = "SafeZoneY";
+			w = "SafeZoneWAbs";
+			h = "SafeZoneH";
+			colorBackground[] = {0,0,0,1};
+		}
+		class BackgroundPic: RscPictureKeepAspect
+		{
+			idc = -1;
+			x="0.00001 * safezoneW + safezoneX";
+			y="0.00001 * safezoneH + safezoneY";
+			w="1 * safezoneW";
+			h="1 * safezoneH";
+			text = "z\addons\dayz_code\gui\sahrani.paa";
+		};
+		
+		delete MP_roles_TitleBorder;
+		delete TextBack;
+		delete TextBorder;
+		delete SidesBack;
+		delete SidesBorder;
+		delete ValueRolesBack;
+		delete ValueRolesBorder;
+		delete ValuePoolBack;
+		delete ValuePoolBorder;
+	};
+	class controls {
+		delete B_Civilian;
+		delete B_Guerrila;
+		delete B_East;
+		delete B_West;
+		delete B_Side;
+		delete B_OK;
+		delete B_Cancel;
+		delete B_Kick;
+		delete B_EnableAll;
+		delete B_Lock;
+		delete TextDescription;
+		delete ValueDescription;
+		delete TextMessage;
+		delete ValueRoles;
+		delete TextParam1;
+		delete TextParam2;
+		delete ValueParam1;
+		delete ValueParam2;
+		delete ValuePool;
+		delete B_Params;
+		delete Title;
+		class CA_MP_roles_Title : CA_Title {
+			idc = 1001;
+			style = 2;
+			x = 0;
+			y = 0;
+			w = 0;
+			h = 0;
+			colorBackground[] = {0, 0, 0, 0};
+			text = "";
+		};
+		delete CA_TextVotingTimeLeft;
+		delete TextMission;
+		delete ValueMission;
+		delete CA_TextDescription;
+		delete CA_ValueDescription;
+		delete TextIsland;
+		delete ValueIsland;
+		delete TextSide;
+		delete TextRoles;
+		
+		class CA_B_West : RscActiveText {
+			x = 0;
+			y = 0;
+			w = 0;
+			h = 0;
+			style = 0x02 + 0x100 + 0x40;
+			type = 11;
+			colorActive[] = {0, 0, 0, 0};
+			colorDisabled[] = {0, 0, 0, 0};
+			colorShade[] = {0, 0, 0, 0};
+			colorText[] = {0, 0, 0, 0};
+			pictureWidth = 0;
+			pictureHeight = 0;
+			textHeight = 0;
+			sideDisabled = "ca\ui\data\flag_none_ca.paa";
+			sideToggle = "ca\ui\data\flag_side_toggle_ca.paa";
+			idc = 104;
+			color[] = {0, 0, 0, 0};
+			text = $STR_WEST;
+			picture = "\ca\ui\data\flag_bluefor_ca.paa";
+		};
+		
+		class CA_B_East : CA_B_West {
+			idc = 105;
+			y = 0;
+			text = $STR_EAST;
+			picture = "\ca\ui\data\flag_opfor_ca.paa";
+		};
+		
+		class CA_B_Guerrila : CA_B_West {
+			idc = 106;
+			y = 0;
+			text = $STR_GUERRILA;
+			picture = "\ca\ui\data\flag_indep_ca.paa";
+		};
+		
+		class CA_B_Civilian : CA_B_West {
+			idc = 107;
+			y = 0;
+			text = $STR_CIVILIAN;
+			picture = "\ca\ui\data\flag_civil_ca.paa";
+		};
+		
+		class CA_ValueRoles : RscIGUIListBox {
+			idc = 109;
+			style = 16;
+			x = 0;
+			y = 0;
+			w = 0;
+			h = 0;
+			color[] = {0, 0, 0, 0};
+			colorSelect[] = {0, 0, 0, 0};
+			colorSelectBackground[] = {0, 0, 0, 0};
+			colorSelectBackground2[] = {0, 0, 0, 0};
+			rowHeight = 0;
+			colorText[] = {0, 0, 0, 0};
+			colorPlayer[] = {0, 0, 0, 0};
+			colorAI[] = {0, 0, 0, 0};
+			colorNobody[] = {0, 0, 0, 0};
+			enabledAI = "ca\ui\textures\ai2_on.paa";
+			disabledAI = "ca\ui\textures\ai2_off.paa";
+		};
+		
+		class TextPool : RscText {
+			idc = 1006;
+			style = 2;
+			x = 0;
+			y = 0;
+			w = 0;
+			h = 0;
+			SizeEx = 0;
+			text = $STR_DISP_SRVSIDE_POOL;
+		};
+		
+		class CA_ValuePool : RscIGUIListBox {
+			idc = 114;
+			style = 16;
+			x = 0;
+			y = 0;
+			w = 0;
+			h = 0;
+			color[] = {0, 0, 0, 0};
+			colorSelect[] = {0, 0, 0, 0};
+			colorSelectBackground[] = {0, 0, 0, 0};
+			colorSelectBackground2[] = {0, 0, 0, 0};
+			rows = 0;
+			canDrag = 0;
+		};
+		
+		class CA_B_EnableAll : RscShortcutButton {
+			idc = 117;
+			x = 0;
+			y = 0;
+			w = 0;
+			h = 0;
+			
+			class TextPos {
+				left = -10000;
+				top = -10000;
+				right = -10000;
+				bottom = -10000;
+			};
+			default = 0;
+		};
+		
+		class CA_B_Lock : RscShortcutButton {
+			idc = 118;
+			x = "(39/100)	* SafeZoneW + SafeZoneX";
+			y = "(93/100)	* SafeZoneH + SafeZoneY";
+			w = 0.183825;
+		};
+		
+		delete CA_B_Params;
+		delete CA_B_DSinterface;
+		delete CA_B_Kick;
+		
+		class SMD_ButtonContinue: RscButtonTextOnly
+		{
+			idc = 1;
+			default = 1;
+			shortcuts[] = {0x00050000 + 0, 28, 57, 156};
+			text = "Play DayZ Sahrani";
+			align = "center";
+			x = 0.622028 * safezoneW + safezoneX;
+			y = 0.688041 * safezoneH + safezoneY;
+			w = 0.154195 * safezoneW;
+			h = 0.0470102 * safezoneH;
+			colorText[] = {1,1,1,1};
+			colorFocused[] = {0.1, 0.1, 0.1, 1};
+			colorDisabled[] = {0.8,0.8,0.8,1};
+			colorBackground[] = {0.1,0.1,0.1,0.95};
+			colorBackgroundActive[] = {0.2,0.2,0.2,0.95};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.95};
+			colorShadow[] = {0.023529,0,0.0313725,1};
+			colorBorder[] = {0,0,0,1};
+			borderSize = 0.0;
+		};
+		class SMD_ButtonDisconnect: RscButtonTextOnly
+		{
+			idc = 2;
+			default = 0;
+			shortcuts[] = {0x00050000 + 1};
+			text = "Disconnect";
+			align = "center";
+			x = 0.223777 * safezoneW + safezoneX;
+			y = 0.688041 * safezoneH + safezoneY;
+			w = 0.154195 * safezoneW;
+			h = 0.0470102 * safezoneH;
+			colorText[] = {1,1,1,1};
+			colorFocused[] = {0.1, 0.1, 0.1, 1};
+			colorDisabled[] = {0.8,0.8,0.8,1};
+			colorBackground[] = {0.1,0.1,0.1,0.95};
+			colorBackgroundActive[] = {0.2,0.2,0.2,0.95};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.95};
+			colorShadow[] = {0.023529,0,0.0313725,1};
+			colorBorder[] = {0,0,0,1};
+			borderSize = 0.0;
+		};
+
+		delete CA_ButtonContinue;
+		delete CA_ButtonCancel;
 	};
 };

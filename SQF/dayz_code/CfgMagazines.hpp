@@ -727,6 +727,7 @@ class CfgMagazines {
 		};
 	};
 	
+	//Custom Loot
 	class ItemNails : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -737,6 +738,80 @@ class CfgMagazines {
 		descriptionShort = "Small bag of nails";
 	};
 	
+	class ItemScrapElectronics : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Scrap Electronics";
+		model = "\SMD\assets\objects\scrapelectronics";
+		picture = "\SMD\assets\objects\icons\scrapelectronics.paa";
+		descriptionShort = "Electronic circuit board for crafting";
+	};
+	
+	class ItemBrick : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Brick";
+		model = "\SMD\assets\objects\brick";
+		picture = "\SMD\assets\objects\icons\brick.paa";
+		descriptionShort = "Red Brick";
+	};
+	
+	class ItemFloppyWire : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Electronic Wire";
+		model = "\SMD\assets\objects\floppywire";
+		picture = "\SMD\assets\objects\icons\floppywire.paa";
+		descriptionShort = "Scrap Electronic Wire";
+	};
+	
+	class ItemPropane : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Propane Tank";
+		model = "\SMD\assets\objects\propane";
+		picture = "\SMD\assets\objects\icons\propane.paa";
+		descriptionShort = "Propane Tank";
+	};
+	
+	class ItemTape : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Duct Tape";
+		model = "\SMD\assets\objects\tape";
+		picture = "\SMD\assets\objects\icons\tape.paa";
+		descriptionShort = "Duct Tape";
+	};
+	
+	//DayZ Equipment Fixes
+	class PartWoodPile: CA_Magazine {
+		scope=2;
+		count=1;
+		type="(256 * 2)";
+		displayName="$STR_EQUIP_NAME_40";
+		model="\dayz_equip\models\woodPile.p3d";
+		picture="\dayz_equip\textures\equip_woodPile_ca.paa";
+		descriptionShort="$STR_EQUIP_DESC_40";
+		class ItemActions
+		{
+			class Use
+			{
+				text="$STR_ACTIONS_LIGHTFIRE";
+				script="spawn player_makeFire;";
+				use[]=
+				{
+					"PartWoodPile"
+				};
+			};
+		};
+	};
+	
+	//Skins
 	class SkinBase;
 	
 	class Skin_Rocket_DZ : SkinBase {
