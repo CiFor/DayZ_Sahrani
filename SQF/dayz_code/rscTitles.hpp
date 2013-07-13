@@ -2569,14 +2569,14 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		delete CA_B_DSinterface;
 		delete CA_B_Kick;
 		
-		class SMD_ButtonContinue: RscButtonTextOnly
+		class SMD_ButtonDisconnect: RscButtonTextOnly
 		{
-			idc = 1;
-			default = 1;
-			shortcuts[] = {0x00050000 + 0, 28, 57, 156};
-			text = "Play DayZ Sahrani";
+			idc = 2;
+			default = 0;
+			shortcuts[] = {0x00050000 + 1};
+			text = "Disconnect";
 			align = "center";
-			x = 0.622028 * safezoneW + safezoneX;
+			x = 0.223777 * safezoneW + safezoneX;
 			y = 0.688041 * safezoneH + safezoneY;
 			w = 0.154195 * safezoneW;
 			h = 0.0470102 * safezoneH;
@@ -2590,14 +2590,15 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			colorBorder[] = {0,0,0,1};
 			borderSize = 0.0;
 		};
-		class SMD_ButtonDisconnect: RscButtonTextOnly
+		
+		class SMD_ButtonContinue: RscButtonTextOnly
 		{
-			idc = 2;
-			default = 0;
-			shortcuts[] = {0x00050000 + 1};
-			text = "Disconnect";
+			idc = 1;
+			default = 1;
+			shortcuts[] = {0x00050000 + 0, 28, 57, 156};
+			text = "Play DayZ Sahrani";
 			align = "center";
-			x = 0.223777 * safezoneW + safezoneX;
+			x = 0.622028 * safezoneW + safezoneX;
 			y = 0.688041 * safezoneH + safezoneY;
 			w = 0.154195 * safezoneW;
 			h = 0.0470102 * safezoneH;
