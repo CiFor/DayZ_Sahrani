@@ -9,11 +9,12 @@ class CfgLoot {
 			"7Rnd_45ACP_1911",
 			"2Rnd_shotgun_74Slug",
 			"2Rnd_shotgun_74Pellets",
+			"15Rnd_W1866_Slug"
 			//medical
 			"ItemBandage",
 			"ItemPainkiller",
+			"ItemAntibiotic"
 			//supplies
-			"ItemPropane",
 			"ItemFloppyWire",
 			"ItemScrapElectronics",
 			"ItemBrick",
@@ -28,13 +29,14 @@ class CfgLoot {
 			0.07, //8Rnd_9x18_Makarov
 			0.01, //8Rnd_9x18_MakarovSD
 			0.05, //7Rnd_45ACP_1911
-			0.05, //2Rnd_shotgun_74Slug
-			0.05, //2Rnd_shotgun_74Pellets
+			0.03, //2Rnd_shotgun_74Slug
+			0.02, //2Rnd_shotgun_74Pellets
+			0.08, //15Rnd_W1866_Slug
 			//medical
 			0.06, //ItemBandage
 			0.06, //ItemPainkiller
+			0.01, //ItemAntibiotic
 			//suplies
-			0.02, //ItemPropane
 			0.04, //ItemFloppyWire
 			0.02, //ItemScrapElectronics
 			0.04, //ItemBrick
@@ -68,8 +70,8 @@ class CfgLoot {
 			//medical
 			"ItemBandage",
 			"ItemPainkiller",
+			"ItemAntibiotic",
 			//supplies
-			"ItemPropane",
 			"ItemFloppyWire",
 			"ItemScrapElectronics",
 			"ItemBrick",
@@ -101,8 +103,8 @@ class CfgLoot {
 			//medical
 			0.06, //ItemBandage
 			0.06, //ItemPainkiller
+			0.01, //ItemAntibiotic
 			//suplies
-			0.02, //ItemPropane
 			0.04, //ItemFloppyWire
 			0.02, //ItemScrapElectronics
 			0.04, //ItemBrick
@@ -130,12 +132,12 @@ class CfgLoot {
 			"FoodCanOrlok",
 			"FoodCanPasta",
 			"FoodCanPowell",
-			"FoodCanRusCorn",
+			/*"FoodCanRusCorn",
 			"FoodCanRusMilk",
 			"FoodCanRusPeas",
 			"FoodCanRusPork",
 			"FoodCanRusStew",
-			"FoodCanRusUnlabeled",
+			"FoodCanRusUnlabeled",*/
 			"FoodCanSardines",
 			"FoodCanTylers",
 			"FoodCanUnlabeled",
@@ -174,12 +176,12 @@ class CfgLoot {
 			0.04, //FoodCanOrlok
 			0.2, //FoodCanPasta
 			0.04, //FoodCanPowell
-			0.04, //FoodCanRusCorn
-			0.04, //FoodCanRusMilk
-			0.04, //FoodCanRusPeas
-			0.04, //FoodCanRusPork
-			0.04, //FoodCanRusStew
-			0.2, //FoodCanRusUnlabeled
+			//0.04, //FoodCanRusCorn
+			//0.04, //FoodCanRusMilk
+			//0.04, //FoodCanRusPeas
+			//0.04, //FoodCanRusPork
+			//0.04, //FoodCanRusStew
+			//0.2, //FoodCanRusUnlabeled
 			0.04, //FoodCanSardines
 			0.04, //FoodCanTylers
 			0.6, //FoodCanUnlabeled
@@ -373,7 +375,6 @@ class CfgLoot {
 			"ItemHeatPack",
 			"ItemBandage",
 			//supplies
-			"ItemPropane",
 			"ItemNails",
 			"ItemTape",
 			"ItemSandbag",
@@ -394,7 +395,6 @@ class CfgLoot {
 			0.2, //ItemHeatPack
 			1, //ItemBandage
 			//supplies
-			0.05, //ItemPropane
 			0.4, //ItemNails
 			0.6, //ItemTape
 			0.04, //ItemSandbag
@@ -421,7 +421,6 @@ class CfgLoot {
 			"ItemHeatPack",
 			"ItemBandage",
 			//supplies
-			"ItemPropane",
 			"ItemNails",
 			"ItemTape",
 			"ItemSandbag",
@@ -446,7 +445,6 @@ class CfgLoot {
 			0.2, //ItemHeatPack
 			1, //ItemBandage
 			//supplies
-			0.05, //ItemPropane
 			0.4, //ItemNails
 			0.6, //ItemTape
 			0.04, //ItemSandbag
@@ -551,7 +549,6 @@ class CfgLoot {
 			//supplies
 			"ItemNails",
 			"ItemScrapElectronics",
-			"ItemPropane",
 			"ItemTape",
 			"ItemSandbag",
 			"ItemWire",
@@ -609,7 +606,6 @@ class CfgLoot {
 			//supplies
 			0.08, //ItemNails
 			0.04, //ItemScrapElectronics
-			0.01, //ItemPropane
 			0.03, //ItemTape
 			0.04, //ItemSandbag
 			0.04, //ItemWire
@@ -672,7 +668,6 @@ class CfgLoot {
 			//supplies
 			"ItemNails",
 			"ItemScrapElectronics",
-			"ItemPropane",
 			"ItemTape",
 			"ItemSandbag",
 			"ItemWire",
@@ -733,7 +728,6 @@ class CfgLoot {
 			//supplies
 			0.08, //ItemNails
 			0.04, //ItemScrapElectronics
-			0.01, //ItemPropane
 			0.03, //ItemTape
 			0.04, //ItemSandbag
 			0.04, //ItemWire
@@ -787,17 +781,17 @@ class CfgLoot {
 			"FoodCanHerpyEmpty",
 			"FoodCanOrlokEmpty",
 			"FoodCanPowellEmpty",
-			"FoodCanRusCornEmpty",
+			/*"FoodCanRusCornEmpty",
 			"FoodCanRusMilkEmpty",
 			"FoodCanRusPeasEmpty",
 			"FoodCanRusPorkEmpty",
 			"FoodCanRusStewEmpty",
-			"FoodCanRusUnlabeledEmpty",
+			"FoodCanRusUnlabeledEmpty",*/
 			"FoodCanTylersEmpty",
 			"FoodCanUnlabeledEmpty",
 			//SMD Crafting Components + Community Mod Dev Team Junk Loot
 			"ItemBrick",
-			"ItemCards",
+			//"ItemCards",
 			"ItemFloppyWire",
 			"ItemNails",
 			"ItemScrapElectronics",
@@ -839,7 +833,7 @@ class CfgLoot {
 			0.2, //FoodCanUnlabeledEmpty
 			//SMD Crafting Components + Community Mod Dev Team Junk Loot
 			0.2, //ItemBrick
-			0.2, //ItemCards
+			//0.2, //ItemCards
 			0.2, //ItemFloppyWire
 			0.2, //ItemNails
 			0.2, //ItemScrapElectronics
