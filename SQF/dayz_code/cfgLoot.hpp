@@ -9,11 +9,11 @@ class CfgLoot {
 			"7Rnd_45ACP_1911",
 			"2Rnd_shotgun_74Slug",
 			"2Rnd_shotgun_74Pellets",
-			"15Rnd_W1866_Slug"
+			"15Rnd_W1866_Slug",
 			//medical
 			"ItemBandage",
 			"ItemPainkiller",
-			"ItemAntibiotic"
+			"ItemAntibiotic",
 			//supplies
 			"ItemFloppyWire",
 			"ItemScrapElectronics",
@@ -125,7 +125,7 @@ class CfgLoot {
 			"FoodCanDerpy",
 			"FoodCandyAnders",
 			"FoodCandyLegacys",
-			"FoodCandyMintception",
+			//"FoodCandyMintception",
 			"FoodCanFraggleos",
 			"FoodCanFrankBeans",
 			"FoodCanHerpy",
@@ -169,7 +169,7 @@ class CfgLoot {
 			0.04, //FoodCanDerpy
 			0.04, //FoodCandyAnders
 			0.04, //FoodCandyLegacys
-			0.04, //FoodCandyMintception
+			//0.04, //FoodCandyMintception
 			0.04, //FoodCanFraggleos
 			0.2, //FoodCanFrankBeans
 			0.04, //FoodCanHerpy
@@ -841,7 +841,7 @@ class CfgLoot {
 			0.2, //ItemSodaClaysEmpty
 			0.2, //ItemSodaCokeEmpty
 			0.2, //temSodaEmpty
-			0.2, //ItemSodaMdewEmpty
+			0.2, //Empty
 			0.2, //ItemSodaMtngreenEmpty
 			0.2, //ItemSodaPepsiEmpty
 			0.2, //ItemSodaR4z0rEmpty
