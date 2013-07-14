@@ -50,18 +50,190 @@ class RscIGUIValue : RscIGUIText {
 	style = 0;
 	fixedWidth = 1;
 };
-class RscControlsGroup;
+class RscControlsGroup {
+	type = 15;
+	idc = -1;
+	x = 0;
+	y = 0;
+	w = 1;
+	h = 1;
+	shadow = false;
+	style = 16;
+	
+	class VScrollbar {
+		width = 0.021;
+		autoScrollSpeed = -1;
+		autoScrollDelay = 5;
+		autoScrollRewind = 0;
+		shadow = false;
+	};
+	
+	class HScrollbar {
+		height = 0.028;
+		shadow = false;
+	};
+	
+	class ScrollBar {
+		color[] = {1, 1, 1, 0.6};
+		colorActive[] = {1, 1, 1, 1};
+		colorDisabled[] = {1, 1, 1, 0.3};
+		thumb = "\z\addons\dayz_code\gui\ui\ui_scrollbar_thumb_ca.paa";
+		arrowFull = "\z\addons\dayz_code\gui\ui\ui_arrow_top_active_ca.paa";
+		arrowEmpty = "\z\addons\dayz_code\gui\ui\ui_arrow_top_ca.paa";
+		border = "\z\addons\dayz_code\gui\ui\ui_border_scroll_ca.paa";
+	};
+	
+	class Controls {};
+};
 class RscLineBreak;
-class RscIGUIShortcutButton;
+
+class RscShortcutButton {
+	idc = -1;
+	style = 0;
+	default = 0;
+	shadow = 2;
+	w = 0.183825;
+	h = 0.104575;
+	color[] = {0.8784, 0.8471, 0.651, 1.0};
+	color2[] = {0.95, 0.95, 0.95, 1};
+	colorBackground[] = {1, 1, 1, 1};
+	colorbackground2[] = {1, 1, 1, 0.4};
+	colorDisabled[] = {1, 1, 1, 0.25};
+	periodFocus = 1.2;
+	periodOver = 0.8;
+	
+	class HitZone {
+		left = 0.004;
+		top = 0.029;
+		right = 0.004;
+		bottom = 0.029;
+	};
+	
+	class ShortcutPos {
+		left = 0.0145;
+		top = 0.026;
+		w = 0.0392157;
+		h = 0.0522876;
+	};
+	
+	class TextPos {
+		left = 0.05;
+		top = 0.034;
+		right = 0.005;
+		bottom = 0.005;
+	};
+	animTextureNormal = "\z\addons\dayz_code\gui\ui\ui_button_normal_ca.paa";
+	animTextureDisabled = "\z\addons\dayz_code\gui\ui\ui_button_disabled_ca.paa";
+	animTextureOver = "\z\addons\dayz_code\gui\ui\ui_button_over_ca.paa";
+	animTextureFocused = "\z\addons\dayz_code\gui\ui\ui_button_focus_ca.paa";
+	animTexturePressed = "\z\addons\dayz_code\gui\ui\ui_button_down_ca.paa";
+	animTextureDefault = "\z\addons\dayz_code\gui\ui\ui_button_default_ca.paa";
+	period = 0.4;
+	font = "Zeppelin32";
+	size = 0.03921;
+	sizeEx = 0.03921;
+	text = "";
+	soundEnter[] = {"\ca\ui\data\sound\onover", 0.09, 1};
+	soundPush[] = {"\ca\ui\data\sound\new1", 0.0, 0};
+	soundClick[] = {"\ca\ui\data\sound\onclick", 0.07, 1};
+	soundEscape[] = {"\ca\ui\data\sound\onescape", 0.09, 1};
+	action = "";
+	
+	class Attributes {
+		font = "Zeppelin32";
+		color = "#E5E5E5";
+		align = "left";
+		shadow = "true";
+	};
+	
+	class AttributesImage {
+		font = "Zeppelin32";
+		color = "#E5E5E5";
+		align = "left";
+	};
+};
+class RscIGUIShortcutButton : RscShortcutButton {
+	w = 0.183825;
+	h = 0.0522876;
+	style = 2;
+	color[] = {1, 1, 1, 1};
+	color2[] = {1, 1, 1, 0.85};
+	colorBackground[] = {1, 1, 1, 1};
+	colorbackground2[] = {1, 1, 1, 0.85};
+	colorDisabled[] = {1, 1, 1, 0.4};
+	
+	class HitZone {
+		left = 0.002;
+		top = 0.003;
+		right = 0.002;
+		bottom = 0.016;
+	};
+	
+	class ShortcutPos {
+		left = -0.006;
+		top = -0.007;
+		w = 0;
+		h = 0.0522876;
+	};
+	
+	class TextPos {
+		left = 0.0;
+		top = 0.0;
+		right = 0.0;
+		bottom = 0.016;
+	};
+	animTextureNormal = "\z\addons\dayz_code\gui\ui\igui_button_normal_ca.paa";
+	animTextureDisabled = "\z\addons\dayz_code\gui\ui\igui_button_disabled_ca.paa";
+	animTextureOver = "\z\addons\dayz_code\gui\ui\igui_button_over_ca.paa";
+	animTextureFocused = "\z\addons\dayz_code\gui\ui\igui_button_focus_ca.paa";
+	animTexturePressed = "\z\addons\dayz_code\gui\ui\igui_button_down_ca.paa";
+	animTextureDefault = "\z\addons\dayz_code\gui\ui\igui_button_normal_ca.paa";
+	
+	class Attributes {
+		font = "Zeppelin32";
+		color = "#E5E5E5";
+		align = "center";
+		shadow = "true";
+	};
+};
 class RscGearShortcutButton;
-class RscIGUIListNBox;
 class RscActiveText;
 
 class RscPictureKeepAspect;
 class RscStandardDisplay;
-class RscProgress;
 class RscProgressNotFreeze;
 class RscButtonTextOnly;
+
+class RscProgress {
+	x = 0.344;
+	y = 0.619;
+	w = 0.313726;
+	h = 0.0261438;
+	shadow = 2;
+	texture = "\z\addons\dayz_code\gui\ui\loadscreen_progressbar_ca.paa";
+	colorText[] = {0.95, 0.95, 0.95, 1};
+	colorFrame[] = {0, 0, 0, 0};
+	colorBar[] = {1, 1, 1, 1};
+};
+
+class RscProgressBackground : RscPicture {
+	x = 0.0;
+	y = 0.892164;
+	w = 1;
+	h = 0.078432;
+	texture = "\ca\ui\data\ui_gradient_title_gs.paa";
+	colorText[] = {0, 0, 0, 0.4};
+};
+
+class RscLoadingText : RscText {
+	style = 2;
+	x = 0.29412;
+	y = 0.666672;
+	w = 0.411768;
+	h = 0.039216;
+	sizeEx = 0.03921;
+	colorText[] = {0.95, 0.95, 0.95, 1};
+};
 
 class RscIGProgress : RscProgress {
 	style = 1;
@@ -95,10 +267,81 @@ class RscListBox {
 		color[] = {1, 1, 1, 0.6};
 		colorActive[] = {1, 1, 1, 1};
 		colorDisabled[] = {1, 1, 1, 0.3};
-		thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
-		arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
-		arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
-		border = "\ca\ui\data\ui_border_scroll_ca.paa";
+		thumb = "\z\addons\dayz_code\gui\ui\ui_scrollbar_thumb_ca.paa";
+		arrowFull = "\z\addons\dayz_code\gui\ui\ui_arrow_top_active_ca.paa";
+		arrowEmpty = "\z\addons\dayz_code\gui\ui\ui_arrow_top_ca.paa";
+		border = "\z\addons\dayz_code\gui\ui\ui_border_scroll_ca.paa";
+	};
+};
+
+class RscListNBox {
+	style = 16;
+	shadow = 2;
+	color[] = {1, 1, 1, 1};
+	colorText[] = {0.95, 0.95, 0.95, 1};
+	colorScrollbar[] = {0.95, 0.95, 0.95, 1};
+	colorSelect[] = {0.95, 0.95, 0.95, 1};
+	colorSelect2[] = {0.95, 0.95, 0.95, 1};
+	colorSelectBackground[] = {0.1, 0.1, 0.1, 1.0};
+	colorSelectBackground2[] = {0.1, 0.1, 0.1, 0.8};
+	
+	class ScrollBar {
+		color[] = {1, 1, 1, 0.6};
+		colorActive[] = {1, 1, 1, 1};
+		colorDisabled[] = {1, 1, 1, 0.3};
+		thumb = "\z\addons\dayz_code\gui\ui\igui_scrollbar_thumb_ca.paa";
+		arrowFull = "\z\addons\dayz_code\gui\ui\igui_arrow_top_active_ca.paa";
+		arrowEmpty = "\z\addons\dayz_code\gui\ui\igui_arrow_top_ca.paa";
+		border = "\z\addons\dayz_code\gui\ui\igui_border_scroll_ca.paa";
+	};
+};
+
+class RscIGUIListBox : RscListBox {
+	shadow = 2;
+	color[] = {1, 1, 1, 1};
+	colorText[] = {0.95, 0.95, 0.95, 1};
+	colorScrollbar[] = {0.95, 0.95, 0.95, 1};
+	colorSelect[] = {0.95, 0.95, 0.95, 1};
+	colorSelect2[] = {0.95, 0.95, 0.95, 1};
+	colorSelectBackground[] = {0.1, 0.1, 0.1, 1.0};
+	colorSelectBackground2[] = {0.1, 0.1, 0.1, 0.8};
+	period = 0;
+	colorBackground[] = {0, 0, 0, 1};
+	sizeEx = 0.034;
+	
+	class ScrollBar {
+		color[] = {1, 1, 1, 0.6};
+		colorActive[] = {1, 1, 1, 1};
+		colorDisabled[] = {1, 1, 1, 0.3};
+		thumb = "\z\addons\dayz_code\gui\ui\igui_scrollbar_thumb_ca.paa";
+		arrowFull = "\z\addons\dayz_code\gui\ui\igui_arrow_top_active_ca.paa";
+		arrowEmpty = "\z\addons\dayz_code\gui\ui\igui_arrow_top_ca.paa";
+		border = "\z\addons\dayz_code\gui\ui\igui_border_scroll_ca.paa";
+	};
+};
+
+class RscIGUIListNBox : RscListNBox {
+	style = 0 + 0x10;
+	shadow = 2;
+	color[] = {1, 1, 1, 1};
+	colorText[] = {1, 1, 1, 0.75};
+	colorScrollbar[] = {0.95, 0.95, 0.95, 1};
+	colorSelect[] = {0.95, 0.95, 0.95, 1};
+	colorSelect2[] = {0.95, 0.95, 0.95, 1};
+	colorSelectBackground[] = {0.1, 0.1, 0.1, 1.0};
+	colorSelectBackground2[] = {0.1, 0.1, 0.1, 1.0};
+	period = 0;
+	colorBackground[] = {0, 0, 0, 1};
+	columns[] = {0.1, 0.7, 0.1, 0.1};
+	
+	class ScrollBar {
+		color[] = {1, 1, 1, 0.6};
+		colorActive[] = {1, 1, 1, 1};
+		colorDisabled[] = {1, 1, 1, 0.3};
+		thumb = "\z\addons\dayz_code\gui\ui\igui_scrollbar_thumb_ca.paa";
+		arrowFull = "\z\addons\dayz_code\gui\ui\igui_arrow_top_active_ca.paa";
+		arrowEmpty = "\z\addons\dayz_code\gui\ui\igui_arrow_top_ca.paa";
+		border = "\z\addons\dayz_code\gui\ui\igui_border_scroll_ca.paa";
 	};
 };
 
@@ -113,6 +356,18 @@ class RscDisplayLoading
 				class LoadingPic : RscPictureKeepAspect
 				{
 					text = "z\addons\dayz_code\gui\sahrani.paa";
+				};
+				class Name : RscText {
+					style = 0;
+					colorText[] = {0.95, 0.95, 0.95, 1};
+				};
+				class CA_Progress : RscProgress {
+					idc = 104;
+					x = "(SafezoneX+(SafezoneW -SafezoneH*3/4)/2)+ (0.5/2/4)*3*SafezoneH";
+					y = "SafezoneY+SafezoneH*0.95";
+					w = "0.5* (((SafezoneW*3)/4)/SafezoneW)/(1/SafezoneH)";
+					text = "\ca\ui\data\loadscreen_progressbar_ca.paa";
+					colorText[] = {0.95, 0.95, 0.95, 1};
 				};
 			};
 		};
@@ -198,7 +453,6 @@ class RscDisplayGameOptions
 		};	
 	};
 };
-class RscShortcutButton;
 class RscShortcutButtonMain;
 class RscDisplayMain : RscStandardDisplay
 {
@@ -368,7 +622,7 @@ class RscDisplayGear
 			y = 0.544098;
 			w = 0.458;
 			h = 0.075;
-			text = "\ca\ui\data\igui_gear_filter_1_ca.paa";
+			text = "\z\addons\dayz_code\gui\ui\igui_gear_filter_1_ca.paa";
 		};
 		class CA_Filter_Left_Icon: RscPicture
 		{
@@ -525,7 +779,7 @@ class RscDisplayGear
 					drawSideArrows = 1;
 					idcRight = 147;
 					idcLeft = 146;
-					colorPlayerItem[] = {0.8784,0.8471,0.651,1};
+					colorPlayerItem[] = {0.95,0.95,0.95,1};
 					onKeyDown = "private [""_dummy""]; _dummy = [_this,""onKeyDown"",0,107,0,107] execVM	""\ca\ui\scripts\handleGear.sqf""; _dummy;";
 					onLBSelChanged = "private [""_dummy""]; _dummy = [_this,""onLBSelChanged""] execVM ""\ca\ui\scripts\handleGear.sqf""; _dummy;";
 					onLBListSelChanged = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\ca\ui\scripts\handleGear.sqf""; _dummy;";
@@ -700,8 +954,8 @@ class RscDisplayGear
 					onMouseButtonDown = "_this call player_selectSlot;";
 					soundDoubleClick[] = {"",0.1,1};
 					color[] = {1,1,1,1};
-					colorBackground[] = {0.8784,0.8471,0.651,1};
-					colorBackgroundSelected[] = {0.8784,0.8471,0.651,1};
+					colorBackground[] = {0.95,0.95,0.95,1};
+					colorBackgroundSelected[] = {0.95,0.95,0.95,1};
 					colorFocused[] = {0,0,0,0};
 					canDrag = 1;
 				};
@@ -978,10 +1232,10 @@ class RscDisplayGear
 				color[] = {1,1,1,0.6};
 				colorActive[] = {1,1,1,1};
 				colorDisabled[] = {1,1,1,0.3};
-				thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
-				arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
-				arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
-				border = "\ca\ui\data\ui_border_scroll_ca.paa";
+				thumb = "\z\addons\dayz_code\gui\ui\ui_scrollbar_thumb_ca.paa";
+				arrowFull = "\z\addons\dayz_code\gui\ui\ui_arrow_top_active_ca.paa";
+				arrowEmpty = "\z\addons\dayz_code\gui\ui\ui_arrow_top_ca.paa";
+				border = "\z\addons\dayz_code\gui\ui\ui_border_scroll_ca.paa";
 			};
 			class Controls
 			{
@@ -1001,7 +1255,8 @@ class RscDisplayGear
 		class ButtonRearm: RscIGUIShortcutButton
 		{
 			idc = 132;
-			shortcuts[] = {"0x00050000 + 2"};
+			shortcuts[] = {};
+			//onButtonClick = "player hint ""Crafting not ready yet.""; /*_dummy = execVM ""\ca\ui\scripts\armory\launchArmory.sqf""*/ ";
 			x = 0.554743;
 			y = 0.897067;
 			text = "Rearm";
@@ -1045,31 +1300,31 @@ class RscDisplayGear
 		{
 			name = "All";
 			mask = -1;
-			image = "\ca\ui\data\igui_gear_filter_1_ca.paa";
+			image = "\z\addons\dayz_code\gui\ui\igui_gear_filter_1_ca.paa";
 		};
 		class Primary
 		{
 			name = "Primary";
 			mask = 769;
-			image = "\ca\ui\data\igui_gear_filter_2_ca.paa";
+			image = "\z\addons\dayz_code\gui\ui\igui_gear_filter_2_ca.paa";
 		};
 		class Secondary
 		{
 			name = "Secondary";
 			mask = 516;
-			image = "\ca\ui\data\igui_gear_filter_3_ca.paa";
+			image = "\z\addons\dayz_code\gui\ui\igui_gear_filter_3_ca.paa";
 		};
 		class HandGun
 		{
 			name = "HandGun";
 			mask = 18;
-			image = "\ca\ui\data\igui_gear_filter_4_ca.paa";
+			image = "\z\addons\dayz_code\gui\ui\igui_gear_filter_4_ca.paa";
 		};
 		class Items
 		{
 			name = "Items";
 			mask = 135168;
-			image = "\ca\ui\data\igui_gear_filter_5_ca.paa";
+			image = "\z\addons\dayz_code\gui\ui\igui_gear_filter_5_ca.paa";
 		};
 	};
 	movingEnable = 1;
@@ -1091,7 +1346,7 @@ class RscDisplayGear
 			w = 1.2549;
 			h = 1.6732;
 			moving = 1;
-			text = "\ca\ui\data\igui_background_gear_ca.paa";
+			text = "\z\addons\dayz_code\gui\ui\igui_background_gear_ca.paa";
 		};
 	};
 };
@@ -1183,7 +1438,7 @@ class RscTitles
 				y = 0.418158 * safezoneH + safezoneY;
 				w = 0.0634286 * safezoneW;
 				h = 0.136829 * safezoneH;
-				colorText[] = {0.95, 0.95, 0.95, 1};
+				colorText[] = {0.95, 0.95, 0.95, .9};
 			};
 			class RscText_1400: RscPictureGUI
 			{
@@ -1205,7 +1460,7 @@ class RscTitles
 				y = 0.392207 * safezoneH + safezoneY;
 				w = 0.141 * safezoneW;
 				h = 0.188013 * safezoneH;
-				colorText[] = {0.38,0.63,0.26,1};
+				colorText[] = {0.1,0.1,0.1,.85};
 			};
 		};
 	};
@@ -1440,7 +1695,6 @@ class RscTitles
 class CA_Black_Back;
 class RscMapControl;
 class IGUIBack;
-class RscIGUIListBox;
 class RscHTML;
 class RscObject;
 class RscDisplayMainMap {

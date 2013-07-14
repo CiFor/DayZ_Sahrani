@@ -347,7 +347,7 @@ class CfgInGameUI {
 			height = 0.56;
 		};
 	};
-	
+
 	class Menu {
 		hide = "HTFade";
 		width = 0.45;
@@ -361,10 +361,10 @@ class CfgInGameUI {
 		align = 0;
 		widthMin = 0.155;
 		widthMax = 0.45;
-		colorChecked[] = {0.863, 0.584, 0.0, 1};
-		colorEnabled[] = {0.95, 0.95, 0.95, 1};
-		colorDisabled[] = {0.606, 0.606, 0.606, 1};
-		colorSelected[] = {0.424, 0.651, 0.247, 1};
+		colorChecked[] = {0.95, 0.95, 0.95, 0.8};//{0.863, 0.584, 0.0, 1};
+		colorEnabled[] = {0.95, 0.95, 0.95, 1};//{0.95, 0.95, 0.95, 1};
+		colorDisabled[] = {0.95, 0.95, 0.95, 0.5};//{0.606, 0.606, 0.606, 1};
+		colorSelected[] = {0.1, 0.1, 0.1, 1};//{0.424, 0.651, 0.247, 1};
 		colorSelectedText[] = {0.95, 0.95, 0.95, 1};
 		hideTime = 60;
 		quickMenuDelay = 0.5;
@@ -389,7 +389,7 @@ class CfgInGameUI {
 	
 	class Actions {
 		align = 0x00 + 0x08;
-		shadow = 0;
+		shadow = 2;
 		x = "0.012 + SafeZoneX";
 		y = 0.411;
 		font = "EtelkaNarrowMediumPro";
@@ -401,10 +401,18 @@ class CfgInGameUI {
 		iconArrowDown = "\ca\ui\data\ui_action_arrow_down_gs.paa";
 		colorBackground[] = {0, 0, 0, 0.0};
 		colorText[] = {0.95, 0.95, 0.95, 1};
-		colorSelect[] = {0.1, 0.1, 0.1, 1};
-		colorBackgroundSelected[] = {0.95, 0.95, 0.95, 1};
+		colorSelect[] = {0.95, 0.95, 0.95, 1};
+		colorBackgroundSelected[] = {0.1, 0.1, 0.1, 1};
 		background = "\ca\ui\data\igui_hud_corner.paa";
 		underlineSelected = 0;
+		/*
+		colorText[] = {0.95, 0.95, 0.95, 1};
+		colorChecked[] = {0.95, 0.95, 0.95, 0.8};//{0.863, 0.584, 0.0, 1};
+		colorEnabled[] = {0.95, 0.95, 0.95, 1};//{0.95, 0.95, 0.95, 1};
+		colorDisabled[] = {0.95, 0.95, 0.95, 0.5};//{0.606, 0.606, 0.606, 1};
+		colorBackgroundSelected[] = {0.1, 0.1, 0.1, 1};//{0.424, 0.651, 0.247, 1};
+		colorSelectedText[] = {0.95, 0.95, 0.95, 1};
+		*/
 	};
 	
 	class DefaultAction {

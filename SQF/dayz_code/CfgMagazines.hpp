@@ -771,7 +771,7 @@ class CfgMagazines {
 	class ItemPropane : CA_Magazine {
 		scope = public;
 		count = 1;
-		type = 256;
+		type = "(256*2)";
 		displayName = "Propane Tank";
 		model = "\SMD\assets\objects\propane";
 		picture = "\SMD\assets\objects\icons\propane.paa";
