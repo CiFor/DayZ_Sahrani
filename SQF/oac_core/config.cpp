@@ -601,6 +601,32 @@ class CfgPatches {
 	};
 };
 
+class CfgMaterials {
+	class Water;
+	class Sara_WaterColor: Water
+	{
+		//  values
+		ambient[] = {0.0, 0.025, 0.2, 1.0}; 
+		diffuse[] = {0.0, 0.05, 0.06, 0.5};
+	};
+
+	class Shore;
+	class Sara_ShoreColor: Shore
+	{
+		//  values
+		ambient[] = {0.0, 0.025, 0.2, 1.0};
+		diffuse[] = {0.0, 0.05, 0.06, 0.5};
+	};
+
+	class ShoreFoam;
+	class Sara_ShoreFoamColor: ShoreFoam
+	{
+		// values
+		ambient[] = {0.0, 0.25, 0.2, 0.5};
+		diffuse[] = {0.0, 0.05, 0.6, 0.4};
+	};
+};
+
 class CfgAmmo {
 	class B_127x99_Ball;	// External class reference
 	class B_20mm_AA;	// External class reference
@@ -14343,6 +14369,9 @@ class CfgWorlds {
 	};
 	
 	class Sara : Intro {
+		seaMaterial = "#Sara_Watercolor";
+		shoreMaterial = "#Sara_ShoreColor";
+		shoreFoamMaterial = "#Sara_ShoreFoamColor";
 		cutscenes[] = {};
 		description = "Sahrani";
 		worldName = "\ca\sara\sara.wrp";
