@@ -776,7 +776,7 @@ class CfgMagazines {
 		model = "\SMD\assets\objects\brick";
 		picture = "\SMD\assets\objects\icons\brick.paa";
 		descriptionShort = "Red Brick";
-		ammo = "TinCan";
+		ammo = "Brick";
 	};
 	
 	class ItemFloppyWire : CA_Magazine {

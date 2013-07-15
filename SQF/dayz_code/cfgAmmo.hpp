@@ -10,4 +10,9 @@ class CfgAmmo {
 		hit = 9;
 		simulation = "shotBullet";
 	};
+	class ThrownObjects;
+	class Brick : ThrownObjects {
+		hit = 8;
+		indirectHit=1;
+	}
 };
