@@ -1983,7 +1983,7 @@ class RscTitles
 				y = 0.86 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
-				colorText[] = {0, 0, 0, 0.85};
+				colorText[] = {1, 0, 0, 0.85};
 			};
 			class RscPicture_1304: RscPictureGUI
 			{

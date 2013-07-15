@@ -637,16 +637,22 @@ class CfgMagazines {
 		ammo = "TinCan";
 	};
 	
-	class ItemWaterbottle;
-	class ItemWaterbottleBoiled : ItemWaterbottle {
-		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
-		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
-	 };
-		class ItemWaterbottleDrugged : ItemWaterbottle {
-	displayName = $STR_ITEMWATERBOTTLEDRUGGED_CODE_NAME;
-	descriptionShort = $STR_ITEMWATERBOTTLEDRUGGED_CODE_DESC;
-	class ItemActions
+	class FoodDrink;
+	class ItemWaterbottle : FoodDrink {
+		scope=2;
+		refillable=1;
+		sfx="drink";
+		displayName="$STR_EQUIP_NAME_12";
+		model="\dayz_equip\models\waterbottle_gear.p3d";
+		picture="\dayz_equip\textures\equip_waterbottle_ca.paa";
+		descriptionShort="$STR_EQUIP_DESC_12";
+		class ItemActions
 		{
+			class Drink
+			{
+				text="$STR_ACTIONS_DRINK";
+				script="spawn player_drink;";
+			};
 			class ReloadMag
 			{
 				text="Combine for Drugged Water Bottle";
@@ -660,6 +666,22 @@ class CfgMagazines {
 				{
 					"ItemWaterbottleDrugged"
 				};
+			};
+		};
+		
+	}
+	class ItemWaterbottleBoiled : ItemWaterbottle {
+		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
+		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
+	};
+	 
+	class ItemWaterbottleDrugged : ItemWaterbottle {
+		class ItemActions
+		{
+			class Drink
+			{
+				text="$STR_ACTIONS_DRINK";
+				script="spawn player_drink;";
 			};
 		};
 	};

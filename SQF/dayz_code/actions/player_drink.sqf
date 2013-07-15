@@ -65,13 +65,18 @@ if ((random 15 < 1) and (_itemorignal == "ItemWaterbottle")) then {
     player setVariable["USEC_infected",true,true];
 };
 
-player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
+if(_itemorignal == "ItemWaterbottleDrugged") then {
+	[player, 1] call fnc_usec_damageUnconscious;
+	cutText ["Your Drink was spiked!", "PLAIN DOWN"];
+} else {
+	player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 
-dayz_lastDrink = time;
-dayz_thirst = 0;
+	dayz_lastDrink = time;
+	dayz_thirst = 0;
 
-//Ensure Control is visible
-_display = uiNamespace getVariable 'DAYZ_GUI_display';
-(_display displayCtrl 1302) ctrlShow true;
+	//Ensure Control is visible
+	_display = uiNamespace getVariable 'DAYZ_GUI_display';
+	(_display displayCtrl 1302) ctrlShow true;
 
-cutText [format[(localize  "str_player_consumed"),_text], "PLAIN DOWN"];
+	cutText [format[(localize  "str_player_consumed"),_text], "PLAIN DOWN"];
+}

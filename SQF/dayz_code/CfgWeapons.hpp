@@ -185,57 +185,11 @@ class CfgWeapons {
 		canlock = 0;
 		cursor = "RifleCursor";
 	};
-	class Mode_SemiAuto;
 	class Crossbow;
 	class Crossbow_DZ : Crossbow {
-		class Single: Mode_SemiAuto
+		class Single
 		{
-			dispersion=0.001;
-			soundContinuous=0;
 			reloadTime=1.8;
-			reloadMagazineSound[]=
-			{
-				"\ca\sounds\weapons\rifles\M1014-reload",
-				0.316228,
-				1,
-				20
-			};
-			begin1[]=
-			{
-				"dayz_weapons\sounds\crossbow_fire_0",
-				0.177828,
-				1,
-				15
-			};
-			begin2[]=
-			{
-				"dayz_weapons\sounds\crossbow_fire_1",
-				0.177828,
-				1,
-				15
-			};
-			soundBegin[]=
-			{
-				"begin1",
-				0.5,
-				"begin2",
-				0.5
-			};
-			drySound[]=
-			{
-				"ca\sounds\weapons\rifles\dry",
-				0.0099999998,
-				1,
-				10
-			};
-			minRange=0;
-			minRangeProbab=0.5;
-			midRange=60;
-			midRangeProbab=0.2;
-			maxRange=100;
-			maxRangeProbab=0.029999999;
-			recoil="recoil_single_primary_4outof10";
-			recoilProne="recoil_single_primary_prone_4outof10";
 		};
 		magazines[] =
 		{
