@@ -226,6 +226,7 @@ class CfgWeapons {
 				"ItemSodaLemonadeEmpty", 
 				"ItemSodaLvgEmpty", 
 				"ItemSodaMzlyEmpty", 
+				"ItemBrick",
 				"ItemSodaRabbitEmpty"
 			};          
 		};
