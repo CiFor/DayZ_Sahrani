@@ -28,6 +28,7 @@ class RscButton {
 };
 class CA_IGUI_Title;
 class CA_Title;
+class RscXSliderH;
 
 class RscText {
 	x = 0;
@@ -61,6 +62,21 @@ class RscEdit {
 	colorBackground[] = {0, 0, 0, 1};
 	colorText[] = {0.95, 0.95, 0.95, 1};
 	colorSelection[] = {1, 1, 1, 1.0};
+};
+
+class RscXListBox {
+	style = 0x400 + 0x02 +	0x10;
+	shadow = 2;
+	arrowEmpty = "\ca\ui\data\ui_arrow_left_ca.paa";
+	arrowFull = "\ca\ui\data\ui_arrow_left_active_ca.paa";
+	border = "\ca\ui\data\ui_border_frame_ca.paa";
+	w = 0.14706;
+	h = 0.039216;
+	colorSelect[] = {1, 1, 1, 1};
+	colorText[] = {0.95, 0.95, 0.95, 1.0};
+	font = "Zeppelin32";
+	sizeEx = 0.03921;
+	soundSelect[] = {"\ca\ui\data\sound\new1", 0.0, 0};
 };
 
 class RscIGUIText : RscText {
@@ -120,7 +136,7 @@ class RscShortcutButton {
 	shadow = 2;
 	w = 0.183825;
 	h = 0.104575;
-	color[] = {0.8784, 0.8471, 0.651, 1.0};
+	color[] = {0.95, 0.95, 0.95, 1.0};
 	color2[] = {0.95, 0.95, 0.95, 1};
 	colorBackground[] = {1, 1, 1, 1};
 	colorbackground2[] = {1, 1, 1, 0.4};
@@ -222,8 +238,81 @@ class RscIGUIShortcutButton : RscShortcutButton {
 		shadow = "true";
 	};
 };
+
+class RscHTML {
+	colorText[] = {0.95, 0.95, 0.95, 1.0};
+	colorLink[] = {0.95, 0.95, 0.95, 1.0};
+	colorBold[] = {0.95, 0.95, 0.95, 1.0};
+	colorLinkActive[] = {1, 0.537, 0, 1};
+	sizeEx = 0.03921;
+	prevPage = "\ca\ui\data\arrow_left_ca.paa";
+	nextPage = "\ca\ui\data\arrow_right_ca.paa";
+	shadow = 2;
+	
+	class H1 {
+		font = "Zeppelin32";
+		fontBold = "Zeppelin33";
+		sizeEx = 0.03921;
+		align = "left";
+	};
+	
+	class H2 {
+		font = "Zeppelin32";
+		fontBold = "Zeppelin33";
+		sizeEx = 0.03921;
+		align = "left";
+	};
+	
+	class H3 {
+		font = "Zeppelin32";
+		fontBold = "Zeppelin33";
+		sizeEx = 0.03921;
+		align = "left";
+	};
+	
+	class H4 {
+		font = "Zeppelin33Italic";
+		fontBold = "Zeppelin33";
+		sizeEx = 0.03921;
+		align = "left";
+	};
+	
+	class H5 {
+		font = "Zeppelin32";
+		fontBold = "Zeppelin33";
+		sizeEx = 0.03921;
+		align = "left";
+	};
+	
+	class H6 {
+		font = "Zeppelin32";
+		fontBold = "Zeppelin33";
+		sizeEx = 0.03921;
+		align = "left";
+	};
+	
+	class P {
+		font = "Zeppelin32";
+		fontBold = "Zeppelin33";
+		sizeEx = 0.03921;
+		align = "left";
+	};
+};
+
 class RscGearShortcutButton;
-class RscActiveText;
+class RscActiveText {
+	idc = -1;
+	x = 0;
+	y = 0;
+	h = 0.035;
+	w = 0.035;
+	font = "Zeppelin32";
+	shadow = 2;
+	sizeEx = 0.03921;
+	color[] = {0, 0, 0, 1};
+	colortext[] = {0, 0, 0, 1};
+	colorActive[] = {1, 1, 1, 1};
+};
 
 class RscPictureKeepAspect;
 class RscStandardDisplay;
@@ -270,6 +359,39 @@ class RscIGProgress : RscProgress {
 	texture = "#(argb,8,8,3)color(1,1,1,1)";
 };
 
+class RscCombo {
+	x = 0;
+	y = 0;
+	w = 0.12;
+	h = 0.035;
+	shadow = false;
+	color[] = {1, 1, 1, 1};
+	colorText[] = {0.95, 0.95, 0.95, 1};
+	colorScrollbar[] = {0.95, 0.95, 0.95, 1};
+	colorSelect[] = {0.95, 0.95, 0.95, 1};
+	colorSelect2[] = {0.95, 0.95, 0.95, 1};
+	colorSelectBackground[] = {0, 0, 0, 1};
+	colorSelectBackground2[] = {0, 0, 0, 1};
+	colorBackground[] = {0, 0, 0, 1};
+	arrowEmpty = "\ca\ui\data\ui_arrow_combo_ca.paa";
+	arrowFull = "\ca\ui\data\ui_arrow_combo_active_ca.paa";
+	wholeHeight = 0.45;
+	colorActive[] = {0, 0, 0, 1};
+	colorDisabled[] = {0, 0, 0, 0.3};
+	font = "Zeppelin32";
+	sizeEx = 0.03921;
+	
+	class ScrollBar {
+		color[] = {1, 1, 1, 0.6};
+		colorActive[] = {1, 1, 1, 1};
+		colorDisabled[] = {1, 1, 1, 0.3};
+		thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
+		arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
+		arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
+		border = "\ca\ui\data\ui_border_scroll_ca.paa";
+	};
+};
+
 class RscListBox {
 	style = 16;
 	font = "Zeppelin32";
@@ -281,7 +403,7 @@ class RscListBox {
 	colorSelect[] = {0.95, 0.95, 0.95, 1};
 	colorSelect2[] = {0.95, 0.95, 0.95, 1};
 	colorSelectBackground[] = {0, 0, 0, 1};
-	colorSelectBackground2[] = {0.8784, 0.8471, 0.651, 1.0};
+	colorSelectBackground2[] = {0, 0, 0, 1};
 	period = 1.2;
 	colorBackground[] = {0, 0, 0, 1};
 	maxHistoryDelay = 1.0;
@@ -387,12 +509,21 @@ class RscDisplayLoading
 					style = 0;
 					colorText[] = {0.95, 0.95, 0.95, 1};
 				};
+				class CA_ProgressBackground : RscText {
+					style = 48;
+					text = "\z\addons\dayz_code\gui\ui\loadscreen_progressbar_ca.paa";
+					colorText[] = {1, 1, 1, 0.1};
+					x = "(SafezoneX+(SafezoneW -SafezoneH*3/4)/2)+ (0.5/2/4)*3*SafezoneH";
+					y = "SafezoneY+SafezoneH*0.95";
+					w = "0.5* (((SafezoneW*3)/4)/SafezoneW)/(1/SafezoneH)";
+					h = 0.0261438;
+				};
 				class CA_Progress : RscProgress {
 					idc = 104;
 					x = "(SafezoneX+(SafezoneW -SafezoneH*3/4)/2)+ (0.5/2/4)*3*SafezoneH";
 					y = "SafezoneY+SafezoneH*0.95";
 					w = "0.5* (((SafezoneW*3)/4)/SafezoneW)/(1/SafezoneH)";
-					text = "\ca\ui\data\loadscreen_progressbar_ca.paa";
+					text = "\z\addons\dayz_code\gui\ui\loadscreen_progressbar_ca.paa";
 					colorText[] = {0.95, 0.95, 0.95, 1};
 				};
 			};
@@ -400,13 +531,105 @@ class RscDisplayLoading
 	};
 };
 
-class RscDisplayStart 
-{
-	class controls
-	{
-		class LoadingPic: RscPictureKeepAspect
-		{
+class RscDisplayNotFreeze : RscStandardDisplay {
+	class controlsBackground {};
+	
+	class controls {
+		class Text {};
+		class Progress {};
+		class Progress2 {};
+		
+		class CA_Text : RscLoadingText {
+			idc = 101;
+			colorText[] = {0.95, 0.95, 0.95, 1.0};
+		};
+	};
+};
+
+class RscDisplayLoadMission : RscStandardDisplay {
+	onload = "_this call compile preprocessfilelinenumbers 'ca\ui\scripts\ui_loadingText.sqf';";
+	
+	class controlsBackground {
+		
+		class Info : RscHTML {
+			idc = 106;
+			cycleLinks = 0;
+			cycleAllLinks = 0;
+			default = 0;
+			x = "0.01*SafeZoneW";
+			y = 0.0;
+			w = "0.514*SafeZoneW";
+			h = 1.807;
+			colorText[] = {0.95, 0.95, 0.95, 1};
+		};
+	};
+	
+	class controls {
+		
+		class Name2 : RscText {
+			idc = 101;
+			x = "SafezoneX+0.025";
+			y = "SafezoneY";
+			w = "SafezoneW*0.95";
+			h = "SafezoneH*0.075";
+			sizeEx = 0.05;
+			colorText[] = {0.95, 0.95, 0.95, 1.0};
+		};
+		
+		class CA_ProgressBackground : RscText {
+			style = 48;
+			text = "\z\addons\dayz_code\gui\ui\loadscreen_progressbar_ca.paa";
+			colorText[] = {1, 1, 1, 0.1};
+			x = "(SafezoneX+(SafezoneW -SafezoneH*3/4)/2)+ (0.5/2/4)*3*SafezoneH";
+			y = "SafezoneY+SafezoneH*0.95";
+			w = "0.5* (((SafezoneW*3)/4)/SafezoneW)/(1/SafezoneH)";
+			h = 0.0261438;
+		};
+		
+		class CA_Progress : RscProgress {
+			idc = 104;
+			x = "(SafezoneX+(SafezoneW -SafezoneH*3/4)/2)+ (0.5/2/4)*3*SafezoneH";
+			y = "SafezoneY+SafezoneH*0.95";
+			w = "0.5* (((SafezoneW*3)/4)/SafezoneW)/(1/SafezoneH)";
+			texture = "\z\addons\dayz_code\gui\ui\loadscreen_progressbar_ca.paa";
+		};
+		
+		class Date2 : RscText {
+			idc = 102;
+			text = " ";
+			style = 1;
+			x = "SafezoneX+0.025";
+			y = "SafezoneY+SafezoneH*0.925";
+			w = "SafezoneW*0.95";
+			h = "SafezoneH*0.075";
+			colorText[] = {0.95, 0.95, 0.95, 1.0};
+		};
+	};
+};
+class CA_Black_Back;
+class RscDisplayStart : RscStandardDisplay {
+	onload = "_this call compile preprocessfilelinenumbers 'ca\ui\scripts\ui_loadingText.sqf';";
+	idd = -1;
+	
+	class controlsBackground {
+		class CA_Black_Back3 : CA_Black_Back {};
+	};
+	
+	class controls {
+		class Text {};
+		class Progress {};
+		class Progress2 {};
+		
+		class LoadingPic : RscPictureKeepAspect {
 			text = "z\addons\dayz_code\gui\sahrani.paa";
+		};
+		
+		class CA_Text : RscLoadingText {
+			colorText[] = {0.8784, 0.8471, 0.651, 1.0};
+		};
+		
+		class CA_Progress : RscProgress {
+			texture = "\z\addons\dayz_code\gui\ui\loadscreen_progressbar_ca.paa";
 		};
 	};
 };
@@ -453,9 +676,7 @@ class RscDisplayMissionFail: RscStandardDisplay
 	};
 };
 
-
 class CA_TextLanguage;
-class RscXListBox;
 
 class RscDisplayGameOptions
 {
@@ -479,7 +700,118 @@ class RscDisplayGameOptions
 		};	
 	};
 };
-class RscShortcutButtonMain;
+class RscShortcutButtonMainMenu : RscShortcutButton {
+	w = 0.183825;
+	h = 0.104575;
+	color[] = {0.95, 0.95, 0.95, 1.0};
+	colorDisabled[] = {1, 1, 1, 0.25};
+	
+	class HitZone {
+		left = 0.004;
+		top = 0.029;
+		right = 0.004;
+		bottom = 0.029;
+	};
+	
+	class ShortcutPos {
+		left = 0.004;
+		top = 0.026;
+		w = 0.0392157;
+		h = 0.0522876;
+	};
+	
+	class TextPos {
+		left = 0.043;
+		top = 0.034;
+		right = 0.005;
+		bottom = 0.005;
+	};
+	animTextureNormal = "\ca\ui\data\ui_button_normal_ca.paa";
+	animTextureDisabled = "\ca\ui\data\ui_button_disabled_ca.paa";
+	animTextureOver = "\ca\ui\data\ui_button_over_ca.paa";
+	animTextureFocused = "\ca\ui\data\ui_button_focus_ca.paa";
+	animTexturePressed = "\ca\ui\data\ui_button_down_ca.paa";
+	animTextureDefault = "\ca\ui\data\ui_button_default_ca.paa";
+	soundEnter[] = {"\ca\ui\data\sound\onover", 0.09, 1};
+	soundPush[] = {"\ca\ui\data\sound\new1", 0.0, 0};
+	soundClick[] = {"\ca\ui\data\sound\onclick", 0.07, 1};
+	soundEscape[] = {"\ca\ui\data\sound\onescape", 0.09, 1};
+	action = "";
+	
+	class Attributes {
+		font = "Zeppelin32";
+		color = "#E5E5E5";
+		align = "left";
+		shadow = "true";
+	};
+	
+	class AttributesImagev {
+		font = "Zeppelin32";
+		color = "#E5E5E5";
+		align = "left";
+	};
+};
+
+class RscShortcutButtonMain : RscShortcutButton {
+	idc = -1;
+	style = 0;
+	default = 0;
+	w = 0.313726;
+	h = 0.104575;
+	color[] = {0.95, 0.95, 0.95, 1.0};
+	colorDisabled[] = {1, 1, 1, 0.25};
+	
+	class HitZone {
+		left = 0.0;
+		top = 0.0;
+		right = 0.0;
+		bottom = 0.0;
+	};
+	
+	class ShortcutPos {
+		left = 0.0204;
+		top = 0.026;
+		w = 0.0392157;
+		h = 0.0522876;
+	};
+	
+	class TextPos {
+		left = 0.08;
+		top = 0.034;
+		right = 0.005;
+		bottom = 0.005;
+	};
+	animTextureNormal = "\ca\ui\data\ui_button_main_normal_ca.paa";
+	animTextureDisabled = "\ca\ui\data\ui_button_main_disabled_ca.paa";
+	animTextureOver = "\ca\ui\data\ui_button_main_over_ca.paa";
+	animTextureFocused = "\ca\ui\data\ui_button_main_focus_ca.paa";
+	animTexturePressed = "\ca\ui\data\ui_button_main_down_ca.paa";
+	animTextureDefault = "\ca\ui\data\ui_button_main_normal_ca.paa";
+	period = 0.5;
+	font = "Zeppelin32";
+	size = 0.03921;
+	sizeEx = 0.03921;
+	text = "";
+	soundEnter[] = {"\ca\ui\data\sound\onover", 0.09, 1};
+	soundPush[] = {"\ca\ui\data\sound\new1", 0.0, 0};
+	soundClick[] = {"\ca\ui\data\sound\onclick", 0.07, 1};
+	soundEscape[] = {"\ca\ui\data\sound\onescape", 0.09, 1};
+	action = "";
+	
+	class Attributes {
+		font = "Zeppelin32";
+		color = "#E5E5E5";
+		align = "left";
+		shadow = "false";
+	};
+	
+	class AttributesImage {
+		font = "Zeppelin32";
+		color = "#E5E5E5";
+		align = "false";
+	};
+};
+
 class RscDisplayMain : RscStandardDisplay
 {
 	class controlsBackground 
@@ -490,7 +822,7 @@ class RscDisplayMain : RscStandardDisplay
 			y = "SafeZoneY + 0.03";
 			w = 0.627451;
 			h = 1.000000;
-			text = "\ca\ui\data\ui_mainmenu_background_ca.paa";
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
 		};
 		class CA_ARMA2 : RscPicture
 		{
@@ -548,21 +880,6 @@ class RscDisplayMain : RscStandardDisplay
 			x = "SafeZoneX + 0.05";
 			y = "SafeZoneY + 0.75";
 		};
-	};
-};
-//Remove Diary
-class RscDisplayDiary {
-	idd = 129;
-	movingEnable = 0;
-	
-	class Controls {
-		delete Diary;
-		delete DiaryIndex;
-		delete B_Quit;
-		delete B_Add;
-		delete DiaryPage;
-		delete DiaryTitle;
-		delete DiaryBackground;
 	};
 };
 
@@ -1718,11 +2035,36 @@ class RscTitles
 		};
 	};
 };
-
-class CA_Black_Back;
 class RscMapControl;
 class IGUIBack;
-class RscHTML;
+
+class RscTextWIP : RscText {
+	x = "SafeZoneX";
+	y = "0.099 + SafeZoneY";
+	w = 0.156863;
+	h = 0.20915;
+	shadow = 2;
+	SizeEx = 0.034;
+	colorText[] = {0.95, 0.95, 0.95, 1.0};
+	text = "";
+};
+
+class RscBackground : RscText {
+	type = VSoft;
+	IDC = -1;
+	style = 512;
+	shadow = false;
+	x = 0.0;
+	y = 0.0;
+	w = 1.0;
+	h = 1.0;
+	text = "";
+	ColorBackground[] = {0.1, 0.1, 0.1, 1};
+	ColorText[] = {0.95, 0.95, 0.95, 1};
+	font = "Zeppelin32";
+	SizeEx = 1;
+};
+
 class RscObject;
 class RscDisplayMainMap {
 	saveParams = 1;
@@ -1753,7 +2095,7 @@ class RscDisplayMainMap {
 			y = "SafeZoneY + 0.031";
 			w = "0.98*SafeZoneW";
 			h = 0.082;
-			colorbackground[] = {0.1961, 0.1451, 0.0941, 0.85};
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
 		};
 		
 		class CA_TopicsBackground : IGUIBack {
@@ -1762,7 +2104,7 @@ class RscDisplayMainMap {
 			y = "SafeZoneY + 0.117";
 			w = "0.146*SafeZoneW";
 			h = 0.53;
-			colorbackground[] = {0.1961, 0.1451, 0.0941, 0.85};
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
 		};
 		
 		class CA_SubTopicsBackground : IGUIBack {
@@ -1771,7 +2113,7 @@ class RscDisplayMainMap {
 			y = "SafeZoneY + 0.117";
 			w = "0.283*SafeZoneW";
 			h = 0.53;
-			colorbackground[] = {0.1961, 0.1451, 0.0941, 0.85};
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
 		};
 		
 		class CA_ContentBackground : IGUIBack {
@@ -1780,14 +2122,14 @@ class RscDisplayMainMap {
 			y = "SafeZoneY + 0.117";
 			w = "SafeZoneW * 0.544";
 			h = 0.832;
-			colorbackground[] = {0.1961, 0.1451, 0.0941, 0.85};
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
 		};
 		
-		class CA_PlayerName {};
-		class CA_PlayerRank {};
-		class CA_MissionName {};
-		class CA_CurrentTaskLabel {};
-		class CA_CurrentTask {};
+		delete CA_PlayerName;
+		delete CA_PlayerRank;
+		delete CA_MissionName;
+		delete CA_CurrentTaskLabel;
+		delete CA_CurrentTask;
 		
 		class DiaryList : RscIGUIListBox {
 			idc = 1001;
@@ -1797,6 +2139,8 @@ class RscDisplayMainMap {
 			y = "SafeZoneY + 0.137";
 			w = "0.146*SafeZoneW";
 			h = 0.6;
+			colorSelectBackground[] = {0, 0, 0, 1.0};
+			colorSelectBackground2[] = {0, 0, 0, 0.8};
 		};
 		
 		class CA_DiaryIndex : RscIGUIListBox {
@@ -1863,7 +2207,7 @@ class RscDisplayMainMap {
 			y = 0.0;
 			w = 0.0;
 			h = 0.0;
-			colorBackground[] = {0.2, 0.15, 0.1, 0.8};
+			colorBackground[] = {0.2, 0.2, 0.2, 0.8};
 		};
 		
 		class HC_tooltip_text : RscStructuredText {
@@ -1895,7 +2239,7 @@ class RscDisplayMainMap {
 			enableZoom = 1;
 			direction[] = {0, 1, 7.2};
 			up[] = {0, 0, -1};
-			scale = 0.4;
+			scale = 0.3;
 		};
 		
 		class Compass : RscObject {
@@ -1910,7 +2254,7 @@ class RscDisplayMainMap {
 			enableZoom = 1;
 			direction[] = {1, 0, 0};
 			up[] = {0, 1, 0};
-			scale = 0.35;
+			scale = 0.3;
 		};
 		
 		class GPS : RscObject {
@@ -1921,7 +2265,7 @@ class RscDisplayMainMap {
 			yBack = 0.5;
 			z = 0.22;
 			zBack = 0.12;
-			scale = 0.3;
+			scale = 0.2;
 			
 			class Areas {
 				class Display {
@@ -2019,6 +2363,186 @@ class RscDisplayMainMap {
 						class RadioJuliet : RscRadioText {
 							y = 1.13;
 						};
+					};
+				};
+			};
+		};
+	};
+};
+
+class RscDisplayDiary {
+	idd = 129;
+	movingEnable = 0;
+	
+	class Controls {
+		delete Diary;
+		delete DiaryIndex;
+		delete B_Quit;
+		delete B_Add;
+		delete DiaryPage;
+		delete DiaryTitle;
+		delete DiaryBackground;
+		
+		class CA_MainBackground : IGUIBack {
+			idc = 1020;
+			x = "SafeZoneX + 0.010 * SafeZoneW";
+			y = "SafeZoneY + 0.031";
+			w = "0.98*SafeZoneW";
+			h = 0.082;
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_TopicsBackground : IGUIBack {
+			idc = 1021;
+			x = "0.010*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.117";
+			w = "0.146*SafeZoneW";
+			h = 0.53;
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_SubTopicsBackground : IGUIBack {
+			idc = 1022;
+			x = "0.16*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.117";
+			w = "0.283*SafeZoneW";
+			h = 0.53;
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_ContentBackground : IGUIBack {
+			idc = 1023;
+			x = "0.446*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.117";
+			w = "SafeZoneW * 0.544";
+			h = 0.832;
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_PlayerName : RscIGUIText {
+			idc = 111;
+			style = 1;
+			x = "0.02*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.07";
+			w = "SafeZoneW * 0.96";
+			h = 0.041;
+			sizeEx = 0.034;
+			colorText[] = {0.95, 0.95, 0.95, 1};
+			text = $STR_DIARY_PLAYER_NAME;
+		};
+		
+		class CA_PlayerRank : RscIGUIText {
+			idc = 116;
+			style = 2;
+			x = "0.02*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.07";
+			w = "SafeZoneW * 0.96";
+			h = 0.041;
+			sizeEx = 0.034;
+			colorText[] = {0.95, 0.95, 0.95, 1};
+			text = "";
+		};
+		
+		class CA_MissionName : RscText {
+			idc = 112;
+			style = 1;
+			x = "0.02*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.033";
+			w = "0.96 * SafeZoneW";
+			h = 0.041;
+			sizeEx = 0.034;
+			colorText[] = {0.95, 0.95, 0.95, 1};
+			text = $STR_DIARY_MISSION_NAME;
+		};
+		
+		class CA_CurrentTaskLabel : RscText {
+			style = 0;
+			x = "0.02*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.033";
+			w = "0.96 * SafeZoneW";
+			h = 0.041;
+			sizeEx = 0.034;
+			text = $STR_DIARY_CURRENT_TASK;
+		};
+		
+		class CA_CurrentTask : RscText {
+			idc = 113;
+			style = 0;
+			x = "0.02*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.07";
+			w = "0.96*SafeZoneW";
+			h = 0.041;
+			colorText[] = {0.95, 0.95, 0.95, 1};
+			text = "";
+		};
+		
+		class DiaryList : RscIGUIListBox {
+			idc = 1001;
+			onLBSelChanged = "[_this select 0, _this select 1, 'List'] call compile preprocessFileLineNumbers 'ca\Warfare2\Scripts\Client\GUI\GUI_logEH.sqf';       private ['_dummy']; _dummy = [_this,'onLBSelChanged'] call compile preprocessfile '\ca\ui\scripts\server_interface.sqf';";
+			default = 1;
+			x = "0.010*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.137";
+			w = "0.146*SafeZoneW";
+			h = 0.6;
+			colorSelectBackground[] = {0, 0, 0, 1.0};
+			colorSelectBackground2[] = {0, 0, 0, 0.8};
+		};
+		
+		class CA_DiaryIndex : RscIGUIListBox {
+			idc = 1002;
+			onLBSelChanged = "[_this select 0, _this select 1, 'Index'] call compile preprocessFileLineNumbers 'ca\Warfare2\Scripts\Client\GUI\GUI_logEH.sqf';";
+			default = 0;
+			x = "0.16*SafeZoneW  + SafeZoneX";
+			y = "SafeZoneY + 0.137";
+			w = "0.283*SafeZoneW";
+			h = 0.6;
+			sizeEx = 0.034;
+			colorSelectBackground[] = {0, 0, 0, 1.0};
+			colorSelectBackground2[] = {0, 0, 0, 0.8};
+		};
+		
+		class CA_DiaryGroup : RscControlsGroup {
+			idc = 1013;
+			x = "0.446*SafeZoneW  + SafeZoneX";
+			y = "SafeZoneY + 0.137";
+			w = "0.534*SafeZoneW";
+			h = 0.718;
+			
+			class VScrollbar {
+				autoScrollSpeed = -1;
+				autoScrollDelay = 5;
+				autoScrollRewind = 0;
+				color[] = {1, 1, 1, 1};
+				width = 0.01;
+			};
+			
+			class HScrollbar {
+				color[] = {1, 1, 1, 0};
+				height = 0.001;
+			};
+			
+			class Controls {
+				class CA_Diary : RscHTML {
+					idc = 1003;
+					cycleLinks = 0;
+					cycleAllLinks = 0;
+					default = 0;
+					x = "0.01*SafeZoneW";
+					y = 0.0;
+					w = "0.514*SafeZoneW";
+					h = 1.807;
+					colorText[] = {0.95, 0.95, 0.95, 1};
+					
+					class H1 {
+						font = "Zeppelin32";
+						fontBold = "Zeppelin32";
+						sizeEx = 0.034;
+					};
+					
+					class P {
+						font = "Zeppelin32";
+						fontBold = "Zeppelin32";
+						sizeEx = 0.034;
 					};
 				};
 			};
@@ -2896,5 +3420,568 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 
 		delete CA_ButtonContinue;
 		delete CA_ButtonCancel;
+	};
+};
+
+class RscDisplayMPInterrupt : RscStandardDisplay {
+	class controlsBackground {
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_background_mp_pause_ca.paa";
+		};
+	};
+	
+	class controls {
+		delete Title;
+		delete B_Players;
+		delete B_Options;
+		delete B_Abort;
+		delete B_Retry;
+		delete B_Load;
+		delete B_Save;
+		delete B_Continue;
+		delete B_Diary;
+		delete CA_B_Skip;
+		delete CA_B_REVERT;
+		
+		class MissionTitle : RscText {
+			idc = 120;
+			x = 0.05;
+			y = 0.618;
+			text = "";
+		};
+		
+		class DifficultyTitle : RscText {
+			idc = 121;
+			x = 0.05;
+			y = 0.572;
+			text = "";
+		};
+		
+		//being a dick - fix it...
+		class CA_B_SAVE : RscShortcutButtonMain {
+			idc = 103;
+			y = 0.2537 + 0.101903 * 10;
+			x = 0.051;
+			text = "";
+			default = 0;
+		};
+		
+		class CA_B_Respawn : RscShortcutButtonMain {
+			idc = 1010;
+			onButtonClick = "if ((alive player) && (r_fracture_legs)) then { player SetDamage 1;};";
+			y = 0.2537 + 0.101903 * 0;
+			x = 0.051;
+			text = $STR_DISP_INT_RESPAWN;
+			default = 0;
+		};
+		
+		class CA_B_Options : CA_B_Respawn {
+			idc = 101;
+			onButtonClick = "";
+			y = 0.2537 + 0.101903 * 1;
+			text = $STR_DISP_INT_OPTIONS;
+			default = 0;
+		};
+		
+		class CA_B_Abort : CA_B_Options {
+			idc = 104;
+			y = 0.2537 + 0.101903 * 2;
+			text = $STR_DISP_INT_ABORT;
+			default = 0;
+		};
+		
+		class ButtonCancel : RscShortcutButton {
+			idc = 2;
+			shortcuts[] = {0x00050000 + 1, 0x00050000 + 8};
+			default = 1;
+			x = 0.1605;
+			y = 0.6617;
+			text = $STR_DISP_INT_CONTINUE;
+		};
+	};
+};
+
+class RscDisplayLogin : RscStandardDisplay {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_background_profile_ca.paa";
+		};
+	};
+};
+
+class RscDisplayModLauncher : RscStandardDisplay {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_background_modlauncher_ca.paa";
+		};
+	};
+};
+
+class RscDisplayNewUser : RscStandardDisplay {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_newprofile_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayOptions {
+	class controlsBackground {
+		class MainbackFaded : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayGetReady : RscDisplayMainMap {
+	class controls {		
+		class CA_MainBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_TopicsBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_SubTopicsBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_ContentBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		delete CA_PlayerName;
+		delete CA_PlayerRank;
+		
+		class CA_ButtonsBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+	};
+};
+
+class RscDisplayOptionsVideo {
+	class ControlsBackground {
+		class Controls {
+			class Mainback : RscPicture {
+				text = "\z\addons\dayz_code\gui\ui\ui_background_video_ca.paa";
+			};
+			
+			class ButtonsBack : RscPicture {
+				text = "\z\addons\dayz_code\gui\ui\ui_background_video_buttons_ca.paa";
+			};
+		};
+	};
+};
+
+class RscDisplayOptionsAudio {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_audio_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayMicSensitivityOptions {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class MainbackFaded3 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class Mainback4 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_audio_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayConfigure {
+	class controlsBackground {
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_background_controls_ca.paa";
+		};
+	};
+};
+
+class RscDisplayConfigureAction {
+	class ControlsBackground {
+		class Background {};
+		
+		class Mainback_faded : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_background_controls_ca.paa";
+		};
+		
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_background_controlers_ca.paa";
+		};
+	};
+};
+
+class RscDisplayMissionEnd : RscStandardDisplay {
+	class controlsBackground {
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayMultiplayer : RscStandardDisplay {
+	sortUp = "\ca\ui\data\arrow_up_ca.paa";
+	sortDown = "\ca\ui\data\arrow_down_ca.paa";
+	showPassworded = "ca\ui\data\ui_mpfilter_icon_empty_password_ca.paa";
+	hidePassworded = "ca\ui\data\ui_mpfilter_icon_nopassword_ca.paa";
+	showBattlEye = "ca\ui\data\ui_mpfilter_icon_be_ca.paa";
+	showNoBattlEye = "ca\ui\data\ui_mpfilter_icon_nobe_ca.paa";
+	hideBattlEye = "ca\ui\data\ui_mpfilter_icon_empty_be_ca.paa";
+	showFull = "ca\ui\data\ui_mpfilter_icon_empty_full_ca.paa";
+	hideFull = "ca\ui\data\ui_mpfilter_icon_nofull_ca.paa";
+	showExpansions = "ca\ui\data\ui_mpfilter_icon_empty_expansions_ca.paa";
+	hideExpansions = "ca\ui\data\ui_mpfilter_icon_noexpansions_ca.paa";
+	colorPingUnknown[] = {0.4, 0.4, 0.4, 1};
+	colorPingGood[] = {0, 1, 0, 1};
+	colorPingPoor[] = {1, 0.6, 0, 1};
+	colorPingBad[] = {1, 0, 0, 1};
+	colorVersionGood[] = {0.8784, 0.8471, 0.651, 1.0};
+	colorVersionBad[] = {1, 0, 0, 1};
+	
+	class controlsbackground {
+		
+		class Mainback : RscText {
+			x = "SafeZoneX";
+			y = "SafeZoneY";
+			w = "SafeZoneW";
+			h = "SafeZoneH";
+			colorbackground[] = {0.1, 0.1, 0.1, 0.42};
+		};
+
+		class CA_Title2 : CA_Title {
+			idc = 101;
+			style = 2;
+			x = "(02/100)	* SafeZoneW + SafeZoneX";
+			y = "(02/100)	* SafeZoneH + SafeZoneY";
+			w = "(96/100)	* SafeZoneW";
+			h = "(06/100)	* SafeZoneH";
+			colorbackground[] = {0.1, 0.1, 0.1, 0.42};
+		};
+		
+		class CA_ServerDetailHost : RscText {
+			idc = 129;
+			SizeEx = 0.02674;
+			x = "(04/100)	* SafeZoneW + SafeZoneX";
+			y = "(71/100)	* SafeZoneH + SafeZoneY";
+			w = "(94/100)	* SafeZoneW";
+			h = "(2/100)	* SafeZoneH";
+			colorbackground[] = {0.1, 0.1, 0.1, 0.42};
+		};
+		delete CA_New;
+	};
+	
+	class controls {		
+		class CA_ValueSessions : RscIGUIListBox {
+			colorSelect[] = {0.95, 0.95, 0.95, 1};
+			colorSelectBackground[] = {0, 0, 0, 1};
+			colorSelectBackground2[] = {0, 0, 0, 1};
+
+		};
+	};
+};
+
+class RscDisplayFilter : RscStandardDisplay {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_gameoptions_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayPassword : RscStandardDisplay {
+	class controlsbackground {
+		class CA_Background_Top : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_background_messagebox_ca.paa";
+		};
+	};
+};
+
+class RscDisplayIPAddress : RscStandardDisplay {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_revert_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayServerGetReady : RscDisplayGetReady {
+	class controls {
+		class CA_MainBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_TopicsBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_SubTopicsBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_ContentBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_ButtonsBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+	};
+};
+
+class RscDisplayClientGetReady : RscDisplayGetReady {
+	class controls {
+		class CA_MainBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_TopicsBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_SubTopicsBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		class CA_ContentBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		
+		delete CA_PlayerName;
+		delete CA_PlayerRank;
+		
+		class CA_ButtonsBackground : IGUIBack {
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+	};
+};
+
+class RscDisplayHostSettings : RscStandardDisplay {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_revert_background_ca.paa";
+		};
+	};
+};
+
+class RscMPSetupMessage {
+	class controlsBackground {
+		class CA_Background : IGUIBack {
+			colorBackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+	};
+};
+
+class RscDisplayIntel {
+	class controlsBackground {
+		class CA_Background : RscPicture {
+			colortext[] = {0.1, 0.1, 0.1, 0.75};
+		};
+	};
+};
+
+class RscMsgBox {
+	class Top {
+		class CA_Background_Top : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_messagebox_top_ca.paa";
+		};
+	};
+	
+	class Middle {
+		class CA_Background_Middle : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_messagebox_middle_ca.paa";
+		};
+		class CA_Text : RscStructuredText {
+			class Attributes {
+				color = "#E5E5E5";
+			};
+		};
+	};
+	
+	class Bottom {
+		class CA_Background_Bottom : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_messagebox_bottom_ca.paa";
+		};
+	};
+};
+
+class RscMsgBox3 {
+	class Top {
+		class Title {};
+		class CA_Background_Top : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_messagebox_top_ca.paa";
+		};
+	};
+	
+	class Middle {
+		class CA_Background_Middle : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_messagebox_middle_ca.paa";
+		};
+		class CA_Text : RscStructuredText {
+			class Attributes {
+				color = "#E5E5E5";
+			};
+		};
+	};
+	
+	class Bottom {
+		class CA_Background_Bottom : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_messagebox_bottom_ca.paa";
+		};
+	};
+};
+
+class RscDisplayEditProfile {
+	class controlsBackground {
+		class MainbackFaded : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayEditProfileInGame {
+	class controlsBackground {
+		class MainbackFaded : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayProfileAudio {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayProfileVideo {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_audio_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayProfileVoice {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_audio_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayProfileFace {
+	class controlsBackground {
+		class MainbackFaded1 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		class MainbackFaded2 : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+		};
+		class Mainback : RscPicture {
+			text = "\z\addons\dayz_code\gui\ui\ui_audio_background_ca.paa";
+		};
+	};
+};
+
+class RscDisplayDSinterface : RscStandardDisplay {
+	class ControlsBackground {
+		class Mainback : RscPicture {
+			text = "#(argb,8,8,3)color(0.1,0.1,0.1,1)";
+		};
+	};
+	class Controls {
+		class CA_EditProfileTitle : CA_Title {
+			colorBackground[] = {0.1, 0.1, 0.1, 0.42};
+		};
 	};
 };
