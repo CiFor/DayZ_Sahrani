@@ -532,13 +532,7 @@ class RscDisplayLoading
 };
 
 class RscDisplayNotFreeze : RscStandardDisplay {
-	class controlsBackground {};
-	
 	class controls {
-		class Text {};
-		class Progress {};
-		class Progress2 {};
-		
 		class CA_Text : RscLoadingText {
 			idc = 101;
 			colorText[] = {0.95, 0.95, 0.95, 1.0};
@@ -2550,6 +2544,20 @@ class RscDisplayDiary {
 	};
 };
 
+class RscDisplayVoiceChat {
+	idd = 7007;
+	//onLoad = "private [""_dummy""]; _dummy = [_this,""onload""] execVM ""\z\addons\dayz_code\compile\player_onSide.sqf"";";
+	class controls {
+		class Background;	// External class reference
+		
+		class Picture : RscPicture {
+			idc = 7008;
+			text = "\ca\ui\textures\mikrak.paa";
+			colorBackground[] = {1,1,1,1};
+		};
+	};
+};
+
 class RscChatListDefault {
 	idc = 9977;
 };
@@ -3984,5 +3992,19 @@ class RscDisplayDSinterface : RscStandardDisplay {
 		class CA_EditProfileTitle : CA_Title {
 			colorBackground[] = {0.1, 0.1, 0.1, 0.42};
 		};
+	};
+};
+//woops....
+class RscConfigEditor_Main {
+	idd = 3030;
+	class Controls {
+		class MainBackground;
+		
+		class MainCaption {
+			text = "LOL NOPE!";
+		};
+		delete PathLine;
+		delete MainTree;
+		delete MainList;
 	};
 };

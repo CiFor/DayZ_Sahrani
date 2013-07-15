@@ -78,7 +78,7 @@ food_output = [
 	"FoodCanUnlabeledEmpty"
 ];
 //Drinking
-no_output_drink = ["ItemWaterbottle", "ItemWaterbottleBoiled"];
+no_output_drink = ["ItemWaterbottle", "ItemWaterbottleBoiled","ItemWaterbottleDrugged"];
 drink_with_output = [
     "ItemSoda",  //just to define item for ItemSodaEmpty
     "ItemSodaCoke",

@@ -109,6 +109,7 @@ if (!isDedicated) then {
 	player_spawn_2 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\player_spawn_2.sqf";
 	onPreloadStarted 			"dayz_preloadFinished = false;";
 	onPreloadFinished 			"dayz_preloadFinished = true;";
+	player_onSide = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_onSide.sqf";
 	
 	// TODO: need move it in player_monitor.fsm
 	// allow player disconnect from server, if loading hang, kicked by BE etc.
@@ -255,6 +256,7 @@ if (!isDedicated) then {
 		if (_dikCode in actionKeys "PushToTalk" and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;
 			[player,50,true,(getPosATL player)] spawn player_alertZombies;
+			player spawn player_onSide;
 		};
 		if (_dikCode in actionKeys "VoiceOverNet" and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;

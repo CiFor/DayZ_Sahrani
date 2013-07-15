@@ -27,7 +27,7 @@ _isHero = _humanity > 5000;
 _itemNew = "Skin_" + _myModel;
 
 if(_itemNew == "Skin_SurvivorW2_DZ" || _itemNew == "Skin_Bandit1_DZ" || _itemNew == "Skin_BanditW1_DZ") then { _itemNew = "Skin_Survivor2_DZ"; }; //Fix For Woman Skin
-if(_itemNew == "Skin_SniperBanditW_DZ" || _itemNew == "Skin_Sniper1W_DZ") then { _itemNew = "Skin_Sniper1_DZ"; };
+if(_itemNew == "Skin_SniperBanditW_DZ" || _itemNew == "Skin_Sniper1W_DZ" || _itemNew == "Skin_SniperBandit_DZ") then { _itemNew = "Skin_Sniper1_DZ"; };
 if(_itemNew == "Skin_BanditSkinW_DZ") then { _itemNew = "Skin_BanditSkin_DZ"; };
 
 switch (_item) do {
