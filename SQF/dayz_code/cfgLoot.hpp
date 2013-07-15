@@ -1,3 +1,12 @@
+/*
+Item Group Comments:
+			//ammo
+			//drink
+			//food
+			//medical
+			//supplies
+			//trash
+*/
 class CfgLoot {
 	civilian[] = { //Called only at Buildings (trash and food removed)
 		{			
@@ -113,6 +122,104 @@ class CfgLoot {
 			0.04 //ItemNails
 		}
 	};
+		farm[] = {
+		{
+			//ammo
+			"2Rnd_shotgun_74Slug",
+			"2Rnd_shotgun_74Pellets",
+			"17Rnd_9x19_glock17",
+			"15Rnd_9x19_M9",
+			"7Rnd_45ACP_1911",
+			"6Rnd_45ACP",
+			"15Rnd_W1866_Slug",
+			//"8Rnd_B_Beneli_74Slug",
+			//medical
+			"ItemBandage",
+			//supplies
+			"ItemSandbag",
+			"ItemWire",
+			"HandRoadFlare"
+		},
+		{
+			//ammo
+			0.4, //"2Rnd_shotgun_74Slug",
+			0.4, //"2Rnd_shotgun_74Pellets",
+			0.05, //17Rnd_9x19_glock17
+			0.02, //15Rnd_9x19_M9			
+			0.25, //7Rnd_45ACP_1911
+			0.3, //6Rnd_45ACP
+			0.3, //15Rnd_W1866_Slug
+			//0.5, //8Rnd_B_Beneli_74Slug
+			//medical
+			1, //ItemBandage
+			//supplies
+			0.04, //ItemSandbag
+			0.04, //ItemWire			
+			0.3 //HandRoadFlare
+		}
+	};
+		farmZed[] = {
+		{	
+			//trash
+			"ItemCards",
+			"ItemNails",
+			//SMD Crafting Components + Community Mod Dev Team Junk Loot
+			"ItemTape",
+			"ItemTrashRazor",
+			"ItemTrashToiletpaper",
+			//OG Official Mod Trash
+			"ItemSodaCokeEmpty",
+			"ItemSodaEmpty",
+			"ItemSodaMdewEmpty",
+			"TrashJackDaniels",
+			"TrashTinCan",	
+			//ammo
+			"2Rnd_shotgun_74Slug",
+			"2Rnd_shotgun_74Pellets",
+			"17Rnd_9x19_glock17",
+			"15Rnd_9x19_M9",
+			"7Rnd_45ACP_1911",
+			"6Rnd_45ACP",
+			"15Rnd_W1866_Slug",
+			//"8Rnd_B_Beneli_74Slug",
+			//medical
+			"ItemBandage",
+			//supplies
+			"ItemSandbag",
+			"ItemWire",
+			"HandRoadFlare"
+		},
+		{
+			//trash
+			0.05, //"ItemCards",
+			0.05, //"ItemNails",
+			//SMD Crafting Components + Community Mod Dev Team Junk Loot
+			0.05, //"ItemTape",
+			0.05, //"ItemTrashRazor",
+			0.05, //"ItemTrashToiletpaper",
+			//OG Official Mod Trash
+			0.05, //"ItemSodaCokeEmpty",
+			0.05, //"ItemSodaEmpty",
+			0.05, //"ItemSodaMdewEmpty",
+			0.05, //"TrashJackDaniels",
+			0.05, //"TrashTinCan",
+			//ammo
+			0.4, //"2Rnd_shotgun_74Slug",
+			0.4, //"2Rnd_shotgun_74Pellets",
+			0.05, //17Rnd_9x19_glock17
+			0.02, //15Rnd_9x19_M9			
+			0.25, //7Rnd_45ACP_1911
+			0.3, //6Rnd_45ACP
+			0.3, //15Rnd_W1866_Slug
+			//0.5, //8Rnd_B_Beneli_74Slug
+			//medical
+			1, //ItemBandage
+			//supplies
+			0.04, //ItemSandbag
+			0.04, //ItemWire			
+			0.3 //HandRoadFlare
+		}
+	};
 	food[] = {
 		{
 			//food
@@ -125,19 +232,19 @@ class CfgLoot {
 			"FoodCanDerpy",
 			"FoodCandyAnders",
 			"FoodCandyLegacys",
-			//"FoodCandyMintception",
+			"FoodCandyMintception",
 			"FoodCanFraggleos",
 			"FoodCanFrankBeans",
 			"FoodCanHerpy",
 			"FoodCanOrlok",
 			"FoodCanPasta",
 			"FoodCanPowell",
-			/*"FoodCanRusCorn",
+			"FoodCanRusCorn",
 			"FoodCanRusMilk",
 			"FoodCanRusPeas",
 			"FoodCanRusPork",
 			"FoodCanRusStew",
-			"FoodCanRusUnlabeled",*/
+			"FoodCanRusUnlabeled",
 			"FoodCanSardines",
 			"FoodCanTylers",
 			"FoodCanUnlabeled",
@@ -169,19 +276,19 @@ class CfgLoot {
 			0.04, //FoodCanDerpy
 			0.04, //FoodCandyAnders
 			0.04, //FoodCandyLegacys
-			//0.04, //FoodCandyMintception
+			0.04, //FoodCandyMintception
 			0.04, //FoodCanFraggleos
 			0.2, //FoodCanFrankBeans
 			0.04, //FoodCanHerpy
 			0.04, //FoodCanOrlok
 			0.2, //FoodCanPasta
 			0.04, //FoodCanPowell
-			//0.04, //FoodCanRusCorn
-			//0.04, //FoodCanRusMilk
-			//0.04, //FoodCanRusPeas
-			//0.04, //FoodCanRusPork
-			//0.04, //FoodCanRusStew
-			//0.2, //FoodCanRusUnlabeled
+			0.04, //FoodCanRusCorn
+			0.04, //FoodCanRusMilk
+			0.04, //FoodCanRusPeas
+			0.04, //FoodCanRusPork
+			0.04, //FoodCanRusStew
+			0.2, //FoodCanRusUnlabeled
 			0.04, //FoodCanSardines
 			0.04, //FoodCanTylers
 			0.6, //FoodCanUnlabeled
@@ -781,17 +888,17 @@ class CfgLoot {
 			"FoodCanHerpyEmpty",
 			"FoodCanOrlokEmpty",
 			"FoodCanPowellEmpty",
-			/*"FoodCanRusCornEmpty",
+			"FoodCanRusCornEmpty",
 			"FoodCanRusMilkEmpty",
 			"FoodCanRusPeasEmpty",
 			"FoodCanRusPorkEmpty",
 			"FoodCanRusStewEmpty",
-			"FoodCanRusUnlabeledEmpty",*/
+			"FoodCanRusUnlabeledEmpty",
 			"FoodCanTylersEmpty",
 			"FoodCanUnlabeledEmpty",
 			//SMD Crafting Components + Community Mod Dev Team Junk Loot
 			"ItemBrick",
-			//"ItemCards",
+			"ItemCards",
 			"ItemFloppyWire",
 			"ItemNails",
 			"ItemScrapElectronics",
@@ -833,7 +940,7 @@ class CfgLoot {
 			0.2, //FoodCanUnlabeledEmpty
 			//SMD Crafting Components + Community Mod Dev Team Junk Loot
 			0.2, //ItemBrick
-			//0.2, //ItemCards
+			0.2, //ItemCards
 			0.2, //ItemFloppyWire
 			0.2, //ItemNails
 			0.2, //ItemScrapElectronics

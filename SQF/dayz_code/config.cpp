@@ -875,77 +875,110 @@ class CfgBuildingLoot {
 		lootChance = 1;
 		lootPos[] = {};
 		itemType[] =	{
-			{"ItemSodaMdew","magazine"},
-			{"ItemWatch","generic"},
-			{"ItemCompass","generic"},
-			{"ItemCraftingBook","weapon"},
-			{"ItemMap","weapon"},
-			{"Makarov","weapon"},
-			{"MakarovSD","weapon"},
-			{"Colt1911","weapon"},
-			{"ItemFlashlight","generic"},
-			{"ItemKnife","generic"},
-			{"ItemMatchbox","generic"},
+			//backpacks"},
+			{"DZ_ALICE_Pack_EP1","object"},
+			{"DZ_Assault_Pack_EP1","object"},
+			{"DZ_British_ACU","object"},
+			{"DZ_Czech_Vest_Puch","object"},
+			{"DZ_TK_Assault_Pack_EP1","object"},
+			//class loot types"},
 			{"","generic"},
-			{"LeeEnfield","weapon"},
-			{"revolver_EP1","weapon"},
-			
-
-			{"DZ_Assault_Pack_EP1","object"}, // 12
-			{"DZ_Czech_Vest_Puch","object"}, // 12-0
-			{"DZ_ALICE_Pack_EP1","object"}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
-			{"DZ_British_ACU","object"}, // 18
-			
-			{"Winchester1866","weapon"},
-			{"WeaponHolder_ItemTent","object"},
 			{"","military"},
 			{"","trash"},
-			{"Crossbow","weapon"},
+			{"","food"},
+			//headgear"},
 			{"Binocular","weapon"},
-			{"PartWoodPile","magazine"},
-			{"Skin_Camo1_DZ","magazine"},
-			{"Skin_Sniper1_DZ","magazine"},
-			{"Skin_Rocket_DZ","magazine"},
+			//Inventory clothing items"},
 			{"Skin_BanditSkin_DZ","magazine"},
-			{"WeaponHolder_ItemCrowbar","object"},
-			{"MR43","weapon"}
+			{"Skin_Camo1_DZ","magazine"},
+			{"Skin_Rocket_DZ","magazine"},
+			{"Skin_Sniper1_DZ","magazine"},
+			//inventory crafting items"},
+			{"ItemNails","magazine"},
+			{"ItemTape","magazine"},
+			{"PartWoodPile","magazine"},
+			{"WeaponHolder_ItemTent","object"},
+			{"WeaponHolder_Propane","object"},
+			//inventory drink items"},
+			{"ItemSodaMdew","magazine"},
+			//inventory food items"},
+			//inventory medical items"},
+			//inventory trash"},
+			//inventory vehicle parts"},
+			//primary weapons"},
+			{"Crossbow","weapon"},
+			{"LeeEnfield","weapon"},
+			{"MR43","weapon"},
+			{"Winchester1866","weapon"},
+			//secondary weapons"},
+			{"Colt1911","weapon"},
+			{"Makarov","weapon"},
+			{"MakarovSD","weapon"},
+			{"revolver_EP1","weapon"},
+			//toolbelt crafting books"},
+			{"ItemCraftingBook","weapon"},
+			//toolbelt ONLY items"},
+			{"ItemCompass","generic"},
+			{"ItemKnife","generic"},
+			{"ItemMap","weapon"},
+			{"ItemMatchbox","generic"},
+			{"ItemWatch","generic"},
+			//toolbelt Switchable weapons"},
+			{"WeaponHolder_ItemHatchet","object"},
+			{"WeaponHolder_ItemMachete","object"}
 		};
 		itemChance[] =	{
-			0.01,
-			0.15,
-			0.05,
-			0.02,
-			0.03,
-			0.13,
-			0.05,
-
-			0.03,
-			0.03,
-			0.08,
-			0.06,
-			2,
-			0.06,
-			0.04,
-			0.05, //12
-			0.04, // 12-0
-
-			0.02, //16
-			0.02, //16
-			0.01, //18
-			0.01,
-			0.01,
-			0.03,
-			0.5,
-			0.01,
-			0.06,
-			0.06,
-			0.01,
-			0.01,
-			0.01,
-			0.01,
-			0.08,
-			0.03
+			//
+			0.03, //DZ_ALICE_Pack_EP1","object
+			0.05, //DZ_Assault_Pack_EP1","object
+			0.01, //DZ_British_ACU","object
+			0.08, //DZ_Czech_Vest_Puch","object
+			0.03, //DZ_TK_Assault_Pack_EP1","object
+			//
+			0, //,"generic
+			0, //",military
+			0.8, //,"trash
+			0.1, //,"food
+			//
+			0.02, //Binocular","weapon
+			//
+			0.01, //Skin_BanditSkin_DZ","magazine
+			0.01, //Skin_Camo1_DZ","magazine
+			0.01, //Skin_Rocket_DZ","magazine
+			0.01, //Skin_Sniper1_DZ","magazine
+			//
+			0.02, //ItemNails","magazine
+			0.01, //ItemTape","magazine
+			0.02, //PartWoodPile","magazine
+			0.01, //WeaponHolder_ItemTent","object
+			0.01, //WeaponHolder_Propane","object
+			//
+			0.01, //ItemSodaMdew","magazine
+			//
+			//
+			//
+			//
+			//
+			0.4, //Crossbow","weapon
+			0.2, //LeeEnfield","weapon
+			0.1, //MR43","weapon
+			0.3, //Winchester1866","weapon
+			//
+			0.2, //Colt1911","weapon
+			0.4, //Makarov","weapon
+			0.01, //MakarovSD","weapon
+			0.3, //revolver_EP1","weapon
+			//
+			0.05, //ItemCraftingBook","weapon
+			//
+			0.1, //ItemCompass","generic
+			0.1, //ItemKnife","generic
+			0.1, //ItemMap","weapon
+			0.4, //ItemMatchbox","generic
+			0.1, //ItemWatch","generic
+			//
+			0.3, //WeaponHolder_ItemHatchet","object
+			0.01 //WeaponHolder_ItemMachete","object
 		};		
 	};
 	class Office: Residential {
@@ -960,42 +993,52 @@ class CfgBuildingLoot {
 		lootChance = 1;
 		lootPos[] = {};
 		itemType[] =	{
+			//class loot types
 			{"","generic"},
-			{"","trash"},
 			{"","military"},
+			{"","trash"},
+			//toolbelt items
 			{"ItemCraftingBook2","weapon"},
-			{"WeaponHolder_PartGeneric","object"},
-			{"WeaponHolder_PartWheel","object"},
-			{"WeaponHolder_PartFueltank","object"},
-			{"WeaponHolder_PartEngine","object"},
-			{"WeaponHolder_PartGlass","object"},
-			{"WeaponHolder_PartVRotor","object"},
-			{"WeaponHolder_ItemJerrycan","object"},
-			{"WeaponHolder_ItemHatchet","object"},
 			{"ItemKnife","military"},
+			//inventory items
+			{"ItemNails","magazine"},
+			{"ItemTankTrap","magazine"},
 			{"ItemToolbox","weapon"},
 			{"ItemWire","magazine"},
-			{"ItemNails","magazine"},
-			{"ItemTankTrap","magazine"}
+			//weapons
+			{"WeaponHolder_ItemHatchet","object"},
+			//vehicle parts
+			{"WeaponHolder_ItemJerrycan","object"},
+			{"WeaponHolder_PartEngine","object"},
+			{"WeaponHolder_PartFueltank","object"},
+			{"WeaponHolder_PartGeneric","object"},
+			{"WeaponHolder_PartGlass","object"},
+			{"WeaponHolder_PartVRotor","object"},
+			{"WeaponHolder_PartWheel","object"}
 		};
 		itemChance[] =	{
-			0.18,
-			0.29,
-			0.04,
-			0.02,
-			0.04,
-			0.05,
-			0.02,
-			0.02,
-			0.04,
-			0.01,
-			0.04,
-			0.11,
-			0.07,
-			0.06,
-			0.01,
-			0.07,
-			0.04
+			//class loot types
+			0.3, //,generic
+			0.01, //,military
+			0.8, //,trash
+			//toolbelt items
+			0.02, //ItemCraftingBook2","weapon
+			0.02, //ItemKnife","military
+			//inventory items
+			0.01, //ItemNails","magazine
+			0.02, //ItemTankTrap","magazine
+			0.02, //ItemToolbox","weapon
+			0.02, //ItemWire","magazine
+			//weapons
+			0.01, //WeaponHolder_ItemHatchet","object
+			//vehicle parts
+			0.01, //WeaponHolder_ItemJerrycan","object
+			0.04, //WeaponHolder_PartEngine","object
+			0.04, //WeaponHolder_PartFueltank","object
+			0.04, //WeaponHolder_PartGeneric","object
+			0.04, //WeaponHolder_PartGlass","object
+			0.04, //WeaponHolder_PartVRotor","object
+			0.04 //WeaponHolder_PartWheel","object
 		};
 	};
 	class Farm: Default {

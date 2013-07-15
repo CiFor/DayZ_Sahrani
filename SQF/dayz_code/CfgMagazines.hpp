@@ -671,6 +671,7 @@ class CfgMagazines {
 	
 	class 8Rnd_B_Beneli_74Slug;
 	class 8Rnd_B_Beneli_Pellets;
+	class 15Rnd_W1866_Slug;
 	
 	class 2Rnd_shotgun_74Slug: 8Rnd_B_Beneli_74Slug
 	{
@@ -683,7 +684,7 @@ class CfgMagazines {
 		{
 			class ReloadMag
 			{
-				text="Combine to 8 rounds";
+				text="Combine for m1014";
 				script="spawn player_reloadMag;";
 				use[]=
 				{
@@ -695,6 +696,25 @@ class CfgMagazines {
 				output[]=
 				{
 					"8Rnd_B_Beneli_74Slug"
+				};
+			};
+			class ReloadMag2
+			{
+				text="Combine for 1866";
+				script="spawn player_reloadMag;";
+				use[]=
+				{
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug"
+				};
+				output[]=
+				{
+					"15Rnd_W1866_Slug"
 				};
 			};
 		};
