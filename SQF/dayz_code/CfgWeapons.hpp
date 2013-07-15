@@ -185,10 +185,9 @@ class CfgWeapons {
 		canlock = 0;
 		cursor = "RifleCursor";
 	};
-	
+	class Mode_SemiAuto;
 	class Crossbow;
 	class Crossbow_DZ : Crossbow {
-		class Mode_SemiAuto;
 		class Single: Mode_SemiAuto
 		{
 			dispersion=0.001;

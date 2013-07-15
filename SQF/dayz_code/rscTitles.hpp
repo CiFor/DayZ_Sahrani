@@ -781,12 +781,12 @@ class RscShortcutButtonMain : RscShortcutButton {
 		right = 0.005;
 		bottom = 0.005;
 	};
-	animTextureNormal = "\ca\ui\data\ui_button_main_normal_ca.paa";
-	animTextureDisabled = "\ca\ui\data\ui_button_main_disabled_ca.paa";
-	animTextureOver = "\ca\ui\data\ui_button_main_over_ca.paa";
-	animTextureFocused = "\ca\ui\data\ui_button_main_focus_ca.paa";
-	animTexturePressed = "\ca\ui\data\ui_button_main_down_ca.paa";
-	animTextureDefault = "\ca\ui\data\ui_button_main_normal_ca.paa";
+	animTextureNormal = "\z\addons\dayz_code\gui\ui\ui_button_main_normal_ca.paa";
+	animTextureDisabled = "\z\addons\dayz_code\gui\ui\ui_button_main_disabled_ca.paa";
+	animTextureOver = "\z\addons\dayz_code\gui\ui\ui_button_main_over_ca.paa";
+	animTextureFocused = "\z\addons\dayz_code\gui\ui\ui_button_main_focus_ca.paa";
+	animTexturePressed = "\z\addons\dayz_code\gui\ui\ui_button_main_down_ca.paa";
+	animTextureDefault = "\z\addons\dayz_code\gui\ui\ui_button_main_normal_ca.paa";
 	period = 0.5;
 	font = "Zeppelin32";
 	size = 0.03921;
