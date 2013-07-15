@@ -3582,13 +3582,14 @@ class RscDisplayGetReady : RscDisplayMainMap {
 
 class RscDisplayOptionsVideo {
 	class ControlsBackground {
-		class Controls {
-			class Mainback : RscPicture {
-				text = "\z\addons\dayz_code\gui\ui\ui_background_video_ca.paa";
-			};
-			
-			class ButtonsBack : RscPicture {
-				text = "\z\addons\dayz_code\gui\ui\ui_background_video_buttons_ca.paa";
+		class VideoOptionsBackgroundGoup : RscControlsGroup {			
+			class Controls {
+				class Mainback : RscPicture {
+					text = "\z\addons\dayz_code\gui\ui\ui_background_video_ca.paa";
+				};
+				class ButtonsBack : RscPicture {
+					text = "\z\addons\dayz_code\gui\ui\ui_background_video_buttons_ca.paa";
+				};
 			};
 		};
 	};
