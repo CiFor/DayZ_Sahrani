@@ -1015,7 +1015,7 @@ class CfgBuildingLoot {
 			{"PartWoodPile","magazine"},
 			{"WeaponHolder_ItemHatchet","object"},
 			{"MR43","weapon"},
-			{"WeaponHolder_ItemMachete"}
+			{"WeaponHolder_ItemMachete","object"}
 		};
 		itemChance[] =	{
 			0.06,
@@ -1555,7 +1555,7 @@ class CfgBuildingLoot {
 			{"ItemMatchbox","generic"},
 			{"Crossbow_DZ","weapon"},
 			{"","military"},
-			{"WeaponHolder_ItemMachete", "object"},
+			{"WeaponHolder_ItemMachete","object"},
 			{"huntingrifle","weapon"},
 			{"","hunter"},
 			{"ItemCraftingBook3","weapon"}
