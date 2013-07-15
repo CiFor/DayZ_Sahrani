@@ -10,8 +10,8 @@ class CfgAmmo {
 		hit = 9;
 		simulation = "shotBullet";
 	};
-	class ThrownObjects;
-	class Brick : ThrownObjects {
+	class SodaCan;
+	class Brick : SodaCan {
 		hit = 8;
 		indirectHit=1;
 	}

@@ -768,7 +768,7 @@ class CfgMagazines {
 		descriptionShort = "Electronic circuit board for crafting";
 	};
 	
-	class ItemBrick : CA_Magazine {
+	class ItemBrick : TrashTinCan {
 		scope = public;
 		count = 1;
 		type = 256;
