@@ -642,6 +642,27 @@ class CfgMagazines {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
 		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
 	 };
+		class ItemWaterbottleDrugged : ItemWaterbottle {
+	displayName = $STR_ITEMWATERBOTTLEDRUGGED_CODE_NAME;
+	descriptionShort = $STR_ITEMWATERBOTTLEDRUGGED_CODE_DESC;
+	class ItemActions
+		{
+			class ReloadMag
+			{
+				text="Combine for Drugged Water Bottle";
+				script="spawn player_reloadMag;";
+				use[]=
+				{
+					"ItemWaterbottle",
+					"ItemPainkiller"
+				};
+				output[]=
+				{
+					"ItemWaterbottleDrugged"
+				};
+			};
+		};
+	};
 	 class Hatchet_Swing;
 	 class Machete_Swing : Hatchet_Swing {
 		displayName = "Machete";
