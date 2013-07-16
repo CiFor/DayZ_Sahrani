@@ -928,9 +928,14 @@ class CfgMagazines {
 		displayName = $STR_EQUIP_NAME_BANDIT;
 		descriptionShort = $STR_EQUIP_NAME_BANDIT;
 	};
-	class SniperLight_DZ : SkinBase {
+	class Skin_SniperLight_DZ : SkinBase {
 		scope = public;
 		displayName = $STR_EQUIP_NAME_43;
 		descriptionShort = $STR_EQUIP_NAME_43;
-	};	
+	};
+	class Skin_SniperD_DZ : SkinBase {
+		scope = public;
+		displayName = $STR_EQUIP_NAME_43;
+		descriptionShort = $STR_EQUIP_NAME_43;
+	};
 };

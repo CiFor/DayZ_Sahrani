@@ -779,6 +779,18 @@ class CfgVehicles {
 	class SniperBanditW_DZ : SniperBandit_DZ {}; //Woman Bandit Ghillie
 	class SniperLightW_DZ : SniperLight_DZ {}; //Woman Light Ghillie
 	class SniperLightBanditW_DZ : SniperLightBandit_DZ {}; //Woman Bandit Light Ghillie	
+	
+	class SniperD_DZ : Sniper1_DZ {  //Desert Ghillie
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_code\textures\ghillie_overall1_co.paa"};
+	};
+	class SniperDW_DZ : SniperD_DZ {}; //Woman Desert Ghillie
+	
+	class SniperBanditD_DZ : SniperBandit_DZ { //Bandit Desert Ghillie
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_code\textures\ghillie_top_co.paa"};
+	};
+	class SniperBanditDW_DZ : SniperBanditD_DZ {}; //Woman Bandit Desert Ghillie
 	class BanditW1_DZ;
 	class BanditSkinW_DZ : BanditW1_DZ {};
 	

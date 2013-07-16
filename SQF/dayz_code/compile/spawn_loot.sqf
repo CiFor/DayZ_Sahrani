@@ -14,9 +14,9 @@ switch (_iClass) do {
 		_weights = dayz_CLChances select _index;
 		_cntWeights = count _weights;
 		_qty = 0;
-		_max = ceil(random 2) + 1;
+		_max = ceil(random 4) + 1;
 		while {_qty < _max} do {
-			_tQty = round(random 1) + 1;
+			_tQty = 1;//round(random 1) + 1;
 			_index = floor(random _cntWeights);
 			_index = _weights select _index;
 			_canType = _itemTypes select _index;

@@ -3173,7 +3173,7 @@ class nope {
 	color[] = {0,0,0,0};
 	text = "";
 };
-
+/*
 class RscDisplayMultiplayerSetup : RscStandardDisplay {
 	west = "ca\ui\data\flag_bluefor_ca.paa";
 	east = "ca\ui\data\flag_opfor_ca.paa";
@@ -3441,7 +3441,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		delete CA_ButtonCancel;
 	};
 };
-
+*/
 class RscDisplayMPInterrupt : RscStandardDisplay {
 	class controlsBackground {
 		class Mainback : RscPicture {

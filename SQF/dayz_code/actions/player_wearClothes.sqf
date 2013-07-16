@@ -16,7 +16,17 @@ if (!_hasclothesitem) exitWith {cutText [format[(localize "str_player_31"),_text
 
 if (vehicle player != player) exitWith {cutText ["You may not change clothes while in a vehicle", "PLAIN DOWN"]};
 
-_isFemale = ((typeOf player == "SurvivorW2_DZ")||(typeOf player == "BanditW1_DZ")||(typeOf player == "Sniper1W_DZ")||(typeOf player == "SniperBanditW_DZ")||(typeOf player == "BanditSkinW_DZ"));
+_isFemale = (
+				(typeOf player == "SurvivorW2_DZ")||
+				(typeOf player == "BanditW1_DZ")||
+				(typeOf player == "Sniper1W_DZ")||
+				(typeOf player == "SniperBanditW_DZ")||
+				(typeOf player == "BanditSkinW_DZ")||
+				(typeOf player == "SniperLightBanditW_DZ")||
+				(typeOf player == "SniperLightW_DZ")||
+				(typeOf player == "SniperDW_DZ")||
+				(typeOf player == "SniperBanditDW_DZ")
+			);
 if (_isFemale && (_item == "Skin_Camo1_DZ" || _item == "Skin_Soldier1_DZ" || _item == "Skin_Rocket_DZ") ) exitWith {cutText ["Currently Female Characters cannot change to this skin. This will change in a future update.", "PLAIN DOWN"]};
 
 private["_itemNew","_myModel","_humanity","_isBandit","_isHero"];
@@ -28,7 +38,16 @@ _itemNew = "Skin_" + _myModel;
 
 if(_itemNew == "Skin_SurvivorW2_DZ" || _itemNew == "Skin_Bandit1_DZ" || _itemNew == "Skin_BanditW1_DZ") then { _itemNew = "Skin_Survivor2_DZ"; }; //Fix For Woman Skin
 if(_itemNew == "Skin_SniperBanditW_DZ" || _itemNew == "Skin_Sniper1W_DZ" || _itemNew == "Skin_SniperBandit_DZ") then { _itemNew = "Skin_Sniper1_DZ"; };
+if(_itemNew == "Skin_SniperLightBanditW_DZ" || _itemNew == "Skin_SniperLightW_DZ" || _itemNew == "Skin_SniperLightBandit_DZ") then { _itemNew = "Skin_SniperLight_DZ"; };
+if(_itemNew == "Skin_SniperBanditDW_DZ" || _itemNew == "Skin_SniperDW_DZ" || _itemNew == "Skin_SniperBanditD_DZ") then { _itemNew = "Skin_SniperLight_DZ"; };
 if(_itemNew == "Skin_BanditSkinW_DZ") then { _itemNew = "Skin_BanditSkin_DZ"; };
+
+/*
+SniperD_DZ
+SniperDW_DZ
+SniperBanditD_DZ
+SniperBanditDW_DZ
+*/
 
 switch (_item) do {
 	case "Skin_Sniper1_DZ": {
@@ -43,6 +62,34 @@ switch (_item) do {
 		};
 		if (!_isBandit && _isFemale) then {
 			_model = "Sniper1W_DZ";
+		};
+	};
+	case "Skin_SniperLight_DZ": {
+		if (_isBandit && !_isFemale) then {
+			_model = "SniperLightBandit_DZ";
+		};
+		if (_isBandit && _isFemale) then {
+			_model = "SniperLightBanditW_DZ";
+		};
+		if (!_isBandit && !_isFemale) then {
+			_model = "SniperLight_DZ";
+		};
+		if (!_isBandit && _isFemale) then {
+			_model = "SniperLightW_DZ";
+		};
+	};
+	case "Skin_SniperD_DZ": {
+		if (_isBandit && !_isFemale) then {
+			_model = "SniperBanditD_DZ";
+		};
+		if (_isBandit && _isFemale) then {
+			_model = "SniperBanditDW_DZ";
+		};
+		if (!_isBandit && !_isFemale) then {
+			_model = "SniperD_DZ";
+		};
+		if (!_isBandit && _isFemale) then {
+			_model = "SniperDW_DZ";
 		};
 	};
 	case "Skin_Camo1_DZ": {
