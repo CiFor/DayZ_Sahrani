@@ -725,7 +725,19 @@ class CfgVehicles {
 	};
 	class BAF_Soldier_SniperH_W;
 	class Sniper1_DZ: BAF_Soldier_SniperH_W {
-		displayName = "Sniper";
+		displayName = "Survivor";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	class BAF_Soldier_SniperH_MTP; //Lighter Green Ghillie
+	class SniperLight_DZ: BAF_Soldier_SniperH_MTP {
+		displayName = "Survivor";
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -748,11 +760,25 @@ class CfgVehicles {
 		canHideBodies = 1;
 	};
 	class SniperBandit_DZ: Sniper1_DZ {
-		displayName = "Bandit Sniper";
+		displayName = "Bandit";
 		model = "\ca\characters2\Ghillie_Top";
+	};
+	class CZ_Soldier_Sniper_EP1;
+	class SniperLightBandit_DZ: CZ_Soldier_Sniper_EP1 {
+		displayName = "Survivor";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
 	};
 	class Sniper1W_DZ : Sniper1_DZ {}; //Woman Ghillie
 	class SniperBanditW_DZ : SniperBandit_DZ {}; //Woman Bandit Ghillie
+	class SniperLightW_DZ : SniperLight_DZ {}; //Woman Light Ghillie
+	class SniperLightBanditW_DZ : SniperLightBandit_DZ {}; //Woman Bandit Light Ghillie	
 	class BanditW1_DZ;
 	class BanditSkinW_DZ : BanditW1_DZ {};
 	
@@ -769,7 +795,6 @@ class CfgVehicles {
 		transportMaxWeapons = 1;
 		transportMaxMagazines = 8;
 	};
-
 	class DZ_Assault_Pack_EP1: Bag_Base_EP1
 	{
 		scope = 2;

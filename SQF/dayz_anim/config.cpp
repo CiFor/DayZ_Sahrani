@@ -1607,7 +1607,7 @@ class CfgVehicles {
 	class TK_Soldier_SL_EP1: Banned {};
 	class TK_Soldier_Officer_EP1: Banned {};
 	class TK_Soldier_Spotter_EP1: Banned {};
-	class TK_Soldier_Sniper_EP1: Banned {};
+	//class TK_Soldier_Sniper_EP1: Banned {}; - SMD Light Bandit Ghillie
 	class TK_Soldier_SniperH_EP1: Banned {};
 	class TK_Soldier_Sniper_Night_EP1: Banned {};
 	class TK_Soldier_Night_1_EP1: Banned {};
@@ -1619,8 +1619,8 @@ class CfgVehicles {
 	class TK_Special_Forces_MG_EP1: Banned {};
 	class TK_Aziz_EP1: Banned {};
 	class TK_Commander_EP1: Banned {};
-	//class GER_Soldier_EP1: Banned {};
-	class GER_Soldier_Medic_EP1: Banned {};
+	//class GER_Soldier_EP1: Banned {}; - OG Bandit Skin SMD Bandit Level 2
+	//class GER_Soldier_Medic_EP1: Banned {}; - SMD Bandit Level 1
 	class GER_Soldier_TL_EP1: Banned {};
 	class GER_Soldier_Scout_EP1: Banned {};
 	class GER_Soldier_MG_EP1: Banned {};
@@ -1984,9 +1984,9 @@ class CfgVehicles {
 	class BAF_Soldier_Marksman_DDPM: Banned {};
 	class BAF_Soldier_scout_MTP: Banned {};
 	class BAF_Soldier_scout_DDPM: Banned {};
-	//class BAF_Soldier_Sniper_MTP: Banned {};
-	//class BAF_Soldier_SniperH_MTP: Banned {};
-	//class BAF_Soldier_SniperN_MTP: Banned {};
+	//class BAF_Soldier_Sniper_MTP: Banned {}; same as light ghillie
+	//class BAF_Soldier_SniperH_MTP: Banned {}; - SMD Light Ghillie Suit
+	//class BAF_Soldier_SniperN_MTP: Banned {}; same as light ghillie
 	class BAF_Soldier_spotter_MTP: Banned {};
 	class BAF_Soldier_spotterN_MTP: Banned {};
 	class BAF_Pilot_MTP: Banned {};
@@ -2002,14 +2002,14 @@ class CfgVehicles {
 	class Soldier_PMC: Banned {};
 	class Soldier_M4A3_PMC: Banned {};
 	class Soldier_Engineer_PMC: Banned {};
-	//class Soldier_Crew_PMC: Banned {};
+	//class Soldier_Crew_PMC: Banned {}; - original Hero Skin
 	class Soldier_Medic_PMC: Banned {};
 	class Soldier_TL_PMC: Banned {};
 	class Soldier_Pilot_PMC: Banned {};
 	class Soldier_MG_PMC: Banned {};
 	class Soldier_MG_PKM_PMC: Banned {};
-	class Soldier_Sniper_PMC: Banned {};
-	class Soldier_Sniper_KSVK_PMC: Banned {};
+	//class Soldier_Sniper_PMC: Banned {}; - SMD Hero level 1 NOT YET ADDED
+	//class Soldier_Sniper_KSVK_PMC: Banned {}; - SMD Hero level 2 NOT YET ADDED
 	class Soldier_GL_PMC: Banned {};
 	class Soldier_GL_M16A2_PMC: Banned {};
 	class Soldier_Bodyguard_M4_PMC: Banned {};

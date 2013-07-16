@@ -876,17 +876,20 @@ class CfgMagazines {
 	};
 	
 	//Skins
-	class SkinBase;
-	
+	class SkinBase;	
 	class Skin_Rocket_DZ : SkinBase {
 		scope = public;
 		displayName = $STR_EQUIP_NAME_46;
 		descriptionShort = $STR_EQUIP_DESC_46;
-	};
-	
+	};	
 	class Skin_BanditSkin_DZ : SkinBase {
 		scope = public;
 		displayName = $STR_EQUIP_NAME_BANDIT;
 		descriptionShort = $STR_EQUIP_NAME_BANDIT;
 	};
+	class SniperLight_DZ : SkinBase {
+		scope = public;
+		displayName = $STR_EQUIP_NAME_43;
+		descriptionShort = $STR_EQUIP_NAME_43;
+	};	
 };
