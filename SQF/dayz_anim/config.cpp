@@ -997,8 +997,7 @@ class CfgWeapons {
 	class BAF_L7A2: FakeWeapon {};
 	class BAF_L94A1: FakeWeapon {};*/
 	class BAF_static_GMG: FakeWeapon {};
-	//class BAF_GMG: FakeWeapon {};
-	*/
+	//class BAF_GMG: FakeWeapon {};*/
 	class CTWS: FakeWeapon {};
 	class CRV7_PG: FakeWeapon {};
 	class CRV7_HEPD: FakeWeapon {};
