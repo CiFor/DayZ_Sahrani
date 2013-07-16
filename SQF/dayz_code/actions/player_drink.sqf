@@ -55,10 +55,6 @@ if (_hasoutput) then{
     _item addMagazineCargoGlobal [_itemtodrop,1];
 };
 
-
-
-
-
 //add infection chance for "ItemWaterbottle", 
 if ((random 15 < 1) and (_itemorignal == "ItemWaterbottle")) then {
     r_player_infected = true;
@@ -66,6 +62,8 @@ if ((random 15 < 1) and (_itemorignal == "ItemWaterbottle")) then {
 };
 
 if(_itemorignal == "ItemWaterbottleDrugged") then {
+	_dialog = findDisplay 106;
+	_dialog closeDisplay 0;
 	[player, 1] call fnc_usec_damageUnconscious;
 	cutText ["Your Drink was spiked!", "PLAIN DOWN"];
 } else {

@@ -653,19 +653,20 @@ class CfgMagazines {
 				text="$STR_ACTIONS_DRINK";
 				script="spawn player_drink;";
 			};
-			class ReloadMag
+			class Craft0
 			{
-				text="Combine for Drugged Water Bottle";
-				script="spawn player_reloadMag;";
+				text="Drug Water";
+				script="spawn player_Craft;";
 				use[]=
 				{
-					"ItemWaterbottle",
-					"ItemPainkiller"
+					{"ItemWaterbottle",1},
+					{"ItemPainkiller",1}
 				};
 				output[]=
 				{
-					"ItemWaterbottleDrugged"
+					{"ItemWaterbottleDrugged","magazine",1}
 				};
+				crafting = 1;
 			};
 		};
 		
@@ -701,6 +702,24 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
 		type = 256;
+		class ItemActions
+		{
+			class Craft0
+			{
+				text="Make Bandage";
+				script="spawn player_Craft;";
+				use[]=
+				{
+					{"ItemTape",1},
+					{"ItemTrashToiletpaper",1}
+				};
+				output[]=
+				{
+					{"ItemBandage","magazine",1}
+				};
+				crafting = 1;
+			};
+		};
 	};
 	class ItemTrashRazor : CA_Magazine {
 		scope = public;
@@ -870,6 +889,28 @@ class CfgMagazines {
 				use[]=
 				{
 					"PartWoodPile"
+				};
+			};
+		};
+	};
+	
+	class ItemBloodbag: CA_Magazine
+	{
+		scope=2;
+		count=1;
+		type=256;
+		displayName="$STR_EQUIP_NAME_16";
+		model="\dayz_equip\models\bloodbag.p3d";
+		picture="\dayz_equip\textures\equip_bloodbag_ca.paa";
+		descriptionShort="$STR_EQUIP_DESC_16";
+		class ItemActions {
+			class Use
+			{
+				text="Administer Bloodbag";
+				script="spawn player_selfBloodBag;";
+				use[]=
+				{
+					"ItemBloodbag"
 				};
 			};
 		};

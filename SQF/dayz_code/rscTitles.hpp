@@ -816,11 +816,20 @@ class RscDisplayMain : RscStandardDisplay
 			y = "SafeZoneY + 0.03";
 			w = 0.627451;
 			h = 1.000000;
-			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_ca.paa";
+			text = "\z\addons\dayz_code\gui\ui\ui_mainmenu_background_small_ca.paa";
 		};
 		class CA_ARMA2 : RscPicture
 		{
 			text = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
+		};
+
+		class CA_DAYZ_Sahrani : RscPictureKeepAspect
+		{
+			x = 0.323717 * safezoneW + safezoneX;
+			y = 0.264949 * safezoneH + safezoneY;
+			w = 1.000000;
+			h = 1.000000;
+			text = "z\addons\dayz_code\gui\dayz_sahrani_logo_ca.paa";
 		};
 	};
 	
@@ -847,7 +856,7 @@ class RscDisplayMain : RscStandardDisplay
 		class CA_MP : RscShortcutButtonMain {
 			idc = 105;
 			x = "SafeZoneX + 0.05";
-			y = "SafeZoneY + 0.15";
+			y = "(SafeZoneY + 0.125) + 0.101903 * 0";
 			toolTip = $STR_TOOLTIP_MAIN_MULTIPLAYER;
 			text = $STR_CA_MAIN_MULTI;
 			
@@ -860,19 +869,19 @@ class RscDisplayMain : RscStandardDisplay
 		};
 		class CA_Options : RscShortcutButtonMain {
 			x = "SafeZoneX + 0.05";
-			y = "SafeZoneY + 0.30";
+			y = "(SafeZoneY + 0.125) + 0.101903 * 1";
 		};
 		class CA_PlayerProfile : RscShortcutButtonMain {
 			x = "SafeZoneX + 0.05";
-			y = "SafeZoneY + 0.45";
+			y = "(SafeZoneY + 0.125) + 0.101903 * 2";
 		};
 		class CA_Expansions : RscShortcutButtonMain {
 			x = "SafeZoneX + 0.05";
-			y = "SafeZoneY + 0.60";
+			y = "(SafeZoneY + 0.125) + 0.101903 * 3";
 		};
 		class CA_Exit : RscShortcutButtonMain {
 			x = "SafeZoneX + 0.05";
-			y = "SafeZoneY + 0.75";
+			y = "(SafeZoneY + 0.125) + 0.101903 * 4";
 		};
 	};
 };
@@ -1977,7 +1986,7 @@ class RscTitles
 				y = 0.86 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
-				colorText[] = {1, 0, 0, 0.85};
+				colorText[] = {.75, 0, 0, 0.85};
 			};
 			class RscPicture_1304: RscPictureGUI
 			{
@@ -3187,21 +3196,21 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 	colorAssigned[] = {0.78, 0.39, 0, 1};
 	colorConfirmed[] = {0, 1, 0, 1};
 	class controlsbackground {
-		class BlackBackground: RscText {
-			idc = -1;
+		class BlackBackground: RscPicture {
 			x = "SafeZoneXAbs";
 			y = "SafeZoneY";
 			w = "SafeZoneWAbs";
 			h = "SafeZoneH";
-			colorBackground[] = {0,0,0,1};
-		}
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			colorText[] = {0,0,0,1};
+		};
 		class BackgroundPic: RscPictureKeepAspect
 		{
 			idc = -1;
-			x="0.00001 * safezoneW + safezoneX";
-			y="0.00001 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="1 * safezoneH";
+			x = "SafezoneX";
+			y = "SafezoneY+SafezoneH*0.075";
+			w = "SafezoneW";
+			h = "SafezoneH*0.85";
 			text = "z\addons\dayz_code\gui\sahrani.paa";
 		};
 		
@@ -3402,6 +3411,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			colorShadow[] = {0.023529,0,0.0313725,1};
 			colorBorder[] = {0,0,0,1};
 			borderSize = 0.0;
+			SizeEx = 0.045;
 		};
 		
 		class SMD_ButtonContinue: RscButtonTextOnly
@@ -3424,6 +3434,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			colorShadow[] = {0.023529,0,0.0313725,1};
 			colorBorder[] = {0,0,0,1};
 			borderSize = 0.0;
+			SizeEx = 0.045;
 		};
 
 		delete CA_ButtonContinue;

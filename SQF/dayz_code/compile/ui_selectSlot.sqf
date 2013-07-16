@@ -46,6 +46,7 @@ if (_button == 1) then {
 			_type = 	getText	(_config >> "text");
 			_script = 	getText	(_config >> "script");
 			_outputOriented = 	getNumber	(_config >> "outputOriented") == 1;
+			_crafting = 	getNumber	(_config >> "crafting") == 1;
 			_height = _height + (0.025 * safezoneH);
 			_compile =  format["_id = '%2' %1;",_script,_item];
 			uiNamespace setVariable ['uiControl', _control];
@@ -60,6 +61,11 @@ if (_button == 1) then {
 				_outputType = _array select 1;
 				_name = getText (configFile >> _outputType >> _outputClass >> "displayName");
 				_compile =  format["_id = ['%2',%3] %1;",_script,_item,_array];
+			};
+			if (_crafting) then {
+				_inputItems = getArray (_config >> "use");;
+				_outputItems = getArray	(_config >> "output");
+				_compile = format["_id = ['%1',%2,%3] %4;",_item,_inputItems,_outputItems,_script];
 			};
 			
 			_menu ctrlSetText format[_type,_name];
