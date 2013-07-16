@@ -1,6 +1,18 @@
 /*
-Item Group Comments:
-			//ammo
+Split into Groups:
+
+ClassNameX have no drink, food or trash items
+they are called at buildings ONLY
+
+ClassnameXZed includeds food, drink and trash items
+they are called by zeds for inventory items
+
+Zed Item Group Comments: include trash 
+			//AllAmmo
+			//CivAmmo
+			//UNAmmo
+			//USAmmo
+			//RUSAmmo
 			//drink
 			//food
 			//medical
@@ -8,7 +20,7 @@ Item Group Comments:
 			//trash
 */
 class CfgLoot {
-	civilian[] = { //Called only at Buildings (trash and food removed)
+	civilian[] = {
 		{			
 			//ammo
 			"Quiver",
