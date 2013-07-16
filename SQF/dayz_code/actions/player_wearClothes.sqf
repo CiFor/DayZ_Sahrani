@@ -39,7 +39,7 @@ _itemNew = "Skin_" + _myModel;
 if(_itemNew == "Skin_SurvivorW2_DZ" || _itemNew == "Skin_Bandit1_DZ" || _itemNew == "Skin_BanditW1_DZ") then { _itemNew = "Skin_Survivor2_DZ"; }; //Fix For Woman Skin
 if(_itemNew == "Skin_SniperBanditW_DZ" || _itemNew == "Skin_Sniper1W_DZ" || _itemNew == "Skin_SniperBandit_DZ") then { _itemNew = "Skin_Sniper1_DZ"; };
 if(_itemNew == "Skin_SniperLightBanditW_DZ" || _itemNew == "Skin_SniperLightW_DZ" || _itemNew == "Skin_SniperLightBandit_DZ") then { _itemNew = "Skin_SniperLight_DZ"; };
-if(_itemNew == "Skin_SniperBanditDW_DZ" || _itemNew == "Skin_SniperDW_DZ" || _itemNew == "Skin_SniperBanditD_DZ") then { _itemNew = "Skin_SniperLight_DZ"; };
+if(_itemNew == "Skin_SniperBanditDW_DZ" || _itemNew == "Skin_SniperDW_DZ" || _itemNew == "Skin_SniperBanditD_DZ") then { _itemNew = "Skin_SniperD_DZ"; };
 if(_itemNew == "Skin_BanditSkinW_DZ") then { _itemNew = "Skin_BanditSkin_DZ"; };
 
 /*

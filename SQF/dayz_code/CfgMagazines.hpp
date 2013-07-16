@@ -760,24 +760,19 @@ class CfgMagazines {
 					"8Rnd_B_Beneli_74Slug"
 				};
 			};
-			class ReloadMag2
+			class Craft0
 			{
 				text="Combine for 1866";
-				script="spawn player_reloadMag;";
+				script="spawn player_Craft;";
 				use[]=
 				{
-					"2Rnd_shotgun_74Slug",
-					"2Rnd_shotgun_74Slug",
-					"2Rnd_shotgun_74Slug",
-					"2Rnd_shotgun_74Slug",
-					"2Rnd_shotgun_74Slug",
-					"2Rnd_shotgun_74Slug",
-					"2Rnd_shotgun_74Slug"
+					{"2Rnd_shotgun_74Slug",7}
 				};
 				output[]=
 				{
-					"15Rnd_W1866_Slug"
+					{"15Rnd_W1866_Slug","magazine",1}
 				};
+				crafting = 1;
 			};
 		};
 	};
@@ -871,6 +866,24 @@ class CfgMagazines {
 		descriptionShort = "Duct Tape";
 	};
 	
+	class ItemWoodenSplint : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Splint & Duct Tape";
+		model = "\SMD\assets\objects\woodensplint";
+		picture = "\SMD\assets\objects\icons\woodensplint.paa";
+		descriptionShort = "Two wooden sticks and duct tape. Combined these two objects are great for mending broken legs.";
+		class ItemActions
+		{
+			class Use
+			{
+				text="Mend Leg";
+				script="spawn player_useMeds;";
+			};
+		};
+	};
+	
 	//DayZ Equipment Fixes
 	class PartWoodPile: CA_Magazine {
 		scope=2;
@@ -890,6 +903,21 @@ class CfgMagazines {
 				{
 					"PartWoodPile"
 				};
+			};
+			class Craft0
+			{
+				text="Make Wooden Splint";
+				script="spawn player_Craft;";
+				use[]=
+				{
+					{"PartWoodPile",1},
+					{"ItemTape",1}
+				};
+				output[]=
+				{
+					{"ItemWoodenSplint","magazine",1}
+				};
+				crafting = 1;
 			};
 		};
 	};

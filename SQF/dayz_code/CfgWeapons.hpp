@@ -193,8 +193,8 @@ class CfgWeapons {
 		};
 		magazines[] =
 		{
-			"Quiver",
-			"WoodenArrow"
+			"WoodenArrow",
+			"Quiver"
 		};
 	};
 	class GrenadeLauncher;  // External class reference

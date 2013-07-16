@@ -80,11 +80,12 @@ call dayz_resetSelfActions;
 
 eh_player_killed = player addeventhandler ["FiredNear",{_this call player_weaponFiredNear;} ];
 
-[player] call fnc_usec_damageHandle;
-player allowDamage true;
-
 player addWeapon "Loot";
 player addWeapon "Flare";
 
 sleep 0.1;
+
+[player] call fnc_usec_damageHandle;
+player allowDamage true;
+
 deleteVehicle _old;

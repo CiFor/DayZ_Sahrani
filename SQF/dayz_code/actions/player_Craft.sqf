@@ -12,13 +12,13 @@ _found = true;
 _dialog = findDisplay 106;
 {
 	_obj = _x select 0;
-	_count = _x select 1;	
+	_count = _x select 1;
 	_qty_input = 0;
 	_input_type = getNumber(configFile >> "CfgMagazines" >> _obj >> "type");
 	_slotstart = 0;
 	_slotend = 0;
-	
-	if (_input_type == 256) then {
+	_odd = false;
+	if (_input_type == 256 || _input_type == 512 || _input_type == 768) then {
 		_slotstart = 109;
 		_slotend = 120;
 	};
