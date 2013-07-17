@@ -892,6 +892,7 @@ class CfgBuildingLoot {
 			{"Skin_Rocket_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
 			{"Skin_SniperLight_DZ","magazine"},
+			{"Skin_SniperD_DZ","magazine"},
 			//inventory crafting items"},
 			{"WeaponHolder_ItemTent","object"},
 			{"WeaponHolder_Propane","object"},
@@ -901,7 +902,7 @@ class CfgBuildingLoot {
 			//inventory trash"},
 			//inventory vehicle parts"},
 			//primary weapons"},
-			{"Crossbow","weapon"},
+			{"Crossbow_DZ","weapon"},
 			{"LeeEnfield","weapon"},
 			{"MR43","weapon"},
 			{"Winchester1866","weapon"},
@@ -923,50 +924,51 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemMachete","object"}
 		};
 		itemChance[] =	{
-			//
+			//backpacks
 			0.03, //DZ_ALICE_Pack_EP1","object
 			0.05, //DZ_Assault_Pack_EP1","object
 			0.01, //DZ_British_ACU","object
 			0.08, //DZ_Czech_Vest_Puch","object
 			0.03, //DZ_TK_Assault_Pack_EP1","object
-			//
+			//class loot types
 			2, //,"trash
 			0.1, //,"food
-			//
+			//headgear
 			0.02, //Binocular","weapon
-			//
-			0.01, //Skin_BanditSkin_DZ","magazine
-			0.91, //Skin_Camo1_DZ","magazine
-			0.91, //Skin_Rocket_DZ","magazine
-			0.01, //Skin_Sniper1_DZ","magazine
-			0.91, //Skin_SniperLight_DZ","magazine
-			//
-			0.01, //WeaponHolder_ItemTent","object
-			0.01, //WeaponHolder_Propane","object
-			//
-			//
-			//
-			//
-			//
-			//
-			0.4, //Crossbow","weapon
+			//Inventory clothing items
+			0.01, //Skin_BanditSkin_DZ
+			0.01, //Skin_Camo1_DZ
+			0.01, //Skin_Rocket_DZ
+			0.01, //Skin_Sniper1_DZ
+			0.01, //Skin_SniperLight_DZ
+			0.01, //Skin_SniperD_DZ
+			//inventory crafting items
+			0.01, //WeaponHolder_ItemTent
+			0.01, //WeaponHolder_Propane
+			//inventory drink items"},
+			//inventory food items"},
+			//inventory medical items"},
+			//inventory trash"},
+			//inventory vehicle parts"},
+			//primary weapons"},
+			0.4, //Crossbow_DZ","weapon
 			0.2, //LeeEnfield","weapon
 			0.1, //MR43","weapon
 			0.3, //Winchester1866","weapon
-			//
+			//secondary weapons
 			0.2, //Colt1911","weapon
 			0.4, //Makarov","weapon
 			0.01, //MakarovSD","weapon
 			0.3, //revolver_EP1","weapon
-			//
+			//toolbelt crafting books
 			0.05, //ItemCraftingBook","weapon
-			//
+			//toolbelt ONLY items
 			0.1, //ItemCompass","generic
 			0.1, //ItemKnife","generic
 			0.1, //ItemMap","weapon
 			0.4, //ItemMatchbox","generic
 			0.1, //ItemWatch","generic
-			//
+			//toolbelt Switchable weapons
 			0.3, //WeaponHolder_ItemHatchet","object
 			0.01 //WeaponHolder_ItemMachete","object
 		};		
@@ -1156,11 +1158,6 @@ class CfgBuildingLoot {
 			//headgear
 			{"Binocular","weapon"},
 			//Inventory clothing items
-			{"Skin_BanditSkin_DZ","magazine"},
-			{"Skin_Camo1_DZ","magazine"},
-			{"Skin_Rocket_DZ","magazine"},
-			{"Skin_Sniper1_DZ","magazine"},
-			{"Skin_SniperLight_DZ","magazine"},
 			//inventory crafting items
 			{"PartWoodPile","magazine"},
 			{"WeaponHolder_ItemTent","object"},
@@ -1205,11 +1202,6 @@ class CfgBuildingLoot {
 			//headgear
 			0.4, //Binocular
 			//Inventory clothing items
-			0.01, //Skin_BanditSkin_DZ
-			0.4, //Skin_Camo1_DZ
-			0.01, //Skin_Rocket_DZ
-			0.01, //Skin_Sniper1_DZ
-			0.4, //Skin_SniperLight_DZ
 			//inventory crafting items
 			0.01, //PartWoodPile
 			0.3, //WeaponHolder_ItemTent
@@ -1270,6 +1262,7 @@ class CfgBuildingLoot {
 			{"Skin_Rocket_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
 			{"Skin_SniperLight_DZ","magazine"},
+			{"Skin_SniperD_DZ","magazine"},
 			//inventory crafting items
 			//inventory drink items
 			//inventory food items
@@ -1349,15 +1342,16 @@ class CfgBuildingLoot {
 			0.4, //"","military
 			0.3, //"","trash
 			//headgear, //0
-			0.01, //Binocular","weapon
-			0.3, //Binocular_Vector","military
+			0.01, //Binocular
+			0.3, //Binocular_Vector
 			0.1, //NVGoggles","weapon
-			//Inventory clothing items, //0
-			0.1, //Skin_BanditSkin_DZ","magazine
-			0.1, //Skin_Camo1_DZ","magazine
-			0.1, //Skin_Rocket_DZ","magazine
-			0.1, //Skin_Sniper1_DZ","magazine
-			0.1, //Skin_SniperLight_DZ","magazine
+			//Inventory clothing items
+			0.1, //Skin_BanditSkin_DZ
+			0.1, //Skin_Camo1_DZ
+			0.1, //Skin_Rocket_DZ
+			0.1, //Skin_Sniper1_DZ
+			0.1, //Skin_SniperLight_DZ
+			0.1, //Skin_SniperD_DZ
 			//inventory crafting items, //0
 			//inventory drink items, //0
 			//inventory food items, //0
@@ -1655,6 +1649,7 @@ class CfgBuildingLoot {
 			{"Skin_Rocket_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
 			{"Skin_SniperLight_DZ","magazine"},
+			{"Skin_SniperD_DZ","magazine"},
 			//inventory crafting items
 			//inventory drink items
 			//inventory food items,
@@ -1829,7 +1824,8 @@ class CfgBuildingLoot {
  			0.01, //Skin_Camo1_DZ","magazine
  			0.01, //Skin_Rocket_DZ","magazine
  			0.01, //Skin_Sniper1_DZ","magazine
- 			0.01, //Skin_SniperLight_DZ","magazine
+ 			0.01, //Skin_SniperLight_DZ
+			0.01, //Skin_SniperD_DZ
 			//inventory crafting items, 			
 			//inventory drink items, 			
 			//inventory food items, 			
@@ -2013,7 +2009,7 @@ class CfgBuildingLoot {
 			{"Skin_Rocket_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
 			{"Skin_SniperLight_DZ","magazine"},
-			{"Skin_SniperL_DZ","magazine"},
+			{"Skin_SniperD_DZ","magazine"},
 			//inventory crafting items
 			//inventory drink items
 			//inventory food items
@@ -2125,16 +2121,16 @@ class CfgBuildingLoot {
 			0.1, //"","military
 			0.1, //"","trash
 			//headgear
-			0, //Binocular","weapon
-			0.6, //Binocular_Vector","military
-			0.3, //NVGoggles","weapon
+			0, //Binocular
+			0.6, //Binocular_Vector
+			0.3, //NVGoggles
 			//Inventory clothing items
-			0.3, //Skin_BanditSkin_DZ","magazine
-			0.3, //Skin_Camo1_DZ","magazine
-			0.3, //Skin_Rocket_DZ","magazine
-			0.3, //Skin_Sniper1_DZ","magazine
-			0.3, //Skin_SniperLight_DZ","magazine
-			0.3, //Skin_SniperL_DZ","magazine
+			0.3, //Skin_BanditSkin_DZ
+			0.3, //Skin_Camo1_DZ
+			0.3, //Skin_Rocket_DZ
+			0.3, //Skin_Sniper1_DZ
+			0.3, //Skin_SniperLight_DZ
+			0.3, //Skin_SniperD_DZ
 			//inventory crafting items
 			//inventory drink items
 			//inventory food items
