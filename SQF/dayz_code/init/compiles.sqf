@@ -98,6 +98,8 @@ if (!isDedicated) then {
 	player_buildFortified_nest_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildFortified_nest_DZ.sqf";
 	player_buildCampWoodTower_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildCampWoodTower_DZ.sqf";
 	player_buildBarb_Gate_DZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildBarb_Gate_DZ.sqf";
+	player_builWorkbench_DZ  =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\build\player_buildWorkbench_DZ.sqf";
+	
 	
 	//ui
 	player_selectSlot =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\ui_selectSlot.sqf";
