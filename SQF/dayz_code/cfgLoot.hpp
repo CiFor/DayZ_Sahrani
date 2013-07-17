@@ -10,9 +10,11 @@ they are called by zeds for inventory items
 Zed Item Group Comments: include trash 
 			//AllAmmo
 			//CivAmmo
+			//UltraRareAmmo
+			//RareAmmo
+			//RUSAmmo
 			//UNAmmo
 			//USAmmo
-			//RUSAmmo
 			//drink
 			//food
 			//medical
@@ -173,9 +175,10 @@ class CfgLoot {
 		farmZed[] = {
 		{	
 			//trash
+			"EvMoney",
 			"ItemCards",
-			"ItemNails",
 			//SMD Crafting Components + Community Mod Dev Team Junk Loot
+			"ItemNails",
 			"ItemTape",
 			"ItemTrashRazor",
 			"ItemTrashToiletpaper",
@@ -203,13 +206,13 @@ class CfgLoot {
 		},
 		{
 			//trash
-			0.05, //"ItemCards",
-			0.05, //"ItemNails",
+			0.05, //"EvMoney",
+			//0.05, ItemCards",
 			//SMD Crafting Components + Community Mod Dev Team Junk Loot
+			0.05, //"ItemNails",
 			0.05, //"ItemTape",
 			0.05, //"ItemTrashRazor",
 			0.05, //"ItemTrashToiletpaper",
-			//OG Official Mod Trash
 			0.05, //"ItemSodaCokeEmpty",
 			0.05, //"ItemSodaEmpty",
 			0.05, //"ItemSodaMdewEmpty",
@@ -251,12 +254,12 @@ class CfgLoot {
 			"FoodCanOrlok",
 			"FoodCanPasta",
 			"FoodCanPowell",
-			"FoodCanRusCorn",
+			/*"FoodCanRusCorn",
 			"FoodCanRusMilk",
 			"FoodCanRusPeas",
 			"FoodCanRusPork",
 			"FoodCanRusStew",
-			"FoodCanRusUnlabeled",
+			"FoodCanRusUnlabeled",*/
 			"FoodCanSardines",
 			"FoodCanTylers",
 			"FoodCanUnlabeled",
@@ -468,7 +471,7 @@ class CfgLoot {
 			"ItemMorphine",
 			"ItemEpinephrine",
 			"ItemBloodbag",
-			"ItemAntibiotic",
+			"ItemAntibiotic"
 		},
 		{
 			0.33, //ItemBandage
@@ -476,7 +479,7 @@ class CfgLoot {
 			0.13, //ItemMorphine
 			0.09, //ItemEpinephrine
 			0.17, //ItemBloodbag
-			0.12, //ItemAntibiotic
+			0.12 //ItemAntibiotic
 		}
 	};
 	hunter[] = {
@@ -626,8 +629,11 @@ class CfgLoot {
 			"ItemWaterbottleUnfilled",
 			//ammo
 			"20Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_G36",
 			"20Rnd_762x51_DMR",
+			"20Rnd_762x51_FNFAL",
+			"20Rnd_762x51_B_SCAR",
+			"20Rnd_762x51_SB_SCAR",
 			"17Rnd_9x19_glock17",
 			"15Rnd_9x19_M9SD",
 			"15Rnd_9x19_M9",
@@ -643,10 +649,13 @@ class CfgLoot {
 			"200Rnd_556x45_M249",
 			"HandGrenade_west",
 			"SmokeShell",
+			"SmokeShellPurple",
+			"SmokeShellBlue",
+			"SmokeShellOrange",
 			"SmokeShellRed",
 			"SmokeShellGreen",
 			//"8Rnd_B_Beneli_Pellets",
-			"30Rnd_556x45_StanagSD",
+			"30Rnd_556x45_G36SD",
 			"30Rnd_9x19_MP5",
 			"30Rnd_9x19_MP5SD",
 			"100Rnd_762x51_M240",
@@ -682,9 +691,12 @@ class CfgLoot {
 			0.02, //ItemWaterbottle
 			0.04, //ItemWaterbottleUnfilled
 			//ammo
-			0.04, //20Rnd_556x45_Stanag
-			0.04, //30Rnd_556x45_Stanag
-			0.04, //20Rnd_762x51_DMR
+			0.01, //20Rnd_556x45_Stanag
+			0.04, //30Rnd_556x45_G36
+			0.01, //20Rnd_762x51_DMR
+			0.04, //20Rnd_762x51_FNFAL
+			0.04, //20Rnd_762x51_B_SCAR",
+			0.01, //20Rnd_762x51_SB_SCAR",
 			0.05, //17Rnd_9x19_glock17
 			0.01, //15Rnd_9x19_M9SD
 			0.02, //15Rnd_9x19_M9
@@ -700,10 +712,13 @@ class CfgLoot {
 			0.01, //200Rnd_556x45_M249
 			0.01, //HandGrenade_west
 			0.04, //SmokeShell
+			0.01, //SmokeShellPurple
+			0.01, //SmokeShellBlue
+			0.01, //SmokeShellOrange
 			0.02, //SmokeShellRed
 			0.02, //SmokeShellGreen
 			//0.04, //8Rnd_B_Beneli_Pellets
-			0.01, //30Rnd_556x45_StanagSD
+			0.01, //30Rnd_556x45_G36SD
 			0.02, //30Rnd_9x19_MP5
 			0.01, //30Rnd_9x19_MP5SD
 			0.01, //100Rnd_762x51_M240
@@ -745,7 +760,7 @@ class CfgLoot {
 			"FoodMRE",
 			//ammo
 			"20Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_G36",
 			"20Rnd_762x51_DMR",
 			"17Rnd_9x19_glock17",
 			"15Rnd_9x19_M9SD",
@@ -765,7 +780,7 @@ class CfgLoot {
 			"SmokeShellRed",
 			"SmokeShellGreen",
 			//"8Rnd_B_Beneli_Pellets",
-			"30Rnd_556x45_StanagSD",
+			"30Rnd_556x45_G36SD",
 			"30Rnd_9x19_MP5",
 			"30Rnd_9x19_MP5SD",
 			"100Rnd_762x51_M240",
@@ -805,7 +820,7 @@ class CfgLoot {
 			0.01, //FoodMRE
 			//ammo
 			0.04, //20Rnd_556x45_Stanag
-			0.04, //30Rnd_556x45_Stanag
+			0.04, //30Rnd_556x45_G36
 			0.04, //20Rnd_762x51_DMR
 			0.05, //17Rnd_9x19_glock17
 			0.01, //15Rnd_9x19_M9SD
@@ -825,7 +840,7 @@ class CfgLoot {
 			0.02, //SmokeShellRed
 			0.02, //SmokeShellGreen
 			//0.04, //8Rnd_B_Beneli_Pellets
-			0.01, //30Rnd_556x45_StanagSD
+			0.01, //30Rnd_556x45_G36SD
 			0.02, //30Rnd_9x19_MP5
 			0.01, //30Rnd_9x19_MP5SD
 			0.01, //100Rnd_762x51_M240

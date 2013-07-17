@@ -90,8 +90,8 @@ class CfgWeapons {
 				script = "spawn player_buildBarb_Gate_DZ;";
 			};
 			class Build4 {
-				text = "Bench";
-				script = "spawn player_buildBench_DZ;";
+				text = "Work Bench";
+				script = "spawn player_buildWorkBench_DZ;";
 			};
 		};
 	};
@@ -193,8 +193,8 @@ class CfgWeapons {
 		};
 		magazines[] =
 		{
-			"WoodenArrow",
-			"Quiver"
+			"Quiver",
+			"WoodenArrow"
 		};
 	};
 	class GrenadeLauncher;  // External class reference
