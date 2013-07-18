@@ -187,16 +187,15 @@ class CfgWeapons {
 	};
 	class Crossbow;
 	class Crossbow_DZ : Crossbow {
-		class Single
-		{
-			reloadTime=1.8;
-		};
+		reloadTime = 1.8;
+		displayname = $STR_DN_CROSSBOW;
 		magazines[] =
 		{
 			"Quiver",
 			"WoodenArrow"
 		};
 	};
+	
 	class GrenadeLauncher;  // External class reference
 	class Flare : GrenadeLauncher {
 		class ThrowMuzzle;

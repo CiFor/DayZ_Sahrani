@@ -22,7 +22,7 @@ class CfgMagazines {
 		
 		class ItemActions {
 			class Build {
-				text = "Build me";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require = "ItemEtool";
 				create = "Sandbag1_DZ";
@@ -180,7 +180,7 @@ class CfgMagazines {
 	{
 		displayName="2Rnd. Slug";
 		count=2;
-		descriptionShort="2 Rounds 12 gauge Shotgun Shells<br/>Shot Load: Slug<br/><br/>Used in: Double Barrel Shotgun<br/><br/>Can be comined for use in other Shotguns and Winchester";
+		descriptionShort="2 Rounds 12 gauge Shotgun Shells<br/>Shot Load: Slug<br/>Used in: Double Barrel Shotgun</br>Can be comined for use in other Shotguns and Winchester";
 		model = "\z\addons\dayz_communityassets\models\2shells_slugshot.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_slugshot_CA.paa";
 		class ItemActions
@@ -222,7 +222,7 @@ class CfgMagazines {
 	{
 		displayName="2Rnd. Pellets";
 		count=2;
-		descriptionShort="2 Rounds 12 gauge Shotgun Shells<br/>Shot Load: Pellets<br/><br/>Used in: Double Barrel Shotgun<br/><br/>Can be comined for use in other Shotguns";
+		descriptionShort="2 Rounds 12 gauge Shotgun Shells<br/>Shot Load: Pellets<br/>Used in: Double Barrel Shotgun</br>Can be comined for use in other Shotguns and Winchester";
 		model = "\z\addons\dayz_communityassets\models\2shells_pellet.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_pellet_CA.paa";
 		class ItemActions
@@ -584,7 +584,7 @@ class CfgMagazines {
 
 	//food - packaged
 	
-	class AngelCookies : FoodEdible {
+	/*class AngelCookies : FoodEdible {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_5;
@@ -592,7 +592,7 @@ class CfgMagazines {
 		picture = "z\addons\dayz_communityassets\pictures\i_buiscit_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_5;
 		bloodRegen = 100;
-	};
+	};*/
 	
 	class FoodCanBadguy : FoodEdible {
 		scope = public;
@@ -836,8 +836,41 @@ class CfgMagazines {
 		ammo = "TinCan";
 	};
 	
-//trash
+	class FoodMRE : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 800;
+		displayName = $STR_FOOD_NAME_MRE;
+		descriptionShort = $STR_FOOD_DESC_MRE;
+		model = "z\addons\dayz_communityassets\models\mre.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_mre_CA.paa";
+	};
 
+	class FoodNutmix : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 100;
+		displayName = $STR_FOOD_NAME_NUTMIX;
+		descriptionShort = $STR_FOOD_DESC_NUTMIX;
+		model = "z\addons\dayz_communityassets\models\nutmix.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_nutmix_CA.paa";
+	};
+	
+	class FoodPistachio : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 100;
+		displayName = $STR_FOOD_NAME_PISTACHIO;
+		descriptionShort = $STR_FOOD_DESC_PISTACHIO;
+		model = "z\addons\dayz_communityassets\models\pistachio.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
+	};
+	
+	
+	
+	
+//trash
+/*
 	class ItemTrashCards : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -847,7 +880,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
 		type = 256;
 	};
-
+*/
 	class ItemTrashRazor : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -912,7 +945,6 @@ SMD Equipment Fixes and Additions Original and Community DayZ Content
 
 */
 
-//ammo
 //skins
 	class SkinBase;	
 	
@@ -941,6 +973,16 @@ SMD Equipment Fixes and Additions Original and Community DayZ Content
 	};
 
 //trash
+
+	class ItemTrashMoney : CA_Magazine {
+		scope = public;
+		count = 1;
+		displayName = $STR_JUNK_NAME_CARDS;
+		descriptionShort = $STR_JUNK_DESC_CARDS;
+		model = "EvMoney.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
+		type = 256;
+	};
 
 	class ItemNails : CA_Magazine {
 		scope = public;

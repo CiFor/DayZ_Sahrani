@@ -176,7 +176,7 @@ class CfgLoot {
 		{	
 			//trash
 			"EvMoney",
-			"ItemCards",
+			//"ItemCards",
 			//SMD Crafting Components + Community Mod Dev Team Junk Loot
 			"ItemNails",
 			"ItemTape",
@@ -298,12 +298,12 @@ class CfgLoot {
 			0.04, //FoodCanOrlok
 			0.2, //FoodCanPasta
 			0.04, //FoodCanPowell
-			0.04, //FoodCanRusCorn
+			/*0.04, //FoodCanRusCorn
 			0.04, //FoodCanRusMilk
 			0.04, //FoodCanRusPeas
 			0.04, //FoodCanRusPork
 			0.04, //FoodCanRusStew
-			0.2, //FoodCanRusUnlabeled
+			0.2, //FoodCanRusUnlabeled*/
 			0.04, //FoodCanSardines
 			0.04, //FoodCanTylers
 			0.6, //FoodCanUnlabeled
@@ -915,17 +915,17 @@ class CfgLoot {
 			"FoodCanHerpyEmpty",
 			"FoodCanOrlokEmpty",
 			"FoodCanPowellEmpty",
-			"FoodCanRusCornEmpty",
+			/*"FoodCanRusCornEmpty",
 			"FoodCanRusMilkEmpty",
 			"FoodCanRusPeasEmpty",
 			"FoodCanRusPorkEmpty",
 			"FoodCanRusStewEmpty",
-			"FoodCanRusUnlabeledEmpty",
+			"FoodCanRusUnlabeledEmpty",*/
 			"FoodCanTylersEmpty",
 			"FoodCanUnlabeledEmpty",
 			//SMD Crafting Components + Community Mod Dev Team Junk Loot
 			"ItemBrick",
-			"ItemCards",
+			//"ItemCards",
 			"ItemFloppyWire",
 			"ItemNails",
 			"ItemScrapElectronics",

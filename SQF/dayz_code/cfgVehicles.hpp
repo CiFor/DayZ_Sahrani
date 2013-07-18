@@ -353,6 +353,108 @@ class CfgVehicles {
 			tex[] = {};
 		};
 	};
+	class HMMWV_D_DZ: HMMWV_Base {
+		accuracy = 0.32;
+		displayname = "HMMWV Desert";
+		hasgunner = 0;
+		hiddenselections[] = {"Camo1"};
+		hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
+		icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
+		mapsize = 5;
+		model = "ca\wheeled_E\HMMWV\HMMWV_DES_EP1";
+		picture = "\Ca\wheeled\data\ico\HMMWV_DES_EP1.paa";
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 50;
+        transportmaxbackpacks = 5;
+		class Turrets {};
+		class HitPoints {
+			class HitEngine {
+				armor = 2.4;
+				material = -1;
+				name = "motor";
+				passthrough = 0.2;
+				visual = "";
+			};
+			class HitBody {
+				armor = 1;
+				material = -1;
+				name = "karoserie";
+				passthrough = 1;
+				visual = "";
+			};
+			class HitFuel {
+				armor = 1.3;
+				material = -1;
+				name = "palivo";
+				passthrough = 0.5;
+				visual = "";
+			};
+			class HitLFWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_1_1_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitRFWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_2_1_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitLBWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_1_2_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitRBWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_2_2_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitGlass1 {
+				armor = 0.4;
+				material = -1;
+				name = "glass1";
+				passthrough = 0;
+				visual = "glass1";
+			};
+			class HitGlass2 {
+				armor = 0.4;
+				material = -1;
+				name = "glass2";
+				passthrough = 0;
+				visual = "glass2";
+			};
+			class HitGlass3 {
+				armor = 0.2;
+				material = -1;
+				name = "glass3";
+				passthrough = 0;
+				visual = "glass3";
+			};
+			class HitGlass4 {
+				armor = 0.2;
+				material = -1;
+				name = "glass4";
+				passthrough = 0;
+				visual = "glass4";
+			};
+		};
+		class Damage {
+			mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
+			tex[] = {};
+		};
+	};
 	class RubberBoat;
 	class PBX: RubberBoat {
 		cargoaction[] = {"PBX_Cargo01", "PBX_Cargo02", "PBX_Cargo03"};
@@ -372,7 +474,32 @@ class CfgVehicles {
 		typicalcargo[] = {};
 		class TransportMagazines {};
 		class Library {
-			libtextdesc = "The PBX is a Combat Rubber Craft very similar to the CRRC in design. It is intended to be used for maritime raids and infiltration, as well as riverine operations.";
+			libtextdesc = "The PBX is a Combat Rubber Craft very similar to the CRRC in design. It is intended to be used for maritime raids and infiltration, as well as river operations.";
+		};
+		class Damage {
+			mat[] = {"ca\water\data\pbx_engine.rvmat", "ca\water\data\pbx_engine.rvmat", "ca\water\data\pbx_engine_destruct.rvmat", "ca\water\data\pbx_01.rvmat", "ca\water\data\pbx_01.rvmat", "ca\water\data\pbx_01_destruct.rvmat", "ca\water\data\pbx_02.rvmat", "ca\water\data\pbx_02.rvmat", "ca\water\data\pbx_02_destruct.rvmat"};
+			tex[] = {};
+		};
+	};
+	class Zodiac: RubberBoat {
+		cargoaction[] = {"Zodiac_Cargo01", "Zodiac_Cargo02", "Zodiac_Cargo03"};
+		crew = "";
+		displayname = "Zodiac";
+		driveraction = "Zodiac_Driver";
+		extcameraposition[] = {0, 4, -14};
+		faction = "US";
+		icon = "\Ca\water\Data\map_ico\icomap_rubber_CA.paa";
+		mapsize = 6;
+		maxspeed = 65;
+		model = "\ca\water\PBX";
+		picture = "\ca\water\data\ico\pbx_CA.paa";
+		scope = 2;
+		side = 0;
+		transportsoldier = 3;
+		typicalcargo[] = {};
+		class TransportMagazines {};
+		class Library {
+			libtextdesc = "The Zodiac is a Combat Rubber Craft very similar to the PBX in design. It is intended to be used for maritime raids and infiltration, as well as river operations.";
 		};
 		class Damage {
 			mat[] = {"ca\water\data\pbx_engine.rvmat", "ca\water\data\pbx_engine.rvmat", "ca\water\data\pbx_engine_destruct.rvmat", "ca\water\data\pbx_01.rvmat", "ca\water\data\pbx_01.rvmat", "ca\water\data\pbx_01_destruct.rvmat", "ca\water\data\pbx_02.rvmat", "ca\water\data\pbx_02.rvmat", "ca\water\data\pbx_02_destruct.rvmat"};
@@ -2140,7 +2267,7 @@ class CfgVehicles {
 		destrType = "DestructTent";
 		armor = 400; 
 		vehicleClass = "Survival";
-		model = "\ca\misc2\Gunrack1";
+		model = "\ca\misc2\Gunrack1.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		displayName = $STR_DN_GUNRACK1;
@@ -2160,7 +2287,7 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructTent";
 		armor = 400; 
-		model = "\ca\buildings\misc\lavicka_2.p3d";
+		model = "\ca\buildings\misc\lavicka_3.p3d"; //\ca\buildings\misc\lavicka_4.p3d
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		displayName = "Bench (Wood)";
@@ -2171,8 +2298,8 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructTent";
 		armor = 400; 
-		model = "\ca\misc2\BagFenceLong.p3d";
-		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
+		model = "\ca\Misc\pytle.p3d"; //\ca\misc2\BagFenceLong.p3d
+		icon = "\ca\data\data\Unknown_object.paa"; //icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa
 		mapSize = 2;
 		displayName = $STR_DN_BAGFENCELONG;
 		vehicleClass = "Fortifications";
@@ -2182,8 +2309,8 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructTent";
 		armor = 400; 
-		model = "\ca\misc2\BagFenceCorner.p3d";
-		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceCorner_ca.paa";
+		model = "\ca\Misc\pytle_BSL.p3d"; //\ca\misc2\BagFenceCorner.p3d
+		icon = "\ca\data\data\Unknown_object.paa"; //icon = "\Ca\misc3\data\Icons\icon_fortBagFenceCorner_ca.paa";
 		mapSize = 2;
 		displayName = $STR_DN_BAGFENCECORNER;
 		vehicleClass = "Fortifications";
@@ -2193,9 +2320,9 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructTent";
 		armor = 400; 
-		model = "\Ca\misc3\fort_bagfence_round";
+		model = "\Ca\misc2\BagFenceRound.p3d"; //fortBagFenceRound_ca
 		displayName = $STR_DN_FORT_BAGFENCE_ROUND;
-		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceRound_ca.paa";
+		icon = "\ca\data\data\Unknown_object.paa"; //icon = "\Ca\misc3\data\Icons\icon_fortBagFenceRound_ca.paa";
 		mapSize = 3.2;
 		vehicleClass = "Fortifications";
 	};
@@ -2205,8 +2332,8 @@ class CfgVehicles {
 		destrType = "DestructTent";
 		armor = 400; 
 		animated = 0;
-		model = "\ca\misc\Fort_Razorwire";
-		icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
+		model = "\ca\Misc\Barbedwire.p3d"; //\ca\misc\Fort_Razorwire";
+		icon = "\ca\data\data\Unknown_object.paa"; //icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
 		accuracy = 0.3;
 		mapSize = 5.5;
 		displayName = $STR_DN_WIRE;
@@ -2239,8 +2366,8 @@ class CfgVehicles {
 	class Barb_Gate_DZ : BuiltItems {
 		animated = 1;
 		scope = 2;
-		model = "\ca\misc2\BarbGate.p3d";
-		icon = "\Ca\misc2\data\Icons\icon_barGate2_ca.paa";
+		model = "\ca\Misc\Barbedwire.p3d"; //ca\misc\BarbGate.p3d
+		icon = "\ca\data\data\Unknown_object.paa";//icon = "\Ca\misc2\data\Icons\icon_barGate2_ca.paa";
 		mapSize = 3;
 		displayName = $STR_DN_BARGATE2;
 		destrType = "DestructTent";
@@ -2278,12 +2405,12 @@ class CfgVehicles {
 		actionEnd1 = "OpenDoors1";
 	};
 	
-	class SMD_Workbench: Land_A_tent
+	class Workbench_DZ: Land_A_tent
 	{
 		scope = 2;
 		displayName="Workbench";
 		model="\SMD\assets\objects\workbench.p3d";
-		icon = "\SMD\assets\objects\icons\workbench.paa";
+		icon = "\ca\data\data\Unknown_object.paa";//icon = "\SMD\assets\objects\icons\workbench.paa";
 		armor = 400; 
 		vehicleClass = "Survival";
 		transportMaxMagazines = 100;
