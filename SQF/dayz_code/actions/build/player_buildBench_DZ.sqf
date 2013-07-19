@@ -2,13 +2,13 @@ private["_position","_tent","_location","_isOk","_backpack","_tentType","_trg","
 //check if can pitch here
 call gear_ui_init;
 _item = _this;
-_haswoodpile = {_x == "PartWoodPile"} count magazines player;
 _hasNails = {_x == "ItemNails"} count magazines player;
-_hasToolBox = 	"ItemToolbox" in items player;
+_haswoodpile = {_x == "PartWoodPile"} count magazines player;
 _location = player modeltoworld [0,2.5,0];
 _location set [2,0];
 _building = nearestObject [(vehicle player), "HouseBase"];
 _isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
+_hasToolBox = 	"ItemToolbox" in items player;
 //_isOk = true;
 _classname = "Bench_DZ";
 diag_log ("Build Crate: " + str(_isok) );

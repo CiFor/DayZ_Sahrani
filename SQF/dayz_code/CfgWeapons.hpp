@@ -1,30 +1,21 @@
+
+//items
+//vehicles
+//weapons
+
 class CfgWeapons {
+//items
 	class ItemCore;
-	class ItemMap_Debug: ItemCore {
-		descriptionshort = "Debug Map - Admin use only";
-		displayname = "Map";
-		picture = "\ca\ui\data\gear_picture_map_ca.paa";
-		scope = 2;
-		simulation = "ItemMap";
-		class Library {
-			libtextdesc = "Debug Map - Admin use only";
-		};
-	};
-	
-	class ItemMap: ItemCore {
-		model="ca\misc\SmallObj_file_map_WPN.p3d";
-	};
-	
 	class ItemCompass: ItemCore {
 		model="z\addons\dayz_communityassets\models\compass.p3d";
 	};
-	
+
 	class ItemCraftingBook : ItemCore {
 		scope = 2;
-		displayName = "Crafting Book (Camp)";
+		displayName = "Craft Book (Storage)";
 		model = "\ca\misc\SmallObj_spukayev_docs_WPN.p3d";
 		picture = "\ca\misc\Data\icons\picture_spukayev_docs_ca.paa";
-		descriptionShort = "CraftBook (Camp)";
+		descriptionShort = "CraftBook (Camp)</br>";
 		
 		class ItemActions {
 			class Build {
@@ -39,31 +30,37 @@ class CfgWeapons {
 				text = "Storage Box";
 				script = "spawn player_buildBoxStorage_DZ;";
 			};
+			class Build4 {
+				text = "Work Bench";
+				script = "spawn player_buildWorkbench_DZ;";
+			};
+			
 		};
 	};
 	
 	class ItemCraftingBook2 : ItemCore {
 		scope = 2;
-		displayName = "Crafting Book (Barriers)";
+		displayName = "Craft Book (Barriers)";
 		model = "\ca\misc\SmallObj_moscow_docs_WPN.p3d";
 		picture = "\ca\misc\Data\icons\picture_moscow_docs_ca.paa";
-		descriptionShort = "CraftBook (Barriers)";
+		descriptionShort = "Crafting Book (Barriers)</br>Build Different sized and shaped Sandbag Fortifications";
 		
 		class ItemActions {
 			class Build {
-				text = "Sandbag Wall (End)";
-				script = "spawn player_buildBagFenceLongCorner_DZ;";
+				text = "Bag Wall (Short)";
+				script = "spawn player_buildBagFenceLong_DZ;";//switchback to long wall when we shorten OG Bags
 			};
 			class Build2 {
-				text = "SandBag Wall (Lng)";
-				script = "spawn player_buildBagFenceLong_DZ;";
+				text = "Bag Wall (Corner)";
+				script = "spawn player_buildBagFenceLongCorner_DZ;";
 			};
+			
 			class Build3 {
-				text = "Sandbag Wall (Rnd)";
+				text = "Bag Wall (Round)";
 				script = "spawn player_buildBagFenceLongRound_DZ;";
 			};
 			class Build4 {
-				text = "RazorWire Wall (Tri)";
+				text = "RazorWire Wall";
 				script = "spawn player_buildFort_RazorWire_DZ;";
 			};
 		};
@@ -71,56 +68,139 @@ class CfgWeapons {
 	
 	class ItemCraftingBook3 : ItemCore {
 		scope = 2;
-		displayName = "Crafting Book (Forts)";
+		displayName = "Craft Book (Camp)";
 		model = "\ca\misc\SmallObj_File_photos_WPN.p3d";
 		picture = "\ca\misc\Data\icons\picture_photo_folder_ca.paa";
-		descriptionShort = "CraftBook (Forts)";
+		descriptionShort = "Crafting Book (Camp)</br>Build Various Objects for your Camp";
 		
 		class ItemActions {
 			class Build {
-				text = "Fortified Nest";
-				script = "spawn player_buildFortified_nest_DZ;";
+				text = "Bench";
+				script = "spawn player_buildBoxStorage_DZ;";
 			};
 			class Build2 {
-				text = "DeerStand";
-				script = "spawn player_buildCampWoodTower_DZ;";
-			};
-			class Build3 {
 				text = "Gate";
 				script = "spawn player_buildBarb_Gate_DZ;";
 			};
+			class Build3 {
+				text = "DeerStand";
+				script = "spawn player_buildCampWoodTower_DZ;";
+			};
 			class Build4 {
-				text = "Work Bench";
-				script = "spawn player_buildWorkBench_DZ;";
+				text = "Fortified Nest";
+				script = "spawn player_buildFortified_nest_DZ;";
 			};
 		};
 	};
 	
-	class Makarov;
-	class MakarovSD : Makarov {
-		model = "\ca\weapons\makarov_silenced";
-		fireLightDuration = 0.0;
-		fireLightIntensity = 0.0;
-		displayName = $STR_DN_MAKAROVSD;
-		picture = "\CA\weapons\data\equip\w_makarovSD_ca.paa";
-		begin1[] = {"ca\sounds\weapons\pistols\makarovSD_single1", 0.316228, 1, 200};
-		soundBegin[] = {"begin1", 1};
-		reloadMagazineSound[] = {"\ca\Weapons\Data\Sound\pistol_reload", 0.0316228, 1, 20};
-		minRange = 0;
-		minRangeProbab = 0.1;
-		midRange = 15;
-		midRangeProbab = 0.3;
-		maxRange = 20;
-		maxRangeProbab = 0.04;
-		magazines[] = {"8Rnd_9x18_MakarovSD", "8Rnd_9x18_Makarov"};
-		
+	class ItemMap_Debug: ItemCore {
+		descriptionshort = "Debug Map - Admin use only";
+		displayname = "Map";
+		picture = "\ca\ui\data\gear_picture_map_ca.paa";
+		scope = 2;
+		simulation = "ItemMap";
 		class Library {
-			libTextDesc = $STR_LIB_MAKAROVSD;
+			libtextdesc = "Debug Map - Admin use only";
 		};
-		descriptionShort = $STR_DSS_MAKAROVSD;
 	};
+	
+	class ItemMatchbox: ItemCore
+	{
+		scope=2;
+		displayName="$STR_EQUIP_NAME_3";
+		model="\dayz_equip\models\matchbox_gear.p3d";
+		picture="\dayz_equip\textures\equip_matchbox_ca.paa";
+		descriptionShort="$STR_EQUIP_DESC_3";
+		class ItemActions {
+			delete Use;
+		};
+	};
+
+//vehicles
+//weapons
+
 	class BAF_AS50_scoped;
 	class BAF_AS50_scoped_DZ : BAF_AS50_scoped {
+		type = "1";
+		canlock = 0;
+		cursor = "RifleCursor";
+	};
+	
+	class Crossbow;
+	class Crossbow_DZ : Crossbow {
+		reloadTime = 1.8;
+		displayname = $STR_DN_CROSSBOW;
+		magazines[] =
+		{
+			"Quiver",
+			"WoodenArrow"
+		};
+	};
+	
+	class ItemCrowbar: ItemCore	{
+		scope=2;
+		displayName="Crowbar";
+		model="\dayz_equip\models\crowbar.p3d";
+		picture="\z\addons\dayz_communityassets\pictures\equip_crowbar_CA.paa";
+		descriptionShort="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
+		class ItemActions
+		{
+			class Toolbelt
+			{
+				text="Remove from Toolbelt";
+				script="spawn player_addToolbelt;";
+				use[]=
+				{
+					"ItemCrowbar"
+				};
+				output[]=
+				{
+					"MeleeCrowbar"
+				};
+			};
+		};
+	};
+	
+	class GrenadeLauncher;  // External class reference
+	class Flare : GrenadeLauncher {
+		class ThrowMuzzle;
+		class MolotovCocktailMuzzle : ThrowMuzzle {
+			displayName = "$STR_ACTION_THROW";
+			magazines[] = {
+				"TrashJackDaniels", 
+				"ItemSodaEmpty", 
+				"TrashTinCan",
+				"FoodCanGriffEmpty",
+				"FoodCanBadguyEmpty",
+				"FoodCanBoneboyEmpty",
+				"FoodCanCornEmpty",
+				"FoodCanCurgonEmpty",
+				"FoodCanDemonEmpty",
+				"FoodCanFraggleosEmpty",
+				"FoodCanHerpyEmpty",
+				"FoodCanOrlokEmpty",
+				"FoodCanPowellEmpty",
+				"FoodCanTylersEmpty",
+				"FoodCanUnlabeledEmpty",
+				"ItemSodaCokeEmpty",
+				"ItemSodaPepsiEmpty",
+				"ItemSodaMdewEmpty",
+				"ItemSodaMtngreenEmpty",
+				"ItemSodaR4z0rEmpty",
+				"ItemSodaClaysEmpty",
+				"ItemSodaSmashtEmpty", 
+				"ItemSodaDrwasteEmpty", 
+				"ItemSodaLemonadeEmpty", 
+				"ItemSodaLvgEmpty", 
+				"ItemSodaMzlyEmpty", 
+				"ItemBrick",
+				"ItemSodaRabbitEmpty"
+			};          
+		};
+	};
+	
+	class ksvk;
+	class ksvk_DZ	: ksvk {
 		type = "1";
 		canlock = 0;
 		cursor = "RifleCursor";
@@ -179,97 +259,30 @@ class CfgWeapons {
 		descriptionShort = $STR_DSS_M107;
 	};
 	
-	class ksvk;
-	class ksvk_DZ	: ksvk {
-		type = "1";
-		canlock = 0;
-		cursor = "RifleCursor";
-	};
-	class Crossbow;
-	class Crossbow_DZ : Crossbow {
-		reloadTime = 1.8;
-		displayname = $STR_DN_CROSSBOW;
-		magazines[] =
-		{
-			"Quiver",
-			"WoodenArrow"
+	class Makarov;
+	class MakarovSD : Makarov {
+		model = "\ca\weapons\makarov_silenced";
+		fireLightDuration = 0.0;
+		fireLightIntensity = 0.0;
+		displayName = $STR_DN_MAKAROVSD;
+		picture = "\CA\weapons\data\equip\w_makarovSD_ca.paa";
+		begin1[] = {"ca\sounds\weapons\pistols\makarovSD_single1", 0.316228, 1, 200};
+		soundBegin[] = {"begin1", 1};
+		reloadMagazineSound[] = {"\ca\Weapons\Data\Sound\pistol_reload", 0.0316228, 1, 20};
+		minRange = 0;
+		minRangeProbab = 0.1;
+		midRange = 15;
+		midRangeProbab = 0.3;
+		maxRange = 20;
+		maxRangeProbab = 0.04;
+		magazines[] = {"8Rnd_9x18_MakarovSD", "8Rnd_9x18_Makarov"};
+		
+		class Library {
+			libTextDesc = $STR_LIB_MAKAROVSD;
 		};
-	};
-	
-	class GrenadeLauncher;  // External class reference
-	class Flare : GrenadeLauncher {
-		class ThrowMuzzle;
-		class MolotovCocktailMuzzle : ThrowMuzzle {
-			displayName = "$STR_ACTION_THROW";
-			magazines[] = {
-				"TrashJackDaniels", 
-				"ItemSodaEmpty", 
-				"TrashTinCan",
-				"FoodCanGriffEmpty",
-				"FoodCanBadguyEmpty",
-				"FoodCanBoneboyEmpty",
-				"FoodCanCornEmpty",
-				"FoodCanCurgonEmpty",
-				"FoodCanDemonEmpty",
-				"FoodCanFraggleosEmpty",
-				"FoodCanHerpyEmpty",
-				"FoodCanOrlokEmpty",
-				"FoodCanPowellEmpty",
-				"FoodCanTylersEmpty",
-				"FoodCanUnlabeledEmpty",
-				"ItemSodaCokeEmpty",
-				"ItemSodaPepsiEmpty",
-				"ItemSodaMdewEmpty",
-				"ItemSodaMtngreenEmpty",
-				"ItemSodaR4z0rEmpty",
-				"ItemSodaClaysEmpty",
-				"ItemSodaSmashtEmpty", 
-				"ItemSodaDrwasteEmpty", 
-				"ItemSodaLemonadeEmpty", 
-				"ItemSodaLvgEmpty", 
-				"ItemSodaMzlyEmpty", 
-				"ItemBrick",
-				"ItemSodaRabbitEmpty"
-			};          
-		};
+		descriptionShort = $STR_DSS_MAKAROVSD;
 	};
 
-	class ItemMatchbox: ItemCore
-	{
-		scope=2;
-		displayName="$STR_EQUIP_NAME_3";
-		model="\dayz_equip\models\matchbox_gear.p3d";
-		picture="\dayz_equip\textures\equip_matchbox_ca.paa";
-		descriptionShort="$STR_EQUIP_DESC_3";
-		class ItemActions {
-			delete Use;
-		};
-	};
-	
-	class ItemCrowbar: ItemCore
-	{
-		scope=2;
-		displayName="Crowbar";
-		model="\dayz_equip\models\crowbar.p3d";
-		picture="\z\addons\dayz_communityassets\pictures\equip_crowbar_CA.paa";
-		descriptionShort="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
-		class ItemActions
-		{
-			class Toolbelt
-			{
-				text="Remove from Toolbelt";
-				script="spawn player_addToolbelt;";
-				use[]=
-				{
-					"ItemCrowbar"
-				};
-				output[]=
-				{
-					"MeleeCrowbar"
-				};
-			};
-		};
-	};
 	class MeleeHatchet;
 	class MeleeCrowbar: MeleeHatchet
 	{

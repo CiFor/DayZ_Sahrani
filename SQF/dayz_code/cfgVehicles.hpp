@@ -2287,7 +2287,7 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructTent";
 		armor = 400; 
-		model = "\ca\buildings\misc\lavicka_3.p3d"; //\ca\buildings\misc\lavicka_4.p3d
+		model = "\ca\buildings\misc\lavicka_3.p3d"; //ca\buildings\misc\lavicka_4.p3d"
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		displayName = "Bench (Wood)";
@@ -2298,10 +2298,10 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructTent";
 		armor = 400; 
-		model = "\ca\Misc\pytle.p3d"; //\ca\misc2\BagFenceLong.p3d
+		model = "\ca\misc2\BagFenceShort.p3d"; //\ca\misc2\BagFenceLong.p3d
 		icon = "\ca\data\data\Unknown_object.paa"; //icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa
 		mapSize = 2;
-		displayName = $STR_DN_BAGFENCELONG;
+		displayName = $STR_DN_BAGFENCESTRAIGHT;
 		vehicleClass = "Fortifications";
 	};
 	
@@ -2309,7 +2309,7 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructTent";
 		armor = 400; 
-		model = "\ca\Misc\pytle_BSL.p3d"; //\ca\misc2\BagFenceCorner.p3d
+		model = "\ca\misc2\BagFenceCorner.p3d"; //ca\misc2\BagFenceCorner.p3d
 		icon = "\ca\data\data\Unknown_object.paa"; //icon = "\Ca\misc3\data\Icons\icon_fortBagFenceCorner_ca.paa";
 		mapSize = 2;
 		displayName = $STR_DN_BAGFENCECORNER;
@@ -2366,8 +2366,8 @@ class CfgVehicles {
 	class Barb_Gate_DZ : BuiltItems {
 		animated = 1;
 		scope = 2;
-		model = "\ca\Misc\Barbedwire.p3d"; //ca\misc\BarbGate.p3d
-		icon = "\ca\data\data\Unknown_object.paa";//icon = "\Ca\misc2\data\Icons\icon_barGate2_ca.paa";
+		model = "\ca\misc2\BarbGate.p3d";
+		icon = "\Ca\misc2\data\Icons\icon_barGate2_ca.paa";
 		mapSize = 3;
 		displayName = $STR_DN_BARGATE2;
 		destrType = "DestructTent";
@@ -2405,20 +2405,20 @@ class CfgVehicles {
 		actionEnd1 = "OpenDoors1";
 	};
 	
-	class Workbench_DZ: Land_A_tent
-	{
+	class Workbench_DZ: Land_A_tent	{
 		scope = 2;
 		displayName="Workbench";
 		model="\SMD\assets\objects\workbench.p3d";
-		icon = "\ca\data\data\Unknown_object.paa";//icon = "\SMD\assets\objects\icons\workbench.paa";
+		icon = "\SMD\assets\objects\icons\workbench.paa";
 		armor = 400; 
 		vehicleClass = "Survival";
 		transportMaxMagazines = 100;
 		transportMaxWeapons = 20;
 		transportMaxBackpacks = 0;
 	};
-	/* End */
+	/* End */	
 };
+
 class CfgNonAIVehicles {
 	
 	access = 0;

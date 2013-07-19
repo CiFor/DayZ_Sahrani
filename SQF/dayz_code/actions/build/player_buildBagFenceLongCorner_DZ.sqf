@@ -19,7 +19,7 @@ _text = getText (_config >> "displayName");
 
 if (!_hasToolBox) exitWith {cutText ["You need a toolbox !","PLAIN DOWN"]};
 if (!_hasEtool) exitWith {cutText ["You need an Entreching Tool !","PLAIN DOWN"]};
-if (_hasSandBag < 3) exitWith {cutText ["You need 3 Sand Bags !","PLAIN DOWN"]};
+if (_hasSandBag < 2) exitWith {cutText ["You need 2 Sand Bags !","PLAIN DOWN"]};
 
 
 //allowed

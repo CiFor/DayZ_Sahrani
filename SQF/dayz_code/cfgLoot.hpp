@@ -263,8 +263,8 @@ class CfgLoot {
 			"FoodCanSardines",
 			"FoodCanTylers",
 			"FoodCanUnlabeled",
-			"FoodChipsMysticales",
-			"FoodChipsSulahoops",
+			//"FoodChipsMysticales",
+			//"FoodChipsSulahoops",
 			"FoodNutmix",
 			"FoodPistachio",
 			//drink
@@ -307,8 +307,8 @@ class CfgLoot {
 			0.04, //FoodCanSardines
 			0.04, //FoodCanTylers
 			0.6, //FoodCanUnlabeled
-			0.04, //FoodChipsMysticales
-			0.04, //FoodChipsSulahoops
+			//0.04, //FoodChipsMysticales
+			//0.04, //FoodChipsSulahoops
 			0.6, //FoodNutmix
 			0.3, //FoodPistachio
 			//drink
