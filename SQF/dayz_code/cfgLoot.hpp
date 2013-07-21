@@ -1,26 +1,47 @@
 /*
-Split into Groups:
+Classes from cfgLoot.hpp:
+			{"","civilian"},
+			{"","civilianZed"},
+			{"","farm"},
+			{"","farmZed"},
+			{"","food"},
+			{"","foodSpecial"}
+			{"","generic"},
+			{"","genericZed"},
+			{"","hospital"},
+			{"","hunter"},
+			{"","hunterZed"},
+			{"","medical"},
+			{"","medicalZed"},
+			{"","military"},
+			{"","militarySpecial"},
+			{"","militarySpecialZed"},
+			{"","militaryZed"},
+			{"","policemanZed"},
+			{"","trash"},
 
-ClassNameX have no drink, food or trash items
-they are called at buildings ONLY
+Building types in config.cpp:
 
-ClassnameXZed includeds food, drink and trash items
-they are called by zeds for inventory items
+//Default
+//Master
++++
+//Farm
+//HeliCrash
+//HeliCrash_No50s
+//HeliCrash2Mi8
+//HeliCrash2Mi8_NoKSVKs
+//HeliCrash3C130
+//HeliCrash3C130_UnArmed
+//Hospital
+//Hunting
+//Industrial
+//Military
+//MilitarySpecial
+//Residential
+//Supermarket
 
-Zed Item Group Comments: include trash 
-			//AllAmmo
-			//CivAmmo
-			//UltraRareAmmo
-			//RareAmmo
-			//RUSAmmo
-			//UNAmmo
-			//USAmmo
-			//drink
-			//food
-			//medical
-			//supplies
-			//trash
 */
+
 class CfgLoot {
 	civilian[] = {
 		{			
@@ -47,7 +68,7 @@ class CfgLoot {
 		},
 		{
 			//ammo
-			0.05, //Quiver
+			0.00, //Quiver
 			0.04, //WoodenArrow
 			0.07, //8Rnd_9x18_Makarov
 			0.01, //8Rnd_9x18_MakarovSD
@@ -56,8 +77,8 @@ class CfgLoot {
 			0.02, //2Rnd_shotgun_74Pellets
 			0.08, //15Rnd_W1866_Slug
 			//medical
-			0.06, //ItemBandage
-			0.06, //ItemPainkiller
+			0.01, //ItemBandage
+			0.01, //ItemPainkiller
 			0.01, //ItemAntibiotic
 			//suplies
 			0.04, //ItemFloppyWire
@@ -116,7 +137,7 @@ class CfgLoot {
 			0.05, //FoodCanFrankBeans
 			0.05, //FoodCanPasta
 			//ammo
-			0.05, //Quiver
+			0.00, //Quiver
 			0.04, //WoodenArrow
 			0.07, //8Rnd_9x18_Makarov
 			0.01, //8Rnd_9x18_MakarovSD
@@ -175,7 +196,7 @@ class CfgLoot {
 		farmZed[] = {
 		{	
 			//trash
-			"EvMoney",
+			//"EvMoney",
 			//"ItemCards",
 			//SMD Crafting Components + Community Mod Dev Team Junk Loot
 			"ItemNails",
@@ -206,7 +227,7 @@ class CfgLoot {
 		},
 		{
 			//trash
-			0.05, //"EvMoney",
+			//0.05, //"EvMoney",
 			//0.05, ItemCards",
 			//SMD Crafting Components + Community Mod Dev Team Junk Loot
 			0.05, //"ItemNails",
@@ -236,6 +257,96 @@ class CfgLoot {
 		}
 	};
 	food[] = {
+		{
+			//food
+			"FoodCanBadguy",
+			"FoodCanBakedBeans",
+			"FoodCanBoneboy",
+			"FoodCanCorn",
+			"FoodCanCurgon",
+			"FoodCanDemon",
+			"FoodCanDerpy",
+			"FoodCandyAnders",
+			"FoodCandyLegacys",
+			"FoodCandyMintception",
+			"FoodCanFraggleos",
+			"FoodCanFrankBeans",
+			"FoodCanHerpy",
+			"FoodCanOrlok",
+			"FoodCanPasta",
+			"FoodCanPowell",
+			/*"FoodCanRusCorn",
+			"FoodCanRusMilk",
+			"FoodCanRusPeas",
+			"FoodCanRusPork",
+			"FoodCanRusStew",
+			"FoodCanRusUnlabeled",*/
+			"FoodCanSardines",
+			"FoodCanTylers",
+			"FoodCanUnlabeled",
+			//"FoodChipsMysticales",
+			//"FoodChipsSulahoops",
+			"FoodNutmix",
+			"FoodPistachio",
+			//drink
+			"ItemSodaClays",
+			"ItemSodaCoke",
+			"ItemSodaDrwaste",
+			"ItemSodaLemonade",
+			"ItemSodaLvg",
+			"ItemSodaMtngreen",
+			"ItemSodaMzly",
+			"ItemSodaPepsi",
+			"ItemSodaR4z0r",
+			"ItemSodaRabbit",
+			"ItemSodaSmasht"
+		},
+		{
+			//food
+			0.04, //FoodCanBadguy
+			0.2, //FoodCanBakedBeans
+			0.04, //FoodCanBoneboy
+			0.2, //FoodCanCorn
+			0.04, //FoodCanCurgon
+			0.04, //FoodCanDemon
+			0.04, //FoodCanDerpy
+			0.04, //FoodCandyAnders
+			0.04, //FoodCandyLegacys
+			0.04, //FoodCandyMintception
+			0.04, //FoodCanFraggleos
+			0.2, //FoodCanFrankBeans
+			0.04, //FoodCanHerpy
+			0.04, //FoodCanOrlok
+			0.2, //FoodCanPasta
+			0.04, //FoodCanPowell
+			/*0.04, //FoodCanRusCorn
+			0.04, //FoodCanRusMilk
+			0.04, //FoodCanRusPeas
+			0.04, //FoodCanRusPork
+			0.04, //FoodCanRusStew
+			0.2, //FoodCanRusUnlabeled*/
+			0.04, //FoodCanSardines
+			0.04, //FoodCanTylers
+			0.6, //FoodCanUnlabeled
+			//0.04, //FoodChipsMysticales
+			//0.04, //FoodChipsSulahoops
+			0.6, //FoodNutmix
+			0.3, //FoodPistachio
+			//drink
+			0.04, //ItemSodaClays
+			0.04, //ItemSodaCoke
+			0.04, //ItemSodaDrwaste 
+			0.3, //ItemSodaLemonade 
+			0.04, //ItemSodaLvg 
+			0.2, //ItemSodaMtngreen
+			0.04, //ItemSodaMzly 
+			0.1, //ItemSodaPepsi
+			0.04, //ItemSodaR4z0r
+			0.04, //ItemSodaRabbit
+			0.04 //ItemSodaSmasht 
+		}
+	};
+	foodSpecial[] = {
 		{
 			//food
 			"FoodCanBadguy",
@@ -511,7 +622,7 @@ class CfgLoot {
 			0.5, //5x_22_LR_17_HMR
 			0.2, //7Rnd_45ACP_1911
 			0.5, //10x_303
-			0.01, //Quiver
+			0.0, //Quiver
 			1, //WoodenArrow
 			//medical
 			0.2, //ItemHeatPack
@@ -561,7 +672,7 @@ class CfgLoot {
 			0.5, //5x_22_LR_17_HMR
 			0.2, //7Rnd_45ACP_1911
 			0.5, //10x_303
-			0.01, //Quiver
+			0.00, //Quiver
 			1, //WoodenArrow
 			//medical
 			0.2, //ItemHeatPack
@@ -749,6 +860,256 @@ class CfgLoot {
 		}
 	};
 	militaryZed[] = {
+		{
+			//trash
+			"TrashTinCan",
+			"ItemSodaEmpty",
+			//drink
+			"ItemWaterbottle",
+			"ItemWaterbottleUnfilled",
+			//food
+			"FoodMRE",
+			//ammo
+			"20Rnd_556x45_Stanag",
+			"30Rnd_556x45_G36",
+			"20Rnd_762x51_DMR",
+			"17Rnd_9x19_glock17",
+			"15Rnd_9x19_M9SD",
+			"15Rnd_9x19_M9",
+			"30Rnd_762x39_AK47",
+			"30Rnd_545x39_AK",
+			"5Rnd_762x51_M24",
+			"10Rnd_127x99_m107",
+			//"8Rnd_B_Beneli_74Slug",
+			"1Rnd_HE_M203",
+			"FlareWhite_M203",
+			"FlareGreen_M203",
+			"1Rnd_Smoke_M203",		
+			"200Rnd_556x45_M249",
+			"HandGrenade_west",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellGreen",
+			//"8Rnd_B_Beneli_Pellets",
+			"30Rnd_556x45_G36SD",
+			"30Rnd_9x19_MP5",
+			"30Rnd_9x19_MP5SD",
+			"100Rnd_762x51_M240",
+			"10Rnd_9x39_SP5_VSS",
+			"20Rnd_9x39_SP5_VSS",
+			//"8Rnd_B_Saiga12_74Slug",
+			"5Rnd_127x108_KSVK",
+			"5Rnd_86x70_L115A1",
+			"10Rnd_B_765x17_Ball",
+			"20Rnd_B_765x17_Ball",
+			"20Rnd_762x51_B_SCAR",
+			"75Rnd_545x39_RPK",
+			//medical
+			"ItemBandage",
+			"ItemAntibiotic",
+			"ItemPainkiller",
+			"ItemMorphine",
+			"ItemHeatPack",
+			//supplies
+			"ItemNails",
+			"ItemScrapElectronics",
+			"ItemTape",
+			"ItemSandbag",
+			"ItemWire",
+			"HandChemGreen",
+			"HandChemBlue",
+			"HandChemRed"			
+		},
+		{
+			//trash
+			0.18, //TrashTinCan
+			0.09, //ItemSodaEmpty
+			//drink
+			0.01, //ItemWaterbottle
+			0.01, //ItemWaterbottleUnfilled
+			//food
+			0.01, //FoodMRE
+			//ammo
+			0.04, //20Rnd_556x45_Stanag
+			0.04, //30Rnd_556x45_G36
+			0.04, //20Rnd_762x51_DMR
+			0.05, //17Rnd_9x19_glock17
+			0.01, //15Rnd_9x19_M9SD
+			0.02, //15Rnd_9x19_M9
+			0.04, //30Rnd_762x39_AK47
+			0.04, //30Rnd_545x39_AK
+			0.01, //5Rnd_762x51_M24
+			0.01, //10Rnd_127x99_m107
+			//0.04, //8Rnd_B_Beneli_74Slug
+			0.01, //1Rnd_HE_M203
+			0.01, //FlareWhite_M203
+			0.01, //FlareGreen_M203
+			0.01, //1Rnd_Smoke_M203
+			0.01, //200Rnd_556x45_M249
+			0.01, //HandGrenade_west
+			0.04, //SmokeShell
+			0.02, //SmokeShellRed
+			0.02, //SmokeShellGreen
+			//0.04, //8Rnd_B_Beneli_Pellets
+			0.01, //30Rnd_556x45_G36SD
+			0.02, //30Rnd_9x19_MP5
+			0.01, //30Rnd_9x19_MP5SD
+			0.01, //100Rnd_762x51_M240
+			0.04, //10Rnd_9x39_SP5_VSS
+			0.01, //20Rnd_9x39_SP5_VSS
+			//0.02, //8Rnd_B_Saiga12_74Slug
+			0.01, //5Rnd_127x108_KSVK
+			0.01, //5Rnd_86x70_L115A1
+			0.02, //10Rnd_B_765x17_Ball
+			0.02, //20Rnd_B_765x17_Ball
+			0.01, //20Rnd_762x51_B_SCAR
+			0.01, //75Rnd_545x39_RPK
+			//medical
+			0.04, //ItemBandage
+			0.04, //ItemAntibiotic
+			0.04, //ItemPainkiller
+			0.01, //ItemMorphine
+			0.04, //ItemHeatPack
+			//supplies
+			0.08, //ItemNails
+			0.04, //ItemScrapElectronics
+			0.03, //ItemTape
+			0.04, //ItemSandbag
+			0.04, //ItemWire
+			0.02, //HandChemGreen
+			0.02, //HandChemBlue
+			0.02 //HandChemRed			
+		}
+	};
+	militarySpecial[] = {
+		{
+			//food
+			"FoodMRE",
+			//drink
+			"ItemWaterbottle",
+			"ItemWaterbottleUnfilled",
+			//ammo
+			"20Rnd_556x45_Stanag",
+			"30Rnd_556x45_G36",
+			"20Rnd_762x51_DMR",
+			"20Rnd_762x51_FNFAL",
+			"20Rnd_762x51_B_SCAR",
+			"20Rnd_762x51_SB_SCAR",
+			"17Rnd_9x19_glock17",
+			"15Rnd_9x19_M9SD",
+			"15Rnd_9x19_M9",
+			"30Rnd_762x39_AK47",
+			"30Rnd_545x39_AK",
+			"5Rnd_762x51_M24",
+			"10Rnd_127x99_m107",
+			//"8Rnd_B_Beneli_74Slug",
+			"1Rnd_HE_M203",
+			"FlareWhite_M203",
+			"FlareGreen_M203",
+			"1Rnd_Smoke_M203",		
+			"200Rnd_556x45_M249",
+			"HandGrenade_west",
+			"SmokeShell",
+			"SmokeShellPurple",
+			"SmokeShellBlue",
+			"SmokeShellOrange",
+			"SmokeShellRed",
+			"SmokeShellGreen",
+			//"8Rnd_B_Beneli_Pellets",
+			"30Rnd_556x45_G36SD",
+			"30Rnd_9x19_MP5",
+			"30Rnd_9x19_MP5SD",
+			"100Rnd_762x51_M240",
+			"10Rnd_9x39_SP5_VSS",
+			"20Rnd_9x39_SP5_VSS",
+			//"8Rnd_B_Saiga12_74Slug",
+			"5Rnd_127x108_KSVK",
+			"5Rnd_86x70_L115A1",
+			"10Rnd_B_765x17_Ball",
+			"20Rnd_B_765x17_Ball",
+			"20Rnd_762x51_B_SCAR",
+			"75Rnd_545x39_RPK",
+			//medical
+			"ItemBandage",
+			"ItemAntibiotic",
+			"ItemPainkiller",
+			"ItemMorphine",
+			"ItemHeatPack",
+			//supplies
+			"ItemNails",
+			"ItemScrapElectronics",
+			"ItemTape",
+			"ItemSandbag",
+			"ItemWire",
+			"HandChemGreen",
+			"HandChemBlue",
+			"HandChemRed"			
+		},
+		{
+			//food
+			0.04, //FoodMRE
+			//drink
+			0.02, //ItemWaterbottle
+			0.04, //ItemWaterbottleUnfilled
+			//ammo
+			0.01, //20Rnd_556x45_Stanag
+			0.04, //30Rnd_556x45_G36
+			0.01, //20Rnd_762x51_DMR
+			0.04, //20Rnd_762x51_FNFAL
+			0.04, //20Rnd_762x51_B_SCAR",
+			0.01, //20Rnd_762x51_SB_SCAR",
+			0.05, //17Rnd_9x19_glock17
+			0.01, //15Rnd_9x19_M9SD
+			0.02, //15Rnd_9x19_M9
+			0.04, //30Rnd_762x39_AK47
+			0.04, //30Rnd_545x39_AK
+			0.01, //5Rnd_762x51_M24
+			0.01, //10Rnd_127x99_m107
+			//0.04, //8Rnd_B_Beneli_74Slug
+			0.01, //1Rnd_HE_M203
+			0.01, //FlareWhite_M203
+			0.01, //FlareGreen_M203
+			0.01, //1Rnd_Smoke_M203
+			0.01, //200Rnd_556x45_M249
+			0.01, //HandGrenade_west
+			0.04, //SmokeShell
+			0.01, //SmokeShellPurple
+			0.01, //SmokeShellBlue
+			0.01, //SmokeShellOrange
+			0.02, //SmokeShellRed
+			0.02, //SmokeShellGreen
+			//0.04, //8Rnd_B_Beneli_Pellets
+			0.01, //30Rnd_556x45_G36SD
+			0.02, //30Rnd_9x19_MP5
+			0.01, //30Rnd_9x19_MP5SD
+			0.01, //100Rnd_762x51_M240
+			0.04, //10Rnd_9x39_SP5_VSS
+			0.01, //20Rnd_9x39_SP5_VSS
+			//0.02, //8Rnd_B_Saiga12_74Slug
+			0.01, //5Rnd_127x108_KSVK
+			0.01, //5Rnd_86x70_L115A1
+			0.02, //10Rnd_B_765x17_Ball
+			0.02, //20Rnd_B_765x17_Ball
+			0.01, //20Rnd_762x51_B_SCAR
+			0.01, //75Rnd_545x39_RPK
+			//medical
+			0.04, //ItemBandage
+			0.04, //ItemAntibiotic
+			0.04, //ItemPainkiller
+			0.01, //ItemMorphine
+			0.04, //ItemHeatPack
+			//supplies
+			0.08, //ItemNails
+			0.04, //ItemScrapElectronics
+			0.03, //ItemTape
+			0.04, //ItemSandbag
+			0.04, //ItemWire
+			0.02, //HandChemGreen
+			0.02, //HandChemBlue
+			0.02 //HandChemRed			
+		}
+	};
+	militarySpecialZed[] = {
 		{
 			//trash
 			"TrashTinCan",
