@@ -959,6 +959,9 @@ class CfgBuildingLoot {
 			{"Makarov","weapon"},
 			{"MakarovSD","weapon"},
 			{"revolver_EP1","weapon"},
+			{"vil_bhp","weapon"},
+			{"vil_Glock","weapon"},
+			{"vil_Glock_o","weapon"},
 			//toolbeltcraftingbooks"},
 			{"ItemCraftingBook","weapon"},
 			{"ItemCraftingBook2","weapon"},
@@ -1010,6 +1013,10 @@ class CfgBuildingLoot {
 			0.08, //Makarov","weapon
 			0.01, //MakarovSD","weapon
 			0.04, //revolver_EP1","weapon
+			0.04,//vil_bhp","weapon
+			0.02,//vil_glock","weapon
+			0.04,//vil_glock_o","weapon
+			
 			//toolbeltcraftingbooks
 			0.04, //ItemCraftingBook","weapon
 			0.04, //ItemCraftingBook2","weapon"},
@@ -1102,6 +1109,77 @@ class CfgBuildingLoot {
 			{"SCAR_L_STD_HOLO","weapon"},
 			{"SVD","weapon"},
 			{"SVD_NSPU_EP1","weapon"},
+			{"vil_AG3","weapon"},
+			{"vil_AG3EOT","weapon"},
+			{"vil_M249_Para","weapon"},
+			{"vil_Minimi","weapon"},
+			{"vil_m240b","weapon"},
+			{"vil_MG4","weapon"},
+			{"vil_mg3b","weapon"},
+			{"vil_MG4E","weapon"},
+			{"vil_HK416_Aim","weapon"},
+			{"vil_D_C7","weapon"},
+			{"vil_D_C7_AG","weapon"},
+			{"vil_D_C8","weapon"},
+			{"vil_D_416","weapon"},
+			{"vil_D_416de","weapon"},
+			{"vil_sr25","weapon"},
+			{"vil_sr25sd","weapon"},
+			{"vil_m110","weapon"},
+			{"vil_m110sd","weapon"},
+			{"vil_hk417s","weapon"},
+			{"vil_hk416_gl","weapon"},
+			{"vil_hk416_aim","weapon"},
+			{"vil_hk416_EOT","weapon"},
+			{"vil_hk416_edr","weapon"},
+			{"vil_hk416_is","weapon"},
+			{"vil_fal","weapon"},
+			{"vil_fal_para","weapon"},
+			{"vil_galil","weapon"},
+			{"vil_galil_ARM","weapon"},
+			{"vil_hk33","weapon"},
+			{"vil_m16a1","weapon"},
+			{"vil_m4_eot","weapon"},
+			{"vil_sg540","weapon"},
+			{"vil_sg5421","weapon"},
+			{"vil_sg542","weapon"},
+			{"vil_aG36a2","weapon"},
+			{"vil_aG36","weapon"},
+			{"vil_aG36ka4","weapon"},
+			{"vil_aG36kv","weapon"},
+			{"vil_g36e","weapon"},
+			{"vil_g36kskdeses","weapon"},
+			{"vil_g36ksk","weapon"},
+			{"vil_g36kskdes","weapon"},
+			{"vil_g36ka4","weapon"},
+			{"vil_g36kvz","weapon"},
+			{"vil_zastava_m84","weapon"},
+			{"vil_M70","weapon"},
+			{"vil_M70B","weapon"},
+			{"vil_M64","weapon"},
+			{"vil_AK_74m","weapon"},
+			{"vil_AK_74P","weapon"},
+			{"vil_AK_74M_N","weapon"},
+			{"vil_AK_74M_PSO","weapon"},
+			{"vil_AK_74m_k","weapon"},
+			{"vil_AK_74m_EOT","weapon"},
+			{"vil_AK_74m_EOT_Alfa","weapon"},
+			{"vil_AK_74m_EOT_FSB","weapon"},
+			{"vil_AK_74m_EOT_FSB_45","weapon"},
+			{"vil_AK_74m_EOT_FSB_60","weapon"},
+			{"vil_AK_74m_c","weapon"},
+			{"vil_AK_74m_p29","weapon"},
+			{"vil_AK_74m_gp_29","weapon"},
+			{"vil_AK_74m_gp","weapon"},
+			{"vil_AK_101","weapon"},
+			{"vil_AK_103","weapon"},
+			{"vil_AK_105","weapon"},
+			{"Vil_AK_105_c","weapon"},
+			{"vil_AK_107","weapon"},
+			{"Vil_AK_107_c","weapon"},
+			{"vil_M76","weapon"},
+			{"vil_M91","weapon"},
+			{"vil_ak12","weapon"},
 			//secondary weapons
 			{"Colt1911"},
 			{"glock17_EP1"},
@@ -1114,6 +1192,11 @@ class CfgBuildingLoot {
 			{"Sa61_EP1"},
 			{"UZI_EP1"},
 			{"UZI_SD_EP1"},
+			{"vil_bhp","weapon"},
+			{"vil_Glock","weapon"},
+			{"vil_Glock_o","weapon"},
+			{"vil_USPSD","weapon"},
+			{"vil_USP","weapon"},
 			//toolbelt crafting books"},
 			{"ItemCraftingBook","weapon"},
 			{"ItemCraftingBook2","weapon"},
@@ -1191,6 +1274,77 @@ class CfgBuildingLoot {
 			0.6, //SCAR_L_STD_HOLO","{weapon
 			0.6, //SVD","{weapon
 			0.6, //SVD_NSPU_EP1","{weapon
+			0.03,//vil_AG3","weapon"},
+			0.03,//vil_AG3EOT","weapon"},
+			0.02,//vil_M249_Para","weapon"},
+			0.03,//vil_Minimi","weapon"},
+			0.02,//vil_m240b","weapon"},
+			0.04,//vil_MG4","weapon"},
+			0.02,//vil_mg3b","weapon"},
+			0.05,//vil_MG4E","weapon"},
+			0.04,//vil_HK416_Aim","weapon"},
+			0.04,//vil_D_C7","weapon"},
+			0.03,//vil_D_C7_AG","weapon"},
+			0.02,//vil_D_C8","weapon"},
+			0.04,//vil_D_416","weapon"},
+			0.05,//vil_D_416de","weapon"},
+			0.02,//vil_sr25","weapon"},
+			0.03,//vil_sr25sd","weapon"},
+			0.03,//vil_m110","weapon"},
+			0.01,//vil_m110sd","weapon"},
+			0.02,//vil_hk417s","weapon"},
+			0.03,//vil_hk416_gl","weapon"},
+			0.03,//vil_hk416_aim","weapon"},
+			0.03,//vil_hk416_EOT","weapon"},
+			0.03,//vil_hk416_edr","weapon"},
+			0.03,//vil_hk416_is","weapon"},
+			0.06,//vil_fal","weapon"},
+			0.06,//vil_fal_para","weapon"},
+			0.06,//vil_galil","weapon"},
+			0.06,//vil_galil_ARM","weapon"},
+			0.06,//vil_hk33","weapon"},
+			0.08,//vil_m16a1","weapon"},
+			0.03,//vil_m4_eot","weapon"},
+			0.03,//vil_sg540","weapon"},
+			0.03,//vil_sg5421","weapon"},
+			0.03,//vil_sg542","weapon"},
+			0.07,//vil_aG36a2","weapon"},
+			0.06,//vil_aG36","weapon"},
+			0.06,//vil_aG36ka4","weapon"},
+			0.04,//vil_aG36kv","weapon"},
+			0.05,//vil_g36e","weapon"},
+			0.03,//vil_g36kskdeses","weapon"},
+			0.04,//vil_g36ksk","weapon"},
+			0.03,//vil_g36kskdes","weapon"},
+			0.05,//vil_g36ka4","weapon"},
+			0.04,//vil_g36kvz","weapon"},
+			0.02,//vil_zastava_m84","weapon"},
+			0.04,//vil_M70","weapon"},
+			0.08,//vil_M70B","weapon"},
+			0.07,//vil_M64","weapon"},
+			0.08,//vil_AK_74m","weapon"},
+			0.07,//vil_AK_74P","weapon"},
+			0.06,//vil_AK_74M_N","weapon"},
+			0.02,//vil_AK_74M_PSO","weapon"},
+			0.06,//vil_AK_74m_k","weapon"},
+			0.04,//vil_AK_74m_EOT","weapon"},
+			0.04,//vil_AK_74m_EOT_Alfa","weapon"},
+			0.05,//vil_AK_74m_EOT_FSB","weapon"},
+			0.08,//vil_AK_74m_EOT_FSB_45","weapon"},
+			0.03,//vil_AK_74m_EOT_FSB_60","weapon"},
+			0.06,//vil_AK_74m_c","weapon"},
+			0.04,//vil_AK_74m_p29","weapon"},
+			0.04,//vil_AK_74m_gp_29","weapon"},
+			0.06,//vil_AK_74m_gp","weapon"},
+			0.04,//vil_AK_101","weapon"},
+			0.05,//vil_AK_103","weapon"},
+			0.02,//vil_AK_105","weapon"},
+			0.02,//Vil_AK_105_c","weapon"},
+			0.05,//vil_AK_107","weapon"},
+			0.04,//Vil_AK_107_c","weapon"},
+			0.05,//vil_M76","weapon"},
+			0.04,//vil_M91","weapon"},
+			0.03,//vil_ak12","weapon"},
 			//secondary weapons, //0
 			0.01, //Colt1911
 			0.3, //glock17_EP1
@@ -1203,6 +1357,11 @@ class CfgBuildingLoot {
 			0.5, //Sa61_EP1
 			0.6, //UZI_EP1
 			0.2, //UZI_SD_EP1
+			0.2,//vil_bhp
+			0.4,//vil_Glock
+			0.4,//vil_Glock_o
+			0.5,//vil_USPSD
+			0.3,//vil_USP
 			//toolbelt crafting books, //0
 			0.2, //ItemCraftingBook","weapon
 			0.3, //ItemCraftingBook2","weapon
@@ -1287,6 +1446,77 @@ class CfgBuildingLoot {
 			{"SCAR_L_STD_HOLO","weapon"},
 			{"SVD","weapon"},
 			{"SVD_NSPU_EP1","weapon"},
+			{"vil_AG3","weapon"},
+			{"vil_AG3EOT","weapon"},
+			{"vil_M249_Para","weapon"},
+			{"vil_Minimi","weapon"},
+			{"vil_m240b","weapon"},
+			{"vil_MG4","weapon"},
+			{"vil_mg3b","weapon"},
+			{"vil_MG4E","weapon"},
+			{"vil_HK416_Aim","weapon"},
+			{"vil_D_C7","weapon"},
+			{"vil_D_C7_AG","weapon"},
+			{"vil_D_C8","weapon"},
+			{"vil_D_416","weapon"},
+			{"vil_D_416de","weapon"},
+			{"vil_sr25","weapon"},
+			{"vil_sr25sd","weapon"},
+			{"vil_m110","weapon"},
+			{"vil_m110sd","weapon"},
+			{"vil_hk417s","weapon"},
+			{"vil_hk416_gl","weapon"},
+			{"vil_hk416_aim","weapon"},
+			{"vil_hk416_EOT","weapon"},
+			{"vil_hk416_edr","weapon"},
+			{"vil_hk416_is","weapon"},
+			{"vil_fal","weapon"},
+			{"vil_fal_para","weapon"},
+			{"vil_galil","weapon"},
+			{"vil_galil_ARM","weapon"},
+			{"vil_hk33","weapon"},
+			{"vil_m16a1","weapon"},
+			{"vil_m4_eot","weapon"},
+			{"vil_sg540","weapon"},
+			{"vil_sg5421","weapon"},
+			{"vil_sg542","weapon"},
+			{"vil_aG36a2","weapon"},
+			{"vil_aG36","weapon"},
+			{"vil_aG36ka4","weapon"},
+			{"vil_aG36kv","weapon"},
+			{"vil_g36e","weapon"},
+			{"vil_g36kskdeses","weapon"},
+			{"vil_g36ksk","weapon"},
+			{"vil_g36kskdes","weapon"},
+			{"vil_g36ka4","weapon"},
+			{"vil_g36kvz","weapon"},
+			{"vil_zastava_m84","weapon"},
+			{"vil_M70","weapon"},
+			{"vil_M70B","weapon"},
+			{"vil_M64","weapon"},
+			{"vil_AK_74m","weapon"},
+			{"vil_AK_74P","weapon"},
+			{"vil_AK_74M_N","weapon"},
+			{"vil_AK_74M_PSO","weapon"},
+			{"vil_AK_74m_k","weapon"},
+			{"vil_AK_74m_EOT","weapon"},
+			{"vil_AK_74m_EOT_Alfa","weapon"},
+			{"vil_AK_74m_EOT_FSB","weapon"},
+			{"vil_AK_74m_EOT_FSB_45","weapon"},
+			{"vil_AK_74m_EOT_FSB_60","weapon"},
+			{"vil_AK_74m_c","weapon"},
+			{"vil_AK_74m_p29","weapon"},
+			{"vil_AK_74m_gp_29","weapon"},
+			{"vil_AK_74m_gp","weapon"},
+			{"vil_AK_101","weapon"},
+			{"vil_AK_103","weapon"},
+			{"vil_AK_105","weapon"},
+			{"Vil_AK_105_c","weapon"},
+			{"vil_AK_107","weapon"},
+			{"Vil_AK_107_c","weapon"},
+			{"vil_M76","weapon"},
+			{"vil_M91","weapon"},
+			{"vil_ak12","weapon"},
 			//secondary weapons
 			{"Colt1911"},
 			{"glock17_EP1"},
@@ -1299,6 +1529,11 @@ class CfgBuildingLoot {
 			{"Sa61_EP1"},
 			{"UZI_EP1"},
 			{"UZI_SD_EP1"},
+			{"vil_bhp","weapon"},
+			{"vil_Glock","weapon"},
+			{"vil_Glock_o","weapon"},
+			{"vil_USPSD","weapon"},
+			{"vil_USP","weapon"},
 			//toolbelt crafting books"},
 			{"ItemCraftingBook","weapon"},
 			{"ItemCraftingBook2","weapon"},
@@ -1375,6 +1610,77 @@ class CfgBuildingLoot {
 			0.6, //SCAR_L_STD_HOLO","{weapon
 			0.6, //SVD","{weapon
 			0.6, //SVD_NSPU_EP1","{weapon
+			0.03,//vil_AG3","weapon"},
+			0.03,//vil_AG3EOT","weapon"},
+			0.02,//vil_M249_Para","weapon"},
+			0.03,//vil_Minimi","weapon"},
+			0.02,//vil_m240b","weapon"},
+			0.04,//vil_MG4","weapon"},
+			0.02,//vil_mg3b","weapon"},
+			0.05,//vil_MG4E","weapon"},
+			0.04,//vil_HK416_Aim","weapon"},
+			0.04,//vil_D_C7","weapon"},
+			0.03,//vil_D_C7_AG","weapon"},
+			0.02,//vil_D_C8","weapon"},
+			0.04,//vil_D_416","weapon"},
+			0.05,//vil_D_416de","weapon"},
+			0.02,//vil_sr25","weapon"},
+			0.03,//vil_sr25sd","weapon"},
+			0.03,//vil_m110","weapon"},
+			0.01,//vil_m110sd","weapon"},
+			0.02,//vil_hk417s","weapon"},
+			0.03,//vil_hk416_gl","weapon"},
+			0.03,//vil_hk416_aim","weapon"},
+			0.03,//vil_hk416_EOT","weapon"},
+			0.03,//vil_hk416_edr","weapon"},
+			0.03,//vil_hk416_is","weapon"},
+			0.06,//vil_fal","weapon"},
+			0.06,//vil_fal_para","weapon"},
+			0.06,//vil_galil","weapon"},
+			0.06,//vil_galil_ARM","weapon"},
+			0.06,//vil_hk33","weapon"},
+			0.08,//vil_m16a1","weapon"},
+			0.03,//vil_m4_eot","weapon"},
+			0.03,//vil_sg540","weapon"},
+			0.03,//vil_sg5421","weapon"},
+			0.03,//vil_sg542","weapon"},
+			0.07,//vil_aG36a2","weapon"},
+			0.06,//vil_aG36","weapon"},
+			0.06,//vil_aG36ka4","weapon"},
+			0.04,//vil_aG36kv","weapon"},
+			0.05,//vil_g36e","weapon"},
+			0.03,//vil_g36kskdeses","weapon"},
+			0.04,//vil_g36ksk","weapon"},
+			0.03,//vil_g36kskdes","weapon"},
+			0.05,//vil_g36ka4","weapon"},
+			0.04,//vil_g36kvz","weapon"},
+			0.02,//vil_zastava_m84","weapon"},
+			0.04,//vil_M70","weapon"},
+			0.08,//vil_M70B","weapon"},
+			0.07,//vil_M64","weapon"},
+			0.08,//vil_AK_74m","weapon"},
+			0.07,//vil_AK_74P","weapon"},
+			0.06,//vil_AK_74M_N","weapon"},
+			0.02,//vil_AK_74M_PSO","weapon"},
+			0.06,//vil_AK_74m_k","weapon"},
+			0.04,//vil_AK_74m_EOT","weapon"},
+			0.04,//vil_AK_74m_EOT_Alfa","weapon"},
+			0.05,//vil_AK_74m_EOT_FSB","weapon"},
+			0.08,//vil_AK_74m_EOT_FSB_45","weapon"},
+			0.03,//vil_AK_74m_EOT_FSB_60","weapon"},
+			0.06,//vil_AK_74m_c","weapon"},
+			0.04,//vil_AK_74m_p29","weapon"},
+			0.04,//vil_AK_74m_gp_29","weapon"},
+			0.06,//vil_AK_74m_gp","weapon"},
+			0.04,//vil_AK_101","weapon"},
+			0.05,//vil_AK_103","weapon"},
+			0.02,//vil_AK_105","weapon"},
+			0.02,//Vil_AK_105_c","weapon"},
+			0.05,//vil_AK_107","weapon"},
+			0.04,//Vil_AK_107_c","weapon"},
+			0.05,//vil_M76","weapon"},
+			0.04,//vil_M91","weapon"},
+			0.03,//vil_ak12","weapon"},
 			//secondary weapons, //0
 			0.01, //Colt1911
 			0.3, //glock17_EP1
@@ -1387,6 +1693,11 @@ class CfgBuildingLoot {
 			0.5, //Sa61_EP1
 			0.6, //UZI_EP1
 			0.2, //UZI_SD_EP1
+			0.2,//vil_bhp
+			0.4,//vil_Glock
+			0.4,//vil_Glock_o
+			0.5,//vil_USPSD
+			0.3,//vil_USP
 			//toolbelt crafting books, //0
 			0.2, //ItemCraftingBook","weapon
 			0.3, //ItemCraftingBook2","weapon
@@ -2314,6 +2625,7 @@ class CfgBuildingLoot {
 			{"BAF_L7A2","weapon"},
 			{"BAF_L7A2_GPMG","weapon"},
 			{"BAF_L85A2_RIS_ACOG","weapon"},
+			{"BAF_L85A2_RIS_CWS","weapon"},
 			{"BAF_L85A2_RIS_Holo","weapon"},
 			{"BAF_L85A2_RIS_SUSAT","weapon"},
 			{"BAF_L85A2_UGL_ACOG","weapon"},
@@ -2408,6 +2720,78 @@ class CfgBuildingLoot {
 			{"SVD_NSPU_EP1","weapon"},
 			{"VSS_vintorez","weapon"},
 			{"Winchester1866","weapon"},
+			{"vil_AG3","weapon"},
+			{"vil_AG3EOT","weapon"},
+			{"vil_M249_Para","weapon"},
+			{"vil_Minimi","weapon"},
+			{"vil_m240b","weapon"},
+			{"vil_MG4","weapon"},
+			{"vil_mg3b","weapon"},
+			{"vil_MG4E","weapon"},
+			{"vil_HK416_Aim","weapon"},
+			{"vil_D_C7","weapon"},
+			{"vil_D_C7_AG","weapon"},
+			{"vil_D_C8","weapon"},
+			{"vil_D_416","weapon"},
+			{"vil_D_416de","weapon"},
+			{"vil_sr25","weapon"},
+			{"vil_sr25sd","weapon"},
+			{"vil_m110","weapon"},
+			{"vil_m110sd","weapon"},
+			{"vil_hk417s","weapon"},
+			{"vil_hk416_gl","weapon"},
+			{"vil_hk416_aim","weapon"},
+			{"vil_hk416_EOT","weapon"},
+			{"vil_hk416_edr","weapon"},
+			{"vil_hk416_is","weapon"},
+			{"vil_fal","weapon"},
+			{"vil_fal_para","weapon"},
+			{"vil_galil","weapon"},
+			{"vil_galil_ARM","weapon"},
+			{"vil_hk33","weapon"},
+			{"vil_m16a1","weapon"},
+			{"vil_m4_eot","weapon"},
+			{"vil_sg540","weapon"},
+			{"vil_sg5421","weapon"},
+			{"vil_sg542","weapon"},
+			{"vil_aG36a2","weapon"},
+			{"vil_aG36","weapon"},
+			{"vil_aG36ka4","weapon"},
+			{"vil_aG36kv","weapon"},
+			{"vil_g36e","weapon"},
+			{"vil_g36kskdeses","weapon"},
+			{"vil_g36ksk","weapon"},
+			{"vil_g36kskdes","weapon"},
+			{"vil_g36ka4","weapon"},
+			{"vil_g36kvz","weapon"},
+			{"vil_zastava_m84","weapon"},
+			{"vil_M70","weapon"},
+			{"vil_M70B","weapon"},
+			{"vil_M64","weapon"},
+			{"vil_AK_74m","weapon"},
+			{"vil_AK_74P","weapon"},
+			{"vil_AK_74M_N","weapon"},
+			{"vil_AK_74M_PSO","weapon"},
+			{"vil_AK_74m_k","weapon"},
+			{"vil_AK_74m_EOT","weapon"},
+			{"vil_AK_74m_EOT_Alfa","weapon"},
+			{"vil_AK_74m_EOT_FSB","weapon"},
+			{"vil_AK_74m_EOT_FSB_45","weapon"},
+			{"vil_AK_74m_EOT_FSB_60","weapon"},
+			{"vil_AK_74m_c","weapon"},
+			{"vil_AK_74m_p29","weapon"},
+			{"vil_AK_74m_gp_29","weapon"},
+			{"vil_AK_74m_gp","weapon"},
+			{"vil_AK_101","weapon"},
+			{"vil_AK_103","weapon"},
+			{"vil_AK_105","weapon"},
+			{"Vil_AK_105_c","weapon"},
+			{"vil_AK_107","weapon"},
+			{"Vil_AK_107_c","weapon"},
+			{"vil_M76","weapon"},
+			{"vil_M91","weapon"},
+			{"vil_ak12","weapon"},
+			
 			//secondary weapons
 			{"Colt1911","weapon"},
 			{"glock17_EP1","weapon"},
@@ -2420,6 +2804,11 @@ class CfgBuildingLoot {
 			{"Sa61_EP1","weapon"},
 			{"UZI_EP1","weapon"},
 			{"UZI_SD_EP1","weapon"},
+			{"vil_bhp","weapon"},
+			{"vil_Glock","weapon"},
+			{"vil_Glock_o","weapon"},
+			{"vil_USPSD","weapon"},
+			{"vil_USP","weapon"},
 			//toolbelt crafting books
 			{"ItemCraftingBook","weapon"},
 			{"ItemCraftingBook2","weapon"},
@@ -2489,6 +2878,7 @@ class CfgBuildingLoot {
  			0, //BAF_L7A2",weapon
  			0, //BAF_L7A2_GPMG",weapon
  			0, //BAF_L85A2_RIS_ACOG",weapon
+ 			0, //BAF_L85A2_RIS_CWS",weapon
  			0, //BAF_L85A2_RIS_Holo",weapon
  			0, //BAF_L85A2_RIS_SUSAT",weapon
  			0, //BAF_L85A2_UGL_ACOG",weapon
@@ -2583,6 +2973,77 @@ class CfgBuildingLoot {
  			0, //SVD_NSPU_EP1",weapon
  			0, //VSS_vintorez",weapon
  			0, //Winchester1866",weapon
+			0.03,//vil_AG3","weapon
+			0.03,//vil_AG3EOT","weapon
+			0.02,//vil_M249_Para","weapon
+			0.03,//vil_Minimi","weapon
+			0.02,//vil_m240b","weapon
+			0.04,//vil_MG4","weapon
+			0.02,//vil_mg3b","weapon
+			0.05,//vil_MG4E","weapon
+			0.04,//vil_HK416_Aim","weapon
+			0.04,//vil_D_C7","weapon
+			0.03,//vil_D_C7_AG","weapon
+			0.02,//vil_D_C8","weapon
+			0.04,//vil_D_416","weapon
+			0.05,//vil_D_416de","weapon
+			0.02,//vil_sr25","weapon
+			0.03,//vil_sr25sd","weapon
+			0.03,//vil_m110","weapon
+			0.01,//vil_m110sd","weapon
+			0.02,//vil_hk417s","weapon
+			0.03,//vil_hk416_gl","weapon
+			0.03,//vil_hk416_aim","weapon
+			0.03,//vil_hk416_EOT","weapon
+			0.03,//vil_hk416_edr","weapon
+			0.03,//vil_hk416_is","weapon
+			0.06,//vil_fal","weapon
+			0.06,//vil_fal_para","weapon
+			0.06,//vil_galil","weapon
+			0.06,//vil_galil_ARM","weapon
+			0.06,//vil_hk33","weapon
+			0.08,//vil_m16a1","weapon
+			0.03,//vil_m4_eot","weapon
+			0.03,//vil_sg540","weapon
+			0.03,//vil_sg5421","weapon
+			0.03,//vil_sg542","weapon
+			0.07,//vil_aG36a2","weapon
+			0.06,//vil_aG36","weapon
+			0.06,//vil_aG36ka4","weapon
+			0.04,//vil_aG36kv","weapon
+			0.05,//vil_g36e","weapon
+			0.03,//vil_g36kskdeses","weapon
+			0.04,//vil_g36ksk","weapon
+			0.03,//vil_g36kskdes","weapon
+			0.05,//vil_g36ka4","weapon
+			0.04,//vil_g36kvz","weapon
+			0.02,//vil_zastava_m84","weapon
+			0.04,//vil_M70","weapon
+			0.08,//vil_M70B","weapon
+			0.07,//vil_M64","weapon
+			0.08,//vil_AK_74m","weapon
+			0.07,//vil_AK_74P","weapon
+			0.06,//vil_AK_74M_N","weapon
+			0.02,//vil_AK_74M_PSO","weapon
+			0.06,//vil_AK_74m_k","weapon
+			0.04,//vil_AK_74m_EOT","weapon
+			0.04,//vil_AK_74m_EOT_Alfa","weapon
+			0.05,//vil_AK_74m_EOT_FSB","weapon
+			0.08,//vil_AK_74m_EOT_FSB_45","weapon
+			0.03,//vil_AK_74m_EOT_FSB_60","weapon
+			0.06,//vil_AK_74m_c","weapon
+			0.04,//vil_AK_74m_p29","weapon
+			0.04,//vil_AK_74m_gp_29","weapon
+			0.06,//vil_AK_74m_gp","weapon
+			0.04,//vil_AK_101","weapon
+			0.05,//vil_AK_103","weapon
+			0.02,//vil_AK_105","weapon
+			0.02,//Vil_AK_105_c","weapon
+			0.05,//vil_AK_107","weapon
+			0.04,//Vil_AK_107_c","weapon
+			0.05,//vil_M76","weapon
+			0.04,//vil_M91","weapon
+			0.03,//vil_ak12","weapon
 			//secondary weapons, 			
  			0.03, //Colt1911
  			0.08, //glock17_EP1
@@ -2595,6 +3056,11 @@ class CfgBuildingLoot {
  			0.05, //Sa61_EP1
  			0.04, //UZI_EP1
  			0.01, //UZI_SD_EP1
+			0.02,//vil_bhp
+			0.04,//vil_Glock
+			0.04,//vil_Glock_o
+			0.05,//vil_USPSD
+			0.03,//vil_USP
 			//toolbelt crafting books, 			
  			0.01, //ItemCraftingBook","weapon
  			0.02, //ItemCraftingBook2","weapon
@@ -2703,6 +3169,77 @@ class CfgBuildingLoot {
 			{"SVD_CAMO","weapon"},
 			{"SVD_des_EP1","weapon"},
 			{"VSS_vintorez","weapon"},
+			{"vil_AG3","weapon"},
+			{"vil_AG3EOT","weapon"},
+			{"vil_M249_Para","weapon"},
+			{"vil_Minimi","weapon"},
+			{"vil_m240b","weapon"},
+			{"vil_MG4","weapon"},
+			{"vil_mg3b","weapon"},
+			{"vil_MG4E","weapon"},
+			{"vil_HK416_Aim","weapon"},
+			{"vil_D_C7","weapon"},
+			{"vil_D_C7_AG","weapon"},
+			{"vil_D_C8","weapon"},
+			{"vil_D_416","weapon"},
+			{"vil_D_416de","weapon"},
+			{"vil_sr25","weapon"},
+			{"vil_sr25sd","weapon"},
+			{"vil_m110","weapon"},
+			{"vil_m110sd","weapon"},
+			{"vil_hk417s","weapon"},
+			{"vil_hk416_gl","weapon"},
+			{"vil_hk416_aim","weapon"},
+			{"vil_hk416_EOT","weapon"},
+			{"vil_hk416_edr","weapon"},
+			{"vil_hk416_is","weapon"},
+			{"vil_fal","weapon"},
+			{"vil_fal_para","weapon"},
+			{"vil_galil","weapon"},
+			{"vil_galil_ARM","weapon"},
+			{"vil_hk33","weapon"},
+			{"vil_m16a1","weapon"},
+			{"vil_m4_eot","weapon"},
+			{"vil_sg540","weapon"},
+			{"vil_sg5421","weapon"},
+			{"vil_sg542","weapon"},
+			{"vil_aG36a2","weapon"},
+			{"vil_aG36","weapon"},
+			{"vil_aG36ka4","weapon"},
+			{"vil_aG36kv","weapon"},
+			{"vil_g36e","weapon"},
+			{"vil_g36kskdeses","weapon"},
+			{"vil_g36ksk","weapon"},
+			{"vil_g36kskdes","weapon"},
+			{"vil_g36ka4","weapon"},
+			{"vil_g36kvz","weapon"},
+			{"vil_zastava_m84","weapon"},
+			{"vil_M70","weapon"},
+			{"vil_M70B","weapon"},
+			{"vil_M64","weapon"},
+			{"vil_AK_74m","weapon"},
+			{"vil_AK_74P","weapon"},
+			{"vil_AK_74M_N","weapon"},
+			{"vil_AK_74M_PSO","weapon"},
+			{"vil_AK_74m_k","weapon"},
+			{"vil_AK_74m_EOT","weapon"},
+			{"vil_AK_74m_EOT_Alfa","weapon"},
+			{"vil_AK_74m_EOT_FSB","weapon"},
+			{"vil_AK_74m_EOT_FSB_45","weapon"},
+			{"vil_AK_74m_EOT_FSB_60","weapon"},
+			{"vil_AK_74m_c","weapon"},
+			{"vil_AK_74m_p29","weapon"},
+			{"vil_AK_74m_gp_29","weapon"},
+			{"vil_AK_74m_gp","weapon"},
+			{"vil_AK_101","weapon"},
+			{"vil_AK_103","weapon"},
+			{"vil_AK_105","weapon"},
+			{"Vil_AK_105_c","weapon"},
+			{"vil_AK_107","weapon"},
+			{"Vil_AK_107_c","weapon"},
+			{"vil_M76","weapon"},
+			{"vil_M91","weapon"},
+			{"vil_ak12","weapon"},
 			//secondary weapons"},
 			{"Colt1911","weapon"},
 			{"glock17_EP1","weapon"},
@@ -2814,6 +3351,77 @@ class CfgBuildingLoot {
 			0.02, //SVD_CAMO","{weapon
 			0.02, //SVD_des_EP1","{weapon
 			0.01, //VSS_vintorez","{weapon
+			0.03,//vil_AG3","weapon
+			0.03,//vil_AG3EOT","weapon
+			0.02,//vil_M249_Para","weapon
+			0.03,//vil_Minimi","weapon
+			0.02,//vil_m240b","weapon
+			0.04,//vil_MG4","weapon
+			0.02,//vil_mg3b","weapon
+			0.05,//vil_MG4E","weapon
+			0.04,//vil_HK416_Aim","weapon
+			0.04,//vil_D_C7","weapon
+			0.03,//vil_D_C7_AG","weapon
+			0.02,//vil_D_C8","weapon
+			0.04,//vil_D_416","weapon
+			0.05,//vil_D_416de","weapon
+			0.02,//vil_sr25","weapon
+			0.03,//vil_sr25sd","weapon
+			0.03,//vil_m110","weapon
+			0.01,//vil_m110sd","weapon
+			0.02,//vil_hk417s","weapon
+			0.03,//vil_hk416_gl","weapon
+			0.03,//vil_hk416_aim","weapon
+			0.03,//vil_hk416_EOT","weapon
+			0.03,//vil_hk416_edr","weapon
+			0.03,//vil_hk416_is","weapon
+			0.06,//vil_fal","weapon
+			0.06,//vil_fal_para","weapon
+			0.06,//vil_galil","weapon
+			0.06,//vil_galil_ARM","weapon
+			0.06,//vil_hk33","weapon
+			0.08,//vil_m16a1","weapon
+			0.03,//vil_m4_eot","weapon
+			0.03,//vil_sg540","weapon
+			0.03,//vil_sg5421","weapon
+			0.03,//vil_sg542","weapon
+			0.07,//vil_aG36a2","weapon
+			0.06,//vil_aG36","weapon
+			0.06,//vil_aG36ka4","weapon
+			0.04,//vil_aG36kv","weapon
+			0.05,//vil_g36e","weapon
+			0.03,//vil_g36kskdeses","weapon
+			0.04,//vil_g36ksk","weapon
+			0.03,//vil_g36kskdes","weapon
+			0.05,//vil_g36ka4","weapon
+			0.04,//vil_g36kvz","weapon
+			0.02,//vil_zastava_m84","weapon
+			0.04,//vil_M70","weapon
+			0.08,//vil_M70B","weapon
+			0.07,//vil_M64","weapon
+			0.08,//vil_AK_74m","weapon
+			0.07,//vil_AK_74P","weapon
+			0.06,//vil_AK_74M_N","weapon
+			0.02,//vil_AK_74M_PSO","weapon
+			0.06,//vil_AK_74m_k","weapon
+			0.04,//vil_AK_74m_EOT","weapon
+			0.04,//vil_AK_74m_EOT_Alfa","weapon
+			0.05,//vil_AK_74m_EOT_FSB","weapon
+			0.08,//vil_AK_74m_EOT_FSB_45","weapon
+			0.03,//vil_AK_74m_EOT_FSB_60","weapon
+			0.06,//vil_AK_74m_c","weapon
+			0.04,//vil_AK_74m_p29","weapon
+			0.04,//vil_AK_74m_gp_29","weapon
+			0.06,//vil_AK_74m_gp","weapon
+			0.04,//vil_AK_101","weapon
+			0.05,//vil_AK_103","weapon
+			0.02,//vil_AK_105","weapon
+			0.02,//Vil_AK_105_c","weapon
+			0.05,//vil_AK_107","weapon
+			0.04,//Vil_AK_107_c","weapon
+			0.05,//vil_M76","weapon
+			0.04,//vil_M91","weapon
+			0.03,//vil_ak12","weapon
 			//secondary weapons
 			0, //Colt1911
 			0, //glock17_EP1
@@ -2826,6 +3434,11 @@ class CfgBuildingLoot {
 			0.08, //Sa61_EP1
 			0, //UZI_EP1
 			0.08, //UZI_SD_EP1
+			0.02,//vil_bhp
+			0.04,//vil_Glock
+			0.04,//vil_Glock_o
+			0.05,//vil_USPSD
+			0.03,//vil_USP
 			//toolbelt crafting books
 			0, //ItemCraftingBook","weapon
 			0, //ItemCraftingBook2","weapon
@@ -2879,6 +3492,10 @@ class CfgBuildingLoot {
 			{"Makarov","weapon"},
 			{"MakarovSD","weapon"},
 			{"revolver_EP1","weapon"},
+			{"vil_bhp","weapon"},
+			{"vil_Glock","weapon"},
+			{"vil_Glock_o","weapon"},
+			{"vil_USP","weapon"},
 			//toolbelt crafting books"},
 			{"ItemCraftingBook","weapon"},
 			//toolbelt ONLY items"},
@@ -2928,6 +3545,10 @@ class CfgBuildingLoot {
 			0.04, //Makarov","weapon
 			0.01, //MakarovSD","weapon
 			0.03, //revolver_EP1","weapon
+			0.04,//vil_bhp
+			0.04,//vil_Glock
+			0.04,//vil_Glock_o
+			0.05,//vil_USP
 			//toolbelt crafting books
 			0.05, //ItemCraftingBook","weapon
 			//toolbelt ONLY items
@@ -2986,6 +3607,10 @@ class CfgBuildingLoot {
 			//secondary weapons
 			{"Colt1911","weapon"},
 			{"glock17_EP1","weapon"},
+			{"vil_bhp","weapon"},
+			{"vil_Glock","weapon"},
+			{"vil_Glock_o","weapon"},
+			{"vil_USP","weapon"},
 			{"Makarov","weapon"},
 			{"revolver_EP1","weapon"},
 			//toolbelt crafting books
@@ -3032,6 +3657,10 @@ class CfgBuildingLoot {
 			0.01, //glock17_EP1
 			0.04, //Makarov
 			0.02, //revolver_EP1
+			0.02,//vil_bhp
+			0.01,//vil_Glock
+			0.01,//vil_Glock_o
+			0.02,//vil_USP
 			//toolbelt crafting books
 			0.02, //ItemCraftingBook
 			//toolbelt ONLY items
@@ -3255,7 +3884,7 @@ Begin Loot Tables
 	class Land_dum_olez_istan1 : Residential {};
 	class Land_dum_istan2_04a : Residential {};
 	class Land_garaz : Residential {};
-	class Land_garaz_mala : Residential {};
+	//class Land_garaz_mala : Residential {}; - Updated with opened door and added loot 24 Jul 2013
 	class Land_budova5 : Industrial {};
 	class Land_bouda3 : Industrial {};
 	class Land_Nasypka : Military {};
@@ -3329,7 +3958,14 @@ Begin Loot Tables
 		lootChance = 1;
 		lootPos[] = {{0.00292969,1.54297,1.36331}};
 	};
-	
+	class Land_strazni_vez : Military {
+		lootChance = 1;
+		lootPos[] = {{-1.00,0.644,1.413}};
+	};
+	class Land_garaz_mala : Industrial {
+		lootChance = 1;
+		lootPos[] = {{-1.16,-3.53,-1.13},{1.36,-3.21,-1.13}};
+	};
 	/*
 	class Land_Example : Residential {
 		lootPos[] = {{},{},{},{},{},{},{},{}};
@@ -3914,12 +4550,12 @@ class CfgTownGeneratorSara {
 			direction = 0.01;
 			SetZUp = 1;
 		};
-		class Object4 {
+		/*class Object4 {
 			Type="Land_A_Pub_01";
 			position[] = {12599.477,15024.15,-0.094768927};
 			direction = -0.22539687;
 			SetZUp = 1;
-		};
+		};*/
 		class Object5 {
 			Type="Land_a_stationhouse";
 			position[] = {12240.402,17655.639,0.085686944};
@@ -4520,12 +5156,12 @@ class CfgTownGeneratorSara {
 			direction = -269.85599;
 			SetZUp = 1;
 		};
-		class Object4 {
+		/*class Object4 {
 			Type="Land_A_Pub_01";
 			position[] = {15607.009,8834.6787,-0.028606441};
 			direction = 88.496819;
 			SetZUp = 1;
-		};
+		};*/
 		class Object5 {
 			Type="Land_Barn_W_02";
 			position[] = {15543.469,9102.4639,-0.25422546};
@@ -4652,24 +5288,24 @@ class CfgTownGeneratorSara {
 			direction = 127.60325;
 			SetZUp = 1;
 		};
-		class Object16 {
+		/*class Object16 {
 			Type="Land_A_Pub_01";
 			position[] = {14446.84,10867.439,-0.072935879};
 			direction = -149.56293;
 			SetZUp = 1;
-		};
+		};*/
 	};
 	//EMLZ5 Total: 17
 	class EMLZ6 {
 		position[] = {9737.9395, 7844.0952};
 		size = 1200;
 
-		class Object0 {
+		/*class Object0 {
 			Type="Land_A_Pub_01";
 			position[] = {14111.281,12495.537,-0.11815493};
 			direction = -91.763176;
 			SetZUp = 1;
-		};
+		};*/
 		class Object1 {
 			Type="Land_Shed_Ind02";
 			position[] = {13698.369,12626.954,0.10880119};
@@ -4808,12 +5444,12 @@ class CfgTownGeneratorSara {
 			direction = 78.151505;
 			SetZUp = 1;
 		};
-		class Object24 {
+		/*class Object24 {
 			Type="Land_A_Pub_01";
 			position[] = {14247.062,12663.457,-0.05721648};
 			direction = -261.4249;
 			SetZUp = 1;
-		};
+		};*/
 		class Object25 {
 			Type="Land_Ind_Workshop01_L";
 			position[] = {13936.005,12611.745,0.0022899311};
@@ -4850,12 +5486,12 @@ class CfgTownGeneratorSara {
 			direction = 180.20685;
 			SetZUp = 1;
 		};
-		class Object31 {
+		/*class Object31 {
 			Type="Land_A_Pub_01";
 			position[] = {14250.317,12637.221,-0.0099999998};
 			direction = -169.84204;
 			SetZUp = 1;
-		};
+		};*/
 	};
 	//EMLZ6 Total: 32
 	class EMLZ7 {
