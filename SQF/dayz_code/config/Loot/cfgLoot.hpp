@@ -5,12 +5,12 @@ Building types in config.cpp:
 //Master
 +++
 //Farm
-//HeliCrash
-//HeliCrash_No50s
-//HeliCrash2Mi8
-//HeliCrash2Mi8_NoKSVKs
-//HeliCrash3C130
-//HeliCrash3C130_UnArmed
+//Crash1
+//Crash1_No50s
+//Crash2Mi8
+//Crash2Mi8_NoKSVKs
+//Crash3C130
+//Crash3C130_UnArmed
 //Hospital
 //Hunting
 //Industrial
@@ -25,6 +25,7 @@ Classes :
 			//ammoUS
 			//civilian
 			//civilianZed
+			//clothing
 			//farm
 			//farmZed
 			//food
@@ -49,7 +50,6 @@ Classes :
 class CfgLoot {
 	ammorus[] = {
 	{
-//ammorus
 			"10Rnd_9x39_SP5_VSS",
 			"10Rnd_B_765x17_Ball",
 			"15Rnd_9x19_M9",
@@ -67,7 +67,6 @@ class CfgLoot {
 			"8Rnd_9x18_MakarovSD"
 		},
 		{
-//ammorus
 			0.04, //10Rnd_9x39_SP5_VSS
 			0.08, //10Rnd_B_765x17_Ball
 			0.07, //15Rnd_9x19_M9
@@ -87,7 +86,6 @@ class CfgLoot {
 	};
 	ammoun[] = {
 		{
-//ammoun
 			"100Rnd_762x51_M240",
 			"10Rnd_127x99_m107",
 			"15Rnd_9x19_M9",
@@ -110,7 +108,6 @@ class CfgLoot {
 			"FlareWhite_M203"
 		},
 		{
-//Ammoun Spawn Chances
 			0.01, //100Rnd_762x51_M240
 			0.01, //10Rnd_127x99_m107
 			0.06, //15Rnd_9x19_M9
@@ -135,7 +132,6 @@ class CfgLoot {
 	};
 	ammous[] = {
 		{			
-//AmmoUN
 			"100Rnd_762x51_M240",
 			"10Rnd_127x99_m107",
 			"15Rnd_9x19_M9",
@@ -158,7 +154,6 @@ class CfgLoot {
 			"FlareWhite_M203"
 		},
 		{
-//AmmoUNSpawn Chances
 			0.01, //100Rnd_762x51_M240
 			0.01, //10Rnd_127x99_m107
 			0.06, //15Rnd_9x19_M9
@@ -182,7 +177,7 @@ class CfgLoot {
 		}
 	};
 	civilian[] = {
-		{			
+		{		
 			//ammo
 			"Quiver",
 			"WoodenArrow",
@@ -295,7 +290,27 @@ class CfgLoot {
 			0.04 //ItemNails
 		}
 	};
-		farm[] = {
+	clothing[] = {
+		{
+			//Inventory clothing items
+			"Skin_BanditSkin_DZ",
+			"Skin_Camo1_DZ",
+			"Skin_Rocket_DZ",
+			"Skin_Sniper1_DZ",
+			"Skin_SniperLight_DZ",
+			"Skin_SniperD_DZ"
+		},
+		{
+			//Inventory clothing items
+			0.01, //"Skin_BanditSkin_DZ"
+			0.01, //"Skin_Camo1_DZ"
+			0.01, //"Skin_Rocket_DZ"
+			0.01, //"Skin_Sniper1_DZ"
+			0.01, //"Skin_SniperLight_DZ"
+			0.01 //"Skin_SniperD_DZ"
+		}
+	};			
+	farm[] = {
 		{
 			//ammo
 			"2Rnd_shotgun_74Slug",
@@ -331,7 +346,7 @@ class CfgLoot {
 			0.3 //HandRoadFlare
 		}
 	};
-		farmZed[] = {
+	farmZed[] = {
 		{	
 			//trash
 			//"EvMoney",
@@ -403,7 +418,7 @@ class CfgLoot {
 			"FoodCanCorn",
 			"FoodCanCurgon",
 			"FoodCanDemon",
-			"FoodCanDerpy",
+			//"FoodCanDerpy",
 			//"FoodCandyAnders",
 			//"FoodCandyLegacys",
 			//"FoodCandyMintception",
@@ -447,7 +462,7 @@ class CfgLoot {
 			0.2, //FoodCanCorn
 			0.04, //FoodCanCurgon
 			0.04, //FoodCanDemon
-			0.04, //FoodCanDerpy
+			//0.04, //FoodCanDerpy
 			//0.04, //FoodCandyAnders
 			//0.04, //FoodCandyLegacys
 			//0.04, //FoodCandyMintception
@@ -493,7 +508,7 @@ class CfgLoot {
 			"FoodCanCorn",
 			"FoodCanCurgon",
 			"FoodCanDemon",
-			"FoodCanDerpy",
+			//"FoodCanDerpy",
 			//"FoodCandyAnders",
 			//"FoodCandyLegacys",
 			//"FoodCandyMintception",
@@ -538,7 +553,7 @@ class CfgLoot {
 			0, //FoodCanCorn
 			0, //FoodCanCurgon
 			0, //FoodCanDemon
-			0, //FoodCanDerpy
+			//0, //FoodCanDerpy
 			//0.04, //FoodCandyAnders
 			//0.04, //FoodCandyLegacys
 			//0.04, //FoodCandyMintception
