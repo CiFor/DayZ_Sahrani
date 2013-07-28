@@ -6,6 +6,11 @@
 class CfgWeapons {
 //items
 	class ItemCore;
+
+	class ItemMap: ItemCore {
+		model="ca\misc\SmallObj_file_map_WPN.p3d";
+	};
+
 	class ItemCompass: ItemCore {
 		model="z\addons\dayz_communityassets\models\compass.p3d";
 	};
