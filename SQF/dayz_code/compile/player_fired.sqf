@@ -8,7 +8,7 @@ _projectile = 	_this select 6;
 //Alert Nearby
 _audible = getNumber (configFile >> "CfgAmmo" >> _ammo >> "audibleFire");
 _caliber = getNumber (configFile >> "CfgAmmo" >> _ammo >> "caliber");
-_distance = round(_audible * 6 * _caliber);
+_distance = round(_audible * 7 * _caliber);
 
 dayz_disAudial = _distance;
 dayz_firedCooldown = time;
@@ -20,7 +20,7 @@ if (_ammo isKindOf "Melee") exitWith {
 };
 
 //Smoke Grenade
-if (_ammo isKindOf "SmokeShell") then {
+if (_ammo isKindOf "SmokeShell" || _ammo isKindOf "RoadFlare") then {
 	//Alert Zed's to smoke
 	_i = 0;
 	_projectile = nearestObject [_unit, _ammo];
@@ -49,14 +49,14 @@ if (_ammo isKindOf "SmokeShell") then {
 		if (_ammo isKindOf "ThrownObjects") then {
 			_id = _this spawn player_throwObject;
 		};
-		if (_ammo isKindOf "RoadFlare") then {
+		/*if (_ammo isKindOf "RoadFlare") then {
 			//hint str(_ammo);
 			_projectile = nearestObject [_unit, "RoadFlare"];
 			_id = [_projectile,0] spawn object_roadFlare;
 			dayzRoadFlare = [_projectile,0];
 			publicVariable "dayzRoadFlare";
 			_id = _this spawn player_throwObject;
-		};
+		};*/
 		if (_ammo isKindOf "ChemLight") then {
 			_projectile = nearestObject [_unit, "ChemLight"];
 			_id = [_projectile,1] spawn object_roadFlare;
