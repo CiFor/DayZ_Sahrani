@@ -4557,7 +4557,6 @@ class RscMsgBox {
 
 class RscMsgBox3 {
 	class Top {
-		class Title {};
 		class CA_Background_Top : RscPicture {
 			text = "\z\addons\dayz_code\gui\ui\ui_messagebox_top_ca.paa";
 		};
