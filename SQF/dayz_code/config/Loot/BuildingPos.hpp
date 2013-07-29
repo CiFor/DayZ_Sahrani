@@ -647,7 +647,7 @@ class MASH: Hospital {
 }; // Qty: 1
 class MASH_EP1: MASH {};
 
-class UH1Wreck_DZ: MilitarySpecial {
+class UH1Wreck_DZ: Crash1 {
 	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
 	zombieChance = 0.3;
 	lootChance = 1;
@@ -656,7 +656,7 @@ class UH1Wreck_DZ: MilitarySpecial {
 	lootPos[] = {};
 };
 
-class UH60Wreck_DZ: MilitarySpecial {
+class UH60Wreck_DZ: Crash1 {
 	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
 	zombieChance = 0.3;
 	lootChance = 1;
@@ -664,6 +664,16 @@ class UH60Wreck_DZ: MilitarySpecial {
 	maxRoaming = 8;
 	lootPos[] = {};
 };
+/*
+class Mi8Wreck_DZ: Crash2Mi8 {
+	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
+	zombieChance = 1;
+	lootChance = 0.4;
+	minRoaming = 4;
+	maxRoaming = 8;
+	lootPos[] = {};
+	zedPos[] = {};
+};*/
 
 class USMC_WarfareBFieldhHospital: MASH {
 	minRoaming = 1;
