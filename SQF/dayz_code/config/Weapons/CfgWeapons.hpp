@@ -204,7 +204,7 @@ class CfgWeapons {
 		};
 	};
 	
-	class ksvk;
+	class ksvk;	// External class reference
 	class ksvk_DZ	: ksvk {
 		type = "1";
 		canlock = 0;
@@ -263,6 +263,160 @@ class CfgWeapons {
 		};
 		descriptionShort = $STR_DSS_M107;
 	};
+	class Rifle;	// External class reference
+	class GrenadeLauncher_EP1: Rifle
+	{
+		magazines[]=
+		{
+			"1Rnd_HE_M203",
+			"FlareWhite_M203",
+			"FlareGreen_M203",
+			"FlareRed_M203",
+			"FlareYellow_M203",
+			"1Rnd_Smoke_M203",
+			"1Rnd_SmokeRed_M203",
+			"1Rnd_SmokeGreen_M203",
+			"1Rnd_SmokeYellow_M203"
+		};
+		begin1[]=
+		{
+			"ca\sounds_e\weapons_e\grenade_launcher\gr_launcher_1",
+			1,
+			1,
+			200
+		};
+		soundBegin[]=
+		{
+			"begin1",
+			1
+		};
+		reloadMagazineSound[]=
+		{
+			"ca\sounds_e\weapons_e\grenade_launcher\gr_launcher_reload",
+			1,
+			1,
+			30
+		};
+		drySound[]=
+		{
+			"ca\sounds_e\weapons_e\grenade_launcher\gr_launcher_dry",
+			1.1220185,
+			1,
+			40
+		};
+		magazineReloadTime=3;
+		reloadTime=1;
+		optics=1;
+		modelOptics="-";
+		cameraDir="GL look";
+		memoryPointCamera="GL eye";
+		opticsZoomMin=0.30000001;
+		opticsZoomMax=1;
+		opticsZoomInit=0.5;
+		cursor="GLCursor";
+		cursorAim="\ca\Weapons\Data\clear_empty";
+		cursorSize=4;
+		value=3;
+		reloadAction="ManActReloadMagazine";
+		initSpeed=75;
+		canLock=0;
+		autoReload=0;
+		autoAimEnabled=0;
+		ffMagnitude=0.1;
+		ffFrequency=1;
+		ffCount=1;
+		recoil="M240Recoil";
+		dispersion=0.0070000002;
+		aiDispersionCoefY=6;
+		maxLeadSpeed=15;
+		muzzlePos="usti granatometu";
+		muzzleEnd="konec granatometu";
+		cartridgePos="";
+		cartridgeVel="";
+		minRange=30;
+		minRangeProbab=0.1;
+		midRange=200;
+		midRangeProbab=0.69999999;
+		maxRange=400;
+		maxRangeProbab=0.050000001;
+		UiPicture="\CA\weapons\data\Ico\i_regular_CA.paa";
+	};
+	class M32_DZ: GrenadeLauncher_EP1
+	{
+		htMin=1;
+		htMax=600;
+		afMax=0;
+		mfMax=0;
+		mFact=1;
+		tBody=100;
+		scope=2;
+		model="\ca\weapons_E\GrenadeLauncher\M32";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\Ca\weapons_E\Data\Anim\M32.rtm"
+		};
+		picture="\ca\weapons_E\Data\icons\m32_CA.paa";
+		displayName="$STR_EP1_DN_M32_EP1";
+		class Library
+		{
+			libTextDesc="$STR_EP1_LIB_M32_EP1";
+		};
+		descriptionShort="$STR_EP1_DSS_M32_EP1";
+		magazines[]=
+		{
+			"1Rnd_HE_M203",
+			"FlareWhite_M203",
+			"FlareGreen_M203",
+			"FlareRed_M203",
+			"FlareYellow_M203",
+			"1Rnd_Smoke_M203",
+			"1Rnd_SmokeRed_M203",
+			"1Rnd_SmokeGreen_M203",
+			"1Rnd_SmokeYellow_M203"
+		};
+		reloadTime=0.5;
+	};
+	class M79_DZ: GrenadeLauncher_EP1
+	{
+		htMin=1;
+		htMax=600;
+		afMax=0;
+		mfMax=0;
+		mFact=1;
+		tBody=100;
+		scope=2;
+		model="\ca\weapons_E\GrenadeLauncher\M79";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\Ca\weapons_E\Data\Anim\M79.rtm"
+		};
+		picture="\ca\weapons_E\Data\icons\m79_CA.paa";
+		displayName="$STR_EP1_DN_M79_EP1";
+		class Library
+		{
+			libTextDesc="$STR_EP1_LIB_M79_EP1";
+		};
+		descriptionShort="$STR_EP1_DSS_M79_EP1";
+	};
+	class M13_DZ: GrenadeLauncher_EP1
+	{
+		scope=2;
+		model="\ca\weapons_E\GrenadeLauncher\MK13";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\Ca\weapons_E\Data\Anim\MK13.rtm"
+		};
+		picture="\ca\weapons_E\Data\icons\mk13_CA.paa";
+		displayName="$STR_EP1_DN_Mk13_EP1";
+		class Library
+		{
+			libTextDesc="$STR_EP1_LIB_Mk13_EP1";
+		};
+		descriptionShort="$STR_EP1_DSS_Mk13_EP1";
+	};	
 	
 	class Makarov;
 	class MakarovSD : Makarov {
@@ -334,8 +488,8 @@ class CfgWeapons {
 class M9;
 class M9SD;
 class glock17_EP1;
-class M249;
-class M240 : RifleCore {
+class M249_DZ;
+class M240_DZ : RifleCore {
 class manual;
 class close;
 class short;
@@ -642,7 +796,7 @@ discreteDistanceInitIndex = 0;
 	
 //Vilas Heavy Machine Guns
 
-class vil_mg3b: M240 {
+class vil_mg3b: M240_DZ {
 scope = public;
 model = "\vilas_wwp\vil_mg3b";
 displayName = $STR_VIL_MG3;
@@ -695,7 +849,7 @@ class far : close {
 	soundBegin[] = {"begin1", 1};
 };
 };
-class vil_M249_Para : M249 {
+class vil_M249_Para : M249_DZ {
 scope = public;
 model = "\vilas_wwp\vil_m249_para";
 picture = "\vilas_wwp\ico\saw_ico.paa";
@@ -709,7 +863,7 @@ class Armory {
 displayName = $STR_VIL_M249_PARA;
 };
 
-class vil_Minimi : M249 {
+class vil_Minimi : M249_DZ {
 scope = public;
 model = "\vilas_wwp\vil_minimi";
 displayName = $STR_VIL_MINIMI;
@@ -726,7 +880,7 @@ class Armory {
 };
 };	
 
-class vil_M240B : M240 {
+class vil_M240B : M240_DZ {
 scope = public;
 model = "\vilas_wwp\vil_m240b";
 displayName = $STR_VIL_M240B;
@@ -744,7 +898,7 @@ class Armory {
 };
 };
 
-class vil_MG4 : m249 {
+class vil_MG4 : m249_DZ {
 scope = public;
 model = "\vilas_wwp\vil_mg4";
 displayName = $STR_VIL_MG4;
@@ -761,7 +915,7 @@ class Armory {
 };
 };
 
-class vil_MG4E : m249 {
+class vil_MG4E : m249_DZ {
 scope = public;
 model = "\vilas_wwp\vil_mg4e";
 modelOptics = "\ca\weapons\G36\G36_optics";

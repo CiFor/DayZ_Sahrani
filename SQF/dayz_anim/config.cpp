@@ -502,8 +502,7 @@ class CfgMagazines {
 	class 1Rnd_SmokeGreen_GP25: FakeMagazine {};
 	class 1Rnd_SmokeYellow_GP25: FakeMagazine {};
 	class CA_LauncherMagazine: FakeMagazine {};
-	class M136: FakeMagazine {};
-	*/
+	class M136: FakeMagazine {};*/
 	class Javelin: FakeMagazine {};
 	class AT13: FakeMagazine {};
 	class PG7V: FakeMagazine {};
@@ -1069,7 +1068,7 @@ class CfgWeapons {
 	class G36K: FakeWeapon {};*/
 	class MG36: FakeWeapon {};
 	class MG36_camo: FakeWeapon {};
-	class GrenadeLauncher_EP1: FakeWeapon {};
+	//class GrenadeLauncher_EP1: FakeWeapon {};
 	class M32_EP1: FakeWeapon {};
 	class M79_EP1: FakeWeapon {};
 	class Mk13_EP1: FakeWeapon {};
