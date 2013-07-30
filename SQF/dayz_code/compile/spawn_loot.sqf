@@ -8,13 +8,12 @@ switch (_iClass) do {
 	default {
 		//Item is food, add random quantity of cans along with an item (if exists)
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
-
 		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
 		_index = dayz_CLBase find _iClass;
 		_weights = dayz_CLChances select _index;
 		_cntWeights = count _weights;
 		_qty = 0;
-		_max = ceil(random 4) + 1;
+		_max = ceil(random 3) + 1;
 		while {_qty < _max} do {
 			_tQty = 1;//round(random 1) + 1;
 			_index = floor(random _cntWeights);
@@ -24,6 +23,7 @@ switch (_iClass) do {
 			_qty = _qty + _tQty;
 		};
 		if (_iItem != "") then {
+			diag_log "_iItem != ''";
 			_item addWeaponCargoGlobal [_iItem,1];
 		};
 	};
@@ -34,7 +34,7 @@ switch (_iClass) do {
 		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
 		if ((count _mags) > 0) then {
 			if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
-			_item addMagazineCargoGlobal [(_mags select 0), (round(random 2))];
+			_item addMagazineCargoGlobal [(_mags select 0), (round(random 3))];
 		};
 	};
 	case "magazine": {
