@@ -1,5 +1,16 @@
-class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
-	class CA_Magazine;	// External class reference										
+
+//Original DayZ Content DayZ Dev Team
+
+//ammo
+//crafting
+//drink
+//food
+//weapon
+//trash
+
+class CfgMagazines {
+	class CA_Magazine;	// External class reference
+	
 	class ItemSandbag : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -18,6 +29,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			};
 		};
 	};
+
 	class ItemTankTrap : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -36,6 +48,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			};
 		};
 	};
+
 	class ItemTent : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -52,6 +65,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			};
 		};
 	};
+	
 	class ItemWire : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -70,6 +84,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			};
 		};
 	};
+	
 	class PartWoodPile: CA_Magazine {
 		scope=2;
 		count=1;
@@ -106,6 +121,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			};
 		};
 	};
+	
 	class TrapBear : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -124,7 +140,10 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			};
 		};
 	};
-	class ItemSodaEmpty; //External class reference													//drinks
+
+//drink	
+	
+	class ItemSodaEmpty; //External class reference	
 	class ItemSodaCoke; //External class reference	
 	class ItemSodaCokeEmpty : ItemSodaEmpty{
 		model = "\dayz_equip\models\soda_coke_e.p3d";
@@ -137,11 +156,28 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 	class ItemSodaMdewEmpty : ItemSodaEmpty{
 		model = "\dayz_equip\models\soda_mdew_e.p3d";
 		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
-	};																								//Below Begins DayZ Community MOD Dev Team Community Assets
-	class 8Rnd_B_Beneli_74Slug;	// External class reference											//ammo
-	class 8Rnd_B_Beneli_Pellets; // External class reference
+	};
+
+//DayZ Community Content DayZ MOD Dev Team
+
+//ammo
+//crafting
+//drink
+//food
+//weapon
+//trash
+
+
+//ammo
+
+	class 8Rnd_B_Beneli_74Slug;	// External class reference
+	
+	class 8Rnd_B_Beneli_Pellets;	// External class reference
+	
 	class 15Rnd_W1866_Slug;	// External class reference
-	class 2Rnd_shotgun_74Slug : 8Rnd_B_Beneli_74Slug {
+	
+	class 2Rnd_shotgun_74Slug: 8Rnd_B_Beneli_74Slug
+	{
 		displayName="2Rnd. Slug";
 		count=2;
 		descriptionShort="2 Rounds 12 gauge Shotgun Shells<br/>Shot Load: Slug<br/>Used in: Double Barrel Shotgun</br>Can be comined for use in other Shotguns and Winchester";
@@ -151,7 +187,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		{
 			class ReloadMag
 			{
-				text="Convert for m1014";
+				text="Combine for m1014";
 				script="spawn player_reloadMag;";
 				use[]=
 				{
@@ -167,7 +203,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			};
 			class Craft0
 			{
-				text="Convert for 1866";
+				text="Combine for 1866";
 				script="spawn player_Craft;";
 				use[]=
 				{
@@ -181,7 +217,9 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			};
 		};
 	};
-	class 2Rnd_shotgun_74Pellets: 8Rnd_B_Beneli_Pellets {
+	
+	class 2Rnd_shotgun_74Pellets: 8Rnd_B_Beneli_Pellets
+	{
 		displayName="2Rnd. Pellets";
 		count=2;
 		descriptionShort="2 Rounds 12 gauge Shotgun Shells<br/>Shot Load: Pellets<br/>Used in: Double Barrel Shotgun</br>Can be comined for use in other Shotguns and Winchester";
@@ -206,8 +244,10 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 				};
 			};
 		};
-	};	
-	class Quiver : CA_Magazine {
+	};
+	
+	class Quiver : CA_Magazine
+	{
 		scope = public;
 		ammo = "WoodenArrow";
 		count = 20;
@@ -217,6 +257,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "\z\addons\dayz_communityassets\models\quiver";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_quiver_ca.paa";
 	};	
+	
 	class WoodenArrow : CA_Magazine {
 		scope = public;
 		displayName = "Arrow"; //$STR_MAG_NAME_3;
@@ -235,8 +276,11 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 				output[] = {"Quiver"};
 			};
 		};
-	};	
-	class FoodDrink; // External class reference													//drink
+	};
+	
+//drink
+	
+	class FoodDrink; // External class reference
 	class ItemWaterbottle : FoodDrink {
 		scope=2;
 		refillable=1;
@@ -245,19 +289,24 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model="\dayz_equip\models\waterbottle_gear.p3d";
 		picture="\dayz_equip\textures\equip_waterbottle_ca.paa";
 		descriptionShort="$STR_EQUIP_DESC_12";
-		class ItemActions {
-			class Drink	{
+		class ItemActions
+		{
+			class Drink
+			{
 				text="$STR_ACTIONS_DRINK";
 				script="spawn player_drink;";
 			}; //SMD Addition
-			class Craft0 {
+			class Craft0 
+			{
 				text="Drug Water";
 				script="spawn player_Craft;";
-				use[]= {
+				use[]=
+				{
 					{"ItemWaterbottle",1},
 					{"ItemPainkiller",1}
 				};
-				output[]= {
+				output[]=
+				{
 					{"ItemWaterbottleDrugged","magazine",1}
 				};
 				crafting = 1;
@@ -269,152 +318,184 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
 		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
 	};
+
 	class ItemSodaClays : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_2;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_2;
 		model = "z\addons\dayz_communityassets\models\soda_clays_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_clays_clean_full_ca.paa";
-	};	
-	class ItemSodaClaysEmpty : ItemSodaEmpty {
+	};
+	
+	class ItemSodaClaysEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_clays_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_clays_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	};	
+	};
+	
 	class ItemSodaDrwaste : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_4;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_4;
 		model = "z\addons\dayz_communityassets\models\soda_drwaste_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_drwaste_clean_full_ca.paa";
 	};
-	class ItemSodaDrwasteEmpty : ItemSodaEmpty {
+	
+	class ItemSodaDrwasteEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_drwaste_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_drwaste_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};
+	
 	class ItemSodaFranka : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_5;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_5;
 		model = "z\addons\dayz_communityassets\models\soda_franka_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_franka_clean_full_ca.paa";
 	};
-	class ItemSodaFrankaEmpty : ItemSodaEmpty {
+	
+	class ItemSodaFrankaEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_franka_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_franka_clean_empty_ca";
 		//ammo = "SodaCanMtngreen";
 	};
+		
 	class ItemSodaLirik : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_7;
 		model = "z\addons\dayz_communityassets\models\soda_lirik_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lirik_clean_full_ca.paa";
 	};
-	class ItemSodaLirikEmpty : ItemSodaEmpty {
+	
+	class ItemSodaLirikEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_lirik_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lirik_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};	
+	
 	class ItemSodaLemonade : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_6;
 		model = "z\addons\dayz_communityassets\models\soda_lemonade_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lemonade_clean_full_ca.paa";
-	};	
-	class ItemSodaLemonadeEmpty : ItemSodaEmpty {
+	};
+	
+	class ItemSodaLemonadeEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_lemonade_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lemonade_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	};	
+	};
+	
 	class ItemSodaLvg : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_8;
 		model = "z\addons\dayz_communityassets\models\soda_lvg_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lvg_clean_full_ca.paa";
-	};	
-	class ItemSodaLvgEmpty : ItemSodaEmpty {
+	};
+	
+	class ItemSodaLvgEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_lvg_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lvg_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};
+	
 	class ItemSodaMtngreen : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_0;
 		model = "z\addons\dayz_communityassets\models\soda_mtngreen_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_mtngreen_clean_full_ca.paa";
 	};
-	class ItemSodaMtngreenEmpty : ItemSodaEmpty {
+	
+	class ItemSodaMtngreenEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_mtngreen_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_mtngreen_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};
+	
 	class ItemSodaMzly : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_9;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_9;
 		model = "z\addons\dayz_communityassets\models\soda_mzly_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_mzly_clean_full_ca.paa";
 	};
-	class ItemSodaMzlyEmpty : ItemSodaEmpty {
+	
+	class ItemSodaMzlyEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_mzly_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_mzly_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};
+	
 	class ItemSodaPeppsy : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_10;
 		model = "z\addons\dayz_communityassets\models\soda_peppsy_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_peppsy_clean_full_ca.paa";
 	};
-	class ItemSodaPeppsyEmpty : ItemSodaEmpty {
+	
+	class ItemSodaPeppsyEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_peppsy_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_peppsy_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};
+	
 	class ItemSodaR4z0r : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_1;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_1;
 		model = "z\addons\dayz_communityassets\models\soda_r4z0r_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_r4z0r_clean_full_ca.paa";
 	};
-	class ItemSodaR4z0rEmpty : ItemSodaEmpty {
+	
+	class ItemSodaR4z0rEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_r4z0r_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_r4z0r_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};
+	
 	class ItemSodaRabbit : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_11;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_11;
 		model = "z\addons\dayz_communityassets\models\soda_rabbit_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rabbit_clean_full_ca.paa";
 	};
-	class ItemSodaRabbitEmpty : ItemSodaEmpty {
+	
+	class ItemSodaRabbitEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_rabbit_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rabbit_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 
 	};
+	
 	class ItemSodaSacrite : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_12;
 		model = "z\addons\dayz_communityassets\models\soda_sacrite_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_sacrite_clean_full_ca.paa";
 	};
-	class ItemSodaSacriteEmpty : ItemSodaEmpty {
+	
+	class ItemSodaSacriteEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_sacrite_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_sacrite_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};
+	
 	class ItemSodaSmasht : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_3;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_3;
 		model = "z\addons\dayz_communityassets\models\soda_smasht_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_smasht_clean_full_ca.paa";
 	};
-	class ItemSodaSmashtEmpty : ItemSodaEmpty {
+	
+	class ItemSodaSmashtEmpty : ItemSodaEmpty{
 		model = "z\addons\dayz_communityassets\models\soda_smasht_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_smasht_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};
-	class FoodEdible; // External class reference													//food
-	class FoodmeatRaw : FoodEdible {																//food - raw
+	
+//food
+
+	class FoodEdible; // External class reference
+	
+	//fod - raw	
+
+	class FoodmeatRaw : FoodEdible {
 		scope = public;
 		count = 1;
 		type = 256;
@@ -424,6 +505,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_0;
 		bloodRegen = 100;
 	};
+	
 	class FoodbaconRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_4;
 		model = "z\addons\dayz_communityassets\models\bacon_raw.p3d";
@@ -431,27 +513,34 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_4;
 		bloodRegen = 150;
 	};
+	
 	class FoodbeefRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_6;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_6;
 		bloodRegen = 100;
 	};
+	
 	class FoodchickenRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_2;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_2;
 		bloodRegen = 100;
 	};
+	
 	class FoodmuttonRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_1;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_1;
 		bloodRegen = 100;
 	};
+		
 	class FoodrabbitRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_3;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_3;
 		bloodRegen = 400;
 	};
-	class FoodmeatCooked : FoodEdible {																//food - cooked
+	
+	//food - cooked
+
+	class FoodmeatCooked : FoodEdible {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_0;
@@ -460,16 +549,19 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_0;
 		bloodRegen = 600; //800
 	};
+	
 	class FoodmuttonCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_1;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_1;
 		bloodRegen = 500; //400
 	};
+	
 	class FoodchickenCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_2;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_2;
 		bloodRegen = 400;
 	};
+	
 	class FoodbaconCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_4;
 		model = "z\addons\dayz_communityassets\models\bacon_fried.p3d";
@@ -477,17 +569,22 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_4;
 		bloodRegen = 800; //400
 	};
+	
 	class FoodrabbitCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_3;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_3;
 		bloodRegen = 1200; //1600
 	};
+	
 	class FoodbeefCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_6;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_6;
 		bloodRegen = 600;
-	};	
-	/*class AngelCookies : FoodEdible {																//food - packaged
+	};
+
+	//food - packaged
+	
+	/*class AngelCookies : FoodEdible {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_5;
@@ -496,6 +593,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_5;
 		bloodRegen = 100;
 	};*/
+	
 	class FoodCanBadguy : FoodEdible {
 		scope = public;
 		count = 1;
@@ -505,6 +603,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_badguy_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_badguy_clean_full_ca.paa";
 	};
+	
 	class FoodCanBoneboy : FoodEdible {
 		scope = public;
 		count = 1;
@@ -514,6 +613,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_boneboy_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_boneboy_clean_full_ca.paa";
 	};
+	
 	class FoodCanCorn : FoodEdible {
 		scope = public;
 		count = 1;
@@ -523,6 +623,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_corn_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_corn_clean_full_ca.paa";
 	};
+	
 	class FoodCanCurgon : FoodEdible {
 		scope = public;
 		count = 1;
@@ -532,6 +633,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_curgon_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_curgon_clean_full_ca.paa";
 	};
+	
 	class FoodCanDemon : FoodEdible {
 		scope = public;
 		count = 1;
@@ -541,6 +643,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_demon_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_demon_clean_full_ca.paa";
 	};
+	
 	class FoodCanFraggleos : FoodEdible {
 		scope = public;
 		count = 1;
@@ -550,6 +653,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_fraggleos_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_fraggleos_clean_full_ca.paa";
 	};	
+	
 	class FoodCanGriff : FoodEdible {
 		scope = public;
 		count = 1;
@@ -559,6 +663,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_griff_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_full_ca.paa";
 	};
+	
 	class FoodCanHerpy : FoodEdible {
 		scope = public;
 		count = 1;
@@ -568,6 +673,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_herpy_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_herpy_clean_full_ca.paa";
 	};
+	
 	class FoodCanOrlok : FoodEdible {
 		scope = public;
 		count = 1;
@@ -577,6 +683,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_orlok_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_orlok_clean_full_ca.paa";
 	};
+	
 	class FoodCanPowell : FoodEdible {
 		scope = public;
 		count = 1;
@@ -586,6 +693,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_powell_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_clean_full_ca.paa";
 	};
+	
 	class FoodCanTylers : FoodEdible {
 		scope = public;
 		count = 1;
@@ -595,6 +703,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_tylers_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_tylers_clean_full_ca.paa";
 	};
+	
 	class FoodCanUnlabeled : FoodEdible {
 		scope = public;
 		count = 1;
@@ -604,7 +713,9 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
 	};
+	
 	class TrashTinCan;//external class 
+	
 	class FoodCanGriffEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -614,6 +725,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_FOOD_DESC_CAN_GRIFF_EMPTY;
 		ammo = "TinCan";
 	};
+	
 	class FoodCanBadguyEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -623,6 +735,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_badguy_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	
 	class FoodCanBoneboyEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -632,6 +745,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_boneboy_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	
 	class FoodCanCornEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -641,6 +755,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_corn_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	
 	class FoodCanCurgonEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -650,6 +765,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_curgon_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	
 	class FoodCanDemonEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -659,6 +775,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_demon_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	
 	class FoodCanFraggleosEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -668,6 +785,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_fraggleos_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	
 	class FoodCanHerpyEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -677,6 +795,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_herpy_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	
 	class FoodCanOrlokEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -686,6 +805,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_orlok_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	
 	class FoodCanPowellEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -695,6 +815,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	
 	class FoodCanTylersEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -704,6 +825,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_tylers_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	
 	class FoodCanUnlabeledEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -713,6 +835,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	
 	class FoodMRE : FoodEdible {
 		scope = public;
 		count = 1;
@@ -722,6 +845,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\mre.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_mre_CA.paa";
 	};
+
 	class FoodNutmix : FoodEdible {
 		scope = public;
 		count = 1;
@@ -731,6 +855,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\nutmix.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_nutmix_CA.paa";
 	};
+	
 	class FoodPistachio : FoodEdible {
 		scope = public;
 		count = 1;
@@ -739,8 +864,14 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_FOOD_DESC_PISTACHIO;
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
-	};	
-	/*class ItemTrashCards : CA_Magazine {															//trash
+	};
+	
+	
+	
+	
+//trash
+/*
+	class ItemTrashCards : CA_Magazine {
 		scope = public;
 		count = 1;
 		displayName = $STR_JUNK_NAME_CARDS;
@@ -748,7 +879,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\cards.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
 		type = 256;
-	};*/
+	};
+*/
 	class ItemTrashRazor : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -758,6 +890,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
 		type = 256;
 	};
+	
 	class ItemTrashToiletpaper : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -766,526 +899,82 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
 		type = 256;
-		class ItemActions {
-			class Craft0 {
+		class ItemActions
+		{
+			class Craft0
+			{
 				text="Make Bandage";
 				script="spawn player_Craft;";
-				use[]= {
+				use[]=
+				{
 					{"ItemTape",1},
 					{"ItemTrashToiletpaper",1}
 				};
-				output[]= {
+				output[]=
+				{
 					{"ItemBandage","magazine",1}
 				};
 				crafting = 1;
 			};
 		};
 	};
-	class Hatchet_Swing;//External class reference													//weapon
+
+//weapon
+
+	class Hatchet_Swing;//External class reference
+	
 	 class Machete_Swing : Hatchet_Swing {
 		displayName = "Machete";
 		displayNameMagazine = "Machete";
 		shortNameMagazine = "Machete";
 		ammo = "Machete_Swing_Ammo";
-	};						//Begin SMD assets by smd_dev team SMD Equipment Fixes and Additions Original and Community DayZ Content
-	class 15Rnd_9x19_M9 {
-	class ItemActions {
-		class Craft0 
-		{
-			text="Convert for Bizon";
-			script="spawn player_Craft;";
-			use[]= {
-			{"15Rnd_9x19_M9",4}
-			};
-			output[]= {
-			{"64Rnd_9x19_Bizon","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for G17";
-			script="spawn player_Craft;";
-			use[]= {
-			{"15Rnd_9x19_M9",1}
-			};
-			output[]= {
-			{"17Rnd_9x19_glock17","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft2 {
-			text="Convert for MP5";
-			script="spawn player_Craft;";
-			use[]= {
-			{"15Rnd_9x19_M9",2}
-			};
-			output[]= {
-			{"30Rnd_9x19_MP5","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft3 {
-			text="Convert for PDW";
-			script="spawn player_Craft;";
-			use[]= {
-			{"15Rnd_9x19_M9",2}
-			};
-			output[]= {
-			{"30Rnd_9x19_UZI","magazine",1}
-			};
-			crafting = 1;
-			};
-		};
 	};
-	class 15Rnd_9x19_M9SD {
-	class ItemActions {
-		class Craft0 
-		{
-			text="Convert for BizonSD";
-			script="spawn player_Craft;";
-			use[]= {
-			{"15Rnd_9x19_M9SD",4}
-			};
-			output[]= {
-			{"64Rnd_9x19_SD_Bizon","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for MP5SD";
-			script="spawn player_Craft;";
-			use[]= {
-			{"15Rnd_9x19_M9SD",2}
-			};
-			output[]= {
-			{"30Rnd_9x19_MP5SD","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft2 {
-			text="Convert for PDWSD";
-			script="spawn player_Craft;";
-			use[]= {
-			{"15Rnd_9x19_M9SD",2}
-			};
-			output[]= {
-			{"30Rnd_9x19_UZI_SD","magazine",1}
-			};
-			crafting = 1;
-			};
-		};
-	};
-	class 17Rnd_9x19_glock17 {
-	class ItemActions {
-		class Craft0 
-		{
-			text="Convert for Bizon";
-			script="spawn player_Craft;";
-			use[]= {
-			{"17Rnd_9x19_glock17",4}
-			};
-			output[]= {
-			{"64Rnd_9x19_Bizon","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for M9";
-			script="spawn player_Craft;";
-			use[]= {
-			{"17Rnd_9x19_glock17",1}
-			};
-			output[]= {
-			{"15Rnd_9x19_M9","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft2 {
-			text="Convert for MP5";
-			script="spawn player_Craft;";
-			use[]= {
-			{"17Rnd_9x19_glock17",2}
-			};
-			output[]= {
-			{"30Rnd_9x19_MP5","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft3 {
-			text="Convert for PDW";
-			script="spawn player_Craft;";
-			use[]= {
-			{"17Rnd_9x19_glock17",2}
-			};
-			output[]= {
-			{"30Rnd_9x19_UZI","magazine",1}
-			};
-			crafting = 1;
-			};
-		};
-	};
-	class 20Rnd_762x51_B_SCAR {
-	class ItemActions {
-		class Craft0 
-		{
-			text="Convert for DMR";
-			script="spawn player_Craft;";
-			use[]= {
-			{"20Rnd_762x51_B_SCAR",1}
-			};
-			output[]= {
-			{"20Rnd_762x51_DMR","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for FN FAL";
-			script="spawn player_Craft;";
-			use[]= {
-			{"20Rnd_762x51_B_SCAR",1}
-			};
-			output[]= {
-			{"20Rnd_762x51_FNFAL","magazine",1}
-			};
-			crafting = 1;
-			};
-		};
-	};
-	class 20Rnd_762x51_DMR {
-	class ItemActions {
-		class Craft0 {
-			text="Convert for FN FAL";
-			script="spawn player_Craft;";
-			use[]= {
-			{"20Rnd_762x51_DMR",1}
-			};
-			output[]= {
-			{"20Rnd_762x51_FNFAL","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for SCAR";
-			script="spawn player_Craft;";
-			use[]= {
-			{"20Rnd_762x51_DMR",1}
-			};
-			output[]= {
-			{"20Rnd_762x51_B_SCAR","magazine",1}
-			};
-			crafting = 1;
-			};
-		};
-	};
-	class 20Rnd_762x51_FNFAL {
-	class ItemActions {
-		class Craft0 {
-			text="Convert for DMR";
-			script="spawn player_Craft;";
-			use[]= {
-			{"20Rnd_762x51_FNFAL",1}
-			};
-			output[]= {
-			{"20Rnd_762x51_DMR","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for SCAR";
-			script="spawn player_Craft;";
-			use[]= {
-			{"20Rnd_762x51_FNFAL",1}
-			};
-			output[]= {
-			{"20Rnd_762x51_B_SCAR","magazine",1}
-			};
-			crafting = 1;
-			};
-		};
-	};
-	class 30Rnd_9x19_MP5 {
-	class ItemActions {
-		class Craft0 
-		{
-			text="Convert for Bizon";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_MP5",2}
-			};
-			output[]= {
-			{"64Rnd_9x19_Bizon","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for G17";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_MP5",1}
-			};
-			output[]= {
-			{"17Rnd_9x19_glock17","magazine",2}
-			};
-			crafting = 1;
-			};
-			class Craft2 {
-			text="Convert for MP5";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_MP5",1}
-			};
-			output[]= {
-			{"30Rnd_9x19_MP5","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft3 {
-			text="Convert for PDW";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_MP5",1}
-			};
-			output[]= {
-			{"30Rnd_9x19_UZI","magazine",2}
-			};
-			crafting = 1;
-			};
-		};
-	};
-	class 30Rnd_9x19_MP5SD {
-	class ItemActions {
-		class Craft0 
-		{
-			text="Convert for BizonSD";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_MP5SD",2}
-			};
-			output[]= {
-			{"64Rnd_9x19_SD_Bizon","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for M9SD";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_MP5SD",1}
-			};
-			output[]= {
-			{"15Rnd_9x19_M9SD","magazine",2}
-			};
-			crafting = 1;
-			};
-			class Craft2 {
-			text="Convert for PDWSD";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_MP5SD",2}
-			};
-			output[]= {
-			{"30Rnd_9x19_UZI_SD","magazine",1}
-			};
-			crafting = 1;
-			};
-		};
-	};
-	class 30Rnd_9x19_UZI {
-	class ItemActions {
-		class Craft0 
-		{
-			text="Convert for Bizon";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_UZI",2}
-			};
-			output[]= {
-			{"64Rnd_9x19_Bizon","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for G17";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_UZI",1}
-			};
-			output[]= {
-			{"17Rnd_9x19_glock17","magazine",2}
-			};
-			crafting = 1;
-			};
-			class Craft2 {
-			text="Convert for M9";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_UZI",1}
-			};
-			output[]= {
-			{"15Rnd_9x19_M9","magazine",2}
-			};
-			crafting = 1;
-			};
-			class Craft3 {
-			text="Convert for MP5";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_UZI",1}
-			};
-			output[]= {
-			{"30Rnd_9x19_UZI","magazine",1}
-			};
-			crafting = 1;
-			};
-		};
-	};
-	class 30Rnd_9x19_UZI_SD {
-	class ItemActions {
-		class Craft0 
-		{
-			text="Convert for BizonSD";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_UZI_SD",2}
-			};
-			output[]= {
-			{"64Rnd_9x19_SD_Bizon","magazine",1}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for M9";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_UZI_SD",1}
-			};
-			output[]= {
-			{"15Rnd_9x19_M9SD","magazine",2}
-			};
-			crafting = 1;
-			};
-			class Craft2 {
-			text="Convert for M9SD";
-			script="spawn player_Craft;";
-			use[]= {
-			{"30Rnd_9x19_UZI_SD",1}
-			};
-			output[]= {
-			{"15Rnd_9x19_M9SD","magazine",2}
-			};
-			crafting = 1;
-			};
-		};
-	};
-	class 64Rnd_9x19_Bizon {
-	class ItemActions {
-		class Craft0 
-		{
-			text="Convert for G17";
-			script="spawn player_Craft;";
-			use[]= {
-			{"64Rnd_9x19_Bizon",1}
-			};
-			output[]= {
-			{"17Rnd_9x19_glock17","magazine",4}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for M9";
-			script="spawn player_Craft;";
-			use[]= {
-			{"64Rnd_9x19_Bizon",1}
-			};
-			output[]= {
-			{"15Rnd_9x19_M9",4}
-			};
-			crafting = 1;
-			};
-			class Craft2 {
-			text="Convert for MP5";
-			script="spawn player_Craft;";
-			use[]= {
-			{"64Rnd_9x19_Bizon",1}
-			};
-			output[]= {
-			{"30Rnd_9x19_MP5","magazine",2}
-			};
-			crafting = 1;
-			};
-			class Craft3 {
-			text="Convert for PDW";
-			script="spawn player_Craft;";
-			use[]= {
-			{"64Rnd_9x19_Bizon",1}
-			};
-			output[]= {
-			{"30Rnd_9x19_UZI","magazine",2}
-			};
-			crafting = 1;
-			};
-		};
-	};
-	class 64Rnd_9x19_SD_Bizon {
-	class ItemActions {
-		class Craft0 
-		{
-			text="Convert for M9SD";
-			script="spawn player_Craft;";
-			use[]= {
-			{"64Rnd_9x19_SD_Bizon",1}
-			};
-			output[]= {
-			{"15Rnd_9x19_M9SD","magazine",4}
-			};
-			crafting = 1;
-			};
-			class Craft1 {
-			text="Convert for MP5SD";
-			script="spawn player_Craft;";
-			use[]= {
-			{"64Rnd_9x19_SD_Bizon",1}
-			};
-			output[]= {
-			{"30Rnd_9x19_MP5SD","magazine",2}
-			};
-			crafting = 1;
-			};
-			class Craft2 {
-			text="Convert for PDWSD";
-			script="spawn player_Craft;";
-			use[]= {
-			{"64Rnd_9x19_SD_Bizon",1}
-			};
-			output[]= {
-			{"30Rnd_9x19_UZI_SD","magazine",2}
-			};
-			crafting = 1;
-			};
-		};
-	};
-	class SkinBase;																					//skins
+
+/*	
+smd assets by smd_dev team
+
+ammo
+crafting
+drink
+food
+skins
+weapon
+trash
+
+SMD Equipment Fixes and Additions Original and Community DayZ Content
+
+*/
+
+//skins
+	class SkinBase;	
+	
 	class Skin_Rocket_DZ : SkinBase {
 		scope = public;
 		displayName = $STR_EQUIP_NAME_46;
 		descriptionShort = $STR_EQUIP_DESC_46;
 	};
+
 	class Skin_BanditSkin_DZ : SkinBase {
 		scope = public;
 		displayName = $STR_EQUIP_NAME_BANDIT;
 		descriptionShort = $STR_EQUIP_NAME_BANDIT;
 	};
+	
 	class Skin_SniperLight_DZ : SkinBase {
 		scope = public;
 		displayName = "Grass Ghillie Suit";
 		descriptionShort = "A type of camouflage clothing designed to resemble Grsaslands. Can be unpacked and worn";
 	};
+	
 	class Skin_SniperD_DZ : SkinBase {
 		scope = public;
 		displayName = "Desert Ghillie Suit";
 		descriptionShort = "A type of camouflage clothing designed to resemble Desert . Can be unpacked and worn";
 	};
-	class ItemTrashMoney : CA_Magazine {															//trash
+
+//trash
+
+	class ItemTrashMoney : CA_Magazine {
 		scope = public;
 		count = 1;
 		displayName = $STR_JUNK_NAME_CARDS;
@@ -1372,8 +1061,12 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 				script="spawn player_useMeds;";
 			};
 		};
-	};																								//SMD Equipment Fixes and Additions Original and Community DayZ Content - By Seven of EHDGaming.co.uk	
-	class ItemBloodbag: CA_Magazine {
+	};
+	
+	//SMD Equipment Fixes and Additions Original and Community DayZ Content - By Seven of EHDGaming.co.uk
+	
+	class ItemBloodbag: CA_Magazine
+	{
 		scope=2;
 		count=1;
 		type=256;
@@ -1392,7 +1085,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 				};
 			};
 		};
-	};	
+	};
+	
 	class ItemWaterbottleDrugged : ItemWaterbottle {
 		class ItemActions
 		{
