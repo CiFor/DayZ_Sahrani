@@ -451,8 +451,7 @@ class CfgMagazines {
 		nameSound = "magazine";
 		maxLeadSpeed = 0;
 	};
-	/*
-	class 8Rnd_9x18_Makarov: FakeMagazine {};
+	/*class 8Rnd_9x18_Makarov: FakeMagazine {};
 	class 8Rnd_9x18_MakarovSD: FakeMagazine {};
 	class 15Rnd_9x19_M9: FakeMagazine {};
 	class 15Rnd_9x19_M9SD: FakeMagazine {};
@@ -527,7 +526,7 @@ class CfgMagazines {
 	class 1200Rnd_762x51_M240: FakeMagazine {};
 	class 1500Rnd_762x54_PKT: FakeMagazine {};
 	class 2000Rnd_762x54_PKT: FakeMagazine {};
-	class 200Rnd_762x54_PKT: FakeMagazine {};
+	//class 200Rnd_762x54_PKT: FakeMagazine {};
 	class 250Rnd_762x54_PKT_T90: FakeMagazine {};
 	class 500Rnd_TwinVickers: FakeMagazine {};
 	class 100Rnd_127x99_M2: FakeMagazine {};
@@ -661,7 +660,7 @@ class CfgMagazines {
 	//class 5Rnd_86x70_L115A1: FakeMagazine {};
 	class NLAW: FakeMagazine {};
 	class 200Rnd_556x45_L110A1: FakeMagazine {};
-	//class 200Rnd_762x54_GPMG: FakeMagazine {};
+	class 200Rnd_762x54_GPMG: FakeMagazine {};
 	class 32Rnd_40mm_GMG: FakeMagazine {};
 	class 12Rnd_CRV7: FakeMagazine {};
 	class 38Rnd_CRV7: FakeMagazine {};

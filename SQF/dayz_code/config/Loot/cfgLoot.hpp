@@ -54,34 +54,68 @@ class CfgLoot {
 			"10Rnd_B_765x17_Ball",
 			"15Rnd_9x19_M9",
 			"15Rnd_9x19_M9SD",
+			"1Rnd_HE_GP25",
+			"1Rnd_SMOKE_GP25",
+			"1Rnd_SmokeGreen_GP25",
+			"1Rnd_SmokeRed_GP25",
+			"1Rnd_SmokeYellow_GP25",
+			"200Rnd_762x54_PKT",
 			"20Rnd_762x51_FNFAL",
 			"20Rnd_9x39_SP5_VSS",
 			"20Rnd_B_765x17_Ball",
 			"30Rnd_545x39_AK",
+			"30Rnd_545x39_AKSD",
 			"30Rnd_762x39_AK47",
 			"30Rnd_9x19_MP5",
 			"30Rnd_9x19_MP5SD",
+			"30Rnd_9x19_UZI",
+			"30Rnd_9x19_UZI_SD",
 			"5Rnd_127x108_KSVK",
+			"60Rnd_762x54_DT",
+			"64Rnd_9x19_Bizon",
+			"64Rnd_9x19_SD_Bizon",
 			"75Rnd_545x39_RPK",
 			"8Rnd_9x18_Makarov",
-			"8Rnd_9x18_MakarovSD"
+			"8Rnd_9x18_MakarovSD",
+			"FlareGreen_GP25",
+			"FlareRed_GP25",
+			"FlareWhite_GP25",
+			"FlareYellow_GP25",
+			"HandGrenade"
 		},
 		{
-			0.04, //10Rnd_9x39_SP5_VSS
-			0.08, //10Rnd_B_765x17_Ball
-			0.07, //15Rnd_9x19_M9
+			0.02, //10Rnd_9x39_SP5_VSS
+			0.04, //10Rnd_B_765x17_Ball
+			0.05, //15Rnd_9x19_M9
 			0.01, //15Rnd_9x19_M9SD
-			0.06, //20Rnd_762x51_FNFAL
-			0.02, //20Rnd_9x39_SP5_VSS
-			0.04, //20Rnd_B_765x17_Ball
-			0.09, //30Rnd_545x39_AK
-			0.06, //30Rnd_762x39_AK47
-			0.04, //30Rnd_9x19_MP5
-			0.02, //30Rnd_9x19_MP5SD
+			0.01, //1Rnd_HE_GP25
+			0.02, //1Rnd_SMOKE_GP25
+			0.02, //1Rnd_SmokeGreen_GP25
+			0.02, //1Rnd_SmokeRed_GP25
+			0.02, //1Rnd_SmokeYellow_GP25
+			0, //200Rnd_762x54_PKT
+			0.03, //20Rnd_762x51_FNFAL
+			0.01, //20Rnd_9x39_SP5_VSS
+			0.01, //20Rnd_B_765x17_Ball
+			0.08, //30Rnd_545x39_AK
+			0.02, //30Rnd_545x39_AKSD
+			0.04, //30Rnd_762x39_AK47
+			0.02, //30Rnd_9x19_MP5
+			0.01, //30Rnd_9x19_MP5SD
+			0.02, //30Rnd_9x19_UZI
+			0.01, //30Rnd_9x19_UZI_SD
 			0.01, //5Rnd_127x108_KSVK
-			0.01, //75Rnd_545x39_RPK
-			0.08, //8Rnd_9x18_Makarov
-			0.04 //8Rnd_9x18_MakarovSD
+			0.01, //60Rnd_762x54_DT
+			0.02, //64Rnd_9x19_Bizon
+			0.01, //64Rnd_9x19_SD_Bizon
+			0, //75Rnd_545x39_RPK
+			0.05, //8Rnd_9x18_Makarov
+			0.02, //8Rnd_9x18_MakarovSD
+			0.02, //FlareGreen_GP25
+			0.02, //FlareRed_GP25
+			0.02, //FlareWhite_GP25
+			0.02, //FlareYellow_GP25
+			0.01 //HandGrenade
 		}
 	};
 	ammoun[] = {
@@ -194,9 +228,7 @@ class CfgLoot {
 			//supplies
 			"ItemFloppyWire",
 			"ItemScrapElectronics",
-			"ItemBrick",
 			"ItemTape",
-			"ItemSandbag",
 			"ItemNails"
 		},
 		{
@@ -216,9 +248,7 @@ class CfgLoot {
 			//suplies
 			0.04, //ItemFloppyWire
 			0.02, //ItemScrapElectronics
-			0.04, //ItemBrick
 			0.08, //ItemTape
-			0.04, //ItemSandbag
 			0.04 //ItemNails
 		}
 	};
