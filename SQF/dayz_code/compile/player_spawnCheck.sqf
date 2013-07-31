@@ -9,13 +9,18 @@ _maxWildZombies = 3;
 _age = -1;
 
 _nearbyBuildings = [];
-_radius = 200; 
+if(_inVehicle) then {
+	_radius = 50;
+} else {
+	_radius = 200;
+};
 _position = getPosATL player;
 
 if (_inVehicle) then {
 	_maxZombies = _maxZombies / 2;
 };
 if (_isAir) then {
+	diag_log "In Vehicle";
 	_maxZombies = 5;
 };
 
@@ -106,7 +111,7 @@ diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZ
 diag_log ("dayz_maxCurrentZeds: " +str(dayz_maxCurrentZeds) + "/" +str(dayz_maxZeds));
 
 };
-	
+
 _nearby = _position nearObjects ["building",_radius];
 _nearbyCount = count _nearby;
 if (_nearbyCount < 1) exitwith 
@@ -123,7 +128,7 @@ if (_nearbyCount < 1) exitwith
 	_dis = _x distance player;
 	
 	//Loot
-	if ((_dis < 120) and (_dis > 30) and _canLoot and !_inVehicle) then {
+	if (!_inVehicle and _canLoot and (_dis < 120) and (_dis > 30)) then {
 		_looted = (_x getVariable ["looted",-0.1]);
 		_cleared = (_x getVariable ["cleared",true]);
 		_dateNow = (DateToNumber date);
