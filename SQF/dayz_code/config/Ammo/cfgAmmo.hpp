@@ -14,5 +14,5 @@ class CfgAmmo {
 	class Brick : SodaCan {
 		hit = 8;
 		indirectHit=1;
-	}
+	};
 };
