@@ -391,6 +391,17 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		//ammo = "SodaCanMtngreen";
 
 	};
+	class ItemSodaRocket : ItemSodaCoke {//model error my docs texture reference + Rocket said No thanks to Joe Originally
+		displayName = "Rocket Soda";
+		descriptionShort = "Soda Made from Rockets";
+		model = "z\addons\dayz_communityassets\models\soda_rocket_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rocket_clean_full_ca.paa";
+	};
+	class ItemSodaRocketEmpty : ItemSodaEmpty {
+		model = "z\addons\dayz_communityassets\models\soda_rocket_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rocket_clean_empty_ca.paa";
+		//ammo = "SodaCanMtngreen";
+	};
 	class ItemSodaSacrite : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_12;
@@ -541,6 +552,15 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_demon_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_demon_clean_full_ca.paa";
 	};
+	class FoodCanDerpy : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_DERPY;
+		descriptionShort = $STR_FOOD_DESC_CAN_DERPY;
+		model = "z\addons\dayz_communityassets\models\can_derpy_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_derpy_clean_full_ca.paa";
+	};
 	class FoodCanFraggleos : FoodEdible {
 		scope = public;
 		count = 1;
@@ -659,6 +679,15 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_demon_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	class FoodCanDerpyEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = "Can (Stew)";
+		descriptionShort = "Can of Donty Hooves - canned Beef Stew";
+		model = "z\addons\dayz_communityassets\models\can_derpy_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_derpy_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
 	class FoodCanFraggleosEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -676,7 +705,16 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_herpy_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_herpy_clean_empty_ca.paa";
 		ammo = "TinCan";
-	};
+	};/*No Model - Not even in extra Source from joeslucky22
+	class FoodCanLongSprats : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 150;
+		displayName = $STR_FOOD_NAME_CAN_LONG_SPRATS;
+		descriptionShort = $STR_FOOD_DESC_CAN_LONG_SPRATS;
+		model = "z\addons\dayz_communityassets\models\can_long_sprat_clean_full_co.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_long_sprat_clean_full_ca.paa";
+	};*/
 	class FoodCanOrlokEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -695,6 +733,60 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	class FoodCanRusCorn : FoodEdible { //added for sake of good order, Russian Cans not added to Sahrani Loot Tables NO ENTRIES IN STRING TABLES
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_RUS_CORN;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_CORN;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_corn_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_corn_clean_full_ca.paa";
+	};
+	class FoodCanRusMilk : FoodEdible { //added for sake of good order, Russian Cans not added to Sahrani Loot Tables
+		scope = public;
+		count = 1;
+		bloodRegen = 100;
+		displayName = $STR_FOOD_NAME_CAN_RUS_MILK;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_MILK;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_milk_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_milk_clean_full_ca.paa";
+	};
+	class FoodCanRusPeas : FoodEdible { //added for sake of good order, Russian Cans not added to Sahrani Loot Tables
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_RUS_PEAS;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_PEAS;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_peas_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_peas_clean_full_ca.paa";
+	};
+	class FoodCanRusPork : FoodEdible { //added for sake of good order, Russian Cans not added to Sahrani Loot Tables
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_RUS_PORK;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_PORK;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_pork_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_pork_clean_full_ca.paa";
+	};
+	class FoodCanRusStew : FoodEdible { //added for sake of good order, Russian Cans not added to Sahrani Loot Tables
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_RUS_STEW;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_STEW;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_stew_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_stew_clean_full_ca.paa";
+	};
+	class FoodCanRusUnlabeled : FoodEdible { //added for sake of good order, Russian Cans not added to Sahrani Loot Tables
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_UNLABELED;
+		descriptionShort = $STR_FOOD_DESC_CAN_UNLABELED;
+		model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
+	};
 	class FoodCanTylersEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -712,6 +804,76 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_empty_ca.paa";
 		ammo = "TinCan";
+	};
+	class FoodCandyAnders : FoodEdible {
+		scope = public;
+		count = 1;
+		//sfx = "eat_chips";
+		bloodRegen = 80;
+		displayName = "Candy (Chocolate)";
+		descriptionShort = "Ander's Joy - Some times you feel like a nut";
+		model = "z\addons\dayz_communityassets\models\candybar_anders_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_anders_ca.paa";
+	};
+	class FoodCandyChubby : FoodEdible {
+		scope = public;
+		count = 1;
+		//sfx = "eat_chips";
+		bloodRegen = 80;
+		displayName = "Candy (Chocolate)";
+		descriptionShort = "Papa's Choclate Chubby Bar - It's Love, in bar form";
+		model = "z\addons\dayz_communityassets\models\candybar_chubby_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_chubby_full_ca.paa";
+	};
+	class FoodCandyLegacys : FoodEdible {
+		scope = public;
+		count = 1;
+		//sfx = "eat_chips";
+		bloodRegen = 80;
+		displayName = "Candybar (Chocolate)";
+		descriptionShort = "Legacy's Bar - Chocolate, Carmel, and Peanut Candy Bar";
+		model = "z\addons\dayz_communityassets\models\candybar_legacys_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_legacys_ca.paa";
+	};
+	class FoodCandyMintception : FoodEdible {
+		scope = public;
+		count = 1;
+		//sfx = "eat_chips";
+		bloodRegen = 80;
+		displayName = "Candybar (Mint)";
+		descriptionShort = "Mintception Candybar - Mint and Coconut Dipped in Chocolate";
+		model = "z\addons\dayz_communityassets\models\candybar_mintception_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_mintception_ca.paa";
+	};
+	class FoodChipsChocolate : FoodEdible {
+		scope = public;
+		count = 1;
+		sfx = "eat_chips";
+		bloodRegen = 120;
+		displayName = "Snack (Chips)";
+		descriptionShort = "Bag of Papa's Chocolate Yummy Snacks";
+		model = "z\addons\dayz_communityassets\models\bag_chips_small_chocolate_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_chocolate_full_ca.paa";
+	};
+	class FoodChipsMysticales : FoodEdible {
+		scope = public;
+		count = 1;
+		sfx = "eat_chips";
+		bloodRegen = 120;
+		displayName = "Snack (Chips)";
+		descriptionShort = "Bag of Miss Mystical's Jalepeno Chips";
+		model = "z\addons\dayz_communityassets\models\bag_chips_small_mysticales_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_mysticales_full_ca.paa";
+	};
+	class FoodChipsSulahoops : FoodEdible {
+		scope = public;
+		count = 1;
+		sfx = "eat_chips";
+		bloodRegen = 120;
+		displayName = "Snack (Rinds)";
+		descriptionShort = "Bag of SulaHoops Pork Rinds";
+		model = "z\addons\dayz_communityassets\models\bag_chips_small_sulahoops_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_sulahoops_full_ca.paa";
 	};
 	class FoodMRE : FoodEdible {
 		scope = public;
@@ -739,16 +901,16 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_FOOD_DESC_PISTACHIO;
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
-	};	
-	/*class ItemTrashCards : CA_Magazine {															//trash
+	};
+	class ItemTrashCards : CA_Magazine {
 		scope = public;
 		count = 1;
-		displayName = $STR_JUNK_NAME_CARDS;
-		descriptionShort = $STR_JUNK_DESC_CARDS;
+		displayName = "Playing Cards";
+		descriptionShort = "Pack of Playing Cards";
 		model = "z\addons\dayz_communityassets\models\cards.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_cards_ca.paa";
 		type = 256;
-	};*/
+	};
 	class ItemTrashRazor : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -1285,27 +1447,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "Desert Ghillie Suit";
 		descriptionShort = "A type of camouflage clothing designed to resemble Desert . Can be unpacked and worn";
 	};
-	class ItemTrashMoney : CA_Magazine {															//trash
-		scope = public;
-		count = 1;
-		displayName = $STR_JUNK_NAME_CARDS;
-		descriptionShort = $STR_JUNK_DESC_CARDS;
-		model = "EvMoney.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
-		type = 256;
-	};
-
-	class ItemNails : CA_Magazine {
-		scope = public;
-		count = 1;
-		type = 256;
-		displayName = "Nails Bag";
-		model = "\Ca\misc\SmallObj_dog_tags_WPN";
-		picture = "\z\addons\dayz_code\textures\equip_nails.paa";
-		descriptionShort = "Bag of nails used for crafting various items";
-	};
-
-	class ItemBrick : TrashTinCan {
+	class ItemBrick : TrashTinCan {															//trash
 		scope = public;
 		count = 1;
 		type = 256;
@@ -1315,7 +1457,6 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = "Can be Thrown and used for crafting various items";
 		ammo = "Brick";
 	};
-	
 	class ItemFloppyWire : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -1325,7 +1466,15 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\SMD\assets\objects\icons\floppywire.paa";
 		descriptionShort = "Scrap Electronic Wire";
 	};
-	
+	class ItemNails : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Box of Nails";
+		model = "z\addons\dayz_communityassets\models\nails.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_nails_ca.paa";
+		descriptionShort = "4 inch nails used for crafting various items";
+	};	
 	class ItemPropane : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -1335,7 +1484,6 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\SMD\assets\objects\icons\propane.paa";
 		descriptionShort = "Propane Tank";
 	};
-
 	class ItemScrapElectronics : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -1344,8 +1492,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "\SMD\assets\objects\scrapelectronics";
 		picture = "\SMD\assets\objects\icons\scrapelectronics.paa";
 		descriptionShort = "Electronic circuit board used for crafting various items";
-	};
-	
+	};	
 	class ItemTape : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -1354,8 +1501,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "\SMD\assets\objects\tape";
 		picture = "\SMD\assets\objects\icons\tape.paa";
 		descriptionShort = "Duct Tape used for crafting various items";
-	};
-	
+	};	
 	class ItemWoodenSplint : CA_Magazine {
 		scope = public;
 		count = 1;
