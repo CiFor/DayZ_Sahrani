@@ -940,7 +940,7 @@ class CfgWeapons {
 	//class EvMap: FakeWeapon {};
 	class EvMoscow: FakeWeapon {};
 	class EvKobalt: FakeWeapon {};
-	class EvMoney: FakeWeapon {};
+	//class EvMoney: FakeWeapon {};
 	class EvDogTags: FakeWeapon {};
 	//class AK_BASE: FakeWeapon {};
 	//class AKS_BASE: FakeWeapon {};

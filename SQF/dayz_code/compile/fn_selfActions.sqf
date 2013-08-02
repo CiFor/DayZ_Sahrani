@@ -398,6 +398,8 @@ if(_canDrink) then {
 	player removeAction s_player_drinkwater;
 	s_player_drinkwater = -1;
 };
+
+//Light Fire
 _hasMatches = "ItemMatchbox" in items player;
 _hasFlares = "HandRoadFlare" in magazines player;
 if ( (cursorTarget isKindOf "Land_Fire_DZ") and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
@@ -408,6 +410,18 @@ if ( (cursorTarget isKindOf "Land_Fire_DZ") and (_hasMatches or _hasFlares) and 
 	player removeAction s_player_light_fire;
 	s_player_light_fire = -1;
 };
+
+//Ignite all Storage-Containers
+if ( ((cursorTarget isKindOf "TentStorage") || (cursorTarget isKindOf "Gunrack_DZ") || (cursorTarget isKindOf "BoxStorage")) and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
+	if (s_player_ignite_storage < 0) then {
+		s_player_ignite_storage = player addAction [localize "str_action_fire_inflame", "\z\addons\dayz_code\actions\player_ignite_storage.sqf",cursorTarget, 3, false, true, "", ""];
+	};
+} else {
+	player removeAction s_player_ignite_storage;
+	s_player_ignite_storage = -1;
+};
+
+//Put down fire
 if (inflamed cursorTarget and _canDo) then {
 	if (s_player_extinguish_fire < 0) then {
 		s_player_extinguish_fire = player addAction [localize "str_action_fire_put_down", "\z\addons\dayz_code\actions\player_extinguish_fire.sqf",cursorTarget, 3, true, true, "", ""];
