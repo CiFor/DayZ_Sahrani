@@ -1,50 +1,5 @@
-/*
-Classes from cfgLoot.hpp:
-			{"","civilian"},
-			{"","civilianZed"},
-			{"","farm"},
-			{"","farmZed"},
-			{"","food"},
-			{"","foodSpecial"}
-			{"","generic"},
-			{"","genericZed"},
-			{"","hospital"},
-			{"","hunter"},
-			{"","hunterZed"},
-			{"","medical"},
-			{"","medicalZed"},
-			{"","military"},
-			{"","militaryZed"},			
-			{"","militarySpecial"},
-			{"","militarySpecialZed"},
-			{"","policemanZed"},
-			{"","trash"},
-
-Building types in config.cpp:
-
-//Default
-//Master
-+++
-//Crash1
-//Crash1_No50s
-//Crash2Mi8
-//Crash2Mi8_NoKSVKs
-//Crash3C130
-//Crash3C130_UnArmed
-//Farm
-//Hospital
-//Hunting
-//Industrial
-//Military
-//MilitarySpecial
-//Residential
-//Supermarket
-
-*/
 #include "cfgLoot.hpp"
-
 class CfgBuildingLoot {
-//Default
 	class Default {
 		zombieChance = 0.2;
 		minRoaming = 0;
@@ -57,7 +12,6 @@ class CfgBuildingLoot {
 		hangPos[] = {};
 		vehPos[] = {};
 	};
-//Master	
 	class Master {
 		weapons[] = {
 			"SMAW",
@@ -66,12 +20,11 @@ class CfgBuildingLoot {
 			"Stinger"
 		};
 	};
-//Crash1
 	class Crash1: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
 //backpacks
@@ -83,8 +36,8 @@ class CfgBuildingLoot {
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
 //class loot types"},
-			{"","ammoun"},
-			{"","ammous"},
+			{"","AmmoUN"},
+			{"","AmmoUS"},
 			{"","clothing"},
 			{"","foodSpecial"},
 			{"","medical"},
@@ -100,23 +53,8 @@ class CfgBuildingLoot {
 			{"BAF_LRR_scoped","weapon"},
 			{"BAF_LRR_scoped_W","weapon"},
 			{"DMR","weapon"},
-			{"G36_C_SD_camo","weapon"},
-			{"G36_C_SD_eotech","weapon"},
-			{"G36a","weapon"},
-			{"G36A_camo","weapon"},
-			{"G36C","weapon"},
-			{"G36C_camo","weapon"},
-			{"G36K","weapon"},
-			{"G36K_camo","weapon"},
-			{"M1014","weapon"},
 			{"M107_DZ","weapon"},
 			{"M14_EP1","weapon"},
-			{"M16A2","weapon"},
-			{"M16A2GL","weapon"},
-			{"m16a4","weapon"},
-			{"m16a4_acg","weapon"},
-			{"M16A4_ACG_GL","weapon"},
-			{"M16A4_GL","weapon"},
 			{"M24","weapon"},
 			{"M24_des_EP1","weapon"},
 			{"M240_DZ","weapon"},
@@ -124,7 +62,6 @@ class CfgBuildingLoot {
 			{"M249_DZ","weapon"},
 			{"M32_DZ","weapon"},
 			{"M40A3","weapon"},
-			{"M4A1","weapon"},
 			{"M4A1_Aim","weapon"},
 			{"M4A1_Aim_camo","weapon"},
 			{"M4A1_AIM_SD_camo","weapon"},
@@ -152,8 +89,6 @@ class CfgBuildingLoot {
 			{"Mk13_DZ","weapon"},
 			{"MP5A5","weapon"},
 			{"MP5SD","weapon"},
-			{"Remington870_lamp","weapon"},
-			{"SCAR_L_Base","weapon"},
 			{"SCAR_L_CQC","weapon"},
 			{"SCAR_L_CQC_EGLM_Holo","weapon"},
 			{"SCAR_L_CQC_Holo","weapon"},
@@ -168,15 +103,6 @@ class CfgBuildingLoot {
 			{"vil_AG3EOT","weapon"},
 			{"vil_D_416","weapon"},
 			{"vil_D_416de","weapon"},
-			{"vil_D_C7","weapon"},
-			{"vil_D_C7_AG","weapon"},
-			{"vil_D_C8","weapon"},
-			{"vil_g36e","weapon"},
-			{"vil_g36ka4","weapon"},
-			{"vil_g36ksk","weapon"},
-			{"vil_g36kskdes","weapon"},
-			{"vil_g36kskdeses","weapon"},
-			{"vil_g36kvz","weapon"},
 			{"vil_hk33","weapon"},
 			{"vil_HK416_Aim","weapon"},
 			{"vil_hk416_edr","weapon"},
@@ -186,7 +112,6 @@ class CfgBuildingLoot {
 			{"vil_hk417s","weapon"},
 			{"vil_m110","weapon"},
 			{"vil_m110sd","weapon"},
-			{"vil_m16a1","weapon"},
 			{"vil_m240b","weapon"},
 			{"vil_M249_Para","weapon"},
 			{"vil_m4_eot","weapon"},
@@ -221,21 +146,21 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 //backpacks
-			0.03, //DZ_ALICE_Pack_EP1","object
+			0.3, //DZ_ALICE_Pack_EP1","object
 			0, //DZ_Assault_Pack_EP1","object
-			0.02, //DZ_Backpack_EP1","object
+			0.2, //DZ_Backpack_EP1","object
 			0, //DZ_British_ACU","object
 			0, //DZ_CivilBackpack_EP1","object
 			0, //DZ_Czech_Vest_Puch","object
 			0, //DZ_TK_Assault_Pack_EP1","object
 //class loot types
-			0.02, //"","ammoun
-			0.03, //"","ammous
-			0.01, //","clothing
-			0.01, //","foodSpecial
-			0.01, //","medical
-			0.03, //","military
-			0.02, //","militarySpecial
+			0.4, //"","AmmoUN
+			0.8, //"","AmmoUS
+			0.1, //","clothing
+			0.5, //","foodSpecial
+			0.1, //","medical
+			0.3, //","military
+			0.2, //","militarySpecial
 			0.1, //","trash
 //headgear
 			0, //Binocular","weapon
@@ -246,23 +171,8 @@ class CfgBuildingLoot {
 			0.01, //BAF_LRR_scoped","weapon
 			0.01, //BAF_LRR_scoped_W","weapon
 			0.03, //DMR","weapon
-			0.05, //G36_C_SD_camo","weapon
-			0.03, //G36_C_SD_eotech","weapon
-			0.09, //G36a","weapon
-			0.05, //G36A_camo","weapon
-			0.09, //G36C","weapon
-			0.05, //G36C_camo","weapon
-			0.09, //G36K","weapon
-			0.05, //G36K_camo","weapon
-			0.02, //M1014","weapon
 			0.01, //M107_DZ","weapon
 			0.04, //M14_EP1","weapon
-			0.08, //M16A2","weapon
-			0.03, //M16A2GL","weapon
-			0.01, //m16a4","weapon
-			0.01, //m16a4_acg","weapon
-			0.03, //M16A4_ACG_GL","weapon
-			0.03, //M16A4_GL","weapon
 			0.07, //M24","weapon
 			0.07, //M24_des_EP1","weapon
 			0.02, //M240_DZ","weapon
@@ -270,7 +180,6 @@ class CfgBuildingLoot {
 			0.02, //M249_DZ","weapon
 			0.01, //M32_DZ","weapon
 			0.07, //M40A3","weapon
-			0.06, //M4A1","weapon
 			0.04, //M4A1_Aim","weapon
 			0.03, //M4A1_Aim_camo","weapon
 			0.01, //M4A1_AIM_SD_camo","weapon
@@ -298,8 +207,6 @@ class CfgBuildingLoot {
 			0.01, //Mk13_DZ","weapon
 			0.06, //MP5A5","weapon
 			0.06, //MP5SD","weapon
-			0.01, //Remington870_lamp","weapon
-			0.03, //SCAR_L_Base","weapon
 			0.02, //SCAR_L_CQC","weapon
 			0.01, //SCAR_L_CQC_EGLM_Holo","weapon
 			0.01, //SCAR_L_CQC_Holo","weapon
@@ -314,15 +221,6 @@ class CfgBuildingLoot {
 			0.01, //vil_AG3EOT","weapon
 			0.05, //vil_D_416","weapon
 			0.05, //vil_D_416de","weapon
-			0.06, //vil_D_C7","weapon
-			0.03, //vil_D_C7_AG","weapon
-			0.02, //vil_D_C8","weapon
-			0.04, //vil_g36e","weapon
-			0.03, //vil_g36ka4","weapon
-			0.04, //vil_g36ksk","weapon
-			0.03, //vil_g36kskdes","weapon
-			0.03, //vil_g36kskdeses","weapon
-			0.03, //vil_g36kvz","weapon
 			0.06, //vil_hk33","weapon
 			0.07, //vil_HK416_Aim","weapon
 			0.05, //vil_hk416_edr","weapon
@@ -332,7 +230,6 @@ class CfgBuildingLoot {
 			0.04, //vil_hk417s","weapon
 			0.06, //vil_m110","weapon
 			0.01, //vil_m110sd","weapon
-			0.07, //vil_m16a1","weapon
 			0.01, //vil_m240b","weapon
 			0.01, //vil_M249_Para","weapon
 			0.06, //vil_m4_eot","weapon
@@ -343,8 +240,8 @@ class CfgBuildingLoot {
 			0.01, //vil_M91","weapon
 			0.01, //vil_mg3b","weapon
 			0.01, //vil_MG4","weapon
-			0.1, //vil_MG4E","weapon
-			0.1, //vil_Minimi","weapon
+			0.01, //vil_MG4E","weapon
+			0.01, //vil_Minimi","weapon
 			0.06, //vil_sg540","weapon
 			0.04, //vil_sg542","weapon
 			0.02, //vil_sg5421","weapon
@@ -371,7 +268,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
 //backpacks
@@ -383,8 +280,8 @@ class CfgBuildingLoot {
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
 //class loot types"},
-			{"","ammoun"},
-			{"","ammous"},
+			{"","AmmoUN"},
+			{"","AmmoUS"},
 			{"","clothing"},
 			{"","foodSpecial"},
 			{"","medical"},
@@ -400,16 +297,7 @@ class CfgBuildingLoot {
 			{"BAF_LRR_scoped","weapon"},
 			{"BAF_LRR_scoped_W","weapon"},
 			{"DMR","weapon"},
-			{"G36_C_SD_camo","weapon"},
-			{"G36_C_SD_eotech","weapon"},
-			{"G36a","weapon"},
-			{"G36A_camo","weapon"},
-			{"G36C","weapon"},
-			{"G36C_camo","weapon"},
-			{"G36K","weapon"},
-			{"G36K_camo","weapon"},
-			{"M1014","weapon"},
-//{"M107_DZ","weapon"},
+			//{"M107_DZ","weapon"},
 			{"M14_EP1","weapon"},
 			{"M16A2","weapon"},
 			{"M16A2GL","weapon"},
@@ -453,7 +341,6 @@ class CfgBuildingLoot {
 			{"MP5A5","weapon"},
 			{"MP5SD","weapon"},
 			{"Remington870_lamp","weapon"},
-			{"SCAR_L_Base","weapon"},
 			{"SCAR_L_CQC","weapon"},
 			{"SCAR_L_CQC_EGLM_Holo","weapon"},
 			{"SCAR_L_CQC_Holo","weapon"},
@@ -521,28 +408,28 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 //backpacks
-			0.03, //DZ_ALICE_Pack_EP1","object
+			0.3, //DZ_ALICE_Pack_EP1","object
 			0, //DZ_Assault_Pack_EP1","object
-			0.02, //DZ_Backpack_EP1","object
+			0.2, //DZ_Backpack_EP1","object
 			0, //DZ_British_ACU","object
 			0, //DZ_CivilBackpack_EP1","object
 			0, //DZ_Czech_Vest_Puch","object
 			0, //DZ_TK_Assault_Pack_EP1","object
 //class loot types
-			0.02, //"","ammoun
-			0.03, //"","ammous
-			0.01, //","clothing
-			0.01, //","foodSpecial
-			0.01, //","medical
-			0.03, //","military
-			0.02, //","militarySpecial
+			0.4, //"","AmmoUN
+			0.8, //"","AmmoUS
+			0.1, //","clothing
+			0.5, //","foodSpecial
+			0.1, //","medical
+			0.3, //","military
+			0.2, //","militarySpecial
 			0.1, //","trash
 //headgear
 			0, //Binocular","weapon
 			0.02, //Binocular_Vector","military
 			0.01, //NVGoggles","weapon
 //primary weapons
-//0.01, //BAF_AS50_scoped_DZ","weapon
+			//0.01, //BAF_AS50_scoped_DZ","weapon
 			0.01, //BAF_LRR_scoped","weapon
 			0.01, //BAF_LRR_scoped_W","weapon
 			0.03, //DMR","weapon
@@ -599,7 +486,6 @@ class CfgBuildingLoot {
 			0.06, //MP5A5","weapon
 			0.06, //MP5SD","weapon
 			0.01, //Remington870_lamp","weapon
-			0.03, //SCAR_L_Base","weapon
 			0.02, //SCAR_L_CQC","weapon
 			0.01, //SCAR_L_CQC_EGLM_Holo","weapon
 			0.01, //SCAR_L_CQC_Holo","weapon
@@ -671,7 +557,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
 //backpacks
@@ -683,7 +569,7 @@ class CfgBuildingLoot {
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
 //class loot types
-			{"","ammorus"},
+			{"","AmmoNATO"},
 			{"","clothing"},
 			{"","foodSpecial"},
 			{"","medical"},
@@ -769,7 +655,7 @@ class CfgBuildingLoot {
 			0, //DZ_Czech_Vest_Puch","object
 			0, //DZ_TK_Assault_Pack_EP1","object
 //class loot types
-			0.03, //"","ammorus
+			0.03, //"","AmmoNATO
 			0.01, //","clothing
 			0.01, //","foodSpecial
 			0.01, //","medical
@@ -851,7 +737,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
 //backpacks
@@ -863,7 +749,7 @@ class CfgBuildingLoot {
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
 //class loot types
-			{"","ammorus"},
+			{"","AmmoNATO"},
 			{"","clothing"},
 			{"","foodSpecial"},
 			{"","medical"},
@@ -949,7 +835,7 @@ class CfgBuildingLoot {
 			0, //DZ_Czech_Vest_Puch","object
 			0, //DZ_TK_Assault_Pack_EP1","object
 //class loot types
-			0.03, //"","ammorus
+			0.03, //"","AmmoNATO
 			0.01, //","clothing
 			0.01, //","foodSpecial
 			0.01, //","medical
@@ -1031,7 +917,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 		};
@@ -1043,7 +929,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 		};
@@ -1056,7 +942,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		maxRoaming = 3;
 		zombieClass[] = {"zZombie_Base","z_hunter","z_hunter","z_hunter","z_villager1","z_villager2","z_villager3"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 //backpacks
@@ -1170,7 +1056,7 @@ class CfgBuildingLoot {
 		maxRoaming = 6;
 		zombieClass[] = {"z_doctor","z_doctor","z_doctor"};
 
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},
@@ -1189,7 +1075,7 @@ class CfgBuildingLoot {
 		minRoaming = 1;
 		maxRoaming = 3;
 		zombieClass[] = {"z_hunter","z_hunter","z_hunter"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 			{"ItemMap","weapon"},
@@ -1221,7 +1107,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		zombieClass[] = {"z_worker1","z_worker2","z_worker3"};
 		maxRoaming = 2;
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 			//class loot types
@@ -1273,7 +1159,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 //backpacks
@@ -1285,8 +1171,8 @@ class CfgBuildingLoot {
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
 //class loot types"},
-			{"","ammoun"},
-			{"","ammorus"},
+			{"","AmmoUN"},
+			{"","AmmoNATO"},
 			{"","clothing"},
 			{"","foodSpecial"},
 			{"","medical"},
@@ -1296,242 +1182,116 @@ class CfgBuildingLoot {
 //headgear"},
 			{"Binocular","weapon"},
 			{"Binocular_Vector","military"},
-			{"NVGoggles","weapon"},
 //primary weapons"},
-			{"BAF_AS50_scoped_DZ","weapon"},
-			{"BAF_L85A2_RIS_ACOG","weapon"},
-			{"BAF_L85A2_RIS_Holo","weapon"},
-			{"BAF_L85A2_RIS_SUSAT","weapon"},
-			{"BAF_L85A2_UGL_ACOG","weapon"},
-			{"BAF_L85A2_UGL_Holo","weapon"},
-			{"BAF_L85A2_UGL_SUSAT","weapon"},
-			{"BAF_LRR_scoped","weapon"},
-			{"BAF_LRR_scoped_W","weapon"},
-			{"DMR","weapon"},
-			{"G36_C_SD_camo","weapon"},
-			{"G36_C_SD_eotech","weapon"},
-			{"G36a","weapon"},
-			{"G36A_camo","weapon"},
-			{"G36C","weapon"},
-			{"G36C_camo","weapon"},
-			{"G36K","weapon"},
-			{"G36K_camo","weapon"},
-			{"M24","weapon"},
-			{"M24_des_EP1","weapon"},
-			{"M40A3","weapon"},
-			{"M79_DZ","weapon"},
-			{"m8_carbine","weapon"},
-			{"m8_carbine_pmc","weapon"},
-			{"m8_carbineGL","weapon"},
-			{"m8_compact","weapon"},
-			{"m8_compact_pmc","weapon"},
-			{"m8_holo_sd","weapon"},
-			{"m8_SAW_DZ","weapon"},
-			{"m8_sharpshooter","weapon"},
-			{"MG36_camo_DZ","weapon"},
-			{"MG36_DZ","weapon"},
-			{"Mk_48_DES_DZ","weapon"},
-			{"Mk_48_DZ","weapon"},
-			{"Mk13_DZ","weapon"},
-			{"MP5A5","weapon"},
-			{"MP5SD","weapon"},
-			{"Remington870_lamp","weapon"},
-			{"SCAR_L_Base","weapon"},
-			{"SCAR_L_CQC","weapon"},
-			{"SCAR_L_CQC_EGLM_Holo","weapon"},
-			{"SCAR_L_CQC_Holo","weapon"},
-			{"SCAR_L_STD_EGLM_RCO","weapon"},
-			{"SCAR_L_STD_HOLO","weapon"},
-			{"SCAR_L_STD_Mk4CQT","weapon"},
-			{"vil_AG3","weapon"},
-			{"vil_aG36","weapon"},
-			{"vil_aG36a2","weapon"},
-			{"vil_aG36ka4","weapon"},
-			{"vil_aG36kv","weapon"},
-			{"vil_AG3EOT","weapon"},
-			{"vil_D_416","weapon"},
-			{"vil_D_416de","weapon"},
-			{"vil_D_C7","weapon"},
-			{"vil_D_C7_AG","weapon"},
-			{"vil_D_C8","weapon"},
-			{"vil_g36e","weapon"},
-			{"vil_g36ka4","weapon"},
-			{"vil_g36ksk","weapon"},
-			{"vil_g36kskdes","weapon"},
-			{"vil_g36kskdeses","weapon"},
-			{"vil_g36kvz","weapon"},
-			{"vil_hk33","weapon"},
-			{"vil_HK416_Aim","weapon"},
-			{"vil_hk416_edr","weapon"},
-			{"vil_hk416_EOT","weapon"},
-			{"vil_hk416_gl","weapon"},
-			{"vil_hk416_is","weapon"},
-			{"vil_hk417s","weapon"},
-			{"vil_m110","weapon"},
-			{"vil_m110sd","weapon"},
-			{"vil_m240b","weapon"},
-			{"vil_M249_Para","weapon"},
-			{"vil_m4_eot","weapon"},
-			{"vil_M64","weapon"},
-			{"vil_M70","weapon"},
-			{"vil_M70B","weapon"},
-			{"vil_M76","weapon"},
-			{"vil_M91","weapon"},
-			{"vil_mg3b","weapon"},
-			{"vil_MG4","weapon"},
-			{"vil_MG4E","weapon"},
-			{"vil_Minimi","weapon"},
-			{"vil_sg540","weapon"},
-			{"vil_sg542","weapon"},
-			{"vil_sg5421","weapon"},
-			{"vil_sr25","weapon"},
-			{"vil_sr25sd","weapon"},
+			{"AK_107_GL_kobra","weapon"},
+			{"AK_107_kobra","weapon"},
+			{"AK_47_M","weapon"},
+			{"AK_47_S","weapon"},
+			{"AK_74","weapon"},
+			{"AK_74_GL","weapon"},
+			{"AK_74_GL_kobra","weapon"},
+			{"AKS_74","weapon"},
+			{"AKS_74_kobra","weapon"},
+			{"AKS_74_U","weapon"},
+			{"AKS_74_UN_kobra","weapon"},
+			{"bizon","weapon"},
+			{"FN_FAL","weapon"},
+			{"Sa58P_EP1","weapon"},
+			{"Sa58V_CCO_EP1","weapon"},
+			{"Sa58V_EP1","weapon"},
+			{"SVD","weapon"},
+			{"SVD_des_EP1","weapon"},
+			{"vil_AK_101","weapon"},
+			{"vil_AK_103","weapon"},
+			{"vil_AK_105","weapon"},
+			{"vil_AK_107","weapon"},
+			{"vil_AK_74m","weapon"},
+			{"vil_AK_74m_EOT","weapon"},
+			{"vil_AK_74m_gp","weapon"},
+			{"vil_AK_74m_k","weapon"},
+			{"vil_AK_74M_N","weapon"},
+			{"vil_AK_74m_p29","weapon"},
+			{"vil_AK_74P","weapon"},
+			{"vil_ak12","weapon"},
+			{"vil_fal","weapon"},
+			{"vil_fal_para","weapon"},
+			{"vil_galil","weapon"},
+			{"vil_galil_ARM","weapon"},
+			{"vil_zastava_m84","weapon"},
 //secondary weapons"},
-			{"Colt1911","weapon"},
-			{"glock17_EP1","weapon"},
 			{"M9","weapon"},
-			{"M9SD","weapon"},
 			{"Makarov","weapon"},
 			{"MakarovSD","weapon"},
-			{"revolver_EP1","weapon"},
-			{"revolver_gold_EP1","weapon"},
 			{"Sa61_EP1","weapon"},
 			{"UZI_EP1","weapon"},
-			{"UZI_SD_EP1","weapon"},
-			{"vil_bhp","weapon"},
-			{"vil_Glock","weapon"},
-			{"vil_Glock_o","weapon"},
 			{"vil_USP","weapon"},
 			{"vil_USPSD","weapon"}
 		};
 		itemChance[] =	{
 //backpacks
-			0.01, //DZ_ALICE_Pack_EP1","object
+			0.1, //DZ_ALICE_Pack_EP1","object
 			0, //DZ_Assault_Pack_EP1","object
-			0.02, //DZ_Backpack_EP1","object
-			0.03, //DZ_British_ACU","object
-			0.02, //DZ_CivilBackpack_EP1","object
+			0.2, //DZ_Backpack_EP1","object
+			0.3, //DZ_British_ACU","object
+			0.2, //DZ_CivilBackpack_EP1","object
 			0, //DZ_Czech_Vest_Puch","object
-			0.04, //DZ_TK_Assault_Pack_EP1","object
+			0.4, //DZ_TK_Assault_Pack_EP1","object
 //class loot types
-			0.2, //"","ammoun
-			0.4, //"","ammorus
-			0.01, //","clothing
-			0.2, //","foodSpecial
-			0.01, //","medical
-			0.2, //","military
-			0.04, //","militarySpecial
+			0.6, //"","AmmoUN
+			0.7, //"","AmmoNATO
+			0.1, //","clothing
+			0.5, //","foodSpecial
+			0.2, //","medical
+			0.8, //","military
+			0.9, //","militarySpecial
 			4, //","trash
 //headgear
 			0.04, //Binocular","weapon
 			0.02, //Binocular_Vector","military
-			0.01, //NVGoggles","weapon
 //primary weapons
-			0, //BAF_AS50_scoped_DZ","weapon
-			0, //BAF_L85A2_RIS_ACOG","weapon
-			0.04, //BAF_L85A2_RIS_Holo","weapon
-			0.08, //BAF_L85A2_RIS_SUSAT","weapon
-			0, //BAF_L85A2_UGL_ACOG","weapon
-			0, //BAF_L85A2_UGL_Holo","weapon
-			0, //BAF_L85A2_UGL_SUSAT","weapon
-			0.01, //BAF_LRR_scoped","weapon
-			0.01, //BAF_LRR_scoped_W","weapon
-			0.01, //DMR","weapon
-			0, //G36_C_SD_camo","weapon
-			0, //G36_C_SD_eotech","weapon
-			0.06, //G36a","weapon
-			0, //G36A_camo","weapon
-			0.06, //G36C","weapon
-			0.02, //G36C_camo","weapon
-			0, //G36K","weapon
-			0, //G36K_camo","weapon
-			0.02, //M24","weapon
-			0.02, //M24_des_EP1","weapon
-			0.01, //M40A3","weapon
-			0.01, //M79_DZ","weapon //oldschoolSinglefireGrenadeLauncher
-			0.01, //m8_carbine","weapon
-			0.01, //m8_carbine_pmc","weapon
-			0, //m8_carbineGL","weapon
-			0.01, //m8_compact","weapon
-			0.01, //m8_compact_pmc","weapon
-			0, //m8_holo_sd","weapon
-			0.01, //m8_SAW_DZ","weapon
-			0, //m8_sharpshooter","weapon
-			0.01, //MG36_camo_DZ","weapon
-			0.01, //MG36_DZ","weapon
-			0.01, //Mk_48_DES_DZ","weapon
-			0.01, //Mk_48_DZ","weapon
-			0.01, //Mk13_DZ","weapon
-			0.04, //MP5A5","weapon
-			0.01, //MP5SD","weapon
-			0.03, //Remington870_lamp","weapon
-			0.01, //SCAR_L_Base","weapon
-			0.01, //SCAR_L_CQC","weapon
-			0, //SCAR_L_CQC_EGLM_Holo","weapon
-			0.01, //SCAR_L_CQC_Holo","weapon
-			0, //SCAR_L_STD_EGLM_RCO","weapon
-			0.02, //SCAR_L_STD_HOLO","weapon
-			0, //SCAR_L_STD_Mk4CQT","weapon
-			0, //vil_AG3","weapon
-			0.01, //vil_aG36","weapon
-			0.02, //vil_aG36a2","weapon
-			0.02, //vil_aG36ka4","weapon
-			0.02, //vil_aG36kv","weapon
-			0, //vil_AG3EOT","weapon
-			0.01, //vil_D_416","weapon
-			0.01, //vil_D_416de","weapon
-			0, //vil_D_C7","weapon
-			0, //vil_D_C7_AG","weapon
-			0, //vil_D_C8","weapon
-			0.02, //vil_g36e","weapon
-			0, //vil_g36ka4","weapon
-			0, //vil_g36ksk","weapon
-			0, //vil_g36kskdes","weapon
-			0, //vil_g36kskdeses","weapon
-			0, //vil_g36kvz","weapon
-			0.01, //vil_hk33","weapon
-			0.01, //vil_HK416_Aim","weapon
-			0, //vil_hk416_edr","weapon
-			0.01, //vil_hk416_EOT","weapon
-			0, //vil_hk416_gl","weapon
-			0, //vil_hk416_is","weapon
-			0, //vil_hk417s","weapon
-			0, //vil_m110","weapon
-			0, //vil_m110sd","weapon
-			0, //vil_m240b","weapon
-			0, //vil_M249_Para","weapon
-			0, //vil_m4_eot","weapon
-			0, //vil_M64","weapon
-			0, //vil_M70","weapon
-			0, //vil_M70B","weapon
-			0, //vil_M76","weapon
-			0, //vil_M91","weapon
-			0, //vil_mg3b","weapon
-			0, //vil_MG4","weapon
-			0, //vil_MG4E","weapon
-			0, //vil_Minimi","weapon
-			0.05, //vil_sg540","weapon
-			0.06, //vil_sg542","weapon
-			0, //vil_sg5421","weapon
-			0.02, //vil_sr25","weapon
-			0, //vil_sr25sd","weapon
+			0.2, //AK_107_GL_kobra","weapon
+			0.6, //AK_107_kobra","weapon
+			0.2, //AK_47_M","weapon
+			0.1, //AK_47_S","weapon
+			0.6, //AK_74","weapon
+			0.1, //AK_74_GL","weapon
+			0.08, //AK_74_GL_kobra","weapon
+			0.4, //AKS_74","weapon
+			0.4, //AKS_74_kobra","weapon
+			0.1, //AKS_74_U","weapon
+			0.08, //AKS_74_UN_kobra","weapon
+			0.1, //bizon","weapon
+			0.6, //FN_FAL","weapon
+			0.2, //Sa58P_EP1","weapon
+			0.08, //Sa58V_CCO_EP1","weapon
+			0.2, //Sa58V_EP1","weapon
+			0.06, //SVD","weapon
+			0.03, //SVD_des_EP1","weapon
+			0.7, //vil_AK_101","weapon
+			0.3, //vil_AK_103","weapon
+			0.3, //vil_AK_105","weapon
+			0.2, //vil_AK_107","weapon
+			0.4, //vil_AK_74m","weapon
+			0.08, //vil_AK_74m_EOT","weapon
+			0.02, //vil_AK_74m_gp","weapon
+			0.02, //vil_AK_74m_k","weapon
+			0.02, //vil_AK_74M_N","weapon
+			0.01, //vil_AK_74m_p29","weapon
+			0.02, //vil_AK_74P","weapon
+			0.01, //vil_ak12","weapon
+			0.3, //vil_fal","weapon
+			0.01, //vil_fal_para","weapon
+			0.4, //vil_galil","weapon
+			0.1, //vil_galil_ARM","weapon
+			0.2, //vil_zastava_m84","weapon
 //secondary weapons
-			0.01, //Colt1911","weapon
-			0.02, //glock17_EP1","weapon
-			0.04, //M9","weapon
-			0.01, //M9SD","weapon
-			0, //Makarov","weapon
-			0.02, //MakarovSD","weapon
-			0, //revolver_EP1","weapon
-			0.01, //revolver_gold_EP1","weapon
-			0.03, //Sa61_EP1","weapon
-			0.02, //UZI_EP1","weapon
-			0, //UZI_SD_EP1","weapon
-			0.04, //vil_bhp","weapon
-			0.06, //vil_Glock","weapon
-			0.06, //vil_Glock_o","weapon
-			0.06, //vil_USP","weapon
-			0.04 //vil_USPSD","weapon
+			0.7, //M9","weapon
+			0.4, //Makarov","weapon
+			0.04, //MakarovSD","weapon
+			0.1, //Sa61_EP1","weapon
+			0.05, //UZI_EP1","weapon
+			0.8, //vil_USP","weapon
+			0.04//vil_USPSD","weapon
 		};
 	};
 //MilitarySpecial
@@ -1540,7 +1300,7 @@ class CfgBuildingLoot {
 		minRoaming = 2;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier_heavy"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 //backpacks
@@ -1552,8 +1312,8 @@ class CfgBuildingLoot {
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
 //class loot types
-			{"","ammoun"},
-			{"","ammorus"},
+			{"","AmmoUN"},
+			{"","AmmoNATO"},
 			{"","clothing"},
 			{"","foodSpecial"},
 			{"","medical"},
@@ -1603,14 +1363,11 @@ class CfgBuildingLoot {
 			{"MP5A5","weapon"},
 			{"MP5SD","weapon"},
 			{"Remington870_lamp","weapon"},
-			{"SCAR_Base","weapon"},
-			{"SCAR_H_Base","weapon"},
 			{"SCAR_H_CQC_CCO","weapon"},
 			{"SCAR_H_CQC_CCO_SD","weapon"},
 			{"SCAR_H_LNG_Sniper","weapon"},
 			{"SCAR_H_LNG_Sniper_SD","weapon"},
 			{"SCAR_H_STD_EGLM_Spect","weapon"},
-			{"SCAR_L_Base","weapon"},
 			{"SCAR_L_CQC","weapon"},
 			{"SCAR_L_CQC_CCO_SD","weapon"},
 			{"SCAR_L_CQC_EGLM_Holo","weapon"},
@@ -1689,8 +1446,8 @@ class CfgBuildingLoot {
 			0, //DZ_Czech_Vest_Puch","object
 			0.01, //DZ_TK_Assault_Pack_EP1","object
 //class loot types
-			0.04, //"","ammoun
-			0.04, //"","ammorus
+			0.04, //"","AmmoUN
+			0.04, //"","AmmoNATO
 			0.01, //","clothing
 			0.01, //","foodSpecial
 			0.01, //","medical
@@ -1740,14 +1497,11 @@ class CfgBuildingLoot {
 			0.01, //MP5A5","weapon
 			0.01, //MP5SD","weapon
 			0.01, //Remington870_lamp","weapon
-			0.01, //SCAR_Base","weapon
-			0.01, //SCAR_H_Base","weapon
 			0.04, //SCAR_H_CQC_CCO","weapon
 			0.02, //SCAR_H_CQC_CCO_SD","weapon
 			0.03, //SCAR_H_LNG_Sniper","weapon
 			0.02, //SCAR_H_LNG_Sniper_SD","weapon
 			0.02, //SCAR_H_STD_EGLM_Spect","weapon
-			0.01, //SCAR_L_Base","weapon
 			0.01, //SCAR_L_CQC","weapon
 			0.02, //SCAR_L_CQC_CCO_SD","weapon
 			0.04, //SCAR_L_CQC_EGLM_Holo","weapon
@@ -1822,7 +1576,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		maxRoaming = 2;
 		zombieClass[] = {"zZombie_Base","z_hunter","z_teacher","z_villager1","z_villager2","z_villager3"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 			//backpacks"},
@@ -1939,7 +1693,7 @@ class CfgBuildingLoot {
 	};
 //Supermarket
 	class Supermarket: Default {
-		lootChance = 1;
+		lootChance = 0.6;
 		minRoaming = 2;
 		maxRoaming = 5;
 		zombieChance = 0.3;
