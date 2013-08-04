@@ -38,6 +38,6 @@ if (!_isOk) then {
 	_handle = player addAction ["Cancel Building", "\z\addons\dayz_code\actions\build\cancel.sqf",[_objectTemp,_classname], 4, true, true];
 	s_player_craftActions set [count s_player_craftActions,_handle];
 } else {
-	cutText ["You cant build here !", "PLAIN DOWN"];
+	cutText ["You cannot build here !", "PLAIN DOWN"];
 };
 

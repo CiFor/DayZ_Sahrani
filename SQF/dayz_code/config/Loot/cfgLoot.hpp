@@ -240,7 +240,7 @@ class CfgLoot {
 			"ItemBandage",
 			"ItemPainkiller",
 //supplies
-			"ItemCards",
+			"ItemTrashCards",
 			"ItemFloppyWire",
 			"ItemNails",
 			"ItemScrapElectronics",
@@ -482,22 +482,22 @@ class CfgLoot {
 		},
 		{
 //Food Spawn Chances
-			0.4, //FoodCanBadguy
+			0.1, //FoodCanBadguy
 			1, //FoodCanBakedBeans
 			0.1, //FoodCanBoneboy
 			0.7, //FoodCanCorn
 			0.4, //FoodCanCurgon
 			0.4, //FoodCanDemon
-			1, //FoodCanDerpy
-			1, //FoodCandyAnders
-			1, //FoodCandyLegacys
-			1, //FoodCandyMintception
+			0.04, //FoodCanDerpy
+			0.04, //FoodCandyAnders
+			0.04, //FoodCandyLegacys
+			0.04, //FoodCandyMintception
 			0.4, //FoodCanFraggleos
 			0.8, //FoodCanFrankBeans
-			0.4, //FoodCanHerpy
-			0.4, //FoodCanOrlok
+			0.04, //FoodCanHerpy
+			0.1, //FoodCanOrlok
 			0.6, //FoodCanPasta
-			0.4, //FoodCanPowell
+			0.2, //FoodCanPowell
 			/*1, //FoodCanRusCorn
 			1, //FoodCanRusMilk
 			1, //FoodCanRusPeas
@@ -507,9 +507,9 @@ class CfgLoot {
 			0.7, //FoodCanSardines
 			0.4, //FoodCanTylers
 			0.9, //FoodCanUnlabeled
-			1, //FoodChipsChocolate
+			0.07, //FoodChipsChocolate
 			0.4, //FoodChipsMysticales
-			0.4, //FoodChipsSulahoops
+			0.1, //FoodChipsSulahoops
 			0.1, //FoodNutmix
 			0.1, //FoodPistachio
 			0.4, //ItemSodaClays
@@ -555,14 +555,14 @@ class CfgLoot {
 			0.1, //FoodCanPasta
 			0.1, //FoodCanSardines
 			0.1, //FoodCanUnlabeled
-			0.3, //FoodNutmix
-			0.2, //FoodPistachio
+			0.1, //FoodNutmix
+			0.1, //FoodPistachio
 //drink
 			0.1, //ItemSodaCoke
 			0.1, //ItemSodaLemonade 
 			0.1, //ItemSodaMtngreen
 			0.1, //ItemSodaPepsi
-			0.1, //ItemSodaRabbit
+			0.4, //ItemSodaRabbit
 			0.01 //ItemWaterbottle
 		}
 	};

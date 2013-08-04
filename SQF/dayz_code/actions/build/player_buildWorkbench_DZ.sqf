@@ -12,14 +12,14 @@ _building = nearestObject [(vehicle player), "HouseBase"];
 _isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
 //_isOk = true;
 _classname = "Workbench_DZ";
-diag_log ("Build Workbench: " + str(_isok) );
+diag_log ("Build Crate: " + str(_isok) );
 
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
 if (!_hasToolBox) exitWith {cutText ["You need a toolbox !","PLAIN DOWN"]};
 if (!_hasCrowBar) exitWith {cutText ["You need a crowbar !","PLAIN DOWN"]};
-if (_haswoodpile < 4 || _hasNails < 4) exitWith {cutText ["You need 4 wood piles and 4 bags of nails !","PLAIN DOWN"]};
+if (_haswoodpile < 4 || _hasNails < 4) exitWith {cutText ["You need 6 wood piles and 4 bags of nails !","PLAIN DOWN"]};
 
 
 //allowed
@@ -30,7 +30,7 @@ if (["forest",dayz_surfaceType] call fnc_inString) then { _isOk = false; diag_lo
 if (["concrete",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_log ("surface concrete"); };
 //if (["wood",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_log ("surface concrete"); };
 
-diag_log ("Build Workbench surface: " + str(_isok) );
+diag_log ("Build Storage Box surface: " + str(_isok) );
 
 if (!_isOk) then {
 	_objectTemp = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
@@ -40,6 +40,6 @@ if (!_isOk) then {
 	_handle = player addAction ["Cancel Building", "\z\addons\dayz_code\actions\build\cancel.sqf",[_objectTemp,_classname], 4, true, true];
 	s_player_craftActions set [count s_player_craftActions,_handle];
 } else {
-	cutText ["You cant build here !", "PLAIN DOWN"];
+	cutText ["You cannot build here!", "PLAIN DOWN"];
 };
 

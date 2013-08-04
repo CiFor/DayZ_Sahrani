@@ -2405,18 +2405,17 @@ class CfgVehicles {
 		actionEnd1 = "OpenDoors1";
 	};
 	
-	class Workbench_DZ: Land_A_tent	{
+	class Workbench_DZ : Land_A_tent {
 		scope = 2;
 		displayName="Workbench";
-		model="\SMD\assets\objects\workbench.p3d";
-		icon = "\SMD\assets\objects\icons\workbench.paa";
+		model="\smd_assets\objects\workbench.p3d";
+		icon = "\smd_assets\objects\icons\workbench.paa";
 		armor = 400; 
 		vehicleClass = "Survival";
 		transportMaxMagazines = 100;
 		transportMaxWeapons = 20;
 		transportMaxBackpacks = 0;
 	};
-	/* End */	
 };
 
 class CfgNonAIVehicles {

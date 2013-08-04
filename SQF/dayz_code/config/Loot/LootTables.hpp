@@ -1323,26 +1323,7 @@ class CfgBuildingLoot {
 //headgear
 			{"Binocular","weapon"},
 			{"Binocular_Vector","military"},
-			{"NVGoggles","weapon"},
 //primary weapons
-			{"BAF_AS50_scoped_DZ","weapon"},
-			{"BAF_L85A2_RIS_ACOG","weapon"},
-			{"BAF_L85A2_RIS_Holo","weapon"},
-			{"BAF_L85A2_RIS_SUSAT","weapon"},
-			{"BAF_L85A2_UGL_ACOG","weapon"},
-			{"BAF_L85A2_UGL_Holo","weapon"},
-			{"BAF_L85A2_UGL_SUSAT","weapon"},
-			{"BAF_LRR_scoped","weapon"},
-			{"BAF_LRR_scoped_W","weapon"},
-			{"DMR","weapon"},
-			{"G36_C_SD_camo","weapon"},
-			{"G36_C_SD_eotech","weapon"},
-			{"G36a","weapon"},
-			{"G36A_camo","weapon"},
-			{"G36C","weapon"},
-			{"G36C_camo","weapon"},
-			{"G36K","weapon"},
-			{"G36K_camo","weapon"},
 			{"M24","weapon"},
 			{"M24_des_EP1","weapon"},
 			{"M40A3","weapon"},
@@ -1362,7 +1343,6 @@ class CfgBuildingLoot {
 			{"Mk13_DZ","weapon"},
 			{"MP5A5","weapon"},
 			{"MP5SD","weapon"},
-			{"Remington870_lamp","weapon"},
 			{"SCAR_H_CQC_CCO","weapon"},
 			{"SCAR_H_CQC_CCO_SD","weapon"},
 			{"SCAR_H_LNG_Sniper","weapon"},
@@ -1376,22 +1356,9 @@ class CfgBuildingLoot {
 			{"SCAR_L_STD_HOLO","weapon"},
 			{"SCAR_L_STD_Mk4CQT","weapon"},
 			{"vil_AG3","weapon"},
-			{"vil_aG36","weapon"},
-			{"vil_aG36a2","weapon"},
-			{"vil_aG36ka4","weapon"},
-			{"vil_aG36kv","weapon"},
 			{"vil_AG3EOT","weapon"},
 			{"vil_D_416","weapon"},
 			{"vil_D_416de","weapon"},
-			{"vil_D_C7","weapon"},
-			{"vil_D_C7_AG","weapon"},
-			{"vil_D_C8","weapon"},
-			{"vil_g36e","weapon"},
-			{"vil_g36ka4","weapon"},
-			{"vil_g36ksk","weapon"},
-			{"vil_g36kskdes","weapon"},
-			{"vil_g36kskdeses","weapon"},
-			{"vil_g36kvz","weapon"},
 			{"vil_hk33","weapon"},
 			{"vil_HK416_Aim","weapon"},
 			{"vil_hk416_edr","weapon"},
@@ -1399,19 +1366,6 @@ class CfgBuildingLoot {
 			{"vil_hk416_gl","weapon"},
 			{"vil_hk416_is","weapon"},
 			{"vil_hk417s","weapon"},
-			{"vil_m110","weapon"},
-			{"vil_m110sd","weapon"},
-			{"vil_m240b","weapon"},
-			{"vil_M249_Para","weapon"},
-			{"vil_m4_eot","weapon"},
-			{"vil_M64","weapon"},
-			{"vil_M70","weapon"},
-			{"vil_M70B","weapon"},
-			{"vil_M76","weapon"},
-			{"vil_M91","weapon"},
-			{"vil_mg3b","weapon"},
-			{"vil_MG4","weapon"},
-			{"vil_MG4E","weapon"},
 			{"vil_Minimi","weapon"},
 			{"vil_sg540","weapon"},
 			{"vil_sg542","weapon"},
@@ -1419,14 +1373,11 @@ class CfgBuildingLoot {
 			{"vil_sr25","weapon"},
 			{"vil_sr25sd","weapon"},
 //secondary weapons
-			{"Colt1911","weapon"},
 			{"glock17_EP1","weapon"},
 			{"M9","weapon"},
 			{"M9SD","weapon"},
 			{"Makarov","weapon"},
 			{"MakarovSD","weapon"},
-			{"revolver_EP1","weapon"},
-			{"revolver_gold_EP1","weapon"},
 			{"Sa61_EP1","weapon"},
 			{"UZI_EP1","weapon"},
 			{"UZI_SD_EP1","weapon"},
@@ -1446,47 +1397,28 @@ class CfgBuildingLoot {
 			0, //DZ_Czech_Vest_Puch","object
 			0.01, //DZ_TK_Assault_Pack_EP1","object
 //class loot types
-			0.04, //"","AmmoUN
-			0.04, //"","AmmoNATO
-			0.01, //","clothing
-			0.01, //","foodSpecial
-			0.01, //","medical
-			0.01, //","military
-			0.06, //","militarySpecial
+			0.4, //"","AmmoUN
+			0.4, //"","AmmoNATO
+			0.1, //","clothing
+			0.1, //","foodSpecial
+			0.1, //","medical
+			0.1, //","military
+			0.6, //","militarySpecial
 			4, //","trash
 //headgear
 			0, //Binocular","weapon
 			0.02, //Binocular_Vector","military
-			0.01, //NVGoggles","weapon
 //primary weapons
-			0.01, //BAF_AS50_scoped_DZ","weapon
-			0.04, //BAF_L85A2_RIS_ACOG","weapon
-			0.04, //BAF_L85A2_RIS_Holo","weapon
-			0.01, //BAF_L85A2_RIS_SUSAT","weapon
-			0.04, //BAF_L85A2_UGL_ACOG","weapon
-			0.04, //BAF_L85A2_UGL_Holo","weapon
-			0.01, //BAF_L85A2_UGL_SUSAT","weapon
-			0.02, //BAF_LRR_scoped","weapon
-			0.02, //BAF_LRR_scoped_W","weapon
-			0.01, //DMR","weapon
-			0.05, //G36_C_SD_camo","weapon
-			0.05, //G36_C_SD_eotech","weapon
-			0.01, //G36a","weapon
-			0.01, //G36A_camo","weapon
-			0.01, //G36C","weapon
-			0.01, //G36C_camo","weapon
-			0.01, //G36K","weapon
-			0.01, //G36K_camo","weapon
 			0.04, //M24","weapon
 			0.04, //M24_des_EP1","weapon
 			0.04, //M40A3","weapon
 			0.04, //M79_DZ","weapon
-			0.01, //m8_carbine","weapon
-			0.01, //m8_carbine_pmc","weapon
-			0.01, //m8_carbineGL","weapon
-			0.01, //m8_compact","weapon
-			0.01, //m8_compact_pmc","weapon
-			0.04, //m8_holo_sd","weapon
+			0.1, //m8_carbine","weapon
+			0.1, //m8_carbine_pmc","weapon
+			0.04, //m8_carbineGL","weapon
+			0.1, //m8_compact","weapon
+			0.1, //m8_compact_pmc","weapon
+			0.01, //m8_holo_sd","weapon
 			0, //m8_SAW_DZ","weapon
 			0.01, //m8_sharpshooter","weapon
 			0.01, //MG36_camo_DZ","weapon
@@ -1494,38 +1426,24 @@ class CfgBuildingLoot {
 			0.01, //Mk_48_DES_DZ","weapon
 			0.01, //Mk_48_DZ","weapon
 			0.01, //Mk13_DZ","weapon
-			0.01, //MP5A5","weapon
-			0.01, //MP5SD","weapon
-			0.01, //Remington870_lamp","weapon
-			0.04, //SCAR_H_CQC_CCO","weapon
-			0.02, //SCAR_H_CQC_CCO_SD","weapon
-			0.03, //SCAR_H_LNG_Sniper","weapon
-			0.02, //SCAR_H_LNG_Sniper_SD","weapon
-			0.02, //SCAR_H_STD_EGLM_Spect","weapon
-			0.01, //SCAR_L_CQC","weapon
+			0.4, //MP5A5","weapon
+			0.08, //MP5SD","weapon
+			0.4, //SCAR_H_CQC_CCO","weapon
+			0.01, //SCAR_H_CQC_CCO_SD","weapon
+			0.01, //SCAR_H_LNG_Sniper","weapon
+			0.01, //SCAR_H_LNG_Sniper_SD","weapon
+			0.01, //SCAR_H_STD_EGLM_Spect","weapon
+			0.1, //SCAR_L_CQC","weapon
 			0.02, //SCAR_L_CQC_CCO_SD","weapon
-			0.04, //SCAR_L_CQC_EGLM_Holo","weapon
-			0.04, //SCAR_L_CQC_Holo","weapon
-			0.03, //SCAR_L_STD_EGLM_RCO","weapon
-			0.04, //SCAR_L_STD_HOLO","weapon
+			0.08, //SCAR_L_CQC_EGLM_Holo","weapon
+			0.4, //SCAR_L_CQC_Holo","weapon
+			0.01, //SCAR_L_STD_EGLM_RCO","weapon
+			0.4, //SCAR_L_STD_HOLO","weapon
 			0.02, //SCAR_L_STD_Mk4CQT","weapon
 			0.01, //vil_AG3","weapon
-			0.01, //vil_aG36","weapon
-			0.01, //vil_aG36a2","weapon
-			0.01, //vil_aG36ka4","weapon
-			0.01, //vil_aG36kv","weapon
 			0.01, //vil_AG3EOT","weapon
-			0.01, //vil_D_416","weapon
-			0.04, //vil_D_416de","weapon
-			0.01, //vil_D_C7","weapon
-			0.03, //vil_D_C7_AG","weapon
-			0.04, //vil_D_C8","weapon
-			0.04, //vil_g36e","weapon
-			0.02, //vil_g36ka4","weapon
-			0.01, //vil_g36ksk","weapon
-			0.03, //vil_g36kskdes","weapon
-			0.02, //vil_g36kskdeses","weapon
-			0.03, //vil_g36kvz","weapon
+			0.1, //vil_D_416","weapon
+			0.4, //vil_D_416de","weapon
 			0.01, //vil_hk33","weapon
 			0.04, //vil_HK416_Aim","weapon
 			0.02, //vil_hk416_edr","weapon
@@ -1533,19 +1451,6 @@ class CfgBuildingLoot {
 			0.02, //vil_hk416_gl","weapon
 			0.03, //vil_hk416_is","weapon
 			0.02, //vil_hk417s","weapon
-			0.01, //vil_m110","weapon
-			0.01, //vil_m110sd","weapon
-			0.01, //vil_m240b","weapon
-			0.01, //vil_M249_Para","weapon
-			0.01, //vil_m4_eot","weapon
-			0.01, //vil_M64","weapon
-			0.01, //vil_M70","weapon
-			0.01, //vil_M70B","weapon
-			0.01, //vil_M76","weapon
-			0.01, //vil_M91","weapon
-			0.01, //vil_mg3b","weapon
-			0.01, //vil_MG4","weapon
-			0.01, //vil_MG4E","weapon
 			0.01, //vil_Minimi","weapon
 			0.01, //vil_sg540","weapon
 			0.01, //vil_sg542","weapon
@@ -1553,14 +1458,11 @@ class CfgBuildingLoot {
 			0.01, //vil_sr25","weapon
 			0.01, //vil_sr25sd","weapon
 //secondary weapons
-			0.01, //Colt1911","weapon
 			0.01, //glock17_EP1","weapon
 			0.01, //M9","weapon
 			0.04, //M9SD","weapon
 			0.01, //Makarov","weapon
 			0.04, //MakarovSD","weapon
-			0.01, //revolver_EP1","weapon
-			0.03, //revolver_gold_EP1","weapon
 			0.01, //Sa61_EP1","weapon
 			0.01, //UZI_EP1","weapon
 			0.04, //UZI_SD_EP1","weapon
@@ -1681,7 +1583,7 @@ class CfgBuildingLoot {
 			0.4, //ItemMatchbox","generic
 			0.01, //ItemWatch","generic
 			//toolbelt Switchable weapons
-			0.3, //WeaponHolder_ItemHatchet","object
+			0.03, //WeaponHolder_ItemHatchet","object
 			0.01 //WeaponHolder_ItemMachete","object
 		};		
 	};
@@ -1795,8 +1697,5 @@ class CfgBuildingLoot {
 			0.01 //ItemWatch
 		};
 	};
-/*
-Begin Loot Tables
-*/
 	#include "BuildingPos.hpp"
 };

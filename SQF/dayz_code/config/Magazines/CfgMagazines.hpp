@@ -415,7 +415,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 	};
 	class ItemSodaSmasht : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_3;
-		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_3;
+		descriptionShort = "Grape Drink? - Great Drink!";
 		model = "z\addons\dayz_communityassets\models\soda_smasht_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_smasht_clean_full_ca.paa";
 	};

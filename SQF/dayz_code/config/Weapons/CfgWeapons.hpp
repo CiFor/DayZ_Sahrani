@@ -59,7 +59,6 @@ class CfgWeapons {
 				text = "Bag Wall (Corner)";
 				script = "spawn player_buildBagFenceLongCorner_DZ;";
 			};
-			
 			class Build3 {
 				text = "Bag Wall (Round)";
 				script = "spawn player_buildBagFenceLongRound_DZ;";
