@@ -948,14 +948,14 @@ class Armory {
 //Vilas Sniper Rifles
 
 class DMR;
-class vil_DRM_BASE : DMR {
+class vil_DMR_BASE : DMR {
 class Single;
 weaponInfoType = "RscWeaponZeroing";
 discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 discreteDistanceInitIndex = 2;
 };
 
-class vil_SR25 : vil_DRM_BASE {
+class vil_SR25 : vil_DMR_BASE {
 scope = public;
 model = "\vilas_wwp\vil_sr25";
 displayName = $STR_VIL_SR25;
@@ -1067,7 +1067,7 @@ optics = true;
 displayName = $STR_VIL_FAL;
 picture = "\vilas_wwp\ico\ico_fal.paa";
 UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";  
-magazines[] = {"20Rnd_762x51_DMR","20Rnd_762x51_FNFAL"};
+magazines[] = {"20Rnd_762x51_FNFAL"};
 weaponInfoType = "RscWeaponZeroing";
 discreteDistance[] = {200, 300, 400, 500, 600};
 discreteDistanceInitIndex = 1;
@@ -1135,7 +1135,7 @@ displayName = $STR_VIL_SG540;
 picture = "\vilas_wwp\ico\w_vil_sg540_ca.paa";
 UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 modes[] = {"Single", "Burst", "FullAuto"};
-magazines[] = {"30Rnd_556x45_Stanag"};
+magazines[] = {"30Rnd_556x45_G36"};
 weaponInfoType = "RscWeaponZeroing";
 discreteDistance[] = {100, 300, 500};
 discreteDistanceInitIndex = 1;
@@ -1154,7 +1154,7 @@ model = "\vilas_wwp\vil_sg542";
 displayName = $STR_VIL_SG542;
 picture = "\vilas_wwp\ico\w_vil_sg542_ca.paa";
 UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
-magazines[] = {"20Rnd_762x51_DMR","20Rnd_762x51_FNFAL"};
+magazines[] = {"20Rnd_762x51_FNFAL"};
 discreteDistance[] = {100, 300, 500, 600};
 
 class Library {
@@ -1248,7 +1248,7 @@ displayName = $STR_VIL_HK33;
 picture = "\vilas_wwp\ico\ico_33.paa";
 UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 modes[] = {"Single", "FullAuto"};
-magazines[] = {"30Rnd_556x45_Stanag"};
+magazines[] = {"30Rnd_556x45_G36"};
 weaponInfoType = "RscWeaponZeroing";
 discreteDistance[] = {100, 200, 300, 400};
 discreteDistanceInitIndex = 1;
@@ -1282,7 +1282,7 @@ picture = "\vilas_wwp\ico\ico_galil.paa";
 UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 reloadMagazineSound[] = {"\vilas_wwp\sounds\galil_reload",db0, 1, 20};
 modes[] = {"Single", "FullAuto"};
-magazines[] = {"30Rnd_556x45_Stanag"};
+magazines[] = {"30Rnd_556x45_G36"};
 begin1[] = {"\vilas_wwp\sounds\galil_fire1", 1.04828, 1, 1000};
 soundBegin[] = {"begin1", 1};
 
@@ -1304,7 +1304,7 @@ model = "\vilas_wwp\vil_galil_arm";
 displayName = $STR_VIL_GALIL_ARM;
 picture = "\vilas_wwp\ico\w_vil_galil_arm_ca.paa";
 UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
-magazines[] = {"30Rnd_556x45_Stanag"};
+magazines[] = {"30Rnd_556x45_G36"};
 
 class Library {
 	libTextDesc = $STR_VIL_GALIL_LIB;
