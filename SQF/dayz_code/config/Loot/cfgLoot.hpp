@@ -434,8 +434,7 @@ class CfgLoot {
 		}
 	};
 	food[] = {
-		{
-//Food
+		{//Food
 			"FoodCanBadguy",
 			"FoodCanBakedBeans",
 			"FoodCanBoneboy",
@@ -480,8 +479,7 @@ class CfgLoot {
 			//"ItemSodaRocket",
 			"ItemSodaSmasht"
 		},
-		{
-//Food Spawn Chances
+		{//Food Spawn Chances
 			0.1, //FoodCanBadguy
 			1, //FoodCanBakedBeans
 			0.1, //FoodCanBoneboy
@@ -528,8 +526,7 @@ class CfgLoot {
 		}
 	};
 	foodSpecial[] = {
-		{
-//food
+		{//food
 			"FoodCanBakedBeans",
 			"FoodCanCorn",
 			"FoodCanFrankBeans",
@@ -547,8 +544,7 @@ class CfgLoot {
 			"ItemSodaRabbit",
 			"ItemWaterbottle"
 		},
-		{
-//food
+		{//food
 			0.1, //FoodCanBakedBeans
 			0.1, //FoodCanCorn
 			0.1, //FoodCanFrankBeans
@@ -569,140 +565,105 @@ class CfgLoot {
 	generic[] = {
 		{
 //ammo
-			"7Rnd_45ACP_1911",
 			"5x_22_LR_17_HMR",
-			"10x_303",
 			"6Rnd_45ACP",
-			"2Rnd_shotgun_74Slug",
-			"2Rnd_shotgun_74Pellets",
+			"7Rnd_45ACP_1911",
 			"8Rnd_9x18_Makarov",
-			"15Rnd_W1866_Slug",
 			"WoodenArrow",
 //medical
 			"ItemBandage",
-			"ItemPainkiller",
 			"ItemHeatPack",
+			"ItemPainkiller",
 //supplies
-			"ItemNails",
-			"ItemBrick",
-			"ItemTape",
-			"ItemSandbag",
-			"ItemWire",
-			"ItemWaterbottleUnfilled",
-			"HandRoadFlare",
-			"HandChemGreen",
 			"HandChemBlue",
-			"HandChemRed"			
+			"HandChemGreen",
+			"HandChemRed",
+			"HandRoadFlare",
+			"ItemBrick",
+			"ItemNails",
+			"ItemTape",
+			"ItemTrashRazor",
+			"ItemTrashToiletpaper",
+			"ItemWaterbottleUnfilled"	
 		},
 		{
 //ammo
-			0.03, //7Rnd_45ACP_1911
-			0.01, //5x_22_LR_17_HMR
 			0.04, //10x_303
-			0.04, //6Rnd_45ACP
-			0.05, //2Rnd_shotgun_74Slug
+			0.02, //15Rnd_W1866_Slug
 			0.05, //2Rnd_shotgun_74Pellets
+			0.05, //2Rnd_shotgun_74Slug
+			0.01, //5x_22_LR_17_HMR
+			0.04, //6Rnd_45ACP
+			0.03, //7Rnd_45ACP_1911
 			0.09, //8Rnd_9x18_Makarov
-			0.02, //15Rnd_W1866_Slug			
 			0.04, //WoodenArrow
-//medical
+//medical			
 			0.11, //ItemBandage
-			0.02, //ItemPainkiller
 			0.04, //ItemHeatPack
-//supplies
-			0.09, //ItemNails
-			0.04, //ItemBrick
-			0.04, //ItemTape
-			0.04, //ItemSandbag
-			0.04, //ItemWire
-			0.01, //ItemWaterbottleUnfilled
-			0.07, //HandRoadFlare
-			0.01, //HandChemGreen
+			0.02, //ItemPainkiller
+//supplies			
 			0.03, //HandChemBlue
-			0.03 //HandChemRed
+			0.01, //HandChemGreen
+			0.03, //HandChemRed
+			0.07, //HandRoadFlare
+			0.01, //ItemBrick
+			0.06, //ItemNails
+			0.04, //ItemTape
+			0.01, //ItemTrashRazor
+			0.07, //ItemTrashToiletpaper
+			0.01 //ItemWaterbottleUnfilled
 		}
 	};
 	genericZed[] = {
 		{
-//trash
-			"TrashTinCan",
-			"ItemSodaEmpty",
-			"TrashJackDaniels",
-//drink
-			"ItemSodaCoke",
-			"ItemSodaPepsi",
-			"ItemWaterbottle",
-//food
-			"FoodCanBakedBeans",
-			"FoodCanSardines",
-			"FoodCanFrankBeans",
-			"FoodCanPasta",
 //ammo
-			"7Rnd_45ACP_1911",
 			"5x_22_LR_17_HMR",
-			"10x_303",
 			"6Rnd_45ACP",
-			"2Rnd_shotgun_74Slug",
-			"2Rnd_shotgun_74Pellets",
+			"7Rnd_45ACP_1911",
 			"8Rnd_9x18_Makarov",
-			"15Rnd_W1866_Slug",
 			"WoodenArrow",
 //medical
 			"ItemBandage",
-			"ItemPainkiller",
 			"ItemHeatPack",
+			"ItemPainkiller",
 //supplies
-			"ItemNails",
-			"ItemBrick",
-			"ItemTape",
-			"ItemSandbag",
-			"ItemWire",
-			"ItemWaterbottleUnfilled",
-			"HandRoadFlare",
-			"HandChemGreen",
 			"HandChemBlue",
-			"HandChemRed"
-			
+			"HandChemGreen",
+			"HandChemRed",
+			"HandRoadFlare",
+			"ItemBrick",
+			"ItemNails",
+			"ItemTape",
+			"ItemTrashRazor",
+			"ItemTrashToiletpaper",
+			"ItemWaterbottleUnfilled"
 		},
 		{
-//trash
-			0.06, //TrashTinCan
-			0.06, //ItemSodaEmpty
-			0.04, //TrashJackDaniels
-//drink
-			0.06, //ItemSodaCoke
-			0.04, //ItemSodaPepsi
-			0.01, //ItemWaterbottle
-//food
-			0.01, //FoodCanBakedBeans
-			0.01, //FoodCanSardines
-			0.01, //FoodCanFrankBeans
-			0.01, //FoodCanPasta
 //ammo
-			0.03, //7Rnd_45ACP_1911
-			0.01, //5x_22_LR_17_HMR
 			0.04, //10x_303
-			0.04, //6Rnd_45ACP
-			0.05, //2Rnd_shotgun_74Slug
+			0.02, //15Rnd_W1866_Slug
 			0.05, //2Rnd_shotgun_74Pellets
+			0.05, //2Rnd_shotgun_74Slug
+			0.01, //5x_22_LR_17_HMR
+			0.04, //6Rnd_45ACP
+			0.03, //7Rnd_45ACP_1911
 			0.09, //8Rnd_9x18_Makarov
-			0.02, //15Rnd_W1866_Slug			
 			0.04, //WoodenArrow
-//medical
+//medical			
 			0.11, //ItemBandage
-			0.02, //ItemPainkiller
 			0.04, //ItemHeatPack
-//supplies
-			0.09, //ItemNails
-			0.04, //ItemBrick
-			0.04, //ItemTape
-			0.04, //ItemSandbag
-			0.04, //ItemWire
-			0.01, //ItemWaterbottleUnfilled
-			0.07, //HandRoadFlare
-			0.01, //HandChemGreen
+			0.02, //ItemPainkiller
+//supplies			
 			0.03, //HandChemBlue
-			0.03 //HandChemRed
+			0.01, //HandChemGreen
+			0.03, //HandChemRed
+			0.07, //HandRoadFlare
+			0.01, //ItemBrick
+			0.06, //ItemNails
+			0.04, //ItemTape
+			0.01, //ItemTrashRazor
+			0.07, //ItemTrashToiletpaper
+			0.01 //ItemWaterbottleUnfilled
 		}
 	};
 	hospital[] = {
@@ -778,7 +739,6 @@ class CfgLoot {
 			"5x_22_LR_17_HMR", //cz550
 			"7Rnd_45ACP_1911",
 			"10x_303",
-			"Quiver",
 			"WoodenArrow",
 //medical
 			"ItemHeatPack",
@@ -802,7 +762,6 @@ class CfgLoot {
 			0.5, //5x_22_LR_17_HMR
 			0.2, //7Rnd_45ACP_1911
 			0.5, //10x_303
-			0.00, //Quiver
 			1, //WoodenArrow
 //medical
 			0.2, //ItemHeatPack
@@ -1139,6 +1098,7 @@ class CfgLoot {
 			"1Rnd_Smoke_M203",		
 			"200Rnd_556x45_M249",
 			"HandGrenade_west",
+			"PipeBomb",
 			"SmokeShell",
 			"SmokeShellPurple",
 			"SmokeShellBlue",
@@ -1202,6 +1162,7 @@ class CfgLoot {
 			0.01, //1Rnd_Smoke_M203
 			0.01, //200Rnd_556x45_M249
 			0.01, //HandGrenade_west
+			1, //PipeBomb
 			0.04, //SmokeShell
 			0.01, //SmokeShellPurple
 			0.01, //SmokeShellBlue
@@ -1415,13 +1376,10 @@ class CfgLoot {
 			"FoodCanRusUnlabeledEmpty",*/
 			"FoodCanTylersEmpty",
 			"FoodCanUnlabeledEmpty",
-			"FoodCandyAnders",
 //SMD Crafting Components + Community Mod Dev Team Junk Loot
 			"ItemBrick",
 			"ItemTrashCards",
-			"ItemFloppyWire",
 			"ItemNails",
-			"ItemScrapElectronics",
 //New Community Mod Dev Team Soda Cans Junk Loot
 			"ItemSodaClaysEmpty",
 			"ItemSodaCokeEmpty",
@@ -1445,44 +1403,39 @@ class CfgLoot {
 			0.2, //FoodCanCornEmpty
 			0.2, //FoodCanCurgonEmpty
 			0.2, //FoodCanDemonEmpty
-			0.2, //FoodCanDerpyEmpty
+			0.02, //FoodCanDerpyEmpty
 			0.2, //FoodCanFraggleosEmpty
 			0.2, //FoodCanGriffEmpty
-			0.2, //FoodCanHerpyEmpty
+			0.02, //FoodCanHerpyEmpty
 			0.2, //FoodCanOrlokEmpty
 			0.2, //FoodCanPowellEmpty
 			/*0.2, //FoodCanRusCornEmpty
 			0.2, //FoodCanRusMilkEmpty
 			0.2, //FoodCanRusPeasEmpty
 			0.2, //FoodCanRusPorkEmpty
-			0.2, //FoodCanRusStewEmpty
-			0.2, //FoodCanRusUnlabeledEmpty*/
-			0.2, //FoodCanTylersEmpty
-			0.2, //FoodCanUnlabeledEmpty
-			0.2, //FoodCandyAnders
-			0.2, //FoodCandyChubby
-			0.2, //FoodCandyLegacys
+			0.2, //FoodCanRusStewEmpty*/
+			0.9, //FoodCanRusUnlabeledEmpty
+			0.08, //FoodCanTylersEmpty
+			0.9, //FoodCanUnlabeledEmpty
 //SMD Crafting Components + Community Mod Dev Team Junk Loot
-			0.2, //ItemBrick
-			0.2, //ItemTrashCards
-			0.2, //ItemFloppyWire
-			0.2, //ItemNails
-			0.2, //ItemScrapElectronics
+			0.07, //ItemBrick
+			0.02, //ItemTrashCards
+			0.08, //ItemNails
 //New Community Mod Dev Team Soda Cans Junk Loot
 			0.2, //ItemSodaClaysEmpty
-			0.2, //ItemSodaCokeEmpty
-			0.2, //temSodaEmpty
-			0.2, //Empty
-			0.2, //ItemSodaMtngreenEmpty
+			0, //ItemSodaCokeEmpty
+			0, //ItemSodaEmpty
+			0.07, //ItemSodaMdewEmpty
+			0.02, //ItemSodaMtngreenEmpty
 			0.2, //ItemSodaPepsiEmpty
-			0.2, //ItemSodaR4z0rEmpty
+			0.01, //ItemSodaR4z0rEmpty
 //SMD Crafting Components + Community Mod Dev Team Junk Loot
-			0.2, //ItemTape
-			0.2, //ItemTrashRazor
-			0.2, //ItemTrashToiletpaper
+			0.1, //ItemTape
+			0.1, //ItemTrashRazor
+			0.1, //ItemTrashToiletpaper
 //OG Official Mod Trash
-			0.2, //TrashJackDaniels
-			0.2 //TrashTinCan
+			0.4, //TrashJackDaniels
+			0 //TrashTinCan
 		}
 	};
 };

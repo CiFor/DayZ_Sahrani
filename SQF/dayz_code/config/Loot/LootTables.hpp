@@ -1237,9 +1237,9 @@ class CfgBuildingLoot {
 			0, //DZ_Czech_Vest_Puch","object
 			0.4, //DZ_TK_Assault_Pack_EP1","object
 //class loot types
-			0.6, //"","AmmoUN
+			0.1, //"","AmmoUN
 			0.7, //"","AmmoNATO
-			0.1, //","clothing
+			0.01, //","clothing
 			0.5, //","foodSpecial
 			0.2, //","medical
 			0.8, //","military
@@ -1249,29 +1249,29 @@ class CfgBuildingLoot {
 			0.04, //Binocular","weapon
 			0.02, //Binocular_Vector","military
 //primary weapons
-			0.2, //AK_107_GL_kobra","weapon
-			0.6, //AK_107_kobra","weapon
-			0.2, //AK_47_M","weapon
-			0.1, //AK_47_S","weapon
-			0.6, //AK_74","weapon
-			0.1, //AK_74_GL","weapon
+			0.02, //AK_107_GL_kobra","weapon
+			0.06, //AK_107_kobra","weapon
+			0.02, //AK_47_M","weapon
+			0.01, //AK_47_S","weapon
+			0.06, //AK_74","weapon
+			0.01, //AK_74_GL","weapon
 			0.08, //AK_74_GL_kobra","weapon
-			0.4, //AKS_74","weapon
-			0.4, //AKS_74_kobra","weapon
-			0.1, //AKS_74_U","weapon
-			0.08, //AKS_74_UN_kobra","weapon
-			0.1, //bizon","weapon
-			0.6, //FN_FAL","weapon
-			0.2, //Sa58P_EP1","weapon
+			0.04, //AKS_74","weapon
+			0.04, //AKS_74_kobra","weapon
+			0.08, //AKS_74_U","weapon
+			0.06, //AKS_74_UN_kobra","weapon
+			0.04, //bizon","weapon
+			0.06, //FN_FAL","weapon
+			0.02, //Sa58P_EP1","weapon
 			0.08, //Sa58V_CCO_EP1","weapon
-			0.2, //Sa58V_EP1","weapon
+			0.02, //Sa58V_EP1","weapon
 			0.06, //SVD","weapon
 			0.03, //SVD_des_EP1","weapon
-			0.7, //vil_AK_101","weapon
-			0.3, //vil_AK_103","weapon
-			0.3, //vil_AK_105","weapon
-			0.2, //vil_AK_107","weapon
-			0.4, //vil_AK_74m","weapon
+			0.07, //vil_AK_101","weapon
+			0.03, //vil_AK_103","weapon
+			0.03, //vil_AK_105","weapon
+			0.02, //vil_AK_107","weapon
+			0.04, //vil_AK_74m","weapon
 			0.08, //vil_AK_74m_EOT","weapon
 			0.02, //vil_AK_74m_gp","weapon
 			0.02, //vil_AK_74m_k","weapon
@@ -1279,11 +1279,11 @@ class CfgBuildingLoot {
 			0.01, //vil_AK_74m_p29","weapon
 			0.02, //vil_AK_74P","weapon
 			0.01, //vil_ak12","weapon
-			0.3, //vil_fal","weapon
+			0.03, //vil_fal","weapon
 			0.01, //vil_fal_para","weapon
-			0.4, //vil_galil","weapon
-			0.1, //vil_galil_ARM","weapon
-			0.2, //vil_zastava_m84","weapon
+			0.04, //vil_galil","weapon
+			0.01, //vil_galil_ARM","weapon
+			0.02, //vil_zastava_m84","weapon
 //secondary weapons
 			0.7, //M9","weapon
 			0.4, //Makarov","weapon
@@ -1398,26 +1398,26 @@ class CfgBuildingLoot {
 			0.01, //DZ_TK_Assault_Pack_EP1","object
 //class loot types
 			0.4, //"","AmmoUN
-			0.4, //"","AmmoNATO
-			0.1, //","clothing
-			0.1, //","foodSpecial
-			0.1, //","medical
-			0.1, //","military
+			0.6, //"","AmmoNATO
+			0.01, //","clothing
+			0.3, //","foodSpecial
+			0.4, //","medical
+			0.4, //","military
 			0.6, //","militarySpecial
 			4, //","trash
 //headgear
 			0, //Binocular","weapon
 			0.02, //Binocular_Vector","military
 //primary weapons
-			0.04, //M24","weapon
-			0.04, //M24_des_EP1","weapon
-			0.04, //M40A3","weapon
-			0.04, //M79_DZ","weapon
-			0.1, //m8_carbine","weapon
-			0.1, //m8_carbine_pmc","weapon
+			0.01, //M24","weapon
+			0.01, //M24_des_EP1","weapon
+			0.01, //M40A3","weapon
+			0.01, //M79_DZ","weapon
+			0.06, //m8_carbine","weapon
+			0.06, //m8_carbine_pmc","weapon
 			0.04, //m8_carbineGL","weapon
-			0.1, //m8_compact","weapon
-			0.1, //m8_compact_pmc","weapon
+			0.08, //m8_compact","weapon
+			0.08, //m8_compact_pmc","weapon
 			0.01, //m8_holo_sd","weapon
 			0, //m8_SAW_DZ","weapon
 			0.01, //m8_sharpshooter","weapon
@@ -1426,24 +1426,24 @@ class CfgBuildingLoot {
 			0.01, //Mk_48_DES_DZ","weapon
 			0.01, //Mk_48_DZ","weapon
 			0.01, //Mk13_DZ","weapon
-			0.4, //MP5A5","weapon
-			0.08, //MP5SD","weapon
-			0.4, //SCAR_H_CQC_CCO","weapon
+			0.08, //MP5A5","weapon
+			0.02, //MP5SD","weapon
+			0.04, //SCAR_H_CQC_CCO","weapon
 			0.01, //SCAR_H_CQC_CCO_SD","weapon
 			0.01, //SCAR_H_LNG_Sniper","weapon
 			0.01, //SCAR_H_LNG_Sniper_SD","weapon
 			0.01, //SCAR_H_STD_EGLM_Spect","weapon
-			0.1, //SCAR_L_CQC","weapon
+			0.01, //SCAR_L_CQC","weapon
 			0.02, //SCAR_L_CQC_CCO_SD","weapon
 			0.08, //SCAR_L_CQC_EGLM_Holo","weapon
-			0.4, //SCAR_L_CQC_Holo","weapon
+			0.04, //SCAR_L_CQC_Holo","weapon
 			0.01, //SCAR_L_STD_EGLM_RCO","weapon
-			0.4, //SCAR_L_STD_HOLO","weapon
+			0.04, //SCAR_L_STD_HOLO","weapon
 			0.02, //SCAR_L_STD_Mk4CQT","weapon
 			0.01, //vil_AG3","weapon
 			0.01, //vil_AG3EOT","weapon
-			0.1, //vil_D_416","weapon
-			0.4, //vil_D_416de","weapon
+			0.01, //vil_D_416","weapon
+			0.04, //vil_D_416de","weapon
 			0.01, //vil_hk33","weapon
 			0.04, //vil_HK416_Aim","weapon
 			0.02, //vil_hk416_edr","weapon
@@ -1577,10 +1577,10 @@ class CfgBuildingLoot {
 			//toolbelt crafting books
 			0.05, //ItemCraftingBook","weapon
 			//toolbelt ONLY items
-			0.07, //ItemCompass","generic
-			0.07, //ItemKnife","generic
-			0.1, //ItemMap","weapon
-			0.4, //ItemMatchbox","generic
+			0.04, //ItemCompass","generic
+			0.04, //ItemKnife","generic
+			0.04, //ItemMap","weapon
+			0.04, //ItemMatchbox","generic
 			0.01, //ItemWatch","generic
 			//toolbelt Switchable weapons
 			0.03, //WeaponHolder_ItemHatchet","object
@@ -1690,10 +1690,10 @@ class CfgBuildingLoot {
 			0.02, //ItemCraftingBook
 			//toolbelt ONLY items
 			0.04, //ItemCompass
-			0.02, //ItemFlashlight
+			0.01, //ItemFlashlight
 			0.04, //ItemKnife
-			0.2, //ItemMap
-			0.4, //ItemMatchbox
+			0.02, //ItemMap
+			0.04, //ItemMatchbox
 			0.01 //ItemWatch
 		};
 	};
