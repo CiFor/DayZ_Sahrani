@@ -1,0 +1,121 @@
+class Land_dum_olezlina : House {
+		animated = true;
+		scope = protected;
+		armor = 500;
+		model = "\ca\buildings\dum_olezlina";
+		
+		class AnimationSources {
+			class Dvere1 {
+				animPeriod = 1;
+			};
+			
+			class Dvere2 : Dvere1 {
+				initPhase = 0;
+			};
+			
+			class Dvere3 : Dvere1 {};
+			
+			class Dvere4 : Dvere1 {};
+		};
+		
+		class DestructionEffects : DestructionEffects {
+			class Ruin1 {
+				simulation = "ruin";
+				type = "\ca\buildings\ruins\dum_olezlina_ruins.p3d";
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+		
+		class UserActions {
+			class OpenDoors1 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "osa_dvere1";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere1"" < 0.5";
+				statement = "this animate [""Dvere1"", 1]";
+			};
+			
+			class CloseDoors1 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "osa_dvere1";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere1"" >= 0.5";
+				statement = "this animate [""Dvere1"", 0]";
+			};
+			
+			class OpenDoors2 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "osa_dvere2";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere2"" < 0.5";
+				statement = "this animate [""Dvere2"", 1]";
+			};
+			
+			class CloseDoors2 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "osa_dvere2";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere2"" > 0.5";
+				statement = "this animate [""Dvere2"", 0]";
+			};
+			
+			class OpenDoors3 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "osa_dvere3";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere3"" < 0.5";
+				statement = "this animate [""Dvere3"", 1]";
+			};
+			
+			class CloseDoors3 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "osa_dvere3";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere3"" >= 0.5";
+				statement = "this animate [""Dvere3"", 0]";
+			};
+			
+			class OpenDoors4 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "osa_dvere4";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere4"" < 0.5";
+				statement = "this animate [""Dvere4"", 1]";
+			};
+			
+			class CloseDoors4 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "osa_dvere4";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere4"" >= 0.5";
+				statement = "this animate [""Dvere4"", 0]";
+			};
+		};
+		actionBegin1 = "OpenDoors1";
+		actionEnd1 = "OpenDoors1";
+		actionBegin2 = "OpenDoors2";
+		actionEnd2 = "OpenDoors2";
+		actionBegin3 = "OpenDoors3";
+		actionEnd3 = "OpenDoors3";
+		actionBegin4 = "OpenDoors4";
+		actionEnd4 = "OpenDoors4";
+	};
