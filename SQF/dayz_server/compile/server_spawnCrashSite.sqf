@@ -1,13 +1,7 @@
-//Animated Helicrashs for DayZ 1.7.6.1
-//Version 0.3
-//Release Date: 27. Juli 2013
-//Author: Grafzahl
-//Thread-URL: http://opendayz.net/threads/animated-helicrashs-0-1-release.9084/
+private["_lootBalance","_balancedLoot","_balancedLootMin","_playerCount","_maxPlayers","_sosDistance","_spawnOnStart","_maxHelis","_sendSOS","_heliSpawned","_useStatic","_crashDamage","_lootRadius","_preWaypoints","_preWaypointPos","_endTime","_startTime","_safetyPoint","_heliStart","_deadBody","_exploRange","_heliModel","_lootPos","_list","_craters","_dummy","_wp2","_wp3","_landingzone","_aigroup","_wp","_helipilot","_crash","_crashwreck","_smokerand","_staticcoords","_pos","_dir","_position","_num","_config","_itemType","_itemChance","_weights","_index","_iArray","_crashModel","_lootTable","_guaranteedLoot","_randomizedLoot","_frequency","_variance","_spawnChance","_spawnMarker","_spawnRadius","_spawnFire","_permanentFire","_crashName"];
 
-private["_sosDistance","_spawnOnStart","_maxHelis","_sendSOS","_heliSpawned","_useStatic","_crashDamage","_lootRadius","_preWaypoints","_preWaypointPos","_endTime","_startTime","_safetyPoint","_heliStart","_deadBody","_exploRange","_heliModel","_lootPos","_list","_craters","_dummy","_wp2","_wp3","_landingzone","_aigroup","_wp","_helipilot","_crash","_crashwreck","_smokerand","_staticcoords","_pos","_dir","_position","_num","_config","_itemType","_itemChance","_weights","_index","_iArray","_crashModel","_lootTable","_guaranteedLoot","_randomizedLoot","_frequency","_variance","_spawnChance","_spawnMarker","_spawnRadius","_spawnFire","_permanentFire","_crashName"];
-
-//_crashModel	= _this select 0;
-//_lootTable	= _this select 1;
+_spawnedHelis = 0;
+//_maxPlayers = getNumber (configFile >> "Header" >> "maxPlayers");
 _guaranteedLoot = _this select 0;
 _randomizedLoot = _this select 1;
 _frequency	= _this select 2;
@@ -25,10 +19,12 @@ if(count _this > 11) then { _crashDamage = _this select 11; } else { _crashDamag
 if(count _this > 12) then	{ _spawnOnStart = _this select 12; } else { _spawnOnStart = true; };
 if(count _this > 13) then { _maxHelis = _this select 13; } else { _maxHelis = 999; };
 if(count _this > 14) then { _sendSOS = _this select 14; } else { _sendSOS = 0; };
-if(count _this > 15) then { _sosDistance = _this select 14; } else { _sosDistance = 99999; };
-_spawnedHelis = 0;
+if(count _this > 15) then { _sosDistance = _this select 15; } else { _sosDistance = 99999; };
+if(count _this > 16) then { _balancedLoot = _this select 16; } else { _balancedLoot = false; };
+if(count _this > 17) then { _maxPlayers = _this select 17; } else { _maxPlayers = 40; };
+if(count _this > 18) then { _balancedLootMin = _this select 19; } else { _balancedLootMin = 1; };
 
-diag_log(format["CRASHSPAWNER: Starting spawn logic for animated helicrashs - written by Grafzahl [SC:%1||PW:%2||CD:%3]", str(_useStatic), str(_preWaypoints), _crashDamage]);
+diag_log(format["CRASHSPAWNER: Starting spawn logic for animated helicrashs - written by Grafzahl [SC:%1||PW:%2||CD:%3||MP:%4]", str(_useStatic), str(_preWaypoints), _crashDamage,_maxPlayers]);
 
 while {true} do {
 	private["_timeAdjust","_timeToSpawn","_spawnRoll","_crash","_hasAdjustment","_newHeight","_adjustedPos"];
@@ -123,7 +119,7 @@ while {true} do {
 
 		//Only a Woman could crash a Heli this way...
 		_aigroup = creategroup civilian;
-		_helipilot = _aigroup createUnit ["SurvivorW2_DZ",[0,0,0],[],0,"FORM"];
+		_helipilot = _aigroup createUnit ["SurvivorW2_DZ",[18192.828,3124.3936,0],[],0,"FORM"];
 
 		//Spawn the AI-Heli flying in the air
 		waituntil {alive _helipilot};
@@ -239,9 +235,20 @@ while {true} do {
 			publicVariable "dayzFire";
 			_crash setvariable ["fadeFire",_fadeFire,true];
 		};
-
-		_num		= round(random _randomizedLoot) + _guaranteedLoot;
 		
+		//Check if balanced Amount of Loot
+		if(_balancedLoot) then {
+			_playerCount = count playableUnits;
+			_lootBalance = _playerCount / _maxPlayers;
+			_num = round(random(_randomizedLoot * _lootBalance) + (_guaranteedLoot * _lootBalance));
+			if(_num < _balancedLootMin) then {
+				_num = _balancedLootMin;
+			};
+		} else {
+			_num		= round(random _randomizedLoot) + _guaranteedLoot;
+		};
+
+
 		_config = 		configFile >> "CfgBuildingLoot" >> "HeliCrash";
 		_itemType = [
 			["FN_FAL","weapon"],
