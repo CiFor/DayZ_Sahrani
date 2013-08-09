@@ -1,0 +1,49 @@
+class Land_garaz_mala : House {
+		animated = true;
+		scope = protected;
+		armor = 500;
+		model = "\ca\buildings\garaz_mala";
+		
+		class AnimationSources {
+			class Door {
+				animPeriod = 1;
+				initPhase = 0;
+				
+			};
+		};
+		
+		class DestructionEffects : DestructionEffects {
+			class Ruin1 {
+				simulation = "ruin";
+				type = "\ca\buildings\ruins\garaz_mala_ruins.p3d";
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+		
+		class UserActions {
+			class OpenDoors1 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "Door_Axis";
+				radius = 5;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door"" < 0.5";
+				statement = "this animate [""Door"", 1]";
+			};
+			
+			class CloseDoors1 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "Door_Axis";
+				radius = 5;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door"" >= 0.5";
+				statement = "this animate [""Door"", 0]";
+			};
+		};
+		actionBegin1 = "OpenDoors1";
+		actionEnd1 = "OpenDoors1";
+	};
