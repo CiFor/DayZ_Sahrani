@@ -23,7 +23,7 @@ class CfgBuildingLoot {
 	class Crash1: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_soldier_pilot"};
+		zombieClass[] = {"z_RACSzombie"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
@@ -142,7 +142,8 @@ class CfgBuildingLoot {
 			{"vil_Glock","weapon"},
 			{"vil_Glock_o","weapon"},
 			{"vil_USP","weapon"},
-			{"vil_USPSD","weapon"}
+			{"vil_USPSD","weapon"},
+			{"ItemRadio","magazine"}
 		};
 		itemChance[] =	{
 //backpacks
@@ -260,14 +261,15 @@ class CfgBuildingLoot {
 			0.07, //vil_Glock","weapon
 			0.08, //vil_Glock_o","weapon
 			0.06, //vil_USP","weapon
-			0.04 //vil_USPSD","weapon
+			0.04, //vil_USPSD","weapon
+			0.01 //ItemRadio","magazine
 		};
 	};
 //Crash1_No50s
 	class Crash1_No50s: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_soldier_pilot"};
+		zombieClass[] = {"z_RACSzombie"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
@@ -404,7 +406,8 @@ class CfgBuildingLoot {
 			{"vil_Glock","weapon"},
 			{"vil_Glock_o","weapon"},
 			{"vil_USP","weapon"},
-			{"vil_USPSD","weapon"}
+			{"vil_USPSD","weapon"},
+			{"ItemRadio","magazine"}
 		};
 		itemChance[] =	{
 //backpacks
@@ -549,14 +552,15 @@ class CfgBuildingLoot {
 			0.07, //vil_Glock","weapon
 			0.08, //vil_Glock_o","weapon
 			0.06, //vil_USP","weapon
-			0.04 //vil_USPSD","weapon
+			0.04, //vil_USPSD","weapon
+			0.01 //ItemRadio","magazine
 		};
 	};
 	/*Crash2Mi8 - Commented out until can be refined for specific loot
 	class Crash2Mi8: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_soldier_pilot"};
+		zombieClass[] = {"z_RACSzombie"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
@@ -736,7 +740,7 @@ class CfgBuildingLoot {
 	class Crash2_Mi8: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_soldier_pilot"};
+		zombieClass[] = {"z_RACSzombie"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
@@ -916,7 +920,7 @@ class CfgBuildingLoot {
 	class Crash3C130: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_soldier_pilot"};
+		zombieClass[] = {"z_RACSzombie"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
@@ -928,7 +932,7 @@ class CfgBuildingLoot {
 	class Crash3C130_UnArmed: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_soldier_pilot"};
+		zombieClass[] = {"z_RACSzombie"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
@@ -1158,7 +1162,7 @@ class CfgBuildingLoot {
 	class Military: Default {
 		zombieChance = 0.3;
 		maxRoaming = 6;
-		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman"};
+		zombieClass[] = {"z_RACSzombie","z_RACSzombie3","z_RACSzombie2","z_RACSzombie4"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
@@ -1299,7 +1303,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		minRoaming = 2;
 		maxRoaming = 6;
-		zombieClass[] = {"z_soldier_heavy"};
+		zombieClass[] = {"z_RACSzombie3"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
@@ -1385,7 +1389,8 @@ class CfgBuildingLoot {
 			{"vil_Glock","weapon"},
 			{"vil_Glock_o","weapon"},
 			{"vil_USP","weapon"},
-			{"vil_USPSD","weapon"}
+			{"vil_USPSD","weapon"},
+			{"ItemRadio","magazine"}
 		};
 		itemChance[] =	{
 //backpacks
@@ -1470,7 +1475,8 @@ class CfgBuildingLoot {
 			0.01, //vil_Glock","weapon
 			0.01, //vil_Glock_o","weapon
 			0.03, //vil_USP","weapon
-			0.04 //vil_USPSD","weapon
+			0.04, //vil_USPSD","weapon
+			0.01 //ItemRadio","magazine
 		};
 	};
 //Residential (and office)

@@ -1,7 +1,7 @@
 class Church: Residential {
 	minRoaming = 1;
 	maxRoaming = 3;
-	zombieClass[] = {"z_RACSzombie2","z_RACSzombie2","z_RACSzombie2"};
+	zombieClass[] = {"z_priest"};
 };
 
 class Land_army_hut_int : Military {
