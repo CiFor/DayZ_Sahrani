@@ -1,7 +1,7 @@
 class Church: Residential {
 	minRoaming = 1;
 	maxRoaming = 3;
-	zombieClass[] = {"z_priest","z_priest","z_priest"};
+	zombieClass[] = {"z_RACSzombie2","z_RACSzombie2","z_RACSzombie2"};
 };
 
 class Land_army_hut_int : Military {
@@ -464,7 +464,7 @@ class Land_A_MunicipalOffice: Residential {
 	zombieChance = 0.4;
 	minRoaming = 3;
 	maxRoaming = 9;
-	zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman"};
+	zombieClass[] = {"z_RACSzombie","z_RACSzombie3","z_RACSzombie4"};
 	lootChance = 1;
 	lootPos[] = {{-4.66113,-6.27173,-18.429},{3.31641,-5.77417,-18.429},{-0.20752,-6.48682,-18.429},{-9.72412,-4.88745,-3.78903},{-9.57813,3.55615,-3.78903},{-7.16797,11.0737,-3.78903},{5.07422,11.1838,-3.78903},{9.3208,5.38623,-3.78903},{9.65332,-4.82056,-3.78903},{3.23535,-0.105957,-0.169027},{4.85205,-3.69019,-0.169027},{-0.80127,-7.89087,-0.169027},{-4.4082,-4.91772,-0.169027},{-4.90771,-2.23169,-0.169027}};
 };
@@ -648,7 +648,7 @@ class MASH: Hospital {
 class MASH_EP1: MASH {};
 
 class UH1Wreck_DZ: Crash1 {
-	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
+	zombieClass[] = {"z_RACSzombie4","z_RACSzombie3"};
 	zombieChance = 0.3;
 	lootChance = 1;
 	minRoaming = 4;
@@ -657,7 +657,7 @@ class UH1Wreck_DZ: Crash1 {
 };
 
 class UH60Wreck_DZ: Crash1 {
-	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
+	zombieClass[] = {"z_RACSzombie4","z_RACSzombie3"};
 	zombieChance = 0.3;
 	lootChance = 1;
 	minRoaming = 4;
@@ -666,7 +666,7 @@ class UH60Wreck_DZ: Crash1 {
 };
 /*
 class Mi8Wreck_DZ: Crash2Mi8 {
-	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
+	zombieClass[] = {"z_RACSzombie4","z_RACSzombie3"};
 	zombieChance = 1;
 	lootChance = 0.4;
 	minRoaming = 4;
@@ -678,7 +678,7 @@ class Mi8Wreck_DZ: Crash2Mi8 {
 class USMC_WarfareBFieldhHospital: MASH {
 	minRoaming = 1;
 	maxRoaming = 3;
-	zombieClass[] = {"z_soldier","z_soldier_heavy"};
+	zombieClass[] = {"z_RACSzombie","z_RACSzombie3"};
 	lootPos[] = {{-3.52246,-5.03931,1.14726},{2.36621,-4.52295,1.14786},{1.39063,-0.423096,1.14746},{1.14258,5.00952,1.1478},{3.7124,1.89795,1.14788}};
 }; // Qty: 1
 
@@ -726,7 +726,7 @@ class Land_Misc_Cargo1D: HouseRoaming {}; // Qty: 29
 class Land_HouseV2_03: HouseRoaming {}; // Qty: 8
 class Land_Ind_Shed_01_end: HouseRoaming {}; // Qty: 266
 class Land_A_statue01: HouseRoaming {
-	zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2","z_soldier","z_soldier_heavy","z_policeman"};
+	zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2","z_RACSzombie","z_RACSzombie3","z_RACSzombie4"};
 	minRoaming = 2;
 	maxRoaming = 8;
 }; // Qty: 3
