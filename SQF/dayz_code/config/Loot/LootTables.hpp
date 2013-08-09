@@ -908,8 +908,8 @@ class CfgBuildingLoot {
 			0.02, //Sa61_EP1","weapon
 			0.01, //UZI_EP1","weapon
 			0.04, //UZI_SD_EP1","weapon
-			0.02, //vil_USP","weapon
-			0.07 //vil_USPSD","weapon
+			0.07, //vil_USP","weapon
+			0.02 //vil_USPSD","weapon
 		};
 	};	
 //Crash3C130

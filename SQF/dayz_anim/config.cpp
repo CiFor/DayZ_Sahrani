@@ -1918,7 +1918,7 @@ class CfgVehicles {
 	class An2_TK_EP1: Banned {};
 	class CH_47F_EP1: Banned {};
 	class Steerable_Parachute_EP1: Banned {};
-	class Mi17_UN_CDF_EP1: Banned {};
+	//class Mi17_UN_CDF_EP1: Banned {};
 	class Mi171Sh_rockets_CZ_EP1: Banned {};
 	class Mi171Sh_CZ_EP1: Banned {};
 	class Mi17_TK_EP1: Banned {};

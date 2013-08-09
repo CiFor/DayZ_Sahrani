@@ -264,7 +264,7 @@ class CfgLoot {
 			0.4, //ItemBandage
 			0.6, //ItemPainkiller
 //supplies
-			0.1, //ItemCards
+			0.1, //ItemTrashCards
 			0.1, //ItemFloppyWire
 			0.4, //ItemNails
 			0.01, //ItemScrapElectronics
@@ -436,93 +436,207 @@ class CfgLoot {
 	food[] = {
 		{//Food
 			"FoodCanBadguy",
+			"FoodCanBadguyDirty",
+			"FoodCanBadguyRusted",
 			"FoodCanBakedBeans",
 			"FoodCanBoneboy",
+			"FoodCanBoneboyDirty",
+			"FoodCanBoneboyRusted",
 			"FoodCanCorn",
+			"FoodCanCornDirty",
+			"FoodCanCornRusted",
 			"FoodCanCurgon",
+			"FoodCanCurgonDirty",
+			"FoodCanCurgonRusted",
 			"FoodCanDemon",
+			"FoodCanDemonDirty",
+			"FoodCanDemonRusted",
 			"FoodCanDerpy",
+			"FoodCanDerpyDirty",
+			"FoodCanDerpyRusted",
 			"FoodCandyAnders",
 			"FoodCandyLegacys",
 			"FoodCandyMintception",
 			"FoodCanFraggleos",
+			"FoodCanFraggleosDirty",
+			"FoodCanFraggleosRusted",
 			"FoodCanFrankBeans",
 			"FoodCanHerpy",
+			"FoodCanHerpyDirty",
+			"FoodCanHerpyRusted",
 			"FoodCanOrlok",
+			"FoodCanOrlokDirty",
+			"FoodCanOrlokRusted",
 			"FoodCanPasta",
 			"FoodCanPowell",
-			/*"FoodCanRusCorn",
+			"FoodCanPowellDirty",
+			"FoodCanPowellRusted",/*
+			"FoodCanRusCorn",
+			"FoodCanRusCornDirty",
+			"FoodCanRusCornRusted",
 			"FoodCanRusMilk",
+			"FoodCanRusMilkDirty",
+			"FoodCanRusMilkRusted",
 			"FoodCanRusPeas",
+			"FoodCanRusPeasDirty",
+			"FoodCanRusPeasRusted",
 			"FoodCanRusPork",
-			"FoodCanRusStew",*/
+			"FoodCanRusPorkDirty",
+			"FoodCanRusPorkRusted",
+			"FoodCanRusStew",
+			"FoodCanRusStewDirty",
+			"FoodCanRusStewRusted",
 			"FoodCanRusUnlabeled",
+			"FoodCanRusUnlabeledDirty",
+			"FoodCanRusUnlabeledRusted",*/
 			"FoodCanSardines",
 			"FoodCanTylers",
+			"FoodCanTylersDirty",
+			"FoodCanTylersRusted",
 			"FoodCanUnlabeled",
+			"FoodCanUnlabeledDirty",
+			"FoodCanUnlabeledRusted",
 			"FoodChipsChocolate",
 			"FoodChipsMysticales",
 			"FoodChipsSulahoops",
 			"FoodNutmix",
 			"FoodPistachio",
+			"FoodTwinkie",
+			"FoodTwinkieDirty",
 			"ItemSodaClays",
+			"ItemSodaClaysDirty",
+			"ItemSodaClaysRusted",
 			"ItemSodaCoke",
 			"ItemSodaDrwaste",
+			"ItemSodaDrwasteDirty",
+			"ItemSodaDrwasteRusted",
 			"ItemSodaLemonade",
+			"ItemSodaLemonadeDirty",
+			"ItemSodaLemonadeRusted",
 			"ItemSodaLvg",
+			"ItemSodaLvgDirty",
+			"ItemSodaLvgRusted",
 			"ItemSodaMdew",
 			"ItemSodaMtngreen",
+			"ItemSodaMtngreenDirty",
+			"ItemSodaMtngreenRusted",
 			"ItemSodaMzly",
+			"ItemSodaMzlyDirty",
+			"ItemSodaMzlyRusted",
 			"ItemSodaPepsi",
+			"ItemSodaPepsiDirty",
+			"ItemSodaPepsiRusted",
 			"ItemSodaR4z0r",
+			"ItemSodaR4z0rDirty",
+			"ItemSodaR4z0rRusted",
 			"ItemSodaRabbit",
-			//"ItemSodaRocket",
-			"ItemSodaSmasht"
+			"ItemSodaRabbitDirty",
+			"ItemSodaRabbitRusted",
+			"ItemSodaSmasht",
+			"ItemSodaSmashtDirty",
+			"ItemSodaSmashtRusted"
 		},
 		{//Food Spawn Chances
-			0.1, //FoodCanBadguy
-			1, //FoodCanBakedBeans
-			0.1, //FoodCanBoneboy
-			0.7, //FoodCanCorn
-			0.4, //FoodCanCurgon
-			0.4, //FoodCanDemon
-			0.04, //FoodCanDerpy
-			0.04, //FoodCandyAnders
-			0.04, //FoodCandyLegacys
-			0.04, //FoodCandyMintception
-			0.4, //FoodCanFraggleos
-			0.8, //FoodCanFrankBeans
-			0.04, //FoodCanHerpy
-			0.1, //FoodCanOrlok
-			0.6, //FoodCanPasta
-			0.2, //FoodCanPowell
-			/*1, //FoodCanRusCorn
-			1, //FoodCanRusMilk
-			1, //FoodCanRusPeas
-			1, //FoodCanRusPork
-			1, //FoodCanRusStew*/
-			1, //FoodCanRusUnlabeled
-			0.7, //FoodCanSardines
-			0.4, //FoodCanTylers
-			0.9, //FoodCanUnlabeled
-			0.07, //FoodChipsChocolate
-			0.4, //FoodChipsMysticales
-			0.1, //FoodChipsSulahoops
-			0.1, //FoodNutmix
-			0.1, //FoodPistachio
-			0.4, //ItemSodaClays
-			0.9, //ItemSodaCoke
-			0.4, //ItemSodaDrwaste
-			0.4, //ItemSodaLemonade
-			0.4, //ItemSodaLvg
+			0.01, //FoodCanBadguy
+			0, //FoodCanBadguyDirty
+			0, //FoodCanBadguyRusted
+			0.01, //FoodCanBakedBeans
+			0.01, //FoodCanBoneboy
+			0, //FoodCanBoneboyDirty
+			0, //FoodCanBoneboyRusted
+			0.01, //FoodCanCorn
+			0, //FoodCanCornDirty
+			0, //FoodCanCornRusted
+			0.01, //FoodCanCurgon
+			0, //FoodCanCurgonDirty
+			0, //FoodCanCurgonRusted
+			0.01, //FoodCanDemon
+			0, //FoodCanDemonDirty
+			0, //FoodCanDemonRusted
+			0.01, //FoodCanDerpy
+			0, //FoodCanDerpyDirty
+			0, //FoodCanDerpyRusted
+			0.01, //FoodCandyAnders
+			0.01, //FoodCandyLegacys
+			0.01, //FoodCandyMintception
+			0.01, //FoodCanFraggleos
+			0, //FoodCanFraggleosDirty
+			0, //FoodCanFraggleosRusted
+			0.01, //FoodCanFrankBeans
+			0.01, //FoodCanHerpy
+			0, //FoodCanHerpyDirty
+			0, //FoodCanHerpyRusted
+			0.01, //FoodCanOrlok
+			0, //FoodCanOrlokDirty
+			0, //FoodCanOrlokRusted
+			0.01, //FoodCanPasta
+			0.01, //FoodCanPowell
+			0, //FoodCanPowellDirty
+			0, //FoodCanPowellRusted
+			/*0.01, //FoodCanRusCorn
+			0, //FoodCanRusCornDirty
+			0, //FoodCanRusCornRusted
+			0.01, //FoodCanRusMilk
+			0, //FoodCanRusMilkDirty
+			0, //FoodCanRusMilkRusted
+			0.01, //FoodCanRusPeas
+			0, //FoodCanRusPeasDirty
+			0, //FoodCanRusPeasRusted
+			0.01, //FoodCanRusPork
+			0, //FoodCanRusPorkDirty
+			0, //FoodCanRusPorkRusted
+			0.01, //FoodCanRusStew
+			0, //FoodCanRusStewDirty
+			0, //FoodCanRusStewRusted
+			0.01, //FoodCanRusUnlabeled
+			0, //FoodCanRusUnlabeledDirty
+			0, //FoodCanRusUnlabeledRusted*/
+			0.01, //FoodCanSardines
+			0.01, //FoodCanTylers
+			0, //FoodCanTylersDirty
+			0, //FoodCanTylersRusted
+			0.01, //FoodCanUnlabeled
+			0, //FoodCanUnlabeledDirty
+			0, //FoodCanUnlabeledRusted
+			0.01, //FoodChipsChocolate
+			0.01, //FoodChipsMysticales
+			0.01, //FoodChipsSulahoops
+			0.01, //FoodNutmix
+			0.01, //FoodPistachio
+			0.01, //FoodTwinkie
+			0, //FoodTwinkieDirty
+			0.01, //ItemSodaClays
+			0, //ItemSodaClaysDirty
+			0, //ItemSodaClaysRusted
+			0.01, //ItemSodaCoke
+			0.01, //ItemSodaDrwaste
+			0, //ItemSodaDrwasteDirty
+			0, //ItemSodaDrwasteRusted
+			0.01, //ItemSodaLemonade
+			0, //ItemSodaLemonadeDirty
+			0, //ItemSodaLemonadeRusted
+			0.01, //ItemSodaLvg
+			0, //ItemSodaLvgDirty
+			0, //ItemSodaLvgRusted
 			0.01, //ItemSodaMdew
 			0.01, //ItemSodaMtngreen
-			0.4, //ItemSodaMzly
-			0.8, //ItemSodaPepsi
-			0.1, //ItemSodaR4z0r
-			0.4, //ItemSodaRabbit
-			//1, //ItemSodaRocket
-			0.4//ItemSodaSmasht
+			0, //ItemSodaMtngreenDirty
+			0, //ItemSodaMtngreenRusted
+			0.01, //ItemSodaMzly
+			0, //ItemSodaMzlyDirty
+			0, //ItemSodaMzlyRusted
+			0.01, //ItemSodaPepsi
+			0, //ItemSodaPepsiDirty
+			0, //ItemSodaPepsiRusted
+			0.01, //ItemSodaR4z0r
+			0, //ItemSodaR4z0rDirty
+			0, //ItemSodaR4z0rRusted
+			0.01, //ItemSodaRabbit
+			0, //ItemSodaRabbitDirty
+			0, //ItemSodaRabbitRusted
+			0.01, //ItemSodaSmasht
+			0, //ItemSodaSmashtDirty
+			0//ItemSodaSmashtRusted
 		}
 	};
 	foodSpecial[] = {
@@ -1143,45 +1257,44 @@ class CfgLoot {
 			0.04, //ItemWaterbottleUnfilled
 //ammo
 			0.01, //20Rnd_556x45_Stanag
-			0.04, //30Rnd_556x45_G36
+			0.4, //30Rnd_556x45_G36
 			0.01, //20Rnd_762x51_DMR
-			0.04, //20Rnd_762x51_FNFAL
-			0.04, //20Rnd_762x51_B_SCAR",
+			0.4, //20Rnd_762x51_FNFAL
+			0.4, //20Rnd_762x51_B_SCAR",
 			0.01, //20Rnd_762x51_SB_SCAR",
-			0.05, //17Rnd_9x19_glock17
+			0.5, //17Rnd_9x19_glock17
 			0.01, //15Rnd_9x19_M9SD
-			0.02, //15Rnd_9x19_M9
+			0.2, //15Rnd_9x19_M9
 			0.04, //30Rnd_762x39_AK47
-			0.04, //30Rnd_545x39_AK
-			0.01, //5Rnd_762x51_M24
+			0.4, //30Rnd_545x39_AK
+			0.7, //5Rnd_762x51_M24
 			0.01, //10Rnd_127x99_m107
 			//0.04, //8Rnd_B_Beneli_74Slug
 			0.01, //1Rnd_HE_M203
-			0.01, //FlareWhite_M203
-			0.01, //FlareGreen_M203
-			0.01, //1Rnd_Smoke_M203
+			0.03, //FlareWhite_M203
+			0.03, //FlareGreen_M203
+			0.03, //1Rnd_Smoke_M203
 			0.01, //200Rnd_556x45_M249
 			0.01, //HandGrenade_west
-			1, //PipeBomb
-			0.04, //SmokeShell
-			0.01, //SmokeShellPurple
-			0.01, //SmokeShellBlue
-			0.01, //SmokeShellOrange
-			0.02, //SmokeShellRed
-			0.02, //SmokeShellGreen
+			0.01, //PipeBomb
+			0.08, //SmokeShell
+			0.04, //SmokeShellPurple
+			0.04, //SmokeShellBlue
+			0.04, //SmokeShellOrange
+			0.08, //SmokeShellRed
+			0.08, //SmokeShellGreen
 			//0.04, //8Rnd_B_Beneli_Pellets
 			0.01, //30Rnd_556x45_G36SD
-			0.02, //30Rnd_9x19_MP5
+			0.06, //30Rnd_9x19_MP5
 			0.01, //30Rnd_9x19_MP5SD
 			0.01, //100Rnd_762x51_M240
-			0.04, //10Rnd_9x39_SP5_VSS
+			0.08, //10Rnd_9x39_SP5_VSS
 			0.01, //20Rnd_9x39_SP5_VSS
 			//0.02, //8Rnd_B_Saiga12_74Slug
 			0.01, //5Rnd_127x108_KSVK
 			0.01, //5Rnd_86x70_L115A1
-			0.02, //10Rnd_B_765x17_Ball
-			0.02, //20Rnd_B_765x17_Ball
-			0.01, //20Rnd_762x51_B_SCAR
+			0.09, //10Rnd_B_765x17_Ball
+			0.04, //20Rnd_B_765x17_Ball
 			0.01, //75Rnd_545x39_RPK
 //medical
 			0.04, //ItemBandage
@@ -1269,51 +1382,51 @@ class CfgLoot {
 			0.01, //ItemWaterbottle
 			0.01, //ItemWaterbottleUnfilled
 //food
-			0.01, //FoodMRE
+			0.04, //FoodMRE
 //ammo
-			0.04, //20Rnd_556x45_Stanag
-			0.04, //30Rnd_556x45_G36
-			0.04, //20Rnd_762x51_DMR
-			0.05, //17Rnd_9x19_glock17
+			0.08, //20Rnd_556x45_Stanag
+			0.4, //30Rnd_556x45_G36
+			0.01, //20Rnd_762x51_DMR
+			0.5, //17Rnd_9x19_glock17
 			0.01, //15Rnd_9x19_M9SD
-			0.02, //15Rnd_9x19_M9
-			0.04, //30Rnd_762x39_AK47
-			0.04, //30Rnd_545x39_AK
-			0.01, //5Rnd_762x51_M24
+			0.2, //15Rnd_9x19_M9
+			0.4, //30Rnd_762x39_AK47
+			0.4, //30Rnd_545x39_AK
+			0.1, //5Rnd_762x51_M24
 			0.01, //10Rnd_127x99_m107
 			//0.04, //8Rnd_B_Beneli_74Slug
 			0.01, //1Rnd_HE_M203
-			0.01, //FlareWhite_M203
-			0.01, //FlareGreen_M203
-			0.01, //1Rnd_Smoke_M203
+			0.1, //FlareWhite_M203
+			0.1, //FlareGreen_M203
+			0.1, //1Rnd_Smoke_M203
 			0.01, //200Rnd_556x45_M249
 			0.01, //HandGrenade_west
-			0.04, //SmokeShell
-			0.02, //SmokeShellRed
-			0.02, //SmokeShellGreen
+			0.4, //SmokeShell
+			0.2, //SmokeShellRed
+			0.2, //SmokeShellGreen
 			//0.04, //8Rnd_B_Beneli_Pellets
 			0.01, //30Rnd_556x45_G36SD
-			0.02, //30Rnd_9x19_MP5
+			0.2, //30Rnd_9x19_MP5
 			0.01, //30Rnd_9x19_MP5SD
 			0.01, //100Rnd_762x51_M240
-			0.04, //10Rnd_9x39_SP5_VSS
-			0.01, //20Rnd_9x39_SP5_VSS
+			0.4, //10Rnd_9x39_SP5_VSS
+			0.1, //20Rnd_9x39_SP5_VSS
 			//0.02, //8Rnd_B_Saiga12_74Slug
 			0.01, //5Rnd_127x108_KSVK
 			0.01, //5Rnd_86x70_L115A1
-			0.02, //10Rnd_B_765x17_Ball
+			0.2, //10Rnd_B_765x17_Ball
 			0.02, //20Rnd_B_765x17_Ball
-			0.01, //20Rnd_762x51_B_SCAR
+			0.1, //20Rnd_762x51_B_SCAR
 			0.01, //75Rnd_545x39_RPK
 //medical
-			0.04, //ItemBandage
+			0.4, //ItemBandage
 			0.04, //ItemAntibiotic
-			0.04, //ItemPainkiller
-			0.01, //ItemMorphine
-			0.04, //ItemHeatPack
+			0.1, //ItemPainkiller
+			0.08, //ItemMorphine
+			0.01, //ItemHeatPack
 //supplies
 			0.08, //ItemNails
-			0.04, //ItemScrapElectronics
+			0.01, //ItemScrapElectronics
 			0.03, //ItemTape
 			0.04, //ItemSandbag
 			0.04, //ItemWire
@@ -1356,86 +1469,157 @@ class CfgLoot {
 	};
 	trash[] = {
 		{
-//New Community Mod Dev Team Junk Loot
 			"FoodCanBadguyEmpty",
+			"FoodCanBadguyEmptyDirty",
+			"FoodCanBadguyEmptyRusted",
 			"FoodCanBoneboyEmpty",
+			"FoodCanBoneboyEmptyDirty",
+			"FoodCanBoneboyEmptyRusted",
 			"FoodCanCornEmpty",
+			"FoodCanCornEmptyDirty",
+			"FoodCanCornEmptyRusted",
 			"FoodCanCurgonEmpty",
+			"FoodCanCurgonEmptyDirty",
+			"FoodCanCurgonEmptyRusted",
 			"FoodCanDemonEmpty",
-			"FoodCanDerpyEmpty",
+			"FoodCanDemonEmptyDirty",
+			"FoodCanDemonEmptyRusted",
 			"FoodCanFraggleosEmpty",
+			"FoodCanFraggleosEmptyDirty",
+			"FoodCanFraggleosEmptyRusted",
 			"FoodCanGriffEmpty",
+			"FoodCanGriffEmptyDirty",
+			"FoodCanGriffEmptyRusted",
 			"FoodCanHerpyEmpty",
+			"FoodCanHerpyEmptyDirty",
+			"FoodCanHerpyEmptyRusted",
 			"FoodCanOrlokEmpty",
+			"FoodCanOrlokEmptyDirty",
+			"FoodCanOrlokEmptyRusted",
 			"FoodCanPowellEmpty",
-			/*"FoodCanRusCornEmpty",
+			"FoodCanPowellEmptyDirty",
+			"FoodCanPowellEmptyRusted",/*
+			"FoodCanRusCornEmpty",
+			"FoodCanRusCornEmptyDirty",
+			"FoodCanRusCornEmptyRusted",
 			"FoodCanRusMilkEmpty",
+			"FoodCanRusMilkEmptyDirty",
+			"FoodCanRusMilkEmptyRusted",
 			"FoodCanRusPeasEmpty",
+			"FoodCanRusPeasEmptyDirty",
+			"FoodCanRusPeasEmptyRusted",
 			"FoodCanRusPorkEmpty",
+			"FoodCanRusPorkEmptyDirty",
+			"FoodCanRusPorkEmptyRusted",
 			"FoodCanRusStewEmpty",
-			"FoodCanRusUnlabeledEmpty",*/
+			"FoodCanRusStewEmptyDirty",
+			"FoodCanRusStewEmptyRusted",
+			"FoodCanRusUnlabeledEmpty",
+			"FoodCanRusUnlabeledEmptyDirty",
+			"FoodCanRusUnlabeledEmptyRusted",*/
 			"FoodCanTylersEmpty",
+			"FoodCanTylersEmptyDirty",
+			"FoodCanTylersEmptyRusted",
 			"FoodCanUnlabeledEmpty",
-//SMD Crafting Components + Community Mod Dev Team Junk Loot
+			"FoodCanUnlabeledEmptyDirty",
+			"FoodCanUnlabeledEmptyRusted",
 			"ItemBrick",
 			"ItemTrashCards",
 			"ItemNails",
-//New Community Mod Dev Team Soda Cans Junk Loot
 			"ItemSodaClaysEmpty",
-			"ItemSodaCokeEmpty",
-			"ItemSodaEmpty",
-			"ItemSodaMdewEmpty",
+			"ItemSodaClaysEmptyDirty",
+			"ItemSodaClaysEmptyRusted",
 			"ItemSodaMtngreenEmpty",
+			"ItemSodaMtngreenEmptyDirty",
+			"ItemSodaMtngreenEmptyRusted",
 			"ItemSodaPepsiEmpty",
+			"ItemSodaPepsiEmptyDirty",
+			"ItemSodaPepsiEmptyRusted",
 			"ItemSodaR4z0rEmpty",
-//SMD Crafting Components + Community Mod Dev Team Junk Loot
+			"ItemSodaR4z0rEmptyDirty",
+			"ItemSodaR4z0rEmptyRusted",
 			"ItemTape",
 			"ItemTrashRazor",
 			"ItemTrashToiletpaper",
-//OG Official Mod Trash
 			"TrashJackDaniels",
 			"TrashTinCan"
 		},
 		{
-//New Community Mod Dev Team Junk Loot
-			0.2, //FoodCanBadguyEmpty
-			0.2, //FoodCanBoneboyEmpty
-			0.2, //FoodCanCornEmpty
-			0.2, //FoodCanCurgonEmpty
-			0.2, //FoodCanDemonEmpty
-			0.02, //FoodCanDerpyEmpty
-			0.2, //FoodCanFraggleosEmpty
-			0.2, //FoodCanGriffEmpty
-			0.02, //FoodCanHerpyEmpty
-			0.2, //FoodCanOrlokEmpty
-			0.2, //FoodCanPowellEmpty
-			/*0.2, //FoodCanRusCornEmpty
-			0.2, //FoodCanRusMilkEmpty
-			0.2, //FoodCanRusPeasEmpty
-			0.2, //FoodCanRusPorkEmpty
-			0.2, //FoodCanRusStewEmpty*/
-			0.9, //FoodCanRusUnlabeledEmpty
-			0.08, //FoodCanTylersEmpty
-			0.9, //FoodCanUnlabeledEmpty
-//SMD Crafting Components + Community Mod Dev Team Junk Loot
-			0.07, //ItemBrick
-			0.02, //ItemTrashCards
-			0.08, //ItemNails
-//New Community Mod Dev Team Soda Cans Junk Loot
-			0.2, //ItemSodaClaysEmpty
-			0, //ItemSodaCokeEmpty
-			0, //ItemSodaEmpty
-			0.07, //ItemSodaMdewEmpty
-			0.02, //ItemSodaMtngreenEmpty
-			0.2, //ItemSodaPepsiEmpty
+			0.01, //FoodCanBadguyEmpty
+			0, //FoodCanBadguyEmptyDirty
+			0, //FoodCanBadguyEmptyRusted
+			0.01, //FoodCanBoneboyEmpty
+			0, //FoodCanBoneboyEmptyDirty
+			0, //FoodCanBoneboyEmptyRusted
+			0.01, //FoodCanCornEmpty
+			0, //FoodCanCornEmptyDirty
+			0, //FoodCanCornEmptyRusted
+			0.01, //FoodCanCurgonEmpty
+			0, //FoodCanCurgonEmptyDirty
+			0, //FoodCanCurgonEmptyRusted
+			0.01, //FoodCanDemonEmpty
+			0, //FoodCanDemonEmptyDirty
+			0, //FoodCanDemonEmptyRusted
+			0.01, //FoodCanFraggleosEmpty
+			0, //FoodCanFraggleosEmptyDirty
+			0, //FoodCanFraggleosEmptyRusted
+			0.01, //FoodCanGriffEmpty
+			0, //FoodCanGriffEmptyDirty
+			0, //FoodCanGriffEmptyRusted
+			0.01, //FoodCanHerpyEmpty
+			0, //FoodCanHerpyEmptyDirty
+			0, //FoodCanHerpyEmptyRusted
+			0.01, //FoodCanOrlokEmpty
+			0, //FoodCanOrlokEmptyDirty
+			0, //FoodCanOrlokEmptyRusted
+			0.01, //FoodCanPowellEmpty
+			0, //FoodCanPowellEmptyDirty
+			0, //FoodCanPowellEmptyRusted
+			/*0.01, //FoodCanRusCornEmpty
+			0, //FoodCanRusCornEmptyDirty
+			0, //FoodCanRusCornEmptyRusted
+			0.01, //FoodCanRusMilkEmpty
+			0, //FoodCanRusMilkEmptyDirty
+			0, //FoodCanRusMilkEmptyRusted
+			0.01, //FoodCanRusPeasEmpty
+			0, //FoodCanRusPeasEmptyDirty
+			0, //FoodCanRusPeasEmptyRusted
+			0.01, //FoodCanRusPorkEmpty
+			0, //FoodCanRusPorkEmptyDirty
+			0, //FoodCanRusPorkEmptyRusted
+			0.01, //FoodCanRusStewEmpty
+			0, //FoodCanRusStewEmptyDirty
+			0, //FoodCanRusStewEmptyRusted
+			0.01, //FoodCanRusUnlabeledEmpty
+			0, //FoodCanRusUnlabeledEmptyDirty
+			0, //FoodCanRusUnlabeledEmptyRusted*/
+			0.01, //FoodCanTylersEmpty
+			0, //FoodCanTylersEmptyDirty
+			0, //FoodCanTylersEmptyRusted
+			0.01, //FoodCanUnlabeledEmpty
+			0, //FoodCanUnlabeledEmptyDirty
+			0, //FoodCanUnlabeledEmptyRusted
+			0.01, //ItemBrick
+			0.01, //ItemTrashCards
+			0.01, //ItemNails
+			0.01, //ItemSodaClaysEmpty
+			0, //ItemSodaClaysEmptyDirty
+			0, //ItemSodaClaysEmptyRusted
+			0.01, //ItemSodaMtngreenEmpty
+			0, //ItemSodaMtngreenEmptyDirty
+			0, //ItemSodaMtngreenEmptyRusted
+			0.01, //ItemSodaPepsiEmpty
+			0, //ItemSodaPepsiEmptyDirty
+			0, //ItemSodaPepsiEmptyRusted
 			0.01, //ItemSodaR4z0rEmpty
-//SMD Crafting Components + Community Mod Dev Team Junk Loot
-			0.1, //ItemTape
-			0.1, //ItemTrashRazor
-			0.1, //ItemTrashToiletpaper
-//OG Official Mod Trash
-			0.4, //TrashJackDaniels
-			0 //TrashTinCan
+			0, //ItemSodaR4z0rEmptyDirty
+			0, //ItemSodaR4z0rEmptyRusted
+			0.01, //ItemTape
+			0.01, //ItemTrashRazor
+			0.01, //ItemTrashToiletpaper
+			0.01, //TrashJackDaniels
+			0.01//TrashTinCan
+
 		}
 	};
 };

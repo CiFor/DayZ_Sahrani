@@ -153,6 +153,137 @@ class CfgVehicles {
 		};
 	};
 	
+	class Land_benzina_schnell: Strategic
+	{
+		icon="\smd_sahrani_artif_obj\buildings\icons\i_fuel_ca.paa";
+		scope = 1;
+		animated = true;
+		armor=400;
+		model = "\smd_sahrani_artif_obj\buildings\benzina_schnell_open.p3d";
+		displayName="Fuel Station";
+		nameSound="building";
+		accuracy=0.50;
+		transportFuel = 50000;
+		cost=0;
+		mapSize = 7.5;
+		vehicleClass = "benzina_schnell";
+		destrType = "DestructBuilding";
+	class DestructionEffects
+  {
+   class FuelStationExp
+   {
+    simulation = "particles";
+    type = "FuelStationExp";
+    position = "";
+    intensity = 0.15;
+    interval = 1;
+    lifeTime = 0.001;
+   };
+   class FuelStationSmk1
+   {
+    simulation = "particles";
+    type = "FuelStationSmk1";
+    position = "";
+    intensity = 0.15;
+    interval = 1;
+    lifeTime = 0.001;
+   };
+   class Light1
+   {
+    simulation = "light";
+    type = "ObjectDestructionLight";
+    position = "DestructionFire";
+    intensity = 0.001;
+    interval = 1;
+    lifeTime = 0.5;
+   };
+   class FuelFire1
+   {
+    simulation = "particles";
+    type = "FuelFire1";
+    position = "DestructionFire";
+    intensity = 0.15;
+    interval = 1;
+    lifeTime = 0.5;
+   };
+   class FuelSmoke1
+   {
+    simulation = "particles";
+    type = "FuelSmoke1";
+    position = "DestructionFire";
+    intensity = 0.15;
+    interval = 1;
+    lifeTime = 0.5;
+   };
+   class FuelSmoke2
+   {
+    simulation = "particles";
+    type = "FuelSmoke2";
+    position = "DestructionFire";
+    intensity = 0.15;
+    interval = 1;
+    lifeTime = 0.5;
+   };
+   class Ruin1
+   {
+    simulation = "ruin";
+    type = "\smd_sahrani_artif_obj\buildings\ruins\benzina_schnell_open_ruins";
+    position = "";
+    intensity = 1;
+    interval = 1;
+    lifeTime = 1;
+   };
+  };
+
+		class AnimationSources
+		{
+			class DoorF {
+				   	source = "user";
+					animPeriod = 1;
+					initPhase = 0;
+						     };
+			class Door2F {
+				   	source = "user";
+					animPeriod = 3;
+					initPhase = 0;
+						     };
+		};
+		class UserActions
+		{
+			class OpenDoor
+			{
+				displayName = "Open Door";
+				position = "Door_Button";
+				radius = 3;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""DoorF"" < 0.5";
+				statement = "this animate [""DoorF"", 1]";
+			};
+			class CloseDoor: OpenDoor
+			{
+				displayName = "Close Door";
+				condition = "this animationPhase ""DoorF"" >= 0.5";
+				statement = "this animate [""DoorF"", 0]";
+			};
+			class OpenDoor2
+			{
+				displayName = "Open Garage Door";
+				position = "Door2_Button";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door2F"" < 0.5";
+				statement = "this animate [""Door2F"", 1]";
+			};
+			class CloseDoor2: OpenDoor2
+			{
+				displayName = "Close Garage Door";
+				condition = "this animationPhase ""Door2F"" >= 0.5";
+				statement = "this animate [""Door2F"", 0]";
+			};
+		};
+		
+	}
+	
 	class Land_AFbarabizna_ruins : Ruins {
 		scope = protected;
 		vehicleClass = "Ruins";
@@ -385,6 +516,128 @@ class CfgVehicles {
 		scope = protected;
 		vehicleClass = "Ruins";
 		model = "\ca\buildings\Ruins\hospital_ruins";
+	};
+	
+	class Land_house_y : House {
+		animated = true;
+		scope = protected;
+		armor = 500;
+		model = "\ca\buildings\house_y";
+		
+		class AnimationSources {
+			class Door1 {
+				animPeriod = 1;
+			};
+			
+			class Door2 : Door1 {
+				initPhase = 0;
+			};
+			
+			class Door3 : Door1 {};
+			
+			class Door4 : Door1 {};
+		};
+		
+		class DestructionEffects : DestructionEffects {
+			class Ruin1 {
+				simulation = "ruin";
+				type = "\ca\buildings\ruins\house_y_ruins.p3d";
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+		
+		class UserActions {
+			class OpenDoors1 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "Door1_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door1"" < 0.5";
+				statement = "this animate [""Door1"", 1]";
+			};
+			
+			class CloseDoors1 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "Door1_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door1"" >= 0.5";
+				statement = "this animate [""Door1"", 0]";
+			};
+			
+			class OpenDoors2 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "Door2_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door2"" <= 0.5";
+				statement = "this animate [""Door2"", 1]";
+			};
+			
+			class CloseDoors2 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "Door2_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door2"" > 0.5";
+				statement = "this animate [""Door2"", 0]";
+			};
+			
+			class OpenDoors3 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "Door3_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door3"" < 0.5";
+				statement = "this animate [""Door3"", 1]";
+			};
+			
+			class CloseDoors3 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "Door3_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door3"" >= 0.5";
+				statement = "this animate [""Door3"", 0]";
+			};
+			
+			class OpenDoors4 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "Door4_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door4"" < 0.5";
+				statement = "this animate [""Door4"", 1]";
+			};
+			
+			class CloseDoors4 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "Door4_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door4"" >= 0.5";
+				statement = "this animate [""Door4"", 0]";
+			};
+		};
+		actionBegin1 = "OpenDoors1";
+		actionEnd1 = "OpenDoors1";
+		actionBegin2 = "OpenDoors2";
+		actionEnd2 = "OpenDoors2";
+		actionBegin3 = "OpenDoors3";
+		actionEnd3 = "OpenDoors3";
+		actionBegin4 = "OpenDoors4";
+		actionEnd4 = "OpenDoors4";
 	};
 	
 	class Land_Hruzdum_ruins : Ruins {
@@ -1377,10 +1630,25 @@ class CfgVehicles {
 		};
 	};
 	
-	class Land_dum_olezlina : House {
+class Land_dum_olezlina : House {
+		animated = true;
 		scope = protected;
-		model = "\ca\buildings\dum_olezlina.p3d";
-		armor = 800;
+		armor = 500;
+		model = "\ca\buildings\dum_olezlina";
+		
+		class AnimationSources {
+			class Dvere1 {
+				animPeriod = 1;
+			};
+			
+			class Dvere2 : Dvere1 {
+				initPhase = 0;
+			};
+			
+			class Dvere3 : Dvere1 {};
+			
+			class Dvere4 : Dvere1 {};
+		};
 		
 		class DestructionEffects : DestructionEffects {
 			class Ruin1 {
@@ -1392,6 +1660,96 @@ class CfgVehicles {
 				lifeTime = 1;
 			};
 		};
+		
+		class UserActions {
+			class OpenDoors1 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "osa_dvere1";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere1"" < 0.5";
+				statement = "this animate [""Dvere1"", 1]";
+			};
+			
+			class CloseDoors1 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "osa_dvere1";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere1"" >= 0.5";
+				statement = "this animate [""Dvere1"", 0]";
+			};
+			
+			class OpenDoors2 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "osa_dvere2";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere2"" < 0.5";
+				statement = "this animate [""Dvere2"", 1]";
+			};
+			
+			class CloseDoors2 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "osa_dvere2";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere2"" > 0.5";
+				statement = "this animate [""Dvere2"", 0]";
+			};
+			
+			class OpenDoors3 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "osa_dvere3";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere3"" < 0.5";
+				statement = "this animate [""Dvere3"", 1]";
+			};
+			
+			class CloseDoors3 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "osa_dvere3";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere3"" >= 0.5";
+				statement = "this animate [""Dvere3"", 0]";
+			};
+			
+			class OpenDoors4 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "osa_dvere4";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere4"" < 0.5";
+				statement = "this animate [""Dvere4"", 1]";
+			};
+			
+			class CloseDoors4 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "osa_dvere4";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Dvere4"" >= 0.5";
+				statement = "this animate [""Dvere4"", 0]";
+			};
+		};
+		actionBegin1 = "OpenDoors1";
+		actionEnd1 = "OpenDoors1";
+		actionBegin2 = "OpenDoors2";
+		actionEnd2 = "OpenDoors2";
+		actionBegin3 = "OpenDoors3";
+		actionEnd3 = "OpenDoors3";
+		actionBegin4 = "OpenDoors4";
+		actionEnd4 = "OpenDoors4";
 	};
 	
 	class Land_dum_olez_istan1 : House {
@@ -1547,21 +1905,61 @@ class CfgVehicles {
 		};
 	};
 	
-	class Land_garaz_mala : House {
-		scope = protected;
-		armor = 500;
-		model = "\ca\buildings\garaz_mala.p3d";
+	class Land_garaz_mala: House {
+		scope = 1;
+		animated = "true";
+		armor = 75;
+		model = "\smd_sahrani_artif_obj\buildings\garaz_mala.p3d";
+		displayName = "Small Garage";
+		nameSound = "building";
+		accuracy = 0.5;
+		simulation = "house";
+		vehicleClass = "garaz_mala";
+		mapSize = 7.5;
+		destrType = "destructBuilding";
+	
+		class DestructionEffects: DestructionEffects {
 		
-		class DestructionEffects : DestructionEffects {
 			class Ruin1 {
-				simulation = "ruin";
-				type = "\ca\buildings\ruins\garaz_mala_ruins.p3d";
-				position = "";
-				intensity = 1;
-				interval = 1;
-				lifeTime = 1;
+			simulation = "ruin";
+			type = "\smd_sahrani_artif_obj\buildings\ruins\garaz_mala_Ruins";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
 			};
 		};
+  
+		class AnimationSources {
+		
+			class Door {
+			source = "user";
+			animPeriod = 3;
+			initPhase = 0;
+			};
+		};
+  
+		class UserActions {
+   
+			class OpenDoor {
+			displayName = "Open Garage Door";
+			position = "Door_Button";
+			radius = 3;
+			onlyForPlayer = 0;
+			condition = "this animationPhase ""Door"" < 0.5";
+			statement = "this animate [""Door"", 1]";
+			};
+   
+			class CloseDoor: OpenDoor {
+			displayName = "Close Garage Door";
+			condition = "this animationPhase ""Door"" >= 0.5";
+			statement = "this animate [""Door"", 0]";
+			};
+		};
+	};
+ 
+	class Land_garaz_s_tankem: House {
+	model = "\smd_sahrani_artif_obj\buildings\garaz_tankem.p3d";
 	};
 	
 	class Land_hospital : House {

@@ -414,14 +414,7 @@ if ( (cursorTarget isKindOf "Land_Fire_DZ") and (_hasMatches or _hasFlares) and 
 //Ignite all Storage-Containers
 if ( ((cursorTarget isKindOf "TentStorage") || (cursorTarget isKindOf "Gunrack_DZ") || (cursorTarget isKindOf "BoxStorage")) and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
 	if (s_player_ignite_storage < 0) then {
-		_burnTarget = "Tent";
-		if(cursorTarget isKindOf "BoxStorage") then {
-			_burnTarget = "Crate";
-		};
-		if(cursorTarget isKindOf "Gunrack_DZ") then {
-			_burnTarget = "Gunrack";
-		};
-		s_player_ignite_storage = player addAction [("<t color=""#ff0000"">Ignite " + _burnTarget +"</t>"), "dayz_code\actions\player_ignite_storage.sqf",cursorTarget, 0, false, true, "", ""];
+		s_player_ignite_storage = player addAction [localize "str_action_fire_inflame", "\z\addons\dayz_code\actions\player_ignite_storage.sqf",cursorTarget, 3, false, true, "", ""];
 	};
 } else {
 	player removeAction s_player_ignite_storage;

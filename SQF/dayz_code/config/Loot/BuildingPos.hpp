@@ -257,7 +257,7 @@ class Land_ZalChata : Residential {
 };
 class Land_house_y : Residential {
 	lootChance = 1;
-	lootPos[] = {{-2.89063,-5.32422,-1.40696}};
+	lootPos[] = {{-2.89063,-5.32422,-1.40696},{1.251,-1.52,-1.407},{1.537,2.99,-1.406},{-4.621,2.805,-1.406},{-2.73,2.065,1.407},{-1.31,-3.466,1.407}};
 };
 class Land_repair_center : Industrial {
 	lootChance = 1;

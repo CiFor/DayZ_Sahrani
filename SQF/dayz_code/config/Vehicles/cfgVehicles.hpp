@@ -174,6 +174,46 @@ class CfgVehicles {
 		};
 	};
 	
+	class Mi17_Civilian_DZ: Mi17_base
+	{
+		scope = 2;
+		vehicleClass = "Air";
+		side = 3;
+		displayName = "$STR_DN_MI17CIV";
+		faction = "CIV";
+		model = "\ca\air\Mi_8AMT";
+		crew = "Pilot";
+		typicalCargo[] = {"Pilot"};
+		weapons[] = {};
+		accuracy = 1000;
+		magazines[] = {};
+		hasGunner = 0;
+		class Turrets{};
+		threat[] = {0.0,0.0,0.0};
+		hiddenSelectionsTextures[] = {"\CA\air\data\mi8civil_body_g_CO.paa","\CA\air\data\mi8civil_det_g_CO.paa","ca\air\data\clear_empty.paa","ca\air\data\mi8_decals_ca.paa"};
+	};
+	
+	class Mi17_UN_CDF_EP1;
+	
+	class Mi17_BlackOut_DZ: Mi17_UN_CDF_EP1
+	{
+		scope = 2;
+		vehicleClass = "Air";
+		side = 3;
+		displayName = "Mi17 Unmarked";
+		faction = "CIV";
+		model = "\ca\air\Mi_8AMT";
+		crew = "Pilot";
+		typicalCargo[] = {"Pilot"};
+		weapons[] = {};
+		accuracy = 1000;
+		magazines[] = {};
+		hasGunner = 0;
+		class Turrets{};
+		threat[] = {0.0,0.0,0.0};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\mi17_body_un_black_co.paa","z\addons\dayz_code\textures\mi17_det_un_black_co.paa","z\addons\dayz_code\textures\mi17_decals2_un_black_ca.paa"};
+	};
+	
 	class UH1H_base: Helicopter 
 	{
 		class Turrets: Turrets
@@ -219,8 +259,11 @@ class CfgVehicles {
 		};
 		hiddenSelectionsTextures[] = {"ca\air_E\UH1H\data\UH1D_CO.paa", "ca\air_E\UH1H\data\UH1D_in_CO.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
+
 	class AH6_Base_EP1;
+
 	//class AH6X_EP1: AH6_Base_EP1 {};
+
 	class AH6X_DZ: AH6_Base_EP1
 	{
 		displayname = "AH6X Little Bird";
@@ -250,6 +293,44 @@ class CfgVehicles {
         transportmaxbackpacks = 5;
 		class Turrets {};
 	};
+	/*
+	class AH6RACS_DZ : AH6X_DZ {
+    displayname = "AH6RACS";
+    displaynameshort = "AH6RACS";
+    hiddenselections[] = {"camo1"};
+    hiddenselectionstextures[] = {"z\addons\dayz_code\textures\ah6_co.paa"};
+    };
+	*/
+	class AH6X_SMDRACS : AH6X_DZ
+	{
+		displayname = "RACS Little Bird";
+		displaynameshort = "AH6X - RACS";
+		audible = 6;
+		enablemanualfire = 0;
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenselections[] = {"camo1"};
+		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\ah6_co.paa"};
+		icon = "\ca\air_e\data\UI\Icon_ah6x_CA.paa";
+		model = "\ca\air_e\ah6j\ah6x";
+		picture = "\ca\air_e\data\UI\Picture_ah6x_CA.paa";
+		isuav = 0;
+		radartype = 0;
+		class TransportMagazines{};
+		class TransportWeapons{};
+		weapons[] = {};
+		magazines[] = {};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 30;
+        transportmaxbackpacks = 5;
+		class Turrets {};
+	};
+	
 	class HMMWV_Base;
 	class HMMWV_DZ: HMMWV_Base {
 		accuracy = 0.32;
@@ -455,6 +536,7 @@ class CfgVehicles {
 			tex[] = {};
 		};
 	};
+	
 	class RubberBoat;
 	class PBX: RubberBoat {
 		cargoaction[] = {"PBX_Cargo01", "PBX_Cargo02", "PBX_Cargo03"};
@@ -481,6 +563,7 @@ class CfgVehicles {
 			tex[] = {};
 		};
 	};
+	
 	class Zodiac: RubberBoat {
 		cargoaction[] = {"Zodiac_Cargo01", "Zodiac_Cargo02", "Zodiac_Cargo03"};
 		crew = "";
@@ -506,6 +589,7 @@ class CfgVehicles {
 			tex[] = {};
 		};
 	};
+	
 	class TT650_Base;
 	class TT650_Ins: TT650_Base {
 		crew = "";
@@ -515,6 +599,7 @@ class CfgVehicles {
 		side = 0;
 		typicalcargo[] = {};
 	};
+	
 	class V3S_Base;
 	class V3S_Civ: V3S_Base {
 		crew = "";
@@ -527,6 +612,7 @@ class CfgVehicles {
 			libtextdesc = "The V3S is a Czech-made military 6x6 cargo truck capable of carrying cargo up to 5 tons, or up to 3 tons in rough terrain.<br/>This one is a harmless civilian vehicle.";
 		};
 	};
+	
 	class SkodaBase;
 	class car_hatchback: SkodaBase {
 		armorcrash0[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_01", 0.707946, 1, 200};

@@ -2,7 +2,7 @@
 	Anti-Teleport
 	Created By Razor
 	Refactored By Alby
-*/
+
 
 private["_debug","_curpos","_lastpos","_curheight","_lastheight","_terrainHeight","_curtime","_lasttime","_distance","_difftime","_speed","_topSpeed","_lastVehicle","_safetyVehicle", "_topv","_toph", "_v", "_h"];
 
@@ -62,7 +62,7 @@ while {alive player} do
 		_lastVehicle = vehicle player;
 	};
 
-	// freefall detection:
+	*/// freefall detection:
 	_v = -((velocity player) select 2);
 	_h = (getPosATL player) select 2;
 	if (_v > 4 AND _h > 3) then { 
