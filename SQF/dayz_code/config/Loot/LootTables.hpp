@@ -1221,11 +1221,11 @@ class CfgBuildingLoot {
 			{"vil_fal_para","weapon"},
 			{"vil_galil","weapon"},
 			{"vil_galil_ARM","weapon"},
-			{"vil_uzi","weaopn"},
-			{"vil_uzi_c","weaopn"},
-			{"vil_uzi_SD","weaopn"},
-			{"vil_uzimini","weaopn"},
-			{"vil_uzimini_SD","weaopn"},
+			{"vil_uzi","weapon"},
+			{"vil_uzi_c","weapon"},
+			{"vil_uzi_SD","weapon"},
+			{"vil_uzimini","weapon"},
+			{"vil_uzimini_SD","weapon"},
 			{"vil_zastava_m84","weapon"},
 //secondary weapons"},
 			{"M9","weapon"},
@@ -1292,11 +1292,11 @@ class CfgBuildingLoot {
 			0.01, //vil_fal_para","weapon
 			0.04, //vil_galil","weapon
 			0.01, //vil_galil_ARM","weapon
-			1.0, //{"vil_uzi","weaopn"},
-			1.0, //{"vil_uzi_c","weaopn"},
-			1.0, //{"vil_uzi_SD","weaopn"},
-			1.0, //{"vil_uzimini","weaopn"},
-			1.0, //{"vil_uzimini_SD","weaopn"},
+			0.03, //{"vil_uzi","weapon"},
+			0.03, //{"vil_uzi_c","weapon"},
+			0.02, //{"vil_uzi_SD","weapon"},
+			0.03, //{"vil_uzimini","weapon"},
+			0.02, //{"vil_uzimini_SD","weapon"},
 			0.02, //vil_zastava_m84","weapon
 //secondary weapons
 			0.7, //M9","weapon
@@ -1493,7 +1493,7 @@ class CfgBuildingLoot {
 	class Residential: Default {
 		zombieChance = 0.3;
 		maxRoaming = 2;
-		zombieClass[] = {"zZombie_Base","z_hunter","z_teacher","z_villager1","z_villager2","z_villager3","z_sah_civilian1_shorts","a_sah_civilian2_shorts","a_sah_civilian3_shorts","a_sah_civilian4_shorts","a_sah_civilian5_shorts","a_sah_civilian6_shorts","a_sah_civilian7_shorts","z_sah_civilian1_pants","z_sah_civilian2_pants","z_sah_civilian3_pants","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_sah_civilian7_pants",};
+		zombieClass[] = {"zZombie_Base","z_hunter","z_teacher","z_villager1","z_villager2","z_villager3","z_sah_civilian1_shorts","z_sah_civilian2_shorts","z_sah_civilian3_shorts","z_sah_civilian4_shorts","z_sah_civilian5_shorts","z_sah_civilian6_shorts","z_sah_civilian7_shorts","z_sah_civilian1_pants","z_sah_civilian2_pants","z_sah_civilian3_pants","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_sah_civilian7_pants",};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{

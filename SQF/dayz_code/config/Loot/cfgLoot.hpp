@@ -702,10 +702,6 @@ class CfgLoot {
 		},
 		{
 //ammo
-			0.04, //10x_303
-			0.02, //15Rnd_W1866_Slug
-			0.05, //2Rnd_shotgun_74Pellets
-			0.05, //2Rnd_shotgun_74Slug
 			0.01, //5x_22_LR_17_HMR
 			0.04, //6Rnd_45ACP
 			0.03, //7Rnd_45ACP_1911

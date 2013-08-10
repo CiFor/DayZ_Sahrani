@@ -5103,7 +5103,7 @@ class CfgVehicles {
 	};
 	
 	class WeaponCache_DZ : Land_A_tent {
-		Scope = 2
+		Scope = 2;
 		displayName = "Weapon cache";
 		model = "\ca\buildings\furniture\ammobednaX.p3d"; 
 		icon = "\ca\data\data\Unknown_object.paa";

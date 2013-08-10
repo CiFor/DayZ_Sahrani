@@ -2,6 +2,12 @@
 //items
 //vehicles
 //weapons
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
+class Single;
+class Burst;
+class FullAuto;
 
 class CfgWeapons {
 //items
@@ -495,9 +501,6 @@ class Pistol;
 class M16A2 ;
 class M249_DZ;
 class M40a3;	// External class reference	
-class Single;
-class Burst;
-class FullAuto;
 class M203Muzzle;
 class M16_base;
 class M240_DZ;
@@ -517,25 +520,25 @@ class M9SD;
 class glock17_EP1;
 class Colt1911;
 	
-	class vil_B_HP : M9 {
-scope = public;
-model = "\vilas_wwp\vil_bhp";
-displayName = $STR_VIL_BHP;
-magazines[] = {"15_Rnd_9x19_M9"};
-weaponInfoType = "RscWeaponZeroing";
-discreteDistance[] = {50, 100, 200, 300, 400, 500};
-discreteDistanceInitIndex = 0;
-picture = "\vilas_wwp\ico\w_vil_bhp_ca.paa";
-begin1[] = {"\vilas_wwp\sounds\bhp_fire1", 0.994328, 1, 700};
-reloadMagazineSound[] = {"\vilas_wwp\sounds\bhp_reload", 0.4, 1, 20};
-soundBegin[] = {"begin1", 1};
-class Library {
-	libTextDesc = $STR_VIL_BHP_LIB;
-};
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
-descriptionShort = $STR_VIL_BHP_SHORT;
+class vil_BHP : M9 {
+	scope = public;
+	model = "\vilas_wwp\vil_bhp";
+	displayName = $STR_VIL_BHP;
+	magazines[] = {"15Rnd_9x19_M9","15Rnd_9x19_M9SD"};
+	weaponInfoType = "RscWeaponZeroing";
+	discreteDistance[] = {50, 100, 200, 300, 400, 500};
+	discreteDistanceInitIndex = 0;
+	picture = "\vilas_wwp\ico\w_vil_bhp_ca.paa";
+	begin1[] = {"\vilas_wwp\sounds\bhp_fire1", 0.994328, 1, 700};
+	reloadMagazineSound[] = {"\vilas_wwp\sounds\bhp_reload", 0.4, 1, 20};
+	soundBegin[] = {"begin1", 1};
+	class Library {
+		libTextDesc = $STR_VIL_BHP_LIB;
+	};
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
+	descriptionShort = $STR_VIL_BHP_SHORT;
 };
 
 class vil_Glock : glock17_EP1 {
@@ -628,28 +631,28 @@ descriptionShort = $STR_VIL_USP45_SHORT;
 };
 
 class vil_USP45SD : M9sd {
-scope = public;
-fireLightDuration = 0.0;
-fireLightIntensity = 0.0;
-model = "\vilas_wwp\vil_uspsd";
-displayName = $STR_VIL_USP45SD;
-weaponInfoType = "RscWeaponZeroing";
-discreteDistance[] = {25, 50, 75, 100};
-discreteDistanceInitIndex = 1;
-picture = "\vilas_wwp\ico\w_vil_usp45sd_ca.paa";
-magazines[] = {"7Rnd_45ACP_1911"};
-begin1[] = {"\vilas_wwp\sounds\usp9sd_fire1", 0.316228, 1, 200};
-soundBegin[] = {"begin1", 1};
-reloadMagazineSound[] = {"\vilas_wwp\sounds\usp_reload", 0.1, 1, 20};
-recoil = "recoil_single_pistol_3outof3";
-recoilProne = "recoil_single_pistol_prone_3outof3";
-class Library {
-	libTextDesc = $STR_VIL_USP_LIB;
-};
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
-descriptionShort = $STR_VIL_USP45SD_SHORT;
+	scope = public;
+	fireLightDuration = 0.0;
+	fireLightIntensity = 0.0;
+	model = "\vilas_wwp\vil_uspsd";
+	displayName = $STR_VIL_USP45SD;
+	weaponInfoType = "RscWeaponZeroing";
+	discreteDistance[] = {25, 50, 75, 100};
+	discreteDistanceInitIndex = 1;
+	picture = "\vilas_wwp\ico\w_vil_usp45sd_ca.paa";
+	magazines[] = {"7Rnd_45ACP_1911"};
+	begin1[] = {"\vilas_wwp\sounds\usp9sd_fire1", 0.316228, 1, 200};
+	soundBegin[] = {"begin1", 1};
+	reloadMagazineSound[] = {"\vilas_wwp\sounds\usp_reload", 0.1, 1, 20};
+	recoil = "recoil_single_pistol_3outof3";
+	recoilProne = "recoil_single_pistol_prone_3outof3";
+	class Library {
+		libTextDesc = $STR_VIL_USP_LIB;
+	};
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
+	descriptionShort = $STR_VIL_USP45SD_SHORT;
 };
 
 
@@ -660,167 +663,159 @@ descriptionShort = $STR_VIL_USP45SD_SHORT;
 
 class MP5A5;
 class MP5SD;
-class UZI_EP1 : Pistol {};
-
-class UZI_SD_EP1 : UZI_EP1 {};
 
 class vil_MP5_EOTech : MP5A5 {
-scope = public;
-model = "\vilas_wwp\vil_mp5_eot";
-picture = "\vilas_wwp\ico\w_vil_mp5_eot_ca.paa";
-displayName = $STR_VIL_MP5_EOT;
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
+	scope = public;
+	model = "\vilas_wwp\vil_mp5_eot";
+	picture = "\vilas_wwp\ico\w_vil_mp5_eot_ca.paa";
+	displayName = $STR_VIL_MP5_EOT;
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
 };
 
 class vil_MP5SD_EOTech : MP5SD {
-scope = public;
-model = "\vilas_wwp\vil_mp5sd_eot";
-picture = "\vilas_wwp\ico\w_vil_mp5sd_eot_ca.paa";
-displayName = $STR_VIL_MP5SD_EOT;
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
-};
-
-class vil_uzi_c : UZI_EP1 {
-scope = public;
-model = "\vilas_wwp\vil_uzi";
-type = PrimaryWeapon;
-picture = "\vilas_wwp\ico\w_vil_uzi_folded_ca.paa";
-displayName = $STR_VIL_UZI_FOLDED;
-magazines[] = {"30Rnd_9x19_UZI", "30Rnd_9x19_UZI_SD"};
-weaponInfoType = "RscWeaponZeroing";
-discreteDistance[] = {100, 200};
-discreteDistanceInitIndex = 0;
-modes[] = {"Single","FullAuto"};
-handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
-
-class Single: Single  {
-	dispersion = 0.0035;
-	minRange = 2;
-	minRangeProbab = 0.1;
-	midRange = 25;
-	midRangeProbab = 0.7;
-	maxRange = 90;
-	maxRangeProbab = 0.015;
-	recoil = "recoil_single_primary_2outof10";
-	recoilProne = "recoil_single_primary_prone_2outof10";
+	scope = public;
+	model = "\vilas_wwp\vil_mp5sd_eot";
+	picture = "\vilas_wwp\ico\w_vil_mp5sd_eot_ca.paa";
+	displayName = $STR_VIL_MP5SD_EOT;
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
 };
 
-class FullAuto: Fullauto  {
-	reloadTime = 0.1;
-	minRange = 0;
-	minRangeProbab = 0.2;
-	midRange = 20;
-	midRangeProbab = 0.7;
-	maxRange = 40;
-	maxRangeProbab = 0.05;
-	recoil = "recoil_single_primary_2outof10";
-	recoilProne = "recoil_single_primary_prone_2outof10";
-};
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
+class vil_uzi_c : MP5A5 {
+	scope = public;
+	model = "\vilas_wwp\vil_uzi";
+	picture = "\vilas_wwp\ico\w_vil_uzi_folded_ca.paa";
+	displayName = $STR_VIL_UZI_FOLDED;
+	magazines[] = {"30Rnd_9x19_UZI", "30Rnd_9x19_UZI_SD", "17Rnd_9x19_glock17", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5SD", "15Rnd_9x19_M9", "15Rnd_9x19_M9SD"};
+	weaponInfoType = "RscWeaponZeroing";
+	discreteDistance[] = {100, 200};
+	discreteDistanceInitIndex = 0;
+	modes[] = {"Single","FullAuto"};
+	handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
+
+	class Single: Single {
+		dispersion = 0.0035;
+		minRange = 2;
+		minRangeProbab = 0.1;
+		midRange = 25;
+		midRangeProbab = 0.7;
+		maxRange = 90;
+		maxRangeProbab = 0.015;
+		recoil = "recoil_single_primary_2outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
+	};
+
+	class FullAuto: FullAuto {
+		reloadTime = 0.1;
+		minRange = 0;
+		minRangeProbab = 0.2;
+		midRange = 20;
+		midRangeProbab = 0.7;
+		maxRange = 40;
+		maxRangeProbab = 0.05;
+		recoil = "recoil_single_primary_2outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
+	};
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
 };
 
 class vil_uzi : vil_uzi_c {
-model = "\vilas_wwp\vil_uzi_rozkl";
-picture = "\vilas_wwp\ico\uzi_ico_ca.paa";
-displayName = $STR_VIL_UZI_FULL;
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
-};
-
-
-class vil_uzi_SD : UZI_SD_EP1 {
-scope = public;
-type = PrimaryWeapon;
-model = "\vilas_wwp\vil_uzi_sd";
-picture = "\vilas_wwp\ico\w_vil_uzi_sd_ca.paa";
-displayName = $STR_VIL_UZI_SD;
-magazines[] = {"30Rnd_9x19_UZI_SD", "30Rnd_9x19_UZI"};
-weaponInfoType = "RscWeaponZeroing";
-discreteDistance[] = {100, 200};
-discreteDistanceInitIndex = 0;
-modes[] = {"Single","FullAuto"};
-handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
-
-class Single: Single  {
-	dispersion = 0.0035;
-	minRange = 2;
-	minRangeProbab = 0.1;
-	midRange = 25;
-	midRangeProbab = 0.7;
-	maxRange = 70;
-	maxRangeProbab = 0.015;
-	recoil = "recoil_single_primary_2outof10";
-	recoilProne = "recoil_single_primary_prone_2outof10";
+	model = "\vilas_wwp\vil_uzi_rozkl";
+	picture = "\vilas_wwp\ico\uzi_ico_ca.paa";
+	displayName = $STR_VIL_UZI_FULL;
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
 };
 
-class FullAuto: FullAuto  {
-	reloadTime = 0.09;
-	minRange = 2;
-	minRangeProbab = 0.1;
-	midRange = 15;
-	midRangeProbab = 0.7;
-	maxRange = 40;
-	maxRangeProbab = 0.015;
-	recoil = "recoil_auto_primary_2outof10";
-	recoilProne = "recoil_auto_primary_prone_2outof10";
-};
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
+class vil_uzi_SD : MP5SD {
+	scope = public;
+	model = "\vilas_wwp\vil_uzi_sd";
+	picture = "\vilas_wwp\ico\w_vil_uzi_sd_ca.paa";
+	displayName = $STR_VIL_UZI_SD;
+	magazines[] = {"30Rnd_9x19_UZI_SD", "30Rnd_9x19_MP5SD", "15Rnd_9x19_M9SD"};
+	weaponInfoType = "RscWeaponZeroing";
+	discreteDistance[] = {100, 200};
+	discreteDistanceInitIndex = 0;
+	modes[] = {"Single","FullAuto"};
+	handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
+
+	class Single: Single  {
+		dispersion = 0.0035;
+		minRange = 2;
+		minRangeProbab = 0.1;
+		midRange = 25;
+		midRangeProbab = 0.7;
+		maxRange = 70;
+		maxRangeProbab = 0.015;
+		recoil = "recoil_single_primary_2outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
+	};
+
+	class FullAuto: FullAuto  {
+		reloadTime = 0.09;
+		minRange = 2;
+		minRangeProbab = 0.1;
+		midRange = 15;
+		midRangeProbab = 0.7;
+		maxRange = 40;
+		maxRangeProbab = 0.015;
+		recoil = "recoil_auto_primary_2outof10";
+		recoilProne = "recoil_auto_primary_prone_2outof10";
+	};
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
 };
 
-class vil_uzimini : UZI_EP1 {
-scope = public;
-model = "\vilas_wwp\vil_uzimini";
-picture = "\vilas_wwp\ico\muzi_ico_ca.paa";
-displayName = $STR_VIL_UZI_MINI;
-magazines[] = {"30Rnd_9x19_UZI_SD", "30Rnd_9x19_UZI"};
-handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
-type = PrimaryWeapon;
+class vil_uzimini : MP5A5 {
+	scope = public;
+	model = "\vilas_wwp\vil_uzimini";
+	picture = "\vilas_wwp\ico\muzi_ico_ca.paa";
+	displayName = $STR_VIL_UZI_MINI;
+	magazines[] = {"30Rnd_9x19_UZI", "30Rnd_9x19_UZI_SD", "17Rnd_9x19_glock17", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5SD", "15Rnd_9x19_M9", "15Rnd_9x19_M9SD"};
+	handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
 
-class Single: Single {
-	reloadTime = 0.06316;
+	class Single: Single {
+		reloadTime = 0.06316;
+	};
+
+	class FullAuto: FullAuto {
+		reloadTime = 0.06316;
+	};
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
+	class Library {
+		libTextDesc = $STR_VIL_UZI_MINI_LIB;
+	};
 };
 
-class FullAuto: FullAuto {
-	reloadTime = 0.06316;
-};
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
-class Library {
-	libTextDesc = $STR_VIL_UZI_MINI_LIB;
-};
-};
+class vil_uzimini_SD : MP5SD {
+	scope = public;
+	model = "\vilas_wwp\vil_uzimini_sd";
+	picture = "\vilas_wwp\ico\w_vil_muzi_sd_ca.paa";
+	displayName = $STR_VIL_UZI_MINI_SD;
+	magazines[] = {"30Rnd_9x19_UZI_SD", "30Rnd_9x19_MP5SD", "15Rnd_9x19_M9SD"};
+	handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
 
-class vil_uzimini_SD : UZI_SD_EP1 {
-scope = public;
-model = "\vilas_wwp\vil_uzimini_sd";
-picture = "\vilas_wwp\ico\w_vil_muzi_sd_ca.paa";
-displayName = $STR_VIL_UZI_MINI_SD;
-magazines[] = {"30Rnd_9x19_UZI", "30Rnd_9x19_UZI_SD"};
-handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
-type = PrimaryWeapon;
-
-class Single: Single {
-	reloadTime = 0.06316;
-};
-class FullAuto: FullAuto  {
-	reloadTime = 0.06316;
-};
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
-class Library {
-	libTextDesc = $STR_VIL_UZI_MINI_LIB;
-};
+	class Single: Single {
+		reloadTime = 0.06316;
+	};
+	class FullAuto: FullAuto  {
+		reloadTime = 0.06316;
+	};
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
+	class Library {
+		libTextDesc = $STR_VIL_UZI_MINI_LIB;
+	};
 };
 
 
@@ -845,7 +840,7 @@ displayName = $STR_VIL_G3A3;
 displayNameShort = $STR_VIL_SN_G3A3;
 picture = "\vilas_wwp\ico\ico_g3a3.paa";
 UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
-magazines[] = {"20Rnd_762x51_DMR","20Rnd_762x51_FNFAL"};
+magazines[] = {"20Rnd_762x51_FNFAL","20Rnd_762x51_DMR","20Rnd_762x51_B_SCAR","20Rnd_762x51_SB_SCAR"};
 modes[] = {"Single", "FullAuto"};
 weaponInfoType = "RscWeaponZeroing";	
 discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
@@ -1407,53 +1402,53 @@ class Armory {
 
 
 class vil_Fal : FN_FAL {
-scope = public;
-value = 0;
-model = "\vilas_wwp\vil_falb";
-optics = true;
-displayName = $STR_VIL_FAL;
-picture = "\vilas_wwp\ico\ico_fal.paa";
-UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";  
-magazines[] = {"20Rnd_762x51_FNFAL"};
-weaponInfoType = "RscWeaponZeroing";
-discreteDistance[] = {200, 300, 400, 500, 600};
-discreteDistanceInitIndex = 1;
-modes[] = {"Single", "FullAuto"};
+	scope = public;
+	value = 0;
+	model = "\vilas_wwp\vil_falb";
+	optics = true;
+	displayName = $STR_VIL_FAL;
+	picture = "\vilas_wwp\ico\ico_fal.paa";
+	UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";  
+	magazines[] = {"20Rnd_762x51_FNFAL","20Rnd_762x51_DMR","20Rnd_762x51_B_SCAR","20Rnd_762x51_SB_SCAR"};
+	weaponInfoType = "RscWeaponZeroing";
+	discreteDistance[] = {200, 300, 400, 500, 600};
+	discreteDistanceInitIndex = 1;
+	modes[] = {"Single", "FullAuto"};
 
-class Single: Single {
-	reloadTime = 0.09;
-	//dispersion = 0.0017;
-	minRange = 2;
-	minRangeProbab = 0.1;
-	midRange = 250;
-	midRangeProbab = 0.75;
-	maxRange = 400;
-	maxRangeProbab = 0.05;
-};
+	class Single: Single {
+		reloadTime = 0.09;
+		//dispersion = 0.0017;
+		minRange = 2;
+		minRangeProbab = 0.1;
+		midRange = 250;
+		midRangeProbab = 0.75;
+		maxRange = 400;
+		maxRangeProbab = 0.05;
+	};
 
-class FullAuto: FullAuto {
-	displayName = $STR_DN_MODE_FULLAUTO;
-	autoFire = true;
-	reloadTime = 0.09;
-	//dispersion = 0.0017;
-	recoil = "recoil_auto_primary_6outof10";
-	recoilProne = "recoil_auto_primary_prone_5outof10";
-	dispersion = 0.005;
-	aiRateOfFire = 12;
-	minRange = 0;
-	minRangeProbab = 0.3;
-	midRange = 80;
-	midRangeProbab = 0.7;
-	maxRange = 200;
-	maxRangeProbab = 0.05;
-};
+	class FullAuto: FullAuto {
+		displayName = $STR_DN_MODE_FULLAUTO;
+		autoFire = true;
+		reloadTime = 0.09;
+		//dispersion = 0.0017;
+		recoil = "recoil_auto_primary_6outof10";
+		recoilProne = "recoil_auto_primary_prone_5outof10";
+		dispersion = 0.005;
+		aiRateOfFire = 12;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 80;
+		midRangeProbab = 0.7;
+		maxRange = 200;
+		maxRangeProbab = 0.05;
+	};
 
-class Library {
-	libTextDesc = $STR_EP1_LIB_FN_FAL;
-};
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
+	class Library {
+		libTextDesc = $STR_EP1_LIB_FN_FAL;
+	};
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
 };
 
 class vil_Fal_Para : Vil_Fal {
@@ -1488,7 +1483,7 @@ displayName = $STR_VIL_SG540;
 picture = "\vilas_wwp\ico\w_vil_sg540_ca.paa";
 UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 modes[] = {"Single", "Burst", "FullAuto"};
-magazines[] = {"30Rnd_556x45_G36"};
+magazines[] = {"30Rnd_556x45_G36", "30Rnd_556x45_G36SD", "30Rnd_556x45_Stanag", "30Rnd_556x45_StanagSD", "20Rnd_556x45_Stanag"};
 weaponInfoType = "RscWeaponZeroing";
 discreteDistance[] = {100, 300, 500};
 discreteDistanceInitIndex = 1;
@@ -1507,7 +1502,7 @@ model = "\vilas_wwp\vil_sg542";
 displayName = $STR_VIL_SG542;
 picture = "\vilas_wwp\ico\w_vil_sg542_ca.paa";
 UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
-magazines[] = {"20Rnd_762x51_FNFAL"};
+magazines[] = {"20Rnd_762x51_FNFAL","20Rnd_762x51_DMR","20Rnd_762x51_B_SCAR","20Rnd_762x51_SB_SCAR"};
 discreteDistance[] = {100, 300, 500, 600};
 
 class Library {
@@ -1592,7 +1587,7 @@ displayName = $STR_VIL_HK33;
 picture = "\vilas_wwp\ico\ico_33.paa";
 UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 modes[] = {"Single", "FullAuto"};
-magazines[] = {"30Rnd_556x45_G36"};
+magazines[] = {"30Rnd_556x45_G36", "30Rnd_556x45_G36SD", "30Rnd_556x45_Stanag", "30Rnd_556x45_StanagSD", "20Rnd_556x45_Stanag"};
 weaponInfoType = "RscWeaponZeroing";
 discreteDistance[] = {100, 200, 300, 400};
 discreteDistanceInitIndex = 1;
@@ -1619,81 +1614,90 @@ descriptionShort = $STR_VIL_HK33_SHORT;
 };
 
 class vil_Galil : FN_FAL {
-htMin = 1;
-htMax = 480;
-afMax = 0;
-mfMax = 0;
-mFact = 1;
-tBody = 100;
-scope = public;
-value = 0;
-model = "\vilas_wwp\vil_galil_ar";
-displayName = $STR_VIL_GALIL;
-weaponInfoType = "RscWeaponZeroing";
-discreteDistance[] = {300, 500};
-discreteDistanceInitIndex = 0;
-picture = "\vilas_wwp\ico\ico_galil.paa";
-UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
-reloadMagazineSound[] = {"\vilas_wwp\sounds\galil_reload",db0, 1, 20};
-modes[] = {"Single", "FullAuto"};
-magazines[] = {"30Rnd_556x45_G36"};
+	htMin = 1;
+	htMax = 480;
+	afMax = 0;
+	mfMax = 0;
+	mFact = 1;
+	tBody = 100;
+	scope = public;
+	value = 0;
+	model = "\vilas_wwp\vil_galil_ar";
+	displayName = $STR_VIL_GALIL;
+	weaponInfoType = "RscWeaponZeroing";
+	discreteDistance[] = {300, 500};
+	discreteDistanceInitIndex = 0;
+	picture = "\vilas_wwp\ico\ico_galil.paa";
+	UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
+	reloadMagazineSound[] = {"\vilas_wwp\sounds\galil_reload",db0, 1, 20};
+	modes[] = {"Single", "FullAuto"};
+	magazines[] = {"30Rnd_556x45_G36", "30Rnd_556x45_G36SD", "30Rnd_556x45_Stanag", "30Rnd_556x45_StanagSD", "20Rnd_556x45_Stanag"};
 
-class Single: Single {
-	begin1[] = {"\vilas_wwp\sounds\galil_fire1", 1.04828, 1, 1000};
-	soundBegin[] = {"begin1", 1};
-};
+	class Single: Mode_SemiAuto {
+		begin1[] = {"\vilas_wwp\sounds\galil_fire1", 1.04828, 1, 1000};
+		soundBegin[] = {"begin1", 1};
+	};
+	
+	class FullAuto : Mode_FullAuto {
+			begin1[] = {"\vilas_wwp\sounds\galil_fire1", 1.04828, 1, 1000};
+			soundBegin[] = {"begin1", 0.5};
+			reloadTime = 0.09;
+			recoil = "recoil_auto_primary_3outof10";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			dispersion = 0.00175;
+			minRange = 0;
+			minRangeProbab = 0.1;
+			midRange = 25;
+			midRangeProbab = 0.7;
+			maxRange = 70;
+			maxRangeProbab = 0.05;
+		};
 
-class FullAuto: FullAuto {
-	begin1[] = {"\vilas_wwp\sounds\galil_fire1", 1.04828, 1, 1000};
-	soundBegin[] = {"begin1", 1};
-};
-
-class Library {
-	libTextDesc = $STR_VIL_GALIL_LIB;
-};
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
-descriptionShort = $STR_VIL_GALIL_SHORT;
+	class Library {
+		libTextDesc = $STR_VIL_GALIL_LIB;
+	};
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
+	descriptionShort = $STR_VIL_GALIL_SHORT;
 };
 
 class vil_Galil_arm : vil_Galil {
-scope = public;
-model = "\vilas_wwp\vil_galil_arm";
-displayName = $STR_VIL_GALIL_ARM;
-picture = "\vilas_wwp\ico\w_vil_galil_arm_ca.paa";
-UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
-magazines[] = {"30Rnd_556x45_G36"};
+	scope = public;
+	model = "\vilas_wwp\vil_galil_arm";
+	displayName = $STR_VIL_GALIL_ARM;
+	picture = "\vilas_wwp\ico\w_vil_galil_arm_ca.paa";
+	UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 
-class Library {
-	libTextDesc = $STR_VIL_GALIL_LIB;
-};
-descriptionShort = $STR_VIL_GALIL_ARM_SHORT;
+	class Library {
+		libTextDesc = $STR_VIL_GALIL_LIB;
+	};
+	descriptionShort = $STR_VIL_GALIL_ARM_SHORT;
 
-class Single: Single {
-	reloadTime = 0.075;
-	dispersion = 0.001;
-	minRange = 2;
-	minRangeProbab = 0.3;
-	midRange = 250;
-	midRangeProbab = 0.7;
-	maxRange = 500;
-	maxRangeProbab = 0.05;
-};
+	class Single: Single {
+		reloadTime = 0.075;
+		dispersion = 0.001;
+		minRange = 2;
+		minRangeProbab = 0.3;
+		midRange = 250;
+		midRangeProbab = 0.7;
+		maxRange = 500;
+		maxRangeProbab = 0.05;
+	};
 
-class FullAuto: FullAuto {
-	reloadTime = 0.0923;
-	dispersion = 0.00175;
-	minRange = 100;
-	minRangeProbab = 0.1;
-	midRange = 250;
-	midRangeProbab = 0.7;
-	maxRange = 300;
-	maxRangeProbab = 0.05;
-};
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
+	class FullAuto: FullAuto {
+		reloadTime = 0.0923;
+		dispersion = 0.00175;
+		minRange = 100;
+		minRangeProbab = 0.1;
+		midRange = 250;
+		midRangeProbab = 0.7;
+		maxRange = 300;
+		maxRangeProbab = 0.05;
+	};
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
 };
 
 
@@ -1705,81 +1709,82 @@ class Armory {
 
 class G36C;
 class vil_G36KVA4 : G36C {
-htMin = 1;
-htMax = 480;
-afMax = 0;
-mfMax = 0;
-mFact = 1;
-tBody = 100;
-scope = public;
-model = "\vilas_wwp\vil_g36kv_is";
-displayName = "HK G36 KV (Latvian)";
-displayNameShort = $STR_VIL_SN_G36KVA4;
-weaponInfoType = "RscWeaponEmpty";
-discreteDistance[] = {200};
-discreteDistanceInitIndex = 0;
-picture = "\vilas_wwp\ico\w_vil_g36ka4_ca.paa";
-//descriptionShort = $STR_VIL_G36KVA4_SHORT;
-class Armory {
-	author = $STR_AUTHOR_VILAS;
+	htMin = 1;
+	htMax = 480;
+	afMax = 0;
+	mfMax = 0;
+	mFact = 1;
+	tBody = 100;
+	scope = public;
+	model = "\vilas_wwp\vil_g36kv_is";
+	displayName = "HK G36 KV (Latvian)";
+	displayNameShort = $STR_VIL_SN_G36KVA4;
+	weaponInfoType = "RscWeaponEmpty";
+	discreteDistance[] = {200};
+	discreteDistanceInitIndex = 0;
+	picture = "\vilas_wwp\ico\w_vil_g36ka4_ca.paa";
+	//descriptionShort = $STR_VIL_G36KVA4_SHORT;
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
 };
-};
+
 class G36K;
 class vil_G36KA4 : G36K {
-htMin = 1;
-htMax = 480;
-afMax = 0;
-mfMax = 0;
-mFact = 1;
-tBody = 100;
-scope = public;
-model = "\vilas_wwp\vil_g36k_rail";
-displayName = "HK G36 K (ironsight)";
-displayNameShort = $STR_VIL_SN_G36KA4;
-weaponInfoType = "RscWeaponZeroing";
-discreteDistance[] = {100, 300};
-discreteDistanceInitIndex = 0;
-picture = "\vilas_wwp\ico\w_vil_g36kv_ca.paa";
-class Armory {
-	author = $STR_AUTHOR_VILAS;
-};
+	htMin = 1;
+	htMax = 480;
+	afMax = 0;
+	mfMax = 0;
+	mFact = 1;
+	tBody = 100;
+	scope = public;
+	model = "\vilas_wwp\vil_g36k_rail";
+	displayName = "HK G36 K (ironsight)";
+	displayNameShort = $STR_VIL_SN_G36KA4;
+	weaponInfoType = "RscWeaponZeroing";
+	discreteDistance[] = {100, 300};
+	discreteDistanceInitIndex = 0;
+	picture = "\vilas_wwp\ico\w_vil_g36kv_ca.paa";
+	class Armory {
+		author = $STR_AUTHOR_VILAS;
+	};
 
-modes[] = {"Single", "Burst", "Fullauto"};
+	modes[] = {"Single", "Burst", "Fullauto"};
 
-class Single: Single  {
-	dispersion = 0.002;
-	minRange = 2;
-	minRangeProbab = 0.1;
-	midRange = 200;
-	midRangeProbab = 0.7;
-	maxRange = 400;
-	maxRangeProbab = 0.05;
-};
+	class Single: Single  {
+		dispersion = 0.002;
+		minRange = 2;
+		minRangeProbab = 0.1;
+		midRange = 200;
+		midRangeProbab = 0.7;
+		maxRange = 400;
+		maxRangeProbab = 0.05;
+	};
 
-class Burst  {
-	ffCount = 3;
-	recoil = "recoil_auto_primary_3outof10";
-	recoilProne = "recoil_auto_primary_prone_2outof10";
-	minRange = 1;
-	minRangeProbab = 0.1;
-	midRange = 60;
-	midRangeProbab = 0.7;
-	maxRange = 100;
-	maxRangeProbab = 0.05;
-	dispersion = 0.0016;
-};
+	class Burst  {
+		ffCount = 3;
+		recoil = "recoil_auto_primary_3outof10";
+		recoilProne = "recoil_auto_primary_prone_2outof10";
+		minRange = 1;
+		minRangeProbab = 0.1;
+		midRange = 60;
+		midRangeProbab = 0.7;
+		maxRange = 100;
+		maxRangeProbab = 0.05;
+		dispersion = 0.0016;
+	};
 
-class FullAuto: FullAuto  {
-	recoil = "recoil_auto_primary_4outof10";
-	recoilProne = "recoil_auto_primary_prone_3outof10";
-	minRange = 0;
-	minRangeProbab = 0.1;
-	midRange = 20;
-	midRangeProbab = 0.7;
-	maxRange = 60;
-	maxRangeProbab = 0.05;
-	dispersion = 0.0016;
-};
+	class FullAuto: FullAuto  {
+		recoil = "recoil_auto_primary_4outof10";
+		recoilProne = "recoil_auto_primary_prone_3outof10";
+		minRange = 0;
+		minRangeProbab = 0.1;
+		midRange = 20;
+		midRangeProbab = 0.7;
+		maxRange = 60;
+		maxRangeProbab = 0.05;
+		dispersion = 0.0016;
+	};
 };
 class G36a;
 class vil_G36E : G36a {
@@ -2497,7 +2502,7 @@ tbody = 100;
 		weaponInfoType = "RscWeaponZeroing";
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 		discreteDistanceInitIndex = 1;
-		magazines[] = {"30Rnd_762x39_AK47"};
+		magazines[] = {"30Rnd_762x39_AK47","30Rnd_762x39_SA58"};
 	};
 	
 	class vil_AK47_BASE : AK_47_M {
@@ -2505,7 +2510,7 @@ tbody = 100;
 		weaponInfoType = "RscWeaponZeroing";
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 		discreteDistanceInitIndex = 1;
-		magazines[] = {"30Rnd_545x39_AK"};
+		magazines[] = {"30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
 	};
 	
 	class vil_AKS_BASE : AK_47_S {
@@ -2514,7 +2519,7 @@ tbody = 100;
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 		discreteDistanceInitIndex = 1;
 		modes[] = {"FullAuto", "Single"};
-		magazines[] = {"30Rnd_545x39_AK"};
+		magazines[] = {"30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
 	};
 	
 	class vil_NATO_AK : M16_base {
@@ -2527,7 +2532,7 @@ tbody = 100;
 		scope = private;
 		drySound[] = {"ca\sounds\weapons\rifles\dry", 0.000316228, 1, 10};
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\Data\Anim\AK.rtm"};
-		magazines[] = {"30Rnd_545x39_AK"};
+		magazines[] = {"30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
 		weaponInfoType = "RscWeaponZeroing";
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 		discreteDistanceInitIndex = 2;
@@ -2590,7 +2595,7 @@ tbody = 100;
 		model = "\vilas_aks\vil_sks";
 		picture = "\vilas_aks\ico\sks.paa";
 		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
-		magazines[] = {"30Rnd_545x39_AK"};
+		magazines[] = {"30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
 		displayName = $STR_TGW_VIL_SKS;
 		dexterity = 1.57;
 		reloadMagazineSound[] = {"\vilas_aks\sounds\sks_reload", 0.0562341, 1, 10};
@@ -2635,7 +2640,7 @@ tbody = 100;
 		picture = "\vilas_aks\ico\w_vil_tt33_ca.paa";
 		displayName = $STR_VIL_TT33;
 		dispersion = 0.015;
-		magazines[] = {"8Rnd_9x18_Makarov"};
+		magazines[] = {"8Rnd_9x18_Makarov","8Rnd_9x18_MakarovSD"};
 		begin1[] = {"\vilas_aks\sounds\tt33_fire1", 0.794328, 1, 700};
 		begin2[] = {"\vilas_aks\sounds\tt33_fire2", 0.794328, 1, 700};
 		soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
@@ -2936,7 +2941,7 @@ tbody = 100;
 		aiDispersionCoefY = 14.0;
 		aiDispersionCoefX = 14.0;
 		dexterity = 1.21;
-		magazines[] = {"30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
+		magazines[] = {"vil_100Rnd_762x54_PK","75Rnd_545x39_RPK","30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\Data\Anim\AK.rtm"};
 		modes[] = {"manual", "close", "short", "medium", "Single"};
 
@@ -3065,7 +3070,7 @@ tbody = 100;
 		displayName = $STR_VIL_RPD;
 		picture = "\vilas_aks\ico\w_vil_rpd_ca.paa";
 		reloadMagazineSound[] = {"\vilas_aks\sounds\rpd_reload", 0.0562341, 1, 25};
-		magazines[] = { "vil_100Rnd_762x54_PK","30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
+		magazines[] = { "vil_100Rnd_762x54_PK","75Rnd_545x39_RPK","30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
 		magazineReloadTime = 8;
 		modes[] = {"manual", "close", "short", "medium"};
 

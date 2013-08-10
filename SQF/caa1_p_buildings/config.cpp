@@ -163,7 +163,7 @@ class CfgVehicles {
 		displayName="Fuel Station";
 		nameSound="building";
 		accuracy=0.50;
-		transportFuel = 50000;
+		transportFuel = 0;
 		cost=0;
 		mapSize = 7.5;
 		vehicleClass = "benzina_schnell";
@@ -282,7 +282,7 @@ class CfgVehicles {
 			};
 		};
 		
-	}
+	};
 	
 	class Land_AFbarabizna_ruins : Ruins {
 		scope = protected;
