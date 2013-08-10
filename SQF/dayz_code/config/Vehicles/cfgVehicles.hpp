@@ -107,22 +107,11 @@ class CfgVehicles {
 			};
 		};
 	};
-	class USMC_Soldier2;
-	class sah_civilian1_pants: USMC_Soldier2
+	class Survivor2_DZ;
+	class sah_civilian1_pants: Survivor2_DZ
 	{
 		scope = 2;
-		displayName = "Civilian 1";
 		model = "\sara_civilians\civil_1_tshirt.p3d";
-		weapons[] = {};
-		magazines[] = {};
-		respawnweapons[] = {};
-		respawnmagazines[] = {};
-		side = 3;
-		vehicleClass = "sah_civilian_class";
-		faction = "sah_civilian_faction";
-		picture = "\Ca\characters\data\Ico\i_null_CA.paa";
-		identityTypes[] = {"Head_USMC"};
-		icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
 		class Wounds
 		{
 			tex[] = {};
@@ -132,55 +121,32 @@ class CfgVehicles {
 	
 	class sah_civilian2_pants: sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Civilian 2";
 		model = "\sara_civilians\civil_2_tshirt.p3d";
 	};
 	class sah_civilian3_pants: sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Civilian 3";
 		model = "\sara_civilians\civil_3_tshirt.p3d";
 	};
 	class sah_civilian4_pants: sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Civilian 4";
 		model = "\sara_civilians\civil_4_tshirt.p3d";
 	};
 	class sah_civilian5_pants: sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Civilian 5";
 		model = "\sara_civilians\civil_5_tshirt.p3d";
 	};
 	class sah_civilian6_pants: sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Civilian 6";
 		model = "\sara_civilians\civil_6_tshirt.p3d";
 	};
 	class sah_civilian7_pants: sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Civilian 7";
 		model = "\sara_civilians\civil_7_tshirt.p3d";
 	};
-	class sah_civilian1_shorts: USMC_Soldier2
+	class sah_civilian1_shorts: Survivor2_DZ
 	{
 		scope = 2;
-		displayName = "Civilian 1";
 		model = "\sara_civilians\civil_1_tshirt_shorts.p3d";
-		weapons[] = {};
-		magazines[] = {};
-		respawnweapons[] = {};
-		respawnmagazines[] = {};
-		side = 3;
-		vehicleClass = "sah_civilian_class_shorts";
-		faction = "sah_civilian_faction";
-		picture = "\Ca\characters\data\Ico\i_null_CA.paa";
-		identityTypes[] = {"Head_USMC"};
-		icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
 		class Wounds
 		{
 			tex[] = {};
@@ -189,56 +155,33 @@ class CfgVehicles {
 	};
 	class sah_civilian2_shorts: sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 2";
 		model = "\sara_civilians\civil_2_tshirt_shorts.p3d";
 	};
 	class sah_civilian3_shorts: sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 3";
 		model = "\sara_civilians\civil_3_tshirt_shorts.p3d";
 	};
 	class sah_civilian4_shorts: sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 4";
 		model = "\sara_civilians\civil_4_tshirt_shorts.p3d";
 	};
 	class sah_civilian5_shorts: sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 5";
 		model = "\sara_civilians\civil_5_tshirt_shorts.p3d";
 	};
 	class sah_civilian6_shorts: sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 6";
 		model = "\sara_civilians\civil_6_tshirt_shorts.p3d";
 	};
 	class sah_civilian7_shorts: sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 7";
 		model = "\sara_civilians\civil_7_tshirt_shorts.p3d";
 	};
 
-		class z_sah_civilian1_pants: zZombie_Base
+	class z_sah_civilian1_pants: zZombie_Base
 	{
 		scope = 2;
-		displayName = "Zombie Civilian 1";
 		model = "\sara_civilians\civil_1_tshirt.p3d";
-		weapons[] = {};
-		magazines[] = {};
-		respawnweapons[] = {};
-		respawnmagazines[] = {};
-		side = 3;
-		vehicleClass = "sah_civilian_class";
-		faction = "sah_civilian_faction";
-		picture = "\Ca\characters\data\Ico\i_null_CA.paa";
-		identityTypes[] = {"Head_USMC"};
-		icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
 		class Wounds
 		{
 			tex[] = {};
@@ -246,98 +189,63 @@ class CfgVehicles {
 		};
 	};
 	
-		class z_sah_civilian2_pants: z_sah_civilian1_pants
+	class z_sah_civilian2_pants: z_sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Zombie Civilian 2";
 		model = "\sara_civilians\civil_2_tshirt.p3d";
 	};
 	class z_sah_civilian3_pants: z_sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Zombie Civilian 3";
 		model = "\sara_civilians\civil_3_tshirt.p3d";
 	};
 	class z_sah_civilian4_pants: z_sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Zombie Civilian 4";
 		model = "\sara_civilians\civil_4_tshirt.p3d";
 	};
 	class z_sah_civilian5_pants: z_sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Zombie Civilian 5";
 		model = "\sara_civilians\civil_5_tshirt.p3d";
 	};
 	class z_sah_civilian6_pants: z_sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Zombie Civilian 6";
 		model = "\sara_civilians\civil_6_tshirt.p3d";
 	};
 	class z_sah_civilian7_pants: z_sah_civilian1_pants
 	{
-		scope = 2;
-		displayName = "Zombie Civilian 7";
 		model = "\sara_civilians\civil_7_tshirt.p3d";
 	};
 
 	class z_sah_civilian1_shorts: zZombie_Base
 	{
 		scope = 2;
-		displayName = "Civilian 1";
 		model = "\sara_civilians\civil_1_tshirt_shorts.p3d";
-		weapons[] = {};
-		magazines[] = {};
-		respawnweapons[] = {};
-		respawnmagazines[] = {};
-		side = 3;
-		vehicleClass = "sah_civilian_class_shorts";
-		faction = "sah_civilian_faction";
-		picture = "\Ca\characters\data\Ico\i_null_CA.paa";
-		identityTypes[] = {"Head_USMC"};
-		icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
 		class Wounds
 		{
 			tex[] = {};
 			mat[] = {"sara_civilians\data\civil_tshirt_shorts_body.rvmat","sara_civilians\data\civil_tshirt_shorts_body_wound1.rvmat","sara_civilians\data\civil_tshirt_shorts_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound1.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound2.rvmat"};
 		};
 	};
-	class a_sah_civilian2_shorts: z_sah_civilian1_shorts
+	class z_sah_civilian2_shorts: z_sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 2";
 		model = "\sara_civilians\civil_2_tshirt_shorts.p3d";
 	};
 	class z_sah_civilian3_shorts: z_sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 3";
 		model = "\sara_civilians\civil_3_tshirt_shorts.p3d";
 	};
 	class z_sah_civilian4_shorts: z_sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 4";
 		model = "\sara_civilians\civil_4_tshirt_shorts.p3d";
 	};
 	class z_sah_civilian5_shorts: z_sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 5";
 		model = "\sara_civilians\civil_5_tshirt_shorts.p3d";
 	};
 	class z_sah_civilian6_shorts: z_sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 6";
 		model = "\sara_civilians\civil_6_tshirt_shorts.p3d";
 	};
 	class z_sah_civilian7_shorts: z_sah_civilian1_shorts
 	{
-		scope = 2;
-		displayName = "Civilian 7";
 		model = "\sara_civilians\civil_7_tshirt_shorts.p3d";
 	};
 	
