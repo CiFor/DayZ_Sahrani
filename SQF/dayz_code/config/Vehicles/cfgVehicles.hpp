@@ -107,9 +107,241 @@ class CfgVehicles {
 			};
 		};
 	};
+	class USMC_Soldier2;
+	class sah_civilian1_pants: USMC_Soldier2
+	{
+		scope = 2;
+		displayName = "Civilian 1";
+		model = "\sara_civilians\civil_1_tshirt.p3d";
+		weapons[] = {};
+		magazines[] = {};
+		respawnweapons[] = {};
+		respawnmagazines[] = {};
+		side = 3;
+		vehicleClass = "sah_civilian_class";
+		faction = "sah_civilian_faction";
+		picture = "\Ca\characters\data\Ico\i_null_CA.paa";
+		identityTypes[] = {"Head_USMC"};
+		icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"sara_civilians\data\civil_tshirt_body.rvmat","sara_civilians\data\civil_tshirt_body_wound1.rvmat","sara_civilians\data\civil_tshirt_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound1.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound2.rvmat"};
+		};
+	};
 	
-	class z_RACSzombie : zZombie_Base{
+	class sah_civilian2_pants: sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Civilian 2";
+		model = "\sara_civilians\civil_2_tshirt.p3d";
+	};
+	class sah_civilian3_pants: sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Civilian 3";
+		model = "\sara_civilians\civil_3_tshirt.p3d";
+	};
+	class sah_civilian4_pants: sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Civilian 4";
+		model = "\sara_civilians\civil_4_tshirt.p3d";
+	};
+	class sah_civilian5_pants: sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Civilian 5";
+		model = "\sara_civilians\civil_5_tshirt.p3d";
+	};
+	class sah_civilian6_pants: sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Civilian 6";
+		model = "\sara_civilians\civil_6_tshirt.p3d";
+	};
+	class sah_civilian7_pants: sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Civilian 7";
+		model = "\sara_civilians\civil_7_tshirt.p3d";
+	};
+	class sah_civilian1_shorts: USMC_Soldier2
+	{
+		scope = 2;
+		displayName = "Civilian 1";
+		model = "\sara_civilians\civil_1_tshirt_shorts.p3d";
+		weapons[] = {};
+		magazines[] = {};
+		respawnweapons[] = {};
+		respawnmagazines[] = {};
+		side = 3;
+		vehicleClass = "sah_civilian_class_shorts";
+		faction = "sah_civilian_faction";
+		picture = "\Ca\characters\data\Ico\i_null_CA.paa";
+		identityTypes[] = {"Head_USMC"};
+		icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"sara_civilians\data\civil_tshirt_shorts_body.rvmat","sara_civilians\data\civil_tshirt_shorts_body_wound1.rvmat","sara_civilians\data\civil_tshirt_shorts_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound1.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound2.rvmat"};
+		};
+	};
+	class sah_civilian2_shorts: sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 2";
+		model = "\sara_civilians\civil_2_tshirt_shorts.p3d";
+	};
+	class sah_civilian3_shorts: sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 3";
+		model = "\sara_civilians\civil_3_tshirt_shorts.p3d";
+	};
+	class sah_civilian4_shorts: sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 4";
+		model = "\sara_civilians\civil_4_tshirt_shorts.p3d";
+	};
+	class sah_civilian5_shorts: sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 5";
+		model = "\sara_civilians\civil_5_tshirt_shorts.p3d";
+	};
+	class sah_civilian6_shorts: sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 6";
+		model = "\sara_civilians\civil_6_tshirt_shorts.p3d";
+	};
+	class sah_civilian7_shorts: sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 7";
+		model = "\sara_civilians\civil_7_tshirt_shorts.p3d";
+	};
+
+		class z_sah_civilian1_pants: zZombie_Base
+	{
+		scope = 2;
+		displayName = "Zombie Civilian 1";
+		model = "\sara_civilians\civil_1_tshirt.p3d";
+		weapons[] = {};
+		magazines[] = {};
+		respawnweapons[] = {};
+		respawnmagazines[] = {};
+		side = 3;
+		vehicleClass = "sah_civilian_class";
+		faction = "sah_civilian_faction";
+		picture = "\Ca\characters\data\Ico\i_null_CA.paa";
+		identityTypes[] = {"Head_USMC"};
+		icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"sara_civilians\data\civil_tshirt_body.rvmat","sara_civilians\data\civil_tshirt_body_wound1.rvmat","sara_civilians\data\civil_tshirt_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound1.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound2.rvmat"};
+		};
+	};
 	
+		class z_sah_civilian2_pants: z_sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Zombie Civilian 2";
+		model = "\sara_civilians\civil_2_tshirt.p3d";
+	};
+	class z_sah_civilian3_pants: z_sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Zombie Civilian 3";
+		model = "\sara_civilians\civil_3_tshirt.p3d";
+	};
+	class z_sah_civilian4_pants: z_sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Zombie Civilian 4";
+		model = "\sara_civilians\civil_4_tshirt.p3d";
+	};
+	class z_sah_civilian5_pants: z_sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Zombie Civilian 5";
+		model = "\sara_civilians\civil_5_tshirt.p3d";
+	};
+	class z_sah_civilian6_pants: z_sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Zombie Civilian 6";
+		model = "\sara_civilians\civil_6_tshirt.p3d";
+	};
+	class z_sah_civilian7_pants: z_sah_civilian1_pants
+	{
+		scope = 2;
+		displayName = "Zombie Civilian 7";
+		model = "\sara_civilians\civil_7_tshirt.p3d";
+	};
+
+	class z_sah_civilian1_shorts: zZombie_Base
+	{
+		scope = 2;
+		displayName = "Civilian 1";
+		model = "\sara_civilians\civil_1_tshirt_shorts.p3d";
+		weapons[] = {};
+		magazines[] = {};
+		respawnweapons[] = {};
+		respawnmagazines[] = {};
+		side = 3;
+		vehicleClass = "sah_civilian_class_shorts";
+		faction = "sah_civilian_faction";
+		picture = "\Ca\characters\data\Ico\i_null_CA.paa";
+		identityTypes[] = {"Head_USMC"};
+		icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"sara_civilians\data\civil_tshirt_shorts_body.rvmat","sara_civilians\data\civil_tshirt_shorts_body_wound1.rvmat","sara_civilians\data\civil_tshirt_shorts_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound1.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound2.rvmat"};
+		};
+	};
+	class a_sah_civilian2_shorts: z_sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 2";
+		model = "\sara_civilians\civil_2_tshirt_shorts.p3d";
+	};
+	class z_sah_civilian3_shorts: z_sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 3";
+		model = "\sara_civilians\civil_3_tshirt_shorts.p3d";
+	};
+	class z_sah_civilian4_shorts: z_sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 4";
+		model = "\sara_civilians\civil_4_tshirt_shorts.p3d";
+	};
+	class z_sah_civilian5_shorts: z_sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 5";
+		model = "\sara_civilians\civil_5_tshirt_shorts.p3d";
+	};
+	class z_sah_civilian6_shorts: z_sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 6";
+		model = "\sara_civilians\civil_6_tshirt_shorts.p3d";
+	};
+	class z_sah_civilian7_shorts: z_sah_civilian1_shorts
+	{
+		scope = 2;
+		displayName = "Civilian 7";
+		model = "\sara_civilians\civil_7_tshirt_shorts.p3d";
+	};
+	
+	class z_RACSzombie : zZombie_Base{	 //Tan Camo Helmet/Pads
 		hiddenSelections[] = {"Camo01"};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\sahcamo.paa"};
 		displayName = "Zombie Soldier";
@@ -153,18 +385,22 @@ class CfgVehicles {
 		};
 	};
 	
-	class z_RACSzombie2 : z_RACSzombie {
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\sher_co.paa"};
+	class z_RACSzombie2 : z_RACSzombie { //Sherriff
 		model = "\vil_police\vil_cop3";
 	};
 	
-	class z_RACSzombie3 : z_RACSzombie {
+	class z_RACSzombie3 : z_RACSzombie { //Black Camo Helmet/Pads
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\sahurban.paa"};
 	};	
 
-	class z_RACSzombie4 : z_RACSzombie {
+	class z_RACSzombie4 : z_RACSzombie { //US SPEC OPS Helmet/Pads
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\blackops.paa"};
 		model = "\vil_police\vil_cop3";
+	};
+	
+	class z_RACSzombie5 : z_RACSzombie { //Tan Flat No Helmet/Pads
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\sher_co.paa"};
+		model = "\vil_police\vil_cop";
 	};
 	
 	/*END ZEDS
@@ -313,9 +549,7 @@ class CfgVehicles {
 		};
 		vehicleClass = "Air";
 		faction = "USMC";
-		model = "\ca\air2\c130j\c130j.p3d";
-		picture = "\ca\air2\data\UI\picture_c130j_CA.paa";
-		icon = "\ca\air2\data\UI\icon_c130j_CA.paa";
+		model = "\ca\air_E\c130j\c130j.p3d";
 		mapSize = 25;
 		maxSpeed = 648;
 		accuracy = 0.15;
@@ -2262,21 +2496,35 @@ class CfgVehicles {
 		 };
 		};
 	};
-	
-	class C130_SMD_BLOPS : C130_DZ {
+	/*
+	class C130_SMD_BLOPS: C130_DZ {
+		model = "\ca\air_E\c130j\c130j.p3d";
 		displayname = "C130J (Unmarked)";
 		displaynameshort = "C130J (Unmarked)";
 		hiddenselections[] = {"camo1","camo2"};
-		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\c130j_body_black_co.paa","z\addons\dayz_code\textures\c130j_wings_black_co.paa"};
+			class Damage {
+				tex[] = {};
+				mat[] = {"Ca\Air_E\C130J\DATA\c130j_sklo.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_body.rvmat","Ca\Air_E\C130J\DATA\c130j_body_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_body_destruct.rvmat","Ca\Air_E\C130J\DATA\c130j_interior.rvmat","Ca\Air_E\C130J\DATA\c130j_interior_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_interior_destruct.rvmat","Ca\Air_E\C130J\DATA\c130j_wings.rvmat","Ca\Air_E\C130J\DATA\c130j_wings_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_wings_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
+			};
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\c130j_body_black_co.paa","z\addons\dayz_code\textures\c130j_wings_black_co.paa"};
+		};
 	};
 	
-	class C130_SMD_UN : C130_DZ	{
-		displayname = "UNC130J";
-		displaynameshort = "C130J (United Nations)";
+	class C130_SMD_UN: C130_DZ {
+		model = "\ca\air_E\c130j\c130j.p3d";
+		displayname = "C130J (U.N.)";
+		displaynameshort = "C130J (U.N.)";
 		hiddenselections[] = {"camo1","camo2"};
-		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\c130j_body_co.paa","z\addons\dayz_code\textures\c130j_wings_co.paa"};
+			class Damage {
+				tex[] = {};
+				mat[] = {"Ca\Air_E\C130J\DATA\c130j_sklo.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_body.rvmat","Ca\Air_E\C130J\DATA\c130j_body_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_body_destruct.rvmat","Ca\Air_E\C130J\DATA\c130j_interior.rvmat","Ca\Air_E\C130J\DATA\c130j_interior_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_interior_destruct.rvmat","Ca\Air_E\C130J\DATA\c130j_wings.rvmat","Ca\Air_E\C130J\DATA\c130j_wings_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_wings_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
+			};
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\c130j_body_co.paa","z\addons\dayz_code\textures\c130j_wings_co.paa"};
+		};
 	};
-
+*/
 	class MH60S_DZ: Helicopter
 	{
 		scope = 2;
