@@ -183,6 +183,10 @@ class Land_fuelstation : Industrial {
 	lootPos[] = {};
 };
 
+class land_fuelstation_army : Industrial {
+	lootPos[] = {};
+};
+
 class Land_chilovej_dum_mini : Residential {
 	lootPos[] = {{5.78711,-1.60693,-2.65287},{0.793945,0.2383691,-2.65287}};
 };

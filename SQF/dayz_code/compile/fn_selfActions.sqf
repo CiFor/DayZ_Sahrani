@@ -386,7 +386,7 @@ _canDrink = false;
 {
 	//Check for Well
 	_isWell = ["kasna",str(_x),false] call fnc_inString;
-	if(!_isWell) then { _isWell = ["_well",str(_x),false] call fnc_inString; };
+	if(!_isWell) then { _isWell = ["pumpa",str(_x),false] call fnc_inString; };
 	if (_isWell) then {_canDrink = true};
 } forEach _objectsWell;
 
@@ -429,4 +429,18 @@ if (inflamed cursorTarget and _canDo) then {
 } else {
 	player removeAction s_player_extinguish_fire;
 	s_player_extinguish_fire = -1;
+};
+
+//Refuel Vechiles
+_vehicle = vehicle player; //Reset current vehicle
+_isNearFeed = count (nearestObjects [position _vehicle, ["Land_A_FuelStation_Feed","Land_fuelstation","land_fuelstation_army","land_benzina_schnell","indtanksmall","land_fuel_tank_big","land_fuel_tank_stairs"], 10]) > 0;
+ 
+if (_inVehicle && _isNearFeed && !(_vehicle isKindof "Bicycle")) then
+{
+	if(s_player_refuel_vehicle < 0) then {
+		s_player_refuel_vehicle = _vehicle addAction ["Refuel", "\z\addons\dayz_code\actions\player_refuelvehicle.sqf", [], -1, false, false, "", "vehicle _this == _target && local _target"];
+	};
+} else {
+	_vehicle removeAction s_player_refuel_vehicle;
+	s_player_refuel_vehicle = -1;
 };
