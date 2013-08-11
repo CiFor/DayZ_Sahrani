@@ -2395,6 +2395,15 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "\SMD\assets\objects\tape";
 		picture = "\SMD\assets\objects\icons\tape.paa";
 		descriptionShort = "Duct Tape used for crafting various items";
+	};
+	class ItemCarbomb : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = (2*256);
+		displayName = "Car Bomb";
+		model = "\ca\weapons\explosive.p3d";
+		picture = "\SMD\assets\objects\icons\carbomb.paa";
+		descriptionShort = "Can be attached to a vehicles engine and then automaticly explode when the engine is turned on!";
 	};	
 	class ItemWoodenSplint : CA_Magazine {
 		scope = public;
