@@ -495,7 +495,12 @@ class CfgWeapons {
 		};
 		descriptionShort="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
 	};
-	
+
+	class M60A4_EP1;
+	class M60A4_EP1_DZ : M60A4_EP1 {
+		type = "1";
+	};
+
 	class Default;
 class Pistol;
 class M16A2 ;
@@ -509,7 +514,6 @@ class close;
 class short;
 class medium;
 class far;
-class M60A4_EP1 ;
 class M14_EP1;
 class M4A1 : M16_base {};
 class M4A1_Aim : M4A1 {};
@@ -2487,6 +2491,7 @@ tbody = 100;
 		class Single;
 		class Full;
 	};
+
 	class PK : Rifle {
 		class manual;
 		class close;
@@ -2494,7 +2499,14 @@ tbody = 100;
 		class medium;
 		class far;
 	};
-	class Pecheneg : PK {};
+
+	class PK_DZ : PK {
+		type = "1";
+	};
+	class Pecheneg;
+	class Pecheneg_DZ : Pecheneg {
+		type = 1;
+	};
 
 	
 	class vil_AKM_BASE : AK_47_M {

@@ -81,14 +81,8 @@ if(_playerModel in ["SniperLightBandit_DZ","SniperLightBanditW_DZ","SniperLight_
 if(_playerModel in ["SniperBanditD_DZ","SniperBanditDW_DZ","SniperD_DZ","SniperDW_DZ"]) then {
 	_itemNew = "Skin_SniperD_DZ";
 };
-if(_playerModel in ["Camo1_DZ"]) then {
-	_itemNew = "Skin_Camo1_DZ";
-};
-if(_playerModel in ["Soldier1_DZ"]) then {
-	_itemNew = "Skin_Soldier1_DZ";
-};
-if(_playerModel in ["Rocket_DZ"]) then {
-	_itemNew = "Skin_Rocket_DZ";
+if(_playerModel in ["Camo1_DZ","Soldier1_DZ","Rocket_DZ","RACSCamo_DZ"]) then {
+	_itemNew = "Skin_" + _playerModel;
 };
 
 if(_itemNew != "") then {

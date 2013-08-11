@@ -299,7 +299,7 @@ class CfgAmmo {
 	class M_AT6_AT: FakeAmmo {};
 	class M_AT9_AT: FakeAmmo {};
 	class M_9M311_AA: FakeAmmo {};
-	class Bo_GBU12_LGB: FakeAmmo {};
+	//class Bo_GBU12_LGB: FakeAmmo {};
 	class Bo_GBU12_LGB_F35: FakeAmmo {};
 	class Bo_FAB_250: FakeAmmo {};
 	class Bo_Mk82: FakeAmmo {};
@@ -802,7 +802,7 @@ class CfgWeapons {
 	//class MP5SD: FakeWeapon {};
 	//class MP5A5: FakeWeapon {};
 	//class PK: FakeWeapon {};
-	class Pecheneg: FakeWeapon {};
+	//class Pecheneg: FakeWeapon {};
 	//class SVD: FakeWeapon {};
 	//class SVD_CAMO: FakeWeapon {};
 	//class Launcher: FakeWeapon {};
