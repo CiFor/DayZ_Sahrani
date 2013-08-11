@@ -98,6 +98,9 @@ switch (_item) do {
 	case "Skin_Soldier1_DZ": {
 		_model = "Soldier1_DZ";
 	};
+	case "Skin_RACSCamo_DZ": {
+		_model = "RACSCamo_DZ";
+	};
 	case "Skin_Survivor2_DZ": {
 		_model = "Survivor2_DZ";
 		if (_isBandit) then {

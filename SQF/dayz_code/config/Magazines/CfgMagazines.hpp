@@ -2305,26 +2305,41 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			};
 		};
 	};
-	class SkinBase;																					//skins
-	class Skin_Rocket_DZ : SkinBase {
-		scope = public;
-		displayName = $STR_EQUIP_NAME_46;
-		descriptionShort = $STR_EQUIP_DESC_46;
-	};
+	class SkinBase;	
 	class Skin_BanditSkin_DZ : SkinBase {
 		scope = public;
 		displayName = $STR_EQUIP_NAME_BANDIT;
 		descriptionShort = $STR_EQUIP_NAME_BANDIT;
+	};	
+	class Skin_BanditSkin2_DZ : SkinBase {
+		scope = public;
+		displayName = $STR_EQUIP_NAME_BANDIT;
+		descriptionShort = $STR_EQUIP_NAME_BANDIT;
+	};
+	class Skin_RACSCamo_DZ : SkinBase {
+		scope = public;
+		displayName = "RACS Spec Ops BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani (Special Operations)";
+	};
+	class Soldier1_DZ : SkinBase {
+		scope = public;
+		displayName = "BAF Regular BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the British Armed Forces (Regular Infantry)";
 	};
 	class Skin_SniperLight_DZ : SkinBase {
 		scope = public;
 		displayName = "Grass Ghillie Suit";
-		descriptionShort = "A type of camouflage clothing designed to resemble Grsaslands. Can be unpacked and worn";
+		descriptionShort = "Specialized camouflage clothing designed to resemble Grass Terrain (Sniper)";
 	};
 	class Skin_SniperD_DZ : SkinBase {
 		scope = public;
 		displayName = "Desert Ghillie Suit";
-		descriptionShort = "A type of camouflage clothing designed to resemble Desert . Can be unpacked and worn";
+		descriptionShort = "Specialized camouflage clothing designed to resemble Desert Terrain (Sniper)";
+	};																				//skins
+	class Skin_Rocket_DZ : SkinBase {
+		scope = public;
+		displayName = "BAF Officer BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the British Armed Forces with officer's beret (Officer)";
 	};
 	class ItemBrick : TrashTinCan {															//trash
 		scope = public;

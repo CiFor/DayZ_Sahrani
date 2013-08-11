@@ -3681,9 +3681,8 @@ class CfgVehicles {
 		gestures = "CfgGesturesDogDZ";
 		fsmDanger = "";
 		fsmFormation = "";
-	};
-
-	class GER_Soldier_EP1;
+	};//End Pooch Begine SMD Clothing
+	class GER_Soldier_EP1; //Original "Bandit" Clothing (KSK German)
 	class Bandit1_DZ : GER_Soldier_EP1 {
 		displayName = "$STR_CHAR_2";
 		side = 1;
@@ -3697,10 +3696,47 @@ class CfgVehicles {
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
-	
+	class Bandit2_DZ : GER_Soldier_EP1 {
+		displayName = "$STR_CHAR_2";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		model = "\dayz\characters\man_bandit";
+		portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
+		magazines[] = {};
+		backpack = "";
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};		
 	class BanditSkin_DZ : Bandit1_DZ {};
-
-	class BAF_Soldier_Officer_W;
+	class BAF_Soldier_L_W;
+	class Camo1_DZ: BAF_Soldier_L_W {
+		displayName = "Survivor";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	class RACSCamo_DZ: Bandit1_DZ {
+        model = model = "\vil_police\vil_cop3";
+        displayName = "Survivor";
+        side = 1;
+        weapons[] = {"Throw","Put"};
+        backpack = "";
+        magazines[] = {};
+        respawnWeapons[] = {"Throw","Put"};
+        respawnMagazines[] = {};
+        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
+        canHideBodies = 1;
+        hiddenSelections[] = {"Camo01"};
+        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\blackops.paa"};
+    };
+	class BAF_Soldier_Officer_W; //"Rocket" Clothing (BAF Officer)
 	class Rocket_DZ: BAF_Soldier_Officer_W {
 		displayName = "Survivor";
 		side = 1;
@@ -3712,7 +3748,7 @@ class CfgVehicles {
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
-	class BAF_Soldier_W;
+	class BAF_Soldier_W; //Original "Soldier" Clothing (BAF Soldier)
 	class Soldier1_DZ: BAF_Soldier_W {
 		displayName = "Survivor";
 		side = 1;
@@ -3738,18 +3774,6 @@ class CfgVehicles {
 	};
 	class BAF_Soldier_SniperH_MTP; //Lighter Green Ghillie
 	class SniperLight_DZ: BAF_Soldier_SniperH_MTP {
-		displayName = "Survivor";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-	class BAF_Soldier_L_W;
-	class Camo1_DZ: BAF_Soldier_L_W {
 		displayName = "Survivor";
 		side = 1;
 		weapons[] = {"Throw","Put"};

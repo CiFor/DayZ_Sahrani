@@ -91,6 +91,7 @@ if (!_isNew) then {
 				"Rocket_DZ",
 				"BanditSkin_DZ",
 				"BanditSkinW_DZ",
+				"RACSCamo_DZ",
 				"SniperBandit_DZ",
 				"SniperBanditW_DZ",
 				"Sniper1W_DZ",
