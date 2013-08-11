@@ -1,0 +1,121 @@
+class Land_house_y : House {
+		animated = true;
+		scope = protected;
+		armor = 500;
+		model = "\ca\buildings\house_y";
+		
+		class AnimationSources {
+			class Door1 {
+				animPeriod = 1;
+			};
+			
+			class Door2 : Door1 {
+				initPhase = 0;
+			};
+			
+			class Door3 : Door1 {};
+			
+			class Door4 : Door1 {};
+		};
+		
+		class DestructionEffects : DestructionEffects {
+			class Ruin1 {
+				simulation = "ruin";
+				type = "\ca\buildings\ruins\house_y_ruins.p3d";
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+		
+		class UserActions {
+			class OpenDoors1 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "Door1_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door1"" < 0.5";
+				statement = "this animate [""Door1"", 1]";
+			};
+			
+			class CloseDoors1 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "Door1_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door1"" >= 0.5";
+				statement = "this animate [""Door1"", 0]";
+			};
+			
+			class OpenDoors2 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "Door2_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door2"" <= 0.5";
+				statement = "this animate [""Door2"", 1]";
+			};
+			
+			class CloseDoors2 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "Door2_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door2"" > 0.5";
+				statement = "this animate [""Door2"", 0]";
+			};
+			
+			class OpenDoors3 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "Door3_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door3"" < 0.5";
+				statement = "this animate [""Door3"", 1]";
+			};
+			
+			class CloseDoors3 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "Door3_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door3"" >= 0.5";
+				statement = "this animate [""Door3"", 0]";
+			};
+			
+			class OpenDoors4 {
+				displayNameDefault = $STR_DN_OUT_O_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "Door4_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door4"" < 0.5";
+				statement = "this animate [""Door4"", 1]";
+			};
+			
+			class CloseDoors4 {
+				displayNameDefault = $STR_DN_OUT_C_DOOR_DEFAULT;
+				displayName = $STR_DN_OUT_C_DOOR;
+				position = "Door4_Axis";
+				radius = 2;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""Door4"" >= 0.5";
+				statement = "this animate [""Door4"", 0]";
+			};
+		};
+		actionBegin1 = "OpenDoors1";
+		actionEnd1 = "OpenDoors1";
+		actionBegin2 = "OpenDoors2";
+		actionEnd2 = "OpenDoors2";
+		actionBegin3 = "OpenDoors3";
+		actionEnd3 = "OpenDoors3";
+		actionBegin4 = "OpenDoors4";
+		actionEnd4 = "OpenDoors4";
+	};
