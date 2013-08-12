@@ -81,28 +81,34 @@ if (!_isNew) then {
 	_hiveVer =		_primary select 8;
 	
 	if (!(_model in [
+				"BanditSkin_DZ",
+				"BanditSkinW_DZ",
 				"SurvivorW2_DZ",
 				"Survivor2_DZ",
-				"Sniper1_DZ",
 				"Soldier1_DZ",
 				"Camo1_DZ",
 				"BanditW1_DZ",
 				"Bandit1_DZ",
 				"Rocket_DZ",
-				"BanditSkin_DZ",
-				"BanditSkinW_DZ",
-				"RACSCamo_DZ",
+				"SMD_RACS_MP",
+				"SMD_RACS_MP_Tan",
+				"SMD_RACS_MP_TanDigi",
+				"SMD_RACS_Soldier",
+				"SMD_RACS_SWAT",
+				"SMD_SARA_Sheriff",
+				"SMD_US_SpecOps",
+				"Sniper1_DZ",
+				"Sniper1W_DZ",
 				"SniperBandit_DZ",
 				"SniperBanditW_DZ",
-				"Sniper1W_DZ",
-				"SniperLightBandit_DZ",
-				"SniperLightBanditW_DZ",
-				"SniperLight_DZ",
-				"SniperLightW_DZ",
 				"SniperBanditD_DZ",
 				"SniperBanditDW_DZ",
 				"SniperD_DZ",
-				"SniperDW_DZ"
+				"SniperDW_DZ",
+				"SniperLightBandit_DZ",
+				"SniperLightBanditW_DZ",
+				"SniperLight_DZ",
+				"SniperLightW_DZ"
 				])) then {
 		_model = "Survivor2_DZ";
 	};

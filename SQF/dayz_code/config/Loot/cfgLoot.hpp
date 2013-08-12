@@ -341,6 +341,13 @@ class CfgLoot {
 			"Skin_BanditSkin_DZ",
 			"Skin_Camo1_DZ",
 			"Skin_Rocket_DZ",
+			"SMD_RACS_MP",
+			"SMD_RACS_MP_Tan",
+			"SMD_RACS_MP_TanDigi",
+			"SMD_RACS_Soldier",
+			"SMD_RACS_SWAT",
+			"SMD_SARA_Sheriff",
+			"SMD_US_SpecOps",
 			"Skin_Sniper1_DZ",
 			"Skin_SniperLight_DZ",
 			"Skin_SniperD_DZ"
@@ -350,6 +357,13 @@ class CfgLoot {
 			0.01, //"Skin_BanditSkin_DZ"
 			0.01, //"Skin_Camo1_DZ"
 			0.01, //"Skin_Rocket_DZ"
+			0.01, //"SMD_RACS_MP",
+			0.01, //"SMD_RACS_MP_Tan",
+			0.01, //"SMD_RACS_MP_TanDigi",
+			0.01, //"SMD_RACS_Soldier",
+			0.01, //"SMD_RACS_SWAT",
+			0.01, //"SMD_SARA_Sheriff",
+			0.01, //"SMD_US_SpecOps",
 			0.01, //"Skin_Sniper1_DZ"
 			0.01, //"Skin_SniperLight_DZ"
 			0.01 //"Skin_SniperD_DZ"

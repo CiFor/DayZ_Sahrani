@@ -2305,21 +2305,51 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			};
 		};
 	};
-	class SkinBase;	
+	class SkinBase;	//external class reference						begin loot-able skin packages
 	class Skin_BanditSkin_DZ : SkinBase {
 		scope = public;
 		displayName = $STR_EQUIP_NAME_BANDIT;
 		descriptionShort = $STR_EQUIP_NAME_BANDIT;
-	};	
-	class Skin_BanditSkin2_DZ : SkinBase {
-		scope = public;
-		displayName = $STR_EQUIP_NAME_BANDIT;
-		descriptionShort = $STR_EQUIP_NAME_BANDIT;
 	};
-	class Skin_RACSCamo_DZ : SkinBase {
+	class Skin_Rocket_DZ : SkinBase {
 		scope = public;
-		displayName = "RACS Spec Ops BDU";
-		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani (Special Operations)";
+		displayName = "BAF Officer BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the British Armed Forces with officer's beret (Officer)";
+	};
+	class Skin_SMD_RACS_MP : SkinBase {
+		scope = public;
+		displayName = "RACS M.P. BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (Military Police)";
+	};
+	class Skin_SMD_RACS_MP_Tan : SkinBase {
+		scope = public;
+		displayName = "RACS M.P. BDU2";
+		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (Military Police) (Desert Blended Vest)";
+	};
+	class Skin_SMD_RACS_MP_TanDigi : SkinBase {
+		scope = public;
+		displayName = "RACS M.P. BDU3";
+		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (Military Police) (Digital Camo Blended Vest)";
+	};	
+	class Skin_SMD_RACS_Soldier : SkinBase {
+		scope = public;
+		displayName = "RACS Soldier BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani (Regular Infantry)";
+	};	
+	class Skin_SMD_RACS_SWAT : SkinBase {
+		scope = public;
+		displayName = "RACS SWAT BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (SWAT)";
+	};	
+	class Skin_SMD_SARA_Sheriff : SkinBase {
+		scope = public;
+		displayName = "Sahrani Sheriff";
+		descriptionShort = "Standard Deputy Sheriff Dress Uniform of United Sahrani Police Department";
+	};
+	class Skin_SMD_US_SpecOps : SkinBase {
+		scope = public;
+		displayName = "U.S. Spec Ops BDU";
+		descriptionShort = "Special Battle Dress Uniform of the United States Armed Forces (Special Operations)";
 	};
 	class Soldier1_DZ : SkinBase {
 		scope = public;
@@ -2335,11 +2365,6 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		scope = public;
 		displayName = "Desert Ghillie Suit";
 		descriptionShort = "Specialized camouflage clothing designed to resemble Desert Terrain (Sniper)";
-	};																				//skins
-	class Skin_Rocket_DZ : SkinBase {
-		scope = public;
-		displayName = "BAF Officer BDU";
-		descriptionShort = "Standard Battle Dress Uniform of the British Armed Forces with officer's beret (Officer)";
 	};
 	class ItemBrick : TrashTinCan {															//trash
 		scope = public;
