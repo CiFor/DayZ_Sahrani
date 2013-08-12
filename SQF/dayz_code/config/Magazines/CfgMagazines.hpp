@@ -2396,7 +2396,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\SMD\assets\objects\icons\tape.paa";
 		descriptionShort = "Duct Tape used for crafting various items";
 	};
-	class ItemCarbomb : CA_Magazine {
+	class ItemCarBomb : CA_Magazine {
 		scope = public;
 		count = 1;
 		type = (2*256);
