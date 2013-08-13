@@ -23,7 +23,7 @@ class CfgBuildingLoot {
 	class Crash1: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_RACSzombie"};
+		zombieClass[] = {"z_RACSzombie"}; 
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
@@ -1162,7 +1162,7 @@ class CfgBuildingLoot {
 	class Military: Default {
 		zombieChance = 0.3;
 		maxRoaming = 6;
-		zombieClass[] = {"z_RACSzombie","z_RACSzombie3","z_RACSzombie5","z_RACSzombie2","z_RACSzombie4"};
+		zombieClass[] = {"z_RACSzombie","z_RACSzombie2","z_RACSzombie3","z_RACSzombie4","z_RACSzombie5","z_RACSzombie6","z_RACSzombie7"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{

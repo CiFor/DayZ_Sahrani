@@ -311,12 +311,17 @@ class CfgVehicles {
 		model = "\vil_police\vil_cop";
 	};
 	
-	class z_RACSzombie6 : z_RACSzombie { //Tan Flat bdu AND vest No Helmet/Pads
+	class z_RACSzombie6 : z_RACSzombie { //Tan Flat bdu AND vest No Helmet/Pads Blended Vest
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tan_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
 	
-	class z_RACSzombie7 : z_RACSzombie { //Tan digi bdue AND vest No Helmet/Pads
+	class z_RACSzombie7 : z_RACSzombie { //Tan digi bdu AND vest No Helmet/Pads Blended Vest
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tandigi_co.paa"};
+		model = "\vil_police\vil_cop";
+	};
+	
+	class z_RACSzombie8 : z_RACSzombie { //Tan digi bdu Black vest 
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tandigi_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
@@ -385,42 +390,19 @@ class CfgVehicles {
         transportmaxbackpacks = 5;
 		class Turrets {};
 	};
-	/*
-	class AH6RACS_DZ : AH6X_DZ {
-    displayname = "AH6RACS";
-    displaynameshort = "AH6RACS";
-    hiddenselections[] = {"camo1"};
-    hiddenselectionstextures[] = {"z\addons\dayz_code\textures\ah6_co.paa"};
-    };
-	*/
 	class AH6X_SMDRACS : AH6X_DZ
 	{
 		displayname = "RACS Little Bird";
-		displaynameshort = "AH6X - RACS";
-		audible = 6;
-		enablemanualfire = 0;
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
+		displaynameshort = "AH6X (RACS)";
 		hiddenselections[] = {"camo1"};
-		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\ah6_co.paa"};
-		icon = "\ca\air_e\data\UI\Icon_ah6x_CA.paa";
-		model = "\ca\air_e\ah6j\ah6x";
-		picture = "\ca\air_e\data\UI\Picture_ah6x_CA.paa";
-		isuav = 0;
-		radartype = 0;
-		class TransportMagazines{};
-		class TransportWeapons{};
-		weapons[] = {};
-		magazines[] = {};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 10;
-		transportMaxMagazines = 30;
-        transportmaxbackpacks = 5;
-		class Turrets {};
+		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_racs_co.paa"};
+	};
+	class AH6X_SMDRACS_DIGI : AH6X_DZ
+	{
+		displayname = "RACS Digital Little Bird";
+		displaynameshort = "AH6X (RACS Digital Camo)";
+		hiddenselections[] = {"camo1"};
+		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_racs_digi_co.paa"};
 	};
 	
 	class An2_Base_EP1;
@@ -3303,10 +3285,10 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"ca\air_E\UH1H\data\UH1D_CO.paa", "ca\air_E\UH1H\data\UH1D_in_CO.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
 
-	class UH1H_SMD_BLOPS: UH1H_base
+	class UH1H_SMD_BLOPS: UH1H_DZ
 	{
 		displayname = "UH1H Unmarked";
-		displaynameshort = "AH6X";	
+		displaynameshort = "UH1H (Unmarked)";	
 		scope = 2;
 		side = 2;
 		crew = "";
@@ -3332,8 +3314,72 @@ class CfgVehicles {
 				magazines[] = {"100Rnd_762x51_M240"};
 			};
 		};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\uh1d_black_CO.paa", "z\addons\dayz_code\textures\uh1d_in_black_CO.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_blackops_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_blackops_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+	};
+
+	class UH1H_SMD_RACS: UH1H_DZ
+	{
+		displayname = "UH1H RACS";
+		displaynameshort = "UH1H (RACS)";	
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {"Camo1", "Camo2", "Camo_mlod"};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 25;
+        transportmaxbackpacks = 4;
+		
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				magazines[] = {"100Rnd_762x51_M240"};
+			};
+			class LeftDoorGun : LeftDoorGun
+			{
+				magazines[] = {"100Rnd_762x51_M240"};
+			};
+		};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_racs_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_racs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};	
+
+	class UH1H_SMD_RACS_DIGI: UH1H_DZ
+	{
+		displayname = "UH1H (RACS Digital Camo)";
+		displaynameshort = "UH1H RACS DIGITAL";	
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {"Camo1", "Camo2", "Camo_mlod"};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 25;
+        transportmaxbackpacks = 4;
+		
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				magazines[] = {"100Rnd_762x51_M240"};
+			};
+			class LeftDoorGun : LeftDoorGun
+			{
+				magazines[] = {"100Rnd_762x51_M240"};
+			};
+		};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_racs_digi_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_racs_digi_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+	};		
 	
 	class RubberBoat;
 	class PBX: RubberBoat {
@@ -3774,6 +3820,20 @@ class CfgVehicles {
         canHideBodies = 1;
         hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_regular_co.paa"};
+    };
+	class SMD_RACS_Soldier_Digi: Bandit1_DZ { //Tan Camo Helmet/Pads
+        model = "\vil_police\vil_swat";
+        displayName = "Survivor";
+        side = 1;
+        weapons[] = {"Throw","Put"};
+        backpack = "";
+        magazines[] = {};
+        respawnWeapons[] = {"Throw","Put"};
+        respawnMagazines[] = {};
+        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
+        canHideBodies = 1;
+        hiddenSelections[] = {"Camo01"};
+        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_regular_digi_co.paa"};
     };
 	class SMD_RACS_SWAT: Bandit1_DZ { //Black Camo Helmet/Pads
         model = "\vil_police\vil_swat";

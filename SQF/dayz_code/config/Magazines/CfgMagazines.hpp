@@ -2328,13 +2328,18 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 	};
 	class Skin_SMD_RACS_MP_TanDigi : SkinBase {
 		scope = public;
-		displayName = "RACS M.P. BDU3";
+		displayName = "RACS M.P. BDU (Digital)";
 		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (Military Police) (Digital Camo Blended Vest)";
 	};	
 	class Skin_SMD_RACS_Soldier : SkinBase {
 		scope = public;
 		displayName = "RACS Soldier BDU";
 		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani (Regular Infantry)";
+	};	
+	class Skin_SMD_RACS_Soldier_Digi : SkinBase {
+		scope = public;
+		displayName = "RACS Soldier BDU (Digital)";
+		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani (Regular Infantry)(Digital Camo)";
 	};	
 	class Skin_SMD_RACS_SWAT : SkinBase {
 		scope = public;

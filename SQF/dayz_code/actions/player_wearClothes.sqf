@@ -110,6 +110,9 @@ switch (_item) do {
 	case "Skin_SMD_RACS_Soldier": {
 		_model = "SMD_RACS_Soldier";
 	};
+	case "Skin_SMD_RACS_Soldier_Digi": {
+		_model = "SMD_RACS_Soldier_Digi";
+	};
 	case "Skin_SMD_RACS_SWAT": {
 		_model = "SMD_RACS_SWAT";
 	};
