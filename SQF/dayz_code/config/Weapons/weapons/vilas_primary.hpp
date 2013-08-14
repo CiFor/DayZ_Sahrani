@@ -837,7 +837,7 @@ class vil_Fal_Para : Vil_Fal {
 	Vilas Western Weapons Assault Rifles
 **********************************************************/
 
-class vil_sg540 : Rifle {
+class vil_sg540 : M16_base {
 	htMin = 1;
 	htMax = 480;
 	afMax = 0;
@@ -863,9 +863,12 @@ class vil_sg540 : Rifle {
 		author = $STR_AUTHOR_VILAS;
 	};
 	descriptionShort = $STR_VIL_SG540_SHORT;
-	};
+	class Single;
+	class Burst;
+	class FullAuto;
+};
 
-	class vil_sg542 : vil_sg540 {
+class vil_sg542 : vil_sg540 {
 	scope = public;
 	model = "\vilas_wwp\vil_sg542";
 	displayName = $STR_VIL_SG542;
@@ -942,7 +945,7 @@ class VIL_M4_aim : M4A1_Aim {
 	};
 };
 
-class vil_HK33 : Rifle {
+class vil_HK33 : M16_base {
 	htMin = 1;
 	htMax = 480;
 	afMax = 0;
