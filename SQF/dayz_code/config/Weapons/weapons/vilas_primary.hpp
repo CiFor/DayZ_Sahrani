@@ -224,7 +224,7 @@ class vil_G3a3 : FN_FAL {
 
 	class M203Muzzle;
 
-	class Single: Single  {
+	class Single: Mode_SemiAuto  {
 		begin1[] = {"\vilas_wwp\sounds\g3_fire1", 1.77828, 1, 1000};
 		begin2[] = {"\vilas_wwp\sounds\g3_fire2", 1.77828, 1, 1000};
 		soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
@@ -240,7 +240,7 @@ class vil_G3a3 : FN_FAL {
 		maxRangeProbab = 0.05;
 	};
 
-	class FullAuto: FullAuto {
+	class FullAuto: Mode_FullAuto {
 		begin1[] = {"\vilas_wwp\sounds\g3_fire1", 1.77828, 1, 1000};
 		begin2[] = {"\vilas_wwp\sounds\g3_fire2", 1.77828, 1, 1000};
 		soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
