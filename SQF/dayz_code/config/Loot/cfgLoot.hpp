@@ -343,7 +343,7 @@ class CfgLoot {
 			"Skin_Rocket_DZ",
 			"Skin_SMD_RACS_MP",
 			"Skin_SMD_RACS_MP_Tan",
-			"Skin_SMD_RACS_MP_TanDigi",
+			"Skin_SMD_RACS_MP_Tan_Digi",
 			"Skin_SMD_RACS_Soldier",
 			"Skin_SMD_RACS_Soldier_Digi",
 			"Skin_SMD_RACS_SWAT",

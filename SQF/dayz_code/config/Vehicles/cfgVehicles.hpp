@@ -390,14 +390,14 @@ class CfgVehicles {
         transportmaxbackpacks = 5;
 		class Turrets {};
 	};
-	class AH6X_SMDRACS : AH6X_DZ
+	class AH6X_SMD_RACS : AH6X_DZ
 	{
 		displayname = "RACS Little Bird";
 		displaynameshort = "AH6X (RACS)";
 		hiddenselections[] = {"camo1"};
 		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_racs_co.paa"};
 	};
-	class AH6X_SMDRACS_DIGI : AH6X_DZ
+	class AH6X_SMD_RACS_DIGI : AH6X_DZ
 	{
 		displayname = "RACS Digital Little Bird";
 		displaynameshort = "AH6X (RACS Digital Camo)";
@@ -2410,21 +2410,242 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"ca\air2\c130j\data\c130j_body_co.paa","ca\air_e\c130j\data\c130j_wings_co.paa"};
 	};
 	
-	class C130_SMD_BLOPS: C130_SMD_DZ {
+	class C130_SMD_BLOPS: C130_SMD_DZ 
+	{
 		displayname = "C130J (Unmarked)";
 		displaynameshort = "C130J (Unmarked)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_blackops_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_blackops_wings_co.paa"};
-		};
+	};
 	
 	
-	class C130_SMD_UN: C130_SMD_DZ {
+	class C130_SMD_UN: C130_SMD_DZ 
+	{
 		displayname = "C130J (U.N.)";
 		displaynameshort = "C130J (U.N.)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_UN_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_UN_wings_co.paa"};
-		};
+	};
 	
+	class HMMWV_Base;
+	class HMMWV_DZ: HMMWV_Base {
+		accuracy = 0.32;
+		displayname = "HMMWV";
+		hasgunner = 0;
+		hiddenselections[] = {"Camo1"};
+		hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
+		icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
+		mapsize = 5;
+		model = "ca\wheeled_E\HMMWV\HMMWV";
+		picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 50;
+        transportmaxbackpacks = 5;
+		class Turrets {};
+		class HitPoints {
+			class HitEngine {
+				armor = 2.4;
+				material = -1;
+				name = "motor";
+				passthrough = 0.2;
+				visual = "";
+			};
+			class HitBody {
+				armor = 1;
+				material = -1;
+				name = "karoserie";
+				passthrough = 1;
+				visual = "";
+			};
+			class HitFuel {
+				armor = 1.3;
+				material = -1;
+				name = "palivo";
+				passthrough = 0.5;
+				visual = "";
+			};
+			class HitLFWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_1_1_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitRFWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_2_1_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitLBWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_1_2_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitRBWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_2_2_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitGlass1 {
+				armor = 0.4;
+				material = -1;
+				name = "glass1";
+				passthrough = 0;
+				visual = "glass1";
+			};
+			class HitGlass2 {
+				armor = 0.4;
+				material = -1;
+				name = "glass2";
+				passthrough = 0;
+				visual = "glass2";
+			};
+			class HitGlass3 {
+				armor = 0.2;
+				material = -1;
+				name = "glass3";
+				passthrough = 0;
+				visual = "glass3";
+			};
+			class HitGlass4 {
+				armor = 0.2;
+				material = -1;
+				name = "glass4";
+				passthrough = 0;
+				visual = "glass4";
+			};
+		};
+		class Damage {
+			mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
+			tex[] = {};
+		};
+	};
+	class HMMWV_D_DZ: HMMWV_Base {
+		accuracy = 0.32;
+		displayname = "HMMWV Desert";
+		hasgunner = 0;
+		hiddenselections[] = {"Camo1"};
+		hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
+		icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
+		mapsize = 5;
+		model = "ca\wheeled_E\HMMWV\HMMWV_DES_EP1";
+		picture = "\Ca\wheeled\data\ico\HMMWV_DES_EP1.paa";
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 50;
+        transportmaxbackpacks = 5;
+		class Turrets {};
+		class HitPoints {
+			class HitEngine {
+				armor = 2.4;
+				material = -1;
+				name = "motor";
+				passthrough = 0.2;
+				visual = "";
+			};
+			class HitBody {
+				armor = 1;
+				material = -1;
+				name = "karoserie";
+				passthrough = 1;
+				visual = "";
+			};
+			class HitFuel {
+				armor = 1.3;
+				material = -1;
+				name = "palivo";
+				passthrough = 0.5;
+				visual = "";
+			};
+			class HitLFWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_1_1_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitRFWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_2_1_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitLBWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_1_2_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitRBWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_2_2_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitGlass1 {
+				armor = 0.4;
+				material = -1;
+				name = "glass1";
+				passthrough = 0;
+				visual = "glass1";
+			};
+			class HitGlass2 {
+				armor = 0.4;
+				material = -1;
+				name = "glass2";
+				passthrough = 0;
+				visual = "glass2";
+			};
+			class HitGlass3 {
+				armor = 0.2;
+				material = -1;
+				name = "glass3";
+				passthrough = 0;
+				visual = "glass3";
+			};
+			class HitGlass4 {
+				armor = 0.2;
+				material = -1;
+				name = "glass4";
+				passthrough = 0;
+				visual = "glass4";
+			};
+		};
+		class Damage {
+			mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
+			tex[] = {};
+		};
+	};
+	class LandRover_CZ_EP1;
+	class LandRover_SMD_RACS: LandRover_CZ_EP1
+	{
+		scope = 2;
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_landrover_racs_co.paa"};
+	};
+
+	class LandRover_SMD_RACS_DIGI: LandRover_CZ_EP1
+	{
+		scope = 2;
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_landrover_racs_digi_co.paa"};
+	};
 
 	class MH60S_DZ: Helicopter
 	{
@@ -2651,6 +2872,96 @@ class CfgVehicles {
 				brightness = 1.0;
 			};
 		};	
+	};
+	
+	class Mi17_base: Helicopter 
+	{
+		radartype = 0;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics {};
+				class Turrets: Turrets {};
+			};
+			class BackTurret: MainTurret
+			{
+				class Turrets: Turrets {};
+			};
+		};
+	};
+	
+	class Mi17_DZ: Mi17_base	
+	{
+		displayname = "Mi17";
+		displaynameshort = "Mi17";
+		radartype = 0;
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 50;
+        transportmaxbackpacks = 10;
+		
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				magazines[] = {"100Rnd_762x54_PK"};
+			};
+			class BackTurret : BackTurret
+			{
+				magazines[] = {"100Rnd_762x54_PK"};
+			};
+		};
+	};
+	
+	class Mi17_Civilian_DZ: Mi17_base
+	{
+		scope = 2;
+		vehicleClass = "Air";
+		side = 3;
+		displayName = "$STR_DN_MI17CIV";
+		model = "\ca\air\Mi_8AMT";
+		weapons[] = {};
+		radartype = 0;
+		accuracy = 1000;
+		magazines[] = {};
+		hasGunner = 0;
+		class Turrets{};
+		threat[] = {0.0,0.0,0.0};
+		hiddenSelectionsTextures[] = {"\CA\air\data\mi8civil_body_g_CO.paa","\CA\air\data\mi8civil_det_g_CO.paa","ca\air\data\clear_empty.paa","ca\air\data\mi8_decals_ca.paa"};
+	};
+	
+	class Mi17_UN_CDF_EP1
+	{
+		radartype = 0;
+	};
+	
+	class Mi17_SMD_BLOPS: Mi17_UN_CDF_EP1 //Textures by Pliskin
+	{
+		scope = 2;
+		vehicleClass = "Air";
+		side = 3;
+		displayName = "Mi17 Unmarked";
+		model = "\ca\air\Mi_8AMT";
+		crew = "Pilot";
+		typicalCargo[] = {"Pilot"};
+		weapons[] = {};		
+		radartype = 0;
+		accuracy = 1000;
+		magazines[] = {};
+		hasGunner = 0;
+		class Turrets{};
+		threat[] = {0.0,0.0,0.0};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_mi17_blackops_body_co.paa","z\addons\dayz_code\textures\smd_veh_mi17_blackops_det_co.paa","z\addons\dayz_code\textures\smd_veh_mi17_blackops_decals2_co.paa"}; //by Textures by Pliskin
 	};	
 	
 	class MV22_DZ: Plane {
@@ -2945,301 +3256,6 @@ class CfgVehicles {
 		};
 	};
 	
-	class HMMWV_Base;
-	class HMMWV_DZ: HMMWV_Base {
-		accuracy = 0.32;
-		displayname = "HMMWV";
-		hasgunner = 0;
-		hiddenselections[] = {"Camo1"};
-		hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
-		icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
-		mapsize = 5;
-		model = "ca\wheeled_E\HMMWV\HMMWV";
-		picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		transportMaxWeapons = 10;
-		transportMaxMagazines = 50;
-        transportmaxbackpacks = 5;
-		class Turrets {};
-		class HitPoints {
-			class HitEngine {
-				armor = 2.4;
-				material = -1;
-				name = "motor";
-				passthrough = 0.2;
-				visual = "";
-			};
-			class HitBody {
-				armor = 1;
-				material = -1;
-				name = "karoserie";
-				passthrough = 1;
-				visual = "";
-			};
-			class HitFuel {
-				armor = 1.3;
-				material = -1;
-				name = "palivo";
-				passthrough = 0.5;
-				visual = "";
-			};
-			class HitLFWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_1_1_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitRFWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_2_1_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitLBWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_1_2_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitRBWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_2_2_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitGlass1 {
-				armor = 0.4;
-				material = -1;
-				name = "glass1";
-				passthrough = 0;
-				visual = "glass1";
-			};
-			class HitGlass2 {
-				armor = 0.4;
-				material = -1;
-				name = "glass2";
-				passthrough = 0;
-				visual = "glass2";
-			};
-			class HitGlass3 {
-				armor = 0.2;
-				material = -1;
-				name = "glass3";
-				passthrough = 0;
-				visual = "glass3";
-			};
-			class HitGlass4 {
-				armor = 0.2;
-				material = -1;
-				name = "glass4";
-				passthrough = 0;
-				visual = "glass4";
-			};
-		};
-		class Damage {
-			mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
-			tex[] = {};
-		};
-	};
-	class HMMWV_D_DZ: HMMWV_Base {
-		accuracy = 0.32;
-		displayname = "HMMWV Desert";
-		hasgunner = 0;
-		hiddenselections[] = {"Camo1"};
-		hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
-		icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
-		mapsize = 5;
-		model = "ca\wheeled_E\HMMWV\HMMWV_DES_EP1";
-		picture = "\Ca\wheeled\data\ico\HMMWV_DES_EP1.paa";
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		transportMaxWeapons = 10;
-		transportMaxMagazines = 50;
-        transportmaxbackpacks = 5;
-		class Turrets {};
-		class HitPoints {
-			class HitEngine {
-				armor = 2.4;
-				material = -1;
-				name = "motor";
-				passthrough = 0.2;
-				visual = "";
-			};
-			class HitBody {
-				armor = 1;
-				material = -1;
-				name = "karoserie";
-				passthrough = 1;
-				visual = "";
-			};
-			class HitFuel {
-				armor = 1.3;
-				material = -1;
-				name = "palivo";
-				passthrough = 0.5;
-				visual = "";
-			};
-			class HitLFWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_1_1_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitRFWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_2_1_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitLBWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_1_2_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitRBWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_2_2_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitGlass1 {
-				armor = 0.4;
-				material = -1;
-				name = "glass1";
-				passthrough = 0;
-				visual = "glass1";
-			};
-			class HitGlass2 {
-				armor = 0.4;
-				material = -1;
-				name = "glass2";
-				passthrough = 0;
-				visual = "glass2";
-			};
-			class HitGlass3 {
-				armor = 0.2;
-				material = -1;
-				name = "glass3";
-				passthrough = 0;
-				visual = "glass3";
-			};
-			class HitGlass4 {
-				armor = 0.2;
-				material = -1;
-				name = "glass4";
-				passthrough = 0;
-				visual = "glass4";
-			};
-		};
-		class Damage {
-			mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
-			tex[] = {};
-		};
-	};
-	
-	class Mi17_base: Helicopter 
-	{
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class ViewOptics: ViewOptics {};
-				class Turrets: Turrets {};
-			};
-			class BackTurret: MainTurret
-			{
-				class Turrets: Turrets {};
-			};
-		};
-	};
-	
-	class Mi17_DZ: Mi17_base	
-	{
-		displayname = "Mi17";
-		displaynameshort = "Mi17";
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 10;
-		transportMaxMagazines = 50;
-        transportmaxbackpacks = 10;
-		
-		class Turrets : Turrets 
-		{
-			class MainTurret : MainTurret 
-			{
-				magazines[] = {"100Rnd_762x54_PK"};
-			};
-			class BackTurret : BackTurret
-			{
-				magazines[] = {"100Rnd_762x54_PK"};
-			};
-		};
-	};
-	
-	class Mi17_Civilian_DZ: Mi17_base
-	{
-		scope = 2;
-		vehicleClass = "Air";
-		side = 3;
-		displayName = "$STR_DN_MI17CIV";
-		faction = "CIV";
-		model = "\ca\air\Mi_8AMT";
-		crew = "Pilot";
-		typicalCargo[] = {"Pilot"};
-		weapons[] = {};
-		radartype = 0;
-		accuracy = 1000;
-		magazines[] = {};
-		hasGunner = 0;
-		class Turrets{};
-		threat[] = {0.0,0.0,0.0};
-		hiddenSelectionsTextures[] = {"\CA\air\data\mi8civil_body_g_CO.paa","\CA\air\data\mi8civil_det_g_CO.paa","ca\air\data\clear_empty.paa","ca\air\data\mi8_decals_ca.paa"};
-	};
-	
-	class Mi17_UN_CDF_EP1;
-	
-	class Mi17_SMD_BLOPS: Mi17_UN_CDF_EP1 //Textures by Pliskin
-	{
-		scope = 2;
-		vehicleClass = "Air";
-		side = 3;
-		displayName = "Mi17 Unmarked";
-		faction = "CIV";
-		model = "\ca\air\Mi_8AMT";
-		crew = "Pilot";
-		typicalCargo[] = {"Pilot"};
-		weapons[] = {};		
-		radartype = 0;
-		accuracy = 1000;
-		magazines[] = {};
-		hasGunner = 0;
-		class Turrets{};
-		threat[] = {0.0,0.0,0.0};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\mi17_body_un_black_co.paa","z\addons\dayz_code\textures\mi17_det_un_black_co.paa","z\addons\dayz_code\textures\mi17_decals2_un_black_ca.paa"}; //by Textures by Pliskin
-	};
-	
 	class UH1H_base: Helicopter 
 	{
 		class Turrets: Turrets
@@ -3381,6 +3397,38 @@ class CfgVehicles {
 		};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_racs_digi_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_racs_digi_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};		
+
+	class UH1H_SMD_UN: UH1H_DZ
+	{
+		displayname = "UH1H (Uunited Nations)";
+		displaynameshort = "UH1H UNITED NATIONS";	
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {"Camo1", "Camo2", "Camo_mlod"};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 25;
+        transportmaxbackpacks = 4;
+		
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				magazines[] = {"100Rnd_762x51_M240"};
+			};
+			class LeftDoorGun : LeftDoorGun
+			{
+				magazines[] = {"100Rnd_762x51_M240"};
+			};
+		};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_un_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_un_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+	};	
 	
 	class RubberBoat;
 	class PBX: RubberBoat {

@@ -2326,7 +2326,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "RACS M.P. BDU2";
 		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (Military Police) (Desert Blended Vest)";
 	};
-	class Skin_SMD_RACS_MP_TanDigi : SkinBase {
+	class Skin_SMD_RACS_MP_Tan_Digi : SkinBase {
 		scope = public;
 		displayName = "RACS M.P. BDU (Digital)";
 		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (Military Police) (Digital Camo Blended Vest)";
