@@ -430,7 +430,7 @@ class CfgVehicles {
 	};
 
 	class Plane;
-	class C130_DZ: Plane 
+	class C130_base: Plane 
 	{
 		destrType = "DestructWreck";
 		scope = 2;
@@ -2396,35 +2396,36 @@ class CfgVehicles {
 		 };
 		};
 	};
-	/*
-	class C130_SMD_BLOPS: C130_DZ {
+	
+	
+	class C130_SMD_DZ: C130_base
+	{
 		model = "\ca\air_E\c130j\c130j.p3d";
-		displayname = "C130J (Unmarked)";
-		displaynameshort = "C130J (Unmarked)";
-		hiddenselections[] = {"camo1","camo2"};
-			class Damage {
-				tex[] = {};
-				mat[] = {"Ca\Air_E\C130J\DATA\c130j_sklo.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_body.rvmat","Ca\Air_E\C130J\DATA\c130j_body_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_body_destruct.rvmat","Ca\Air_E\C130J\DATA\c130j_interior.rvmat","Ca\Air_E\C130J\DATA\c130j_interior_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_interior_destruct.rvmat","Ca\Air_E\C130J\DATA\c130j_wings.rvmat","Ca\Air_E\C130J\DATA\c130j_wings_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_wings_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
-			};
-			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\c130j_body_black_co.paa","z\addons\dayz_code\textures\c130j_wings_black_co.paa"};
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {"Ca\Air_E\C130J\DATA\c130j_sklo.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_body.rvmat","Ca\Air_E\C130J\DATA\c130j_body_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_body_destruct.rvmat","Ca\Air_E\C130J\DATA\c130j_interior.rvmat","Ca\Air_E\C130J\DATA\c130j_interior_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_interior_destruct.rvmat","Ca\Air_E\C130J\DATA\c130j_wings.rvmat","Ca\Air_E\C130J\DATA\c130j_wings_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_wings_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
 		};
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"ca\air2\c130j\data\c130j_body_co.paa","ca\air_e\c130j\data\c130j_wings_co.paa"};
 	};
 	
-	class C130_SMD_UN: C130_DZ {
-		model = "\ca\air_E\c130j\c130j.p3d";
+	class C130_SMD_BLOPS: C130_SMD_DZ {
+		displayname = "C130J (Unmarked)";
+		displaynameshort = "C130J (Unmarked)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_blackops_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_blackops_wings_co.paa"};
+		};
+	
+	
+	class C130_SMD_UN: C130_SMD_DZ {
 		displayname = "C130J (U.N.)";
 		displaynameshort = "C130J (U.N.)";
-		hiddenselections[] = {"camo1","camo2"};
-			class Damage {
-				tex[] = {};
-				mat[] = {"Ca\Air_E\C130J\DATA\c130j_sklo.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_sklo_in_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_body.rvmat","Ca\Air_E\C130J\DATA\c130j_body_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_body_destruct.rvmat","Ca\Air_E\C130J\DATA\c130j_interior.rvmat","Ca\Air_E\C130J\DATA\c130j_interior_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_interior_destruct.rvmat","Ca\Air_E\C130J\DATA\c130j_wings.rvmat","Ca\Air_E\C130J\DATA\c130j_wings_damage.rvmat","Ca\Air_E\C130J\DATA\c130j_wings_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
-			};
-			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\c130j_body_co.paa","z\addons\dayz_code\textures\c130j_wings_co.paa"};
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_UN_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_UN_wings_co.paa"};
 		};
-	};
-*/
+	
+
 	class MH60S_DZ: Helicopter
 	{
 		scope = 2;
