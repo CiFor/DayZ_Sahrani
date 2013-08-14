@@ -8,6 +8,7 @@ private["_menClose","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_vehicle
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
+_isAir = _vehicle iskindof "Air";
 _bag = unitBackpack player;
 _classbag = typeOf _bag;
 _isWater = 		(surfaceIsWater (position player)) or dayz_isSwimming;
@@ -421,7 +422,7 @@ if ( ((cursorTarget isKindOf "TentStorage") || (cursorTarget isKindOf "Gunrack_D
 		if(cursorTarget isKindOf "Gunrack_DZ") then {
 			_burnTarget = "Gunrack";
 		};
-		s_player_ignite_storage = player addAction [("<t color=""#ff0000"">Ignite " + _burnTarget +"</t>"), "dayz_code\actions\player_ignite_storage.sqf",cursorTarget, 0, false, true, "", ""];
+		s_player_ignite_storage = player addAction ["Ignite " + _burnTarget, "\z\addons\dayz_code\actions\player_ignite_storage.sqf",cursorTarget, 3, false, true, "", ""];
 	};
 } else {
 	player removeAction s_player_ignite_storage;
@@ -440,7 +441,14 @@ if (inflamed cursorTarget and _canDo) then {
 
 //Refuel Vechiles
 _vehicle = vehicle player; //Reset current vehicle
-_isNearFeed = count (nearestObjects [position _vehicle, ["Land_A_FuelStation_Feed","Land_fuelstation","land_fuelstation_army","land_benzina_schnell","indtanksmall","land_fuel_tank_big","land_fuel_tank_stairs"], 10]) > 0;
+_isNearFeed = false;
+if( _inVehicle ) then { //Slow process, only run when needed
+	if( _isAir ) then {
+		_isNearFeed = count (nearestObjects [position _vehicle, ["Land_fuelstation","land_fuelstation_army"], 20]) > 0;
+	} else {
+		_isNearFeed = count (nearestObjects [position _vehicle, ["Land_A_FuelStation_Feed","Land_fuelstation","land_fuelstation_army","land_benzina_schnell"], 10]) > 0; //,"indtanksmall","land_fuel_tank_big","land_fuel_tank_stairs"
+	};
+};
  
 if (_inVehicle && _isNearFeed && !(_vehicle isKindof "Bicycle")) then
 {

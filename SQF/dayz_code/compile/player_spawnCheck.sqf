@@ -20,7 +20,6 @@ if (_inVehicle) then {
 	_maxZombies = _maxZombies / 2;
 };
 if (_isAir) then {
-	diag_log "In Vehicle";
 	_maxZombies = 5;
 };
 
