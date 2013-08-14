@@ -1,4 +1,4 @@
-private["_lootBalance","_balancedLoot","_balancedLootMin","_playerCount","_maxPlayers","_sosDistance","_spawnOnStart","_maxHelis","_sendSOS","_heliSpawned","_useStatic","_crashDamage","_lootRadius","_preWaypoints","_preWaypointPos","_endTime","_startTime","_safetyPoint","_heliStart","_deadBody","_exploRange","_heliModel","_lootPos","_list","_craters","_dummy","_wp2","_wp3","_landingzone","_aigroup","_wp","_helipilot","_crash","_crashwreck","_smokerand","_staticcoords","_pos","_dir","_position","_num","_config","_itemType","_itemChance","_weights","_index","_iArray","_crashModel","_lootTable","_guaranteedLoot","_randomizedLoot","_frequency","_variance","_spawnChance","_spawnMarker","_spawnRadius","_spawnFire","_permanentFire","_crashName"];
+private["_no50s","_lootBalance","_balancedLoot","_balancedLootMin","_playerCount","_maxPlayers","_sosDistance","_spawnOnStart","_maxHelis","_sendSOS","_heliSpawned","_useStatic","_crashDamage","_lootRadius","_preWaypoints","_preWaypointPos","_endTime","_startTime","_safetyPoint","_heliStart","_deadBody","_exploRange","_heliModel","_lootPos","_list","_craters","_dummy","_wp2","_wp3","_landingzone","_aigroup","_wp","_helipilot","_crash","_crashwreck","_smokerand","_staticcoords","_pos","_dir","_position","_num","_config","_itemType","_itemChance","_weights","_index","_iArray","_crashModel","_lootTable","_guaranteedLoot","_randomizedLoot","_frequency","_variance","_spawnChance","_spawnMarker","_spawnRadius","_spawnFire","_permanentFire","_crashName"];
 
 _spawnedHelis = 0;
 //_maxPlayers = getNumber (configFile >> "Header" >> "maxPlayers");
@@ -22,7 +22,8 @@ if(count _this > 14) then { _sendSOS = _this select 14; } else { _sendSOS = 0; }
 if(count _this > 15) then { _sosDistance = _this select 15; } else { _sosDistance = 99999; };
 if(count _this > 16) then { _balancedLoot = _this select 16; } else { _balancedLoot = false; };
 if(count _this > 17) then { _maxPlayers = _this select 17; } else { _maxPlayers = 40; };
-if(count _this > 18) then { _balancedLootMin = _this select 19; } else { _balancedLootMin = 1; };
+if(count _this > 18) then { _balancedLootMin = _this select 18; } else { _balancedLootMin = 1; };
+if(count _this > 19) then { _no50s = _this select 19; } else { _no50s = false; };
 
 diag_log(format["CRASHSPAWNER: Starting spawn logic for animated helicrashs - written by Grafzahl [SC:%1||PW:%2||CD:%3||MP:%4]", str(_useStatic), str(_preWaypoints), _crashDamage,_maxPlayers]);
 
@@ -62,12 +63,19 @@ while {true} do {
 		_lootRadius = 0.3;
 	};
 
-	//Crash loot - just uncomment the one you wish to use by default with 50cals is enabled.
-	//Table including 50 cals
-	_lootTable = ["HeliCrash"] call BIS_fnc_selectRandom;
-
-	//Table without 50 cals
-	//_lootTable = ["Military","HeliCrash_No50s","MilitarySpecial"] call BIS_fnc_selectRandom;
+	//Detectiong the correct Loottable for the Heli
+	if(_no50s) then {
+		lootTable = "Crash1_No50s";
+	} else {
+		_lootTable = "Crash1";
+	};
+	if(_crashModel == "Mi8Wreck") then {
+		if(_no50s) then {
+			_lootTable = "Crash2Mi8_NoKSVKs";
+		} else {
+			_lootTable = "Crash2Mi8";
+		};
+	};
 
 	_crashName	= getText (configFile >> "CfgVehicles" >> _heliModel >> "displayName");
 
@@ -248,119 +256,29 @@ while {true} do {
 			_num		= round(random _randomizedLoot) + _guaranteedLoot;
 		};
 
+		_config = 		configFile >> "CfgBuildingLoot" >> _lootTable;
+		_itemTypes =	[] + getArray (_config >> "itemType");
+		_index =        dayz_CBLBase  find "HeliCrash";
+		_weights =		dayz_CBLChances select _index;
+		_cntWeights = count _weights;
 
-		_config = 		configFile >> "CfgBuildingLoot" >> "HeliCrash";
-		_itemType = [
-			["FN_FAL","weapon"],
-			["bizon_silenced","weapon"],
-			["bizon","weapon"],
-			["M14_EP1","weapon"],
-			["FN_FAL_ANPVS4","weapon"],
-			["BAF_LRR_scoped","weapon"],
-			//["BAF_AS50_scoped_DZ","weapon"],
-			["Mk_48_DZ","weapon"],
-			["M249_DZ","weapon"],
-			//["BAF_L85A2_RIS_SUSAT","weapon"],
-			["M4SPR","weapon"],
-			["DMR","weapon"],
-			["","military"],
-			["","medical"],
-			["MedBox0","object"],
-			["NVGoggles","weapon"],
-			["AmmoBoxSmall_556","object"],
-			["AmmoBoxSmall_762","object"],
-			["Skin_Camo1_DZ","magazine"],
-			["Skin_Sniper1_DZ","magazine"],
-			["Skin_Rocket_DZ","magazine"],
-			["Skin_Soldier_DZ","magazine"],
-			["Skin_BanditSkin_DZ","magazine"],
-			["G36C","weapon"],
-			["G36C_camo","weapon"],
-			["G36A_camo","weapon"],
-			["G36K_camo","weapon"],
-			["100Rnd_762x54_PK","magazine"],
-			["M40A3","weapon"],
-			["m8_SAW","weapon"],
-			["m8_sharpshooter","weapon"],
-			["BAF_L85A2_RIS_ACOG","weapon"],
-			["VSS_vintorez","weapon"],
-			["SCAR_L_CQC","weapon"],
-			["SCAR_L_CQC_Holo","weapon"],
-			["SCAR_L_STD_Mk4CQT","weapon"],
-			["SCAR_L_STD_EGLM_RCO","weapon"],
-			["SCAR_H_LNG_Sniper","weapon"],
-			["ksvk_DZ","weapon"],
-			["SVD","weapon"],
-			["SVD_CAMO","weapon"]
-		];
-	
-		_itemChance =
-			[
-				0.045,		//{"FN_FAL","weapon"},
-				0.02,		//{"bizon_silenced","weapon"},
-				0.02,		//{"bizon","weapon"},
-				0.04,		//{"M14_EP1","weapon"},
-				0.02,		//{"FN_FAL_ANPVS4","weapon"},
-				0.015,		//{"BAF_LRR_scoped","weapon"},
-				//0.01,		//{"BAF_AS50_scoped_DZ","weapon"},
-				0.03,		//{"Mk_48_DZ","weapon"},
-				0.04,		//{"M249_DZ","weapon"},
-				//0.03,		//{"BAF_L85A2_RIS_SUSAT","weapon"},
-				0.03,		//{"M4SPR","weapon"},
-				0.03,		//{"DMR","weapon"},
-				0.12,			//{"","military"},
-				0.09,		//{"","medical"},
-				0.09,		//{"MedBox0","object"},
-				0.02,		//{"NVGoggles","weapon"}
-				0.08,	//AmmoBoxSmall_556
-				0.08,	//AmmoBoxSmall_762
-				0.06,	//Skin_Camo1_DZ
-				0.03,	//Skin_Sniper1_DZ
-				0.03,	//Skin_Rocket_DZ
-				0.03,	//Skin_Soldier_DZ
-				0.03,	//Skin_BanditSkin_DZ
-				0.03,	//G36C"
-				0.05,	//G36C_camo
-				0.04,	//G36A_camo
-				0.04,	//G36K_camo
-				0.01,	//("100Rnd_762x54_PK","magazine"}
-				0.01,	//("M40A3","weapon"}
-				0.03,	//("m8_SAW","weapon"}
-				0.02,	//("m8_sharpshooter","weapon"}
-				0.05,	//("BAF_L85A2_RIS_ACOG","weapon"}
-				0.01,	//("VSS_vintorez","weapon"}
-				0.04,	//("SCAR_L_CQC","weapon"}
-				0.03,	//("SCAR_L_CQC_Holo","weapon"}
-				0.02,	//("SCAR_L_STD_Mk4CQT","weapon"}
-				0.02,	//("SCAR_L_STD_EGLM_RCO","weapon"}
-				0.02,	//("SCAR_H_LNG_Sniper","weapon"}
-				0.015,	//("ksvk_DZ","weapon"}
-				0.015,	//("SVD","weapon"}
-				0.01	//("SVD_CAMO","weapon"}
-			];
 
-	waituntil {!isnil "fnc_buildWeightedArray"};
-
-	_weights = [];
-	_weights = [_itemType,_itemChance] call fnc_buildWeightedArray;
-
-	for "_x" from 1 to _num do {
-		_index = _weights call BIS_fnc_selectRandom;
-		sleep 0.1;
-		
-		if (count _itemType > _index) then {
-			_iArray = _itemType select _index;
+		for "_x" from 1 to _num do {
+			//create loot
+			_index = floor(random _cntWeights);
+			_index = _weights select _index;
+			_itemType = _itemTypes select _index;
 			_lootPos = [_pos, ((random 2) + (sizeOf(_crashModel) * _lootRadius)), random 360] call BIS_fnc_relPos;
-			_iArray set [2,_lootPos];
-			_iArray set [3,0];
-			_iArray call spawn_loot;
-			diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2'", _lootPos, sizeOf(_crashModel)]); 
-			_nearby = _pos nearObjects ["ReammoBox", sizeOf(_crashModel)];
+			[_itemType select 0, _itemType select 1, _lootPos, 0] call spawn_loot;
+
+			diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2'", _crashName, _lootTable]); 
+
+			// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.
+			_nearby = _position nearObjects ["ReammoBox", sizeOf(_crashModel)];
 			{
 				_x setVariable ["permaLoot",true];
 			} forEach _nearBy;
 		};
-	};
 
 		//Adding 5 dead soldiers around the wreck, poor guys
 		for "_x" from 1 to 5 do {
