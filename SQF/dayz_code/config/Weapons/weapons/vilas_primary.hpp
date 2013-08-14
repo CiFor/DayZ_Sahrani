@@ -4292,7 +4292,7 @@ class vil_PSL1 : vil_SVD_BASE {
 	picture = "\vilas_aks\ico\psl_svd.paa";
 	displayName = $STR_VIL_PSL;
 	descriptionShort = $STR_VIL_PSL_SHORT;
-	magazines[] = {"10Rnd762x54_SVD"};
+	magazines[] = {"10Rnd_762x54_SVD"};
 	class Library {
 		libTextDesc = $STR_VIL_PSL_LIB;
 	};
@@ -4307,7 +4307,7 @@ class vil_M76 : vil_SVD_BASE {
 	displayName = $STR_VIL_M76;
 	descriptionShort = $STR_VIL_M76_SHORT;
 	picture = "\vilas_aks\ico\m76_svd.paa";
-	magazines[] = {"10Rnd762x54_SVD"};
+	magazines[] = {"10Rnd_762x54_SVD"};
 	class Library {
 		libTextDesc = $STR_VIL_M76_LIB;
 	};
@@ -4500,7 +4500,7 @@ class vil_SVDK : vil_SVD_BASE {
 	maxRange = 700;
 	maxRangeProbab = 0.01;
 	begin1[] = {"\vilas_aks\sounds\svdk_fire1", 2.37828, 1.1, 1200};
-	magazines[] = {"10Rnd762x54_SVD"};
+	magazines[] = {"10Rnd_762x54_SVD"};
 	class Library {
 		libTextDesc = $STR_VIL_SVDK_LIB;
 	};
@@ -4548,7 +4548,7 @@ class vil_SV_98 : vil_SVD_BASE {
 				visionMode[] = {};
 		};
 	};
-	magazines[] = {"10Rnd762x54_SVD"};
+	magazines[] = {"10Rnd_762x54_SVD"};
 	reloadSound[] = {"\vilas_aks\sounds\SV98_Bolt", db10, 1, 20};	
 	begin1[] = {"\vilas_aks\sounds\sv98_fire1", 1.77828, 1, 1000};
 	reloadTime = 1.778;
