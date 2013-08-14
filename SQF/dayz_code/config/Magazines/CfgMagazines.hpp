@@ -2482,4 +2482,12 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			};
 		};
 	};
+	
+	class ItemMoney : CA_Magazine {
+		scope = public;
+		model = "\Ca\misc\smallObj_money_WPN";
+		picture = "\CA\misc\data\icons\picture_money_CA.paa";
+		displayName = "Money";
+		descriptionShort = "Pre-breakout money, not worth anything now. Could be worth something someday.";
+	};
 };

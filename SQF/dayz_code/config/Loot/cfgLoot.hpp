@@ -1554,7 +1554,8 @@ class CfgLoot {
 			"ItemTrashRazor",
 			"ItemTrashToiletpaper",
 			"TrashJackDaniels",
-			"TrashTinCan"
+			"TrashTinCan",
+			"ItemMoney"
 		},
 		{
 			0.01, //FoodCanBadguyEmpty
@@ -1630,8 +1631,8 @@ class CfgLoot {
 			0.01, //ItemTrashRazor
 			0.01, //ItemTrashToiletpaper
 			0.01, //TrashJackDaniels
-			0.01//TrashTinCan
-
+			0.01, //TrashTinCan
+			0.01 //ItemMoney
 		}
 	};
 };
