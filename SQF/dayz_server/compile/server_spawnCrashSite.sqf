@@ -15,7 +15,6 @@ _fadeFire	= _this select 8;
 if(count _this > 9) then { _useStatic = _this select 9; } else { _useStatic = false; };
 if(count _this > 10) then { _preWaypoints = _this select 10; } else { _preWaypoints = 1; };
 if(count _this > 11) then { _crashDamage = _this select 11; } else { _crashDamage = 1; };
-//NEW
 if(count _this > 12) then	{ _spawnOnStart = _this select 12; } else { _spawnOnStart = true; };
 if(count _this > 13) then { _maxHelis = _this select 13; } else { _maxHelis = 999; };
 if(count _this > 14) then { _sendSOS = _this select 14; } else { _sendSOS = 0; };
@@ -25,7 +24,7 @@ if(count _this > 17) then { _maxPlayers = _this select 17; } else { _maxPlayers 
 if(count _this > 18) then { _balancedLootMin = _this select 18; } else { _balancedLootMin = 1; };
 if(count _this > 19) then { _no50s = _this select 19; } else { _no50s = false; };
 
-diag_log(format["CRASHSPAWNER: Starting spawn logic for animated helicrashs - written by Grafzahl [SC:%1||PW:%2||CD:%3||MP:%4]", str(_useStatic), str(_preWaypoints), _crashDamage,_maxPlayers]);
+diag_log(format["CRASHSPAWNER: Starting spawn logic for animated helicrashs [SC:%1||PW:%2||CD:%3||MP:%4]", str(_useStatic), str(_preWaypoints), _crashDamage,_maxPlayers]);
 
 while {true} do {
 	private["_timeAdjust","_timeToSpawn","_spawnRoll","_crash","_hasAdjustment","_newHeight","_adjustedPos"];
@@ -39,25 +38,38 @@ while {true} do {
 	};
 
 	//Random Heli-Type
-	_heliModel = ["UH1H_DZ","Mi17_DZ","UH1H_TK_DZ"] call BIS_fnc_selectRandom;
+	_heliModel =	[
+									"UH1H_DZ",
+									"UH1H_TK_DZ",
+									"UH1H_SMD_BLOPS",
+									"UH1H_SMD_RACS",
+									"UH1H_SMD_RACS_DIGI",
+									"UH1H_SMD_UN",
+									"Mi17_Civilian_DZ",
+									"Mi17_DZ",
+									"Mi17_SMD_BLOPS",
+									"Mi17_Civilian_DZ",
+									"Mi17_DZ",
+									"Mi17_SMD_BLOPS"
+							] call BIS_fnc_selectRandom;
 
-	//Random-Startpositions, Adjust this for other Maps then Chernarus
+	//Random-Startpositions, Adjust this for other Maps then Sahrani
 	_heliStart = [
 									[12008.267,1485.0635,400],
 									[2992.7285,12472.498,400],
 									[20006.211,8452.7061,400]
 							] call BIS_fnc_selectRandom;
 
-	//A Backup Waypoint, if not Chernarus, set some Coordinates far up in the north (behind all possible Crashsites)
+	//A Backup Waypoint, if not Sahrani, set some Coordinates far up in the north (behind all possible Crashsites)
 	_safetyPoint = [17420.422,18158.953];
 
-	//Settings for the Standard UH1H_DZ
+	//Settings for the Standard Huey-Types
 	_crashModel = "UH1Wreck_DZ";
 	_exploRange = 195;
 	_lootRadius = 0.35;
 
-	//Adjust Wreck and Range of Explosion if its a Mi17_DZ
-	if(_heliModel == "Mi17_DZ") then {
+	//Adjust Wreck and Range of Explosion if its some kind of Mi
+	if((_heliModel == "Mi17_DZ") || (_heliModel == "Mi17_Civilian_DZ") || (_heliModel == "Mi17_SMD_BLOPS")) then {
 		_crashModel = "Mi8Wreck";
 		_exploRange = 285;
 		_lootRadius = 0.3;
@@ -95,7 +107,6 @@ while {true} do {
 ==================================================================================================
 		_staticcoords give you the possibility to organize your crashsites!
 
-		Crashsites close to cherno or electro would be possible with that.
 		Use the editor for your map, create some vehicles or triggers at points where you
 		want your crashside (aprox), save it and extract all coordinates and put them in this
 		2D-Array. If you dont know how to do this, dont use _staticcoords.
@@ -125,7 +136,7 @@ while {true} do {
 
 		_startTime = time;
 
-		//Only a Woman could crash a Heli this way...
+		//Only a woman could crash a Heli this way...
 		_aigroup = creategroup civilian;
 		_helipilot = _aigroup createUnit ["SurvivorW2_DZ",[18192.828,3124.3936,0],[],0,"FORM"];
 
@@ -243,7 +254,7 @@ while {true} do {
 			publicVariable "dayzFire";
 			_crash setvariable ["fadeFire",_fadeFire,true];
 		};
-		
+
 		//Check if balanced Amount of Loot
 		if(_balancedLoot) then {
 			_playerCount = count playableUnits;
@@ -258,11 +269,11 @@ while {true} do {
 
 		_config = 		configFile >> "CfgBuildingLoot" >> _lootTable;
 		_itemTypes =	[] + getArray (_config >> "itemType");
-		_index =        dayz_CBLBase  find "HeliCrash";
+		_index =			dayz_CBLBase  find "HeliCrash";
 		_weights =		dayz_CBLChances select _index;
 		_cntWeights = count _weights;
 
-
+		//Spawn Lootpiles
 		for "_x" from 1 to _num do {
 			//create loot
 			_index = floor(random _cntWeights);
