@@ -234,26 +234,24 @@ if (isDedicated) then {
 
 allowConnection = true;
 
-// [_guaranteedLoot, _randomizedLoot, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
-//nul = [3, 4, (50 * 60), (15 * 60), 0.75, 'center', 4000, true, false] spawn server_spawnCrashSite;
-
+//Start Crashspawner-Logic
 nul = [
 				3,			//Number of the guaranteed Loot-Piles at the Crashside
 				3,			//Number of the random Loot-Piles at the Crashside 3+(1,2,3 or 4)
 				(20*60),		//Fixed-Time (in seconds) between each start of a new Chopper
 				(10*60),		//Random time (in seconds) added between each start of a new Chopper
-				100,			//Spawnchance of the Heli (100 will spawn all possible Choppers, 50 only 50% of them)
+				80,			//Spawnchance of the Heli (100 will spawn all possible Choppers, 50 only 50% of them)
 				'center',		//Center-Marker for the Random-Crashpoints, for Chernarus this is a point near Stary
 				6000,			//Radius in Meters from the Center-Marker in which the Choppers can crash and get waypoints
 				50,			//Percentage chance of smoke on the crashsite
 					false,		//Should the flames & smoke fade after a while (if there is smoke)?
 				false,			//Use the Static-Crashpoint-Function? If true, you have to add Coordinates into server_spawnCrashSite.sqf
 				1,			//Amount of Random-Waypoints the Heli gets before he flys to his Point-Of-Crash (using Static-Crashpoint-Coordinates if its enabled)
-				1,			//Amount of Damage the Heli has to get while in-air to explode before the POC. (0.0001 = Insta-Explode when any damage//bullethit, 1 = Only Explode when completly damaged)
+				0.1,			//Amount of Damage the Heli has to get while in-air to explode before the POC. (0.0001 = Insta-Explode when any damage//bullethit, 1 = Only Explode when completly damaged)
 				true,			//Spawn the first Heli right on Server-Start?
-				5,			//Maximum Number of Crashsites on the Server, after this amount of Crashsites the Server stops spawning new Helicrashs
-				100,			//Percentage chance of each helicrash to send the SOS to all players that own a radio
-				99999,			//Distance in meters in which all players with Radios will see the SOS-Message
+				6,			//Maximum Number of Crashsites on the Server, after this amount of Crashsites the Server stops spawning new Helicrashs
+				60,			//Percentage chance of each helicrash to send the SOS to all players that own a radio
+				10000,			//Distance in meters in which all players with Radios will see the SOS-Message
 				false,			//Should the Servers actual Player-Count effect the amount of Loot at the Crashsite (Lootbalancing)? Example: 40 Slot Server has only 20 Players Online, Only 50% of the Min/Max-Lootpiles will spawn
 					40,		//Maximum Playercount of your Server, only used when Lootbalancing is activated
 					2,		//Minimum Lootpiles if Loot-Balancing is active, even if the Playercount is Zero.
