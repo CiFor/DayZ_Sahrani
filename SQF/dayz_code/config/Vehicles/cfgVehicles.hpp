@@ -392,15 +392,15 @@ class CfgVehicles {
 	};
 	class AH6X_SMD_RACS : AH6X_DZ
 	{
-		displayname = "RACS Little Bird";
+		displayname = "AH6X (RACS)";
 		displaynameshort = "AH6X (RACS)";
 		hiddenselections[] = {"camo1"};
 		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_racs_co.paa"};
 	};
 	class AH6X_SMD_RACS_DIGI : AH6X_DZ
 	{
-		displayname = "RACS Digital Little Bird";
-		displaynameshort = "AH6X (RACS Digital Camo)";
+		displayname = "AH6X (RACS) Digital";
+		displaynameshort = "AH6X (RACS) Digital";
 		hiddenselections[] = {"camo1"};
 		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_racs_digi_co.paa"};
 	};
@@ -2635,6 +2635,8 @@ class CfgVehicles {
 	class LandRover_CZ_EP1;
 	class LandRover_SMD_RACS: LandRover_CZ_EP1
 	{
+		displayname = "Landrover (RACS)";
+		displaynameshort = "Landrover RACS)";
 		scope = 2;
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_landrover_racs_co.paa"};
@@ -2642,6 +2644,8 @@ class CfgVehicles {
 
 	class LandRover_SMD_RACS_DIGI: LandRover_CZ_EP1
 	{
+		displayname = "Landrover (RACS) Digital";
+		displaynameshort = "Landrover RACS) Digital";
 		scope = 2;
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_landrover_racs_digi_co.paa"};
@@ -2873,6 +2877,35 @@ class CfgVehicles {
 			};
 		};	
 	};
+		
+	class MH6J_DZ: AH6_Base_EP1
+	{
+		scope = 2;
+		side = 2;
+		crew = "";
+		enablemanualfire = 0;
+		typicalCargo[] = {};
+		displayname = "MH-6J Little Bird";
+		displaynameshort = "MH6J";
+		hiddenselections[] = {"camo1", "camo2"};
+		transportsoldier = 5;
+		hiddenselectionstextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa", "ca\air_e\ah6j\data\default_co.paa"};
+		icon = "\ca\air_e\data\UI\Icon_mh6j_CA.paa";
+		model = "\ca\air_e\ah6j\mh6j";
+		picture = "\ca\air_e\data\UI\Picture_mh6j_CA.paa";
+		radartype = 0;
+		class TransportMagazines{};
+		class TransportWeapons{};
+		weapons[] = {};
+		magazines[] = {};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 30;
+        transportmaxbackpacks = 5;
+		class Turrets {};
+	};	
 	
 	class Mi17_base: Helicopter 
 	{
@@ -3336,7 +3369,7 @@ class CfgVehicles {
 
 	class UH1H_SMD_RACS: UH1H_DZ
 	{
-		displayname = "UH1H RACS";
+		displayname = "UH1H (RACS)";
 		displaynameshort = "UH1H (RACS)";	
 		scope = 2;
 		side = 2;
@@ -3368,8 +3401,8 @@ class CfgVehicles {
 
 	class UH1H_SMD_RACS_DIGI: UH1H_DZ
 	{
-		displayname = "UH1H (RACS Digital Camo)";
-		displaynameshort = "UH1H RACS DIGITAL";	
+		displayname = "UH1H (RACS) Digital";
+		displaynameshort = "UH1H (RACS) Digital";	
 		scope = 2;
 		side = 2;
 		crew = "";
@@ -3400,7 +3433,7 @@ class CfgVehicles {
 
 	class UH1H_SMD_UN: UH1H_DZ
 	{
-		displayname = "UH1H (Uunited Nations)";
+		displayname = "UH1H (United Nations)";
 		displaynameshort = "UH1H UNITED NATIONS";	
 		scope = 2;
 		side = 2;
@@ -3482,30 +3515,43 @@ class CfgVehicles {
 			tex[] = {};
 		};
 	};
-	
-	class TT650_Base;
-	class TT650_Ins: TT650_Base {
-		crew = "";
-		faction = "INS";
-		hiddenselectionstextures[] = {"\ca\wheeled3\tt650\data\Yam650_skin1_CO.paa"};
-		scope = 2;
-		side = 0;
-		typicalcargo[] = {};
+	class Ikarus;
+	class Ikarus_base: Ikarus
+	{
+		scope = 0;
+		side = 4;
+		expansion = 1;
+		crew = "Civilian";
+		typicalCargo[] = {};
 	};
-	
-	class V3S_Base;
-	class V3S_Civ: V3S_Base {
-		crew = "";
-		faction = "CIV";
-		rarityurban = 0.3;
+	class Ikarus_SMD_COKE: Ikarus_base
+	{
+		displayname = "Ikarus (Coke)";
+		displaynameshort = "Ikarus (Coke)";	
+		expansion = 1;
 		scope = 2;
 		side = 3;
-		typicalcargo[] = {};
-		class Library {
-			libtextdesc = "The V3S is a Czech-made military 6x6 cargo truck capable of carrying cargo up to 5 tons, or up to 3 tons in rough terrain.<br/>This one is a harmless civilian vehicle.";
-		};
+		faction = "BIS_TK_CIV";
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_ikarus_coke_co"};
+		rarityUrban = 0.4;
+		crew = "TK_CIV_Takistani01_EP1";
+		typicalCargo[] = {"TK_CIV_Takistani01_EP1"};
 	};
-	
+	class Ikarus_SMD_OPENDAYZ: Ikarus_base
+	{
+		displayname = "Ikarus (OpenDayZ)";
+		displaynameshort = "Ikarus (OpenDayZ)";	
+		expansion = 1;
+		scope = 2;
+		side = 3;
+		faction = "BIS_TK_CIV";
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_ikarus_opendayz_co"};
+		rarityUrban = 0.4;
+		crew = "TK_CIV_Takistani01_EP1";
+		typicalCargo[] = {"TK_CIV_Takistani01_EP1"};
+	};
 	class SkodaBase;
 	class car_hatchback: SkodaBase {
 		armorcrash0[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_01", 0.707946, 1, 200};
@@ -3677,6 +3723,16 @@ class CfgVehicles {
 			libtextdesc = "Civilian Car";
 		};
 	};
+	class TT650_Base;
+	class TT650_Ins: TT650_Base {
+		crew = "";
+		faction = "INS";
+		hiddenselectionstextures[] = {"\ca\wheeled3\tt650\data\Yam650_skin1_CO.paa"};
+		scope = 2;
+		side = 0;
+		typicalcargo[] = {};
+	};
+	
 	class UAZ_Unarmed_Base;
 	class UAZ_CDF: UAZ_Unarmed_Base {
 		accuracy = 0.3;
@@ -3687,34 +3743,20 @@ class CfgVehicles {
 		side = 1;
 		typicalcargo[] = {};
 	};
-	class MH6J_DZ: AH6_Base_EP1
-	{
-		scope = 2;
-		side = 2;
+	
+	class V3S_Base;
+	class V3S_Civ: V3S_Base {
 		crew = "";
-		enablemanualfire = 0;
-		typicalCargo[] = {};
-		displayname = "MH-6J Little Bird";
-		displaynameshort = "MH6J";
-		hiddenselections[] = {"camo1", "camo2"};
-		transportsoldier = 5;
-		hiddenselectionstextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa", "ca\air_e\ah6j\data\default_co.paa"};
-		icon = "\ca\air_e\data\UI\Icon_mh6j_CA.paa";
-		model = "\ca\air_e\ah6j\mh6j";
-		picture = "\ca\air_e\data\UI\Picture_mh6j_CA.paa";
-		radartype = 0;
-		class TransportMagazines{};
-		class TransportWeapons{};
-		weapons[] = {};
-		magazines[] = {};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 5;
-		transportMaxMagazines = 30;
-        transportmaxbackpacks = 5;
-		class Turrets {};
-	};	
+		faction = "CIV";
+		rarityurban = 0.3;
+		scope = 2;
+		side = 3;
+		typicalcargo[] = {};
+		class Library {
+			libtextdesc = "The V3S is a Czech-made military 6x6 cargo truck capable of carrying cargo up to 5 tons, or up to 3 tons in rough terrain.<br/>This one is a harmless civilian vehicle.";
+		};
+	};
+	
 	class Animal;
 	class Pastor;
 	class Fin;
@@ -3842,7 +3884,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tan_co.paa"};
     };
-	class SMD_RACS_MP_TanDigi: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
+	class SMD_RACS_MP_Tan_Digi: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
         model = "\vil_police\vil_cop";
         displayName = "Survivor";
         side = 1;
