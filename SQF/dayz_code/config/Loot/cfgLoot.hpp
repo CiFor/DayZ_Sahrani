@@ -85,6 +85,8 @@ class CfgLoot {
 	};
 	AmmoUN[] = {
 		{//AmmoUN
+			"Skin_Camo1_DZ",
+			"Skin_Rocket_DZ",
 			"100Rnd_762x51_M240",
 			"10Rnd_127x99_m107",
 			"15Rnd_9x19_M9",
@@ -119,6 +121,8 @@ class CfgLoot {
 			"SmokeShellRed"
 		},
 		{//AmmoUN
+			0.01, //"Skin_Camo1_DZ"
+			0.01, //"Skin_Rocket_DZ"
 			0.01, //100Rnd_762x51_M240
 			0.01, //10Rnd_127x99_m107
 			0.6, //15Rnd_9x19_M9
@@ -154,7 +158,7 @@ class CfgLoot {
 		}
 	};
 	AmmoUS[] = {
-		{//AmmoUN
+		{//AmmoUS
 			"100Rnd_762x51_M240",
 			"10Rnd_127x99_m107",
 			"15Rnd_9x19_M9",
@@ -188,7 +192,7 @@ class CfgLoot {
 			"SmokeShellPurple",
 			"SmokeShellRed"
 		},
-		{//AmmoUN
+		{//AmmoUS
 			0.01, //100Rnd_762x51_M240
 			0.01, //10Rnd_127x99_m107
 			0.6, //15Rnd_9x19_M9
@@ -274,12 +278,7 @@ class CfgLoot {
 		}
 	};
 	civilianZed[] = {
-		{
-//trash
-			"TrashTinCan",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
-//drink
+		{//drink
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 //food
@@ -304,12 +303,7 @@ class CfgLoot {
 			"ItemTape",
 			"ItemNails"
 		},
-		{
-//trash
-			0.4, //TrashTinCan
-			0.8, //TrashJackDaniels
-			0.2, //ItemSodaEmpty
-//drink
+		{//drink
 			0.12, //ItemSodaCoke
 			0.09, //ItemSodaPepsi
 //food
@@ -347,7 +341,6 @@ class CfgLoot {
 			"Skin_SMD_RACS_Soldier",
 			"Skin_SMD_RACS_Soldier_Digi",
 			"Skin_SMD_RACS_SWAT",
-			"Skin_SMD_SARA_Sheriff",
 			"Skin_SMD_US_SpecOps",
 			"Skin_Sniper1_DZ",
 			"Skin_SniperLight_DZ",
@@ -364,7 +357,6 @@ class CfgLoot {
 			0.01, //"Skin_SMD_RACS_Soldier",
 			0.01, //"Skin_SMD_RACS_Soldier",
 			0.01, //"Skin_SMD_RACS_SWAT",
-			0.01, //"Skin_SMD_SARA_Sheriff",
 			0.01, //"Skin_SMD_US_SpecOps",
 			0.01, //"Skin_Sniper1_DZ"
 			0.01, //"Skin_SniperLight_DZ"
@@ -445,7 +437,7 @@ class CfgLoot {
 			0.4, //"2Rnd_shotgun_74Pellets",
 			0.3, //6Rnd_45ACP
 			0.25, //7Rnd_45ACP_1911
-			.1, //ItemBandage
+			0.1, //ItemBandage
 			0.3 //HandRoadFlare
 		}
 	};
@@ -619,7 +611,7 @@ class CfgLoot {
 			0.01, //FoodChipsSulahoops
 			0.01, //FoodNutmix
 			0.01, //FoodPistachio
-			0.01, //FoodTwinkie
+			0, //FoodTwinkie
 			0, //FoodTwinkieDirty
 			0.01, //ItemSodaClays
 			0, //ItemSodaClaysDirty
