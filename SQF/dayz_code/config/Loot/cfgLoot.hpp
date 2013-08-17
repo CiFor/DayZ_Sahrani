@@ -1501,9 +1501,9 @@ class CfgLoot {
 			"FoodCanOrlokEmptyDirty",
 			"FoodCanOrlokEmptyRusted",
 			"FoodCanPowellEmpty",
-			"FoodCanPowellEmptyDirty",
-			"FoodCanPowellEmptyRusted",/*
-			"FoodCanRusCornEmpty",
+			/*"FoodCanPowellEmptyDirty",
+			"FoodCanPowellEmptyRusted",
+			"FoodCanRusCornEmpty",/*
 			"FoodCanRusCornEmptyDirty",
 			"FoodCanRusCornEmptyRusted",
 			"FoodCanRusMilkEmpty",
@@ -1578,9 +1578,9 @@ class CfgLoot {
 			0, //FoodCanOrlokEmptyDirty
 			0, //FoodCanOrlokEmptyRusted
 			0.01, //FoodCanPowellEmpty
-			0, //FoodCanPowellEmptyDirty
+			/*0, //FoodCanPowellEmptyDirty
 			0, //FoodCanPowellEmptyRusted
-			/*0.01, //FoodCanRusCornEmpty
+			0.01, //FoodCanRusCornEmpty
 			0, //FoodCanRusCornEmptyDirty
 			0, //FoodCanRusCornEmptyRusted
 			0.01, //FoodCanRusMilkEmpty

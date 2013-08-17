@@ -1078,7 +1078,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = $STR_FOOD_NAME_CAN_POWELL;
 		descriptionShort = $STR_FOOD_DESC_CAN_POWELL;
 		model = "z\addons\dayz_communityassets\models\can_powell_clean_full.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_dirty_full_ca.paa";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_clean_full_ca.paa";
 	};
 	class FoodCanPowellRusted : FoodEdible {
 		scope = public;
@@ -1087,7 +1087,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = $STR_FOOD_NAME_CAN_POWELL;
 		descriptionShort = $STR_FOOD_DESC_CAN_POWELL;
 		model = "z\addons\dayz_communityassets\models\can_powell_clean_full.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_rusted_full_ca.paa";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_clean_full_ca.paa";
 	};
 	class FoodCanTylers : FoodEdible {
 		scope = public;
@@ -1762,7 +1762,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_FOOD_DESC_PISTACHIO;
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
-	};
+	};/*
 	class FoodTwinkie : FoodEdible {
 		scope = public;
 		count = 1;
@@ -1780,7 +1780,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = "Only God knows";
 		model = "z\addons\dayz_communityassets\models\twinkie_dirty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_twinkie_dirty_ca.paa";
-	};
+	};*/
 	class ItemTrashCards : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -2318,18 +2318,18 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 	};
 	class Skin_SMD_RACS_MP : SkinBase {
 		scope = public;
-		displayName = "RACS M.P. BDU";
+		displayName = "RACS M.P.";
 		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (Military Police)";
 	};
 	class Skin_SMD_RACS_MP_Tan : SkinBase {
 		scope = public;
-		displayName = "RACS M.P. BDU2";
-		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (Military Police) (Desert Blended Vest)";
+		displayName = "RACS M.P. Tan";
+		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani Military Police (Desert Blended Vest)";
 	};
 	class Skin_SMD_RACS_MP_Tan_Digi : SkinBase {
 		scope = public;
-		displayName = "RACS M.P. BDU (Digital)";
-		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (Military Police) (Digital Camo Blended Vest)";
+		displayName = "RACS M.P. Tan Digi)";
+		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani Military Police (Digital Camo Blended Vest)";
 	};	
 	class Skin_SMD_RACS_Soldier : SkinBase {
 		scope = public;
@@ -2338,14 +2338,14 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 	};	
 	class Skin_SMD_RACS_Soldier_Digi : SkinBase {
 		scope = public;
-		displayName = "RACS Soldier BDU (Digital)";
+		displayName = "RACS Soldier Digi";
 		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani (Regular Infantry)(Digital Camo)";
 	};	
 	class Skin_SMD_RACS_SWAT : SkinBase {
 		scope = public;
-		displayName = "RACS SWAT BDU";
-		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (SWAT)";
-	};	
+		displayName = "RACS S.W.A.T. BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani Military Police Special Weapons And Tactics";
+	};
 	class Skin_SMD_SARA_Sheriff : SkinBase {
 		scope = public;
 		displayName = "Sahrani Sheriff";
@@ -2354,22 +2354,22 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 	class Skin_SMD_US_SpecOps : SkinBase {
 		scope = public;
 		displayName = "U.S. Spec Ops BDU";
-		descriptionShort = "Special Battle Dress Uniform of the United States Armed Forces (Special Operations)";
+		descriptionShort = "Special Battle Dress Uniform of the United States Armed Forces Special Operations";
 	};
 	class Soldier1_DZ : SkinBase {
 		scope = public;
 		displayName = "BAF Regular BDU";
-		descriptionShort = "Standard Battle Dress Uniform of the British Armed Forces (Regular Infantry)";
+		descriptionShort = "Standard Battle Dress Uniform of the British Armed Forces Regular Infantry";
 	};
 	class Skin_SniperLight_DZ : SkinBase {
 		scope = public;
 		displayName = "Grass Ghillie Suit";
-		descriptionShort = "Specialized camouflage clothing designed to resemble Grass Terrain (Sniper)";
+		descriptionShort = "Specialized camouflage clothing designed to resemble Grass Terrain";
 	};
 	class Skin_SniperD_DZ : SkinBase {
 		scope = public;
 		displayName = "Desert Ghillie Suit";
-		descriptionShort = "Specialized camouflage clothing designed to resemble Desert Terrain (Sniper)";
+		descriptionShort = "Specialized camouflage clothing designed to resemble Desert Terrain";
 	};
 	class ItemBrick : TrashTinCan {															//trash
 		scope = public;
@@ -2378,7 +2378,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "Brick";
 		model = "\SMD\assets\objects\brick";
 		picture = "\SMD\assets\objects\icons\brick.paa";
-		descriptionShort = "Can be Thrown and used for crafting various items";
+		descriptionShort = "Rectangular block of kiln baked clay. Can be Thrown and used for crafting various items";
 		ammo = "Brick";
 	};
 	class ItemFloppyWire : CA_Magazine {
