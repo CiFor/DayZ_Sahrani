@@ -60,7 +60,7 @@ class Land_ryb_domek : Residential {
 };
 
 class Land_benzina_schnell : Industrial {
-	lootPos[] = {};
+	lootPos[] = {{1.84766,6.76855,-2.12487},{0.179199,5.61328,-212487},{1.4834,4.77148,-212487}};
 };
 
 class Land_TVstudio : Office {

@@ -269,7 +269,7 @@ class CfgBuildingLoot {
 	class Crash1_No50s: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_soldier","z_soldier_heavy"};
+		zombieClass[] = {"z_RACSzombie4"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
@@ -556,11 +556,11 @@ class CfgBuildingLoot {
 			0.01 //ItemRadio","magazine
 		};
 	};
-	/*Crash2Mi8 - Commented out until can be refined for specific loot
+//Crash2Mi8
 	class Crash2Mi8: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_RACSzombie"};
+		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
@@ -740,7 +740,7 @@ class CfgBuildingLoot {
 	class Crash2_Mi8: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_RACSzombie"};
+		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
@@ -915,12 +915,12 @@ class CfgBuildingLoot {
 			0.07, //vil_USP","weapon
 			0.02 //vil_USPSD","weapon
 		};
-	};	
+	};/*	
 //Crash3C130
 	class Crash3C130: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_RACSzombie"};
+		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};;
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
@@ -932,7 +932,7 @@ class CfgBuildingLoot {
 	class Crash3C130_UnArmed: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
-		zombieClass[] = {"z_RACSzombie"};
+		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};;
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
@@ -1002,10 +1002,10 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 //backpacks
-			0.08, //DZ_ALICE_Pack_EP1","object
-			0.04, //DZ_Assault_Pack_EP1","object
-			0.02, //DZ_British_ACU","object
-			0.06, //DZ_Czech_Vest_Puch","object
+			0.05, //DZ_ALICE_Pack_EP1","object
+			0.01, //DZ_Assault_Pack_EP1","object
+			0.01, //DZ_British_ACU","object
+			0.02, //DZ_Czech_Vest_Puch","object
 			0.08, //DZ_TK_Assault_Pack_EP1","object
 //classloottypes
 			0.35, //"","farm
@@ -1042,7 +1042,7 @@ class CfgBuildingLoot {
 			0.04, //ItemCraftingBook","weapon
 			0.04, //ItemCraftingBook2","weapon"},
 //toolbeltONLYitems
-			0.02, //ItemCompass","generic
+			0.01, //ItemCompass","generic
 			0.02, //ItemKnife","generic
 			0.01, //ItemMap","weapon
 			0.05, //ItemMatchbox","generic
@@ -1162,7 +1162,7 @@ class CfgBuildingLoot {
 	class Military: Default {
 		zombieChance = 0.3;
 		maxRoaming = 6;
-		zombieClass[] = {"z_RACSzombie","z_RACSzombie2","z_RACSzombie3","z_RACSzombie4","z_RACSzombie5","z_RACSzombie6","z_RACSzombie7"};
+		zombieClass[] = {"z_RACSzombie","z_RACSzombie5","z_RACSzombie6","z_RACSzombie7"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
@@ -1238,13 +1238,13 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 //backpacks
-			0.1, //DZ_ALICE_Pack_EP1","object
+			0.04, //DZ_ALICE_Pack_EP1","object
 			0, //DZ_Assault_Pack_EP1","object
-			0.2, //DZ_Backpack_EP1","object
-			0.3, //DZ_British_ACU","object
-			0.2, //DZ_CivilBackpack_EP1","object
+			0.02, //DZ_Backpack_EP1","object
+			0.01, //DZ_British_ACU","object
+			0.02, //DZ_CivilBackpack_EP1","object
 			0, //DZ_Czech_Vest_Puch","object
-			0.4, //DZ_TK_Assault_Pack_EP1","object
+			0.04, //DZ_TK_Assault_Pack_EP1","object
 //class loot types
 			0.1, //"","AmmoUN
 			0.7, //"","AmmoNATO
@@ -1313,7 +1313,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		minRoaming = 2;
 		maxRoaming = 6;
-		zombieClass[] = {"z_RACSzombie3","z_RACSzombie5"};
+		zombieClass[] = {"z_RACSzombie","z_RACSzombie3","z_RACSzombie8"};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
@@ -1493,7 +1493,7 @@ class CfgBuildingLoot {
 	class Residential: Default {
 		zombieChance = 0.3;
 		maxRoaming = 2;
-		zombieClass[] = {"zZombie_Base","z_teacher","z_villager1","z_villager2","z_villager3","z_sah_civilian1_shorts","z_sah_civilian2_shorts","z_sah_civilian3_shorts","z_sah_civilian4_shorts","z_sah_civilian5_shorts","z_sah_civilian6_shorts","z_sah_civilian7_shorts","z_sah_civilian1_pants","z_sah_civilian2_pants","z_sah_civilian3_pants","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_sah_civilian7_pants",};
+		zombieClass[] = {"z_sah_civilian1_shorts","z_sah_civilian2_shorts","z_sah_civilian3_shorts","z_sah_civilian4_shorts","z_sah_civilian5_shorts","z_sah_civilian6_shorts","z_sah_civilian7_shorts","z_sah_civilian1_pants","z_sah_civilian2_pants","z_sah_civilian3_pants","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_sah_civilian7_pants",};
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
@@ -1615,7 +1615,7 @@ class CfgBuildingLoot {
 		minRoaming = 2;
 		maxRoaming = 5;
 		zombieChance = 0.3;
-		zombieClass[] = {"z_villager3"};
+		zombieClass[] = {"z_sah_civilian1_shorts","z_sah_civilian2_shorts","z_sah_civilian3_shorts","z_sah_civilian4_shorts","z_sah_civilian5_shorts","z_sah_civilian6_shorts","z_sah_civilian7_shorts","z_sah_civilian1_pants","z_sah_civilian2_pants","z_sah_civilian3_pants","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_sah_civilian7_pants",};
 		itemType[] = {
 			//backpacks
 			{"DZ_ALICE_Pack_EP1","object"},
@@ -1672,9 +1672,9 @@ class CfgBuildingLoot {
 			0.08, //DZ_Czech_Vest_Puch
 			0.03, //DZ_TK_Assault_Pack_EP1
 			//class loot types
-			2, //"","food
+			1.8, //"","food
 			0.03, //"","medical
-			2, //"","trash
+			4, //"","trash
 			//headgear
 			0.04, //Binocular
 			//Inventory clothing items

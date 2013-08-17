@@ -352,10 +352,10 @@ class CfgLoot {
 			0.01, //"Skin_Camo1_DZ"
 			0.01, //"Skin_Rocket_DZ"
 			0.01, //"Skin_SMD_RACS_MP",
-			0.01, //"Skin_Skin_SMD_RACS_MP_Tan",
-			0.01, //"Skin_SMD_RACS_MP_TanDigi",
+			0.01, //"Skin_SMD_RACS_MP_Tan",
+			0.01, //"Skin_SMD_RACS_MP_Tan_Digi",
 			0.01, //"Skin_SMD_RACS_Soldier",
-			0.01, //"Skin_SMD_RACS_Soldier",
+			0.01, //"Skin_SMD_RACS_Soldier_Digi",
 			0.01, //"Skin_SMD_RACS_SWAT",
 			0.01, //"Skin_SMD_US_SpecOps",
 			0.01, //"Skin_Sniper1_DZ"
@@ -476,9 +476,9 @@ class CfgLoot {
 			"FoodCanOrlokDirty",
 			"FoodCanOrlokRusted",
 			"FoodCanPasta",
-			"FoodCanPowell",
+			"FoodCanPowell",/*
 			"FoodCanPowellDirty",
-			"FoodCanPowellRusted",/*
+			"FoodCanPowellRusted",
 			"FoodCanRusCorn",
 			"FoodCanRusCornDirty",
 			"FoodCanRusCornRusted",
@@ -509,8 +509,8 @@ class CfgLoot {
 			"FoodChipsSulahoops",
 			"FoodNutmix",
 			"FoodPistachio",
-			"FoodTwinkie",
-			"FoodTwinkieDirty",
+			//"FoodTwinkie",
+			//"FoodTwinkieDirty",
 			"ItemSodaClays",
 			"ItemSodaClaysDirty",
 			"ItemSodaClaysRusted",
@@ -579,9 +579,9 @@ class CfgLoot {
 			0, //FoodCanOrlokRusted
 			0.01, //FoodCanPasta
 			0.01, //FoodCanPowell
-			0, //FoodCanPowellDirty
+			/*0, //FoodCanPowellDirty
 			0, //FoodCanPowellRusted
-			/*0.01, //FoodCanRusCorn
+			0.01, //FoodCanRusCorn
 			0, //FoodCanRusCornDirty
 			0, //FoodCanRusCornRusted
 			0.01, //FoodCanRusMilk
@@ -611,8 +611,8 @@ class CfgLoot {
 			0.01, //FoodChipsSulahoops
 			0.01, //FoodNutmix
 			0.01, //FoodPistachio
-			0, //FoodTwinkie
-			0, //FoodTwinkieDirty
+			//0, //FoodTwinkie
+			//0, //FoodTwinkieDirty
 			0.01, //ItemSodaClays
 			0, //ItemSodaClaysDirty
 			0, //ItemSodaClaysRusted
