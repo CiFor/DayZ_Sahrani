@@ -164,7 +164,7 @@ if (true) then
 _vehicle_271 = objNull;
 if (true) then
 {
-  _this = createVehicle ["MASH", [14277.733, 12731.597, -0.01], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Camp", [14277.733, 12731.597, -0.01], [], 0, "CAN_COLLIDE"];
   _vehicle_271 = _this;
   _this setDir -101.5187;
   _this setVehicleInit "this setVectorUp [0,0,1];";
@@ -174,7 +174,7 @@ if (true) then
 _vehicle_276 = objNull;
 if (true) then
 {
-  _this = createVehicle ["MASH", [14278.93, 12725.351, -0.01], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Camp", [14278.93, 12725.351, -0.01], [], 0, "CAN_COLLIDE"];
   _vehicle_276 = _this;
   _this setDir -102.18977;
   _this setVehicleInit "this setVectorUp [0,0,1];";
@@ -184,7 +184,7 @@ if (true) then
 _vehicle_278 = objNull;
 if (true) then
 {
-  _this = createVehicle ["MASH", [14280.389, 12718.989, -0.01], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Camp", [14280.389, 12718.989, -0.01], [], 0, "CAN_COLLIDE"];
   _vehicle_278 = _this;
   _this setDir -102.56635;
   _this setVehicleInit "this setVectorUp [0,0,1];";
@@ -194,7 +194,7 @@ if (true) then
 _vehicle_280 = objNull;
 if (true) then
 {
-  _this = createVehicle ["MASH", [14281.788, 12712.48, -0.01], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Camp", [14281.788, 12712.48, -0.01], [], 0, "CAN_COLLIDE"];
   _vehicle_280 = _this;
   _this setDir -102.56635;
   _this setVehicleInit "this setVectorUp [0,0,1];";
@@ -204,7 +204,7 @@ if (true) then
 _vehicle_282 = objNull;
 if (true) then
 {
-  _this = createVehicle ["MASH", [14283.073, 12706.212, -0.01], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Camp", [14283.073, 12706.212, -0.01], [], 0, "CAN_COLLIDE"];
   _vehicle_282 = _this;
   _this setDir -102.56635;
   _this setVehicleInit "this setVectorUp [0,0,1];";
@@ -234,7 +234,7 @@ if (true) then
 _vehicle_292 = objNull;
 if (true) then
 {
-  _this = createVehicle ["MASH", [14260.153, 12707.241, -0.01], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Camp", [14260.153, 12707.241, -0.01], [], 0, "CAN_COLLIDE"];
   _vehicle_292 = _this;
   _this setDir 78.151505;
   _this setVehicleInit "this setVectorUp [0,0,1];";
@@ -244,7 +244,7 @@ if (true) then
 _vehicle_293 = objNull;
 if (true) then
 {
-  _this = createVehicle ["MASH", [14258.528, 12713.731, -0.01], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Camp", [14258.528, 12713.731, -0.01], [], 0, "CAN_COLLIDE"];
   _vehicle_293 = _this;
   _this setDir 78.151505;
   _this setVehicleInit "this setVectorUp [0,0,1];";
@@ -254,21 +254,11 @@ if (true) then
 _vehicle_294 = objNull;
 if (true) then
 {
-  _this = createVehicle ["MASH", [14257.203, 12719.968, -0.01], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Camp", [14257.203, 12719.968, -0.01], [], 0, "CAN_COLLIDE"];
   _vehicle_294 = _this;
   _this setDir 78.151505;
   _this setVehicleInit "this setVectorUp [0,0,1];";
   _this setPos [14257.203, 12719.968, -0.01];
-};
-
-_vehicle_299 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Land_A_Pub_01", [14247.062, 12663.457, -0.05721648], [], 0, "CAN_COLLIDE"];
-  _vehicle_299 = _this;
-  _this setDir -261.4249;
-  _this setVehicleInit "this setVectorUp [0,0,1];";
-  _this setPos [14247.062, 12663.457, -0.05721648];
 };
 
 _vehicle_302 = objNull;
@@ -294,11 +284,11 @@ if (true) then
 _vehicle_307 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_A_BuildingWIP", [13824.438, 12821.023, 0.28120998], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Land_A_BuildingWIP", [13813.914, 12821.889, 0.28120998], [], 0, "CAN_COLLIDE"];
   _vehicle_307 = _this;
   _this setDir -264.93076;
   _this setVehicleInit "this setVectorUp [0,0,1];";
-  _this setPos [13824.438, 12821.023, 0.28120998];
+  _this setPos [13813.914, 12821.889, 0.28120998];
 };
 
 _vehicle_308 = objNull;
@@ -314,11 +304,11 @@ if (true) then
 _vehicle_314 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_A_Hospital", [14088.811, 12448.2, -0.01], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Land_A_Hospital", [14091.364, 12446.477, -0.0099999998], [], 0, "CAN_COLLIDE"];
   _vehicle_314 = _this;
-  _this setDir 158.0571;
+  _this setDir 153.99374;
   _this setVehicleInit "this setVectorUp [0,0,1];";
-  _this setPos [14088.811, 12448.2, -0.01];
+  _this setPos [14091.364, 12446.477, -0.0099999998];
 };
 
 _vehicle_728 = objNull;

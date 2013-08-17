@@ -140,7 +140,7 @@ class _vehicle_621
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[10340.739, 5276.4019, 5.7220459e-005]";
+		POSITION="[10356.097, 5300.0186, 5.7220459e-005]";
 		TYPE="Land_A_CraneCon";
 		AZIMUT="-629.40656";
 		PARENT="";

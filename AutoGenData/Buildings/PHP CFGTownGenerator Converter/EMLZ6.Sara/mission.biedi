@@ -324,18 +324,6 @@ class _vehicle_294
 		PARENT="";
 	};
 };
-class _vehicle_299
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[14247.062, 12663.457, -0.05721648]";
-		TYPE="Land_A_Pub_01";
-		AZIMUT="-261.4249";
-		INIT="this setVectorUp [0,0,1];";
-		PARENT="";
-	};
-};
 class _vehicle_302
 {
 	objectType="vehicle";

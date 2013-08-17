@@ -105,10 +105,10 @@ if (true) then
 _vehicle_621 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_A_CraneCon", [10340.739, 5276.4019, 5.7220459e-005], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Land_A_CraneCon", [10356.097, 5300.0186, 5.7220459e-005], [], 0, "CAN_COLLIDE"];
   _vehicle_621 = _this;
   _this setDir -629.40656;
-  _this setPos [10340.739, 5276.4019, 5.7220459e-005];
+  _this setPos [10356.097, 5300.0186, 5.7220459e-005];
 };
 
 processInitCommands;

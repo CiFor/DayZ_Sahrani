@@ -21,58 +21,13 @@ if (true) then
   if (true) then {setPlayable _this;};
 };
 
-_vehicle_454 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Land_A_FuelStation_Build", [9741.3525, 5515.4468, 3.8146973e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_454 = _this;
-  _this setDir 53.18969;
-  _this setPos [9741.3525, 5515.4468, 3.8146973e-005];
-};
-
-_vehicle_455 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Land_A_FuelStation_Shed", [9721.2393, 5516.8208, -0.063669682], [], 0, "CAN_COLLIDE"];
-  _vehicle_455 = _this;
-  _this setDir -37.351627;
-  _this setPos [9721.2393, 5516.8208, -0.063669682];
-};
-
 _vehicle_456 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_Ind_TankSmall2", [9739.6113, 5519.6284, 0.17583084], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Land_Ind_TankSmall2", [9692.8838, 5568.499, -0.044718109], [], 0, "CAN_COLLIDE"];
   _vehicle_456 = _this;
-  _this setDir -36.67086;
-  _this setPos [9739.6113, 5519.6284, 0.17583084];
-};
-
-_vehicle_457 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Land_A_FuelStation_Feed", [9721.1709, 5516.689, 0.17348246], [], 0, "CAN_COLLIDE"];
-  _vehicle_457 = _this;
-  _this setDir -126.11369;
-  _this setPos [9721.1709, 5516.689, 0.17348246];
-};
-
-_vehicle_458 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Land_A_FuelStation_Feed", [9715.5664, 5512.6758, 0.097451709], [], 0, "CAN_COLLIDE"];
-  _vehicle_458 = _this;
-  _this setDir -125.54933;
-  _this setPos [9715.5664, 5512.6758, 0.097451709];
-};
-
-_vehicle_459 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Land_A_FuelStation_Feed", [9726.7246, 5521.0107, 0.24816656], [], 0, "CAN_COLLIDE"];
-  _vehicle_459 = _this;
-  _this setDir -125.54933;
-  _this setPos [9726.7246, 5521.0107, 0.24816656];
+  _this setDir -131.01048;
+  _this setPos [9692.8838, 5568.499, -0.044718109];
 };
 
 _vehicle_624 = objNull;
@@ -271,6 +226,16 @@ if (true) then
   _vehicle_717 = _this;
   _this setDir 449.94666;
   _this setPos [8898.0723, 6130.105, 3.8146973e-006];
+};
+
+_vehicle_743 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_benzina_schnell", [9684.541, 5562.8799, 0.043622404], [], 0, "CAN_COLLIDE"];
+  _vehicle_743 = _this;
+  _this setDir -310.77811;
+  _this setVehicleInit "this setVectorUp [0,0,1];";
+  _this setPos [9684.541, 5562.8799, 0.043622404];
 };
 
 processInitCommands;

@@ -60,78 +60,6 @@ class _vehicle_323
 		PARENT="";
 	};
 };
-class _vehicle_325
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[13501.751, 11502.97, 0.028872779]";
-		TYPE="Land_A_FuelStation_Build";
-		AZIMUT="112.26083";
-		INIT="this setVectorUp [0,0,1];";
-		PARENT="";
-	};
-};
-class _vehicle_326
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[13492.592, 11520.933, -0.01]";
-		TYPE="Land_A_FuelStation_Shed";
-		AZIMUT="21.719521";
-		INIT="this setVectorUp [0,0,1];";
-		PARENT="";
-	};
-};
-class _vehicle_327
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[13504.441, 11506.611, -0.01]";
-		TYPE="Land_Ind_TankSmall2";
-		AZIMUT="22.400288";
-		INIT="this setVectorUp [0,0,1];";
-		PARENT="";
-	};
-};
-class _vehicle_329
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[13492.443, 11520.922, 0.24333251]";
-		TYPE="Land_A_FuelStation_Feed";
-		AZIMUT="-67.042542";
-		INIT="this setVectorUp [0,0,1];";
-		PARENT="";
-	};
-};
-class _vehicle_331
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[13486.119, 11523.667, 0.46025801]";
-		TYPE="Land_A_FuelStation_Feed";
-		AZIMUT="-66.478195";
-		INIT="this setVectorUp [0,0,1];";
-		PARENT="";
-	};
-};
-class _vehicle_333
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[13499.003, 11518.379, 0.044364944]";
-		TYPE="Land_A_FuelStation_Feed";
-		AZIMUT="-66.478195";
-		INIT="this setVectorUp [0,0,1];";
-		PARENT="";
-	};
-};
 class _vehicle_415
 {
 	objectType="vehicle";
@@ -228,14 +156,14 @@ class _vehicle_734
 		PARENT="";
 	};
 };
-class _vehicle_735
+class _vehicle_737
 {
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[14446.84, 10867.439, -0.072935879]";
-		TYPE="Land_A_Pub_01";
-		AZIMUT="-149.56293";
+		POSITION="[13504.938, 11548.451, -0.14086008]";
+		TYPE="Land_benzina_schnell";
+		AZIMUT="-250.10786";
 		INIT="this setVectorUp [0,0,1];";
 		PARENT="";
 	};
