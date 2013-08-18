@@ -98,14 +98,20 @@ switch (_item) do {
 	case "Skin_Soldier1_DZ": {
 		_model = "Soldier1_DZ";
 	};
+	case "Skin_SMD_ATACS_DES": {
+		_model = "SMD_ATACS_DES";
+	};
+	case "Skin_SMD_ATACS_URBAN": {
+		_model = "SMD_ATACS_URBAN";
+	};
 	case "Skin_SMD_RACS_MP": {
 		_model = "SMD_RACS_MP";
 	};
 	case "Skin_SMD_RACS_MP_Tan": {
 		_model = "SMD_RACS_MP_Tan";
 	};
-	case "Skin_SMD_RACS_MP_TanDigi": {
-		_model = "SMD_RACS_MP_TanDigi";
+	case "Skin_SMD_RACS_MP_Tan_Digi": {
+		_model = "SMD_RACS_MP_Tan_Digi";
 	};
 	case "Skin_SMD_RACS_Soldier": {
 		_model = "SMD_RACS_Soldier";
@@ -116,11 +122,29 @@ switch (_item) do {
 	case "Skin_SMD_RACS_SWAT": {
 		_model = "SMD_RACS_SWAT";
 	};
+	case "Skin_SMD_SPD_SWAT_BLACK": {
+		_model = "SMD_SPD_SWAT_BLACK";
+	};
+	case "Skin_SMD_SPD_SWAT_BLACK_DIGI": {
+		_model = "SMD_SPD_SWAT_BLACK_DIGI";
+	};
+	case "Skin_SMD_SPD_BLUE": {
+		_model = "SMD_SPD_BLUE";
+	};
+	case "Skin_SMD_SPD_BLUE_DIGI": {
+		_model = "SMD_SPD_BLUE_DIGI";
+	};
 	case "Skin_SMD_RACS_Sheriff": {
 		_model = "SMD_RACS_Sheriff";
 	};
 	case "Skin_SMD_US_SpecOps": {
 		_model = "SMD_US_SpecOps";
+	};
+	case "Skin_SMD_US_SpecOps_DIGI": {
+		_model = "SMD_US_SpecOps_DIGI";
+	};
+	case "Skin_SMD_US_SpecOps_MP_DIGI": {
+		_model = "SMD_US_SpecOps_MP_DIGI";
 	};
 	case "Skin_Survivor2_DZ": {
 		_model = "Survivor2_DZ";

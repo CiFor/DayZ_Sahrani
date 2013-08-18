@@ -2316,6 +2316,16 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "BAF Officer BDU";
 		descriptionShort = "Standard Battle Dress Uniform of the British Armed Forces with officer's beret (Officer)";
 	};
+	class Skin_SMD_ATACS_DES : SkinBase {
+		scope = public;
+		displayName = "ATACS DESERT BDU.";
+		descriptionShort = "Specialized ATACS camouflage clothing designed to resemble Desert Terrain";
+	};
+	class Skin_SMD_ATACS_URBAN : SkinBase {
+		scope = public;
+		displayName = "ATACS URBAN BDU";
+		descriptionShort = "Specialized ATACS camouflage clothing designed to resemble Urban Terrain";
+	};
 	class Skin_SMD_RACS_MP : SkinBase {
 		scope = public;
 		displayName = "RACS M.P.";
@@ -2344,7 +2354,27 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 	class Skin_SMD_RACS_SWAT : SkinBase {
 		scope = public;
 		displayName = "RACS S.W.A.T. BDU";
-		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani Military Police Special Weapons And Tactics";
+		descriptionShort = "Standard camouflage Battle Dress Uniform of the Royal Army Corps of Sahrani Military Police Special Weapons And Tactics";
+	};
+	class Skin_SMD_SPD_SWAT_BLACK : SkinBase {
+		scope = public;
+		displayName = "RACS S.W.A.T. BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the United Sahrani Police Department Special Weapons And Tactics";
+	};
+	class Skin_SMD_SPD_SWAT_BLACK_DIGI : SkinBase {
+		scope = public;
+		displayName = "RACS S.W.A.T. BDU";
+		descriptionShort = "Digital camouflage Battle Dress Uniform of the United Sahrani Police Department Special Weapons And Tactics";
+	};
+	class Skin_SMD_SPD_BLUE : SkinBase {
+		scope = public;
+		displayName = "RACS SPD. BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the United Sahrani Police Department";
+	};
+	class Skin_SMD_SPD_BLUE_DIGI : SkinBase {
+		scope = public;
+		displayName = "RACS S.W.A.T. BDU";
+		descriptionShort = "Digital camouflage Battle Dress Uniform of the United Sahrani Police Department";
 	};
 	class Skin_SMD_SARA_Sheriff : SkinBase {
 		scope = public;
@@ -2355,6 +2385,16 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		scope = public;
 		displayName = "U.S. Spec Ops BDU";
 		descriptionShort = "Special Battle Dress Uniform of the United States Armed Forces Special Operations";
+	};
+	class Skin_SMD_US_SpecOps_DIGI : SkinBase {
+		scope = public;
+		displayName = "U.S. Spec Ops BDU";
+		descriptionShort = "Special Digital camouflage Battle Dress Uniform of the United States Armed Forces Special Operations";
+	};
+	class Skin_SMD_US_SpecOps_MP_DIGI : SkinBase {
+		scope = public;
+		displayName = "U.S. Spec Ops MP BDU";
+		descriptionShort = "Special Battle Dress Uniform of the United States Armed Forces Special Operations Military Police";
 	};
 	class Soldier1_DZ : SkinBase {
 		scope = public;
