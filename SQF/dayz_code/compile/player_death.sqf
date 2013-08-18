@@ -1,4 +1,4 @@
-private["_playerModel","_itemNew","_array","_source","_kills","_killsV","_humanity","_wait","_myKills"];
+ private["_playerModel","_itemNew","_array","_source","_kills","_killsV","_humanity","_wait","_myKills"];
 if (deathHandled) exitWith {};
 
 deathHandled = true;
@@ -81,7 +81,7 @@ if(_playerModel in ["SniperLightBandit_DZ","SniperLightBanditW_DZ","SniperLight_
 if(_playerModel in ["SniperBanditD_DZ","SniperBanditDW_DZ","SniperD_DZ","SniperDW_DZ"]) then {
 	_itemNew = "Skin_SniperD_DZ";
 };
-if(_playerModel in ["Camo1_DZ","Soldier1_DZ","Rocket_DZ","SMD_RACS_MP","SMD_RACS_MP_Tan","SMD_RACS_MP_TanDigi","SMD_RACS_Soldier","SMD_RACS_SWAT","SMD_SARA_Sheriff","SMD_US_SpecOps"]) then {
+if(_playerModel in ["Camo1_DZ","Soldier1_DZ","Rocket_DZ","SMD_ATACS_DES","SMD_ATACS_URBAN","SMD_RACS_MP","SMD_RACS_MP_Tan","SMD_RACS_MP_Tan_Digi","SMD_RACS_Soldier","SMD_RACS_Soldier_Digi","SMD_RACS_SWAT","SMD_SPD_SWAT_BLACK","SMD_SPD_SWAT_BLACK_DIGI","SMD_SPD_BLUE","SMD_SPD_BLUE_DIGI","SMD_RACS_Sheriff","SMD_US_SpecOps","SMD_US_SpecOps_DIGI","SMD_US_SpecOps_MP_DIGI"]) then {
 	_itemNew = "Skin_" + _playerModel;
 };
 
