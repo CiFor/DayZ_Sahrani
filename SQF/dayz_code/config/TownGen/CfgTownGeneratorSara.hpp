@@ -1642,75 +1642,75 @@ class CfgTownGeneratorSara {
 		size = 1900;
 
 		class Object0 {
-			Type="Land_Mil_ControlTowe";
-			position[] = {508.5833,13.915253,2406.28};
-			direction = -359.8424;
+			Type="Land_Mil_ControlTower";
+			position[] = {2508.2151, 2403.6304, 0};
+			direction = -359.84244;
 			SetZUp = 1;
 		};
 		class Object1 {
-			Type="Land_Hangar_";
-			position[] = {580.9875,22.079311,2446.78};
-			direction = -989.8375;
+			Type="Land_Hangar_2";
+			position[] = {2588.0981, 2444.7939, 0};
+			direction = -989.83759;
 			SetZUp = 1;
 		};
 		class Object2 {
-			Type="Land_Hangar_";
-			position[] = {580.9915,22.074898,2414.69};
-			direction = -630.0054;
+			Type="Land_Hangar_2";
+			position[] = {2588.1021, 2412.7031, 0};
+			direction = -630.00549;
 			SetZUp = 1;
 		};
 		class Object3 {
-			Type="Land_a_stationhous";
-			position[] = {775.2595,17.058743,2891.19};
-			direction = -385.5569;
+			Type="Land_a_stationhouse";
+			position[] = {2751.4729, 2878.7092, 0.14090876};
+			direction = -375.37744;
 			SetZUp = 1;
 		};
 		class Object4 {
-			Type="Land_A_GeneralStore_01";
-			position[] = {809.7463,21.711969,2911.51};
-			direction = -216.3809;
+			Type="Land_A_GeneralStore_01a";
+			position[] = {2813.5911, 2906.426, 0.088033259};
+			direction = -216.38094;
 			SetZUp = 1;
 		};
 		class Object5 {
-			Type="Land_Fuel_tank_stair";
-			position[] = {905.8274,4.9193654,3064.15};
-			direction = -317.6452;
+			Type="Land_Fuel_tank_stairs";
+			position[] = {2898.9048, 3069.7239, 0};
+			direction = -379.11487;
 			SetZUp = 1;
 		};
 		class Object6 {
-			Type="Land_A_BuildingWI";
-			position[] = {853.2458,26.586563,2804.64};
-			direction = -292.9304;
+			Type="Land_A_BuildingWIP";
+			position[] = {2855.8799, 2795.9556, 0.17310289};
+			direction = -292.93045;
 			SetZUp = 1;
 		};
 		class Object7 {
-			Type="Land_SS_hanga";
-			position[] = {470.55,14.002998,2837.6};
-			direction = -9;
+			Type="Land_SS_hangar";
+			position[] = {2479.4714, 2835.9292, 0};
+			direction = -90;
 			SetZUp = 1;
 		};
 		class Object8 {
-			Type="Land_SS_hanga";
-			position[] = {469.8208,13.985729,2804.43};
-			direction = -9;
+			Type="Land_SS_hangar";
+			position[] = {2479.4829, 2802.7556};
+			direction = -90;
 			SetZUp = 1;
 		};
 		class Object9 {
-			Type="Land_Ind_Workshop01_0";
-			position[] = {587.4446,13.905,2491.99};
-			direction = 181.1985;
+			Type="Land_Ind_Workshop01_02";
+			position[] = {2596.3662, 2490.3142, 0};
+			direction = 181.19853;
 			SetZUp = 1;
 		};
 		class Object10 {
-			Type="Land_Ind_Workshop01_0";
-			position[] = {587.3772,17.330122,2477.28};
-			direction = 1.092863;
+			Type="Land_Ind_Workshop01_04";
+			position[] = {2596.2988, 2475.604, 0};
+			direction = 1.0928638;
 			SetZUp = 1;
 		};
 		class Object11 {
-			Type="Land_Ind_Workshop01_";
-			position[] = {135.9702,37.772758,2728.3};
-			direction = -137.4858;
+			Type="Land_Ind_Workshop01_L";
+			position[] = {2144.8918, 2726.6191, 0};
+			direction = -137.48586;
 			SetZUp = 1;
 		};
 	};
