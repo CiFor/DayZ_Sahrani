@@ -1000,15 +1000,15 @@ class CfgWeapons {
 	//class BAF_LRR_scoped_W: FakeWeapon {};
 	class BAF_NLAW_Launcher: FakeWeapon {};
 	class BAF_L17_40mm: FakeWeapon {};
-	/*class L85A2_base_BAF: FakeWeapon {};
-	class BAF_L85A2_RIS_Holo: FakeWeapon {};
-	class BAF_L85A2_UGL_Holo: FakeWeapon {};
-	class BAF_L85A2_RIS_SUSAT: FakeWeapon {};
-	class BAF_L85A2_UGL_SUSAT: FakeWeapon {};
-	class BAF_L85A2_RIS_ACOG: FakeWeapon {};
-	class BAF_L85A2_UGL_ACOG: FakeWeapon {};
+	//class L85A2_base_BAF: FakeWeapon {};
+	//class BAF_L85A2_RIS_Holo: FakeWeapon {};
+	//class BAF_L85A2_UGL_Holo: FakeWeapon {};
+	//class BAF_L85A2_RIS_SUSAT: FakeWeapon {};
+	//class BAF_L85A2_UGL_SUSAT: FakeWeapon {};
+	//class BAF_L85A2_RIS_ACOG: FakeWeapon {};
+	//class BAF_L85A2_UGL_ACOG: FakeWeapon {};
 	class BAF_L85A2_RIS_CWS: FakeWeapon {};
-	class BAF_L86A2_ACOG: FakeWeapon {};*/
+	//class BAF_L86A2_ACOG: FakeWeapon {};
 	class BAF_L110A1: FakeWeapon {};
 	class BAF_L110A1_Aim: FakeWeapon {};
 	class BAF_L7A2_GPMG: FakeWeapon {};
