@@ -2809,107 +2809,12 @@ class CfgVehicles {
 		};
 	};
 	
-	class HMMWV_D_DZ: HMMWV_Base {
-		accuracy = 0.32;
+	class HMMWV_D_DZ: HMMWV_DZ {
 		displayname = "HMMWV Desert";
-		hasgunner = 0;
 		hiddenselections[] = {"Camo1"};
 		hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
-		icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
-		mapsize = 5;
 		model = "ca\wheeled_E\HMMWV\HMMWV_DES_EP1";
 		picture = "\Ca\wheeled\data\ico\HMMWV_DES_EP1.paa";
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		transportMaxWeapons = 10;
-		transportMaxMagazines = 50;
-        transportmaxbackpacks = 5;
-		class Turrets {};
-		class HitPoints {
-			class HitEngine {
-				armor = 2.4;
-				material = -1;
-				name = "motor";
-				passthrough = 0.2;
-				visual = "";
-			};
-			class HitBody {
-				armor = 1;
-				material = -1;
-				name = "karoserie";
-				passthrough = 1;
-				visual = "";
-			};
-			class HitFuel {
-				armor = 1.3;
-				material = -1;
-				name = "palivo";
-				passthrough = 0.5;
-				visual = "";
-			};
-			class HitLFWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_1_1_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitRFWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_2_1_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitLBWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_1_2_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitRBWheel {
-				armor = 0.30;
-				material = -1;
-				name = "wheel_2_2_steering";
-				passthrough = 0.3;
-				visual = "";
-			};
-			class HitGlass1 {
-				armor = 0.4;
-				material = -1;
-				name = "glass1";
-				passthrough = 0;
-				visual = "glass1";
-			};
-			class HitGlass2 {
-				armor = 0.4;
-				material = -1;
-				name = "glass2";
-				passthrough = 0;
-				visual = "glass2";
-			};
-			class HitGlass3 {
-				armor = 0.2;
-				material = -1;
-				name = "glass3";
-				passthrough = 0;
-				visual = "glass3";
-			};
-			class HitGlass4 {
-				armor = 0.2;
-				material = -1;
-				name = "glass4";
-				passthrough = 0;
-				visual = "glass4";
-			};
-		};
-		class Damage {
-			mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
-			tex[] = {};
-		};
 	};
 	
 	class LandRover_CZ_EP1;
@@ -2922,12 +2827,10 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_landrover_racs_co.paa"};
 	};
 
-	class LandRover_SMD_RACS_DIGI: LandRover_CZ_EP1
+	class LandRover_SMD_RACS_DIGI: LandRover_SMD_RACS
 	{
 		displayname = "Landrover (RACS) Digital";
 		displaynameshort = "Landrover RACS) Digital";
-		scope = 2;
-		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_landrover_racs_digi_co.paa"};
 	};
 
@@ -3617,31 +3520,6 @@ class CfgVehicles {
 	{
 		displayname = "UH1H Unmarked";
 		displaynameshort = "UH1H (Unmarked)";	
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {"Camo1", "Camo2", "Camo_mlod"};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 5;
-		transportMaxMagazines = 25;
-        transportmaxbackpacks = 4;
-		
-		class Turrets : Turrets 
-		{
-			class MainTurret : MainTurret 
-			{
-				magazines[] = {"100Rnd_762x51_M240"};
-			};
-			class LeftDoorGun : LeftDoorGun
-			{
-				magazines[] = {"100Rnd_762x51_M240"};
-			};
-		};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_blackops_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_blackops_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
 
@@ -3649,31 +3527,6 @@ class CfgVehicles {
 	{
 		displayname = "UH1H (RACS)";
 		displaynameshort = "UH1H (RACS)";	
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {"Camo1", "Camo2", "Camo_mlod"};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 5;
-		transportMaxMagazines = 25;
-        transportmaxbackpacks = 4;
-		
-		class Turrets : Turrets 
-		{
-			class MainTurret : MainTurret 
-			{
-				magazines[] = {"100Rnd_762x51_M240"};
-			};
-			class LeftDoorGun : LeftDoorGun
-			{
-				magazines[] = {"100Rnd_762x51_M240"};
-			};
-		};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_racs_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_racs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};	
 
@@ -3681,31 +3534,6 @@ class CfgVehicles {
 	{
 		displayname = "UH1H (RACS) Digital";
 		displaynameshort = "UH1H (RACS) Digital";	
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {"Camo1", "Camo2", "Camo_mlod"};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 5;
-		transportMaxMagazines = 25;
-        transportmaxbackpacks = 4;
-		
-		class Turrets : Turrets 
-		{
-			class MainTurret : MainTurret 
-			{
-				magazines[] = {"100Rnd_762x51_M240"};
-			};
-			class LeftDoorGun : LeftDoorGun
-			{
-				magazines[] = {"100Rnd_762x51_M240"};
-			};
-		};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_racs_digi_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_racs_digi_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};		
 
@@ -3713,31 +3541,6 @@ class CfgVehicles {
 	{
 		displayname = "UH1H (United Nations)";
 		displaynameshort = "UH1H UNITED NATIONS";	
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {"Camo1", "Camo2", "Camo_mlod"};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 5;
-		transportMaxMagazines = 25;
-        transportmaxbackpacks = 4;
-		
-		class Turrets : Turrets 
-		{
-			class MainTurret : MainTurret 
-			{
-				magazines[] = {"100Rnd_762x51_M240"};
-			};
-			class LeftDoorGun : LeftDoorGun
-			{
-				magazines[] = {"100Rnd_762x51_M240"};
-			};
-		};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_un_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_un_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};	
 	
@@ -3816,19 +3619,11 @@ class CfgVehicles {
 		crew = "TK_CIV_Takistani01_EP1";
 		typicalCargo[] = {"TK_CIV_Takistani01_EP1"};
 	};
-	class Ikarus_SMD_OPENDAYZ: Ikarus_base
+	class Ikarus_SMD_OPENDAYZ: Ikarus_SMD_COKE
 	{
 		displayname = "Ikarus (OpenDayZ)";
 		displaynameshort = "Ikarus (OpenDayZ)";	
-		expansion = 1;
-		scope = 2;
-		side = 3;
-		faction = "BIS_TK_CIV";
-		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_ikarus_opendayz_co"};
-		rarityUrban = 0.4;
-		crew = "TK_CIV_Takistani01_EP1";
-		typicalCargo[] = {"TK_CIV_Takistani01_EP1"};
 	};
 	class SkodaBase;
 	class car_hatchback: SkodaBase {
@@ -4136,208 +3931,66 @@ class CfgVehicles {
 	};
 	class SMD_ATACS_URBAN: Bandit1_DZ { //Hero Skin with Black Urban ATACS Camo
         model = "\Ca\Characters_PMC\Frost\Frost.p3d";
-		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_hero_atacs_urban_co.paa"};
     };
 	class SMD_ATACS_DES: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
 		model = "\Ca\Characters_PMC\Frost\Frost.p3d";
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_hero_atacs_des_co.paa"};
     };
 	class SMD_RACS_MP: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
         model = "\vil_police\vil_cop";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_co.paa"};
     };
 	class SMD_RACS_MP_Tan: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
         model = "\vil_police\vil_cop";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tan_co.paa"};
     };
 	class SMD_RACS_MP_Tan_Digi: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
         model = "\vil_police\vil_cop";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tandigi_co.paa"};
     };
 	class SMD_RACS_Soldier: Bandit1_DZ { //Tan Camo Helmet/Pads
         model = "\vil_police\vil_swat";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_regular_co.paa"};
     };
 	class SMD_RACS_Soldier_Digi: Bandit1_DZ { //Tan Camo Helmet/Pads
         model = "\vil_police\vil_swat";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_regular_digi_co.paa"};
     };
 	class SMD_RACS_SWAT: Bandit1_DZ { //SPD SWAT Black Camo Helmet/Pads
         model = "\vil_police\vil_swat";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_co.paa"};
     };
 	class SMD_SPD_SWAT_BLACK: Bandit1_DZ { //SPD SWAT Flat Black Helmet/Pads
         model = "\vil_police\vil_swat";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_black_co.paa"};
     };
 	class SMD_SPD_SWAT_BLACK_DIGI: Bandit1_DZ { //SPD SWAT Flat Black Helmet/Pads
         model = "\vil_police\vil_swat";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_black_digi_co.paa"};
     };
 	class SMD_SPD_BLUE: Bandit1_DZ { //SPD Flat Blue NO Helmet/Pads
         model = "\vil_police\vil_swat";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_co.paa"};
     };
 	class SMD_SPD_BLUE_DIGI: Bandit1_DZ { //SPD Blue Digi NO Helmet/Pads
         model = "\vil_police\vil_swat";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_digi_co.paa"};
     };
 	class SMD_SARA_Sheriff: Bandit1_DZ { //Sherrif
         model = "\vil_police\vil_cop3";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_co.paa"};
     };
 	class SMD_US_SpecOps: Bandit1_DZ { //US SPEC OPS Helmet/Pads
         model = "\vil_police\vil_swat";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_co.paa"};
     };
 	class SMD_US_SpecOps_DIGI: Bandit1_DZ { //US SPEC OPS Digi Helmet/Pads 
         model = "\vil_police\vil_swat";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_digi_co.paa"};
     };
 	class SMD_US_SpecOps_MP_DIGI: Bandit1_DZ { //US SPEC OPS Digi NO Helmet/Pads Blended Vest
         model = "\vil_police\vil_swat";
-        displayName = "Survivor";
-        side = 1;
-        weapons[] = {"Throw","Put"};
-        backpack = "";
-        magazines[] = {};
-        respawnWeapons[] = {"Throw","Put"};
-        respawnMagazines[] = {};
-        weaponSlots = "1     +     4     + 12*        256     + 2*    4096     +     2     + 8*    16  + 12*131072";
-        canHideBodies = 1;
-        hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_mp_digi_co.paa"};
     };
 	class BAF_Soldier_Officer_W; //"Rocket" Clothing (BAF Officer)
