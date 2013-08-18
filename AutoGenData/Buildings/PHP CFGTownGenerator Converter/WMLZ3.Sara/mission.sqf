@@ -24,11 +24,11 @@ if (true) then
 _vehicle_544 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_A_BuildingWIP", [13339.623, 7331.7642, 0.32484424], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Land_A_BuildingWIP", [13331.541, 7323.7754, 0.32484424], [], 0, "CAN_COLLIDE"];
   _vehicle_544 = _this;
   _this setDir -252.44598;
   _this setVehicleInit "this setVectorUp [0,0,1];";
-  _this setPos [13339.623, 7331.7642, 0.32484424];
+  _this setPos [13331.541, 7323.7754, 0.32484424];
 };
 
 _vehicle_546 = objNull;

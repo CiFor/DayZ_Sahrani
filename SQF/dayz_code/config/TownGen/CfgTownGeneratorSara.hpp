@@ -1340,7 +1340,7 @@ class CfgTownGeneratorSara {
 
 		class Object0 {
 			Type="Land_A_BuildingWIP";
-			position[] = {13339.623, 7331.7642, 0.32484424};
+			position[] = {13331.541, 7323.7754, 0.32484424};
 			direction = -252.44598;
 			SetZUp = 1;
 		};

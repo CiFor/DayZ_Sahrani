@@ -41,7 +41,7 @@ class _vehicle_544
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[13339.623, 7331.7642, 0.32484424]";
+		POSITION="[13331.541, 7323.7754, 0.32484424]";
 		TYPE="Land_A_BuildingWIP";
 		AZIMUT="-252.44598";
 		INIT="this setVectorUp [0,0,1];";
