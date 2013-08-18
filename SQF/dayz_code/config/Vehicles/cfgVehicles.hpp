@@ -249,7 +249,7 @@ class CfgVehicles {
 		model = "\sara_civilians\civil_7_tshirt_shorts.p3d";
 	};
 	
-	class z_RACSzombie : zZombie_Base{	 //Tan Camo Helmet/Pads
+	class z_RACSzombie : zZombie_Base{	 //RACS Tan Camo Helmet/Pads
 		hiddenSelections[] = {"Camo01"};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_regular_co.paa"};
 		displayName = "Zombie Soldier";
@@ -293,11 +293,11 @@ class CfgVehicles {
 		};
 	};
 	
-	class z_RACSzombie2 : z_RACSzombie { //Sherriff
+	class z_RACSzombie2 : z_RACSzombie { //SPD Sherriff
 		model = "\vil_police\vil_cop3";
 	};
 	
-	class z_RACSzombie3 : z_RACSzombie { //Black Camo Helmet/Pads
+	class z_RACSzombie3 : z_RACSzombie { //SPD SWAT Black Camo Helmet/Pads
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_co.paa"};
 	};	
 
@@ -306,25 +306,58 @@ class CfgVehicles {
 		model = "\vil_police\vil_cop3";
 	};
 	
-	class z_RACSzombie5 : z_RACSzombie { //Tan Flat No Helmet/Pads
+	class z_RACSzombie5 : z_RACSzombie { //RACS MP Tan Flat No Helmet/Pads
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
 	
-	class z_RACSzombie6 : z_RACSzombie { //Tan Flat bdu AND vest No Helmet/Pads Blended Vest
+	class z_RACSzombie6 : z_RACSzombie { //RACS MP Tan Flat bdu AND vest No Helmet/Pads Blended Vest
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tan_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
 	
-	class z_RACSzombie7 : z_RACSzombie { //Tan digi bdu AND vest No Helmet/Pads Blended Vest
+	class z_RACSzombie7 : z_RACSzombie { //RACS Tan digi bdu AND vest No Helmet/Pads Blended Vest
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tandigi_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
 	
-	class z_RACSzombie8 : z_RACSzombie { //Tan digi bdu Black vest 
+	class z_RACSzombie8 : z_RACSzombie { //RACS Tan digi bdu Black vest 
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tandigi_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
+	
+	
+	
+	class z_RACSzombie9 : z_RACSzombie { // US BLOPS Black digi bdu AND vest No Helmet/Pads Blended Vest
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_mp_digi_co.paa"};
+		model = "\vil_police\vil_cop";
+	};
+	
+	class z_RACSzombie10 : z_RACSzombie { //US BLOPS Black Digi Camo Helmet/Pads
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_digi_co.paa"};
+		model = "\vil_police\vil_cop";
+	};
+	
+	class z_RACSzombie11 : z_RACSzombie { //SPD SWAT Black Digi Camo Helmet/Pads
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_digi_co.paa"};
+		model = "\vil_police\vil_cop";
+	};
+	
+	class z_RACSzombie12 : z_RACSzombie { //SPD Blue digi bdu Black vest 
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_digi_co.paa"};
+		model = "\vil_police\vil_cop";
+	};
+	
+	class z_RACSzombie13 : z_RACSzombie { //SPD Blue bdu Black vest 
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_co.paa"};
+		model = "\vil_police\vil_cop";
+	};
+	
+	class z_RACSzombie14 : z_RACSzombie { //SPD Black bdu Black vest 
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_black_co.paa"};
+		model = "\vil_police\vil_cop";
+	};
+	
 	
 	/*END ZEDS
 	//Begin Vehicles
