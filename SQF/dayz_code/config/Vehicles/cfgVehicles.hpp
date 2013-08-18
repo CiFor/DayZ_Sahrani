@@ -303,7 +303,7 @@ class CfgVehicles {
 
 	class z_RACSzombie4 : z_RACSzombie { //US SPEC OPS Flat Grey Black Helmet/Pads Black Vest
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_co.paa"};
-		model = "\vil_police\vil_cop3";
+		model = "\vil_police\vil_cop;
 	};
 	
 	class z_RACSzombie5 : z_RACSzombie { //RACS MP Tan Flat No Helmet/Pads Black Vest
