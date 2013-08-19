@@ -377,14 +377,14 @@
 			<Czech>%1 bylo doplněno %2 litrů paliva.</Czech>
 		</Key>
 		<Key ID="str_player_06">
-			<Original>Day 7 - %1th attempt</Original>
-			<English>Day 7 - %1th attempt</English>
-			<German>Tag 7 - %1er Versuch</German>
-			<Russian>День 7 - %1. стараться</Russian>
-			<Spanish>Día 7 - %1. intentar</Spanish>
-			<Dutch>Dag 7 - %1. proberen</Dutch>
-			<French>Jour 7 - %1. essayer</French>			<!-- As in "Day 1" or "Day 10", how many days since character started -->
-			<Czech>Den 7 - %1. zkusit</Czech>
+			<Original>Day 7 - Attempt %1</Original>
+			<English>Day 7 - Attempt %1</English>
+			<German>Tag 7 - Versuch %1</German>
+			<Russian>День 7 - Cтараться %1</Russian>
+			<Spanish>Día 7 - Intentar %1</Spanish>
+			<Dutch>Dag 7 - Proberen %1</Dutch>
+			<French>Jour 7 - Essayer %1</French>			<!-- As in "Day 1" or "Day 10", how many days since character started -->
+			<Czech>Den 7 - Zkusit %1</Czech>
 		</Key>
 		<Key ID="str_player_07">
 			<Original>You last ate %2 minutes, and drank %3 minutes ago</Original>
