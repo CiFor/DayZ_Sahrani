@@ -1103,7 +1103,7 @@ class FSM
        "_strTime = call curTimeStr;" \n
        "_strDate = date;" \n
        "" \n
-       "_first = [_world,_town,localize (""str_player_06"") + "" "" + str(_days)] spawn BIS_fnc_infoText;" \n
+       "_first = [_world,_town,format[localize (""str_player_06""),str(_days)]] spawn BIS_fnc_infoText;" \n
        "" \n
        "dayz_animalCheck = 	[] spawn player_spawn_1;" \n
        "" \n
