@@ -146,7 +146,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count=2;
 		descriptionShort="2 Rounds 12 gauge Shotgun Shells<br/>Shot Load: Slug<br/>Used in: Double Barrel Shotgun</br>Can be comined for use in other Shotguns and Winchester";
 		model = "\z\addons\dayz_communityassets\models\2shells_slugshot.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_slugshot_CA.paa";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_slugshot_CA.paa";/*
 		class ItemActions
 		{
 			class ReloadMag
@@ -179,14 +179,14 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 				};
 				crafting = 1;
 			};
-		};
+		};*/
 	};
 	class 2Rnd_shotgun_74Pellets: 8Rnd_B_Beneli_Pellets {
 		displayName="2Rnd. Pellets";
 		count=2;
 		descriptionShort="2 Rounds 12 gauge Shotgun Shells<br/>Shot Load: Pellets<br/>Used in: Double Barrel Shotgun</br>Can be comined for use in other Shotguns and Winchester";
 		model = "\z\addons\dayz_communityassets\models\2shells_pellet.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_pellet_CA.paa";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_pellet_CA.paa";/*
 		class ItemActions
 		{
 			class ReloadMag
@@ -205,7 +205,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 					"8Rnd_B_Beneli_Pellets"
 				};
 			};
-		};
+		};*/
 	};	
 	class Quiver : CA_Magazine {
 		scope = public;
@@ -1828,7 +1828,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayNameMagazine = "Machete";
 		shortNameMagazine = "Machete";
 		ammo = "Machete_Swing_Ammo";
-	};						//Begin SMD assets by smd_dev team SMD Equipment Fixes and Additions Original and Community DayZ Content
+	};	/*					//Begin SMD assets by smd_dev team SMD Equipment Fixes and Additions Original and Community DayZ Content
 	class 15Rnd_9x19_M9 {
 	class ItemActions {
 		class Craft0 
@@ -2304,7 +2304,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 			crafting = 1;
 			};
 		};
-	};
+	};*/
 	class SkinBase;	//external class reference						begin loot-able skin packages
 	class Skin_BanditSkin_DZ : SkinBase {
 		scope = public;
