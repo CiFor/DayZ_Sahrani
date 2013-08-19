@@ -345,7 +345,7 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_digi_co.paa"};
 		model = "\vil_police\vil_cop";
 	};	
-
+	
 	class z_RACSzombie13 : z_RACSzombie { //SPD Blue bdu Black vest 
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_co.paa"};
 		model = "\vil_police\vil_cop";
@@ -3939,58 +3939,70 @@ class CfgVehicles {
     };
 	class SMD_RACS_MP: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
         model = "\vil_police\vil_cop";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_co.paa"};
     };
 	class SMD_RACS_MP_Tan: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
         model = "\vil_police\vil_cop";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tan_co.paa"};
     };
 	class SMD_RACS_MP_Tan_Digi: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
         model = "\vil_police\vil_cop";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tandigi_co.paa"};
     };
 	class SMD_RACS_Soldier: Bandit1_DZ { //Tan Camo Helmet/Pads
         model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_regular_co.paa"};
     };
 	class SMD_RACS_Soldier_Digi: Bandit1_DZ { //Tan Camo Helmet/Pads
         model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_regular_digi_co.paa"};
     };
 	class SMD_RACS_SWAT: Bandit1_DZ { //SPD SWAT Black Camo Helmet/Pads
         model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_co.paa"};
     };
 	class SMD_SPD_SWAT_BLACK: Bandit1_DZ { //SPD SWAT Flat Black Helmet/Pads
         model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_black_co.paa"};
     };
 	class SMD_SPD_SWAT_BLACK_DIGI: Bandit1_DZ { //SPD SWAT Flat Black Helmet/Pads
         model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_black_digi_co.paa"};
     };
 	class SMD_SPD_BLUE: Bandit1_DZ { //SPD Flat Blue NO Helmet/Pads
         model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_co.paa"};
     };
 	class SMD_SPD_BLUE_DIGI: Bandit1_DZ { //SPD Blue Digi NO Helmet/Pads
         model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_digi_co.paa"};
     };
 	class SMD_SARA_Sheriff: Bandit1_DZ { //Sherrif
         model = "\vil_police\vil_cop3";
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_co.paa"};
     };
 	class SMD_US_SpecOps: Bandit1_DZ { //US SPEC OPS Helmet/Pads
         model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_co.paa"};
     };
 	class SMD_US_SpecOps_DIGI: Bandit1_DZ { //US SPEC OPS Digi Helmet/Pads 
         model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_digi_co.paa"};
     };
 	class SMD_US_SpecOps_MP_DIGI: Bandit1_DZ { //US SPEC OPS Digi NO Helmet/Pads Blended Vest
         model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
         hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_mp_digi_co.paa"};
     };
 	class BAF_Soldier_Officer_W; //"Rocket" Clothing (BAF Officer)
