@@ -4099,7 +4099,7 @@ class CfgVehicles {
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_us_assault_Coyote.p3d";
 		transportMaxWeapons = 1;
-		transportMaxMagazines = 8;
+		transportMaxMagazines = 10;
 	};
 	class DZ_Assault_Pack_EP1: Bag_Base_EP1
 	{
@@ -4121,7 +4121,7 @@ class CfgVehicles {
 		model = "\ca\weapons_e\AmmoBoxes\backpack_acr_small.p3d";
 		picture = "\ca\weapons_e\data\icons\backpack_ACR_small_CA.paa";
 		scope = 2;
-		transportmaxmagazines = 12;
+		transportmaxmagazines = 8;
 		transportmaxweapons = 0;
 	};
 
@@ -4134,7 +4134,7 @@ class CfgVehicles {
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_tk_alice.p3d";
 		transportMaxWeapons = 2;
-		transportMaxMagazines = 16;
+		transportMaxMagazines = 18;
 	};
 
 	class DZ_TK_Assault_Pack_EP1 : Bag_Base_EP1
@@ -4158,7 +4158,7 @@ class CfgVehicles {
 		picture = "\ca\weapons_baf\data\UI\backpack_BAF_CA.paa";
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		transportMaxWeapons = 3;
-		transportMaxMagazines = 18;
+		transportMaxMagazines = 20;
 	};
 
 	class DZ_CivilBackpack_EP1: Bag_Base_EP1    
@@ -4170,7 +4170,7 @@ class CfgVehicles {
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_acr.p3d";
 		transportMaxWeapons = 4;
-		transportMaxMagazines = 24;
+		transportMaxMagazines = 22;
 	};
 
 	class DZ_Backpack_EP1: Bag_Base_EP1
