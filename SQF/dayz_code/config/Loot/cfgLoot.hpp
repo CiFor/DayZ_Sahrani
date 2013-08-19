@@ -330,27 +330,56 @@ class CfgLoot {
 		}
 	};
 	clothing[] = {
-		{
-//Inventory clothing items
-			"Skin_BanditSkin_DZ",
-			"Skin_Camo1_DZ",
-			"Skin_Rocket_DZ",
-			"Skin_SMD_RACS_MP",
-			"Skin_SMD_RACS_MP_Tan",
-			"Skin_SMD_RACS_MP_Tan_Digi",
-			"Skin_SMD_RACS_Soldier",
-			"Skin_SMD_RACS_Soldier_Digi",
-			"Skin_SMD_RACS_SWAT",
-			"Skin_SMD_US_SpecOps",
-			"Skin_Sniper1_DZ",
-			"Skin_SniperLight_DZ",
-			"Skin_SniperD_DZ"
+		{//Inventory clothing items
+			"SkinBanditSkin_DZ",
+			"SkinCamo1_DZ",
+			"SkinRocket_DZ",
+			"SkinSMD_ATACS_DES",
+			"SkinSMD_ATACS_URBAN",
+			"SkinSMD_RACS_MP",
+			"SkinSMD_RACS_MP_Tan",
+			"SkinSMD_RACS_MP_Tan_Digi",
+			"SkinSMD_RACS_Soldier",
+			"SkinSMD_RACS_Soldier_Digi",
+			"SkinSMD_RACS_SWAT",
+			"SkinSMD_SPD_BLUE",
+			"SkinSMD_SPD_BLUE_DIGI",
+			"SkinSMD_SPD_SWAT_BLACK",
+			"SkinSMD_SPD_SWAT_BLACK_DIGI",
+			"SkinSMD_US_SpecOps",
+			"SkinSMD_US_SpecOps_DIGI",
+			"SkinSMD_US_SpecOps_MP_DIGI",
+			"SkinSniper1_DZ",
+			"SkinSniperD_DZ",
+			"SkinSniperLight_DZ",
+			"SkinSoldier1_DZ"
 		},
-		{
-//Inventory clothing items
+		{//Inventory clothing items
 			0.01, //"Skin_BanditSkin_DZ"
 			0.01, //"Skin_Camo1_DZ"
 			0.01, //"Skin_Rocket_DZ"
+			0.01, //SkinBanditSkin_DZ
+			0.01, //SkinCamo1_DZ
+			0.01, //SkinRocket_DZ
+			0.01, //SkinSMD_ATACS_DES
+			0.01, //SkinSMD_ATACS_URBAN
+			0.01, //SkinSMD_RACS_MP
+			0.01, //SkinSMD_RACS_MP_Tan
+			0.01, //SkinSMD_RACS_MP_Tan_Digi
+			0.01, //SkinSMD_RACS_Soldier
+			0.01, //SkinSMD_RACS_Soldier_Digi
+			0.01, //SkinSMD_RACS_SWAT
+			0.01, //SkinSMD_SPD_BLUE
+			0.01, //SkinSMD_SPD_BLUE_DIGI
+			0.01, //SkinSMD_SPD_SWAT_BLACK
+			0.01, //SkinSMD_SPD_SWAT_BLACK_DIGI
+			0.01, //SkinSMD_US_SpecOps
+			0.01, //SkinSMD_US_SpecOps_DIGI
+			0.01, //SkinSMD_US_SpecOps_MP_DIGI
+			0.01, //SkinSniper1_DZ
+			0.01, //SkinSniperD_DZ
+			0.01, //SkinSniperLight_DZ
+			0.01, //SkinSoldier1_DZ
 			0.01, //"Skin_SMD_RACS_MP",
 			0.01, //"Skin_SMD_RACS_MP_Tan",
 			0.01, //"Skin_SMD_RACS_MP_Tan_Digi",
