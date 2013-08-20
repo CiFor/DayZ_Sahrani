@@ -2375,12 +2375,12 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		scope = public;
 		displayName = "RACS S.W.A.T. BDU";
 		descriptionShort = "Digital camouflage Battle Dress Uniform of the United Sahrani Police Department";
-	};
+	};/*Commented out for now, will add back once we redo all the vilas models in our own package
 	class Skin_SMD_SARA_Sheriff : SkinBase {
 		scope = public;
 		displayName = "Sahrani Sheriff";
 		descriptionShort = "Standard Deputy Sheriff Dress Uniform of United Sahrani Police Department";
-	};
+	};*/
 	class Skin_SMD_US_SpecOps : SkinBase {
 		scope = public;
 		displayName = "U.S. Spec Ops BDU";
