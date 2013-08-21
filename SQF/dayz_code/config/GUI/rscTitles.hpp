@@ -3251,6 +3251,152 @@ class CA_SpeedBackground : RscEdit {
 	w = 0.06;
 	h = 0.033;
 };
+
+class RscDisplayHintC {
+	access = ReadAndWrite;
+	idd = 57;
+	movingEnable = 1;
+	
+	class controls {
+		class Background : RscText {
+			idc = 101;
+			style = 128;
+			moving = 1;
+			x = 0.35;
+			y = 0.4;
+			w = 0.5;
+			h = 0.06;
+			text = "";
+			colorBackground[] = {0.1, 0.1, 0.1, 0.8};
+			colorText[] = {0, 0, 0, 0};
+			font = "TahomaB";
+			sizeEx = 0;
+			fixedWidth = 0;
+		};
+		
+		class Hint : RscIGText {
+			idc = 102;
+			style = 16;
+			lineSpacing = 1;
+			sizeEx = ( 16 / 408 );
+			x = 0.36;
+			y = 0.41;
+			w = 0.48;
+			colorBackground[] = {0, 0, 0, 0};
+			text = STR_DISP_ERROR;
+		};
+		
+		class continue : RscActiveText {
+			idc = 2;
+			style = 1;
+			font = "TahomaB";
+			sizeEx = ( 16 / 408 );
+			x = 0.55;
+			y = 0.41;
+			w = 0.3;
+			h = 0.035;
+			text = $STR_DISP_HINTC_CONTINUE;
+			color[] = {0.8, 0.8, 0.8, 1};
+			colorActive[] = {0.8, 0.8, 0, 1};
+		};
+	};
+};
+
+class RscDisplayHintCEx {
+	access = ReadAndWrite;
+	idd = 72;
+	movingEnable = 1;
+	soundOpen[] = {"", 0.5, 1};
+	indent = "#(argb,8,8,3)color(1,1,1,1)";
+	
+	class controls {
+		class Background : RscText {
+			idc = 101;
+			style = 128;
+			moving = 1;
+			x = 0.15;
+			y = 0.4;
+			w = 0.7;
+			h = 0.155;
+			text = "";
+			colorBackground[] = {0.1, 0.1, 0.1, 0.8};
+			colorText[] = {0, 0, 0, 0};
+			font = "TahomaB";
+			sizeEx = 0;
+			fixedWidth = 0;
+		};
+		
+		class Title : RscText {
+			idc = 103;
+			style = 0;
+			x = 0.17;
+			y = 0.42;
+			w = 0.66;
+			h = 0.06;
+			text = STR_DISP_ERROR;
+			colorText[] = {0.8, 0.8, 0.8, 1};
+			font = "TahomaB";
+			sizeEx = ( 21 / 408 );
+		};
+		
+		class Line1 : RscText {
+			idc = 105;
+			style = 176;
+			x = 0.17;
+			y = 0.48;
+			w = 0.66;
+			h = 0;
+			text = "";
+			colorBackground[] = {0.8, 0.8, 0.8, 1};
+			colorText[] = {1, 1, 1, 1};
+		};
+		
+		class Hint : RscStructuredText {
+			idc = 102;
+			style = 0;
+			x = 0.17;
+			y = 0.48;
+			w = 0.66;
+			h = 0;
+			size = ( 16 / 408 );
+			text = STR_DISP_ERROR;
+			
+			class Attributes {
+				font = "TahomaB";
+				color = "#e0e0e0";
+				shadow = false;
+			};
+		};
+		
+		class Line2 : RscText {
+			idc = 106;
+			style = 176;
+			x = 0.17;
+			y = 0.48;
+			w = 0.66;
+			h = 0;
+			text = "";
+			colorBackground[] = {0.8, 0.8, 0.8, 1};
+			color[] = {0.8, 0.8, 0.8, 1};
+			colorText[] = {0.8, 0.8, 0.8, 1};
+		};
+		
+		class continue : RscActiveText {
+			idc = 104;
+			style = 1;
+			font = "TahomaB";
+			sizeEx = ( 16 / 408 );
+			x = 0.17;
+			y = 0.49;
+			w = 0.66;
+			h = 0.035;
+			text = $STR_DISP_HINTC_CONTINUE;
+			color[] = {0.8, 0.8, 0.8, 1};
+			colorActive[] = {0.8, 0.8, 0, 1};
+		};
+	};
+};
+
 class RscInGameUI {
 	colorReady[] = {1, 1, 1, 1.0};
 	colorPrepare[] = {0.863, 0.584, 0.0, 1};
@@ -4060,7 +4206,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		class SMD_ButtonDisconnect: RscButtonTextOnly
 		{
 			idc = 2;
-			default = 1;
+			default = 0;
 			shortcuts[] = {0x00050000 + 1};
 			text = "Disconnect";
 			align = "center";
@@ -4083,7 +4229,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		class SMD_ButtonContinue: RscButtonTextOnly
 		{
 			idc = 1;
-			default = 0;
+			default = 1;
 			shortcuts[] = {0x00050000 + 0, 28, 57, 156};
 			text = "Play DayZ Sahrani";
 			align = "center";
