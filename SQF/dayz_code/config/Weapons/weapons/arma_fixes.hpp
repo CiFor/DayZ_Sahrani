@@ -337,7 +337,7 @@ class MakarovSD : Makarov {
 	};
 	aiDispersionCoefY = 21.0;
 	aiDispersionCoefX = 21.0;
-	type = 1	 + 	4;
+	type = 1;
 	magazines[] = {"100Rnd_762x54_PK"};
 	
 	class Library {
