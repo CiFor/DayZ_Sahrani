@@ -1,5 +1,11 @@
 private["_location","_isOk","_dir","_classname"];
-_location = player modeltoworld [0,0.3,0];
+_playerDir = direction player;
+_sine = 0.6 * sin _playerDir;
+_cosine = 0.6 * cos _playerDir;
+_location = getPosATL player;
+_location set [0, (_location select 0) + _sine]; 
+_location set [1, (_location select 1) + _cosine];
+
 if ((_location select 2) < 0) then {
 	_location set [2,0];
 };
@@ -14,8 +20,9 @@ if (_hasWood) then {
 			_classname = "Land_Fire_DZ";
 			player playActionNow "Medic";
 			sleep 6;
-			_fire = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+			_fire = createVehicle [_classname, [0,0,0], [], 1, "CAN_COLLIDE"];
 			_fire setDir _dir;
+			_fire setPosAtl _location;
 			player reveal _fire;
 			
 			_id = _fire spawn player_fireMonitor;
