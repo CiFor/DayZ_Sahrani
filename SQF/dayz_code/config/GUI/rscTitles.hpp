@@ -1509,7 +1509,7 @@ class RscDisplayMain : RscStandardDisplay
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;
-		//delete CA_SinglePlayer;
+		delete CA_SinglePlayer;
 		class CA_PlayerName : RscText {
 			idc = 109;
 			style = 256;
@@ -3839,7 +3839,7 @@ class nope {
 	color[] = {0,0,0,0};
 	text = "";
 };
-/*
+
 class RscDisplayMultiplayerSetup : RscStandardDisplay {
 	west = "ca\ui\data\flag_bluefor_ca.paa";
 	east = "ca\ui\data\flag_opfor_ca.paa";
@@ -4060,7 +4060,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		class SMD_ButtonDisconnect: RscButtonTextOnly
 		{
 			idc = 2;
-			default = 0;
+			default = 1;
 			shortcuts[] = {0x00050000 + 1};
 			text = "Disconnect";
 			align = "center";
@@ -4083,7 +4083,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		class SMD_ButtonContinue: RscButtonTextOnly
 		{
 			idc = 1;
-			default = 1;
+			default = 0;
 			shortcuts[] = {0x00050000 + 0, 28, 57, 156};
 			text = "Play DayZ Sahrani";
 			align = "center";
@@ -4107,7 +4107,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		delete CA_ButtonCancel;
 	};
 };
-*/
+
 class RscDisplayMPInterrupt : RscStandardDisplay {
 	class controlsBackground {
 		class Mainback : RscPicture {
