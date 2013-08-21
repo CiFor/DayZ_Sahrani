@@ -3251,7 +3251,7 @@ class CA_SpeedBackground : RscEdit {
 	w = 0.06;
 	h = 0.033;
 };
-
+class RscIGText;
 class RscDisplayHintC {
 	access = ReadAndWrite;
 	idd = 57;
