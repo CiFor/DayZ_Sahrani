@@ -5,7 +5,7 @@ see www.bistudio.com for more information.
 
 Please note any/all parts of this package are intended only for the non-commercial use in Arma and it's sequels.
 
-All original content Created the by SMD Dev group is fully open for non comemercial derivitive works, use, repackaging, and/or re-distribution.
+All original content Created the by SMD Dev group is fully open for non comemercial derivitive works, use, repackaging, and/or re-distribution within Arma and it's Sequels ONLY.
 
 ANY content from other authors (including Bohemia Interactive) is being used ONLY with express written permission from the original authors 
 and is in no way being represented, packaged or distributed as our own. 
