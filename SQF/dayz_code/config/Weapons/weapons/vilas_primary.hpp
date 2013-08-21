@@ -15,7 +15,11 @@ class M4A1_RCO_GL;
 class M4A1_HWS_GL;
 class MP5A5;
 class MP5SD;
-class FN_FAL;
+class M16A2;
+class FN_FAL : M16A2 {
+	class Single;
+	class Burst;
+};
 class M24;
 class G36C;
 class G36K;
@@ -224,7 +228,7 @@ class vil_G3a3 : FN_FAL {
 
 	class M203Muzzle;
 
-	class Single: Mode_SemiAuto  {
+	class Single: Single  {
 		begin1[] = {"\vilas_wwp\sounds\g3_fire1", 1.77828, 1, 1000};
 		begin2[] = {"\vilas_wwp\sounds\g3_fire2", 1.77828, 1, 1000};
 		soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
@@ -240,7 +244,7 @@ class vil_G3a3 : FN_FAL {
 		maxRangeProbab = 0.05;
 	};
 
-	class FullAuto: Mode_FullAuto {
+	class FullAuto: FullAuto {
 		begin1[] = {"\vilas_wwp\sounds\g3_fire1", 1.77828, 1, 1000};
 		begin2[] = {"\vilas_wwp\sounds\g3_fire2", 1.77828, 1, 1000};
 		soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
@@ -795,7 +799,7 @@ class vil_Fal : FN_FAL {
 		maxRangeProbab = 0.05;
 	};
 
-	class FullAuto: FullAuto {
+	class FullAuto: Single {
 		displayName = $STR_DN_MODE_FULLAUTO;
 		autoFire = true;
 		reloadTime = 0.09;
