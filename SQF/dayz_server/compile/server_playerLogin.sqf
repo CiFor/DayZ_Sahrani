@@ -97,6 +97,7 @@ if (!_isNew) then {
 				"Skin_SMD_RACS_Soldier_Digi",
 				"SMD_RACS_SWAT",
 				"SMD_SARA_Sheriff",
+				"SMD_TIGER_CAMO",
 				"SMD_US_SpecOps",
 				"Sniper1_DZ",
 				"Sniper1W_DZ",

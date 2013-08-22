@@ -346,6 +346,7 @@ class CfgLoot {
 			"Skin_SMD_SPD_BLUE_DIGI",
 			"Skin_SMD_SPD_SWAT_BLACK",
 			"Skin_SMD_SPD_SWAT_BLACK_DIGI",
+			"Skin_SMD_TIGER_CAMO",
 			"Skin_SMD_US_SpecOps",
 			"Skin_SMD_US_SpecOps_DIGI",
 			"Skin_SMD_US_SpecOps_MP_DIGI",
@@ -373,6 +374,7 @@ class CfgLoot {
 			0.01, //SkinSMD_SPD_BLUE_DIGI
 			0.01, //SkinSMD_SPD_SWAT_BLACK
 			0.01, //SkinSMD_SPD_SWAT_BLACK_DIGI
+			0.01, //Skin_SMD_TIGER_CAMO
 			0.01, //SkinSMD_US_SpecOps
 			0.01, //SkinSMD_US_SpecOps_DIGI
 			0.01, //SkinSMD_US_SpecOps_MP_DIGI

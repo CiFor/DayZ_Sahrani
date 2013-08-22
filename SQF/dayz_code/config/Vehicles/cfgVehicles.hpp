@@ -4027,6 +4027,11 @@ class CfgVehicles {
 	class SMD_SARA_Sheriff: Bandit1_DZ { //Sherrif
         model = "\vil_police\vil_cop3";
     };
+	class SMD_TIGER_CAMO: Bandit1_DZ { //Tiger Camo Beotch
+        model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
+        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_tigerstripe_co.paa"};
+    };
 	class SMD_US_SpecOps: Bandit1_DZ { //US SPEC OPS Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};

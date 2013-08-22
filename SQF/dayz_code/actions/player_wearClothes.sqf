@@ -137,6 +137,9 @@ switch (_item) do {
 	case "Skin_SMD_RACS_Sheriff": {
 		_model = "SMD_RACS_Sheriff";
 	};
+	case "Skin_SMD_TIGER_CAMO": {
+		_model = "SMD_TIGER_CAMO";
+	};
 	case "Skin_SMD_US_SpecOps": {
 		_model = "SMD_US_SpecOps";
 	};

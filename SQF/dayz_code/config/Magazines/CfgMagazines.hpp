@@ -2381,6 +2381,11 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "Sahrani Sheriff";
 		descriptionShort = "Standard Deputy Sheriff Dress Uniform of United Sahrani Police Department";
 	};*/
+	class Skin_SMD_TIGER_CAMO : SkinBase {
+		scope = public;
+		displayName = "Tiger Camo BDU";
+		descriptionShort = "Tiger camouflage Battle Dress Uniform";
+	};
 	class Skin_SMD_US_SpecOps : SkinBase {
 		scope = public;
 		displayName = "U.S. Spec Ops BDU";
