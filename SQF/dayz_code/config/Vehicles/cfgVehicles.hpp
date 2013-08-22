@@ -408,6 +408,14 @@ class CfgVehicles {
 		class Turrets {};
 	};
 	
+	class AH6X_SMD_ATACS : AH6X_DZ
+	{
+		displayname = "AH6X (ATACS)";
+		displaynameshort = "AH6X (ATACS)";
+		hiddenselections[] = {"camo1"};
+		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_atacs_co.paa"};
+	};
+	
 	class AH6X_SMD_RACS : AH6X_DZ
 	{
 		displayname = "AH6X (RACS)";
@@ -2429,14 +2437,29 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"ca\air2\c130j\data\c130j_body_co.paa","ca\air_e\c130j\data\c130j_wings_co.paa"};
 	};
 	
+	class C130_SMD_ATACS: C130_SMD_DZ 
+	{
+		displayname = "C130J (ATACS)";
+		displaynameshort = "C130J (ATACS)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_atacs_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_atacs_wings_co.paa"};
+	};
+	
 	class C130_SMD_BLOPS: C130_SMD_DZ 
 	{
 		displayname = "C130J (Unmarked)";
 		displaynameshort = "C130J (Unmarked)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_blackops_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_blackops_wings_co.paa"};
-	};
+	};	
 	
+	class C130_SMD_BLOPS_DIGI: C130_SMD_DZ 
+	{
+		displayname = "C130J (Unmarked)";
+		displaynameshort = "C130J (Unmarked)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_blackops_digital_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_blackops_digital_wings_co.paa"};
+	};
 	
 	class C130_SMD_UN: C130_SMD_DZ 
 	{
@@ -3516,11 +3539,25 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"ca\air_E\UH1H\data\UH1D_CO.paa", "ca\air_E\UH1H\data\UH1D_in_CO.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
 
+	class UH1H_SMD_ATACS: UH1H_DZ
+	{
+		displayname = "UH1H (ATACS)";
+		displaynameshort = "UH1H (ATACS)";	
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_atacs_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_atacs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+	};
+
 	class UH1H_SMD_BLOPS: UH1H_DZ
 	{
 		displayname = "UH1H Unmarked";
 		displaynameshort = "UH1H (Unmarked)";	
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_blackops_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_blackops_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+	};
+
+	class UH1H_SMD_BLOPS_DIGI: UH1H_DZ
+	{
+		displayname = "UH1H Unmarked";
+		displaynameshort = "UH1H (Unmarked)";	
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_blackops_digital_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_blackops_digital_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
 
 	class UH1H_SMD_RACS: UH1H_DZ
