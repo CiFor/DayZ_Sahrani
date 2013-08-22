@@ -2446,7 +2446,7 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_UN_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_UN_wings_co.paa"};
 	};
 	
-	class CH47_base_DZ: Helicopter
+	/*class CH47_base_DZ: Helicopter
 	{
 		expansion = 1;
 		scope = 0;
@@ -2703,7 +2703,7 @@ class CfgVehicles {
 				weapon = "M134_2";
 			};
 		};
-	};	
+	};	*/
 	
 	class HMMWV_Base;
 	class HMMWV_DZ: HMMWV_Base {
