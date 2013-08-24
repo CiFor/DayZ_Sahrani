@@ -143,7 +143,8 @@ class CfgBuildingLoot {
 			{"vil_Glock_o","weapon"},
 			{"vil_USP","weapon"},
 			{"vil_USPSD","weapon"},
-			{"ItemRadio","magazine"}
+			{"ItemRadio","weapon"},
+			{"PipeBomb","magazine"}
 		};
 		itemChance[] =	{
 //backpacks
@@ -262,7 +263,8 @@ class CfgBuildingLoot {
 			0.08, //vil_Glock_o","weapon
 			0.06, //vil_USP","weapon
 			0.04, //vil_USPSD","weapon
-			0.01 //ItemRadio","magazine
+			0.01, //ItemRadio","weapon
+			0.01, //PipeBomb, magazine
 		};
 	};
 //Crash1_No50s
@@ -1400,7 +1402,9 @@ class CfgBuildingLoot {
 			{"vil_Glock_o","weapon"},
 			{"vil_USP","weapon"},
 			{"vil_USPSD","weapon"},
-			{"ItemRadio","magazine"}
+			{"ItemRadio","weapon"},
+			{"PipeBomb","magazine"},
+			{"ItemEtool","weapon"}
 		};
 		itemChance[] =	{
 //backpacks
@@ -1486,7 +1490,9 @@ class CfgBuildingLoot {
 			0.01, //vil_Glock_o","weapon
 			0.03, //vil_USP","weapon
 			0.04, //vil_USPSD","weapon
-			0.01 //ItemRadio","magazine
+			0.01, //ItemRadio","weapon
+			0.01,	//PipeBomb, magazine
+			0.08	//ItemEtool, weapon
 		};
 	};
 //Residential (and office)
