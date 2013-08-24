@@ -413,10 +413,10 @@ if ( (cursorTarget isKindOf "Land_Fire_DZ") and (_hasMatches or _hasFlares) and 
 };
 
 //Ignite all Storage-Containers
-if ( ((cursorTarget isKindOf "TentStorage") || (cursorTarget isKindOf "Gunrack_DZ") || (cursorTarget isKindOf "BoxStorage")) and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
+if ( ((cursorTarget isKindOf "TentStorage") || (cursorTarget isKindOf "Gunrack_DZ") || (cursorTarget isKindOf "BoxStorage_DZ")) and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
 	if (s_player_ignite_storage < 0) then {
 		_burnTarget = "Tent";
-		if(cursorTarget isKindOf "BoxStorage") then {
+		if(cursorTarget isKindOf "BoxStorage_DZ") then {
 			_burnTarget = "Crate";
 		};
 		if(cursorTarget isKindOf "Gunrack_DZ") then {

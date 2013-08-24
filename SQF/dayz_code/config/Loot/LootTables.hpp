@@ -998,7 +998,7 @@ class CfgBuildingLoot {
 			{"ItemWatch","generic"},
 //toolbeltSwitchableweapons
 			{"WeaponHolder_ItemHatchet","object"},
-			{"WeaponHolder_ItemMachete","object"}
+			{"WeaponHolder_ItemCrowbar","object"}
 		};
 		itemChance[] =	{
 //backpacks
@@ -1050,7 +1050,7 @@ class CfgBuildingLoot {
 			0.02, //ItemWatch","generic
 //toolbeltSwitchableweapons
 			0.03, //WeaponHolder_ItemHatchet","object
-			0.01 //WeaponHolder_ItemMachete","object
+			0.01 //WeaponHolder_ItemCrowbar","object
 		};
 	};
 //Hospital
@@ -1088,7 +1088,7 @@ class CfgBuildingLoot {
 			{"ItemMatchbox","generic"},
 			{"Crossbow_DZ","weapon"},
 			{"","military"},
-			{"WeaponHolder_ItemMachete","object"},
+			{"WeaponHolder_ItemCrowbar","object"},
 			{"huntingrifle","weapon"},
 			{"","hunter"},
 			{"ItemCraftingBook3","weapon"}
@@ -1100,7 +1100,7 @@ class CfgBuildingLoot {
 			0.06, //ItemMatchbox
 			0.03, //Crossbow_DZ
 			2.00, //military
-			0.03, //WeaponHolder_ItemMachete
+			0.03, //WeaponHolder_ItemCrowbar
 			0.04, //huntingrifle
 			3.00, //hunter
 			0.01 //ItemCraftingBook3
@@ -1547,7 +1547,7 @@ class CfgBuildingLoot {
 			{"ItemWatch","generic"},
 			//toolbelt Switchable weapons"},
 			{"WeaponHolder_ItemHatchet","object"},
-			{"WeaponHolder_ItemMachete","object"}
+			{"WeaponHolder_ItemCrowbar","object"}
 		};
 		itemChance[] =	{
 			//backpacks
@@ -1600,7 +1600,7 @@ class CfgBuildingLoot {
 			0.01, //ItemWatch","generic
 			//toolbelt Switchable weapons
 			0.03, //WeaponHolder_ItemHatchet","object
-			0.01 //WeaponHolder_ItemMachete","object
+			0.01 //WeaponHolder_ItemCrowbar","object
 		};		
 	};
 

@@ -57,7 +57,7 @@ check_publishobject = {
 	"BagFenceLongRound_DZ",
 	"Barb_Gate_DZ",
 	"Bench_DZ",
-	"BoxStorage",
+	"BoxStorage_DZ",
 	"CampWoodTower_DZ",
 	"Fort_RazorWire_DZ",
 	"Fortified_nest_DZ",
