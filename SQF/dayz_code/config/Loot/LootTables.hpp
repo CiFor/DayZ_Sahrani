@@ -82,8 +82,8 @@ class CfgBuildingLoot {
 			{"m8_holo_sd","weapon"},
 			{"m8_SAW_DZ","weapon"},
 			{"m8_sharpshooter","weapon"},
-			{"MG36_camo_DZ","weapon"},
-			{"MG36_DZ","weapon"},
+			//{"MG36_camo_DZ","weapon"},
+			//{"MG36_DZ","weapon"},
 			{"Mk_48_DES_DZ","weapon"},
 			{"Mk_48_DZ","weapon"},
 			{"Mk13_DZ","weapon"},
@@ -201,8 +201,8 @@ class CfgBuildingLoot {
 			0.01, //m8_holo_sd","weapon
 			0.01, //m8_SAW_DZ","weapon
 			0.06, //m8_sharpshooter","weapon
-			0.03, //MG36_camo_DZ","weapon
-			0.01, //MG36_DZ","weapon
+			//0.03, //MG36_camo_DZ","weapon
+			//0.01, //MG36_DZ","weapon
 			0.01, //Mk_48_DES_DZ","weapon
 			0.01, //Mk_48_DZ","weapon
 			0.01, //Mk13_DZ","weapon
@@ -335,8 +335,8 @@ class CfgBuildingLoot {
 			{"m8_holo_sd","weapon"},
 			{"m8_SAW_DZ","weapon"},
 			{"m8_sharpshooter","weapon"},
-			{"MG36_camo_DZ","weapon"},
-			{"MG36_DZ","weapon"},
+			//{"MG36_camo_DZ","weapon"},
+			//{"MG36_DZ","weapon"},
 			{"Mk_48_DES_DZ","weapon"},
 			{"Mk_48_DZ","weapon"},
 			{"Mk13_DZ","weapon"},
@@ -481,8 +481,8 @@ class CfgBuildingLoot {
 			0.01, //m8_holo_sd","weapon
 			0.01, //m8_SAW_DZ","weapon
 			0.06, //m8_sharpshooter","weapon
-			0.03, //MG36_camo_DZ","weapon
-			0.01, //MG36_DZ","weapon
+			//0.03, //MG36_camo_DZ","weapon
+			//0.01, //MG36_DZ","weapon
 			0.01, //Mk_48_DES_DZ","weapon
 			0.01, //Mk_48_DZ","weapon
 			0.01, //Mk13_DZ","weapon
@@ -1350,8 +1350,8 @@ class CfgBuildingLoot {
 			{"m8_holo_sd","weapon"},
 			{"m8_SAW_DZ","weapon"},
 			{"m8_sharpshooter","weapon"},
-			{"MG36_camo_DZ","weapon"},
-			{"MG36_DZ","weapon"},
+			//{"MG36_camo_DZ","weapon"},
+			//{"MG36_DZ","weapon"},
 			{"Mk_48_DES_DZ","weapon"},
 			{"Mk_48_DZ","weapon"},
 			{"Mk13_DZ","weapon"},
@@ -1436,8 +1436,8 @@ class CfgBuildingLoot {
 			0.01, //m8_holo_sd","weapon
 			0, //m8_SAW_DZ","weapon
 			0.01, //m8_sharpshooter","weapon
-			0.01, //MG36_camo_DZ","weapon
-			0.01, //MG36_DZ","weapon
+			//0.01, //MG36_camo_DZ","weapon
+			//0.01, //MG36_DZ","weapon
 			0.01, //Mk_48_DES_DZ","weapon
 			0.01, //Mk_48_DZ","weapon
 			0.01, //Mk13_DZ","weapon
