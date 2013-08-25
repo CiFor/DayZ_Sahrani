@@ -18,6 +18,8 @@ canAbort = false;
  
 	_obj setDamage 2;
 
-	["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;	
+	//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;	
+	dayzDeleteObj = [_objectID,_objectUID];
+	publicVariable "dayzDeleteObj";
 
 canAbort = false;
