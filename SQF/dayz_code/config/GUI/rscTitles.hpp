@@ -4821,7 +4821,6 @@ class RscConfigEditor_Main {
 	idd = 3030;
 	class Controls {
 		class MainBackground;
-		
 		class MainCaption {
 			text = "LOL NOPE!";
 		};
@@ -4832,5 +4831,5 @@ class RscConfigEditor_Main {
 };
 
 class CfgLoadingTexts {
- titlesDefault[] = {""};
+	titlesDefault[] = {""};
 };

@@ -169,7 +169,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	} else {
 		player removeAction s_player_packtent;
 		s_player_packtent = -1;
-		};
+	};
 	
 	//Sleep
 	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_characterID) then {
@@ -250,59 +250,63 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_studybody;
 		s_player_studybody = -1;
 	};
-
-	//Dog
-	if (_isDog and _isAlive and (_hasRawMeat) and _canDo and _ownerID == "0" and player getVariable ["dogID", 0] == 0) then {
-		if (s_player_tamedog < 0) then {
-			s_player_tamedog = player addAction [localize "str_actions_tamedog", "\z\addons\dayz_code\actions\tame_dog.sqf", cursorTarget, 1, false, true, "", ""];
+	//Drink from Well
+	private["_playerPos","_canDrink","_objectsWell","_well","_wellPos"];
+	_playerPos = position player;
+	_objectsWell = 	nearestObjects [_playerPos, [], 4];
+	_canDrink = false;
+	{
+		_isWell = ["kasna",str(_x),false] call fnc_inString;
+		if(!_isWell) then { _isWell = ["pumpa",str(_x),false] call fnc_inString; };
+		if (_isWell) then {_canDrink = true};
+	} forEach _objectsWell;
+	
+	if(_canDrink) then {
+		if (s_player_drinkwater < 0) then {
+			s_player_drinkwater = player addAction ["Drink Water", "\z\addons\dayz_code\actions\drink_water.sqf",[], 1, false, true, "", ""];
 		};
 	} else {
-		player removeAction s_player_tamedog;
-		s_player_tamedog = -1;
+		player removeAction s_player_drinkwater;
+		s_player_drinkwater = -1;
 	};
 	
-	if (_isDog and _ownerID == dayz_characterID and _isAlive and _canDo) then {
-		_dogHandle = player getVariable ["dogID", 0];
-		if (s_player_feeddog < 0 and _hasRawMeat) then {
-			s_player_feeddog = player addAction [localize "str_actions_feeddog","\z\addons\dayz_code\actions\dog\feed.sqf",[_dogHandle,0], 0, false, true,"",""];
-		};
-		if (s_player_waterdog < 0 and "ItemWaterbottle" in magazines player) then {
-			s_player_waterdog = player addAction [localize "str_actions_waterdog","\z\addons\dayz_code\actions\dog\feed.sqf",[_dogHandle,1], 0, false, true,"",""];
-		};
-		if (s_player_staydog < 0) then {
-			_lieDown = _dogHandle getFSMVariable "_actionLieDown";
-			if (_lieDown) then { _text = "str_actions_liedog"; } else { _text = "str_actions_sitdog"; };
-			s_player_staydog = player addAction [localize _text,"\z\addons\dayz_code\actions\dog\stay.sqf", _dogHandle, 5, false, true,"",""];
-		};
-		if (s_player_trackdog < 0) then {
-			s_player_trackdog = player addAction [localize "str_actions_trackdog","\z\addons\dayz_code\actions\dog\track.sqf", _dogHandle, 4, false, true,"",""];
-		};
-		if (s_player_barkdog < 0) then {
-			s_player_barkdog = player addAction [localize "str_actions_barkdog","\z\addons\dayz_code\actions\dog\speak.sqf", cursorTarget, 3, false, true,"",""];
-		};
-		if (s_player_warndog < 0) then {
-			_warn = _dogHandle getFSMVariable "_watchDog";
-			if (_warn) then { _text = "Quiet"; _warn = false; } else { _text = "Alert"; _warn = true; };
-			s_player_warndog = player addAction [format[localize "str_actions_warndog",_text],"\z\addons\dayz_code\actions\dog\warn.sqf",[_dogHandle, _warn], 2, false, true,"",""];		
-		};
-		if (s_player_followdog < 0) then {
-			s_player_followdog = player addAction [localize "str_actions_followdog","\z\addons\dayz_code\actions\dog\follow.sqf",[_dogHandle,true], 6, false, true,"",""];
+	//Light Fire
+	_hasMatches = "ItemMatchbox" in items player;
+	_hasFlares = "HandRoadFlare" in magazines player;
+	if ( (cursorTarget isKindOf "Land_Fire_DZ") and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
+		if (s_player_light_fire < 0) then {
+			s_player_light_fire = player addAction [localize "str_action_fire_inflame", "\z\addons\dayz_code\actions\player_light_fire.sqf",cursorTarget, 3, true, true, "", ""];
 		};
 	} else {
-		player removeAction s_player_feeddog;
-		s_player_feeddog = -1;
-		player removeAction s_player_waterdog;
-		s_player_waterdog = -1;
-		player removeAction s_player_staydog;
-		s_player_staydog = -1;
-		player removeAction s_player_trackdog;
-		s_player_trackdog = -1;
-		player removeAction s_player_barkdog;
-		s_player_barkdog = -1;
-		player removeAction s_player_warndog;
-		s_player_warndog = -1;
-		player removeAction s_player_followdog;
-		s_player_followdog = -1;
+		player removeAction s_player_light_fire;
+		s_player_light_fire = -1;
+	};
+	
+	//Ignite all Storage-Containers
+	if ( ((cursorTarget isKindOf "TentStorage") || (cursorTarget isKindOf "Gunrack_DZ") || (cursorTarget isKindOf "BoxStorage_DZ")) and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
+		if (s_player_ignite_storage < 0) then {
+			_burnTarget = "Tent";
+			if(cursorTarget isKindOf "BoxStorage_DZ") then {
+				_burnTarget = "Crate";
+			};
+			if(cursorTarget isKindOf "Gunrack_DZ") then {
+				_burnTarget = "Gunrack";
+			};
+			s_player_ignite_storage = player addAction ["Ignite " + _burnTarget, "\z\addons\dayz_code\actions\player_ignite_storage.sqf",cursorTarget, 3, false, true, "", ""];
+		};
+	} else {
+		player removeAction s_player_ignite_storage;
+		s_player_ignite_storage = -1;
+	};
+	
+	//Put down fire
+	if (inflamed cursorTarget and _canDo) then {
+		if (s_player_extinguish_fire < 0) then {
+			s_player_extinguish_fire = player addAction [localize "str_action_fire_put_down", "\z\addons\dayz_code\actions\player_extinguish_fire.sqf",cursorTarget, 3, true, true, "", ""];
+		};
+	} else {
+		player removeAction s_player_extinguish_fire;
+		s_player_extinguish_fire = -1;
 	};
 } else {
 	//Engineering
@@ -331,131 +335,32 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_fillfuel = -1;
 	player removeAction s_player_studybody;
 	s_player_studybody = -1;
-	//Dog
-	player removeAction s_player_tamedog;
-	s_player_tamedog = -1;
-	player removeAction s_player_feeddog;
-	s_player_feeddog = -1;
-	player removeAction s_player_waterdog;
-	s_player_waterdog = -1;
-	player removeAction s_player_staydog;
-	s_player_staydog = -1;
-	player removeAction s_player_trackdog;
-	s_player_trackdog = -1;
-	player removeAction s_player_barkdog;
-	s_player_barkdog = -1;
-	player removeAction s_player_warndog;
-	s_player_warndog = -1;
-	player removeAction s_player_followdog;
-	s_player_followdog = -1;
-};
-
-//Dog actions on player self
-_dogHandle = player getVariable ["dogID", 0];
-if (_dogHandle > 0) then {
-	_dog = _dogHandle getFSMVariable "_dog";
-	_ownerID = "0";
-	if (!isNull cursorTarget) then { _ownerID = cursorTarget getVariable ["characterID","0"]; };
-	if (_canDo and !_inVehicle and alive _dog and _ownerID != dayz_characterID) then {
-		if (s_player_movedog < 0) then {
-			s_player_movedog = player addAction [localize "str_actions_movedog", "\z\addons\dayz_code\actions\dog\move.sqf", player getVariable ["dogID", 0], 1, false, true, "", ""];
-		};
-		if (s_player_speeddog < 0) then {
-			_text = "Walk";
-			_speed = 0;
-			if (_dog getVariable ["currentSpeed",1] == 0) then { _speed = 1; _text = "Run"; };
-			s_player_speeddog = player addAction [format[localize "str_actions_speeddog", _text], "\z\addons\dayz_code\actions\dog\speed.sqf",[player getVariable ["dogID", 0],_speed], 0, false, true, "", ""];
-		};
-		if (s_player_calldog < 0) then {
-			s_player_calldog = player addAction [localize "str_actions_calldog", "\z\addons\dayz_code\actions\dog\follow.sqf", [player getVariable ["dogID", 0], true], 2, false, true, "", ""];
-		};
-	};
-} else {
-	player removeAction s_player_movedog;		
-	s_player_movedog =		-1;
-	player removeAction s_player_speeddog;
-	s_player_speeddog =		-1;
-	player removeAction s_player_calldog;
-	s_player_calldog = 		-1;
-};
-
-//Custom
-private["_playerPos","_canDrink","_objectsWell","_well","_wellPos"];
-_playerPos = position player;
-_objectsWell = 	nearestObjects [_playerPos, [], 4];
-_canDrink = false;
-{
-	//Check for Well
-	_isWell = ["kasna",str(_x),false] call fnc_inString;
-	if(!_isWell) then { _isWell = ["pumpa",str(_x),false] call fnc_inString; };
-	if (_isWell) then {_canDrink = true};
-} forEach _objectsWell;
-
-if(_canDrink) then {
-	if (s_player_drinkwater < 0) then {
-		s_player_drinkwater = player addAction ["Drink Water", "\z\addons\dayz_code\actions\drink_water.sqf",[], 1, false, true, "", ""];
-	};
-} else {
 	player removeAction s_player_drinkwater;
 	s_player_drinkwater = -1;
-};
-
-//Light Fire
-_hasMatches = "ItemMatchbox" in items player;
-_hasFlares = "HandRoadFlare" in magazines player;
-if ( (cursorTarget isKindOf "Land_Fire_DZ") and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
-	if (s_player_light_fire < 0) then {
-		s_player_light_fire = player addAction [localize "str_action_fire_inflame", "\z\addons\dayz_code\actions\player_light_fire.sqf",cursorTarget, 3, true, true, "", ""];
-	};
-} else {
 	player removeAction s_player_light_fire;
 	s_player_light_fire = -1;
-};
-
-//Ignite all Storage-Containers
-if ( ((cursorTarget isKindOf "TentStorage") || (cursorTarget isKindOf "Gunrack_DZ") || (cursorTarget isKindOf "BoxStorage_DZ")) and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
-	if (s_player_ignite_storage < 0) then {
-		_burnTarget = "Tent";
-		if(cursorTarget isKindOf "BoxStorage_DZ") then {
-			_burnTarget = "Crate";
-		};
-		if(cursorTarget isKindOf "Gunrack_DZ") then {
-			_burnTarget = "Gunrack";
-		};
-		s_player_ignite_storage = player addAction ["Ignite " + _burnTarget, "\z\addons\dayz_code\actions\player_ignite_storage.sqf",cursorTarget, 3, false, true, "", ""];
-	};
-} else {
 	player removeAction s_player_ignite_storage;
 	s_player_ignite_storage = -1;
-};
-
-//Put down fire
-if (inflamed cursorTarget and _canDo) then {
-	if (s_player_extinguish_fire < 0) then {
-		s_player_extinguish_fire = player addAction [localize "str_action_fire_put_down", "\z\addons\dayz_code\actions\player_extinguish_fire.sqf",cursorTarget, 3, true, true, "", ""];
-	};
-} else {
 	player removeAction s_player_extinguish_fire;
 	s_player_extinguish_fire = -1;
 };
 
 //Refuel Vechiles
-_vehicle = vehicle player; //Reset current vehicle
-_isNearFeed = false;
-if( _inVehicle ) then { //Slow process, only run when needed
-	if( _isAir ) then {
+if(_inVehicle) then { //Slow process, only run when needed
+	_vehicle = vehicle player; //Reset current vehicle
+	_isNearFeed = false;
+
+	if(_isAir) then {
 		_isNearFeed = count (nearestObjects [position _vehicle, ["Land_fuelstation","land_fuelstation_army"], 20]) > 0;
 	} else {
 		_isNearFeed = count (nearestObjects [position _vehicle, ["Land_A_FuelStation_Feed","Land_fuelstation","land_fuelstation_army","land_benzina_schnell"], 10]) > 0; //,"indtanksmall","land_fuel_tank_big","land_fuel_tank_stairs"
 	};
-};
- 
-if (_inVehicle && _isNearFeed && !(_vehicle isKindof "Bicycle")) then
-{
-	if(s_player_refuel_vehicle < 0) then {
-		s_player_refuel_vehicle = _vehicle addAction ["Refuel", "\z\addons\dayz_code\actions\player_refuelvehicle.sqf", [], -1, false, false, "", "vehicle _this == _target && local _target"];
+	if(_isNearFeed && !(_vehicle isKindof "Bicycle")) then {
+		if(s_player_refuel_vehicle < 0) then {
+			s_player_refuel_vehicle = _vehicle addAction ["Refuel", "\z\addons\dayz_code\actions\player_refuelvehicle.sqf", [], -1, false, false, "", "vehicle _this == _target && local _target"];
+		};
+	} else {
+		_vehicle removeAction s_player_refuel_vehicle;
+		s_player_refuel_vehicle = -1;
 	};
-} else {
-	_vehicle removeAction s_player_refuel_vehicle;
-	s_player_refuel_vehicle = -1;
 };
