@@ -4830,3 +4830,7 @@ class RscConfigEditor_Main {
 		delete MainList;
 	};
 };
+
+class CfgLoadingTexts {
+ titlesDefault[] = {""};
+};
