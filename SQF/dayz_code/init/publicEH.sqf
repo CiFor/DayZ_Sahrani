@@ -17,6 +17,8 @@
 "dayzVehicleInit"	addPublicVariableEventHandler {(_this select 1) call fnc_vehicleEventHandler};
 "dayzHumanity"		addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
 "dayz_serverObjectMonitor"		addPublicVariableEventHandler {dayz_serverObjectMonitor = dayz_safety};
+"dayzSetFuel"		addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
+"dayzSetFix"		addPublicVariableEventHandler {(_this select 1) call object_setFixServer};
 
 //Both
 
@@ -35,8 +37,6 @@ if (isServer) then {
 	"dayzLoginRecord"	addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_recordLogin};
 	"dayzCharSave"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync};
 	//Checking
-	"dayzSetFuel"		addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
-	"dayzSetFix"		addPublicVariableEventHandler {(_this select 1) call object_setFixServer};
 	"dayzDeleteObj"		addPublicVariableEventHandler {(_this select 1) spawn server_deleteObj};
 	"atp"				addPublicVariableEventHandler { _array = _this select 1; diag_log format["TELEPORT REVERT: %1 (%2) from %3 to %4 now at %5", _array select 0, _array select 1, _array select 2, _array select 3, _array select 4];};
 };
