@@ -416,6 +416,14 @@ class CfgVehicles {
 		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_atacs_co.paa"};
 	};
 	
+	class AH6X_SMD_MAGPI : AH6X_DZ
+	{
+		displayname = "AH6X (ATACS)";
+		displaynameshort = "AH6X (ATACS)";
+		hiddenselections[] = {"camo1"};
+		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_magnumpi_co.paa"};
+	};
+	
 	class AH6X_SMD_RACS : AH6X_DZ
 	{
 		displayname = "AH6X (RACS)";
@@ -3112,6 +3120,38 @@ class CfgVehicles {
         transportmaxbackpacks = 5;
 		class Turrets {};
 	};	
+	
+	/*class MH6J_SMD_ATACS : MH6J_DZ Commented out only magnum works
+	{
+		displayname = "MH6J (ATACS)";
+		displaynameshort = "MH6J (ATACS)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_atacs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+	};*/
+	
+	class MH6J_SMD_MAGPI : MH6J_DZ
+	{
+		displayname = "Hughes 500D";
+		displaynameshort = "Hughes 500D";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_magnumpi_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+	};
+	
+	/*class MH6J_SMD_RACS : MH6J_DZ
+	{
+		displayname = "MH6J (RACS)";
+		displaynameshort = "MH6J (RACS)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_racs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+	};
+	
+	class MH6J_SMD_RACS_DIGI : MH6J_DZ
+	{
+		displayname = "MH6J (RACS) Digital";
+		displaynameshort = "MH6J (RACS) Digital";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+	};*/
 	
 	class Mi17_base: Helicopter 
 	{
