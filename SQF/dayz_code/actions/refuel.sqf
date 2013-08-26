@@ -23,9 +23,10 @@ _sfx = "refuel";
 sleep 6;
 
 dayzSetFuel = [_vehicle,_newFuel];
-dayzSetFuel spawn local_setFuel;
 publicVariable "dayzSetFuel";
-
+if (local _vehicle) then {
+	dayzSetFuel spawn local_setFuel;
+};
 cutText [format[localize "str_player_05",_nameType,_canSize], "PLAIN DOWN"];
 sleep 1;
 
