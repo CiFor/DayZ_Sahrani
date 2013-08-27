@@ -124,10 +124,11 @@ M1lkM8n - Terrain Lead - Art, Modelling, Terrain Editing
 ShermanFTW - Founder - Art, Modelling, Programming
 NonovUrbizniz - Project Coordinator - Media, Permissions, Pro(cutter/paster)gramming, Testing,
 
+Cookiezzz - Programming/testing/BE Filters
 CyberSam248 - Modelling
-Grafzahl - Programming (animated heli wrecks Coming soon)
-J3T - Programming (Revised Crafting Coming Soon!)
-Pliskin - Addon Integration, Art, Programming,
+Grafzahl - Programming/testing 
+J3T - Programming 
+Pliskin - Addon Integration, Art, Programming
 Yoshi - Art
 Xerxes - Modelling
 
