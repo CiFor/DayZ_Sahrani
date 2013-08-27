@@ -12,14 +12,14 @@ _building = nearestObject [(vehicle player), "HouseBase"];
 _isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
 //_isOk = true;
 _classname = "Workbench_DZ";
-diag_log ("Build Crate: " + str(_isok) );
+diag_log ("Build Workbench: " + str(_isok) );
 
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
 if (!_hasToolBox) exitWith {cutText ["You need a toolbox !","PLAIN DOWN"]};
 if (!_hasCrowBar) exitWith {cutText ["You need a crowbar !","PLAIN DOWN"]};
-if (_haswoodpile < 4 || _hasNails < 4) exitWith {cutText ["You need 6 wood piles and 4 bags of nails !","PLAIN DOWN"]};
+if (_haswoodpile < 4 || _hasNails < 4) exitWith {cutText ["You need 4 wood piles and 4 bags of nails !","PLAIN DOWN"]};
 
 
 //allowed

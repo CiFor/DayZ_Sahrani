@@ -17,7 +17,7 @@ _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
 if (!_hasToolBox) exitWith {cutText ["You need a toolbox !","PLAIN DOWN"]};
-if (_haswoodpile < 3 || _hasNails < 1) exitWith {cutText ["You need 3 wood piles and 1 bag of nails !","PLAIN DOWN"]};
+if (_haswoodpile < 2 || _hasNails < 3) exitWith {cutText ["You need 2 wood piles and 3 bag of nails !","PLAIN DOWN"]};
 
 
 //allowed

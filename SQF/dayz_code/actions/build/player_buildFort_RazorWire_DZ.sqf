@@ -2,7 +2,7 @@ private["_position","_tent","_location","_isOk","_backpack","_tentType","_trg","
 //check if can pitch here
 call gear_ui_init;
 _item = _this;
-_hasScrapMetal = {_x == "ItemTankTrap"} count magazines player;
+_hasTankTrap = {_x == "ItemTankTrap"} count magazines player;
 _hasWire = {_x == "ItemWire"} count magazines player;
 _location = player modeltoworld [0,2.5,0];
 _location set [2,0];
@@ -17,7 +17,7 @@ _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
 if (!_hasToolBox) exitWith {cutText ["You need a toolbox !","PLAIN DOWN"]};
-if (ItemTankTrap < 2 || _hasWire < 3) exitWith {cutText ["You need 2 Tank Traps and 3 Wire kits !","PLAIN DOWN"]};
+if (_hasTankTrap < 2 || _hasWire < 3) exitWith {cutText ["You need 2 Tank Traps and 3 Wire kits !","PLAIN DOWN"]};
 
 
 //allowed

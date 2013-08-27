@@ -4,7 +4,6 @@ call gear_ui_init;
 _item = _this;
 _hasWire = {_x == "ItemWire"} count magazines player;
 _hasScrapMetal = {_x == "PartGeneric"} count magazines player;
-_haswoodpile = {_x == "PartWoodPile"} count magazines player;
 _location = player modeltoworld [0,2.5,0];
 _location set [2,0];
 _building = nearestObject [(vehicle player), "HouseBase"];

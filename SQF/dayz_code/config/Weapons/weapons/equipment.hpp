@@ -73,7 +73,7 @@ class ItemCraftingBook3 : ItemCore {
 	class ItemActions {
 		class Build {
 			text = "Bench";
-			script = "spawn player_buildBoxStorage_DZ;";
+			script = "spawn player_buildBench_DZ;";
 		};
 		class Build2 {
 			text = "Gate";
