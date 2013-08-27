@@ -283,11 +283,14 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	//Ignite all Storage-Containers
-	if ( ((cursorTarget isKindOf "TentStorage") || (cursorTarget isKindOf "Gunrack_DZ") || (cursorTarget isKindOf "BoxStorage_DZ")) and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
+	if ( ((cursorTarget isKindOf "TentStorage") || (cursorTarget isKindOf "Gunrack_DZ") || (cursorTarget isKindOf "BoxStorage_DZ") || (cursorTarget isKindOf "WeaponCache_DZ")) and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
 		if (s_player_ignite_storage < 0) then {
 			_burnTarget = "Tent";
 			if(cursorTarget isKindOf "BoxStorage_DZ") then {
-				_burnTarget = "Crate";
+				_burnTarget = "Storage Box";
+			};
+			if(cursorTarget isKindOf "WeaponCache_DZ") then {
+				_burnTarget = "Weapon Cache";
 			};
 			if(cursorTarget isKindOf "Gunrack_DZ") then {
 				_burnTarget = "Gunrack";
