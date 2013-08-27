@@ -765,6 +765,28 @@
 		model = "\vilas_wwp\m24_black";
 		displayName = $STR_VIL_M24_BLACK;
 		picture = "\vilas_wwp\ico\w_vil_m24b_ca.paa";
+		weaponInfoType = "RscWeaponZeroing";
+		visionMode[] = {"Normal"};
+		modelOptics = "\ca\weapons\2Dscope_MilDot_9";
+		class OpticsModes {
+			class Leu9X {
+				opticsID = 1;
+				useModelOptics = 1;
+				opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
+				opticsZoomInit = 0.083;
+				opticsZoomMin = 0.0277;
+				opticsZoomMax = 0.083;
+				distanceZoomMin = 400;
+				distanceZoomMax = 120;
+				memoryPointCamera = "Konec hlavne";
+				opticsFlare = true;
+				opticsDisablePeripherialVision = true;
+				cameraDir = "";
+				visionMode[] = {"Normal"};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+				discreteDistanceInitIndex = 2;
+			};
+		};
 		class Armory {
 			author = $STR_AUTHOR_VILAS;
 		};
