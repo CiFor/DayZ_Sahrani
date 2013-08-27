@@ -186,7 +186,7 @@ if (_script != "") then
 					} forEach _objWpnTypes;
 				};	
 				
-				if (_object isKindOf "AllVehicles") then {
+				if (_object isKindOf "AllVehicles" && typeOf _object != "Old_bike_TK_CIV_EP1" && typeOf _object != "Old_bike_TK_INS_EP1") then {
 					{
 						_selection = _x select 0;
 						_dam = _x select 1;
