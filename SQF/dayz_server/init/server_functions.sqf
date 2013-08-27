@@ -61,7 +61,9 @@ check_publishobject = {
 	"CampWoodTower_DZ",
 	"Fort_RazorWire_DZ",
 	"Fortified_nest_DZ",
-	"Gunrack_DZ"
+	"Gunrack_DZ",
+	"WeaponCache_DZ",
+	"Workbench_DZ"
 	];
 	_allowed = false;
 
