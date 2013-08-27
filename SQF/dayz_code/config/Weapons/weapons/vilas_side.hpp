@@ -8,8 +8,6 @@ class vil_BHP : M9 {
 	model = "\vilas_wwp\vil_bhp";
 	displayName = $STR_VIL_BHP;
 	magazines[] = {"15Rnd_9x19_M9","15Rnd_9x19_M9SD"};
-	weaponInfoType = "RscWeaponZeroing";
-	discreteDistance[] = {50, 100, 200, 300, 400, 500};
 	discreteDistanceInitIndex = 0;
 	picture = "\vilas_wwp\ico\w_vil_bhp_ca.paa";
 	begin1[] = {"\vilas_wwp\sounds\bhp_fire1", 0.994328, 1, 700};
@@ -58,8 +56,6 @@ class vil_USP : M9 {
 	scope = public;
 	model = "\vilas_wwp\vil_usp";
 	displayName = $STR_VIL_USP;
-	weaponInfoType = "RscWeaponZeroing";
-	discreteDistance[] = {25, 50, 75, 100};
 	discreteDistanceInitIndex = 1;
 	picture = "\vilas_wwp\ico\w_vil_usp_ca.paa";
 	begin1[] = {"\vilas_wwp\sounds\usp9_fire1", 0.684328, 1, 700};
@@ -78,8 +74,6 @@ class vil_USPSD : M9sd {
 	scope = public;
 	model = "\vilas_wwp\vil_uspsd";
 	displayName = $STR_VIL_USPSD;
-	weaponInfoType = "RscWeaponZeroing";
-	discreteDistance[] = {25, 50, 75, 100};
 	discreteDistanceInitIndex = 1;
 	picture = "\vilas_wwp\ico\w_vil_uspsd_ca.paa";
 	begin1[] = {"\vilas_wwp\sounds\usp9sd_fire1", 0.316228, 1, 200};
@@ -98,8 +92,6 @@ class vil_USP45 : Colt1911 {
 	scope = public;
 	model = "\vilas_wwp\vil_usp";
 	displayName = $STR_VIL_USP45;
-	weaponInfoType = "RscWeaponZeroing";
-	discreteDistance[] = {25, 50, 75, 100};
 	discreteDistanceInitIndex = 1;
 	picture = "\vilas_wwp\ico\w_vil_usp45_ca.paa";
 	magazines[] = {"7Rnd_45ACP_1911"};
@@ -121,8 +113,6 @@ class vil_USP45SD : M9sd {
 	fireLightIntensity = 0.0;
 	model = "\vilas_wwp\vil_uspsd";
 	displayName = $STR_VIL_USP45SD;
-	weaponInfoType = "RscWeaponZeroing";
-	discreteDistance[] = {25, 50, 75, 100};
 	discreteDistanceInitIndex = 1;
 	picture = "\vilas_wwp\ico\w_vil_usp45sd_ca.paa";
 	magazines[] = {"7Rnd_45ACP_1911"};
