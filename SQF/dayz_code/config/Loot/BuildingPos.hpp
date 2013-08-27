@@ -569,6 +569,15 @@ class UH60Wreck_DZ: Crash1 {
 	maxRoaming = 8;
 	lootPos[] = {};
 };
+
+class Mi8Wreck: Crash1 {
+	zombieClass[] = {"z_RACSzombie4","z_RACSzombie3"};
+	zombieChance = 0.3;
+	minRoaming = 4;
+	maxRoaming = 8;
+	lootPos[] = {};
+};
+
 /*
 class Mi8Wreck_DZ: Crash2Mi8 {
 	zombieClass[] = {"z_RACSzombie4","z_RACSzombie3"};
