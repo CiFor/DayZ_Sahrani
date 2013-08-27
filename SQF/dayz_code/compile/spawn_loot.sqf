@@ -3,7 +3,7 @@ _iItem = 	_this select 0;
 _iClass = 	_this select 1;
 _iPos =	_this select 2;
 _radius =	_this select 3;
-diag_log Format["DEBUG LOOT: %1", _iClass];
+//diag_log Format["DEBUG LOOT: %1", _iClass];
 switch (_iClass) do {
 	default {
 		//Item is food, add random quantity of cans along with an item (if exists)
