@@ -41,7 +41,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "";
-		version = "0.7.7-20130822";
+		version = "0.7.8-20130828";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
