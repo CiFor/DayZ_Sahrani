@@ -19,7 +19,7 @@ _text = getText (_config >> "displayName");
 
 if (!_hasToolBox) exitWith {cutText ["You need a toolbox !","PLAIN DOWN"]};
 if (!_hasCrowBar) exitWith {cutText ["You need a crowbar !","PLAIN DOWN"]};
-if (_haswoodpile < 4 || _hasNails < 4) exitWith {cutText ["You need 4 wood piles and 4 bags of nails !","PLAIN DOWN"]};
+if (_haswoodpile < 4 || _hasNails < 4) exitWith {cutText ["You need 4 wood piles and 4 boxes of nails !","PLAIN DOWN"]};
 
 
 //allowed

@@ -5540,7 +5540,7 @@ class CfgVehicles {
 		model = "\ca\misc2\BagFenceLong.p3d";
 		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
 		mapSize = 2;
-		displayName = $STR_DN_BAGFENCESTRAIGHT;
+		displayName = "Long Bag Fence";
 		vehicleClass = "Fortifications";
 	};
 	
@@ -5551,7 +5551,7 @@ class CfgVehicles {
 		model = "\ca\misc2\BagFenceCorner.p3d"; //ca\misc2\BagFenceCorner.p3d
 		icon = "\ca\data\data\Unknown_object.paa"; //icon = "\Ca\misc3\data\Icons\icon_fortBagFenceCorner_ca.paa";
 		mapSize = 2;
-		displayName = $STR_DN_BAGFENCECORNER;
+		displayName = "Bag Fence Corner";
 		vehicleClass = "Fortifications";
 	};
 	
@@ -5560,7 +5560,7 @@ class CfgVehicles {
 		destrType = "DestructTent";
 		armor = 400; 
 		model = "\Ca\misc2\BagFenceRound.p3d"; //fortBagFenceRound_ca
-		displayName = $STR_DN_FORT_BAGFENCE_ROUND;
+		displayName = "Round Bag Fence";
 		icon = "\ca\data\data\Unknown_object.paa"; //icon = "\Ca\misc3\data\Icons\icon_fortBagFenceRound_ca.paa";
 		mapSize = 3.2;
 		vehicleClass = "Fortifications";
@@ -5575,7 +5575,7 @@ class CfgVehicles {
 		icon = "\ca\data\data\Unknown_object.paa"; //icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
 		accuracy = 0.3;
 		mapSize = 5.5;
-		displayName = $STR_DN_WIRE;
+		displayName = "Razor Wire Fortification";
 		vehicleClass = "Fortifications";
 	};
 	
