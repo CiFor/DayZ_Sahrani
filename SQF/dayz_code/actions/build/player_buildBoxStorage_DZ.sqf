@@ -10,7 +10,7 @@ _location = player modeltoworld [0,2.5,0];
 _location set [2,0];
 _building = nearestObject [(vehicle player), "HouseBase"];
 _isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
-//_isOk = true;
+//_isOk = true;cr
 _classname = "BoxStorage_DZ";
 diag_log ("Build Storage Box: " + str(_isok) );
 
@@ -34,6 +34,8 @@ diag_log ("Build Storage Box surface: " + str(_isok) );
 
 if (!_isOk) then {
 	_objectTemp = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+	_objectTemp setVariable["Sarge",1];
+	_objectTemp setVariable["ObjectID",1,true];
 	_objectTemp attachTo [player,[0,2.5,0.5]];
 	_handle = player addAction ["Start Building", "\z\addons\dayz_code\actions\build\drop.sqf",[_objectTemp,_classname], 5, true, true];
 	s_player_craftActions set [count s_player_craftActions,_handle];
