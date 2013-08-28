@@ -4215,7 +4215,7 @@ class CfgVehicles {
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_tk_alice.p3d";
-		transportMaxWeapons = 2;
+		transportMaxWeapons = 1;
 		transportMaxMagazines = 18;
 	};
 
@@ -4227,7 +4227,7 @@ class CfgVehicles {
 		picture = "\ca\weapons_e\data\icons\backpack_CIVIL_ASSAULT_CA.paa";
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		model = "\ca\weapons_e\AmmoBoxes\backpack_civil_assault.p3d";
-		transportMaxWeapons = 2;
+		transportMaxWeapons = 1;
 		transportMaxMagazines = 16;
 	};
 
@@ -4239,7 +4239,7 @@ class CfgVehicles {
 		model = "\ca\weapons_baf\Backpack_Small_BAF";
 		picture = "\ca\weapons_baf\data\UI\backpack_BAF_CA.paa";
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-		transportMaxWeapons = 3;
+		transportMaxWeapons = 1;
 		transportMaxMagazines = 20;
 	};
 
@@ -4251,7 +4251,7 @@ class CfgVehicles {
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_acr.p3d";
-		transportMaxWeapons = 4;
+		transportMaxWeapons = 1;
 		transportMaxMagazines = 22;
 	};
 
@@ -4263,7 +4263,7 @@ class CfgVehicles {
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_us.p3d";
-		transportMaxWeapons = 6;
+		transportMaxWeapons = 1;
 		transportMaxMagazines = 24;
 	};
 
@@ -5465,6 +5465,19 @@ class CfgVehicles {
 	class Land_A_tent;
 	class BuiltItems : NonStrategic {};
 	
+	class Sandbag1_DZ : BuiltItems {
+		scope = public;
+		destrType = "DestructNo";
+		cost = 100;
+		model = "\ca\misc2\BagFenceShort.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";//"\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa"
+		mapSize = 2;
+		armor = 400;
+		displayName = "Bag Fence";
+		vehicleClass = "Fortifications";
+	};
+	
+	
 	class BoxStorage_DZ : Land_A_tent {
 		scope = 2;
 		displayName = "Storage Box";
@@ -5524,8 +5537,8 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructTent";
 		armor = 400; 
-		model = "\ca\misc2\BagFenceShort.p3d"; //\ca\misc2\BagFenceLong.p3d
-		icon = "\ca\data\data\Unknown_object.paa"; //icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa
+		model = "\ca\misc2\BagFenceLong.p3d";
+		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
 		mapSize = 2;
 		displayName = $STR_DN_BAGFENCESTRAIGHT;
 		vehicleClass = "Fortifications";
