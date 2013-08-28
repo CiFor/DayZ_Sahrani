@@ -27,11 +27,11 @@ class ItemCraftingBook : ItemCore {
 		class Build3 {
 			text = "Storage Box";
 			script = "spawn player_buildBoxStorage_DZ;";
-		};
+		};/*
 		class Build4 {
 			text = "Work Bench";
 			script = "spawn player_buildWorkbench_DZ;";
-		};
+		};*/
 		
 	};
 };

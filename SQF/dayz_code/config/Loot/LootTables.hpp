@@ -26,8 +26,7 @@ class CfgBuildingLoot {
 		zombieClass[] = {"z_RACSzombie4"}; 
 		lootChance = 0.6;
 		lootPos[] = {};
-		itemType[] =	{		
-//backpacks
+		itemType[] =	{
 			{"DZ_ALICE_Pack_EP1","object"},
 			{"DZ_Assault_Pack_EP1","object"},
 			{"DZ_Backpack_EP1","object"},
@@ -35,7 +34,6 @@ class CfgBuildingLoot {
 			{"DZ_CivilBackpack_EP1","object"},
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
-//class loot types"},
 			{"","AmmoUN"},
 			{"","AmmoUS"},
 			{"","clothing"},
@@ -44,11 +42,9 @@ class CfgBuildingLoot {
 			{"","military"},
 			{"","militarySpecial"},
 			{"","trash"},
-//headgear"},
 			{"Binocular","weapon"},
 			{"Binocular_Vector","military"},
 			{"NVGoggles","weapon"},
-//primary weapons"},
 			{"BAF_AS50_scoped_DZ","weapon"},
 			{"BAF_LRR_scoped","weapon"},
 			{"BAF_LRR_scoped_W","weapon"},
@@ -129,7 +125,6 @@ class CfgBuildingLoot {
 			{"vil_sg5421","weapon"},
 			{"vil_sr25","weapon"},
 			{"vil_sr25sd","weapon"},
-//secondary weapons"},
 			{"Colt1911","weapon"},
 			{"glock17_EP1","weapon"},
 			{"M9","weapon"},
@@ -147,7 +142,6 @@ class CfgBuildingLoot {
 			{"PipeBomb","magazine"}
 		};
 		itemChance[] =	{
-//backpacks
 			0.3, //DZ_ALICE_Pack_EP1","object
 			0, //DZ_Assault_Pack_EP1","object
 			0.2, //DZ_Backpack_EP1","object
@@ -155,7 +149,6 @@ class CfgBuildingLoot {
 			0, //DZ_CivilBackpack_EP1","object
 			0, //DZ_Czech_Vest_Puch","object
 			0, //DZ_TK_Assault_Pack_EP1","object
-//class loot types
 			0.4, //"","AmmoUN
 			0.8, //"","AmmoUS
 			0.1, //","clothing
@@ -164,11 +157,9 @@ class CfgBuildingLoot {
 			0.3, //","military
 			0.2, //","militarySpecial
 			0.1, //","trash
-//headgear
 			0, //Binocular","weapon
 			0.02, //Binocular_Vector","military
 			0.01, //NVGoggles","weapon
-//primary weapons
 			0.01, //BAF_AS50_scoped_DZ","weapon
 			0.01, //BAF_LRR_scoped","weapon
 			0.01, //BAF_LRR_scoped_W","weapon
@@ -249,7 +240,6 @@ class CfgBuildingLoot {
 			0.02, //vil_sg5421","weapon
 			0.06, //vil_sr25","weapon
 			0.01, //vil_sr25sd","weapon
-//secondary weapons
 			0.04, //Colt1911","weapon
 			0.09, //glock17_EP1","weapon
 			0.01, //M9","weapon
@@ -267,7 +257,6 @@ class CfgBuildingLoot {
 			0.01, //PipeBomb, magazine
 		};
 	};
-//Crash1_No50s
 	class Crash1_No50s: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
@@ -275,7 +264,6 @@ class CfgBuildingLoot {
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
-//backpacks
 			{"DZ_ALICE_Pack_EP1","object"},
 			{"DZ_Assault_Pack_EP1","object"},
 			{"DZ_Backpack_EP1","object"},
@@ -283,7 +271,6 @@ class CfgBuildingLoot {
 			{"DZ_CivilBackpack_EP1","object"},
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
-//class loot types"},
 			{"","AmmoUN"},
 			{"","AmmoUS"},
 			{"","clothing"},
@@ -292,11 +279,9 @@ class CfgBuildingLoot {
 			{"","military"},
 			{"","militarySpecial"},
 			{"","trash"},
-//headgear"},
 			{"Binocular","weapon"},
 			{"Binocular_Vector","military"},
 			{"NVGoggles","weapon"},
-//primary weapons"},
 			//{"BAF_AS50_scoped_DZ","weapon"},
 			//{"BAF_LRR_scoped","weapon"},
 			//{"BAF_LRR_scoped_W","weapon"},
@@ -377,7 +362,6 @@ class CfgBuildingLoot {
 			{"vil_sg5421","weapon"},
 			{"vil_sr25","weapon"},
 			{"vil_sr25sd","weapon"},
-//secondary weapons"},
 			{"Colt1911","weapon"},
 			{"glock17_EP1","weapon"},
 			{"M9","weapon"},
@@ -395,7 +379,6 @@ class CfgBuildingLoot {
 			{"PipeBomb","magazine"}
 		};
 		itemChance[] =	{
-//backpacks
 			0.3, //DZ_ALICE_Pack_EP1","object
 			0, //DZ_Assault_Pack_EP1","object
 			0.2, //DZ_Backpack_EP1","object
@@ -403,7 +386,6 @@ class CfgBuildingLoot {
 			0, //DZ_CivilBackpack_EP1","object
 			0, //DZ_Czech_Vest_Puch","object
 			0, //DZ_TK_Assault_Pack_EP1","object
-//class loot types
 			0.4, //"","AmmoUN
 			0.8, //"","AmmoUS
 			0.1, //","clothing
@@ -412,11 +394,9 @@ class CfgBuildingLoot {
 			0.3, //","military
 			0.2, //","militarySpecial
 			0.1, //","trash
-//headgear
 			0, //Binocular","weapon
 			0.02, //Binocular_Vector","military
 			0.01, //NVGoggles","weapon
-//primary weapons
 			//0.01, //BAF_AS50_scoped_DZ","weapon
 			//0.01, //BAF_LRR_scoped","weapon
 			//0.01, //BAF_LRR_scoped_W","weapon
@@ -497,7 +477,6 @@ class CfgBuildingLoot {
 			0.02, //vil_sg5421","weapon
 			0.06, //vil_sr25","weapon
 			0.01, //vil_sr25sd","weapon
-//secondary weapons
 			0.04, //Colt1911","weapon
 			0.09, //glock17_EP1","weapon
 			0.01, //M9","weapon
@@ -515,7 +494,6 @@ class CfgBuildingLoot {
 			0.01, //PipeBomb, magazine
 		};
 	};
-//Crash2Mi8
 	class Crash2Mi8: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
@@ -523,7 +501,6 @@ class CfgBuildingLoot {
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
-//backpacks
 			{"DZ_ALICE_Pack_EP1","object"},
 			{"DZ_Assault_Pack_EP1","object"},
 			{"DZ_Backpack_EP1","object"},
@@ -531,17 +508,14 @@ class CfgBuildingLoot {
 			{"DZ_CivilBackpack_EP1","object"},
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
-//class loot types
 			{"","AmmoNATO"},
 			{"","clothing"},
 			{"","foodSpecial"},
 			{"","medical"},
 			{"","trash"},
-//headgear
 			{"Binocular","weapon"},
 			{"Binocular_Vector","military"},
 			{"NVGoggles","weapon"},
-//primary weapons
 			{"AK_107_GL_kobra","weapon"},
 			{"AK_107_GL_pso","weapon"},
 			{"AK_107_kobra","weapon"},
@@ -597,7 +571,6 @@ class CfgBuildingLoot {
 			{"vil_galil_ARM","weapon"},
 			{"vil_zastava_m84","weapon"},
 			{"VSS_vintorez","weapon"},
-//secondary weapons
 			{"Makarov","weapon"},
 			{"MakarovSD","weapon"},
 			{"M9","weapon"},
@@ -609,7 +582,6 @@ class CfgBuildingLoot {
 			{"vil_USPSD","weapon"}
 		};
 		itemChance[] =	{
-//backpacks
 			0, //DZ_ALICE_Pack_EP1","object
 			0.05, //DZ_Assault_Pack_EP1","object
 			0, //DZ_Backpack_EP1","object
@@ -617,17 +589,14 @@ class CfgBuildingLoot {
 			0.01, //DZ_CivilBackpack_EP1","object
 			0, //DZ_Czech_Vest_Puch","object
 			0, //DZ_TK_Assault_Pack_EP1","object
-//class loot types
 			0.03, //"","AmmoNATO
 			0.01, //","clothing
 			0.01, //","foodSpecial
 			0.01, //","medical
 			0.08, //","trash
-//headgear
 			0, //Binocular","weapon
 			0.04, //Binocular_Vector","military
 			0.01, //NVGoggles","weapon
-//primary weapons
 			0.06, //AK_107_GL_kobra","weapon
 			0.04, //AK_107_GL_pso","weapon
 			0.02, //AK_107_kobra","weapon
@@ -683,7 +652,6 @@ class CfgBuildingLoot {
 			0.05, //vil_galil_ARM","weapon
 			0.04, //vil_zastava_m84","weapon
 			0.01, //VSS_vintorez","weapon
-//secondary weapons
 			0.01, //Makarov","weapon
 			0.05, //MakarovSD","weapon
 			0.02, //M9","weapon
@@ -695,7 +663,6 @@ class CfgBuildingLoot {
 			0.07 //vil_USPSD","weapon
 		};
 	};
-	//Crash2Mi8_NoKSVKs
 	class Crash2_Mi8: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
@@ -703,7 +670,6 @@ class CfgBuildingLoot {
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{		
-//backpacks
 			{"DZ_ALICE_Pack_EP1","object"},
 			{"DZ_Assault_Pack_EP1","object"},
 			{"DZ_Backpack_EP1","object"},
@@ -711,17 +677,14 @@ class CfgBuildingLoot {
 			{"DZ_CivilBackpack_EP1","object"},
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
-//class loot types
 			{"","AmmoNATO"},
 			{"","clothing"},
 			{"","foodSpecial"},
 			{"","medical"},
 			{"","trash"},
-//headgear
 			{"Binocular","weapon"},
 			{"Binocular_Vector","military"},
 			{"NVGoggles","weapon"},
-//primary weapons
 			{"AK_107_GL_kobra","weapon"},
 			{"AK_107_GL_pso","weapon"},
 			{"AK_107_kobra","weapon"},
@@ -741,7 +704,6 @@ class CfgBuildingLoot {
 			{"bizon","weapon"},
 			{"FN_FAL","weapon"},
 			{"FN_FAL_ANPVS4","weapon"},
-//{"ksvk_DZ","weapon"},
 			{"Sa58P_EP1","weapon"},
 			{"Sa58V_CCO_EP1","weapon"},
 			{"Sa58V_EP1","weapon"},
@@ -777,7 +739,6 @@ class CfgBuildingLoot {
 			{"vil_galil_ARM","weapon"},
 			{"vil_zastava_m84","weapon"},
 			{"VSS_vintorez","weapon"},
-//secondary weapons
 			{"Makarov","weapon"},
 			{"MakarovSD","weapon"},
 			{"M9","weapon"},
@@ -789,7 +750,6 @@ class CfgBuildingLoot {
 			{"vil_USPSD","weapon"}
 		};
 		itemChance[] =	{
-//backpacks
 			0, //DZ_ALICE_Pack_EP1","object
 			0.05, //DZ_Assault_Pack_EP1","object
 			0, //DZ_Backpack_EP1","object
@@ -797,17 +757,14 @@ class CfgBuildingLoot {
 			0.01, //DZ_CivilBackpack_EP1","object
 			0, //DZ_Czech_Vest_Puch","object
 			0, //DZ_TK_Assault_Pack_EP1","object
-//class loot types
 			0.03, //"","AmmoNATO
 			0.01, //","clothing
 			0.01, //","foodSpecial
 			0.01, //","medical
 			0.08, //","trash
-//headgear
 			0, //Binocular","weapon
 			0.04, //Binocular_Vector","military
 			0.01, //NVGoggles","weapon
-//primary weapons
 			0.06, //AK_107_GL_kobra","weapon
 			0.04, //AK_107_GL_pso","weapon
 			0.02, //AK_107_kobra","weapon
@@ -827,7 +784,6 @@ class CfgBuildingLoot {
 			0.04, //bizon","weapon
 			0.07, //FN_FAL","weapon
 			0.01, //FN_FAL_ANPVS4","weapon
-//0.01, //ksvk_DZ","weapon
 			0.06, //Sa58P_EP1","weapon
 			0.04, //Sa58V_CCO_EP1","weapon
 			0.05, //Sa58V_EP1","weapon
@@ -863,7 +819,6 @@ class CfgBuildingLoot {
 			0.05, //vil_galil_ARM","weapon
 			0.04, //vil_zastava_m84","weapon
 			0.01, //VSS_vintorez","weapon
-//secondary weapons
 			0.01, //Makarov","weapon
 			0.05, //MakarovSD","weapon
 			0.02, //M9","weapon
@@ -874,8 +829,8 @@ class CfgBuildingLoot {
 			0.07, //vil_USP","weapon
 			0.02 //vil_USPSD","weapon
 		};
-	};/*	
-//Crash3C130
+	};	
+/*Crash3C130
 	class Crash3C130: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
@@ -898,9 +853,7 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 		};
-	};
-*/
-//Farm
+	};*/
 	class Farm: Default {
 		zombieChance = 0.3;
 		maxRoaming = 3;
@@ -908,111 +861,80 @@ class CfgBuildingLoot {
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
-//backpacks
 			{"DZ_ALICE_Pack_EP1","object"},
 			{"DZ_Assault_Pack_EP1","object"},
 			{"DZ_British_ACU","object"},
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
-//classloottypes
 			{"","farm"},
 			{"","foodSpecial"},
 			{"","hunter"},
 			{"","trash"},
-//headgear
 			{"Binocular","weapon"},
-//Inventoryclothingitems
-//inventorycraftingitems
-//inventorydrinkitems
-//inventoryfooditems
-//inventorymedicalitems
-//inventorytrash
-//inventoryvehicleparts
 			{"WeaponHolder_ItemJerrycan","object"},
 			{"WeaponHolder_PartEngine","object"},
 			{"WeaponHolder_PartFueltank","object"},
 			{"WeaponHolder_PartGeneric","object"},
 			{"WeaponHolder_PartWheel","object"},
-//primaryweapons
 			{"Crossbow_DZ","weapon"},
 			{"huntingrifle","weapon"},
 			{"LeeEnfield","weapon"},
 			{"MR43","weapon"},
 			{"Winchester1866","weapon"},
-//secondaryweapons
 			{"Colt1911","weapon"},
 			{"Makarov","weapon"},
 			{"MakarovSD","weapon"},
 			{"revolver_EP1","weapon"},
 			{"vil_bhp","weapon"},
-//toolbeltcraftingbooks"},
 			{"ItemCraftingBook","weapon"},
 			{"ItemCraftingBook2","weapon"},
-//toolbeltONLYitems
 			{"ItemCompass","generic"},
 			{"ItemKnife","generic"},
 			{"ItemMap","weapon"},
 			{"ItemMatchbox","generic"},
 			{"ItemToolbox","weapon"},
 			{"ItemWatch","generic"},
-//toolbeltSwitchableweapons
 			{"WeaponHolder_ItemHatchet","object"},
 			{"WeaponHolder_ItemCrowbar","object"}
 		};
 		itemChance[] =	{
-//backpacks
 			0.05, //DZ_ALICE_Pack_EP1","object
 			0.01, //DZ_Assault_Pack_EP1","object
 			0.01, //DZ_British_ACU","object
 			0.02, //DZ_Czech_Vest_Puch","object
 			0.08, //DZ_TK_Assault_Pack_EP1","object
-//classloottypes
 			0.35, //"","farm
 			0.25, //"","food
 			0.03, //"","hunter
 			2, //"","trash
-//headgear
 			0.3, //Binocular","weapon
-//Inventoryclothingitems
-//inventorycraftingitems
-//inventorydrinkitems
-//inventoryfooditems
-//inventorymedicalitems
-//inventorytrash
-//inventoryvehicleparts
 			0.01, //WeaponHolder_ItemJerrycan","object"},
 			0.01, //WeaponHolder_PartEngine","object"},
 			0.01, //WeaponHolder_PartFueltank","object"},
 			0.04, //WeaponHolder_PartGeneric","object"},
 			0.04, //WeaponHolder_PartWheel","object"}
-//primaryweapons
 			0.01, //Crossbow_DZ","weapon
 			0.04, //huntingrifle","weapon
 			0.08, //LeeEnfield","weapon
 			0.01, //MR43","weapon
 			0.04, //Winchester1866","weapon
-//secondaryweapons
 			0.04, //Colt1911","weapon
 			0.08, //Makarov","weapon
 			0.01, //MakarovSD","weapon
 			0.04, //revolver_EP1","weapon
 			0.04,//vil_bhp","weapon
-//toolbeltcraftingbooks
-			0.04, //ItemCraftingBook","weapon
-			0.04, //ItemCraftingBook2","weapon"},
-//toolbeltONLYitems
+			0.00, //ItemCraftingBook","weapon
+			0.04, //ItemCraftingBook2","weapon
 			0.01, //ItemCompass","generic
 			0.02, //ItemKnife","generic
 			0.01, //ItemMap","weapon
 			0.05, //ItemMatchbox","generic
-			0.08, //ItemToolbox","weapon"},
+			0.08, //ItemToolbox","weapon
 			0.02, //ItemWatch","generic
-//toolbeltSwitchableweapons
 			0.03, //WeaponHolder_ItemHatchet","object
 			0.01 //WeaponHolder_ItemCrowbar","object
 		};
 	};
-//Hospital
 	class Hospital: Default {
 		zombieChance = 0.4;
 		minRoaming = 2;
@@ -1032,7 +954,6 @@ class CfgBuildingLoot {
 			0.4 //MedBox0
 		};
 	};
-//Hunting NEEDS REDONE
 	class Hunting: Default {
 		zombieChance = 0.4;
 		minRoaming = 1;
@@ -1065,7 +986,6 @@ class CfgBuildingLoot {
 			0.01 //ItemCraftingBook3
 		};
 	};
-//Industrial
 	class Industrial: Default {
 		zombieChance = 0.4;
 		zombieClass[] = {"z_worker1","z_worker2","z_worker3"};
@@ -1073,19 +993,14 @@ class CfgBuildingLoot {
 		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
-			//class loot types
 			{"","trash"},
-			//toolbelt items
 			{"ItemCraftingBook2","weapon"},
 			{"ItemKnife","military"},
-			//inventory items
 			{"ItemNails","magazine"},
 			{"ItemTankTrap","magazine"},
 			{"ItemToolbox","weapon"},
 			{"ItemWire","magazine"},
-			//weapons
 			{"WeaponHolder_ItemHatchet","object"},
-			//vehicle parts
 			{"WeaponHolder_ItemJerrycan","object"},
 			{"WeaponHolder_PartEngine","object"},
 			{"WeaponHolder_PartFueltank","object"},
@@ -1095,19 +1010,14 @@ class CfgBuildingLoot {
 			{"WeaponHolder_PartWheel","object"}
 		};
 		itemChance[] =	{
-			//class loot types
 			2, //,trash
-			//toolbelt items
 			0.02, //ItemCraftingBook2","weapon
 			0.02, //ItemKnife","military
-			//inventory items
 			0.01, //ItemNails","magazine
 			0.02, //ItemTankTrap","magazine
 			0.02, //ItemToolbox","weapon
 			0.02, //ItemWire","magazine
-			//weapons
 			0.01, //WeaponHolder_ItemHatchet","object
-			//vehicle parts
 			0.01, //WeaponHolder_ItemJerrycan","object
 			0.04, //WeaponHolder_PartEngine","object
 			0.04, //WeaponHolder_PartFueltank","object
@@ -1117,7 +1027,6 @@ class CfgBuildingLoot {
 			0.04 //WeaponHolder_PartWheel","object
 		};
 	};
-//Military
 	class Military: Default {
 		zombieChance = 0.3;
 		maxRoaming = 6;
@@ -1125,7 +1034,6 @@ class CfgBuildingLoot {
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
-//backpacks
 			{"DZ_ALICE_Pack_EP1","object"},
 			{"DZ_Assault_Pack_EP1","object"},
 			{"DZ_Backpack_EP1","object"},
@@ -1133,7 +1041,6 @@ class CfgBuildingLoot {
 			{"DZ_CivilBackpack_EP1","object"},
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
-//class loot types"},
 			{"","AmmoUN"},
 			{"","AmmoNATO"},
 			{"","clothing"},
@@ -1142,10 +1049,8 @@ class CfgBuildingLoot {
 			{"","military"},
 			{"","militarySpecial"},
 			{"","trash"},
-//headgear"},
 			{"Binocular","weapon"},
 			{"Binocular_Vector","military"},
-//primary weapons"},
 			{"AK_107_GL_kobra","weapon"},
 			{"AK_107_kobra","weapon"},
 			{"AK_47_M","weapon"},
@@ -1186,7 +1091,6 @@ class CfgBuildingLoot {
 			{"vil_uzimini","weapon"},
 			{"vil_uzimini_SD","weapon"},
 			{"vil_zastava_m84","weapon"},
-//secondary weapons"},
 			{"M9","weapon"},
 			{"Makarov","weapon"},
 			{"MakarovSD","weapon"},
@@ -1196,7 +1100,6 @@ class CfgBuildingLoot {
 			{"vil_USPSD","weapon"}
 		};
 		itemChance[] =	{
-//backpacks
 			0.04, //DZ_ALICE_Pack_EP1","object
 			0, //DZ_Assault_Pack_EP1","object
 			0.02, //DZ_Backpack_EP1","object
@@ -1204,7 +1107,6 @@ class CfgBuildingLoot {
 			0.02, //DZ_CivilBackpack_EP1","object
 			0, //DZ_Czech_Vest_Puch","object
 			0.04, //DZ_TK_Assault_Pack_EP1","object
-//class loot types
 			0.1, //"","AmmoUN
 			0.7, //"","AmmoNATO
 			0.01, //","clothing
@@ -1213,10 +1115,8 @@ class CfgBuildingLoot {
 			0.8, //","military
 			0.9, //","militarySpecial
 			4, //","trash
-//headgear
 			0.04, //Binocular","weapon
 			0.02, //Binocular_Vector","military
-//primary weapons
 			0.02, //AK_107_GL_kobra","weapon
 			0.06, //AK_107_kobra","weapon
 			0.02, //AK_47_M","weapon
@@ -1257,7 +1157,6 @@ class CfgBuildingLoot {
 			0.03, //{"vil_uzimini","weapon"},
 			0.02, //{"vil_uzimini_SD","weapon"},
 			0.02, //vil_zastava_m84","weapon
-//secondary weapons
 			0.7, //M9","weapon
 			0.4, //Makarov","weapon
 			0.04, //MakarovSD","weapon
@@ -1267,7 +1166,6 @@ class CfgBuildingLoot {
 			0.04//vil_USPSD","weapon
 		};
 	};
-//MilitarySpecial
 	class MilitarySpecial: Default {
 		zombieChance = 0.4;
 		minRoaming = 2;
@@ -1276,7 +1174,6 @@ class CfgBuildingLoot {
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
-//backpacks
 			{"DZ_ALICE_Pack_EP1","object"},
 			{"DZ_Assault_Pack_EP1","object"},
 			{"DZ_Backpack_EP1","object"},
@@ -1284,7 +1181,6 @@ class CfgBuildingLoot {
 			{"DZ_CivilBackpack_EP1","object"},
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
-//class loot types
 			{"","AmmoUN"},
 			{"","AmmoNATO"},
 			{"","clothing"},
@@ -1293,10 +1189,8 @@ class CfgBuildingLoot {
 			{"","military"},
 			{"","militarySpecial"},
 			{"","trash"},
-//headgear
 			{"Binocular","weapon"},
 			{"Binocular_Vector","military"},
-//primary weapons
 			{"M24","weapon"},
 			{"M24_des_EP1","weapon"},
 			{"M40A3","weapon"},
@@ -1345,7 +1239,6 @@ class CfgBuildingLoot {
 			{"vil_sg5421","weapon"},
 			{"vil_sr25","weapon"},
 			{"vil_sr25sd","weapon"},
-//secondary weapons
 			{"glock17_EP1","weapon"},
 			{"M9","weapon"},
 			{"M9SD","weapon"},
@@ -1364,7 +1257,6 @@ class CfgBuildingLoot {
 			{"ItemEtool","weapon"}
 		};
 		itemChance[] =	{
-//backpacks
 			0.01, //DZ_ALICE_Pack_EP1","object
 			0, //DZ_Assault_Pack_EP1","object
 			0.02, //DZ_Backpack_EP1","object
@@ -1372,7 +1264,6 @@ class CfgBuildingLoot {
 			0.02, //DZ_CivilBackpack_EP1","object
 			0, //DZ_Czech_Vest_Puch","object
 			0.01, //DZ_TK_Assault_Pack_EP1","object
-//class loot types
 			0.4, //"","AmmoUN
 			0.6, //"","AmmoNATO
 			0.01, //","clothing
@@ -1381,10 +1272,8 @@ class CfgBuildingLoot {
 			0.4, //","military
 			0.6, //","militarySpecial
 			4, //","trash
-//headgear
 			0, //Binocular","weapon
 			0.02, //Binocular_Vector","military
-//primary weapons
 			0.01, //M24","weapon
 			0.01, //M24_des_EP1","weapon
 			0.01, //M40A3","weapon
@@ -1433,7 +1322,6 @@ class CfgBuildingLoot {
 			0.01, //vil_sg5421","weapon
 			0.01, //vil_sr25","weapon
 			0.01, //vil_sr25sd","weapon
-//secondary weapons
 			0.01, //glock17_EP1","weapon
 			0.01, //M9","weapon
 			0.04, //M9SD","weapon
@@ -1452,7 +1340,6 @@ class CfgBuildingLoot {
 			0.08	//ItemEtool, weapon
 		};
 	};
-//Residential (and office)
 	class Residential: Default {
 		zombieChance = 0.3;
 		maxRoaming = 2;
@@ -1460,38 +1347,26 @@ class CfgBuildingLoot {
 		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
-			//backpacks"},
 			{"DZ_ALICE_Pack_EP1","object"},
 			{"DZ_Assault_Pack_EP1","object"},
 			{"DZ_British_ACU","object"},
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
-			//class loot types"},
 			{"","food"},
 			{"","trash"},
-			//headgear"},
 			{"Binocular","weapon"},
-			//Inventory clothing items"},
 			{"Skin_BanditSkin_DZ","magazine"},
 			{"Skin_Camo1_DZ","magazine"},
 			{"Skin_Rocket_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
 			{"Skin_SniperLight_DZ","magazine"},
 			{"Skin_SniperD_DZ","magazine"},
-			//inventory crafting items"},
 			{"WeaponHolder_ItemTent","object"},
 			{"WeaponHolder_Propane","object"},
-			//inventory drink items"},
-			//inventory food items"},
-			//inventory medical items"},
-			//inventory trash"},
-			//inventory vehicle parts"},
-			//primary weapons"},
 			{"Crossbow_DZ","weapon"},
 			{"LeeEnfield","weapon"},
 			{"MR43","weapon"},
 			{"Winchester1866","weapon"},
-			//secondary weapons"},
 			{"Colt1911","weapon"},
 			{"Makarov","weapon"},
 			{"MakarovSD","weapon"},
@@ -1500,51 +1375,36 @@ class CfgBuildingLoot {
 			{"vil_Glock","weapon"},
 			{"vil_Glock_o","weapon"},
 			{"vil_USP","weapon"},
-			//toolbelt crafting books"},
 			{"ItemCraftingBook","weapon"},
-			//toolbelt ONLY items"},
 			{"ItemCompass","generic"},
 			{"ItemKnife","generic"},
 			{"ItemMap","weapon"},
 			{"ItemMatchbox","generic"},
 			{"ItemWatch","generic"},
-			//toolbelt Switchable weapons"},
 			{"WeaponHolder_ItemHatchet","object"},
 			{"WeaponHolder_ItemCrowbar","object"}
 		};
 		itemChance[] =	{
-			//backpacks
 			0.03, //DZ_ALICE_Pack_EP1","object
 			0.05, //DZ_Assault_Pack_EP1","object
 			0.01, //DZ_British_ACU","object
 			0.08, //DZ_Czech_Vest_Puch","object
 			0.03, //DZ_TK_Assault_Pack_EP1","object
-			//class loot types
 			0.08, //,food
 			2, //, trash
-			//headgear
 			0.01, //Binocular","weapon
-			//Inventory clothing items
 			0.00, //Skin_BanditSkin_DZ
 			0.01, //Skin_Camo1_DZ
 			0.00, //Skin_Rocket_DZ
 			0.01, //Skin_Sniper1_DZ
 			0.01, //Skin_SniperLight_DZ
 			0.01, //Skin_SniperD_DZ
-			//inventory crafting items
 			0.03, //WeaponHolder_ItemTent
 			0.03, //WeaponHolder_Propane
-			//inventory drink items"},
-			//inventory food items"},
-			//inventory medical items"},
-			//inventory trash"},
-			//inventory vehicle parts"},
-			//primary weapons"},
 			0.02, //Crossbow_DZ","weapon
 			0.04, //LeeEnfield","weapon
 			0.01, //MR43","weapon
 			0.05, //Winchester1866","weapon
-			//secondary weapons
 			0.02, //Colt1911","weapon
 			0.04, //Makarov","weapon
 			0.01, //MakarovSD","weapon
@@ -1553,26 +1413,21 @@ class CfgBuildingLoot {
 			0.04,//vil_Glock
 			0.04,//vil_Glock_o
 			0.05,//vil_USP
-			//toolbelt crafting books
-			0.05, //ItemCraftingBook","weapon
-			//toolbelt ONLY items
+			0.00, //ItemCraftingBook","weapon
 			0.04, //ItemCompass","generic
 			0.04, //ItemKnife","generic
 			0.04, //ItemMap","weapon
 			0.04, //ItemMatchbox","generic
 			0.01, //ItemWatch","generic
-			//toolbelt Switchable weapons
 			0.03, //WeaponHolder_ItemHatchet","object
 			0.01 //WeaponHolder_ItemCrowbar","object
 		};		
 	};
-
 	class Office: Residential {
 		minRoaming = 1;
 		maxRoaming = 3;
 		zombieClass[] = {"z_suit1","z_suit2"};
 	};
-//Supermarket
 	class Supermarket: Default {
 		lootChance = 0.6;
 		minRoaming = 2;
@@ -1580,35 +1435,23 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		zombieClass[] = {"z_sah_civilian1_shorts","z_sah_civilian2_shorts","z_sah_civilian3_shorts","z_sah_civilian4_shorts","z_sah_civilian5_shorts","z_sah_civilian6_shorts","z_sah_civilian7_shorts","z_sah_civilian1_pants","z_sah_civilian2_pants","z_sah_civilian3_pants","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_sah_civilian7_pants",};
 		itemType[] = {
-			//backpacks
 			{"DZ_ALICE_Pack_EP1","object"},
 			{"DZ_Assault_Pack_EP1","object"},
 			{"DZ_British_ACU","object"},
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
-			//class loot types
 			{"","food"},
 			{"","medical"},
 			{"","trash"},
-			//headgear
 			{"Binocular","weapon"},
-			//Inventory clothing items
-			//inventory crafting items
 			{"PartWoodPile","magazine"},
 			{"WeaponHolder_ItemTent","object"},
-			//inventory drink items
-			//inventory food items
-			//inventory medical items
-			//inventory trash"}
-			//inventory vehicle parts
-			//primary weapons
 			{"Crossbow_DZ","weapon"},
 			{"LeeEnfield","weapon"},
 			{"M1014","weapon"},
 			{"MR43","weapon"},
 			{"Remington870_lamp","weapon"},
 			{"Winchester1866","weapon"},
-			//secondary weapons
 			{"Colt1911","weapon"},
 			{"glock17_EP1","weapon"},
 			{"vil_bhp","weapon"},
@@ -1617,9 +1460,7 @@ class CfgBuildingLoot {
 			{"vil_USP","weapon"},
 			{"Makarov","weapon"},
 			{"revolver_EP1","weapon"},
-			//toolbelt crafting books
 			{"ItemCraftingBook","weapon"},
-			//toolbelt ONLY items
 			{"ItemCompass","generic"},
 			{"ItemFlashlight","generic"},
 			{"ItemKnife","generic"},
@@ -1628,35 +1469,23 @@ class CfgBuildingLoot {
 			{"ItemWatch","generic"}
 		};
 		itemChance[] =	{
-			//backpacks
 			0.04, //DZ_ALICE_Pack_EP1
 			0.06, //DZ_Assault_Pack_EP1
 			0.01, //DZ_British_ACU
 			0.08, //DZ_Czech_Vest_Puch
 			0.03, //DZ_TK_Assault_Pack_EP1
-			//class loot types
 			1.8, //"","food
 			0.03, //"","medical
 			4, //"","trash
-			//headgear
 			0.04, //Binocular
-			//Inventory clothing items
-			//inventory crafting items
 			0.01, //PartWoodPile
 			0.03, //WeaponHolder_ItemTent
-			//inventory drink items
-			//inventory food items
-			//inventory medical items
-			//inventory trash
-			//inventory vehicle parts
-			//primary weapons
 			0.01, //Crossbow_DZ
 			0.04, //LeeEnfield
 			0.08, //M1014
 			0.01, //MR43
 			0.01, //Remington870_lamp
 			0.05, //Winchester1866
-			//secondary weapons
 			0.04, //Colt1911
 			0.01, //glock17_EP1
 			0.04, //Makarov
@@ -1665,9 +1494,7 @@ class CfgBuildingLoot {
 			0.01,//vil_Glock
 			0.01,//vil_Glock_o
 			0.02,//vil_USP
-			//toolbelt crafting books
 			0.02, //ItemCraftingBook
-			//toolbelt ONLY items
 			0.04, //ItemCompass
 			0.01, //ItemFlashlight
 			0.04, //ItemKnife
