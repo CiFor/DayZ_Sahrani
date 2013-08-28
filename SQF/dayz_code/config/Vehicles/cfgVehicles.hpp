@@ -5486,7 +5486,6 @@ class CfgVehicles {
 		vehicleClass = "Survival";
 		transportMaxMagazines = 75;
 		transportMaxWeapons = 5;
-		transportMaxBackpacks = 5;
 	};
 
 	class Gunrack_DZ : Land_A_tent {
