@@ -95,7 +95,7 @@ if (!_isOk) then {
 
 	cutText [format[localize "str_build_01",_classname], "PLAIN DOWN"];
 
-	dayzPublishObj = [dayz_characterID,_object,[_dir,_location],"_classname"];
+	dayzPublishObj = [dayz_characterID,_object,[_dir,_location],_classname];
 	publicVariable "dayzPublishObj";
 	//["dayzPublishObj",[dayz_characterID,_object,[_dir,_location],_classname]] call callRpcProcedure;
 
