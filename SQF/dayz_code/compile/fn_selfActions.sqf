@@ -250,26 +250,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_studybody;
 		s_player_studybody = -1;
 	};
-	//Drink from Well
-	private["_playerPos","_canDrink","_objectsWell","_well","_wellPos"];
-	_playerPos = position player;
-	_objectsWell = 	nearestObjects [_playerPos, [], 4];
-	_canDrink = false;
-	{
-		_isWell = ["kasna",str(_x),false] call fnc_inString;
-		if(!_isWell) then { _isWell = ["pumpa",str(_x),false] call fnc_inString; };
-		if (_isWell) then {_canDrink = true};
-	} forEach _objectsWell;
-	
-	if(_canDrink) then {
-		if (s_player_drinkwater < 0) then {
-			s_player_drinkwater = player addAction ["Drink Water", "\z\addons\dayz_code\actions\drink_water.sqf",[], 1, false, true, "", ""];
-		};
-	} else {
-		player removeAction s_player_drinkwater;
-		s_player_drinkwater = -1;
-	};
-	
+
 	//Light Fire
 	_hasMatches = "ItemMatchbox" in items player;
 	_hasFlares = "HandRoadFlare" in magazines player;
@@ -338,8 +319,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_fillfuel = -1;
 	player removeAction s_player_studybody;
 	s_player_studybody = -1;
-	player removeAction s_player_drinkwater;
-	s_player_drinkwater = -1;
 	player removeAction s_player_light_fire;
 	s_player_light_fire = -1;
 	player removeAction s_player_ignite_storage;
@@ -366,4 +345,24 @@ if(_inVehicle) then { //Slow process, only run when needed
 		_vehicle removeAction s_player_refuel_vehicle;
 		s_player_refuel_vehicle = -1;
 	};
+};
+
+//Drink from Well
+private["_playerPos","_canDrink","_objectsWell","_well","_wellPos"];
+_playerPos = position player;
+_objectsWell = 	nearestObjects [_playerPos, [], 4];
+_canDrink = false;
+{
+	_isWell = ["kasna",str(_x),false] call fnc_inString;
+	if(!_isWell) then { _isWell = ["pumpa",str(_x),false] call fnc_inString; };
+	if (_isWell) then {_canDrink = true};
+} forEach _objectsWell;
+
+if(_canDrink) then {
+	if (s_player_drinkwater < 0) then {
+		s_player_drinkwater = player addAction ["Drink Water", "\z\addons\dayz_code\actions\drink_water.sqf",[], 1, false, true, "", ""];
+	};
+} else {
+	player removeAction s_player_drinkwater;
+	s_player_drinkwater = -1;
 };
