@@ -2,10 +2,12 @@ private ["_objects"];
 
 _objects = nearestObjects [getPosATL player, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "BoxStorage_DZ", "Gunrack_DZ", "WeaponCache_DZ"], 10];
 {
-	//["dayzUpdateVehicle",[_x,"gear"]] call callRpcProcedure;
-	dayzUpdateVehicle = [_x,"gear"];
-	publicVariable "dayzUpdateVehicle";
-	
+	if(_x getVariable["Sarge",0] != 1) then {
+		//["dayzUpdateVehicle",[_x,"gear"]] call callRpcProcedure;
+		dayzUpdateVehicle = [_x,"gear"];
+		publicVariable "dayzUpdateVehicle";
+	};
+
 } foreach _objects;
 
 private["_dialog","_magazineArray","_control","_item","_val","_max"];
