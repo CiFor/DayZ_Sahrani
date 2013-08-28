@@ -13,10 +13,22 @@ if (!_isOk) then {
 	_dir = getDir player;
 	player playActionNow "Medic";
 	sleep 1;
-	if ((_classname == "BoxStorage_DZ") || (_classname == "Gunrack_DZ")) then {
+	if (_classname == "BoxStorage_DZ") then {
 		player removeMagazine "PartWoodPile";
 		player removeMagazine "PartWoodPile";
 		player removeMagazine "PartWoodPile";
+		player removeMagazine "ItemNails";
+		player removeMagazine "ItemNails";
+		player removeMagazine "ItemNails";
+		player removeMagazine "ItemNails";
+		player removeMagazine "ItemNails";
+		player removeMagazine "ItemNails";
+	};
+	if (_classname == "Gunrack_DZ") then {
+		player removeMagazine "PartWoodPile";
+		player removeMagazine "PartWoodPile";
+		player removeMagazine "PartWoodPile";
+		player removeMagazine "ItemNails";
 		player removeMagazine "ItemNails";
 		player removeMagazine "ItemNails";
 	};
