@@ -13,13 +13,13 @@ switch (_iClass) do {
 		_weights = dayz_CLChances select _index;
 		_cntWeights = count _weights;
 		_qty = 0;
-		if( _iClass == "clothing" ) then {
-			_max = 1;
-		};
 		if( _iClass == "trash" ) then {
 			_max = ceil(random 3) + 1;
 		} else {
 			_max = ceil(random 2) + 1;
+		};
+		if( _iClass == "clothing" ) then {
+			_max = 1;
 		};
 		while {_qty < _max} do {
 			_tQty = 1;//round(random 1) + 1;
