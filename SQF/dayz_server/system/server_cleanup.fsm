@@ -236,21 +236,34 @@ class FSM
     class cleanup_objects
     {
       name = "cleanup_objects";
-      init = /*%FSM<STATEINIT""">*/"_missionObjs = allMissionObjects ""WeaponHolder"";" \n
+      init = /*%FSM<STATEINIT""">*/"//_missionObjs = allMissionObjects ""WeaponHolder"" + allMissionObjects ""WeaponHolderBase"" ;" \n
+       "_missionObjs = allMissionObjects ""ReammoBox"";" \n
        "_qty = count _missionObjs;" \n
        "" \n
-       "//diag_log (""CLEANUP: PERFORMING ITEM CLEANUP: TOTAL "" + str(_qty) + "" LOOT BAGS"");" \n
+       "diag_log (""CLEANUP:TOTAL "" + str(_qty) + "" LOOT BAGS"");" \n
+       "" \n
        "_delQty = 0;" \n
        "{" \n
-       "	if (local _x) then {" \n
-       "		_keep = _x getVariable [""permaLoot"",false];" \n
-       "                _nearby = {isPlayer _x} count (_x nearEntities [[""CAManBase""], 100]);" \n
-       "		if ( (!_keep) && (_nearby==0) ) then {" \n
-       "			deleteVehicle _x;" \n
-       "			_delQty = _delQty + 1;" \n
-       "		};" \n
+       "	_keep = _x getVariable [""permaLoot"",false];" \n
+       "	 _nearby = {isPlayer _x} count (_x nearEntities [[""CAManBase""], 250]);" \n
+       "" \n
+       "	_created = (_x getVariable [""created"",-0.1]);" \n
+       "" \n
+       "	if (_created == -0.1) then {" \n
+       "		_x setVariable [""created"",(DateToNumber date)];" \n
        "	};" \n
+       "" \n
+       "	_age = ((DateToNumber date) - _created) * 525948;" \n
+       "" \n
+       "//diag_log format [""Pile : %1, Created: %2, Age: %3"", _x,  _created, _age];" \n
+       "" \n
+       "	if ( (!_keep) && (_nearby==0) && (_age > 60) ) then {" \n
+       "		deleteVehicle _x;" \n
+       "		_delQty = _delQty + 1;" \n
+       "	};" \n
+       "" \n
        "} forEach _missionObjs;" \n
+       "" \n
        "if (_delQty > 0) then {" \n
        "	diag_log (""CLEANUP: DELETED "" + str(_delQty) + "" LOOT BAGS"");" \n
        "};" \n
