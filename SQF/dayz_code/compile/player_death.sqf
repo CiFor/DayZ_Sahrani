@@ -2,6 +2,7 @@
 if (deathHandled) exitWith {};
 
 deathHandled = true;
+disableUserInput true;
 //Death
 
 _body =		player;
@@ -149,3 +150,6 @@ playMusic "dayz_track_death_1";
 
 "dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
 "colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1],  [1, 1, 1, 1]];"colorCorrections" ppEffectCommit 5;
+sleep 3;
+disableUserInput false;
+endMission 'END1';
