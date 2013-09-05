@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_isHeadHit","_isMinor","_scale","_canHitFree"];
+private["_hasBPVest","_hasHelmet","_workingHelmet","_playerSkin","_isBodyHit","_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_isHeadHit","_isMinor","_scale","_canHitFree"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -20,6 +20,34 @@ _isPlayer = (isPlayer _source);
 _humanityHit = 0;
 _myKills = 0;
 _unitIsPlayer = _unit == player;
+_isBodyHit = (_hit == "body");
+_playerSkin = typeOf player;
+_workingHelmet = _unit getVariable ["workingHelmet",true];
+
+//All Skins with visible Helmet
+_hasHelmet = _playerSkin in ["Soldier1_DZ","SMD_RACS_Soldier","SMD_RACS_Soldier_Digi","SMD_RACS_SWAT","SMD_SPD_SWAT_BLACK","SMD_SPD_SWAT_BLACK_DIGI","SMD_SPD_BLUE",	"SMD_SPD_BLUE_DIGI","SMD_TIGER_CAMO","SMD_US_SpecOps","SMD_US_SpecOps_DIGI","SMD_US_SpecOps_MP_DIGI"]
+
+//All Skins with visible Bulletproof Vest
+_hasBPVest = _playerSkin in ["Soldier1_DZ","SMD_RACS_Soldier","SMD_RACS_Soldier_Digi","SMD_RACS_SWAT","SMD_SPD_SWAT_BLACK","SMD_SPD_SWAT_BLACK_DIGI","SMD_SPD_BLUE","SMD_SPD_BLUE_DIGI","SMD_TIGER_CAMO","SMD_US_SpecOps","SMD_US_SpecOps_DIGI","SMD_US_SpecOps_MP_DIGI","Camo1_DZ","Rocket_DZ","SMD_RACS_MP","SMD_RACS_MP_Tan","SMD_RACS_MP_Tan_Digi"];
+
+//Check for Headshot-Damage-Reduction
+if(_unitIsPlayer && _hasHelmet && _workingHelmet && _isHeadHit && _damage > 0.1) then {
+	//No Insta-Dead
+	_isHeadHit = false;
+	_hit = "body";
+	//Next hit will fully count (if source was a shot)
+	if(_isPlayer) then {
+		_unit setVariable ["workingHelmet", false];
+	};
+	//Reduce Head-Damage by 50%
+	_damage = _damage * 0.5;
+};
+
+//Check for Body-Damage-Reduction
+if(_unitIsPlayer && _hasBPVest && _isBodyHit && _damage > 0.1) then {
+	//Reduce Body-Damage by 30%
+	_damage = _damage * 0.3;
+};
 
 //Publish Damage
 	//player sidechat format["Processed damage for %1",_unit];
