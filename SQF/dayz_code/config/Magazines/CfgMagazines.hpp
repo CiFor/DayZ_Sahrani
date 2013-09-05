@@ -2525,6 +2525,18 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 				text="$STR_ACTIONS_DRINK";
 				script="spawn player_drink;";
 			};
+				class Craft0 {
+				text="Drug Water";
+				script="spawn player_Craft;";
+				use[]= {
+					{"ItemWaterbottle",1},
+					{"ItemPainkiller",1}
+				};
+				output[]= {
+					{"ItemWaterbottleDrugged","magazine",1}
+				};
+				crafting = 1;
+			}; //end SMD Addition
 		};
 	};
 	
