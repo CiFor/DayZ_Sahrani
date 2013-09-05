@@ -20,7 +20,7 @@ _text = getText (_config >> "displayName");
 
 if (!_hasToolBox) exitWith {cutText ["You need a toolbox !","PLAIN DOWN"]};
 if (!_hasEtool) exitWith {cutText ["You need an Entreching Tool !","PLAIN DOWN"]};
-if (_haswoodpile < 3 || _hasNails < 4 || _hasSandBag < 2) exitWith {cutText ["You need 2 wood piles,2 boxes of nails and 2 Sand Bags!","PLAIN DOWN"]};
+if (_haswoodpile < 2 || _hasNails < 2 || _hasSandBag < 2) exitWith {cutText ["You need 2 wood piles,2 boxes of nails and 2 Sand Bags!","PLAIN DOWN"]};
 
 //allowed
 if (["forest",dayz_surfaceType] call fnc_inString) then { _isOk = false; diag_log ("surface forest"); };
