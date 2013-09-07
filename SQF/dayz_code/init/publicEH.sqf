@@ -27,10 +27,10 @@ if (isServer) then {
 	"dayzDeath"			addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
 	"dayzDiscoAdd"		addPublicVariableEventHandler {dayz_disco set [count dayz_disco,(_this select 1)];};
 	"dayzDiscoRem"		addPublicVariableEventHandler {dayz_disco = dayz_disco - [(_this select 1)];};
-	"dayzPlayerSave"	addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync;};
+	"dayzPlayerSave"	addPublicVariableEventHandler {_id = (_this select 1) call server_playerSync;};
 	"dayzPublishObj"	addPublicVariableEventHandler {(_this select 1) call server_publishObj};
-	"dayzUpdateVehicle" addPublicVariableEventHandler {_id = (_this select 1) spawn server_updateObject};
-	"dayzLogin"			addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerLogin};
+	"dayzUpdateVehicle" addPublicVariableEventHandler {_id = (_this select 1) call server_updateObject};
+	"dayzLogin"			addPublicVariableEventHandler {_id = (_this select 1) call server_playerLogin};
 	"dayzLogin2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
 	"dayzPlayerMorph"	addPublicVariableEventHandler {(_this select 1) call server_playerMorph};
 	"dayzUpdate"		addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_processUpdate};
