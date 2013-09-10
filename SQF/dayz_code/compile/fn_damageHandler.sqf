@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_isHeadHit","_isMinor","_scale","_canHitFree"];
+private["_hasBPVest","_hasHelmet","_headProtection","_isBodyHit","_playerModel","_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_isHeadHit","_isMinor","_scale","_canHitFree"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -20,6 +20,62 @@ _isPlayer = (isPlayer _source);
 _humanityHit = 0;
 _myKills = 0;
 _unitIsPlayer = _unit == player;
+//Stuff for the amored Skins
+_playerModel = typeOf player;
+_isBodyHit = (_hit == "body");
+_headProtection = _unit getVariable ["headProtection", true];
+
+//All Models with visual Helmet
+_hasHelmet = _playerModel in
+									[
+										"Soldier1_DZ",
+										"SMD_RACS_Soldier",
+										"SMD_RACS_Soldier_Digi",
+										"SMD_RACS_SWAT",
+										"SMD_SPD_SWAT_BLACK",
+										"SMD_SPD_SWAT_BLACK_DIGI",
+										"SMD_SPD_BLUE",
+										"SMD_SPD_BLUE_DIGI",
+										"SMD_TIGER_CAMO",
+										"SMD_US_SpecOps",
+										"SMD_US_SpecOps_DIGI",
+										"SMD_US_SpecOps_MP_DIGI"
+									];
+
+//All Models with visual (Bulletproof) Vest
+_hasBPVest = _playerModel in
+									[
+										"Soldier1_DZ",
+										"SMD_RACS_Soldier",
+										"SMD_RACS_Soldier_Digi",
+										"SMD_RACS_SWAT",
+										"SMD_SPD_SWAT_BLACK",
+										"SMD_SPD_SWAT_BLACK_DIGI",
+										"SMD_SPD_BLUE",
+										"SMD_SPD_BLUE_DIGI",
+										"SMD_TIGER_CAMO",
+										"SMD_US_SpecOps",
+										"SMD_US_SpecOps_DIGI",
+										"SMD_US_SpecOps_MP_DIGI",
+										"Camo1_DZ",
+										"Rocket_DZ",
+										"SMD_RACS_MP",
+										"SMD_RACS_MP_Tan",
+										"SMD_RACS_MP_Tan_Digi"
+									];
+
+if(_isHeadHit && _hasHelmet && _headProtection && _damage > 0.1) then {
+	_hit = "body";
+	_isHeadHit = false;
+	_damage = _damage * 0.5;
+	if(_isPlayer) then {
+		_unit setVariable ["headProtection", false];
+	};
+};
+
+if(_isBodyHit && _hasBPVest && _damage > 0.1) then {
+	_damage = _damage * 0.5;
+};
 
 //Publish Damage
 	//player sidechat format["Processed damage for %1",_unit];
