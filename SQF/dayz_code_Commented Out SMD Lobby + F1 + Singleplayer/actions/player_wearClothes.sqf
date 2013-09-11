@@ -2,7 +2,7 @@
 _item spawn player_wearClothes;
 TODO: female
 */
-private["_item","_isFemale","_itemNew","_item","_onLadder","_model","_hasclothesitem","_config","_text"];
+private["_item","_isFemale","_itemNew","_item","_onLadder","_model","_hasclothesitem","_config","_text","_hasBPVest","_hasHelmet"];
 _item = _this;
 call gear_ui_init;
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -173,6 +173,53 @@ switch (_item) do {
 			_model = "BanditSkinW_DZ";
 		};
 	};
+};
+
+//All Models with visual Helmet
+_hasHelmet = _model in
+									[
+										"Soldier1_DZ",
+										"SMD_RACS_Soldier",
+										"SMD_RACS_Soldier_Digi",
+										"SMD_RACS_SWAT",
+										"SMD_SPD_SWAT_BLACK",
+										"SMD_SPD_SWAT_BLACK_DIGI",
+										"SMD_SPD_BLUE",
+										"SMD_SPD_BLUE_DIGI",
+										"SMD_TIGER_CAMO",
+										"SMD_US_SpecOps",
+										"SMD_US_SpecOps_DIGI",
+										"SMD_US_SpecOps_MP_DIGI"
+									];
+
+//All Models with visual (Bulletproof) Vest
+_hasBPVest = _model in
+									[
+										"Soldier1_DZ",
+										"SMD_RACS_Soldier",
+										"SMD_RACS_Soldier_Digi",
+										"SMD_RACS_SWAT",
+										"SMD_SPD_SWAT_BLACK",
+										"SMD_SPD_SWAT_BLACK_DIGI",
+										"SMD_SPD_BLUE",
+										"SMD_SPD_BLUE_DIGI",
+										"SMD_TIGER_CAMO",
+										"SMD_US_SpecOps",
+										"SMD_US_SpecOps_DIGI",
+										"SMD_US_SpecOps_MP_DIGI",
+										"Camo1_DZ",
+										"Rocket_DZ",
+										"SMD_RACS_MP",
+										"SMD_RACS_MP_Tan",
+										"SMD_RACS_MP_Tan_Digi"
+									];
+
+if(_hasBPVest && _hasHelmet) then {
+	cutText ["Your new Clothes lower your Head & Body-Damage by 30%", "PLAIN DOWN"];
+};
+
+if(_hasBPVest && !_hasHelmet) then {
+	cutText ["Your new Clothes lower your Body-Damage by 30%", "PLAIN DOWN"];
 };
 
 if (_model != _myModel) then {

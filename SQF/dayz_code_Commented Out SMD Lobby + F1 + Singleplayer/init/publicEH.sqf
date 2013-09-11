@@ -27,10 +27,10 @@ if (isServer) then {
 	"dayzDeath"			addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
 	"dayzDiscoAdd"		addPublicVariableEventHandler {dayz_disco set [count dayz_disco,(_this select 1)];};
 	"dayzDiscoRem"		addPublicVariableEventHandler {dayz_disco = dayz_disco - [(_this select 1)];};
-	"dayzPlayerSave"	addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync;};
+	"dayzPlayerSave"	addPublicVariableEventHandler {_id = (_this select 1) call server_playerSync;};
 	"dayzPublishObj"	addPublicVariableEventHandler {(_this select 1) call server_publishObj};
-	"dayzUpdateVehicle" addPublicVariableEventHandler {_id = (_this select 1) spawn server_updateObject};
-	"dayzLogin"			addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerLogin};
+	"dayzUpdateVehicle" addPublicVariableEventHandler {_id = (_this select 1) call server_updateObject};
+	"dayzLogin"			addPublicVariableEventHandler {_id = (_this select 1) call server_playerLogin};
 	"dayzLogin2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
 	"dayzPlayerMorph"	addPublicVariableEventHandler {(_this select 1) call server_playerMorph};
 	"dayzUpdate"		addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_processUpdate};
@@ -38,7 +38,7 @@ if (isServer) then {
 	"dayzCharSave"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync};
 	//Checking
 	"dayzDeleteObj"		addPublicVariableEventHandler {(_this select 1) spawn server_deleteObj};
-	//"atp"				addPublicVariableEventHandler { _array = _this select 1; diag_log format["TELEPORT REVERT: %1 (%2) from %3 to %4 now at %5", _array select 0, _array select 1, _array select 2, _array select 3, _array select 4];};
+	"dayzCarBomb"	addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\actions\detonate_bomb.sqf";};
 };
 
 //Client only

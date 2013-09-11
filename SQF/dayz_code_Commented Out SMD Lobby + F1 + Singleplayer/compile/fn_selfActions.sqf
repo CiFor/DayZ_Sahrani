@@ -292,6 +292,17 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_extinguish_fire;
 		s_player_extinguish_fire = -1;
 	};
+
+	//Carbomb
+	_hasCarBomb = "ItemCarBomb" in magazines player;
+	if (((cursorTarget isKindOf "Car") || (cursorTarget isKindOf "Air") || (cursorTarget isKindOf "Motorcycle")) and _hasCarBomb and _canDo) then {
+		if (s_player_attach_bomb < 0) then {
+			s_player_attach_bomb = player addAction ["Attach Carbomb", "\z\addons\dayz_code\actions\player_attach_bomb.sqf",cursorTarget, 3, true, true, "", ""];
+		};
+	} else {
+		player removeAction s_player_attach_bomb;
+		s_player_attach_bomb = -1;
+	};
 } else {
 	//Engineering
 	{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
@@ -325,6 +336,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_ignite_storage = -1;
 	player removeAction s_player_extinguish_fire;
 	s_player_extinguish_fire = -1;
+	player removeAction s_player_attach_bomb;
+	s_player_attach_bomb = -1;
 };
 
 //Refuel Vechiles
