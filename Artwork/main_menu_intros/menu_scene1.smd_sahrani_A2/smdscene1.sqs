@@ -1,0 +1,17 @@
+
+titlecut [" ","BLACK IN",1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+
+;comment "0:03:56";
+_camera camPrepareTarget [108296.37,43091.10,-159.45];
+_camera camPreparePos [13062.67,12587.45,0.96];
+_camera camPrepareFOV 0.780;
+_camera camCommitPrepared 0
+
+~300
+
+_camera cameraeffect ["terminate","back"]
+camdestroy _camera
+end1=true;
+exit;

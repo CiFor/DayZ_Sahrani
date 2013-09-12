@@ -1,0 +1,371 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"smd_sahrani_A2"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a2"
+	};
+	randomSeed=5985799;
+	class Intel
+	{
+		briefingName="menu_scene";
+		startWeather=0;
+		forecastWeather=0;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"smd_sahrani_A2",
+		"CAWheeled_Offroad",
+		"CAWheeled",
+		"cacharacters2",
+		"cawheeled2_m1114_armored"
+	};
+	addOnsAuto[]=
+	{
+		"CAWheeled_Offroad",
+		"CAWheeled",
+		"cacharacters2",
+		"cawheeled2_m1114_armored",
+		"smd_sahrani_a2"
+	};
+	randomSeed=12724184;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+	class Groups
+	{
+		items=5;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13081.092,99.527534,12614.447};
+					azimut=-237.20599;
+					special="FLY";
+					id=0;
+					side="EAST";
+					vehicle="Offroad_DSHKM_INS";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13088.536,100.9717,12599.545};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13066.918,102.70038,12586.187};
+					azimut=-295.26273;
+					special="FLY";
+					id=1;
+					side="EAST";
+					vehicle="UAZ_SPG9_INS";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={13076.839,100.46349,12605.758};
+					azimut=152.6636;
+					id=2;
+					side="EAST";
+					vehicle="INS_Soldier_CO";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item1
+				{
+					position[]={13071.876,100.08369,12608.827};
+					azimut=152.6636;
+					id=3;
+					side="EAST";
+					vehicle="INS_Soldier_AR";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item2
+				{
+					position[]={13070.104,100.26285,12607.912};
+					azimut=152.6636;
+					id=4;
+					side="EAST";
+					vehicle="INS_Soldier_GL";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item3
+				{
+					position[]={13068.335,100.77516,12606.982};
+					azimut=152.6636;
+					id=5;
+					side="EAST";
+					vehicle="INS_Soldier_AT";
+					skill=0.2;
+				};
+				class Item4
+				{
+					position[]={13066.546,101.3093,12606.063};
+					azimut=152.6636;
+					id=6;
+					side="EAST";
+					vehicle="INS_Soldier_2";
+					skill=0.2;
+				};
+				class Item5
+				{
+					position[]={13064.773,101.82786,12605.147};
+					azimut=152.6636;
+					id=7;
+					side="EAST";
+					vehicle="INS_Soldier_AR";
+					skill=0.2;
+				};
+				class Item6
+				{
+					position[]={13062.991,101.9609,12604.226};
+					azimut=152.6636;
+					id=8;
+					side="EAST";
+					vehicle="INS_Soldier_1";
+					skill=0.2;
+				};
+				class Item7
+				{
+					position[]={13068.303,101.01109,12605.523};
+					azimut=152.6636;
+					id=9;
+					side="EAST";
+					vehicle="INS_Soldier_2";
+					skill=0.2;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13069.898,101.03873,12603.132};
+					speed="FULL";
+					combat="COMBAT";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item3
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13061.179,103.30946,12586.497};
+					azimut=-300.48199;
+					special="FLY";
+					id=10;
+					side="CIV";
+					vehicle="Citizen1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="this exec ""smdscene1.sqs"";";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={13322.859,73.065826,12609.854};
+					azimut=-78.427803;
+					special="NONE";
+					id=11;
+					side="WEST";
+					vehicle="HMMWV_M2";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item1
+				{
+					position[]={13338.515,71.94075,12604.409};
+					azimut=-78.427803;
+					special="NONE";
+					id=12;
+					side="WEST";
+					vehicle="HMMWV_Armored";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item2
+				{
+					position[]={13347.778,71.419815,12601.421};
+					azimut=-78.427803;
+					special="NONE";
+					id=13;
+					side="WEST";
+					vehicle="HMMWV_Armored";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item3
+				{
+					position[]={13358.532,70.803047,12597.878};
+					azimut=-78.427803;
+					special="NONE";
+					id=14;
+					side="WEST";
+					vehicle="HMMWV_M2";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={12785.656,133.62851,12685.291};
+					speed="FULL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={12568.009,167.66393,12689.894};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=2;
+		class Item0
+		{
+			position[]={13064.775,102.81573,12587.448};
+			a=10;
+			b=10;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+				track="Track06_Abandoned_Battlespace";
+			};
+		};
+		class Item1
+		{
+			position[]={13063.098,102.92838,12588.206};
+			a=10;
+			b=10;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+				soundDet="Wind3_EP1";
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"smd_sahrani_A2"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a2"
+	};
+	randomSeed=14500923;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"smd_sahrani_A2"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a2"
+	};
+	randomSeed=12657593;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
