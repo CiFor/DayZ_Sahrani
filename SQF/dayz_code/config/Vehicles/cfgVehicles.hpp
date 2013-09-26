@@ -112,6 +112,8 @@ class CfgVehicles {
 	{
 		scope = 2;
 		model = "\sara_civilians\civil_1_tshirt.p3d";
+		vehicleClass = "S_Zombie1_P";
+		displayName = "S_Zombie1_P";
 		class Wounds
 		{
 			tex[] = {};
@@ -122,31 +124,38 @@ class CfgVehicles {
 	class sah_civilian2_pants: sah_civilian1_pants
 	{
 		model = "\sara_civilians\civil_2_tshirt.p3d";
+		displayName = "S_Zombie2_P";
 	};
 	class sah_civilian3_pants: sah_civilian1_pants
 	{
 		model = "\sara_civilians\civil_3_tshirt.p3d";
+		displayName = "S_Zombie3_P";
 	};
 	class sah_civilian4_pants: sah_civilian1_pants
 	{
 		model = "\sara_civilians\civil_4_tshirt.p3d";
+		displayName = "S_Zombie4_P";
 	};
 	class sah_civilian5_pants: sah_civilian1_pants
 	{
 		model = "\sara_civilians\civil_5_tshirt.p3d";
+		displayName = "S_Zombie5_P";
 	};
 	class sah_civilian6_pants: sah_civilian1_pants
 	{
 		model = "\sara_civilians\civil_6_tshirt.p3d";
+		displayName = "S_Zombie6_P";
 	};
 	class sah_civilian7_pants: sah_civilian1_pants
 	{
 		model = "\sara_civilians\civil_7_tshirt.p3d";
+		displayName = "S_Zombie7_P";
 	};
 	class sah_civilian1_shorts: Survivor2_DZ
 	{
 		scope = 2;
 		model = "\sara_civilians\civil_1_tshirt_shorts.p3d";
+		displayName = "S_Zombie1_S";
 		class Wounds
 		{
 			tex[] = {};
