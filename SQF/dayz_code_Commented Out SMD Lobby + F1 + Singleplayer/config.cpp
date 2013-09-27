@@ -37,7 +37,7 @@ class CfgMods
 	{
 		dir = "DayZ_Sahrani";
 		name = "DayZ Sahrani";
-		picture = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
+		picture = "z\addons\dayz_code\gui\dayz_sahrani_logo_ca.paa";
 		hidePicture = 0;
 		hideName = 0;
 		action = "";
@@ -49,7 +49,7 @@ class CfgMods
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"Chernarus"};
+		requiredAddons[] = {"smd_sahrani_a2"};
 	};
 };
 

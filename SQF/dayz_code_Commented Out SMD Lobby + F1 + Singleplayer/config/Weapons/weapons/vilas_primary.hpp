@@ -655,18 +655,18 @@
 		Vilas Western Weapons Sniper/Marksman Rifles
 	**********************************************************/
 
-	class vil_DRM_BASE : DMR {
+	class vil_DMR_BASE : DMR {
 		weaponInfoType = "RscWeaponZeroing";
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 		discreteDistanceInitIndex = 2;
 	};
 
-	class vil_SR25 : vil_DRM_BASE {
+	class vil_SR25 : vil_DMR_BASE {
 		scope = public;
 		model = "\vilas_wwp\vil_sr25";
 		displayName = $STR_VIL_SR25;
 		picture = "\vilas_wwp\ico\w_vil_sr25_ca.paa";
-		magazines[] = {"20Rnd_762x51_DMR"};
+		magazines[] = {"20Rnd_762x51_B_SCAR"};
 		visionMode[] = {"Normal"};
 		modelOptics = "\ca\weapons\2Dscope_MilDot_9";
 		class OpticsModes {
@@ -738,6 +738,7 @@
 		scope = public;
 		model = "\vilas_wwp\vil_sr25sd";
 		displayName = "SR25SD";
+		magazines[] = {"20Rnd_762x51_SB_SCAR"};
 		picture = "\vilas_wwp\ico\w_vil_sr25_sd_ca.paa";
 
 
@@ -754,6 +755,7 @@
 		model = "\vilas_wwp\vil_m110sd";
 		displayName = $STR_VIL_M110_SD;
 		picture = "\vilas_wwp\ico\w_vil_m110_sd_ca.paa";
+		magazines[] = {"20Rnd_762x51_SB_SCAR"};
 		class Armory {
 			description = $STR_VIL_M110_LIB;
 			author = $STR_AUTHOR_VILAS;

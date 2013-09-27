@@ -15,8 +15,8 @@ diag_log ("Build Crate: " + str(_isok) );
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
-if (!_hasToolBox) exitWith {cutText ["You need a toolbox !","PLAIN DOWN"]};
-if (_haswoodpile < 4 || _hasNails < 4) exitWith {cutText ["You need 4 wood piles and 4 boxes of nails !","PLAIN DOWN"]};
+if (!_hasToolBox) exitWith {cutText ["\n\nYou need a toolbox !","PLAIN DOWN"]};
+if (_haswoodpile < 4 || _hasNails < 4) exitWith {cutText ["\n\nYou need 4 wood piles and 4 boxes of nails !","PLAIN DOWN"]};
 
 //allowed
 if (["forest",dayz_surfaceType] call fnc_inString) then { _isOk = false; diag_log ("surface forest"); };
@@ -36,6 +36,6 @@ if (!_isOk) then {
 	_handle = player addAction ["Cancel Building", "\z\addons\dayz_code\actions\build\cancel.sqf",[_objectTemp,_classname], 4, true, true];
 	s_player_craftActions set [count s_player_craftActions,_handle];
 } else {
-	cutText ["You cannot build here !", "PLAIN DOWN"];
+	cutText ["\n\nYou cannot build here !", "PLAIN DOWN"];
 };
 

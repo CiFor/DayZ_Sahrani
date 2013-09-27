@@ -3,7 +3,7 @@ class CfgTownGeneratorSara {
 		position[] = {9084.665, 15606.263};
 		size = 4250;
 
-		class Object0 {
+		/*class Object0 {
 			Type="Land_Mil_Barracks";
 			position[] = {8136.9282, 17021.492, 0.051464468};
 			direction = 25.480267;
@@ -50,61 +50,61 @@ class CfgTownGeneratorSara {
 			position[] = {8145.5571, 17039.877, 0.051464468};
 			direction = 25.595608;
 			SetZUp = 1;
-		};
-		class Object8 {
+		};*/
+		class Object0 { ////New Addition to map
 			Type="Land_Ind_Workshop01_L";
 			position[] = {8203.2783, 16998.881, -4.9591064e-005};
 			direction = 207.50302;
 			SetZUp = 1;
 		};
-		class Object9 {
+		class Object1 { ////New Addition to map
 			Type="Land_Ind_Workshop01_01";
 			position[] = {8177.0244, 16941.336, -0.01};
 			direction = 27.142403;
 			SetZUp = 1;
 		};
-		class Object10 {
+		class Object2 { ////New Addition to map
 			Type="Land_Hlidac_budka";
 			position[] = {8195.9395, 17054.516, -0.18657924};
 			direction = -67.749222;
 			SetZUp = 1;
 		};
-		class Object11 {
+		/*class Object11 { ////Blown Up Church needs replaceing
 			Type="Land_Church_05R";
 			position[] = {11383.008, 14389.158, 0.071709715};
 			direction = 163.41272;
 			SetZUp = 1;
 		};
-		class Object12 {
+		class Object12 { ////Residential needs replaceing, we used Dum_mesto2 for sake of ease, better match needs foundation
 			Type="Land_dum_mesto2";
 			position[] = {7756.0215, 15795.915, 0.15107772};
 			direction = 89.105179;
 			SetZUp = 1;
-		};
-		class Object13 {
+		};*/
+		class Object3 { ////New Addition to map
 			Type="Land_dum_mesto2";
 			position[] = {7731.9771, 15907.037, 0.24343386};
 			direction = 86.993599;
 			SetZUp = 1;
 		};
-		class Object14 {
+		/*class Object14 { ////Residential needs replaceing, we used Dum_mesto2 for sake of ease, better match needs foundation
 			Type="Land_dum_mesto2";
 			position[] = {7578.7363, 15651.114, 0.19101964};
 			direction = 73.088074;
 			SetZUp = 1;
 		};
-		class Object15 {
+		class Object15 { ////A1 Pub No Longer Needed
 			Type="Land_A_Pub_01";
 			position[] = {12545.523, 13417.728, -0.071453176};
 			direction = -9.4623184;
 			SetZUp = 1;
-		};
+		};*/
 	};
 	class EMLZ2 {
 		position[] = {13508.527, 16287.334};
 		size = 3000;
 
-		class Object0 {
+		/*class Object0 {
 			Type="Land_Mil_Barracks_i";
 			position[] = {12097.747, 17527.721, 0};
 			direction = -91.046577;
@@ -127,13 +127,13 @@ class CfgTownGeneratorSara {
 			position[] = {12576.253, 14966.313, 0};
 			direction = 0.01;
 			SetZUp = 1;
-		};
-		class Object4 {
+		};*/
+		class Object4 {//// Added A2 Pub Works in smd_sahrani_a2
 			Type="Land_A_Pub_01";
 			position[] = {12599.477, 15024.15, -0.094768927};
 			direction = -0.22539687;
 			SetZUp = 1;
-		};
+		};/*
 		class Object5 {
 			Type="Land_a_stationhouse";
 			position[] = {12240.402, 17655.639, 0.085686944};
@@ -295,7 +295,7 @@ class CfgTownGeneratorSara {
 			position[] = {12250.265, 17738.094, -0.058267947};
 			direction = 180.64967;
 			SetZUp = 1;
-		};
+		};*/
 		class Object32 {
 			Type="HeliH";
 			position[] = {12205.919, 17747.469, -0.058267947};
@@ -319,7 +319,7 @@ class CfgTownGeneratorSara {
 			position[] = {12198.721, 17758.707, 0.017724983};
 			direction = 0.01;
 			SetZUp = 1;
-		};
+		};/*
 		class Object36 {
 			Type="Land_Mil_Barracks";
 			position[] = {12105.382, 17761.873, 0.018946506};
@@ -349,7 +349,7 @@ class CfgTownGeneratorSara {
 			position[] = {12066.741, 17671.254, -0.0032323832};
 			direction = 0.12843798;
 			SetZUp = 1;
-		};
+		};*/
 		class Object41 {
 			Type="Land_Shed_Ind02";
 			position[] = {12522.335, 17701.549, -0.058267947};
@@ -368,7 +368,7 @@ class CfgTownGeneratorSara {
 			direction = -78.659843;
 			SetZUp = 1;
 		};
-		class Object44 {
+		/*class Object44 {
 			Type="Land_Ind_Workshop01_02";
 			position[] = {11871.147, 15433.208, -0.021213137};
 			direction = -77.484657;
@@ -427,7 +427,7 @@ class CfgTownGeneratorSara {
 			position[] = {11947.878, 15317.584, 0.015664864};
 			direction = 190.27579;
 			SetZUp = 1;
-		};
+		};*/
 		class Object54 {
 			Type="Land_Ind_Workshop01_04";
 			position[] = {11956.812, 15374.776, -0.058267947};

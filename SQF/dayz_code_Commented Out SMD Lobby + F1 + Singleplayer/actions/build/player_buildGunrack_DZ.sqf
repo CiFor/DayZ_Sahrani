@@ -17,8 +17,8 @@ diag_log ("Build Gun Rack: " + str(_isok) );
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
-if (!_hasToolBox) exitWith {cutText ["You need a toolbox !","PLAIN DOWN"]};
-if (_haswoodpile < 3 || _hasNails < 3) exitWith {cutText ["You need 3 wood piles and 3 boxes of nails !","PLAIN DOWN"]};
+if (!_hasToolBox) exitWith {cutText ["\n\nYou need a toolbox !","PLAIN DOWN"]};
+if (_haswoodpile < 3 || _hasNails < 3) exitWith {cutText ["\n\nYou need 3 wood piles and 3 boxes of nails !","PLAIN DOWN"]};
 
 
 //allowed
@@ -41,6 +41,6 @@ if (!_isOk) then {
 	_handle = player addAction ["Cancel Building", "\z\addons\dayz_code\actions\build\cancel.sqf",[_objectTemp,_classname], 4, true, true];
 	s_player_craftActions set [count s_player_craftActions,_handle];
 } else {
-	cutText ["You cannot build here !", "PLAIN DOWN"];
+	cutText ["\n\nYou cannot build here !", "PLAIN DOWN"];
 };
 
