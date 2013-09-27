@@ -114,5 +114,5 @@ if (!_isOk) then {
 	sleep 2;
 	player allowDamage true;
 } else {
-	cutText ["You cannot build here !", "PLAIN DOWN"];
+	cutText ["\n\nYou cannot build here !", "PLAIN DOWN"];
 };

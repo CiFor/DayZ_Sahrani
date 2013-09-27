@@ -14,9 +14,9 @@ _hasToolBox = 	"ItemToolbox" in items player;
 diag_log ("Build Crate: " + str(_isok) );
 _classname = "BagFenceLong_DZ";
 
-if (!_hasToolBox) exitWith {cutText ["You need a toolbox !","PLAIN DOWN"]};
-if (!_hasEtool) exitWith {cutText ["You need an Entreching Tool !","PLAIN DOWN"]};
-if (_hasSandBag < 3) exitWith {cutText ["You need 3 Sand Bags !","PLAIN DOWN"]};
+if (!_hasToolBox) exitWith {cutText ["\n\nYou need a toolbox !","PLAIN DOWN"]};
+if (!_hasEtool) exitWith {cutText ["\n\nYou need an Entreching Tool !","PLAIN DOWN"]};
+if (_hasSandBag < 3) exitWith {cutText ["\n\nYou need 3 Sand Bags !","PLAIN DOWN"]};
 
 
 //allowed
@@ -37,6 +37,6 @@ if (!_isOk) then {
 	_handle = player addAction ["Cancel Building", "\z\addons\dayz_code\actions\build\cancel.sqf",[_objectTemp,_classname], 4, true, true];
 	s_player_craftActions set [count s_player_craftActions,_handle];
 } else {
-	cutText ["You cannot build here !", "PLAIN DOWN"];
+	cutText ["\n\nYou cannot build here !", "PLAIN DOWN"];
 };
 
