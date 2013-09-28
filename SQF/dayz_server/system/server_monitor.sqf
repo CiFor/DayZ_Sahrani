@@ -236,8 +236,8 @@ allowConnection = true;
 
 //Start Crashspawner-Logic
 nul = [
-				3,			//Number of the guaranteed Loot-Piles at the Crashside
-				3,			//Number of the random Loot-Piles at the Crashside 3+(1,2,3 or 4)
+				3,			//Number of the guaranteed Loot-Piles at the Crashsite
+				3,			//Number of the random Loot-Piles at the Crashsite 3+(1,2,3 or 4)
 				(20*60),		//Fixed-Time (in seconds) between each start of a new Chopper
 				(10*60),		//Random time (in seconds) added between each start of a new Chopper
 				80,			//Spawnchance of the Heli (100 will spawn all possible Choppers, 50 only 50% of them)

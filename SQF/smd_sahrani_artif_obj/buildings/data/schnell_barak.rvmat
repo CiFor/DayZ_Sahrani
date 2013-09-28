@@ -5,7 +5,7 @@
 
 #define _ARMA_
 
-//Class buildings : Data\schnell01.rvmat{
+//Class smd_sahrani_artif_obj : buildings\data\schnell_barak.rvmat{
 ambient[] = {1.0,1.0,1.0,1.0};
 diffuse[] = {1.0,1.0,1.0,1.0};
 forcedDiffuse[] = {0.0,0.0,0.0,0.0};

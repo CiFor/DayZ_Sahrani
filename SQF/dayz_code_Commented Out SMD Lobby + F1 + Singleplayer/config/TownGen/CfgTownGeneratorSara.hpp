@@ -428,91 +428,91 @@ class CfgTownGeneratorSara {
 			direction = 190.27579;
 			SetZUp = 1;
 		};*/
-		class Object54 {
+		class Object54 { ////Pesadas
 			Type="Land_Ind_Workshop01_04";
 			position[] = {11956.812, 15374.776, -0.058267947};
 			direction = -78.659843;
 			SetZUp = 1;
 		};
-		class Object55 {
+		class Object55 { ////Eponia
 			Type="Land_Ind_Workshop01_01";
 			position[] = {12643.664, 15012.067, -0.058020923};
 			direction = 23.152876;
 			SetZUp = 1;
 		};
-		class Object56 {
+		class Object56 { ////Eponia
 			Type="Land_Ind_Workshop01_L";
 			position[] = {12373.518, 15002.837, 0.0075658699};
 			direction = 180.52242;
 			SetZUp = 1;
 		};
-		class Object57 {
+		class Object57 { ////Eponia
 			Type="Land_Ind_Workshop01_02";
 			position[] = {12354.326, 14980.562, 0.079838082};
 			direction = -90.072746;
 			SetZUp = 1;
 		};
-		class Object58 {
+		class Object58 { ////Eponia
 			Type="Land_A_GeneralStore_01";
 			position[] = {12505.943, 14898.862, -0.11913754};
 			direction = 3.1111417;
 			SetZUp = 1;
 		};
-		class Object59 {
+		class Object59 { ////Eponia - Needs to be changed / replaced
 			Type="Land_HouseV_1I4";
 			position[] = {12392.339, 14874.766, 0.41723973};
 			direction = 119.51625;
 			SetZUp = 1;
 		};
-		class Object60 {
+		class Object60 { ////Eponia
 			Type="Land_Barn_W_02";
 			position[] = {12267.593, 14943.355, 0.00019836426};
 			direction = 0.65209574;
 			SetZUp = 1;
 		};
-		class Object61 {
+		class Object61 { ////Eponia
 			Type="Land_Barn_W_01";
 			position[] = {12301.173, 14919.947, -0.058267947};
 			direction = -0.044560127;
 			SetZUp = 1;
 		};
-		class Object62 {
+		class Object62 { ////Eponia
 			Type="Land_a_stationhouse";
 			position[] = {12754.386, 15012.405, 0.18223022};
 			direction = -9.2709045;
 			SetZUp = 1;
 		};
-		class Object63 {
+		class Object63 { ////Roca del Dror
 			Type="Land_Ind_Workshop01_04";
 			position[] = {13990.789, 16442.723, -0.058267947};
 			direction = -178.7836;
 			SetZUp = 1;
 		};
-		class Object64 {
+		class Object64 { ////Roca del Dror
 			Type="Land_Ind_Workshop01_01";
 			position[] = {14007.982, 16417.313, -0.036741082};
 			direction = -170.46751;
 			SetZUp = 1;
 		};
-		class Object65 {
+		class Object65 {  /////Eponia Needs to be changed / replaced
 			Type="Land_A_FuelStation_Build";
 			position[] = {12572.716, 15151.308, 0};
 			direction = -51.519573;
 			SetZUp = 1;
 		};
-		class Object66 {
+		class Object66 { /////Eponia  Needs to be changed / replaced
 			Type="Land_Ind_TankSmall2";
 			position[] = {12569.632, 15148.051, -0.085158229};
 			direction = -141.53276;
 			SetZUp = 1;
 		};
-		class Object67 {
+		class Object67 { /////Eponia  Needs to be changed / replaced
 			Type="Land_A_FuelStation_Feed";
 			position[] = {12577.834, 15151.841, -0.054911073};
 			direction = -230.25858;
 			SetZUp = 1;
 		};
-		class Object68 {
+		class Object68 { /////Eponia  
 			Type="Land_Ind_Workshop01_02";
 			position[] = {12730.648, 15095.472, 0.073698193};
 			direction = -150.61859;
@@ -523,19 +523,19 @@ class CfgTownGeneratorSara {
 		position[] = {17841.162, 13019.341};
 		size = 2750;
 
-		class Object0 {
+		class Object0 { ////masbete
 			Type="Land_A_GeneralStore_01a";
 			position[] = {17374.699, 14197.158, -0.0001220};
 			direction = -1.1227432;
 			SetZUp = 1;
 		};
-		class Object1 {
+		class Object1 { ////masbete
 			Type="Land_A_Hospital";
 			position[] = {17105.551, 14340.854, -0.19380733};
 			direction = -8.8722639;
 			SetZUp = 1;
 		};
-		class Object2 {
+		/*class Object2 {
 			Type="Land_Mil_Barracks_i";
 			position[] = {17800.656, 12404.806, -0.0001220};
 			direction = -179.72816;
@@ -606,7 +606,7 @@ class CfgTownGeneratorSara {
 			position[] = {17823.221, 12368.883, 0.018495725};
 			direction = 179.87558;
 			SetZUp = 1;
-		};
+		};*/
 		class Object14 {
 			Type="Land_Mil_ControlTower";
 			position[] = {19301.592, 13900.779, -0.0001220};
@@ -649,12 +649,12 @@ class CfgTownGeneratorSara {
 			direction = 131.23599;
 			SetZUp = 1;
 		};
-		class Object21 {
+		/*class Object21 {
 			Type="Land_Mil_Barracks_i";
 			position[] = {19159.248, 13950.89, -0.027695656};
 			direction = -408.3688;
 			SetZUp = 1;
-		};
+		};*/
 		class Object22 {
 			Type="Land_Mil_Barracks";
 			position[] = {19227.32, 14051.441, 0.062514454};
@@ -697,18 +697,18 @@ class CfgTownGeneratorSara {
 			direction = -178.7836;
 			SetZUp = 1;
 		};
-		class Object29 {
+		/*class Object29 {
 			Type="Land_stodola_open";
 			position[] = {17762.678, 12142.111, -0.050569069};
 			direction = -197.38129;
 			SetZUp = 1;
-		};
+		};*/
 	};
 	class EMLZ4 {
 		position[] = {16090.729, 9587.1191};
 		size = 2000;
 
-		class Object0 {
+		/*class Object0 {
 			Type="Land_Mil_Barracks";
 			position[] = {17544.205, 9566.8457, 0.027192807};
 			direction = 449.38632;
@@ -731,8 +731,8 @@ class CfgTownGeneratorSara {
 			position[] = {17582.838, 9566.7451, 0};
 			direction = -269.85599;
 			SetZUp = 1;
-		};
-		class Object4 {
+		};*/
+		class Object4 {////baha valor
 			Type="Land_A_Pub_01";
 			position[] = {15607.009, 8834.6787, -0.028606441};
 			direction = 88.496819;
@@ -756,30 +756,30 @@ class CfgTownGeneratorSara {
 			direction = 43.790421;
 			SetZUp = 1;
 		};
-		class Object8 {
+		/*class Object8 { ///// Modesta  Needs to be changed / replaced There is a Barrack there??
 			Type="Land_dum_mesto2";
 			position[] = {14389.838, 9440.582, 0.30637202};
 			direction = 84.818588;
 			SetZUp = 1;
-		};
+		};*/
 	};
 	class EMLZ5 {
 		position[] = {12505.881, 10952.824};
 		size = 2000;
 
-		class Object0 {
+		class Object0 { ////Mercalillo
 			Type="Land_Ind_Workshop01_01";
 			position[] = {13751.567, 11507.75, 0.00010299683};
 			direction = 181.80162;
 			SetZUp = 1;
 		};
-		class Object1 {
+		class Object1 { ////Mercalillo
 			Type="Land_Ind_Workshop01_L";
 			position[] = {13780.049, 11542.577, -0.01};
 			direction = 180.52242;
 			SetZUp = 1;
 		};
-		class Object2 {
+		/*class Object2 {
 			Type="Land_Mil_Barracks";
 			position[] = {12944.033, 11302.412, 0.01768269};
 			direction = 321.08997;
@@ -828,17 +828,17 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object10 {
-			Type="Land_benzina_schnell";
+			Type="smd_benzina_schnell_open";
 			position[] = {13504.938, 11548.451, -0.14086008};
 			direction = -250.10786;
 			SetZUp = 1;
-		};
+		};*/
 	};
 	class EMLZ6 {
 		position[] = {9737.9395, 7844.0952};
 		size = 1200;
 
-		class Object0 {
+		class Object0 { //// Bagango 
 			Type="Land_A_Pub_01";
 			position[] = {14111.281, 12495.537, -0.11815493};
 			direction = -91.763176;
@@ -1008,7 +1008,7 @@ class CfgTownGeneratorSara {
 		};
 		class Object28 {
 			Type="Land_A_Hospital";
-			position[] = {14091.364, 12446.477, -0.0099999998};
+			position[] = {14091.564, 12446.000, -0.0099999998};
 			direction = 153.99374;
 			SetZUp = 1;
 		};
@@ -1053,12 +1053,12 @@ class CfgTownGeneratorSara {
 			direction = 230.83627;
 			SetZUp = 1;
 		};
-		class Object4 {
+		/*class Object4 {
 			Type="Land_dum_mesto_in";
 			position[] = {13688.798, 8981.7324, 0.04808744};
 			direction = 572.72217;
 			SetZUp = 1;
-		};
+		};*/
 		class Object5 {
 			Type="Land_Ind_Workshop01_L";
 			position[] = {13639.029, 9192.3057, -0.067450002};
@@ -1082,7 +1082,7 @@ class CfgTownGeneratorSara {
 			position[] = {13583.15, 9123.3457, -0.01};
 			direction = -222.46309;
 			SetZUp = 1;
-		};
+		};/*
 		class Object9 {
 			Type="Land_ladderEP1";
 			position[] = {13182.618, 8898.6982, -0.40864643};
@@ -1106,7 +1106,7 @@ class CfgTownGeneratorSara {
 			position[] = {12962.374, 8752.0498, -0.01};
 			direction = 30.402079;
 			SetZUp = 1;
-		};
+		};*/
 		class Object13 {
 			Type="Land_A_GeneralStore_01";
 			position[] = {12990.772, 8483.0664, -0.093081169};
@@ -1137,12 +1137,12 @@ class CfgTownGeneratorSara {
 			direction = -429.39523;
 			SetZUp = 1;
 		};
-		class Object18 {
+		/*class Object18 {
 			Type="Land_ladderEP1";
 			position[] = {12970.898, 8870.3271, -0.49671781};
 			direction = 541.30365;
 			SetZUp = 1;
-		};
+		};*/
 		class Object19 {
 			Type="Land_benzina_schnell";
 			position[] = {13754.628, 9373.499, 0.12584113};
@@ -1350,12 +1350,12 @@ class CfgTownGeneratorSara {
 			direction = -431.48724;
 			SetZUp = 1;
 		};
-		class Object2 {
+		/*class Object2 {
 			Type="Land_A_CraneCon";
 			position[] = {13400.966, 7313.5122, -0.0099999998};
 			direction = -252.41083;
 			SetZUp = 1;
-		};
+		};*/
 		class Object3 {
 			Type="Land_A_CraneCon";
 			position[] = {13320.409, 7290.1387, -0.0099999998};

@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 3.52
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class smd_sahrani_artif_obj : misc\data\penetration\dirt.bisurf{
+Density = 1000;
+rough = 0.1;
+dust = 0;
+bulletPenetrability = 50;
+soundEnviron = "Empty";
+isWater = "false";
+friction = 0.9;
+restitution = 0.1;
+impact = "default_Mat";
+soundHit = "soft_ground";
+//};

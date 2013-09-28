@@ -128,6 +128,9 @@ switch (_item) do {
 	case "Skin_SMD_SPD_SWAT_BLACK_DIGI": {
 		_model = "SMD_SPD_SWAT_BLACK_DIGI";
 	};
+	case "Skin_SMD_SPD_BLACK": {
+		_model = "SMD_SPD_BLACK";
+	};
 	case "Skin_SMD_SPD_BLUE": {
 		_model = "SMD_SPD_BLUE";
 	};
@@ -201,6 +204,7 @@ _hasBPVest = _model in
 										"SMD_RACS_SWAT",
 										"SMD_SPD_SWAT_BLACK",
 										"SMD_SPD_SWAT_BLACK_DIGI",
+										"SMD_SPD_BLACK",
 										"SMD_SPD_BLUE",
 										"SMD_SPD_BLUE_DIGI",
 										"SMD_TIGER_CAMO",
@@ -215,11 +219,11 @@ _hasBPVest = _model in
 									];
 
 if(_hasBPVest && _hasHelmet) then {
-	cutText ["Your new Clothes lower your Head & Body-Damage by 30%", "PLAIN DOWN"];
+	cutText ["\n\nYour new Clothes lower your Head & Body-Damage by 30%", "PLAIN DOWN"];
 };
 
 if(_hasBPVest && !_hasHelmet) then {
-	cutText ["Your new Clothes lower your Body-Damage by 30%", "PLAIN DOWN"];
+	cutText ["\n\nYour new Clothes lower your Body-Damage by 30%", "PLAIN DOWN"];
 };
 
 if (_model != _myModel) then {

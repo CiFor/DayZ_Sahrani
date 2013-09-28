@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 3.52
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class smd_sahrani_artif_obj : buildings\data\penetration\wood_desk.bisurf{
+Density = 600;
+Thickness = 20;
+bulletPenetrabilityWithThickness = 150;
+rough = 0.1;
+dust = 0;
+bulletPenetrability = 300;
+soundEnviron = "Empty";
+isWater = "false";
+friction = 0.7;
+restitution = 0.4;
+impact = "Hit_Wood";
+soundHit = "wood";
+//};

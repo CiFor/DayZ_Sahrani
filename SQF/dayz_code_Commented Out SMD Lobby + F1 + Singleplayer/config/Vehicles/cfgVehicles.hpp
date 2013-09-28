@@ -307,7 +307,7 @@ class CfgVehicles {
 	};
 	
 	class z_RACSzombie3 : z_RACSzombie { //SPD SWAT Black Camo Helmet/Pads Black Vest
-		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_spd_swat_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_co.paa"};
 	};	
 
 	class z_RACSzombie4 : z_RACSzombie { //US SPEC OPS Flat Grey Black Helmet/Pads Black Vest
@@ -346,22 +346,26 @@ class CfgVehicles {
 	};	
 
 	class z_RACSzombie11 : z_RACSzombie { //SPD SWAT Black Digi Camo Helmet/Pads
-		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_spd_swat_black_digi_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_digi_co.paa"};
 		model = "\vil_police\vil_swat";
 	};
 
 	class z_RACSzombie12 : z_RACSzombie { //SPD Blue digi bdu Black vest 
-		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_spd_blue_digi_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_blue_digi_co.paa"};
 		model = "\vil_police\vil_cop";
+	};
+	class z_RACSzombie15 : z_RACSzombie { //SPD Black bdu Black vest 
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_blue_co.paa"};
+		model = "\vil_police\vil_swat";
 	};	
 	
 	class z_RACSzombie13 : z_RACSzombie { //SPD Blue bdu Black vest 
-		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_spd_blue_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_blue_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
 
 	class z_RACSzombie14 : z_RACSzombie { //SPD Black bdu Black vest 
-		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_spd_swat_black_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
 
@@ -4036,7 +4040,7 @@ class CfgVehicles {
 	class SMD_RACS_MP_Tan_Digi: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
         model = "\vil_police\vil_cop";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_mp_tandigi_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_mp_tan_digi_co.paa"};
     };
 	class SMD_RACS_Soldier: Bandit1_DZ { //Tan Camo Helmet/Pads
         model = "\vil_police\vil_swat";
@@ -4051,27 +4055,32 @@ class CfgVehicles {
 	class SMD_RACS_SWAT: Bandit1_DZ { //SPD SWAT Black Camo Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_spd_swat_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_co.paa"};
     };
 	class SMD_SPD_SWAT_BLACK: Bandit1_DZ { //SPD SWAT Flat Black Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_spd_swat_black_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_co.paa"};
     };
 	class SMD_SPD_SWAT_BLACK_DIGI: Bandit1_DZ { //SPD SWAT Flat Black Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_spd_swat_black_digi_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_digi_co.paa"};
+    };
+	class SMD_SPD_BLACK: Bandit1_DZ { //SPD Flat Blue NO Helmet/Pads
+        model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_black_co.paa"};
     };
 	class SMD_SPD_BLUE: Bandit1_DZ { //SPD Flat Blue NO Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_spd_blue_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_blue_co.paa"};
     };
 	class SMD_SPD_BLUE_DIGI: Bandit1_DZ { //SPD Blue Digi NO Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_spd_blue_digi_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_blue_digi_co.paa"};
     };
 	class SMD_SARA_Sheriff: Bandit1_DZ { //Sherrif
         model = "\vil_police\vil_cop3";

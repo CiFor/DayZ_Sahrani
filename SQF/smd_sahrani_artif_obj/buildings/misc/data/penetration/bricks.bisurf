@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 3.52
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class smd_sahrani_artif_obj : buildings\misc\data\penetration\bricks.bisurf{
+Density = 2000;
+rough = 0.1;
+dust = 0;
+bulletPenetrability = 200;
+soundEnviron = "Empty";
+isWater = "false";
+friction = 0.9;
+restitution = 0;
+impact = "Hit_Plaster";
+soundHit = "building";
+//};

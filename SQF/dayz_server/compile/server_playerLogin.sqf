@@ -112,6 +112,7 @@ if (!_isNew) then {
 				"SMD_RACS_SWAT",
 				"SMD_SPD_SWAT_BLACK",
 				"SMD_SPD_SWAT_BLACK_DIGI",
+				"SMD_SPD_BLACK",
 				"SMD_SPD_BLUE",
 				"SMD_SPD_BLUE_DIGI",
 				"SMD_RACS_Sheriff",

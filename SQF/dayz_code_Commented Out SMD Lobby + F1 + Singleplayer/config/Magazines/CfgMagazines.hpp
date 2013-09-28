@@ -2366,6 +2366,11 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "RACS S.W.A.T. BDU";
 		descriptionShort = "Digital camouflage Battle Dress Uniform of the United Sahrani Police Department Special Weapons And Tactics";
 	};
+	class Skin_SMD_SPD_BLACK : SkinBase {
+		scope = public;
+		displayName = "RACS SPD. BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the United Sahrani Police Department";
+	};
 	class Skin_SMD_SPD_BLUE : SkinBase {
 		scope = public;
 		displayName = "RACS SPD. BDU";
@@ -2401,7 +2406,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "U.S. Spec Ops MP BDU";
 		descriptionShort = "Special Battle Dress Uniform of the United States Armed Forces Special Operations Military Police";
 	};
-	class Soldier1_DZ : SkinBase {
+	class Skin_Soldier1_DZ : SkinBase {
 		scope = public;
 		displayName = "BAF Regular BDU";
 		descriptionShort = "Standard Battle Dress Uniform of the British Armed Forces Regular Infantry";
@@ -2421,8 +2426,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Brick";
-		model = "\SMD\assets\objects\brick";
-		picture = "\SMD\assets\objects\icons\brick.paa";
+		model = "smd_assets\objects\brick.p3d";
+		picture = "\smd\smd_assets\objects\icons\brick_ca.paa"; //E:\Windows\Desktop\Git Temp Folder\88\
 		descriptionShort = "Rectangular block of kiln baked clay. Can be Thrown and used for crafting various items";
 		ammo = "Brick";
 	};
@@ -2431,8 +2436,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Electronic Wire";
-		model = "\SMD\assets\objects\floppywire";
-		picture = "\SMD\assets\objects\icons\floppywire.paa";
+		model = "smd_assets\objects\floppywire";
+		picture = "smd_assets\objects\icons\floppywire.paa";
 		descriptionShort = "Scrap Electronic Wire";
 	};
 	class ItemNails : CA_Magazine {
@@ -2449,8 +2454,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = "(256*2)";
 		displayName = "Propane Tank";
-		model = "\SMD\assets\objects\propane";
-		picture = "\SMD\assets\objects\icons\propane.paa";
+		model = "smd_assets\objects\propane";
+		picture = "smd_assets\objects\icons\propane.paa";
 		descriptionShort = "Propane Tank";
 	};
 	class ItemScrapElectronics : CA_Magazine {
@@ -2458,8 +2463,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Scrap Electronics";
-		model = "\SMD\assets\objects\scrapelectronics";
-		picture = "\SMD\assets\objects\icons\scrapelectronics.paa";
+		model = "smd_assets\objects\scrapelectronics";
+		picture = "smd_assets\objects\icons\scrapelectronics.paa";
 		descriptionShort = "Electronic circuit board used for crafting various items";
 	};	
 	class ItemTape : CA_Magazine {
@@ -2467,8 +2472,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Duct Tape";
-		model = "\SMD\assets\objects\tape";
-		picture = "\SMD\assets\objects\icons\tape.paa";
+		model = "smd_assets\objects\tape";
+		picture = "smd_assets\objects\icons\tape.paa";
 		descriptionShort = "Duct Tape used for crafting various items";
 	};
 	class ItemCarBomb : CA_Magazine {
@@ -2477,7 +2482,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		type = (2*256);
 		displayName = "Car Bomb";
 		model = "\ca\weapons\explosive.p3d";
-		picture = "\SMD\assets\objects\icons\carbomb.paa";
+		picture = "smd_assets\objects\icons\carbomb.paa";
 		descriptionShort = "Can be attached to a vehicles engine and then automaticly explode when the engine is turned on!";
 	};	
 	class ItemWoodenSplint : CA_Magazine {
@@ -2485,8 +2490,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Splint & Duct Tape";
-		model = "\SMD\assets\objects\woodensplint";
-		picture = "\SMD\assets\objects\icons\woodensplint.paa";
+		model = "smd_assets\objects\woodensplint";
+		picture = "smd_assets\objects\icons\woodensplint.paa";
 		descriptionShort = "Two wooden sticks and duct tape. Combined these two objects are great for mending broken legs.";
 		class ItemActions
 		{
