@@ -36,7 +36,7 @@ if (["ItemWaterbottle",_itemorignal] call fnc_inString) then {
 };
 if (["ItemSoda",_itemorignal] call fnc_inString) then {
     //higher alert and sound radius
-    _dis=10;
+    _dis=6;
     [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
     _id = [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 };  
@@ -65,7 +65,7 @@ if(_itemorignal == "ItemWaterbottleDrugged") then {
 	_dialog = findDisplay 106;
 	_dialog closeDisplay 0;
 	[player, 1] call fnc_usec_damageUnconscious;
-	cutText ["Your Drink was spiked!", "PLAIN DOWN"];
+	cutText ["\n\nYour Drink was spiked!", "PLAIN DOWN"];
 } else {
 	player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 

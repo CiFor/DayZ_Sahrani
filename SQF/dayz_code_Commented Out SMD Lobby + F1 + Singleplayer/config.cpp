@@ -41,7 +41,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "";
-		version = "0.9.7-201309204";
+		version = "0.9.7-20130929";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
@@ -58,17 +58,17 @@ class CfgMissions
 {
 	 class Cutscenes
 	 {
-	  class ChernarusIntro1
+	  class SMD_Sahrani_A2_Intro1
 		  {
-			directory = "z\addons\dayz_code\cfgworlds\intro.Chernarus";
+			directory = "z\addons\dayz_code\cfgworlds\intro.smd_sahrani_a2";
 		  };
 	 };
 };
 
 class CfgWorlds
 {
-        initWorld = "Chernarus";
-        demoWorld = "Chernarus";
+        initWorld = "smd_sahrani_a2";
+        demoWorld = "smd_sahrani_a2";
 };
 
 class CfgAddons
@@ -128,7 +128,7 @@ class CfgActions {
 	*/
 };
 
-//#include "CfgWorlds.hpp"
+//#include "config\Worlds\CfgWorlds.hpp"
 #include "config\Moves\cfgMoves.hpp"
 #include "config\GUI\rscTitles.hpp"
 #include "config\Vehicles\CfgVehicles.hpp"

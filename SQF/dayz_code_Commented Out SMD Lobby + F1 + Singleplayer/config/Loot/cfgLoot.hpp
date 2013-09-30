@@ -457,7 +457,7 @@ class CfgLoot {
 			0.05, //"ItemTrashRazor",
 			0.05, //"ItemTrashToiletpaper",
 			0.05, //"ItemSodaCokeEmpty",
-			0.05, //"ItemSodaEmpty",
+			0.00, //"ItemSodaEmpty",
 			0.05, //"ItemSodaMdewEmpty",
 			0.05, //"TrashJackDaniels",
 			0.05, //"TrashTinCan",

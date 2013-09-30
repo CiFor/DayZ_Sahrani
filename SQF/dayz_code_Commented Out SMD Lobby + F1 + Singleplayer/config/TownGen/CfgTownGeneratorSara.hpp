@@ -826,13 +826,13 @@ class CfgTownGeneratorSara {
 			position[] = {14514.636, 10794.045, -0.041812684};
 			direction = 127.60325;
 			SetZUp = 1;
-		};
+		};*/
 		class Object10 {
-			Type="smd_benzina_schnell_open";
+			Type="Land_smd_benzina_schnell_open";
 			position[] = {13504.938, 11548.451, -0.14086008};
 			direction = -250.10786;
 			SetZUp = 1;
-		};*/
+		};
 	};
 	class EMLZ6 {
 		position[] = {9737.9395, 7844.0952};
@@ -1008,7 +1008,7 @@ class CfgTownGeneratorSara {
 		};
 		class Object28 {
 			Type="Land_A_Hospital";
-			position[] = {14091.564, 12446.000, -0.0099999998};
+			position[] = {14091.564, 12440.000, -0.0099999998};
 			direction = 153.99374;
 			SetZUp = 1;
 		};
@@ -1144,7 +1144,7 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};*/
 		class Object19 {
-			Type="Land_benzina_schnell";
+			Type="Land_smd_benzina_schnell_open";
 			position[] = {13754.628, 9373.499, 0.12584113};
 			direction = -230.3788;
 			SetZUp = 1;
@@ -1631,7 +1631,7 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object23 {
-			Type="Land_benzina_schnell";
+			Type="Land_smd_benzina_schnell_open";
 			position[] = {9684.541, 5562.8799, 0.043622404};
 			direction = -310.77811;
 			SetZUp = 1;

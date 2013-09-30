@@ -1,0 +1,100 @@
+version=11;
+class Mission
+{
+	randomSeed=10382339;
+	class Intel
+	{
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"smd_sahrani_a2"
+		"characters2"
+	};
+	addOnsAuto[]=
+	{	
+		"smd_sahrani_a2"
+		"characters2"
+	};
+	randomSeed=914435;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14022.475586,29.833000,9908.032227};
+					id=0;
+					side="WEST";
+					vehicle="Survivor1_DZ";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					text="aP";
+					init="this exec ""initintro.sqs""";
+				};
+			};
+		};
+	};
+};
+class OutroWin
+{
+		addOns[]=
+	{
+		"sara_a2"
+	};
+	addOnsAuto[]=
+	{
+		"sara_a2"
+	};
+	randomSeed=2951171;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+		addOns[]=
+	{
+		"smd_sahrani_a2"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a2"
+	};
+	randomSeed=6476291;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

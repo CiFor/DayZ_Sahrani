@@ -2483,25 +2483,6 @@
 			<Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
 		</Key>
 	</Package>
-	<Package name="equipment">
-		<Key ID="STR_EQUIP_NAME_BANDIT">
-			<Original>Bandit Clothing</Original>
-			<English>Bandit Clothing</English>
-			<German>Bandit Kleidung</German>
-            <Dutch>Bandieten Kleding</Dutch>
-			<Russian>Bandit Clothing</Russian>
-			<French>Bandit Clothing</French>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_BANDIT">
-			<Original>Clothes of the Bandits. Can be unpacked and worn.</Original>
-			<English>Clothes of the Bandits. Can be unpacked and worn.</English>
-			<German>Kleidung der Banditen. Kann ausgepackt und getragen werden.</German>
-			<Russian>Clothes of the Bandits. Can be unpacked and worn.</Russian>
-			<Spanish>Clothes of the Bandits. Can be unpacked and worn.</Spanish>
-			<Dutch>Kleding van de Bandieten.Kan uitgepakt en gedragen worden.</Dutch>
-			<French>Clothes of the Bandits. Can be unpacked and worn.</French>
-		</Key>
-	</Package>
 	<Package name ="UI">
 		<Key ID="str_disp_mp_timeout">
 		  <Original>Waiting for Players: %d</Original>
@@ -4673,17 +4654,6 @@
     </Key>
   </Package>
   <Package name="Vilas_Eastern_Weapons">
-    <Key ID="STR_AUTHOR_VILAS">
-      <German>Vilas</German>
-      <English>Vilas</English>
-      <Italian>Vilas</Italian>
-      <Spanish>Vilas</Spanish>
-      <French>Vilas</French>
-      <Czech>Vilas</Czech>
-      <Russian>Vilas</Russian>
-      <Polish>Vilas</Polish>
-      <Hungarian>Vilas</Hungarian>
-    </Key>
     <Key ID="STR_VILAS_EASTERN_PACK">
       <German>Vilas's Eastern Weapons Pack</German>
       <English>Vilas's Eastern Weapons Pack</English>
@@ -4694,28 +4664,6 @@
       <Russian>Vilas's Eastern Weapons Pack</Russian>
       <Polish>Vilas's Eastern Weapons Pack</Polish>
       <Hungarian>Vilas's Eastern Weapons Pack</Hungarian>
-    </Key>
-    <Key ID="STR_VIL_EASTERN">
-      <German>Eastern Weapons</German>
-      <English>Eastern Weapons</English>
-      <Italian>Eastern Weapons</Italian>
-      <Spanish>Eastern Weapons</Spanish>
-      <French>Eastern Weapons</French>
-      <Czech>Eastern Weapons</Czech>
-      <Russian>Eastern Weapons</Russian>
-      <Polish>Eastern Weapons</Polish>
-      <Hungarian>Eastern Weapons</Hungarian>
-    </Key>
-    <Key ID="STR_VIL_WEAPONS">
-      <German>Vilas Weapons</German>
-      <English>Vilas Weapons</English>
-      <Italian>Vilas Weapons</Italian>
-      <Spanish>Vilas Weapons</Spanish>
-      <French>Vilas Weapons</French>
-      <Czech>Vilas Weapons</Czech>
-      <Russian>Vilas Weapons</Russian>
-      <Polish>Vilas Weapons</Polish>
-      <Hungarian>Vilas Weapons</Hungarian>
     </Key>
     <Key ID="STR_TGW_VIL_RPG16">
       <German>RPG-16</German>

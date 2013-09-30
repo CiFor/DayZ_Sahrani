@@ -12,6 +12,15 @@ _holder setVariable["claimed",_playerID,true];
 if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
 
 player playActionNow "PutDown";
+if (_classname == "MeleeBaseball_Bat") then {
+		player addMagazine 'baseball_bat_swing';
+};
+if (_classname == "MeleeBaseball_Bat_Barbed") then {
+		player addMagazine 'Baseball_Bat_Barbed_Swing';
+};
+if (_classname == "MeleeBaseball_Bat_Nailed") then {
+		player addMagazine 'baseball_bat_nailed_swing';
+};
 if (_classname == "MeleeCrowbar") then {
 	player addMagazine 'crowbar_swing';
 };
@@ -20,6 +29,9 @@ if (_classname == "MeleeHatchet") then {
 };
 if (_classname == "MeleeMachete") then {
 		player addMagazine 'Machete_swing';
+};
+if (_classname == "MeleeShovel") then {
+		player addMagazine 'shovel_swing';
 };
 
 
@@ -45,7 +57,7 @@ _config = (configFile >> _type >> _classname);
 _isOk = [player,_config] call BIS_fnc_invAdd;
 if (_isOk) then {
 	deleteVehicle _holder;
-	if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
+	if (_classname in ["MeleeBaseball_Bat","MeleeBaseball_Bat_Barbed","MeleeBaseball_Bat_Nailed","MeleeCrowbar","MeleeHatchet","MeleeMachete","MeleeShovel"]) then {
 
 		if (_type == "cfgWeapons") then {
 			_muzzles = getArray(configFile >> "cfgWeapons" >> _classname >> "muzzles");
@@ -60,6 +72,15 @@ if (_isOk) then {
 } else {
 	_holder setVariable["claimed",0,true];
 	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
+	if (_classname == "MeleeBaseball_Bat") then {
+		player removeMagazine 'baseball_bat_swing';
+	};
+	if (_classname == "MeleeBaseball_Bat_Barbed") then {
+		player removeMagazine 'baseball_bat_barbed_swing';
+	};
+	if (_classname == "MeleeBaseball_Bat_Nailed") then {
+		player removeMagazine 'baseball_bat_nailed_swing';
+	};
 	if (_classname == "MeleeCrowbar") then {
 		player removeMagazine 'crowbar_swing';
 	};
@@ -69,5 +90,7 @@ if (_isOk) then {
 	if (_classname == "MeleeMachete") then {
 			player removeMagazine 'Machete_swing';
 	};
+	if (_classname == "MeleeShovel") then {
+		player removeMagazine 'shovel_swing';
 };
 

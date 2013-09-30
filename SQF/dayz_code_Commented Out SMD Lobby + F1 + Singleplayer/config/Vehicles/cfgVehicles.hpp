@@ -3032,7 +3032,7 @@ class CfgVehicles {
 				gunBeg = "muzzle_1";
 				gunEnd = "chamber_1";
 				weapons[] = {"M240_veh"};
-				magazines[] = {"100Rnd_762x51_M240","100Rnd_762x51_M240","100Rnd_762x51_M240"};
+				magazines[] = {};
 				gunnerName = "$STR_POSITION_CREWCHIEF";
 				gunnerOpticsModel = "\ca\weapons\optika_empty";
 				gunnerOutOpticsShowCursor = 1;
@@ -3206,11 +3206,11 @@ class CfgVehicles {
 		{
 			class MainTurret : MainTurret 
 			{
-				magazines[] = {"100Rnd_762x54_PK"};
+				magazines[] = {};
 			};
 			class BackTurret : BackTurret
 			{
-				magazines[] = {"100Rnd_762x54_PK"};
+				magazines[] = {};
 			};
 		};
 	};
@@ -3582,11 +3582,11 @@ class CfgVehicles {
 		{
 			class MainTurret : MainTurret 
 			{
-				magazines[] = {"100Rnd_762x51_M240"};
+				magazines[] = {};
 			};
 			class LeftDoorGun : LeftDoorGun
 			{
-				magazines[] = {"100Rnd_762x51_M240"};
+				magazines[] = {};
 			};
 		};
 		hiddenSelectionsTextures[] = {"ca\air_E\UH1H\data\UH1D_CO.paa", "ca\air_E\UH1H\data\UH1D_in_CO.paa", "ca\air_E\UH1H\data\default_co.paa"};
@@ -5208,15 +5208,36 @@ class CfgVehicles {
 		};
 	};
 	class WeaponHolderBase;
-	class WoodenArrowF : WeaponHolderBase {
-		scope = public;
-		displayName = "WoodenArrowF";
-		model = "\dayz_weapons\models\bolt";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	class WeaponHolder_ItemBaseball_Bat: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Baseball_Bat";
+		model="\z\addons\dayz_communityassets\models\baseball_bat.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemBaseball_Bat'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};	
+	class WeaponHolder_ItemBaseball_Bat_Barbed: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Baseball_Bat_Barbed";
+		model="\z\addons\dayz_communityassets\models\baseball_bat_barbed.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemBaseball_Bat_Barbed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemBaseball_Bat_Nailed: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Baseball_Bat_Nailed";
+		model="\z\addons\dayz_communityassets\models\baseball_bat_nails.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemBaseball_Bat_Nailed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
 	class WeaponHolder_ItemCrowbar: WeaponHolderBase
 	{
 		scope=2;
@@ -5237,14 +5258,33 @@ class CfgVehicles {
 			init="[(_this select 0),'cfgWeapons','ItemMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
+	class WeaponHolder_ItemShovel: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Shovel";
+		model="\z\addons\dayz_communityassets\models\shovel.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemShovel'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
 	class WeaponHolder_ItemPropane: WeaponHolderBase
 	{
 		scope=2;
 		displayName="Propane Tank";
-		model="\SMD\assets\objects\propane.p3d";
+		model="\smd_assets\objects\propane.p3d";
 		class eventHandlers
 		{
 			init="[(_this select 0),'cfgMagazines','ItemPropane'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WoodenArrowF : WeaponHolderBase {
+		scope = public;
+		displayName = "WoodenArrowF";
+		model = "\dayz_weapons\models\bolt";
+		
+		class eventHandlers {
+			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 	
@@ -5434,7 +5474,7 @@ class CfgVehicles {
 				gunBeg = "usti hlavne";	// endpoint of the gun
 				gunEnd = "konec hlavne";	// chamber of the gun
 				weapons[] = {"M2"};
-				magazines[] = {"100Rnd_127x99_M2", "100Rnd_127x99_M2"};
+				magazines[] = {};
 				gunnerName = $STR_POSITION_FRONTGUNNER;
 				gunnerOpticsModel = "\ca\weapons\optika_empty";
 				gunnerForceOptics = false;
