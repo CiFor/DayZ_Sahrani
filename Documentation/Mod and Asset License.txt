@@ -1,18 +1,17 @@
-License for dummies = Use/modify anything we made as you wish, DO NOT take this as permission to modify ANYTHING we have not produced.
-If you have any questions about how the original author is please contact us at DayZSahraniHelp@gmail.com and we will help you get in contact.
+License for dummies = Use/modify anything we made as you wish, DO NOT take this as permission to modify ANYTHING we have not produced
+If you have any questions about who the original author is please contact us at DayZSahraniHelp@gmail.com and we will help you get in contact.
 
 Please note " DayZ is registered trademark of Bohemia Interactive a.s. " and is being used with the express written consent of it's owners.
 
-Further kindly note, the license as below is ONLY relveant and applicable to the completely original works of the Sahrani Mod Developer Team (SMD)
+Further kindly note, the license here below is ONLY relveant and applicable to the completely original works of the Sahrani Mod Developer Team (SMD)
 
 Most if not all works are accordingly annotated. If you have ANY question as to the source author please contact us we will always do our best to 
 assits contact with the original author if possible. Please email DayZSahraniHelp@gmail.com for assistance.
 
 Any/all work of SMD may be used freely with credits encouraged but not required within the confines of Arma and it's Sequels ONLY. 
-This is no way is a in regards to any 3rd party content or Source game materials.
 
-It is the Arma modders obligation to ensure any/all permissions are obtained from the source author and the ENTIRE team (If a group work) responsible for the 
-particular asset or feature.
+It is the Arma modders obligation to ensure any/all permissions are obtained from the source author and the ENTIRE team (If the asset in question is a group work)
+responsible for the particular asset or feature.
 
 At no time does a source asset inherit the license of it's derivitive works.
 
