@@ -1,7 +1,7 @@
 DayZ_Sahrani
 ===================
-Current Release: 0.2.1
-Development Build: 0.2.2
+Current Release: 0.7.8
+Development Build: 0.9.7
 
 
 Required Tools:
