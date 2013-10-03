@@ -1,0 +1,38 @@
+
+
+Proper Github Re-base syncing
+
+
+1. You must be added to the github if it is a private repo
+
+2. You must have a local clone of the repo
+	- this can be done in several ways 
+	- if you encounter issues with creating a local clone via the website or the software
+	(http://windows.github.com/)
+	I recommend you download a zip of the repository, unzip that to your local github sync folder (normally Windows\Documents\GitHub)
+	
+3. Once a local clone is in place and you have sync'd any changes that have occured you must create your own branch.
+
+	*the "rebase" refers to ensuring every time you wish to edit a file you are working on a fresh base of code, and not an old sync
+	
+4. Now that your branch has been created, back out to the main menu of Github, and reenter the repository and ensure it is sync'd.
+
+5. Now that you are all sync'd in in your own branch, you may edit files.
+
+	*NOTE - It is best practice to start an issue and advice what files you are working on and what your plans for those files are
+	this way any conflicting opinions or work can be aired prior to time wasted
+	
+6. It is best practice to make copies of the files you plan on modifying into a "github scrap" folder or similar.
+	- this allows for the prevention of issues when/if the files become corrupt or too heavily modified and non-functional to recover
+
+7. TEST ALL CHANGES - DO NOT COMMIT UNTESTED CHANGES EVER
+	- Check
+	- Double Check!
+	- CHECK AGAIN!!
+	- when you are finished with those checks
+	- CHECK SOME MORE!!!!!
+There is NO such thing as "too well tested"
+
+8. Once file changes are complete and tested ;-), Check the Github repository website and ensure no other pull requests have been made or committed.
+
+9. Open Github software, and sync your branch to ensure any changes have been applied. Integrate your changed files
