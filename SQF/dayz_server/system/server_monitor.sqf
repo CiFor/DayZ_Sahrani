@@ -1,3 +1,4 @@
+private ["_date","_year","_month","_day","_hour","_minute","_date1","_hiveResponse","_key","_objectCount","_dir","_point","_i","_action","_dam","_selection","_wantExplosiveParts","_entity","_worldspace","_damage","_booleans","_rawData","_ObjectID","_class","_CharacterID","_inventory","_hitpoints","_fuel","_id","_objectArray","_script","_result","_outcome"];
 []execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
@@ -212,18 +213,29 @@ if (_script != "") then
 	_result = _key call server_hiveReadWrite;
 	_outcome = _result select 0;
 	if(_outcome == "PASS") then {
-		_date = _result select 1; 
+		_date = _result select 1;
+
+		//date setup
+		_year = _date select 0;
+		_month = _date select 1;
+		_day = _date select 2;
+		_hour = _date select 3;
+		_minute = _date select 4;
+
+		//Force full moon nights
+		_date1 = [2007,7,7,07,00];
+
 		if(isDedicated) then {
 			//["dayzSetDate",_date] call broadcastRpcCallAll;
-			setDate _date;
-			dayzSetDate = _date;
+			setDate _date1;
+			dayzSetDate = _date1;
+			dayz_storeTimeDate = _date1;
 			publicVariable "dayzSetDate";
 		};
-
-		diag_log ("HIVE: Local Time set to " + str(_date));
-	};
+		diag_log ("HIVE: Local Time set to " + str(_date1));
+	}
 	
-	createCenter civilian;
+	//createCenter civilian;
 	if (isDedicated) then {
 		endLoadingScreen;
 	};	

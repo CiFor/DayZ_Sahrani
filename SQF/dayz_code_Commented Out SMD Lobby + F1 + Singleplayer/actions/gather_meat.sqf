@@ -17,7 +17,7 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	
 	player playActionNow "Medic";
 	
-	_dis=10;
+	_dis=4;
 	_sfx = "gut";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;

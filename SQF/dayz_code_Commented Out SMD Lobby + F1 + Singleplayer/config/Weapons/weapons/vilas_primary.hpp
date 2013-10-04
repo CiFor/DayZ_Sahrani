@@ -4668,7 +4668,7 @@
 		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 
-		class Single  {
+		class Single : Mode_SemiAuto {
 			begin1[] = {"\vilas_aks\sounds\abakan_shoot1", 1.77828, 1, 1000};
 			begin2[] = {"\vilas_aks\sounds\abakan_shoot2", 1.77828, 1, 1000};
 			begin3[] = {"\vilas_aks\sounds\abakan_shoot3", 1.77828, 1, 1000};

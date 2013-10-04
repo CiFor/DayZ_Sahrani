@@ -18,7 +18,7 @@ while {(alive _flare) and dayz_hasLight} do {
 	sleep 0.1;
 };
 if (dayz_hasLight) then {
-	dayz_hasLight = false;
+	dayz_hasLight = true;
 	player removeAction s_player_dropflare;
 	s_player_grabflare = -1;
 	s_player_removeflare = -1;

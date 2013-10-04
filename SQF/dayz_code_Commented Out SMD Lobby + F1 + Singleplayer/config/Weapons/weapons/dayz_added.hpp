@@ -180,6 +180,7 @@
 				"FoodmeatRaw",
 				"FoodmuttonRaw",
 				"FoodrabbitRaw",
+				"HandRoadFlare",
 				"ItemSodaCokeEmpty",
 				"ItemSodaPepsiEmpty",
 				"ItemSodaMdewEmpty",

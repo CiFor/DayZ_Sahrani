@@ -632,7 +632,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rabbit_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};
-	class ItemSodaRocket : ItemSodaCoke {//model error my docs texture reference + Rocket said No thanks to Joe Originally
+	/*class ItemSodaRocket : ItemSodaCoke {//model error my docs texture reference + Rocket said No thanks to Joe Originally
 		displayName = "Rocket Soda";
 		descriptionShort = "Soda Made from Rockets";
 		model = "z\addons\dayz_communityassets\models\soda_rocket_clean_full.p3d";
@@ -642,7 +642,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\soda_rocket_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rocket_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	};
+	};*/
 	class ItemSodaSacrite : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_12;
@@ -783,7 +783,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_6;
 		bloodRegen = 600;
 	};	
-	class AngelCookies : FoodEdible {																//food - packaged
+	/*class AngelCookies : FoodEdible {																//food - packaged
 		scope = public;
 		count = 1;
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_5;
@@ -791,7 +791,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "z\addons\dayz_communityassets\pictures\i_buiscit_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_5;
 		bloodRegen = 100;
-	};
+	};*/
 	class FoodCanBadguy : FoodEdible {
 		scope = public;
 		count = 1;
@@ -1770,7 +1770,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "Snack - Twinkie";
 		descriptionShort = "Only God knows";
 		model = "z\addons\dayz_communityassets\models\twinkie.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_twinkie_clean_ca.paa";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_twinkie_clean.paa";
 	};	
 	class FoodTwinkieDirty : FoodEdible {
 		scope = public;
@@ -1778,8 +1778,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		bloodRegen = 100;
 		displayName = "Snack - Twinkie";
 		descriptionShort = "Only God knows";
-		model = "z\addons\dayz_communityassets\models\twinkie_dirty.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_twinkie_dirty_ca.paa";
+		model = "z\addons\dayz_communityassets\models\twinkie.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_twinkie_dirty.paa";
 	};
 	class ItemTrashBible : CA_Magazine {
 		scope = public;
@@ -1867,6 +1867,42 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		shortNameMagazine = "Shovel";
 		ammo = "shovel_swing_Ammo";
 	};
+	
+	class 10Rnd_127x99_m107 {
+		class ItemActions {
+			class Craft0
+			{
+				text="Convert for M2";
+				script="spawn player_Craft;";
+				use[]= 
+				{
+					{"10Rnd_127x99_m107",12}
+				};
+				output[]= 
+				{
+					{"100Rnd_127x99_M2","magazine",1}
+				};
+			};
+		};
+	};
+	
+	class 5Rnd_127x99_as50 {
+		class ItemActions {
+			class Craft0
+			{
+				text="Convert for M2";
+				script="spawn player_Craft;";
+				use[]= 
+				{
+					{"5Rnd_127x99_as50",12}
+				};
+				output[]= 
+				{
+					{"100Rnd_127x99_M2","magazine",1}
+				};
+			};
+		};
+	};		
 
 	/*					//Begin SMD assets by smd_dev team SMD Equipment Fixes and Additions Original and Community DayZ Content
 	class 15Rnd_9x19_M9 {

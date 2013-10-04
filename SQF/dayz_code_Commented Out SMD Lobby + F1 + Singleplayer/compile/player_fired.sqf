@@ -49,14 +49,14 @@ if (_ammo isKindOf "SmokeShell" || _ammo isKindOf "RoadFlare") then {
 		if (_ammo isKindOf "ThrownObjects") then {
 			_id = _this spawn player_throwObject;
 		};
-		/*if (_ammo isKindOf "RoadFlare") then {
+		if (_ammo isKindOf "RoadFlare") then {
 			//hint str(_ammo);
 			_projectile = nearestObject [_unit, "RoadFlare"];
 			_id = [_projectile,0] spawn object_roadFlare;
 			dayzRoadFlare = [_projectile,0];
 			publicVariable "dayzRoadFlare";
 			_id = _this spawn player_throwObject;
-		};*/
+		};
 		if (_ammo isKindOf "ChemLight") then {
 			_projectile = nearestObject [_unit, "ChemLight"];
 			_id = [_projectile,1] spawn object_roadFlare;

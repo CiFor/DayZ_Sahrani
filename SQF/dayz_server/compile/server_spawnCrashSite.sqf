@@ -53,7 +53,7 @@ while {true} do {
 									"Mi17_SMD_BLOPS"
 							] call BIS_fnc_selectRandom;
 
-	//Random-Startpositions, Adjust this for other Maps then Sahrani
+	//Random-Startpositions, Adjust this for other Maps than Sahrani
 	_heliStart = [
 									[12008.267,1485.0635,400],
 									[2992.7285,12472.498,400],
@@ -75,7 +75,7 @@ while {true} do {
 		_lootRadius = 0.3;
 	};
 
-	//Detectiong the correct Loottable for the Heli
+	//Detecting the correct Loottable for the Heli
 	if(_no50s) then {
 		lootTable = "Crash1_No50s";
 	} else {
@@ -136,7 +136,7 @@ while {true} do {
 
 		_startTime = time;
 
-		//Only a woman could crash a Heli this way...
+		//Spawn Pilot
 		_aigroup = creategroup civilian;
 		_helipilot = _aigroup createUnit ["SurvivorW2_DZ",[18192.828,3124.3936,0],[],0,"FORM"];
 
@@ -284,6 +284,9 @@ while {true} do {
 			["","military"],
 			["","militarySpecial"],
 			["","trash"],
+			["100Rnd_127x99_M2","magazine"],
+			["100Rnd_762x51_M240","magazine"],
+			["100Rnd_762x54_PK","magazine"],
 			["Binocular","weapon"],
 			["Binocular_Vector","military"],
 			["NVGoggles","weapon"],
@@ -400,6 +403,9 @@ while {true} do {
 				0.3, //","military
 				0.2, //","militarySpecial
 				0.1, //","trash
+				0.1, //"100Rnd_127x99_M2","magazine
+				0.1, //"100Rnd_762x51_M240","magazine
+				0.1, //"100Rnd_762x54_PK","magazine
 				0, //Binocular","weapon
 				0.02, //Binocular_Vector","military
 				0.01, //NVGoggles","weapon
@@ -523,11 +529,11 @@ while {true} do {
 	};
 
 		//Adding 5 dead soldiers around the wreck, poor guys
-		for "_x" from 1 to 5 do {
+		/*for "_x" from 1 to 5 do {
 			_lootPos = [_pos, ((random 4)+3), random 360] call BIS_fnc_relPos;
 			_deadBody = createVehicle[["Body1","Body2"] call BIS_fnc_selectRandom,_lootPos,[], 0, "CAN_COLLIDE"];
 			_deadBody setDir (random 360);
-		};
+		};*/
 		_endTime = time - _startTime;
 		diag_log(format["CRASHSPAWNER: Crash completed! Wreck at: %2 - Runtime: %1 Seconds || Distance from calculated POC: %3 meters", round(_endTime), str(getPos _crash), round(_position distance _crash)]); 
 	};

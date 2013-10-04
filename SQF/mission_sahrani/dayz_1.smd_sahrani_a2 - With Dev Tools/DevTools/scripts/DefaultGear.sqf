@@ -19,9 +19,9 @@ Switch (_case) do
   {
    _class = "removeAllWeapons player;
 
-    player addWeapon 'M4A1_AIM_SD_camo'; 
-    player addMagazine '30Rnd_556x45_StanagSD'; 
-    player addMagazine 'ItemPainkiller'; 
+    player addWeapon 'vil_SR25SD'; 
+    player addMagazine '20Rnd_762x51_SB_SCAR'; 
+    player addMagazine '20Rnd_762x51_SB_SCAR'; 
     player addMagazine 'ItemPainkiller'; 
     player addMagazine 'ItemMorphine'; 
     player addMagazine 'ItemMorphine'; 

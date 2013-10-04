@@ -1026,7 +1026,7 @@ class CfgBuildingLoot {
 			0.02, //ItemWire","magazine
 			0.01, //WeaponHolder_ItemHatchet","object
 			0.01, //WeaponHolder_ItemJerrycan","object
-			0.01, //WeaponHolder_ItemPropane","object
+			0, //WeaponHolder_ItemPropane","object
 			0.04, //WeaponHolder_PartEngine","object
 			0.04, //WeaponHolder_PartFueltank","object
 			0.04, //WeaponHolder_PartGeneric","object
@@ -1411,7 +1411,7 @@ class CfgBuildingLoot {
 			0.01, //Skin_SniperLight_DZ
 			0.01, //Skin_SniperD_DZ
 			0.03, //WeaponHolder_ItemTent
-			0.01, //WeaponHolder_ItemPropane
+			0, //WeaponHolder_ItemPropane
 			0.02, //Crossbow_DZ","weapon
 			0.04, //LeeEnfield","weapon
 			0.01, //MR43","weapon

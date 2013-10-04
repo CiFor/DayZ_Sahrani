@@ -368,7 +368,6 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
-
 	class AllVehicles;
 	class Air : AllVehicles 
 	{
@@ -4344,7 +4343,7 @@ class CfgVehicles {
 		transportFuel = 0; //50000;
 		nameSound = "fuelstation";
 	};
-	class Land_benzina_schnell : Strategic {
+	class Land_smd_benzina_schnell_open : Strategic {
 		icon = "\Ca\buildings\Icons\i_fuel_CA.paa";
 		transportFuel = 0; //50000;
 		nameSound = "fuelstation";
@@ -5270,7 +5269,7 @@ class CfgVehicles {
 	};
 	class WeaponHolder_ItemPropane: WeaponHolderBase
 	{
-		scope=2;
+		scope = public;
 		displayName="Propane Tank";
 		model="\smd_assets\objects\propane.p3d";
 		class eventHandlers

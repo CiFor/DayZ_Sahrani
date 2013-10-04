@@ -5,7 +5,7 @@ OnLoadIntro = "Welcome to Sahrani";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
-disableChannels[]={0,1,2,6}; // -1 to add side
+disableChannels[]={0,2,6}; // -1 to add side
 enableItemsDropping = 0;
 onPauseScript = "\z\addons\dayz_code\compile\player_onPause.sqf";
 
