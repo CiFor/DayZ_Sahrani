@@ -1,0 +1,82 @@
+;init
+_camera = "camera" camCreate [9578.59,3540.29,1.66]
+_camera cameraEffect ["internal","back"]
+
+titleCut ["","BLACK IN",1000]
+
+#znova 
+0 fadeMusic 0.5
+playMusic "Ambient04_Electronic_Warfare"
+
+
+;=== 18:35:25
+_camera camSetTarget [-82938.08,36749.06,4297.77]
+_camera camSetPos [12957.38,8715.65,15.14]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titleCut ["","BLACK IN",2]
+;=== 18:35:53
+_camera camSetTarget [13652.53,108650.12,4297.73]
+_camera camSetPos [12977.04,8743.81,6.23]
+_camera camSetFOV 0.700
+_camera camCommit 25
+@camCommitted _camera
+
+
+;=== 18:36:21
+_camera camSetTarget [78951.09,78240.73,28890.55]
+_camera camSetPos [13023.51,8818.23,0.05]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 18:36:50
+_camera camSetTarget [101952.27,54327.08,4600.09]
+_camera camSetPos [13020.98,8838.52,13.55]
+_camera camSetFOV 0.700
+_camera camCommit 20
+@camCommitted _camera
+
+;=== 18:37:53
+_camera camSetTarget [-74626.00,56366.96,1810.15]
+_camera camSetPos [13306.10,8777.77,6.03]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 18:38:15
+_camera camSetTarget [-38443.83,94404.27,1811.17]
+_camera camSetPos [13320.39,8863.40,4.65]
+_camera camSetFOV 0.700
+_camera camCommit 22
+@camCommitted _camera
+
+playMusic "Ambient02_Vague_Shapes"
+
+;=== 18:38:47
+_camera camSetTarget [-34854.14,96120.53,-7772.59]
+_camera camSetPos [13361.21,8860.74,22.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 18:39:06
+_camera camSetTarget [109032.15,-19175.28,-7772.24]
+_camera camSetPos [13361.21,8860.74,22.44]
+_camera camSetFOV 0.700
+_camera camCommit 26
+~24
+2 fadeMusic 0
+titleCut ["","BLACK OUT",2]
+@camCommitted _camera
+
+goto "znova"
+
+
+;exit
+player cameraEffect ["terminate","back"]
+_this switchMove ""
+camDestroy _camera
+exit
