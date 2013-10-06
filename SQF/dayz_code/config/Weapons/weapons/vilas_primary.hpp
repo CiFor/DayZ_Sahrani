@@ -70,10 +70,7 @@
 		model = "\vilas_wwp\vil_uzi";
 		picture = "\vilas_wwp\ico\w_vil_uzi_folded_ca.paa";
 		displayName = $STR_VIL_UZI_FOLDED;
-		magazines[] = {"30Rnd_9x19_UZI", "30Rnd_9x19_UZI_SD", "17Rnd_9x19_glock17", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5SD", "15Rnd_9x19_M9", "15Rnd_9x19_M9SD"};
-		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200};
-		discreteDistanceInitIndex = 0;
+		magazines[] = {"30Rnd_9x19_UZI", "30Rnd_9x19_UZI_SD"};
 		modes[] = {"Single","FullAuto"};
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
 
@@ -97,7 +94,7 @@
 			midRangeProbab = 0.7;
 			maxRange = 40;
 			maxRangeProbab = 0.05;
-			recoil = "recoil_single_primary_2outof10";
+			recoil = "recoil_single_primary_6outof10";
 			recoilProne = "recoil_single_primary_prone_2outof10";
 		};
 		class Armory {
@@ -120,9 +117,6 @@
 		picture = "\vilas_wwp\ico\w_vil_uzi_sd_ca.paa";
 		displayName = $STR_VIL_UZI_SD;
 		magazines[] = {"30Rnd_9x19_UZI_SD", "30Rnd_9x19_MP5SD", "15Rnd_9x19_M9SD"};
-		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200};
-		discreteDistanceInitIndex = 0;
 		modes[] = {"Single","FullAuto"};
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
 
@@ -223,7 +217,7 @@
 		magazines[] = {"20Rnd_762x51_FNFAL"};
 		modes[] = {"Single", "FullAuto"};
 		weaponInfoType = "RscWeaponZeroing";	
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 
 		class M203Muzzle;
@@ -346,7 +340,7 @@
 				cameraDir = "";
 				visionMode[] = {"Normal"};
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 			};
 		};
@@ -390,7 +384,7 @@
 				distanceZoomMax = 150;
 				cameraDir = "";
 				visionMode[] = {"Normal"};
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 			};
 		};
@@ -512,7 +506,7 @@
 		picture = "\vilas_wwp\ico\ico_mg3.paa";
 		UiPicture = "\CA\weapons\data\Ico\i_mg_CA.paa";
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {200, 300, 400, 500, 600, 800, 1000, 1200};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 1;
 		reloadMagazineSound[] = {"\vilas_wwp\sounds\mg3_reload", 0.0562341, 1, 25};
 		magazineReloadTime = 4;
@@ -564,7 +558,7 @@
 		model = "\vilas_wwp\vil_m249_para";
 		picture = "\vilas_wwp\ico\saw_ico.paa";
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		class Armory {
 			type = 7;
@@ -578,7 +572,7 @@
 		model = "\vilas_wwp\vil_minimi";
 		displayName = $STR_VIL_MINIMI;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		picture = "\vilas_wwp\ico\w_vil_fnmini_ca.paa";
 		class Library {
@@ -599,7 +593,7 @@
 		picture = "\CA\weapons\data\equip\w_m240_ca.paa";
 		UiPicture = "\CA\weapons\data\Ico\i_mg_CA.paa";
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		class Library {
 			libTextDesc = $STR_VIL_M240B_LIB;
@@ -616,7 +610,7 @@
 		displayName = $STR_VIL_MG4;
 		picture = "\vilas_wwp\ico\w_vil_mg4_ca.paa";
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		class Library {
 			libTextDesc = $STR_VIL_MG4_LIB;
@@ -639,7 +633,7 @@
 		discreteDistanceInitIndex = 0;
 		distanceZoomMin = 100;
 		distanceZoomMax = 100;
-		//discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		//discreteDistance[] = {400, 600, 800};
 		//discreteDistanceInitIndex = 2;
 		picture = "\vilas_wwp\ico\w_vil_mg4e_ca.paa";
 		class Library {
@@ -655,18 +649,18 @@
 		Vilas Western Weapons Sniper/Marksman Rifles
 	**********************************************************/
 
-	class vil_DRM_BASE : DMR {
+	class vil_DMR_BASE : DMR {
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 	};
 
-	class vil_SR25 : vil_DRM_BASE {
+	class vil_SR25 : vil_DMR_BASE {
 		scope = public;
 		model = "\vilas_wwp\vil_sr25";
 		displayName = $STR_VIL_SR25;
 		picture = "\vilas_wwp\ico\w_vil_sr25_ca.paa";
-		magazines[] = {"20Rnd_762x51_DMR"};
+		magazines[] = {"20Rnd_762x51_B_SCAR"};
 		visionMode[] = {"Normal"};
 		modelOptics = "\ca\weapons\2Dscope_MilDot_9";
 		class OpticsModes {
@@ -684,7 +678,7 @@
 				opticsDisablePeripherialVision = true;
 				cameraDir = "";
 				visionMode[] = {"Normal"};
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 			};
 		};
@@ -738,6 +732,7 @@
 		scope = public;
 		model = "\vilas_wwp\vil_sr25sd";
 		displayName = "SR25SD";
+		magazines[] = {"20Rnd_762x51_SB_SCAR"};
 		picture = "\vilas_wwp\ico\w_vil_sr25_sd_ca.paa";
 
 
@@ -754,6 +749,7 @@
 		model = "\vilas_wwp\vil_m110sd";
 		displayName = $STR_VIL_M110_SD;
 		picture = "\vilas_wwp\ico\w_vil_m110_sd_ca.paa";
+		magazines[] = {"20Rnd_762x51_SB_SCAR"};
 		class Armory {
 			description = $STR_VIL_M110_LIB;
 			author = $STR_AUTHOR_VILAS;
@@ -783,7 +779,7 @@
 				opticsDisablePeripherialVision = true;
 				cameraDir = "";
 				visionMode[] = {"Normal"};
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 			};
 		};
@@ -928,7 +924,7 @@
 		displayName = $STR_VIL_M4;
 		modes[] = {"Single", "Burst"};
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {25, 50, 75, 100, 150, 175, 200, 250, 300, 400, 500, 600};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 8;
 		//picture = "\vilas_wwp\ico\w_vil_m4_ca.paa";
 		picture = "\ca\weapons\data\equip\w_m4_ca.paa";
@@ -1680,7 +1676,7 @@
 		distanceZoomMin = 100;
 		distanceZoomMax = 100;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {25, 50, 75, 100, 150, 175, 200, 250, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 8;
 
 		picture = "\vilas_wwp\ico\w_vil_hk416_is_ca.paa";
@@ -1867,7 +1863,7 @@
 	class vil_AKM_BASE : AK_47_M {
 		scope = private;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 1;
 		magazines[] = {"30Rnd_762x39_AK47","30Rnd_762x39_SA58"};
 	};
@@ -1875,7 +1871,7 @@
 	class vil_AK47_BASE : AK_47_M {
 		scope = private;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 1;
 		magazines[] = {"30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
 	};
@@ -1883,7 +1879,7 @@
 	class vil_AKS_BASE : AK_47_S {
 		scope = private;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 1;
 		modes[] = {"FullAuto", "Single"};
 		magazines[] = {"30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
@@ -1901,7 +1897,7 @@
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\Data\Anim\AK.rtm"};
 		magazines[] = {"30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		modes[] = {"FullAuto", "Single"};
 		
@@ -1968,7 +1964,7 @@
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\M24.rtm"};
 		modes[] = {"Single"};
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		class Single : Single {
 			displayName = "";
@@ -2029,9 +2025,6 @@
 		optics = true;
 		distanceZoomMin = 50;
 		distanceZoomMax = 50;
-		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {25, 50, 100, 200};
-		discreteDistanceInitIndex = 1;
 		displayName = $STR_TGW_VIL_APS;
 		begin1[] = {"\vilas_aks\sounds\APSs", 0.794328, 1, 700};
 		reloadMagazineSound[] = {"\vilas_aks\sounds\APSReload", 0.0316228, 1, 20};
@@ -2168,7 +2161,7 @@
 		distanceZoomMin = 300;
 		distanceZoomMax = 300;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		picture = "\vilas_aks\ico\w_vil_pkp_mg_ca.paa";
 		
@@ -2218,7 +2211,7 @@
 		picture = "\vilas_aks\ico\pk.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		reloadMagazineSound[] = {"\vilas_aks\sounds\PKReload", 0.0562341, 1, 40};
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 		class Armory {
@@ -2266,7 +2259,7 @@
 				opticsFlare = true;
 				opticsDisablePeripherialVision = true;
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 				cameraDir = "";
 			};
@@ -2298,7 +2291,7 @@
 		model = "\vilas_aks\vil_rpk";
 		displayName = $STR_TGW_VIL_RPK47;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		picture = "\vilas_aks\ico\rpk.paa";
 		aiDispersionCoefY = 14.0;
@@ -2495,7 +2488,7 @@
 		displayName = $STR_TGW_VIL_RPK74;
 		picture = "\vilas_aks\ico\rpk74.paa";
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		modes[] = {"manual", "close", "short", "medium", "Single"};
 		magazines[] = {"30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
@@ -2526,7 +2519,7 @@
 				opticsFlare = true;
 				opticsDisablePeripherialVision = true;
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 				cameraDir = "";
 			};
@@ -2542,7 +2535,7 @@
 		picture = "\vilas_aks\ico\rpk74m.paa";
 		displayName = $STR_TGW_VIL_RPK74M;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		class Library {
 			libTextDesc = $STR_TGW_VIL_RPK74M_LIB;
@@ -2574,7 +2567,7 @@
 				opticsFlare = true;
 				opticsDisablePeripherialVision = true;
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 				cameraDir = "";
 			};
@@ -2605,7 +2598,7 @@
 		model = "\vilas_aks\vil_vss";
 		modelOptics = "\vilas_aks\opt\optika_psom";
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 1;
 		
 		class OpticsModes {
@@ -2623,7 +2616,7 @@
 				opticsFlare = true;
 				opticsDisablePeripherialVision = true;
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 1;
 				cameraDir = "";
 			};
@@ -2750,7 +2743,7 @@
 				opticsZoomMax = 0.0623;
 				distanceZoomMin = 100;
 				distanceZoomMax = 100;
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 			};
 		};
 		picture = "\vilas_aks\ico\w_vil_val_nspu_ca.paa";
@@ -2875,7 +2868,7 @@
 		model = "\vilas_aks\vil_vsk94";
 		displayName = VSK94;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 1;
 		magazines[] = {"10Rnd_9x39_SP5_VSS","20Rnd_9x39_SP5_VSS"};
 		descriptionShort = $STR_TGW_VIL_9A91_SHORT;
@@ -2897,7 +2890,7 @@
 				opticsFlare = true;
 				opticsDisablePeripherialVision = true;
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 1;
 				cameraDir = "";
 			};
@@ -2928,7 +2921,7 @@
 		magazines[] = {"10Rnd_9x39_SP5_VSS","20Rnd_9x39_SP5_VSS"};
 		handAnim[] = {"OFP2_ManSkeleton", "\vilas_aks\Anim\groza_hg.rtm"};
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 1;
 		distanceZoomMin = 100;
 		distanceZoomMax = 100;
@@ -2992,7 +2985,7 @@
 				opticsFlare = true;
 				opticsDisablePeripherialVision = true;
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 1;
 				cameraDir = "";
 			};
@@ -3116,7 +3109,7 @@
 		fireLightDuration = 0.0;
 		fireLightIntensity = 0.0;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 1;
 		distanceZoomMin = 100;
 		distanceZoomMax = 100;
@@ -3189,7 +3182,7 @@
 	class vil_AKMS : vil_AK47_BASE {
 		scope = public;
 		model = "\vilas_aks\vil_akms";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		displayName = $STR_VIL_AKMS;
 		picture = "\vilas_aks\ico\w_vil_akms_ca.paa";
 		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
@@ -3521,7 +3514,7 @@
 		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 		magazines[] = {"30Rnd_545x39_AK", "30Rnd_545x39_AKSD"};
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		class GP30Muzzle : GP25Muzzle {
 			displayName = $STR_TGW_VIL_GP30;
@@ -3574,7 +3567,7 @@
 				opticsFlare = true;
 				opticsDisablePeripherialVision = true;
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 				cameraDir = "";
 			};
@@ -3706,7 +3699,7 @@
 				opticsFlare = true;
 				opticsDisablePeripherialVision = true;
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 				cameraDir = "";
 			};
@@ -3755,7 +3748,7 @@
 				opticsFlare = true;
 				opticsDisablePeripherialVision = true;
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 				cameraDir = "";
 			};
@@ -3923,7 +3916,7 @@
 				opticsFlare = true;
 				opticsDisablePeripherialVision = true;
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 				cameraDir = "";
 			};
@@ -4045,7 +4038,7 @@
 		displayName = $STR_TGW_VIL_AK101;
 		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		class Library {
 			libTextDesc = $STR_TGW_VIL_AK101_LIB;
@@ -4064,7 +4057,7 @@
 		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 		magazines[] = {"30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 
 		class Single : Single {
@@ -4111,7 +4104,7 @@
 		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 		magazines[] = {"30Rnd_545x39_AK","30Rnd_545x39_AKSD"};
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		
 		class Single : Single {
@@ -4168,7 +4161,7 @@
 		model = "\vilas_aks\vil_ak_107";
 		displayName = $STR_TGW_VIL_AK107;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		picture = "\vilas_aks\ico\ak107.paa";
 		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
@@ -4217,7 +4210,7 @@
 				opticsZoomMax = 0.0623;
 				distanceZoomMin = 200;
 				distanceZoomMax = 200;
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 				VisionMode[] = {"Normal"};
 				CameraDir = "";
@@ -4378,7 +4371,7 @@
 				opticsPPEffects[] = {"MLB_NV1gen_grain","MLB_NV1GEN_blur"};
 				visionMode[] = {"NVG"};
 				memoryPointCamera = "opticView";
-				discreteDistance[] = {100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 3;
 				opticsZoomInit = 0.1;
 				opticsZoomMin = 0.1;
@@ -4448,7 +4441,7 @@
 		class OpticsModes : OpticsModes {
 			class 1P21 : Scope {
 				opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 				opticsZoomInit = 0.1;
 				opticsZoomMin = 0.033;
@@ -4496,7 +4489,7 @@
 		class OpticsModes : OpticsModes {
 			class Scope : Scope {
 				opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
-				discreteDistance[] = {100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 3;
 				opticsZoomInit = 0.1;
 				opticsZoomMin = 0.033;
@@ -4554,7 +4547,7 @@
 				distanceZoomMin = 250;
 				distanceZoomMax = 250;
 				opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
-				discreteDistance[] = {100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 3;	
 				memoryPointCamera = "opticView";
 				visionMode[] = {"Normal"};
@@ -4675,7 +4668,7 @@
 		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 
-		class Single  {
+		class Single : Mode_SemiAuto {
 			begin1[] = {"\vilas_aks\sounds\abakan_shoot1", 1.77828, 1, 1000};
 			begin2[] = {"\vilas_aks\sounds\abakan_shoot2", 1.77828, 1, 1000};
 			begin3[] = {"\vilas_aks\sounds\abakan_shoot3", 1.77828, 1, 1000};
@@ -4770,7 +4763,7 @@
 				opticsFlare = true;
 				opticsDisablePeripherialVision = true;
 				weaponInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+				discreteDistance[] = {400, 600, 800};
 				discreteDistanceInitIndex = 2;
 				cameraDir = "";
 			};
@@ -4787,7 +4780,7 @@
 		displayName = "AK-12";
 		descriptionShort = $STR_TGW_VIL_AN94_SHORT;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons\data\Anim\Mk48.rtm"};
 		picture = "\vilas_aks\ico\w_vil_ak12_ca.paa";
@@ -4827,7 +4820,7 @@
 		model = "\vilas_aks\vil_aek";
 		displayName = $STR_TGW_VIL_AEK971_EARLY;
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 		picture = "\vilas_aks\ico\aek.paa";
 		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";

@@ -435,9 +435,6 @@ class CfgLoot {
 			"ItemTape",
 			"ItemTrashRazor",
 			"ItemTrashToiletpaper",
-			"ItemSodaCokeEmpty",
-			"ItemSodaEmpty",
-			"ItemSodaMdewEmpty",
 			"TrashJackDaniels",
 			"TrashTinCan",
 			"15Rnd_9x19_M9",
@@ -456,9 +453,6 @@ class CfgLoot {
 			0.05, //"ItemTape",
 			0.05, //"ItemTrashRazor",
 			0.05, //"ItemTrashToiletpaper",
-			0.05, //"ItemSodaCokeEmpty",
-			0.05, //"ItemSodaEmpty",
-			0.05, //"ItemSodaMdewEmpty",
 			0.05, //"TrashJackDaniels",
 			0.05, //"TrashTinCan",
 			0.02, //15Rnd_9x19_M9
@@ -879,7 +873,6 @@ class CfgLoot {
 		{
 //trash
 			"TrashTinCan",
-			"ItemSodaEmpty",
 			"TrashJackDaniels",
 //food
 			"FoodMRE",
@@ -902,7 +895,6 @@ class CfgLoot {
 		{
 //trash
 			0.06, //TrashTinCan
-			0.06, //ItemSodaEmpty
 			0.04, //TrashJackDaniels
 //food
 			0.04, //FoodMRE
@@ -945,7 +937,6 @@ class CfgLoot {
 		{
 //trash
 			"TrashTinCan",
-			"ItemSodaEmpty",
 			"TrashJackDaniels",
 //medical
 			"ItemBandage",
@@ -958,7 +949,6 @@ class CfgLoot {
 		{
 //trash
 			0.06, //TrashTinCan
-			0.06, //ItemSodaEmpty
 			0.04, //TrashJackDaniels
 //medical
 			0.8, //ItemBandage
@@ -1101,7 +1091,6 @@ class CfgLoot {
 		{
 //trash
 			"TrashTinCan",
-			"ItemSodaEmpty",
 //drink
 			"ItemWaterbottle",
 			"ItemWaterbottleUnfilled",
@@ -1161,7 +1150,6 @@ class CfgLoot {
 		{
 //trash
 			0.18, //TrashTinCan
-			0.09, //ItemSodaEmpty
 //drink
 			0.01, //ItemWaterbottle
 			0.01, //ItemWaterbottleUnfilled
@@ -1258,7 +1246,9 @@ class CfgLoot {
 			"30Rnd_556x45_G36SD",
 			"30Rnd_9x19_MP5",
 			"30Rnd_9x19_MP5SD",
+			"100Rnd_127x99_M2",
 			"100Rnd_762x51_M240",
+			"100Rnd_762x54_PK",
 			"10Rnd_9x39_SP5_VSS",
 			"20Rnd_9x39_SP5_VSS",
 			//"8Rnd_B_Saiga12_74Slug",
@@ -1322,7 +1312,9 @@ class CfgLoot {
 			0.01, //30Rnd_556x45_G36SD
 			0.06, //30Rnd_9x19_MP5
 			0.01, //30Rnd_9x19_MP5SD
+			0.01, //100Rnd_127x99_M2
 			0.01, //100Rnd_762x51_M240
+			0.01, //100Rnd_762x54_PK
 			0.08, //10Rnd_9x39_SP5_VSS
 			0.01, //20Rnd_9x39_SP5_VSS
 			//0.02, //8Rnd_B_Saiga12_74Slug
@@ -1352,7 +1344,6 @@ class CfgLoot {
 		{
 //trash
 			"TrashTinCan",
-			"ItemSodaEmpty",
 //drink
 			"ItemWaterbottle",
 			"ItemWaterbottleUnfilled",
@@ -1412,7 +1403,6 @@ class CfgLoot {
 		{
 //trash
 			0.18, //TrashTinCan
-			0.09, //ItemSodaEmpty
 //drink
 			0.01, //ItemWaterbottle
 			0.01, //ItemWaterbottleUnfilled

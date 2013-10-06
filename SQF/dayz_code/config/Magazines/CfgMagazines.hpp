@@ -146,8 +146,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count=2;
 		descriptionShort="2 Rounds 12 gauge Shotgun Shells<br/>Shot Load: Slug<br/>Used in: Double Barrel Shotgun</br>Can be comined for use in other Shotguns and Winchester";
 		model = "\z\addons\dayz_communityassets\models\2shells_slugshot.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_slugshot_CA.paa";/*
-		class ItemActions
+		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_slugshot_CA.paa";
+		/*class ItemActions
 		{
 			class ReloadMag
 			{
@@ -632,7 +632,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rabbit_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};
-	class ItemSodaRocket : ItemSodaCoke {//model error my docs texture reference + Rocket said No thanks to Joe Originally
+	/*class ItemSodaRocket : ItemSodaCoke {//model error my docs texture reference + Rocket said No thanks to Joe Originally
 		displayName = "Rocket Soda";
 		descriptionShort = "Soda Made from Rockets";
 		model = "z\addons\dayz_communityassets\models\soda_rocket_clean_full.p3d";
@@ -642,7 +642,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\soda_rocket_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rocket_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	};
+	};*/
 	class ItemSodaSacrite : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_12;
@@ -1762,7 +1762,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_FOOD_DESC_PISTACHIO;
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
-	};/*
+	};
 	class FoodTwinkie : FoodEdible {
 		scope = public;
 		count = 1;
@@ -1770,7 +1770,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "Snack - Twinkie";
 		descriptionShort = "Only God knows";
 		model = "z\addons\dayz_communityassets\models\twinkie.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_twinkie_clean_ca.paa";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_twinkie_clean.paa";
 	};	
 	class FoodTwinkieDirty : FoodEdible {
 		scope = public;
@@ -1778,9 +1778,18 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		bloodRegen = 100;
 		displayName = "Snack - Twinkie";
 		descriptionShort = "Only God knows";
-		model = "z\addons\dayz_communityassets\models\twinkie_dirty.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_twinkie_dirty_ca.paa";
-	};*/
+		model = "z\addons\dayz_communityassets\models\twinkie.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_twinkie_dirty.paa";
+	};
+	class ItemTrashBible : CA_Magazine {
+		scope = public;
+		count = 1;
+		displayName = "Bible";
+		descriptionShort = "King James Bible";
+		model = "z\addons\dayz_communityassets\models\bible.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bible_CA.paa";
+		type = 256;
+	};
 	class ItemTrashCards : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -1823,12 +1832,79 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		};
 	};
 	class Hatchet_Swing;//External class reference													//weapon
-	 class Machete_Swing : Hatchet_Swing {
+	
+	class baseball_bat_swing : Hatchet_Swing {
+		displayName = "Baseball Bat";
+		displayNameMagazine = "Baseball Bat";
+		shortNameMagazine = "Baseball Bat";
+		ammo = "baseball_bat_swing_Ammo";
+	};
+	
+	class Baseball_Bat_Barbed_Swing : Hatchet_Swing {
+		displayName = "Baseball Bat Barbed";
+		displayNameMagazine = "Baseball Bat Barbed";
+		shortNameMagazine = "Baseball Bat Barbed";
+		ammo = "baseball_bat_barbed_swing_Ammo";
+	};
+	
+	class baseball_bat_nailed_swing : Hatchet_Swing {
+		displayName = "Baseball_Bat_Nailed";
+		displayNameMagazine = "Baseball_Bat_Nailed";
+		shortNameMagazine = "Baseball_Bat_Nailed";
+		ammo = "baseball_bat_nailed_swing_Ammo";
+	};
+	
+	class Machete_Swing : Hatchet_Swing {
 		displayName = "Machete";
 		displayNameMagazine = "Machete";
 		shortNameMagazine = "Machete";
 		ammo = "Machete_Swing_Ammo";
-	};	/*					//Begin SMD assets by smd_dev team SMD Equipment Fixes and Additions Original and Community DayZ Content
+	};
+	
+	class shovel_swing : Hatchet_Swing {
+		displayName = "Shovel";
+		displayNameMagazine = "Shovel";
+		shortNameMagazine = "Shovel";
+		ammo = "shovel_swing_Ammo";
+	};
+	
+	class 10Rnd_127x99_m107 {
+		class ItemActions {
+			class Craft0
+			{
+				text="Convert for M2";
+				script="spawn player_Craft;";
+				use[]= 
+				{
+					{"10Rnd_127x99_m107",12}
+				};
+				output[]= 
+				{
+					{"100Rnd_127x99_M2","magazine",1}
+				};
+			};
+		};
+	};
+	
+	class 5Rnd_127x99_as50 {
+		class ItemActions {
+			class Craft0
+			{
+				text="Convert for M2";
+				script="spawn player_Craft;";
+				use[]= 
+				{
+					{"5Rnd_127x99_as50",12}
+				};
+				output[]= 
+				{
+					{"100Rnd_127x99_M2","magazine",1}
+				};
+			};
+		};
+	};		
+
+	/*					//Begin SMD assets by smd_dev team SMD Equipment Fixes and Additions Original and Community DayZ Content
 	class 15Rnd_9x19_M9 {
 	class ItemActions {
 		class Craft0 
@@ -2366,6 +2442,11 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "RACS S.W.A.T. BDU";
 		descriptionShort = "Digital camouflage Battle Dress Uniform of the United Sahrani Police Department Special Weapons And Tactics";
 	};
+	class Skin_SMD_SPD_BLACK : SkinBase {
+		scope = public;
+		displayName = "RACS SPD. BDU";
+		descriptionShort = "Standard Battle Dress Uniform of the United Sahrani Police Department";
+	};
 	class Skin_SMD_SPD_BLUE : SkinBase {
 		scope = public;
 		displayName = "RACS SPD. BDU";
@@ -2401,7 +2482,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "U.S. Spec Ops MP BDU";
 		descriptionShort = "Special Battle Dress Uniform of the United States Armed Forces Special Operations Military Police";
 	};
-	class Soldier1_DZ : SkinBase {
+	class Skin_Soldier1_DZ : SkinBase {
 		scope = public;
 		displayName = "BAF Regular BDU";
 		descriptionShort = "Standard Battle Dress Uniform of the British Armed Forces Regular Infantry";
@@ -2421,8 +2502,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Brick";
-		model = "\SMD\assets\objects\brick";
-		picture = "\SMD\assets\objects\icons\brick.paa";
+		model = "smd_assets\objects\brick.p3d";
+		picture = "\smd_assets\objects\icons\brick.paa";
 		descriptionShort = "Rectangular block of kiln baked clay. Can be Thrown and used for crafting various items";
 		ammo = "Brick";
 	};
@@ -2431,9 +2512,18 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Electronic Wire";
-		model = "\SMD\assets\objects\floppywire";
-		picture = "\SMD\assets\objects\icons\floppywire.paa";
+		model = "smd_assets\objects\floppywire";
+		picture = "\smd_assets\objects\icons\floppywire.paa";
 		descriptionShort = "Scrap Electronic Wire";
+	};
+	class ItemHose : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Plastic Tubing";
+		model = "\z\addons\dayz_communityassets\models\hose";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_hose.paa";
+		descriptionShort = "Scrap Piece of Plastic Tubing";
 	};
 	class ItemNails : CA_Magazine {
 		scope = public;
@@ -2447,19 +2537,28 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 	class ItemPropane : CA_Magazine {
 		scope = public;
 		count = 1;
-		type = "(256*2)";
+		type = "(256 * 2)";
 		displayName = "Propane Tank";
-		model = "\SMD\assets\objects\propane";
-		picture = "\SMD\assets\objects\icons\propane.paa";
+		model = "smd_assets\objects\propane";
+		picture = "\smd_assets\objects\icons\propane.paa";
 		descriptionShort = "Propane Tank";
+	};
+	class ItemRope : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Rope";
+		model = "\z\addons\dayz_communityassets\models\rope";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_rope_ca.paa";
+		descriptionShort = "Scrap Piece of Plastic Tubing";
 	};
 	class ItemScrapElectronics : CA_Magazine {
 		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Scrap Electronics";
-		model = "\SMD\assets\objects\scrapelectronics";
-		picture = "\SMD\assets\objects\icons\scrapelectronics.paa";
+		model = "smd_assets\objects\scrapelectronics";
+		picture = "\smd_assets\objects\icons\scrapelectronics.paa";
 		descriptionShort = "Electronic circuit board used for crafting various items";
 	};	
 	class ItemTape : CA_Magazine {
@@ -2467,8 +2566,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Duct Tape";
-		model = "\SMD\assets\objects\tape";
-		picture = "\SMD\assets\objects\icons\tape.paa";
+		model = "smd_assets\objects\tape";
+		picture = "\smd_assets\objects\icons\tape.paa";
 		descriptionShort = "Duct Tape used for crafting various items";
 	};
 	class ItemCarBomb : CA_Magazine {
@@ -2477,7 +2576,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		type = (2*256);
 		displayName = "Car Bomb";
 		model = "\ca\weapons\explosive.p3d";
-		picture = "\SMD\assets\objects\icons\carbomb.paa";
+		picture = "\smd_assets\objects\icons\carbomb.paa";
 		descriptionShort = "Can be attached to a vehicles engine and then automaticly explode when the engine is turned on!";
 	};	
 	class ItemWoodenSplint : CA_Magazine {
@@ -2485,8 +2584,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Splint & Duct Tape";
-		model = "\SMD\assets\objects\woodensplint";
-		picture = "\SMD\assets\objects\icons\woodensplint.paa";
+		model = "smd_assets\objects\woodensplint";
+		picture = "\smd_assets\objects\icons\woodensplint.paa";
 		descriptionShort = "Two wooden sticks and duct tape. Combined these two objects are great for mending broken legs.";
 		class ItemActions
 		{
@@ -2525,7 +2624,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 				text="$STR_ACTIONS_DRINK";
 				script="spawn player_drink;";
 			};
-				class Craft0 {
+			class Craft0 {
 				text="Drug Water";
 				script="spawn player_Craft;";
 				use[]= {

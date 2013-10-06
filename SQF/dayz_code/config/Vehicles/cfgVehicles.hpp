@@ -112,7 +112,7 @@ class CfgVehicles {
 	{
 		scope = 2;
 		model = "\sara_civilians\civil_1_tshirt.p3d";
-		vehicleClass = "S_Zombie1_P";
+		vehicleClass = "Sah_CivZ_1_P";
 		displayName = "S_Zombie1_P";
 		class Wounds
 		{
@@ -260,7 +260,7 @@ class CfgVehicles {
 	
 	class z_RACSzombie : zZombie_Base{	 //RACS Tan Camo black Helmet/Pads black vest
 		hiddenSelections[] = {"Camo01"};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_regular_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_regular_co.paa"};
 		displayName = "Zombie Soldier";
 		model = "\vil_police\vil_swat";
 		zombieLoot = "military";
@@ -307,64 +307,67 @@ class CfgVehicles {
 	};
 	
 	class z_RACSzombie3 : z_RACSzombie { //SPD SWAT Black Camo Helmet/Pads Black Vest
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_co.paa"};
 	};	
 
 	class z_RACSzombie4 : z_RACSzombie { //US SPEC OPS Flat Grey Black Helmet/Pads Black Vest
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_co.paa"};
-		model = "\vil_police\vil_cop";
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_us_blackops_co.paa"};
+		model = "\vil_police\vil_swat";
 	};
 	
 	class z_RACSzombie5 : z_RACSzombie { //RACS MP Tan Flat No Helmet/Pads Black Vest
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_mp_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
 	
 	class z_RACSzombie6 : z_RACSzombie { //RACS MP Tan Flat bdu AND vest No Helmet/Pads Blended Vest
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tan_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_mp_tan_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
 	
 	class z_RACSzombie7 : z_RACSzombie { //RACS Tan digi bdu AND vest No Helmet/Pads Blended Vest
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tan_digi_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_mp_tan_digi_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
 	
 	class z_RACSzombie8 : z_RACSzombie { //RACS Tan digi bdu Black Helmet/Pads Black vest 
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_regular_digi_co.paa"};
-		model = "\vil_police\vil_cop";
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_regular_digi_co.paa"};
+		model = "\vil_police\vil_swat";
 	};
 	
 	class z_RACSzombie9 : z_RACSzombie { // US BLOPS Black digi bdu AND vest No Helmet/Pads Blended Vest
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_mp_digi_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_us_blackops_mp_digi_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
 	
 	class z_RACSzombie10 : z_RACSzombie { //US BLOPS Black Digi Camo Helmet/Pads
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_digi_co.paa"};
-		model = "\vil_police\vil_cop";
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_us_blackops_digi_co.paa"};
+		model = "\vil_police\vil_swat";
 	};	
 
 	class z_RACSzombie11 : z_RACSzombie { //SPD SWAT Black Digi Camo Helmet/Pads
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_black_digi_co.paa"};
-		model = "\vil_police\vil_cop";
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_digi_co.paa"};
+		model = "\vil_police\vil_swat";
 	};
 
 	class z_RACSzombie12 : z_RACSzombie { //SPD Blue digi bdu Black vest 
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_digi_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_blue_digi_co.paa"};
 		model = "\vil_police\vil_cop";
+	};
+	class z_RACSzombie15 : z_RACSzombie { //SPD Black bdu Black vest 
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_blue_co.paa"};
+		model = "\vil_police\vil_swat";
 	};	
 	
 	class z_RACSzombie13 : z_RACSzombie { //SPD Blue bdu Black vest 
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_blue_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
 
 	class z_RACSzombie14 : z_RACSzombie { //SPD Black bdu Black vest 
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_black_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_co.paa"};
 		model = "\vil_police\vil_cop";
 	};
-
 	class AllVehicles;
 	class Air : AllVehicles 
 	{
@@ -422,7 +425,7 @@ class CfgVehicles {
 		displayname = "AH6X (ATACS)";
 		displaynameshort = "AH6X (ATACS)";
 		hiddenselections[] = {"camo1"};
-		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_atacs_co.paa"};
+		hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa"};
 	};
 	
 	class AH6X_SMD_MAGPI : AH6X_DZ
@@ -430,7 +433,7 @@ class CfgVehicles {
 		displayname = "AH6X (ATACS)";
 		displaynameshort = "AH6X (ATACS)";
 		hiddenselections[] = {"camo1"};
-		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_magnumpi_co.paa"};
+		hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa"};
 	};
 	
 	class AH6X_SMD_RACS : AH6X_DZ
@@ -438,7 +441,7 @@ class CfgVehicles {
 		displayname = "AH6X (RACS)";
 		displaynameshort = "AH6X (RACS)";
 		hiddenselections[] = {"camo1"};
-		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_racs_co.paa"};
+		hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa"};
 	};
 	
 	class AH6X_SMD_RACS_DIGI : AH6X_DZ
@@ -446,7 +449,7 @@ class CfgVehicles {
 		displayname = "AH6X (RACS) Digital";
 		displaynameshort = "AH6X (RACS) Digital";
 		hiddenselections[] = {"camo1"};
-		hiddenselectionstextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_racs_digi_co.paa"};
+		hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_digi_co.paa"};
 	};
 	
 	class An2_Base_EP1;
@@ -2459,7 +2462,7 @@ class CfgVehicles {
 		displayname = "C130J (ATACS)";
 		displaynameshort = "C130J (ATACS)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_atacs_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_atacs_wings_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_atacs_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_atacs_wings_co.paa"};
 	};
 	
 	class C130_SMD_BLOPS: C130_SMD_DZ 
@@ -2467,7 +2470,7 @@ class CfgVehicles {
 		displayname = "C130J (Unmarked)";
 		displaynameshort = "C130J (Unmarked)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_blackops_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_blackops_wings_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_blackops_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_blackops_wings_co.paa"};
 	};	
 	
 	class C130_SMD_BLOPS_DIGI: C130_SMD_DZ 
@@ -2475,7 +2478,7 @@ class CfgVehicles {
 		displayname = "C130J (Unmarked)";
 		displaynameshort = "C130J (Unmarked)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_blackops_digital_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_blackops_digital_wings_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_blackops_digital_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_blackops_digital_wings_co.paa"};
 	};
 	
 	class C130_SMD_UN: C130_SMD_DZ 
@@ -2483,7 +2486,7 @@ class CfgVehicles {
 		displayname = "C130J (U.N.)";
 		displaynameshort = "C130J (U.N.)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_c130j_UN_body_co.paa","z\addons\dayz_code\textures\smd_veh_c130j_UN_wings_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_UN_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_UN_wings_co.paa"};
 	};
 	
 	/*class CH47_base_DZ: Helicopter
@@ -2864,14 +2867,14 @@ class CfgVehicles {
 		displaynameshort = "Landrover RACS)";
 		scope = 2;
 		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_landrover_racs_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_landrover_racs_co.paa"};
 	};
 
 	class LandRover_SMD_RACS_DIGI: LandRover_SMD_RACS
 	{
 		displayname = "Landrover (RACS) Digital";
 		displaynameshort = "Landrover RACS) Digital";
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_landrover_racs_digi_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_landrover_racs_digi_co.paa"};
 	};
 
 	class MH60S_DZ: Helicopter
@@ -3028,7 +3031,7 @@ class CfgVehicles {
 				gunBeg = "muzzle_1";
 				gunEnd = "chamber_1";
 				weapons[] = {"M240_veh"};
-				magazines[] = {"100Rnd_762x51_M240","100Rnd_762x51_M240","100Rnd_762x51_M240"};
+				magazines[] = {};
 				gunnerName = "$STR_POSITION_CREWCHIEF";
 				gunnerOpticsModel = "\ca\weapons\optika_empty";
 				gunnerOutOpticsShowCursor = 1;
@@ -3135,7 +3138,7 @@ class CfgVehicles {
 		displayname = "MH6J (ATACS)";
 		displaynameshort = "MH6J (ATACS)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_atacs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
 	};*/
 	
 	class MH6J_SMD_MAGPI : MH6J_DZ
@@ -3143,7 +3146,7 @@ class CfgVehicles {
 		displayname = "Hughes 500D";
 		displaynameshort = "Hughes 500D";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_magnumpi_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa","ca\air_e\ah6j\data\default_co.paa"};
 	};
 	
 	/*class MH6J_SMD_RACS : MH6J_DZ
@@ -3151,7 +3154,7 @@ class CfgVehicles {
 		displayname = "MH6J (RACS)";
 		displaynameshort = "MH6J (RACS)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_ah6_racs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
 	};
 	
 	class MH6J_SMD_RACS_DIGI : MH6J_DZ
@@ -3202,11 +3205,11 @@ class CfgVehicles {
 		{
 			class MainTurret : MainTurret 
 			{
-				magazines[] = {"100Rnd_762x54_PK"};
+				magazines[] = {};
 			};
 			class BackTurret : BackTurret
 			{
-				magazines[] = {"100Rnd_762x54_PK"};
+				magazines[] = {};
 			};
 		};
 	};
@@ -3247,7 +3250,7 @@ class CfgVehicles {
 		hasGunner = 0;
 		class Turrets{};
 		threat[] = {0.0,0.0,0.0};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_mi17_blackops_body_co.paa","z\addons\dayz_code\textures\smd_veh_mi17_blackops_det_co.paa","z\addons\dayz_code\textures\smd_veh_mi17_blackops_decals2_co.paa"}; //by Textures by Pliskin
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_mi17_blackops_body_co.paa","smd_assets\vehicles\textures\smd_veh_mi17_blackops_det_co.paa","smd_assets\vehicles\textures\smd_veh_mi17_blackops_decals2_co.paa"}; //by Textures by Pliskin
 	};	
 	
 	class MV22_DZ: Plane {
@@ -3578,11 +3581,11 @@ class CfgVehicles {
 		{
 			class MainTurret : MainTurret 
 			{
-				magazines[] = {"100Rnd_762x51_M240"};
+				magazines[] = {};
 			};
 			class LeftDoorGun : LeftDoorGun
 			{
-				magazines[] = {"100Rnd_762x51_M240"};
+				magazines[] = {};
 			};
 		};
 		hiddenSelectionsTextures[] = {"ca\air_E\UH1H\data\UH1D_CO.paa", "ca\air_E\UH1H\data\UH1D_in_CO.paa", "ca\air_E\UH1H\data\default_co.paa"};
@@ -3592,42 +3595,42 @@ class CfgVehicles {
 	{
 		displayname = "UH1H (ATACS)";
 		displaynameshort = "UH1H (ATACS)";	
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_atacs_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_atacs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_atacs_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_atacs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
 
 	class UH1H_SMD_BLOPS: UH1H_DZ
 	{
 		displayname = "UH1H Unmarked";
 		displaynameshort = "UH1H (Unmarked)";	
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_blackops_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_blackops_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_blackops_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_blackops_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
 
 	class UH1H_SMD_BLOPS_DIGI: UH1H_DZ
 	{
 		displayname = "UH1H Unmarked";
 		displaynameshort = "UH1H (Unmarked)";	
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_blackops_digital_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_blackops_digital_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
 
 	class UH1H_SMD_RACS: UH1H_DZ
 	{
 		displayname = "UH1H (RACS)";
 		displaynameshort = "UH1H (RACS)";	
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_racs_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_racs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_racs_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_racs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};	
 
 	class UH1H_SMD_RACS_DIGI: UH1H_DZ
 	{
 		displayname = "UH1H (RACS) Digital";
 		displaynameshort = "UH1H (RACS) Digital";	
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_racs_digi_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_racs_digi_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};		
 
 	class UH1H_SMD_UN: UH1H_DZ
 	{
 		displayname = "UH1H (United Nations)";
 		displaynameshort = "UH1H UNITED NATIONS";	
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_uh1_un_co.paa", "z\addons\dayz_code\textures\smd_veh_uh1_un_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_un_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_un_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};	
 	
 	class RubberBoat;
@@ -3700,7 +3703,7 @@ class CfgVehicles {
 		side = 3;
 		faction = "BIS_TK_CIV";
 		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_ikarus_coke_co"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ikarus_coke_co"};
 		rarityUrban = 0.4;
 		crew = "TK_CIV_Takistani01_EP1";
 		typicalCargo[] = {"TK_CIV_Takistani01_EP1"};
@@ -3709,7 +3712,7 @@ class CfgVehicles {
 	{
 		displayname = "Ikarus (OpenDayZ)";
 		displaynameshort = "Ikarus (OpenDayZ)";	
-		hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_ikarus_opendayz_co"};
+		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ikarus_opendayz_co"};
 	};
 	class SkodaBase;
 	class car_hatchback: SkodaBase {
@@ -4017,61 +4020,66 @@ class CfgVehicles {
 	};
 	class SMD_ATACS_URBAN: Bandit1_DZ { //Hero Skin with Black Urban ATACS Camo
         model = "\Ca\Characters_PMC\Frost\Frost.p3d";
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_hero_atacs_urban_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_hero_atacs_urban_co.paa"};
     };
 	class SMD_ATACS_DES: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
 		model = "\Ca\Characters_PMC\Frost\Frost.p3d";
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_hero_atacs_des_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_hero_atacs_des_co.paa"};
     };
 	class SMD_RACS_MP: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
         model = "\vil_police\vil_cop";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_mp_co.paa"};
     };
 	class SMD_RACS_MP_Tan: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
         model = "\vil_police\vil_cop";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tan_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_mp_tan_co.paa"};
     };
 	class SMD_RACS_MP_Tan_Digi: Bandit1_DZ { //Flat Tan BDU No Helmet or Knee Pads
         model = "\vil_police\vil_cop";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_mp_tandigi_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_mp_tan_digi_co.paa"};
     };
 	class SMD_RACS_Soldier: Bandit1_DZ { //Tan Camo Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_regular_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_regular_co.paa"};
     };
 	class SMD_RACS_Soldier_Digi: Bandit1_DZ { //Tan Camo Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_racs_regular_digi_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_racs_regular_digi_co.paa"};
     };
 	class SMD_RACS_SWAT: Bandit1_DZ { //SPD SWAT Black Camo Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_co.paa"};
     };
 	class SMD_SPD_SWAT_BLACK: Bandit1_DZ { //SPD SWAT Flat Black Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_black_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_co.paa"};
     };
 	class SMD_SPD_SWAT_BLACK_DIGI: Bandit1_DZ { //SPD SWAT Flat Black Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_swat_black_digi_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_digi_co.paa"};
+    };
+	class SMD_SPD_BLACK: Bandit1_DZ { //SPD Flat Blue NO Helmet/Pads
+        model = "\vil_police\vil_swat";
+		hiddenSelections[] = {"Camo01"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_black_co.paa"};
     };
 	class SMD_SPD_BLUE: Bandit1_DZ { //SPD Flat Blue NO Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_blue_co.paa"};
     };
 	class SMD_SPD_BLUE_DIGI: Bandit1_DZ { //SPD Blue Digi NO Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_spd_blue_digi_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_blue_digi_co.paa"};
     };
 	class SMD_SARA_Sheriff: Bandit1_DZ { //Sherrif
         model = "\vil_police\vil_cop3";
@@ -4079,22 +4087,22 @@ class CfgVehicles {
 	class SMD_TIGER_CAMO: Bandit1_DZ { //Tiger Camo Beotch
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_tigerstripe_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_tigerstripe_co.paa"};
     };
 	class SMD_US_SpecOps: Bandit1_DZ { //US SPEC OPS Helmet/Pads
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_us_blackops_co.paa"};
     };
 	class SMD_US_SpecOps_DIGI: Bandit1_DZ { //US SPEC OPS Digi Helmet/Pads 
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_digi_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_us_blackops_digi_co.paa"};
     };
 	class SMD_US_SpecOps_MP_DIGI: Bandit1_DZ { //US SPEC OPS Digi NO Helmet/Pads Blended Vest
         model = "\vil_police\vil_swat";
 		hiddenSelections[] = {"Camo01"};
-        hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_bdu_us_blackops_mp_digi_co.paa"};
+        hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_us_blackops_mp_digi_co.paa"};
     };
 	class BAF_Soldier_Officer_W; //"Rocket" Clothing (BAF Officer)
 	class Rocket_DZ: BAF_Soldier_Officer_W {
@@ -4167,13 +4175,13 @@ class CfgVehicles {
 	
 	class SniperD_DZ : Sniper1_DZ {  //Desert Ghillie
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\z\addons\dayz_code\textures\ghillie_overall1_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\ghillie_overall1_co.paa"};
 	};
 	class SniperDW_DZ : SniperD_DZ {}; //Woman Desert Ghillie
 	
 	class SniperBanditD_DZ : SniperBandit_DZ { //Bandit Desert Ghillie
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\z\addons\dayz_code\textures\ghillie_top_co.paa"};
+		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\ghillie_top_co.paa"};
 	};
 	class SniperBanditDW_DZ : SniperBanditD_DZ {}; //Woman Bandit Desert Ghillie
 	class BanditW1_DZ;
@@ -4335,7 +4343,7 @@ class CfgVehicles {
 		transportFuel = 0; //50000;
 		nameSound = "fuelstation";
 	};
-	class Land_benzina_schnell : Strategic {
+	class Land_smd_benzina_schnell_open : Strategic {
 		icon = "\Ca\buildings\Icons\i_fuel_CA.paa";
 		transportFuel = 0; //50000;
 		nameSound = "fuelstation";
@@ -5199,15 +5207,36 @@ class CfgVehicles {
 		};
 	};
 	class WeaponHolderBase;
-	class WoodenArrowF : WeaponHolderBase {
-		scope = public;
-		displayName = "WoodenArrowF";
-		model = "\dayz_weapons\models\bolt";
-		
-		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	class WeaponHolder_ItemBaseball_Bat: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Baseball_Bat";
+		model="\z\addons\dayz_communityassets\models\baseball_bat.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemBaseball_Bat'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};	
+	class WeaponHolder_ItemBaseball_Bat_Barbed: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Baseball_Bat_Barbed";
+		model="\z\addons\dayz_communityassets\models\baseball_bat_barbed.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemBaseball_Bat_Barbed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemBaseball_Bat_Nailed: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Baseball_Bat_Nailed";
+		model="\z\addons\dayz_communityassets\models\baseball_bat_nails.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemBaseball_Bat_Nailed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
 	class WeaponHolder_ItemCrowbar: WeaponHolderBase
 	{
 		scope=2;
@@ -5228,14 +5257,33 @@ class CfgVehicles {
 			init="[(_this select 0),'cfgWeapons','ItemMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
-	class WeaponHolder_ItemPropane: WeaponHolderBase
+	class WeaponHolder_ItemShovel: WeaponHolderBase
 	{
 		scope=2;
+		displayName="Shovel";
+		model="\z\addons\dayz_communityassets\models\shovel.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemShovel'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemPropane: WeaponHolderBase
+	{
+		scope = public;
 		displayName="Propane Tank";
-		model="\SMD\assets\objects\propane.p3d";
+		model="\smd_assets\objects\propane.p3d";
 		class eventHandlers
 		{
 			init="[(_this select 0),'cfgMagazines','ItemPropane'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WoodenArrowF : WeaponHolderBase {
+		scope = public;
+		displayName = "WoodenArrowF";
+		model = "\dayz_weapons\models\bolt";
+		
+		class eventHandlers {
+			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 	
@@ -5425,7 +5473,7 @@ class CfgVehicles {
 				gunBeg = "usti hlavne";	// endpoint of the gun
 				gunEnd = "konec hlavne";	// chamber of the gun
 				weapons[] = {"M2"};
-				magazines[] = {"100Rnd_127x99_M2", "100Rnd_127x99_M2"};
+				magazines[] = {};
 				gunnerName = $STR_POSITION_FRONTGUNNER;
 				gunnerOpticsModel = "\ca\weapons\optika_empty";
 				gunnerForceOptics = false;
