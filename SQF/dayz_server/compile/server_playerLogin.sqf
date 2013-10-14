@@ -109,13 +109,12 @@ if (!_isNew) then {
 				"SMD_RACS_MP_Tan_Digi",
 				"SMD_RACS_Soldier",
 				"SMD_RACS_Soldier_Digi",
-				"SMD_RACS_SWAT",
-				"SMD_SPD_SWAT_BLACK",
-				"SMD_SPD_SWAT_BLACK_DIGI",
-				"SMD_SPD_BLACK",
-				"SMD_SPD_BLUE",
-				"SMD_SPD_BLUE_DIGI",
-				"SMD_RACS_Sheriff",
+				"SMD_RSPD_SWAT",
+				"SMD_RSPD_SWAT_DIGI",
+				"SMD_RSPD_BLACK",
+				"SMD_RSPD_BLUE",
+				"SMD_RSPD_BLUE_DIGI",
+				"SMD_SARA_Sheriff",
 				"SMD_TIGER_CAMO",
 				"SMD_US_SpecOps",
 				"SMD_US_SpecOps_DIGI",
@@ -158,5 +157,11 @@ if (_hiveVer >= dayz_hiveVersionNo) then {
 //Server publishes variable to clients and WAITS
 //_playerObj setVariable ["publish",[_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer],true];
 
+//Uncomment out below lines 162,163,and 164 to give custom loadout option for server admins, Thanks to Quimera 
+//Edit line 164 in order to modify the default loadout for your server.
+//if ( _isNew ) then {
+//    _inventory = [["Makarov","ItemMap"],["ItemSodaPepsi","FoodCanBakedBeans","ItemBandage","ItemBandage","ItemBandage","ItemPainkiller","ItemPainkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"]];
+//};
+////end quimera custom loadout addition
 dayzPlayerLogin = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer];
 (owner _playerObj) publicVariableClient "dayzPlayerLogin";

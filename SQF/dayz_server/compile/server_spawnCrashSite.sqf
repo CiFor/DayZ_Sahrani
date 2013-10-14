@@ -70,7 +70,7 @@ while {true} do {
 
 	//Adjust Wreck and Range of Explosion if its some kind of Mi
 	if((_heliModel == "Mi17_DZ") || (_heliModel == "Mi17_Civilian_DZ") || (_heliModel == "Mi17_SMD_BLOPS")) then {
-		_crashModel = "Mi8Wreck";
+		_crashModel = "Mi8Wreck_DZ";
 		_exploRange = 285;
 		_lootRadius = 0.3;
 	};
@@ -81,7 +81,7 @@ while {true} do {
 	} else {
 		_lootTable = "Crash1";
 	};
-	if(_crashModel == "Mi8Wreck") then {
+	if(_crashModel == "Mi8Wreck_DZ") then {
 		if(_no50s) then {
 			_lootTable = "Crash2Mi8_NoKSVKs";
 		} else {
@@ -231,7 +231,7 @@ while {true} do {
 		deletevehicle _landingzone;
 		deleteGroup _aigroup;
 
-		//Animation is done, lets create the actual Crashside
+		//Animation is done, lets create the actual Crashsite
 		_crash = createVehicle [_crashModel, _pos, [], 0, "CAN_COLLIDE"];
 		_crash setVariable["Sarge",1];
 
