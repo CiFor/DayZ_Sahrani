@@ -1,7 +1,15 @@
 DayZ_Sahrani
 ===================
 Current Release: 0.7.8
+
+
 Development Build: 0.9.7
+
+
+PLEASE EMAIL me before making any modifications or additions.
+
+dayzsahranihelp@gmail.com
+
 
 
 Required Tools:
