@@ -1045,7 +1045,7 @@ class CfgWeapons {
 	class SVD_NSPU_EP1: FakeWeapon {};
 	class Sa58P_EP1: FakeWeapon {};
 	class Sa58V_EP1: FakeWeapon {};
-	class Sa58V_RCO_EP1: FakeWeapon {};m60a4
+	class Sa58V_RCO_EP1: FakeWeapon {};
 	class Sa58V_CCO_EP1: FakeWeapon {};
 	class M4A3_CCO_EP1: FakeWeapon {};
 	class M4A3_RCO_GL_EP1: FakeWeapon {};
