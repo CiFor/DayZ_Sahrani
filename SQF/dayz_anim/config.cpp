@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {""};
+		requiredAddons[] = {};
 		isUpdated = true;
 	};
 };
@@ -801,8 +801,8 @@ class CfgWeapons {
 	//class M4A1_HWS_GL_camo: FakeWeapon {};
 	//class MP5SD: FakeWeapon {};
 	//class MP5A5: FakeWeapon {};
-	//class PK: FakeWeapon {};
-	//class Pecheneg: FakeWeapon {};
+	class PK: FakeWeapon {};
+	class Pecheneg: FakeWeapon {};
 	//class SVD: FakeWeapon {};
 	//class SVD_CAMO: FakeWeapon {};
 	//class Launcher: FakeWeapon {};
@@ -964,7 +964,7 @@ class CfgWeapons {
 	//class Colt1911: FakeWeapon {};
 	//class DMR: FakeWeapon {};
 	//class M1014: FakeWeapon {};
-	//class m107 : FakeWeapon {};
+	class m107 : FakeWeapon {};
 	class M252: FakeWeapon {};
 	class 2B14: FakeWeapon {};
 	class Saiga12K: FakeWeapon {};
@@ -1034,10 +1034,10 @@ class CfgWeapons {
 	class UZI_SD_EP1: FakeWeapon {};
 	class revolver_EP1: FakeWeapon {};
 	class revolver_gold_EP1: FakeWeapon {};
-	class glock17_EP1: FakeWeapon {};
+	class glock17_EP1: FakeWeapon {};*/
 	class M60A4_EP1: FakeWeapon {};
 	class Mk_48_DES_EP1: FakeWeapon {};
-	class M249_EP1: FakeWeapon {};*/
+	class M249_EP1: FakeWeapon {};
 	class M249_TWS_EP1: FakeWeapon {};
 	class M249_m145_EP1: FakeWeapon {};
 	/*class M24_des_EP1: FakeWeapon {};
@@ -1045,7 +1045,7 @@ class CfgWeapons {
 	class SVD_NSPU_EP1: FakeWeapon {};
 	class Sa58P_EP1: FakeWeapon {};
 	class Sa58V_EP1: FakeWeapon {};
-	class Sa58V_RCO_EP1: FakeWeapon {};
+	class Sa58V_RCO_EP1: FakeWeapon {};m60a4
 	class Sa58V_CCO_EP1: FakeWeapon {};
 	class M4A3_CCO_EP1: FakeWeapon {};
 	class M4A3_RCO_GL_EP1: FakeWeapon {};
