@@ -26,6 +26,9 @@ Switch (_case) do
     player addMagazine 'ItemMorphine'; 
     player addMagazine 'ItemMorphine'; 
     player addMagazine 'Skin_SMD_US_SpecOps'; 
+    player addMagazine 'Skin_SMD_ATACS_DES'; 
+    player addMagazine 'Skin_SniperD_DZ'; 
+    player addMagazine 'Skin_SMD_TIGER_CAMO'; 
 
     player addWeapon 'vil_USP45SD';
     player addMagazine '7Rnd_45ACP_1911'; 
@@ -39,17 +42,20 @@ Switch (_case) do
     player addWeapon 'Binocular_Vector';
     player addWeapon 'NVGoggles';
     player addWeapon 'ItemGPS';
-    player addWeapon 'ItemCompass';
-    player addWeapon 'ItemMap_Debug';
-    player addWeapon 'ItemWatch';
     player addWeapon 'ItemHatchet';
+    player addWeapon 'ItemMap_Debug';
+    player addWeapon 'ItemRadio';
+    player addWeapon 'ItemCraftingBook';
+    player addWeapon 'ItemCraftingBook2';
+    player addWeapon 'ItemCraftingBook3';
     player addWeapon 'ItemKnife';
     player addWeapon 'Itemmatchbox';
     player addWeapon 'Itemetool';
     player addWeapon 'Itemtoolbox';
+    player addWeapon 'ItemCrowbar';
     player addBackpack 'DZ_Backpack_EP1';
-    (Unitbackpack player) addWeaponCargo ['vil_SR25SD', 1];
-    (Unitbackpack player) addMagazineCargo ['20Rnd_762x51_SB_SCAR', 2];
+    (Unitbackpack player) addWeaponCargo ['vil_hk416_EOT', 1];
+    (Unitbackpack player) addMagazineCargo ['30Rnd_556x45_Stanag', 2];
     (Unitbackpack player) addMagazineCargo ['ItemBloodbag', 2];
     (Unitbackpack player) addMagazineCargo ['ItemEpinephrine', 2];
     (Unitbackpack player) addMagazineCargo ['ItemWaterbottle', 2];

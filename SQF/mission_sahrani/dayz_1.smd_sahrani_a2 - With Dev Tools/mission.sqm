@@ -1,14 +1,23 @@
 version=11;
 class Mission
 {
-	addOns[]=
-	{
-		"smd_sahrani_a2",
+	addOns[]={
+	"dayz",
+	"dayz_anim",
+	"dayz_code",
+	"dayz_communityassets",
+	"dayz_equip",
+	"dayz_sfx",
+	"dayz_vehicles",
+	"dayz_weapons",
+	"smd_assets",
+	"smd_roads",
+	"smd_sahrani_a2",
+	"smd_sahrani_artif_obj",
+	"smd_sahrani_rocks",
+	"smd_sahrani_veg",
 	};
-	addOnsAuto[]=
-	{
-		"smd_sahrani_a2",
-	};
+	addOnsAuto[]={};
 	randomSeed=11171215;
 	class Intel
 	{

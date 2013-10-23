@@ -58,7 +58,7 @@ class RscLoadingText : RscText
 	w = 0.352944;
 	h = 0.039216;
 	sizeEx = 0.03921;
-	colorText[] = {0.543,0.5742,0.4102,1.0};
+	colorText[] = {1,1,1,1};
 };
 class RscProgress
 {
@@ -141,7 +141,7 @@ class DayZ_loadingScreen
 			h = 0.04902;
 			text = "";
 			sizeEx = 0.05;
-			colorText[] = {0.543,0.5742,0.4102,1.0};
+			colorText[] = {1,1,1,1};
 		};
 	};
 };

@@ -27,9 +27,17 @@ bld_sparepos = [2559, 2668,0]; // another flat horizontal pos, further than buil
 bld_list = [ 
 //                           Quantity | Isolated
 //                      in Chernarus: | Index:
-"Land_telek1",                  // 2	100
+"UH1Wreck_DZ",
+"UH60Wreck_DZ",
+"Mi8Wreck",
+"Mi8Wreck_DZ",
+"Land_smd_ss_hangard_withdoor",
 "Land_smd_ammostore2_open",
 "Land_smd_army_hut_int",
+"Land_UH1Wreck_DZ",
+"Land_UH60Wreck_DZ",
+"Land_Mi8Wreck",
+"Land_Mi8Wreck_DZ",
 "Land_smd_army_hut_storrage",
 "Land_smd_army_hut2",
 "Land_smd_army_hut2_int",
@@ -134,6 +142,7 @@ bld_list = [
 "Land_smd_zastavka_jih",
 "Land_smd_zastavka_sever",
 "Land_smd_zvonice",
+"Land_telek1",                  // 2	100
 //"Land_A_Castle_Wall1_Corner_2", // 2	91
 "Land_ruin_corner_1",           // 4	88
 "Land_ruin_walldoor",           // 6	78
