@@ -1,8 +1,11 @@
 	class Crossbow;
 	class Crossbow_DZ : Crossbow {
-		reloadTime = 1.8;
-		displayname = $STR_DN_CROSSBOW;
-		magazines[] =
+		displayname = "Crossbow";
+		
+		class Single : Mode_SemiAuto {
+			reloadTime = 0.8;
+		};
+		magazines[] = 
 		{
 			"Quiver",
 			"WoodenArrow"
@@ -153,11 +156,62 @@
 		};
 	};
 
-	class GrenadeLauncher;  // External class reference
+	class GrenadeLauncher;	// External class reference
+
 	class Flare : GrenadeLauncher {
-		class ThrowMuzzle;
+		scope = public;
+		autoAimEnabled = false;
+		cursor = "Vehicle_Grenade_W";
+		cursoraim = "\ca\Weapons\Data\clear_empty";
+		cursorSize = 1;
+		value = 0;
+		type = VSoft;
+		displayName = $STR_MAG_ACTION2_4;
+		canDrop = false;
+		muzzles[] = {"RoadFlareMuzzle", "ChemLightMuzzle", "MolotovCocktailMuzzle"};
+
+		class ThrowMuzzle : GrenadeLauncher {
+			cursor = "Air_Dot";
+			cursoraim = "Vehicle_Grenade_W";
+			cursorSize = 1;
+			sound[] = {"", 0.000316228, 1};
+			reloadSound[] = {"", 0.000316228, 1};
+			aiDispersionCoefX = 6;
+			aiDispersionCoefY = 6;
+			reloadTime = 0;
+			magazineReloadTime = 0;
+			enableAttack = false;
+			showEmpty = 0;
+			autoReload = true;
+			modelOptics = "";
+			minRange = 30;
+			minRangeProbab = 0.5;
+			midRange = 45;
+			midRangeProbab = 0.2;
+			maxRange = 60;
+			maxRangeProbab = 0.03;
+			};
+
+		class RoadFlareMuzzle : ThrowMuzzle {
+			displayName = $STR_MAG_ACTION_4;
+			magazines[] = {"HandRoadFlare"};
+			cursor = "Vehicle_Grenade_W";
+			cursorAim = "\ca\Weapons\Data\clear_empty";
+			begin1[] = {"dayz_weapons\sounds\roadflare_start", 1.77828, 1, 1000};
+			soundBegin[] = {"begin1", 1};
+		};
+
+		class ChemLightMuzzle : ThrowMuzzle {
+			displayName = $STR_MAG_ACTION_5;
+			magazines[] = {"HandChemGreen", "HandChemRed", "HandChemBlue"};
+			cursor = "Vehicle_Grenade_W";
+			cursorAim = "\ca\Weapons\Data\clear_empty";
+		};
+
 		class MolotovCocktailMuzzle : ThrowMuzzle {
-			displayName = "$STR_ACTION_THROW";
+			displayName = "Throw";
+			cursor = "Vehicle_Grenade_W";
+			cursorAim = "\ca\Weapons\Data\clear_empty";
 			magazines[] = {
 				"TrashJackDaniels", 
 				"ItemSodaEmpty", 
@@ -180,7 +234,6 @@
 				"FoodmeatRaw",
 				"FoodmuttonRaw",
 				"FoodrabbitRaw",
-				"HandRoadFlare",
 				"ItemSodaCokeEmpty",
 				"ItemSodaPepsiEmpty",
 				"ItemSodaMdewEmpty",
@@ -194,10 +247,10 @@
 				"ItemSodaMzlyEmpty", 
 				"ItemSodaRabbitEmpty",
 				"ItemBrick"
-			};          
+			};
 		};
 	};
-
+		
 	class MeleeHatchet;
 	
 	class MeleeBaseball_Bat: MeleeHatchet
