@@ -910,12 +910,12 @@ class CfgTownGeneratorSara {
 			direction = 90.176277;
 			SetZUp = 1;
 		};
-		class Object12 {
+		/*class Object12 {
 			Type="Land_dum_mesto_in";
 			position[] = {14154.884, 12501.169, 0.0058159484};
 			direction = 344.83966;
 			SetZUp = 1;
-		};
+		};*/
 		class Object13 {
 			Type="HeliH";
 			position[] = {14268.603, 12716.016, -0.01};
@@ -1012,12 +1012,12 @@ class CfgTownGeneratorSara {
 			direction = 153.99374;
 			SetZUp = 1;
 		};
-		class Object29 {
+		/*class Object29 {
 			Type="Land_dum_mesto2";
 			position[] = {14326.09, 12454.547, 0.0002746582};
 			direction = 180.20685;
 			SetZUp = 1;
-		};
+		};*/
 		class Object30 {
 			Type="Land_A_Pub_01";
 			position[] = {14250.317, 12637.221, -0.0099999998};
@@ -1147,6 +1147,12 @@ class CfgTownGeneratorSara {
 			Type="Land_smd_benzina_schnell_open";
 			position[] = {13754.628, 9373.499, 0.12584113};
 			direction = -230.3788;
+			SetZUp = 1;
+		};
+		class Object20 {
+			Type="Land_SMD_Bilboard_Bienvenudo";
+			position[] = {13779.5, 9438.2, 0.001}; 
+			direction = -216;
 			SetZUp = 1;
 		};
 	};
@@ -1363,13 +1369,13 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object4 {
-			Type="land_dum_istan3";
+			Type="land_smd_dum_istan3";
 			position[] = {13317.069, 6879.2656, -0.01};
 			direction = 0.04456012;
 			SetZUp = 1;
 		};
 		class Object5 {
-			Type="land_dum_istan3_hromada";
+			Type="land_smd_dum_istan3_hromada";
 			position[] = {13162.029, 6879.5967, 0.1351874};
 			direction = 0.04456012;
 			SetZUp = 1;
@@ -1464,7 +1470,7 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object6 {
-			Type="land_dum_istan3_hromada";
+			Type="land_smd_dum_istan3_hromada";
 			position[] = {11234.513, 5162.3623, 0.16766134};
 			direction = 139.26746;
 			SetZUp = 1;
@@ -1684,13 +1690,13 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object7 {
-			Type="Land_SS_hangar";
+			Type="Land_smd_ss_hangard_withdoor";
 			position[] = {2479.4714, 2835.9292, 0};
 			direction = -90;
 			SetZUp = 1;
 		};
 		class Object8 {
-			Type="Land_SS_hangar";
+			Type="Land_smd_ss_hangard_withdoor";
 			position[] = {2479.4829, 2802.7556};
 			direction = -90;
 			SetZUp = 1;
