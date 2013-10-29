@@ -59,7 +59,7 @@ class Land_ryb_domek : Residential {
 	lootPos[] = {{-2.47,-0.38,-2.01},{-1.2,2.35,-2},{2.15,-0.69,-1.56}};
 };
 
-class Land_smd_benzina_schnell : Industrial {
+class Land_smd_benzina_schnell_open : Industrial {
 	lootPos[] = {{1.84766,6.76855,-2.12487},{0.179199,5.61328,-212487},{1.4834,4.77148,-212487}};
 };
 
@@ -392,8 +392,10 @@ class Land_smd_shop5 : Residential {
 class Land_smd_shop5_double : Residential { 
 	lootPos[] = {{-0.84,-2.14,-2.02}};
 };
-class Land_smd_ss_hangard : Military {
-	lootPos[] = {{-6.28,18.11,-5.87},{9.19,17.85,-5.87},{7.06,4.54,-5.87},{14.01,-20.51,-5.87},{-13.23,-19.75,-5.87},{-11.54,-22.26,-5.87}}; 
+class Land_smd_ss_hangard_withdoor : Military {
+	lootChance = 0.4;
+	lootPos[] = {{13.58,-7.96,-5.87},{12.48,15.06,-5.87},{4.57,15.77,-5.87},{-7.8,11.8,-5.87},{-13.02,22.87,-5.87},{-12.83,-18.19,-5.87}}; 
+	zedPos[] = {{-10.15,-11.61,-5.87},{9.46,-13.6,-5.87},{12.23,25.83,-5.87},{-13.09,25.54,-5.87}};
 };
 class Land_smd_watertower1 : Residential {
 	lootPos[] = {{-2.61,-1.82,-9.29}};
@@ -702,36 +704,36 @@ class MASH: Hospital {
 class MASH_EP1: MASH {};
 
 class UH1Wreck_DZ: Crash1 {
-	zombieClass[] = {"z_RACSzombie4","z_RACSzombie3"};
-	zombieChance = 0.3;
+	zombieClass[] = {"z_RACSzombie4","z_RACSzombie9","z_RACSzombie10"};
+	zombieChance = 0.4;
 	minRoaming = 4;
 	maxRoaming = 8;
-	lootPos[] = {};
+	lootPos[] = {{-1.12,-3.4,-0.4},{-1.34,0.48,-0.73},{-3.74,8.05,-0.73},{6.98,2.44,-0.74},{6.34,-13.64,-0.74},{-0.24,-1.98,-0.42},{3.27,-7.4,-0.74}};
 };
 
 class UH60Wreck_DZ: Crash1 {
-	zombieClass[] = {"z_RACSzombie4","z_RACSzombie3"};
-	zombieChance = 0.3;
+	zombieClass[] = {"z_RACSzombie4","z_RACSzombie9","z_RACSzombie10"};
+	zombieChance = 1;
 	minRoaming = 4;
 	maxRoaming = 8;
-	lootPos[] = {};
+	lootPos[] = {{-1.3,-6.26,-1.95},{-0.54,1.55,-1.95},{-1.74,-3.02,-1.95},{-0.45,-2.83,-1.73},{6.48,-11.8,-1.95},{-2.34,-13.9,-1.95}};
 };
 
 class Mi8Wreck: Crash1 {
-	zombieClass[] = {"z_RACSzombie4","z_RACSzombie3"};
-	zombieChance = 0.3;
+	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
+	zombieChance = 0.4;
 	minRoaming = 4;
 	maxRoaming = 8;
-	lootPos[] = {};
+	lootPos[] = {{-0.27,-3.87,-1.7},{-1.03,-6.14,-1.7},{1.91,-1.43,-1.7},{-1.03,0.43,-1.7},{-0.59,-7.72,-1.22},{-6.98,-10.62,-1.7},{-12.54,-3.57,-1.7}};
 };
 
 
 class Mi8Wreck_DZ: Crash2Mi8 {
-	zombieClass[] = {"z_RACSzombie4","z_RACSzombie3"};
-	zombieChance = 0.3;
+	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
+	zombieChance = 0.4;
 	minRoaming = 4;
 	maxRoaming = 8;
-	lootPos[] = {};
+	lootPos[] = {{-0.27,-3.87,-1.7},{-1.03,-6.14,-1.7},{1.91,-1.43,-1.7},{-1.03,0.43,-1.7},{-0.59,-7.72,-1.22},{-6.98,-10.62,-1.7},{-12.54,-3.57,-1.7}};
 	zedPos[] = {};
 };
 

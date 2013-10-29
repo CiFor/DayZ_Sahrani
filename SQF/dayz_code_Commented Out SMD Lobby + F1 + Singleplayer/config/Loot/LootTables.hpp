@@ -663,7 +663,7 @@ class CfgBuildingLoot {
 			0.07 //vil_USPSD","weapon
 		};
 	};
-	class Crash2_Mi8: Default {
+	class Crash2Mi8_NoKSVKs: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
@@ -996,7 +996,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		zombieClass[] = {"z_worker1","z_worker2","z_worker3"};
 		maxRoaming = 2;
-		lootChance = 4;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},
@@ -1352,7 +1352,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		maxRoaming = 2;
 		zombieClass[] = {"z_sah_civilian1_shorts","z_sah_civilian2_shorts","z_sah_civilian3_shorts","z_sah_civilian4_shorts","z_sah_civilian5_shorts","z_sah_civilian6_shorts","z_sah_civilian7_shorts","z_sah_civilian1_pants","z_sah_civilian2_pants","z_sah_civilian3_pants","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_sah_civilian7_pants",};
-		lootChance = 4;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 			{"DZ_ALICE_Pack_EP1","object"},

@@ -663,7 +663,7 @@ class CfgBuildingLoot {
 			0.07 //vil_USPSD","weapon
 		};
 	};
-	class Crash2_Mi8: Default {
+	class Crash2Mi8_NoKSVKs: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
