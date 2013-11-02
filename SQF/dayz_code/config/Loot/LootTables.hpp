@@ -663,7 +663,7 @@ class CfgBuildingLoot {
 			0.07 //vil_USPSD","weapon
 		};
 	};
-	class Crash2_Mi8: Default {
+	class Crash2Mi8_NoKSVKs: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
@@ -894,8 +894,11 @@ class CfgBuildingLoot {
 			{"ItemMatchbox","generic"},
 			{"ItemToolbox","weapon"},
 			{"ItemWatch","generic"},
+			{"WeaponHolder_ItemBaseball_Bat","object"},
+			{"WeaponHolder_ItemCrowbar","object"},
 			{"WeaponHolder_ItemHatchet","object"},
-			{"WeaponHolder_ItemCrowbar","object"}
+			{"WeaponHolder_ItemMachete","object"},
+			{"WeaponHolder_ItemShovel","object"}
 		};
 		itemChance[] =	{
 			0.05, //DZ_ALICE_Pack_EP1","object
@@ -931,8 +934,11 @@ class CfgBuildingLoot {
 			0.05, //ItemMatchbox","generic
 			0.08, //ItemToolbox","weapon
 			0.02, //ItemWatch","generic
-			0.03, //WeaponHolder_ItemHatchet","object
-			0.01 //WeaponHolder_ItemCrowbar","object
+			0.01, //WeaponHolder_ItemBaseball_Bat","object
+			0.02, //WeaponHolder_ItemCrowbar","object
+			0.04, //WeaponHolder_ItemHatchet","object
+			0.01, //WeaponHolder_ItemMachete","object
+			0.01 //WeaponHolder_ItemShovel","object
 		};
 	};
 	class Hospital: Default {
@@ -990,7 +996,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		zombieClass[] = {"z_worker1","z_worker2","z_worker3"};
 		maxRoaming = 2;
-		lootChance = 0.3;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},
@@ -1002,6 +1008,7 @@ class CfgBuildingLoot {
 			{"ItemWire","magazine"},
 			{"WeaponHolder_ItemHatchet","object"},
 			{"WeaponHolder_ItemJerrycan","object"},
+			{"WeaponHolder_ItemPropane","object"},
 			{"WeaponHolder_PartEngine","object"},
 			{"WeaponHolder_PartFueltank","object"},
 			{"WeaponHolder_PartGeneric","object"},
@@ -1010,7 +1017,7 @@ class CfgBuildingLoot {
 			{"WeaponHolder_PartWheel","object"}
 		};
 		itemChance[] =	{
-			2, //,trash
+			0, //,trash
 			0.02, //ItemCraftingBook2","weapon
 			0.02, //ItemKnife","military
 			0.01, //ItemNails","magazine
@@ -1019,6 +1026,7 @@ class CfgBuildingLoot {
 			0.02, //ItemWire","magazine
 			0.01, //WeaponHolder_ItemHatchet","object
 			0.01, //WeaponHolder_ItemJerrycan","object
+			0, //WeaponHolder_ItemPropane","object
 			0.04, //WeaponHolder_PartEngine","object
 			0.04, //WeaponHolder_PartFueltank","object
 			0.04, //WeaponHolder_PartGeneric","object
@@ -1362,7 +1370,7 @@ class CfgBuildingLoot {
 			{"Skin_SniperLight_DZ","magazine"},
 			{"Skin_SniperD_DZ","magazine"},
 			{"WeaponHolder_ItemTent","object"},
-			{"WeaponHolder_Propane","object"},
+			{"WeaponHolder_ItemPropane","object"},
 			{"Crossbow_DZ","weapon"},
 			{"LeeEnfield","weapon"},
 			{"MR43","weapon"},
@@ -1381,8 +1389,11 @@ class CfgBuildingLoot {
 			{"ItemMap","weapon"},
 			{"ItemMatchbox","generic"},
 			{"ItemWatch","generic"},
+			{"WeaponHolder_ItemBaseball_Bat","object"},
+			{"WeaponHolder_ItemCrowbar","object"},
 			{"WeaponHolder_ItemHatchet","object"},
-			{"WeaponHolder_ItemCrowbar","object"}
+			{"WeaponHolder_ItemMachete","object"},
+			{"WeaponHolder_ItemShovel","object"}
 		};
 		itemChance[] =	{
 			0.03, //DZ_ALICE_Pack_EP1","object
@@ -1400,7 +1411,7 @@ class CfgBuildingLoot {
 			0.01, //Skin_SniperLight_DZ
 			0.01, //Skin_SniperD_DZ
 			0.03, //WeaponHolder_ItemTent
-			0.03, //WeaponHolder_Propane
+			0, //WeaponHolder_ItemPropane
 			0.02, //Crossbow_DZ","weapon
 			0.04, //LeeEnfield","weapon
 			0.01, //MR43","weapon
@@ -1419,8 +1430,11 @@ class CfgBuildingLoot {
 			0.04, //ItemMap","weapon
 			0.04, //ItemMatchbox","generic
 			0.01, //ItemWatch","generic
-			0.03, //WeaponHolder_ItemHatchet","object
-			0.01 //WeaponHolder_ItemCrowbar","object
+			0.01, //WeaponHolder_ItemBaseball_Bat","object
+			0.02, //WeaponHolder_ItemCrowbar","object
+			0.04, //WeaponHolder_ItemHatchet","object
+			0.01, //WeaponHolder_ItemMachete","object
+			0.01 //WeaponHolder_ItemShovel","object
 		};		
 	};
 	class Office: Residential {
