@@ -1789,6 +1789,18 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\bible.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_bible_CA.paa";
 		type = 256;
+		/*class ItemActions
+		{
+			class Use
+			{
+				text="$STR_ACTIONS_LIGHTFIRE";
+				script="spawn player_makeFire;";
+				use[]=
+				{
+					{"ItemTrashBible",4},
+				};
+			};
+		};*/		
 	};
 	class ItemTrashCards : CA_Magazine {
 		scope = public;
@@ -1798,6 +1810,18 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "z\addons\dayz_communityassets\models\cards.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_cards_ca.paa";
 		type = 256;
+		/*class ItemActions
+		{
+			class Use
+			{
+				text="$STR_ACTIONS_LIGHTFIRE";
+				script="spawn player_makeFire;";
+				use[]=
+				{
+					{"ItemTrashCards",4},
+				};
+			};
+		};*/
 	};
 	class ItemTrashRazor : CA_Magazine {
 		scope = public;
@@ -1815,8 +1839,17 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		descriptionShort = $STR_JUNK_DESC_TOILETPAPER;
 		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
-		type = 256;
+		type = 256;	
 		class ItemActions {
+			/*class Use
+			{
+				text="$STR_ACTIONS_LIGHTFIRE";
+				script="spawn player_makeFire;";
+				use[]=
+				{
+					{"ItemTrashToiletpaper",4},
+				};
+			};*/
 			class Craft0 {
 				text="Make Bandage";
 				script="spawn player_Craft;";
@@ -2630,7 +2663,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 					{"ItemWaterbottleDrugged","magazine",1}
 				};
 				crafting = 1;
-			}; //end SMD Addition
+			};
 		};
 	};
 	
@@ -2639,6 +2672,40 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		model = "\Ca\misc\smallObj_money_WPN";
 		picture = "\CA\misc\data\icons\picture_money_CA.paa";
 		displayName = "Money";
-		descriptionShort = "Pre-breakout money, not worth anything now. Could be worth something someday.";
+		descriptionShort = "US Dollars, used in the final days of the outbreak to attempt to bribe officials and ensure safe passage off Sahrani.";
+		class ItemActions
+		{
+			class Use
+			{
+				text="$STR_ACTIONS_LIGHTFIRE";
+				script="spawn player_makeFire;";
+				use[]=
+				{
+					{"ItemMoney",4},
+				};
+			};
+		};
+	};
+	class TimeBomb;
+	class PipeBomb: TimeBomb
+	{
+		displayName = "Satchel Charges";
+		descriptionShort = "A Large Quantity of C4 Explosive. Packaged for use as a quick and powerful field demolition device";
+		class ItemActions
+		{
+			class Craft0 {
+				text="Craft Carbomb";
+				script="spawn player_Craft;";
+				use[]= {
+					{"Pipebomb",1},
+					{"ItemFloppyWire",1},
+					{"ItemScrapElectronics",1}
+				};
+				output[]= {
+					{"ItemCarBomb","magazine",1}
+				};
+				crafting = 1;
+			};
+		};	
 	};
 };
