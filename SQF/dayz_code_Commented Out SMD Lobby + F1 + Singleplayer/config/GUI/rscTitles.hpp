@@ -11,7 +11,7 @@ class RscButton {
 	colorText[] = {0.95, 0.95, 0.95, 1};
 	colorDisabled[] = {0.4, 0.4, 0.4, 1};
 	colorBackground[] = {0.1, 0.1, 0.1, 0.85};
-	colorBackgroundActive[] = {0.1, 0.1, 0.1, 1};
+	colorBackgroundActive[] = {0.5, 0.5, 0.5, 1};
 	colorBackgroundDisabled[] = {0.1, 0.1, 0.1, 0.5};
 	offsetX = 0.003;
 	offsetY = 0.003;
@@ -431,7 +431,7 @@ class RscCombo {
 	
 	class ScrollBar {
 		color[] = {1, 1, 1, 0.6};
-		colorActive[] = {1, 1, 1, 1};
+		colorActive[] = {0.5, 0.5, 0.5, 1};
 		colorDisabled[] = {1, 1, 1, 0.3};
 		thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
 		arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
@@ -461,7 +461,7 @@ class RscListBox {
 	
 	class ScrollBar {
 		color[] = {1, 1, 1, 0.6};
-		colorActive[] = {1, 1, 1, 1};
+		colorActive[] = {0.5, 0.5, 0.5, 1};
 		colorDisabled[] = {1, 1, 1, 0.3};
 		thumb = "\z\addons\dayz_code\gui\ui\ui_scrollbar_thumb_ca.paa";
 		arrowFull = "\z\addons\dayz_code\gui\ui\ui_arrow_top_active_ca.paa";
@@ -483,7 +483,7 @@ class RscListNBox {
 	
 	class ScrollBar {
 		color[] = {1, 1, 1, 0.6};
-		colorActive[] = {1, 1, 1, 1};
+		colorActive[] = {0.5, 0.5, 0.5, 1};
 		colorDisabled[] = {1, 1, 1, 0.3};
 		thumb = "\z\addons\dayz_code\gui\ui\igui_scrollbar_thumb_ca.paa";
 		arrowFull = "\z\addons\dayz_code\gui\ui\igui_arrow_top_active_ca.paa";
@@ -507,7 +507,7 @@ class RscIGUIListBox : RscListBox {
 	
 	class ScrollBar {
 		color[] = {1, 1, 1, 0.6};
-		colorActive[] = {1, 1, 1, 1};
+		colorActive[] = {0.5, 0.5, 0.5, 1};
 		colorDisabled[] = {1, 1, 1, 0.3};
 		thumb = "\z\addons\dayz_code\gui\ui\igui_scrollbar_thumb_ca.paa";
 		arrowFull = "\z\addons\dayz_code\gui\ui\igui_arrow_top_active_ca.paa";
@@ -532,7 +532,7 @@ class RscIGUIListNBox : RscListNBox {
 	
 	class ScrollBar {
 		color[] = {1, 1, 1, 0.6};
-		colorActive[] = {1, 1, 1, 1};
+		colorActive[] = {0.5, 0.5, 0.5, 1};
 		colorDisabled[] = {1, 1, 1, 0.3};
 		thumb = "\z\addons\dayz_code\gui\ui\igui_scrollbar_thumb_ca.paa";
 		arrowFull = "\z\addons\dayz_code\gui\ui\igui_arrow_top_active_ca.paa";
@@ -841,10 +841,10 @@ class CfgInGameUI {
 		arrowHeight = 0.02;
 		iconArrowUp = "\ca\ui\data\ui_action_arrow_up_gs.paa";
 		iconArrowDown = "\ca\ui\data\ui_action_arrow_down_gs.paa";
-		colorBackground[] = {0, 0, 0, 0.0};
+		colorBackground[] = {0.1, 0.1, 0.1, 0.8};
 		colorText[] = {0.95, 0.95, 0.95, 1};
 		colorSelect[] = {0.95, 0.95, 0.95, 1};
-		colorBackgroundSelected[] = {0.1, 0.1, 0.1, 1};
+		colorBackgroundSelected[] = {0.5, 0.5, 0.5, 1};
 		background = "\ca\ui\data\igui_hud_corner.paa";
 		underlineSelected = 0;
 		/*
@@ -1508,11 +1508,11 @@ class RscDisplayMain : RscStandardDisplay
 			text = "DayZ Sahrani 0.9.7-20130929";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
-		delete CA_TitleMainMenu;
-		//delete CA_SinglePlayer;
-		class CA_PlayerName : RscText {
-			idc = 109;
-			style = 256;
+		delete CA_TitleMainMenu;        ///////////////////////////////////////////////////////////////////////////////////////
+		//delete CA_SinglePlayer;       //    Comment out 'delete CA_SinglePlayer;' in order to enable Singleplayer Access   //  
+		class CA_PlayerName : RscText { //    This can be done locally and then reversed in order to                         //  
+			idc = 109;                  //    Edit in 2d mode or create intros/cutscenes                                     //   
+			style = 256;                ///////////////////////////////////////////////////////////////////////////////////////
 			colorbackground[] = {0.1, 0.1, 0.1, 0};
 			x = "SafeZoneX + 0.15";
 			y = "SafeZoneY + 0.06";
@@ -1556,7 +1556,7 @@ class RscButtonActionMenu: RscButton
 {
 	SizeEx = 0.02674;
 	colorBackground[] = {0.1,0.1,0.1,0.85};
-	colorBackgroundActive[] = {0.1,0.1,0.1,1};
+	colorBackgroundActive[] = {0.5,0.5,0.5,1};
 	colorBackgroundDisabled[] = {0.1,0.1,0.1,0.5};
 	colorFocused[] = {0.95,0.95,0.95,1};
 	colorShadow[] = {1,1,1,0};
@@ -2242,7 +2242,7 @@ class RscDisplayGear
 			class ScrollBar
 			{
 				color[] = {1,1,1,0.6};
-				colorActive[] = {1,1,1,1};
+				colorActive[] = {0.5,0.5,0.5,1};
 				colorDisabled[] = {1,1,1,0.3};
 				thumb = "\z\addons\dayz_code\gui\ui\ui_scrollbar_thumb_ca.paa";
 				arrowFull = "\z\addons\dayz_code\gui\ui\ui_arrow_top_active_ca.paa";
@@ -3968,7 +3968,7 @@ class RscInGameUI {
 	};
 };
 
-//LULULULULULULULUL
+//Relocated Menu's used for hacks
 class nope {
 	type = 0;
 	x = -10000;
@@ -3985,7 +3985,7 @@ class nope {
 	color[] = {0,0,0,0};
 	text = "";
 };
-/*
+/*                                                                                 // Begin SMD Custom Lobby Relocation Comment out if Using Standard Lobby
 class RscDisplayMultiplayerSetup : RscStandardDisplay {
 	west = "ca\ui\data\flag_bluefor_ca.paa";
 	east = "ca\ui\data\flag_opfor_ca.paa";
@@ -4201,9 +4201,9 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		
 		delete CA_B_Params;
 		delete CA_B_DSinterface;
-		delete CA_B_Kick;
+		delete CA_B_Kick;                                         // END SMD Custom Lobby Relocation Comment out if Using Standard Lobby
 		/*
-		class SMD_ButtonDisconnect: RscButtonTextOnly
+		class SMD_ButtonDisconnect: RscButtonTextOnly  // SMD Custom Lobby Disconnect Button Comment out if Using Standard Lobby
 		{
 			idc = 2;
 			default = 0;
@@ -4252,7 +4252,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		delete CA_ButtonContinue;
 		delete CA_ButtonCancel;
 	};
-};
+};                                                                                 // END SMD Custom Lobby Disconnect Button Comment out if Using Standard Lobby
 */
 class RscDisplayMPInterrupt : RscStandardDisplay {
 	class controlsBackground {
@@ -4816,7 +4816,7 @@ class RscDisplayDSinterface : RscStandardDisplay {
 		};
 	};
 };
-//woops....
+//Removal of 'F' commands to block hacks
 class RscConfigEditor_Main {
 	idd = 3030;
 	class Controls {
@@ -4832,4 +4832,129 @@ class RscConfigEditor_Main {
 
 class CfgLoadingTexts {
 	titlesDefault[] = {""};
+};
+
+//Addition of Weapon Cursor configs to recolor them
+
+
+class CfgWeaponCursors
+{
+ class RifleCursorCore;
+ class LawCursorCore;
+ class MGCursorCore
+ {
+  texture = "\ca\ui\Data\cursor_w_airmg_gs";
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //0
+ };
+ class RifleCursor: RifleCursorCore
+ {
+  texture = "\ca\ui\Data\cursor_w_airmg_gs";
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //0
+ };
+ class PistolCursor: RifleCursor
+ {
+  texture = "\ca\ui\Data\cursor_w_airmg_gs";
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //0
+ };
+ class GLCursor: RifleCursor
+ {
+  texture = "\ca\ui\Data\cursor_w_GL_gs";
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //no previous entry
+ };
+ class LawCursor: LawCursorCore
+ {
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //0
+  texture = "\ca\UI\Data\cursor_w_MGvehicleW_gs";
+ };
+ class Cannon: LawCursorCore
+ {
+  texture = "\ca\UI\data\cursor_w_tank_gs";
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //0
+  class Sections{};
+  fade = 1.0;
+ };
+ class ForeSight: Cannon
+ {
+  texture = "\ca\UI\Data\cursor_w_foresight_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Air_W_MG: Cannon
+ {
+  texture = "\ca\UI\data\cursor_w_airMG_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Air_E_MG: Cannon
+ {
+  texture = "\ca\UI\data\cursor_w_turret_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Air_Dot: Cannon
+ {
+  texture = "\ca\UI\Data\cursor_w_dot_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Vehicle_E_MG: Cannon
+ {
+  texture = "\ca\UI\data\cursor_w_MGvehicleE_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Vehicle_W_MG: Cannon
+ {
+  texture = "\ca\UI\data\cursor_w_MGvehicleW_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Vehicle_Grenade_W: Cannon
+ {
+  texture = "\ca\UI\Data\cursor_w_grenade_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Vehicle_Grenade_E: Cannon
+ {
+  texture = "\ca\UI\data\cursor_w_GL_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Laser: Cannon
+ {
+  texture = "\ca\ui\Data\cursor_w_laserlock_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Rocket: Cannon
+ {
+  texture = "\ca\ui\Data\cursor_w_rocket_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Missile: Cannon
+ {
+  texture = "\ca\ui\Data\cursor_w_view_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Stinger: Cannon
+ {
+  texture = "\ca\UI\Data\cursor_w_stinger_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Javelin: Cannon
+ {
+  texture = "\ca\UI\Data\cursor_w_javellin_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
 };

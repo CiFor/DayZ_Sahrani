@@ -2384,107 +2384,102 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 	class SkinBase;	//external class reference						begin loot-able skin packages
 	class Skin_BanditSkin_DZ : SkinBase {
 		scope = public;
-		displayName = $STR_EQUIP_NAME_BANDIT;
-		descriptionShort = $STR_EQUIP_NAME_BANDIT;
+		displayName = "KSK Soldier";
+		descriptionShort = "Standard Battle Dress Uniform of the German Armed Forces with Shemagh (Tactical Desert Scarf)";
 	};
 	class Skin_Rocket_DZ : SkinBase {
 		scope = public;
-		displayName = "BAF Officer BDU";
+		displayName = "BAF Officer";
 		descriptionShort = "Standard Battle Dress Uniform of the British Armed Forces with officer's beret (Officer)";
 	};
-	class Skin_SMD_ATACS_DES : SkinBase {
+	class Skin_SMD_ATACS_DES : SkinBase {  //PMC Defensive Marksmen with Desert ATACS Camo //Textures by Pliskin
 		scope = public;
 		displayName = "ATACS DESERT BDU.";
 		descriptionShort = "Specialized ATACS camouflage clothing designed to resemble Desert Terrain";
 	};
-	class Skin_SMD_ATACS_URBAN : SkinBase {
+	class Skin_SMD_ATACS_URBAN : SkinBase {  //PMC Defensive Marksmen with Black Urban ATACS Camo //Textures by Pliskin
 		scope = public;
-		displayName = "ATACS URBAN BDU";
+		displayName = "ATACS URBAN";
 		descriptionShort = "Specialized ATACS camouflage clothing designed to resemble Urban Terrain";
 	};
-	class Skin_SMD_RACS_MP : SkinBase {
+	class Skin_SMD_RACS_MP : SkinBase {  //Flat Tan BDU - Black Vest - No Helmet or Knee Pads //Textures by Pliskin
 		scope = public;
 		displayName = "RACS M.P.";
 		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani MP's (Military Police)";
 	};
-	class Skin_SMD_RACS_MP_Tan : SkinBase {
+	class Skin_SMD_RACS_MP_Tan : SkinBase { //Flat Tan BDU - Blended Vest - No Helmet or Knee Pads //Textures by Pliskin
 		scope = public;
 		displayName = "RACS M.P. Tan";
 		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani Military Police (Desert Blended Vest)";
 	};
-	class Skin_SMD_RACS_MP_Tan_Digi : SkinBase {
+	class Skin_SMD_RACS_MP_Tan_Digi : SkinBase { //Tan Digital Camo BDU - Blended Vest - No Helmet or Knee Pads //Textures by Pliskin
 		scope = public;
 		displayName = "RACS M.P. Tan Digi)";
 		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani Military Police (Digital Camo Blended Vest)";
 	};	
-	class Skin_SMD_RACS_Soldier : SkinBase {
+	class Skin_SMD_RACS_Soldier : SkinBase { //Camo Regular BDU - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		scope = public;
-		displayName = "RACS Soldier BDU";
+		displayName = "RACS Soldier";
 		descriptionShort = "Standard Battle Dress Uniform of the Royal Army Corps of Sahrani (Regular Infantry)";
 	};	
-	class Skin_SMD_RACS_Soldier_Digi : SkinBase {
+	class Skin_SMD_RACS_Soldier_Digi : SkinBase { //Digital Camo BDU - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		scope = public;
 		displayName = "RACS Soldier Digi";
 		descriptionShort = "Special Battle Dress Uniform of the Royal Army Corps of Sahrani (Regular Infantry)(Digital Camo)";
 	};	
-	class Skin_SMD_RACS_SWAT : SkinBase {
+	class Skin_SMD_RSPD_BLACK : SkinBase { //RSPD Flat Black BDU - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		scope = public;
-		displayName = "RACS S.W.A.T. BDU";
-		descriptionShort = "Standard camouflage Battle Dress Uniform of the Royal Army Corps of Sahrani Military Police Special Weapons And Tactics";
-	};
-	class Skin_SMD_SPD_SWAT_BLACK : SkinBase {
-		scope = public;
-		displayName = "RACS S.W.A.T. BDU";
-		descriptionShort = "Standard Battle Dress Uniform of the United Sahrani Police Department Special Weapons And Tactics";
-	};
-	class Skin_SMD_SPD_SWAT_BLACK_DIGI : SkinBase {
-		scope = public;
-		displayName = "RACS S.W.A.T. BDU";
-		descriptionShort = "Digital camouflage Battle Dress Uniform of the United Sahrani Police Department Special Weapons And Tactics";
-	};
-	class Skin_SMD_SPD_BLACK : SkinBase {
-		scope = public;
-		displayName = "RACS SPD. BDU";
+		displayName = "RACS SPD.";
 		descriptionShort = "Standard Battle Dress Uniform of the United Sahrani Police Department";
 	};
-	class Skin_SMD_SPD_BLUE : SkinBase {
+	class Skin_SMD_RSPD_BLUE : SkinBase { //SPD Flat Blue - Black Vest - No Helmet or Knee Pads //Textures by Pliskin
 		scope = public;
-		displayName = "RACS SPD. BDU";
+		displayName = "RACS SPD.";
 		descriptionShort = "Standard Battle Dress Uniform of the United Sahrani Police Department";
 	};
-	class Skin_SMD_SPD_BLUE_DIGI : SkinBase {
+	class Skin_SMD_RSPD_BLUE_DIGI : SkinBase { //SPD Digital Blue BDU - Black Vest - No Helmet or Knee Pads //Textures by Pliskin
 		scope = public;
-		displayName = "RACS S.W.A.T. BDU";
+		displayName = "RACS S.W.A.T.";
 		descriptionShort = "Digital camouflage Battle Dress Uniform of the United Sahrani Police Department";
+	};
+	class Skin_SMD_RSPD_SWAT : SkinBase { //RSPD Night Camo BDU - Black Vest - Helmet and Knee Pads //Textures by Pliskin
+		scope = public;
+		displayName = "RACS S.W.A.T.";
+		descriptionShort = "Standard camouflage Battle Dress Uniform of the Royal Army Corps of Sahrani Military Police Special Weapons And Tactics";
+	};	
+	class Skin_SMD_RSPD_SWAT_DIGI : SkinBase { //RSPD Digital Black BDU - Black Vest - Helmet and Knee Pads //Textures by Pliskin
+		scope = public;
+		displayName = "RACS S.W.A.T.";
+		descriptionShort = "Digital camouflage Battle Dress Uniform of the United Sahrani Police Department Special Weapons And Tactics";
 	};/*Commented out for now, will add back once we redo all the vilas models in our own package
 	class Skin_SMD_SARA_Sheriff : SkinBase {
 		scope = public;
 		displayName = "Sahrani Sheriff";
 		descriptionShort = "Standard Deputy Sheriff Dress Uniform of United Sahrani Police Department";
 	};*/
-	class Skin_SMD_TIGER_CAMO : SkinBase {
+	class Skin_SMD_TIGER_CAMO : SkinBase { //Tiger Camo - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		scope = public;
-		displayName = "Tiger Camo BDU";
+		displayName = "Tiger Camo";
 		descriptionShort = "Tiger camouflage Battle Dress Uniform";
 	};
-	class Skin_SMD_US_SpecOps : SkinBase {
+	class Skin_SMD_US_SpecOps : SkinBase { //US SPEC OPS NO Helmet/Pads //Textures by Pliskin
 		scope = public;
-		displayName = "U.S. Spec Ops BDU";
+		displayName = "Spec Ops Grey";
 		descriptionShort = "Special Battle Dress Uniform of the United States Armed Forces Special Operations";
 	};
-	class Skin_SMD_US_SpecOps_DIGI : SkinBase {
+	class Skin_SMD_US_SpecOps_DIGI : SkinBase { //US SPEC OPS Digi NO Helmet/Pads //Textures by Pliskin
 		scope = public;
-		displayName = "U.S. Spec Ops BDU";
+		displayName = "Spec Ops Grey Digi";
 		descriptionShort = "Special Digital camouflage Battle Dress Uniform of the United States Armed Forces Special Operations";
 	};
-	class Skin_SMD_US_SpecOps_MP_DIGI : SkinBase {
+	class Skin_SMD_US_SpecOps_MP_DIGI : SkinBase {  //US SPEC OPS Digi BDU - Black Vest - Helmet/Pads //Textures by Pliskin
 		scope = public;
-		displayName = "U.S. Spec Ops MP BDU";
+		displayName = "Spec Ops MP Digi";
 		descriptionShort = "Special Battle Dress Uniform of the United States Armed Forces Special Operations Military Police";
 	};
 	class Skin_Soldier1_DZ : SkinBase {
 		scope = public;
-		displayName = "BAF Regular BDU";
+		displayName = "BAF Regular";
 		descriptionShort = "Standard Battle Dress Uniform of the British Armed Forces Regular Infantry";
 	};
 	class Skin_SniperLight_DZ : SkinBase {

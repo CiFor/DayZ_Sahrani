@@ -74,7 +74,7 @@
 		modes[] = {"Single","FullAuto"};
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
 
-		class Single: Single {
+		class Single: Mode_SemiAuto {
 			dispersion = 0.0035;
 			minRange = 2;
 			minRangeProbab = 0.1;
@@ -120,7 +120,7 @@
 		modes[] = {"Single","FullAuto"};
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
 
-		class Single: Single  {
+		class Single: Mode_SemiAuto  {
 			dispersion = 0.0035;
 			minRange = 2;
 			minRangeProbab = 0.1;
@@ -156,7 +156,7 @@
 		magazines[] = {"30Rnd_9x19_UZI", "30Rnd_9x19_UZI_SD", "17Rnd_9x19_glock17", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5SD", "15Rnd_9x19_M9", "15Rnd_9x19_M9SD"};
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
 
-		class Single: Single {
+		class Single: Mode_SemiAuto {
 			reloadTime = 0.06316;
 		};
 
@@ -179,7 +179,7 @@
 		magazines[] = {"30Rnd_9x19_UZI_SD", "30Rnd_9x19_MP5SD", "15Rnd_9x19_M9SD"};
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\HKMP5.rtm"};
 
-		class Single: Single {
+		class Single: Mode_SemiAuto {
 			reloadTime = 0.06316;
 		};
 		class FullAuto: FullAuto  {
@@ -222,7 +222,7 @@
 
 		class M203Muzzle;
 
-		class Single: Single  {
+		class Single: Mode_SemiAuto  {
 			begin1[] = {"\vilas_wwp\sounds\g3_fire1", 1.77828, 1, 1000};
 			begin2[] = {"\vilas_wwp\sounds\g3_fire2", 1.77828, 1, 1000};
 			soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
@@ -389,7 +389,7 @@
 			};
 		};
 
-		class Single: Single {
+		class Single: Mode_SemiAuto {
 			recoil = "recoil_single_primary_5outof10";
 			recoilProne = "recoil_single_primary_prone_4outof10";
 			dispersion = 0.001;
@@ -651,8 +651,6 @@
 
 	class vil_DMR_BASE : DMR {
 		weaponInfoType = "RscWeaponZeroing";
-		discreteDistance[] = {400, 600, 800};
-		discreteDistanceInitIndex = 2;
 	};
 
 	class vil_SR25 : vil_DMR_BASE {
@@ -678,12 +676,10 @@
 				opticsDisablePeripherialVision = true;
 				cameraDir = "";
 				visionMode[] = {"Normal"};
-				discreteDistance[] = {400, 600, 800};
-				discreteDistanceInitIndex = 2;
 			};
 		};
 
-		class Single: Single  {
+		class Single: Mode_SemiAuto  {
 			begin1[] = {"\vilas_wwp\sounds\sr25_fire1", 1.77828, 1, 1000};
 			soundBegin[] = {"begin1", 1.0};
 			midRange = 300;
@@ -736,7 +732,7 @@
 		picture = "\vilas_wwp\ico\w_vil_sr25_sd_ca.paa";
 
 
-		class Single: Single  {
+		class Single: Mode_SemiAuto  {
 			begin1[] = {"\vilas_wwp\sounds\sr25_silent", 1.77828, 1, 250};
 		};
 		class Armory {
@@ -806,7 +802,7 @@
 		discreteDistanceInitIndex = 1;
 		modes[] = {"Single", "FullAuto"};
 
-		class Single: Single {
+		class Single: Mode_SemiAuto {
 			reloadTime = 0.09;
 			//dispersion = 0.0017;
 			minRange = 2;
@@ -817,7 +813,7 @@
 			maxRangeProbab = 0.05;
 		};
 
-		class FullAuto: Single {
+		class FullAuto: FullAuto {
 			displayName = $STR_DN_MODE_FULLAUTO;
 			autoFire = true;
 			reloadTime = 0.09;
@@ -929,7 +925,7 @@
 		//picture = "\vilas_wwp\ico\w_vil_m4_ca.paa";
 		picture = "\ca\weapons\data\equip\w_m4_ca.paa";
 
-		class Burst : FullAuto {
+		class Burst : Burst {
 			displayName = $STR_DN_MODE_BURST;
 			autoFire = false;
 			burst = 3;
@@ -960,7 +956,7 @@
 		discreteDistanceInitIndex = 0;
 		modes[] = {"Single", "Burst"};
 
-		class Burst : FullAuto {
+		class Burst : Burst {
 			displayName = $STR_DN_MODE_BURST;
 			autoFire = false;
 			burst = 3;
@@ -986,7 +982,7 @@
 		discreteDistance[] = {100, 200, 300, 400};
 		discreteDistanceInitIndex = 1;
 
-		class Single: Single {
+		class Single: Mode_SemiAuto {
 			reloadTime = 0.08;
 			begin1[] = {"\vilas_wwp\sounds\hk53_fire1", 1.77828, 1, 1000};
 			soundBegin[] = {"begin1", 1};
@@ -1032,7 +1028,7 @@
 			soundBegin[] = {"begin1", 1};
 		};
 		
-		class FullAuto : Mode_FullAuto {
+		class FullAuto : FullAuto {
 				begin1[] = {"\vilas_wwp\sounds\galil_fire1", 1.04828, 1, 1000};
 				soundBegin[] = {"begin1", 0.5};
 				reloadTime = 0.09;
@@ -1068,7 +1064,7 @@
 		};
 		descriptionShort = $STR_VIL_GALIL_ARM_SHORT;
 
-		class Single: Single {
+		class Single: Mode_SemiAuto {
 			reloadTime = 0.075;
 			dispersion = 0.001;
 			minRange = 2;
@@ -1140,7 +1136,7 @@
 
 		modes[] = {"Single", "Burst", "Fullauto"};
 
-		class Single: Single  {
+		class Single: Mode_SemiAuto  {
 			dispersion = 0.002;
 			minRange = 2;
 			minRangeProbab = 0.1;
@@ -1342,7 +1338,7 @@
 			};
 		};
 
-		class AG36Muzzle {
+		class AG36Muzzle : G36aMuzzle {
 			displayName = $STR_VIL_AG36GL;
 			begin1[] = {"\vilas_wwp\Sounds\ag36_fire1", 1.77828, 1, 100};
 			soundBegin[] = {"begin1", 1};
@@ -1991,161 +1987,7 @@
 		};
 		descriptionShort = $STR_TGW_VIL_SKS_SHORT;
 	};
-		
-	/*********************************************************
-			Vilas Eastern Weapons Handguns
-	**********************************************************/
-
-	class vil_Tt33 : Makarov {
-		scope = public;
-		model = "\vilas_aks\vil_tetetka";
-		picture = "\vilas_aks\ico\w_vil_tt33_ca.paa";
-		displayName = $STR_VIL_TT33;
-		dispersion = 0.015;
-		magazines[] = {"8Rnd_9x18_Makarov","8Rnd_9x18_MakarovSD"};
-		begin1[] = {"\vilas_aks\sounds\tt33_fire1", 0.794328, 1, 700};
-		begin2[] = {"\vilas_aks\sounds\tt33_fire2", 0.794328, 1, 700};
-		soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
-		reloadMagazineSound[] = {"\vilas_aks\sounds\tt33_reload", 0.1, 1, 20};
-		class Armory {
-			author = $STR_AUTHOR_VILAS;
-		};
-		
-		class Library {
-			libTextDesc = $STR_VIL_TT33_LIB;
-		};
-		descriptionShort = $STR_VIL_TT33_SHORT;
-	};
-
-	class vil_APS : Makarov  {
-		scope = public;
-		model = "\vilas_aks\vil_aps";
-		modelOptics = "-";
-		picture = "\vilas_aks\ico\w_vil_aps_ca.paa";
-		optics = true;
-		distanceZoomMin = 50;
-		distanceZoomMax = 50;
-		displayName = $STR_TGW_VIL_APS;
-		begin1[] = {"\vilas_aks\sounds\APSs", 0.794328, 1, 700};
-		reloadMagazineSound[] = {"\vilas_aks\sounds\APSReload", 0.0316228, 1, 20};
-		magazines[] = {"8Rnd_9x18_Makarov","8Rnd_9x18_MakarovSD"};
-		ffCount = 1;
-		aiRateOfFire = 0.1;	// delay between shots at given distance
-		aiRateOfFireDistance = 50;
-		modes[] = {"Single", "AI_single", "FullAuto"};
-		
-		class Single  {
-			autoFire = false;
-			begin1[] = {"\vilas_aks\sounds\APSs", 0.794328, 1, 700};
-			soundBegin[] = {"begin1", 1};
-			recoil = "recoil_single_pistol_2outof3";
-			recoilProne = "recoil_single_pistol_2outof3";
-			reloadTime = 0.1;
-			dispersion = 0.0025;
-			minRange = 2;
-			minRangeProbab = 0.1;
-			midRange = 5;
-			midRangeProbab = 0.7;
-			maxRange = 10;
-			maxRangeProbab = 0.015;
-		};
-
-		class AI_Single : Single {
-			dispersion = 0.004;
-			midRange = 30;
-			midRangeProbab = 0.6;
-			maxRange = 70;
-			maxRangeProbab = 0.001;
-			showtoplayer = false;
-		};
-
-		class FullAuto  {
-			begin1[] = {"\vilas_aks\sounds\APSs", 0.794328, 1, 700};
-			soundBegin[] = {"begin1", 1};
-			recoil = "subMachineGunBase";
-			recoilProne = "subMachineGunBase";
-			reloadTime = 0.09;
-			minRange = 2;
-			minRangeProbab = 0.1;
-			midRange = 20;
-			midRangeProbab = 0.1;
-			maxRange = 40;
-			maxRangeProbab = 0.001;
-		};
-		
-		class Library {
-			libTextDesc = $STR_TGW_VIL_APS_LIB;
-		};
-		class Armory {
-			author = $STR_AUTHOR_VILAS;
-		};
-		descriptionShort = $STR_TGW_VIL_APS_SHORT;
-	};
-		
-	class vil_apssd : vil_aps {
-		model = "\vilas_aks\vil_apssd";
-		fireLightDuration = 0.0;
-		fireLightIntensity = 0.0;
-		displayName = $STR_TGW_VIL_APB;
-		magazines[] = {"8Rnd_9x18_Makarov","8Rnd_9x18_MakarovSD"};
-		picture = "\vilas_aks\ico\w_vil_apb_ca.paa";
-		begin1[] = {"\vilas_aks\sounds\APSsds", 0.316228, 1, 200};
-		reloadMagazineSound[] = {"\vilas_aks\sounds\APSReload", 0.0316228, 1, 20};
-		modes[] = {"Single", "AI_single", "FullAuto"};
-		
-		class Single  {
-			fireLightDuration = 0.0;
-			fireLightIntensity = 0.0;
-			begin1[] = {"\vilas_aks\sounds\APSsds", 0.316228, 1, 200};
-			soundBegin[] = {"begin1", 1};
-		};
-		class AI_Single : Single {
-			fireLightDuration = 0.0;
-			fireLightIntensity = 0.0;
-			begin1[] = {"\vilas_aks\sounds\APSsds", 0.316228, 1, 200};
-			soundBegin[] = {"begin1", 1};
-			showtoplayer = 0;
-		};
-		class FullAuto  {
-			fireLightDuration = 0.0;
-			fireLightIntensity = 0.0;
-			begin1[] = {"\vilas_aks\sounds\APSsds", 0.316228, 1, 200};
-			soundBegin[] = {"begin1", 1};
-		};
-		
-		class Library {
-			libTextDesc = $STR_TGW_VIL_APB_LIB;
-		};
-		class Armory {
-			author = $STR_AUTHOR_VILAS;
-		};
-		
-		descriptionShort = $STR_TGW_VIL_APB_SHORT;
-	};
-
-	class Vil_PYA : Makarov {
-		scope = public;
-		model = "\vilas_aks\vil_pya";
-		picture = "\vilas_aks\ico\w_vil_pya_ca.paa";
-		midRange = 20;
-		maxRangeProbab = 0.01;
-		optics = true;
-		distanceZoomMin = 50;
-		distanceZoomMax = 50;
-		displayName = $STR_TGW_VIL_PYA;
-		magazines[] = {"15Rnd_9x19_M9", "15Rnd_9x19_M9SD"};
-		begin1[] = {"\vilas_aks\sounds\pya_fire1", 0.794328, 1, 700};
-		soundBegin[] = {"begin1", 1};
-		reloadMagazineSound[] = {"\vilas_aks\sounds\pya_reload", 0.1, 1, 20};
-		class Library {
-			libTextDesc = $STR_TGW_VIL_PYA_LIB;
-		};
-		class Armory {
-			author = $STR_AUTHOR_VILAS;
-		};
-		descriptionShort = $STR_TGW_VIL_PYA_SHORT;
-	};
-
+	
 	/*********************************************************
 			Vilas Eastern Weapons Machine Guns
 	**********************************************************/
@@ -4245,7 +4087,7 @@
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\Bizon.rtm"};
 		modes[] = { "Single", "FullAuto" };
 		
-		class Single :  SVD {
+		class Single : Mode_SemiAuto {
 			displayName = $STR_DN_MODE_SEMIAUTO;
 			begin1[] = {"\vilas_aks\sounds\svu_fire1", 1.77828, 1, 1000};
 			reloadTime = 0.09;
@@ -4259,7 +4101,7 @@
 			maxRange = 800;
 			maxRangeProbab = 0.01;
 		};
-		class FullAuto : Single {
+		class FullAuto :Mode_FullAuto {
 			displayName = $STR_DN_MODE_FULLAUTO;
 			autoFire=true;
 			reloadTime = 0.09;
@@ -4292,7 +4134,7 @@
 		displayName = $STR_TGW_VIL_SVU;
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\Bizon.rtm"};
 		modes[] = { "Single"};
-		class Single :  Single {
+		class Single :  Mode_SemiAuto {
 			displayName = "";
 		};
 		
@@ -4668,7 +4510,7 @@
 		discreteDistance[] = {400, 600, 800};
 		discreteDistanceInitIndex = 2;
 
-		class Single : Mode_SemiAuto {
+		class Single : Single {
 			begin1[] = {"\vilas_aks\sounds\abakan_shoot1", 1.77828, 1, 1000};
 			begin2[] = {"\vilas_aks\sounds\abakan_shoot2", 1.77828, 1, 1000};
 			begin3[] = {"\vilas_aks\sounds\abakan_shoot3", 1.77828, 1, 1000};
@@ -4705,7 +4547,7 @@
 			displayName = "";
 		};
 		
-		class FullAuto {
+		class FullAuto : FullAuto {
 			begin1[] = {"\vilas_aks\sounds\abakan_shoot1", 1.77828, 1, 1000};
 			begin2[] = {"\vilas_aks\sounds\abakan_shoot2", 1.77828, 1, 1000};
 			begin3[] = {"\vilas_aks\sounds\abakan_shoot3", 1.77828, 1, 1000};

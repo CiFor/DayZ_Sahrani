@@ -4833,3 +4833,128 @@ class RscConfigEditor_Main {
 class CfgLoadingTexts {
 	titlesDefault[] = {""};
 };
+
+//Addition of Weapon Cursor configs to recolor them
+
+
+class CfgWeaponCursors
+{
+ class RifleCursorCore;
+ class LawCursorCore;
+ class MGCursorCore
+ {
+  texture = "\ca\ui\Data\cursor_w_airmg_gs";
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //0
+ };
+ class RifleCursor: RifleCursorCore
+ {
+  texture = "\ca\ui\Data\cursor_w_airmg_gs";
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //0
+ };
+ class PistolCursor: RifleCursor
+ {
+  texture = "\ca\ui\Data\cursor_w_airmg_gs";
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //0
+ };
+ class GLCursor: RifleCursor
+ {
+  texture = "\ca\ui\Data\cursor_w_GL_gs";
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //no previous entry
+ };
+ class LawCursor: LawCursorCore
+ {
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //0
+  texture = "\ca\UI\Data\cursor_w_MGvehicleW_gs";
+ };
+ class Cannon: LawCursorCore
+ {
+  texture = "\ca\UI\data\cursor_w_tank_gs";
+  color[] = {0.95, 0.95, 0.95, 1}; //{0.6,0.8392,0.4706,1.0}
+  shadowEnabled = 1; //0
+  class Sections{};
+  fade = 1.0;
+ };
+ class ForeSight: Cannon
+ {
+  texture = "\ca\UI\Data\cursor_w_foresight_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Air_W_MG: Cannon
+ {
+  texture = "\ca\UI\data\cursor_w_airMG_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Air_E_MG: Cannon
+ {
+  texture = "\ca\UI\data\cursor_w_turret_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Air_Dot: Cannon
+ {
+  texture = "\ca\UI\Data\cursor_w_dot_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Vehicle_E_MG: Cannon
+ {
+  texture = "\ca\UI\data\cursor_w_MGvehicleE_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Vehicle_W_MG: Cannon
+ {
+  texture = "\ca\UI\data\cursor_w_MGvehicleW_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Vehicle_Grenade_W: Cannon
+ {
+  texture = "\ca\UI\Data\cursor_w_grenade_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Vehicle_Grenade_E: Cannon
+ {
+  texture = "\ca\UI\data\cursor_w_GL_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Laser: Cannon
+ {
+  texture = "\ca\ui\Data\cursor_w_laserlock_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Rocket: Cannon
+ {
+  texture = "\ca\ui\Data\cursor_w_rocket_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Missile: Cannon
+ {
+  texture = "\ca\ui\Data\cursor_w_view_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Stinger: Cannon
+ {
+  texture = "\ca\UI\Data\cursor_w_stinger_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+ class Javelin: Cannon
+ {
+  texture = "\ca\UI\Data\cursor_w_javellin_gs";
+  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  shadowEnabled = 1;                //no previous shadow entry
+ };
+};

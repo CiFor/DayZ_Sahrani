@@ -1231,12 +1231,12 @@ class CfgTownGeneratorSara {
 			direction = 90.753822;
 			SetZUp = 1;
 		};
-		class Object6 {
+		/*class Object6 { Paraiso Hospital blocked by church
 			Type="Land_A_Hospital";
 			position[] = {10630.989, 9324.4883, -0.001};
 			direction = 359.89655;
 			SetZUp = 1;
-		};
+		};*/
 		class Object7 {
 			Type="Land_A_GeneralStore_01";
 			position[] = {10750.721, 9330.2539, 0.22309197};
