@@ -264,7 +264,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	//Ignite all Storage-Containers
-	if ( ((cursorTarget isKindOf "TentStorage") || (cursorTarget isKindOf "Gunrack_DZ") || (cursorTarget isKindOf "BoxStorage_DZ") || (cursorTarget isKindOf "WeaponCache_DZ")) and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
+	if ( ((cursorTarget isKindOf "TentStorage") || (cursorTarget isKindOf "Gunrack_DZ") || (cursorTarget isKindOf "BoxStorage_DZ") || (cursorTarget isKindOf "WeaponCache_DZ") || (cursorTarget isKindOf "Workbench_DZ")) and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
 		if (s_player_ignite_storage < 0) then {
 			_burnTarget = "Tent";
 			if(cursorTarget isKindOf "BoxStorage_DZ") then {
@@ -275,6 +275,9 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 			};
 			if(cursorTarget isKindOf "Gunrack_DZ") then {
 				_burnTarget = "Gunrack";
+			};
+			if(cursorTarget isKindOf "Workbench_DZ") then {
+				_burnTarget = "Work Bench";
 			};
 			s_player_ignite_storage = player addAction [("<t color=""#ff0000"">Ignite " + _burnTarget +"</t>"), "\z\addons\dayz_code\actions\player_ignite_storage.sqf",cursorTarget, 3, false, true, "", ""];
 		};
@@ -340,7 +343,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_attach_bomb = -1;
 };
 
-//Refuel Vechiles
+//Refuel Vehicles
 if(_inVehicle) then { //Slow process, only run when needed
 	_vehicle = vehicle player; //Reset current vehicle
 	_isNearFeed = false;
