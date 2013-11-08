@@ -124,7 +124,7 @@ class RscStructuredText {
 	
 	class Attributes {
 		font = "Zeppelin32";
-		color = "#e0d8a6";
+		color = "#ffffff";
 		align = "center";
 		shadow = true;
 	};
@@ -4833,6 +4833,33 @@ class RscConfigEditor_Main {
 class CfgLoadingTexts {
 	titlesDefault[] = {""};
 };
+
+//addition of Debug recolor I HOPE:
+
+  class HintBackground: RscText
+  {
+   idc = 8401;
+   x = "SafezoneX + (safezoneW - 	1.3) / 2";
+   y = "SafezoneY + (safezoneH - 		((SafezoneW / 2) * (4/3))) / 2 + 		((SafezoneW / 2) * (4/3)) - 	(	1.3 / 8) * 4/3 * 1.1";
+   w = 1.3;
+   h = "(	1.3 / 8) * 4/3";
+   colorFrame[] = {.95,.95,.95,1};
+   text = "\ca\ui\data\ui_loading_text_ca.paa";
+   style = 48;
+   shadow = 0;
+  };
+  class Hint: RscText
+  {
+   idc = 8400;
+   x = "SafezoneX + (safezoneW - 			1.3 * 0.7 * (0.98)) / 2";
+   y = "SafezoneY + (safezoneH - 		((SafezoneW / 2) * (4/3))) / 2 + 		((SafezoneW / 2) * (4/3)) - 	(	1.3 / 8) * 4/3 * 1.1 + (	(	1.3 / 8) * 4/3 - 						 0.03921 * 3)/2";
+   w = "1.3 * 0.7 * (0.98)";
+   h = "0.03921 * 3";
+   text = "";
+   style = "0x02 + 0x10 + 0x200";
+   lineSpacing = 1;
+  };
+
 
 //Addition of Weapon Cursor configs to recolor them
 

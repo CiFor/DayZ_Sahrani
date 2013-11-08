@@ -39,26 +39,23 @@ while {true} do {
 
 	//Random Heli-Type
 	_heliModel =	[
-									"UH1H_DZ",
-									"UH1H_TK_DZ",
-									"UH1H_SMD_BLOPS",
-									"UH1H_SMD_RACS",
-									"UH1H_SMD_RACS_DIGI",
-									"UH1H_SMD_UN",
-									"Mi17_Civilian_DZ",
-									"Mi17_DZ",
-									"Mi17_SMD_BLOPS",
-									"Mi17_Civilian_DZ",
-									"Mi17_DZ",
-									"Mi17_SMD_BLOPS"
-							] call BIS_fnc_selectRandom;
+		"UH1H_DZ",
+		"UH1H_TK_DZ",
+		"UH1H_SMD_BLOPS",
+		"UH1H_SMD_RACS",
+		"UH1H_SMD_RACS_DIGI",
+		"UH1H_SMD_UN",
+		"Mi17_Civilian_DZ",
+		"Mi17_DZ",
+		"Mi17_SMD_BLOPS"
+	] call BIS_fnc_selectRandom;
 
 	//Random-Startpositions, Adjust this for other Maps than Sahrani
 	_heliStart = [
-									[12008.267,1485.0635,400],
-									[2992.7285,12472.498,400],
-									[20006.211,8452.7061,400]
-							] call BIS_fnc_selectRandom;
+		[12008.267,1485.0635,400],
+		[2992.7285,12472.498,400],
+		[20006.211,8452.7061,400]
+	] call BIS_fnc_selectRandom;
 
 	//A Backup Waypoint, if not Sahrani, set some Coordinates far up in the north (behind all possible Crashsites)
 	_safetyPoint = [17420.422,18158.953];
@@ -120,10 +117,10 @@ while {true} do {
 */
 
 		_staticcoords =	[
-											[6277.5605,8332.8262],
-											[1234.5605,4321.8262],
-											[4545.5605,1256.8262]
-										];
+			[6277.5605,8332.8262],
+			[1234.5605,4321.8262],
+			[4545.5605,1256.8262]
+		];
 
 		if(_useStatic) then {
 			_position = _staticcoords call BIS_fnc_selectRandom;

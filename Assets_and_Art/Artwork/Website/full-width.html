@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name" />
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Droid+Sans' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" media="all" href="inland-wood.css" />
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<title>The Inland Wood CSS template</title>
+</head>
+
+<body>
+<div id="wrapper960" class="clearfix">
+	<div id="header" class="clearfix">
+		<div id="sitetitle" class="clearfix">
+			<h1><a href="index.html">inland</a></h1>
+		</div>
+
+		<div id="nav" class="clearfix">
+			<ul>
+				<li><a href="index.html">Default layout</a></li>
+				<li><a href="2-columns-left.html">2 columns (left)</a></li>
+				<li><a href="2-columns-right.html">2 columns (right)</a></li>
+				<li><a href="3-columns.html">3 columns</a></li>
+				<li><a class="current" href="full-width.html">Full width</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="slider-wrapper">
+		<div id="slider" class="nivoSlider">
+			<img src="images/slider3.jpg" alt="" />
+			<img src="images/slider1.jpg" alt="" />
+			<img src="images/slider2.jpg" alt="" />
+			<img src="images/slider0.jpg" alt="" />
+			<img src="images/slider4.jpg" alt="" />
+		</div>
+	</div>
+
+	<div id="content" class="clearfix shadow">
+		<h2>Full-width layout</h2>
+		<p>This is an example of the full-width layout. It places the content directly in the div with id="content". If you prefer a white background rather than the light gray background, you can use the id="extended" instead. Layouts can be combined by using both id="content" and id="extended", as shown in the file index.html.</p>
+		<p>In this example, the top links have also been removed.</p>
+		<p>As a bonus feature, this template also includes a set of wrapper IDs with different widths. The default width is 960px, but there is built-in support for 600px, 760px, 1240px and fluid width (with max-width 1240px) as well. If you use another layout width, make sure that the images in the slideshow matches the width of your selected layout wrapper.</p>
+		
+		<h3>The Inland Wood CSS template</h3>
+		<p>This is Inland Wood, the first in a new series of HTML/CSS templates from <a href="http://andreasviklund.com/">andreasviklund.com</a>. It is a multi-layout design, and the first andreasviklund.com template to feature an image slider. Inland Wood is made for template users who want a design that catches the attention of the website visitor and it is suitable for both personal websites and blogs, as well as for professional websites for companies and organizations. Like all templates by Andreas Viklund, it keeps the code simple, making the template easy to customize and build upon. To see the different layout options, click the main menu links above...</p>
+	</div>
+
+	<div id="footer" class="shadow">
+		<p>&copy; 2012 Your Name | <a href="http://andreasviklund.com/templates/inland-wood/">Template design</a> by <a href="http://andreasviklund.com/">andreasviklund.com</a><br />Best hosted at <a href="https://www.svenskadomaner.se/?ref=mall&amp;ling=en" title="Svenska Domäner AB">www.svenskadomaner.se</a></p>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(window).load(function() {
+		$('#slider').nivoSlider();
+	});
+</script>
+</body>
+</html>
