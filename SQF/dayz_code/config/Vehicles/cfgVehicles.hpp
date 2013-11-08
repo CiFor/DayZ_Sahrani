@@ -1,5 +1,5 @@
 class CfgVehicles {
-	class Citizen1;	// External class reference
+	/*class Citizen1;	// External class reference
 	class zZombie_Base : Citizen1 {
 		scope = public;
 		glassesEnabled = 0;
@@ -106,7 +106,7 @@ class CfgVehicles {
 				memoryPoint = "rfemur";
 			};
 		};
-	};
+	};*/
 	class Survivor2_DZ;
 	class sah_civilian1_pants: Survivor2_DZ
 	{
@@ -187,7 +187,7 @@ class CfgVehicles {
 		model = "\sara_civilians\civil_7_tshirt_shorts.p3d";
 	};
 
-	class z_sah_civilian1_pants: zZombie_Base
+	/*class z_sah_civilian1_pants: zZombie_Base
 	{
 		scope = 2;
 		model = "\sara_civilians\civil_1_tshirt.p3d";
@@ -367,7 +367,7 @@ class CfgVehicles {
 	class z_RACSzombie14 : z_RACSzombie { //SPD Black bdu Black vest 
 		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_rspd_swat_co.paa"};
 		model = "\vil_police\vil_cop";
-	};
+	};*/
 	class AllVehicles;
 	class Air : AllVehicles 
 	{
