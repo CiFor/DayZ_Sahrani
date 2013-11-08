@@ -942,13 +942,13 @@ class CfgMusic
 			displayName = "Zombie";
 			fsmDanger = "";
 			fsmFormation = "";
-			zombieLoot = "civilian";
+			zombieLoot = "civilianZed";
 			moves = "CfgMovesZombie";
 			isMan = false;
 			weapons[] = {};
 			magazines[] = {};
-			sensitivity = 4;	// sensor sensitivity
-			sensitivityEar = 2;
+			sensitivity = 5;	// sensor sensitivity
+			sensitivityEar = 3;
 			identityTypes[] = {"zombie1", "zombie2"};
 			class TalkTopics {};
 			languages[] = {};
@@ -1131,21 +1131,67 @@ class CfgMusic
 			model = "\sara_civilians\civil_7_tshirt_shorts.p3d";
 			displayName = "S_Zombie7_S";////////// FACTION - Desc - Head Gear - Color of Vest
 		};//////////////////////////////////////// Ex. RACS - Tan Camo - Helmet - Black Vest
-		class z_soldier: Citizen1 {
+		class z_soldier: zZombie_Base {
 			scope = public;
 			glassesEnabled = 0;
-			vehicleClass = "Zombie";
-			displayName = "Zombie";
+			displayName = "Zombie Soldier";
 			fsmDanger = "";
 			fsmFormation = "";
-			zombieLoot = "civilian";
+			zombieLoot = "militaryZed";
+			moves = "CfgMovesZombie";
+			isMan = false;
+			weapons[] = {};
+			magazines[] = {};
+			sensitivity = 5.5;	// sensor sensitivity
+			sensitivityEar = 4;
+			identityTypes[] = {"Zombie1","Zombie2"};
+			class TalkTopics {};
+			languages[] = {};
+			
+			class Eventhandlers {
+			
+				class Eventhandlers {
+					init = "_this call zombie_initialize;";
+					local = "if(_this select 1) then {[(position (_this select 0)),(_this select 0),true] execFSM '\z\AddOns\dayz_code\system\zombie_agent.fsm'};";
+				};
+				
+				class HitPoints {
+					class HitHead {
+						armor = 8;
+						material = -1;
+						name = "head_hit";
+						passThrough = true;
+						memoryPoint = "pilot";
+					};
+					
+					class HitBody : HitHead {
+						armor = 8;
+						name = "body";
+						memoryPoint = "aimPoint";
+					};
+					
+					class HitSpine : HitHead {
+						armor = 8;
+						name = "Spine2";
+						memoryPoint = "aimPoint";
+					};
+				};
+			};
+		};
+		class z_soldier_heavy: zZombie_Base {
+			scope = public;
+			glassesEnabled = 0;
+			displayName = "Zombie Heavy";
+			fsmDanger = "";
+			fsmFormation = "";
+			zombieLoot = "militaryZed";
 			moves = "CfgMovesZombie";
 			isMan = false;
 			weapons[] = {};
 			magazines[] = {};
 			sensitivity = 5;	// sensor sensitivity
-			sensitivityEar = 3;
-			identityTypes[] = {"zombie1", "zombie2"};
+			sensitivityEar = 4;
+			identityTypes[] = {"Zombie1","Zombie2"};
 			class TalkTopics {};
 			languages[] = {};
 			
@@ -1158,7 +1204,7 @@ class CfgMusic
 				
 				class HitPoints {
 					class HitHead {
-						armor = 0.4;
+						armor = 8;
 						material = -1;
 						name = "head_hit";
 						passThrough = true;
@@ -1166,229 +1212,63 @@ class CfgMusic
 					};
 					
 					class HitBody : HitHead {
-						armor = 4;
+						armor = 8;
 						name = "body";
 						memoryPoint = "aimPoint";
 					};
 					
 					class HitSpine : HitHead {
-						armor = 4;
+						armor = 8;
 						name = "Spine2";
 						memoryPoint = "aimPoint";
-					};
-					
-					class HitHands : HitHead {
-						armor = 1;
-						material = -1;
-						name = "hands";
-						passThrough = true;
-					};
-					
-					class HitLArm : HitHands {
-						name = "LeftArm";
-						memoryPoint = "lelbow";
-					};
-					
-					class HitRArm : HitHands {
-						name = "RightArm";
-						memoryPoint = "relbow";
-					};
-					
-					class HitLForeArm : HitHands {
-						name = "LeftForeArm";
-						memoryPoint = "lwrist";
-					};
-					
-					class HitRForeArm : HitHands {
-						name = "RightForeArm";
-						memoryPoint = "rwrist";
-					};
-					
-					class HitLHand : HitHands {
-						name = "LeftHand";
-						memoryPoint = "LeftHandMiddle1";
-					};
-					
-					class HitRHand : HitHands {
-						name = "RightHand";
-						memoryPoint = "RightHandMiddle1";
-					};
-					
-					class HitLegs : HitHands {
-						name = "legs";
-						memoryPoint = "pelvis";
-					};
-					
-					class HitLLeg : HitHands {
-						name = "LeftLeg";
-						memoryPoint = "lknee";
-					};
-					
-					class HitLLegUp : HitHands {
-						name = "LeftUpLeg";
-						memoryPoint = "lfemur";
-					};
-					
-					class HitRLeg : HitHands {
-						name = "RightLeg";
-						memoryPoint = "rknee";
-					};
-					
-					class HitRLegUp : HitHands {
-						name = "RightUpLeg";
-						memoryPoint = "rfemur";
-					};
+					};					
 				};
 			};
 		};
-		class z_soldier_heavy: Citizen1 {
+		class z_RACSzombie : zZombie_Base{	 ///// RACS Tan Camo - Black Helmet - Black Vest
 			scope = public;
 			glassesEnabled = 0;
-			vehicleClass = "Zombie";
-			displayName = "Zombie";
+			vehicleClass = "racz_heavy";
+			displayName = "RACZ Regular";
+			faction = "smdz_racs";
 			fsmDanger = "";
 			fsmFormation = "";
-			zombieLoot = "civilian";
+			model = "\vil_police\vil_swat";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_racs_regular_co.paa"};
+			zombieLoot = "militarySpecialZed";
 			moves = "CfgMovesZombie";
 			isMan = false;
 			weapons[] = {};
 			magazines[] = {};
-			sensitivity = 3.5;	// sensor sensitivity
-			sensitivityEar = 1;
-			identityTypes[] = {"zombie1", "zombie2"};
+			sensitivity = 5;	// sensor sensitivity
+			sensitivityEar = 4;
+			identityTypes[] = {"Zombie1","Zombie2"};
 			class TalkTopics {};
-			languages[] = {};
-			
-			class Eventhandlers {
-			
-				class Eventhandlers {
-					init = "_this call zombie_initialize;";
-					local = "if(_this select 1) then {[(position (_this select 0)),(_this select 0),true] execFSM '\z\AddOns\dayz_code\system\zombie_agent.fsm'};";
-				};
-				
-				class HitPoints {
-					class HitHead {
-						armor = 2;
-						material = -1;
-						name = "head_hit";
-						passThrough = true;
-						memoryPoint = "pilot";
-					};
-					
-					class HitBody : HitHead {
-						armor = 4;
-						name = "body";
-						memoryPoint = "aimPoint";
-					};
-					
-					class HitSpine : HitHead {
-						armor = 4;
-						name = "Spine2";
-						memoryPoint = "aimPoint";
-					};
-					
-					class HitHands : HitHead {
-						armor = 1;
-						material = -1;
-						name = "hands";
-						passThrough = true;
-					};
-					
-					class HitLArm : HitHands {
-						name = "LeftArm";
-						memoryPoint = "lelbow";
-					};
-					
-					class HitRArm : HitHands {
-						name = "RightArm";
-						memoryPoint = "relbow";
-					};
-					
-					class HitLForeArm : HitHands {
-						name = "LeftForeArm";
-						memoryPoint = "lwrist";
-					};
-					
-					class HitRForeArm : HitHands {
-						name = "RightForeArm";
-						memoryPoint = "rwrist";
-					};
-					
-					class HitLHand : HitHands {
-						name = "LeftHand";
-						memoryPoint = "LeftHandMiddle1";
-					};
-					
-					class HitRHand : HitHands {
-						name = "RightHand";
-						memoryPoint = "RightHandMiddle1";
-					};
-					
-					class HitLegs : HitHands {
-						name = "legs";
-						memoryPoint = "pelvis";
-					};
-					
-					class HitLLeg : HitHands {
-						name = "LeftLeg";
-						memoryPoint = "lknee";
-					};
-					
-					class HitLLegUp : HitHands {
-						name = "LeftUpLeg";
-						memoryPoint = "lfemur";
-					};
-					
-					class HitRLeg : HitHands {
-						name = "RightLeg";
-						memoryPoint = "rknee";
-					};
-					
-					class HitRLegUp : HitHands {
-						name = "RightUpLeg";
-						memoryPoint = "rfemur";
-					};
-				};
+			languages[] = {};		
+			class Eventhandlers 
+			{
+				init = "_this call zombie_initialize;";
+				local = "if(_this select 1) then {[(position (_this select 0)),(_this select 0),true] execFSM '\z\AddOns\dayz_code\system\zombie_agent.fsm'};";
 			};
-		};
-		class z_RACSzombie : z_soldier_heavy{	 ///// RACS Tan Camo - Black Helmet - Black Vest
-			faction = "smdz_racs";
-			vehicleClass = "racz_heavy";
-			displayName = "RACZ Regular";
-			model = "\vil_police\vil_swat";
-			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_racs_regular_co.paa"};
-			zombieLoot = "military";
-			class HitPoints {
-					class HitHead
+
+			class HitPoints 
+			{
+				class HitHead
 				{
-					armor = 0.3;
+					armor = 8;
 					material = -1;
 					name = "head_hit";
 					passThrough = 1;
 				};
 				class HitBody
 				{
-					armor = 2.4;
+					armor = 8;
 					material = -1;
 					name = "body";
 					passThrough = 1;
 				};
-				class HitHands
-				{
-					armor = 1;
-					material = -1;
-					name = "hands";
-					passThrough = 1;
-				};
-				class HitLegs
-				{
-					armor = 1;
-					material = -1;
-					name = "legs";
-					passThrough = 1;
-				};
-			};
+			};	
 			class Wounds
 			{
 				tex[] = {};
@@ -1398,11 +1278,13 @@ class CfgMusic
 		class z_RACSzombie2 : zZombie_Base { //RSPD Sherriff
 			displayName = "RZPD Sherriff";
 			faction = "smdz_rspd";
+			zombieLoot = "policemanZed";
 			model = "\vil_police\vil_cop3";
 		};	
-		class z_RACSzombie3 : z_soldier_heavy {	 //RSPD Night Camo - Black Helmet - Black Vest
+		class z_RACSzombie3 : z_RACSzombie {	 //RSPD Night Camo - Black Helmet - Black Vest
 			displayName = "RZPD SWAT";
 			faction = "smdz_rspd";
+			zombieLoot = "policemanZed";
 			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_rspd_swat_co.paa"};
 		};	
 		class z_RACSzombie4 : z_soldier {	 //BLOPS Flat Grey - NO Helmet - Black Vest
@@ -1429,7 +1311,7 @@ class CfgMusic
 			model = "\vil_police\vil_cop";
 			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_digi_co.paa"};
 		};	
-		class z_RACSzombie8 : z_soldier_heavy {	 //RACS Tan Digi Camo - Black Helmet - Black Vest 
+		class z_RACSzombie8 : z_RACSzombie {	 //RACS Tan Digi Camo - Black Helmet - Black Vest 
 			displayName = "RACZ TAN DIGI Heavy";
 			faction = "smdz_racs";
 			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_racs_regular_digi_co.paa"};
@@ -1440,31 +1322,35 @@ class CfgMusic
 			model = "\vil_police\vil_cop";
 			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_us_blackops_mp_digi_co.paa"};
 		};	
-		class z_RACSzombie10 : z_soldier_heavy {	 //BLOPS Grey Digi Camo - Black Helmet - Black Vest
+		class z_RACSzombie10 : z_RACSzombie {	 //BLOPS Grey Digi Camo - Black Helmet - Black Vest
 			displayName = "BLOPZ DIGI Heavy";
 			faction = "smdz_blops";
 			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_us_blackops_digi_co.paa"};
 		};	
-		class z_RACSzombie11 : z_soldier_heavy {	 //RSPD Black Digi Camo - Black Helmet - Black Vest
+		class z_RACSzombie11 : z_RACSzombie {	 //RSPD Black Digi Camo - Black Helmet - Black Vest
 			displayName = "RZPD BLACK DIGI Heavy";
 			faction = "smdz_rspd";
+			zombieLoot = "policemanZed";
 			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_rspd_swat_digi_co.paa"};
 		};
 		class z_RACSzombie12 : z_soldier {	 //RSPD Blue Digi Camo - NO Helmet - Black Vest
 			displayName = "RZPD BLUE MP";
 			faction = "smdz_rspd";
 			model = "\vil_police\vil_cop";
+			zombieLoot = "policemanZed";
 			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_rspd_blue_digi_co.paa"};
 		};
 		class z_RACSzombie13 : z_soldier {	 //RSPD Flat Blue - NO Helmet - Black Vest 
 			displayName = "RZPD BLUE MP";
 			faction = "smdz_rspd";
 			model = "\vil_police\vil_cop";
+			zombieLoot = "policemanZed";
 			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_rspd_blue_co.paa"};
 		};
-		class z_RACSzombie14 : z_soldier_heavy {	 //RSPD Flat Black - Black Helmet - Black Vest
+		class z_RACSzombie14 : z_RACSzombie {	 //RSPD Flat Black - Black Helmet - Black Vest
 			displayName = "RZPD BLACK Heavy";
 			faction = "smdz_rspd";
+			zombieLoot = "policemanZed";
 			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_rspd_black_co.paa"};
 		};				
 	};
