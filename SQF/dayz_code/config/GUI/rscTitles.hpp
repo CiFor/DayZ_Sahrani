@@ -4909,7 +4909,7 @@ class CfgWeaponCursors
  class ForeSight: Cannon
  {
   texture = "\ca\UI\Data\cursor_w_foresight_gs";
-  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  color[] = {0.95, 0.95, 0.95, 0};  //no previous color entry
   shadowEnabled = 1;                //no previous shadow entry
  };
  class Air_W_MG: Cannon
@@ -4927,7 +4927,7 @@ class CfgWeaponCursors
  class Air_Dot: Cannon
  {
   texture = "\ca\UI\Data\cursor_w_dot_gs";
-  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  color[] = {0.95, 0.95, 0.95, 0};  //no previous color entry  //alpha changed to 0 goodbye magic dot
   shadowEnabled = 1;                //no previous shadow entry
  };
  class Vehicle_E_MG: Cannon
