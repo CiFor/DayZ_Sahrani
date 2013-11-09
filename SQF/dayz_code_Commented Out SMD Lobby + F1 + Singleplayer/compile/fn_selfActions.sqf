@@ -256,7 +256,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_hasFlares = "HandRoadFlare" in magazines player;
 	if ( (cursorTarget isKindOf "Land_Fire_DZ") and (_hasMatches or _hasFlares) and _canDo and !(inflamed cursorTarget)) then {
 		if (s_player_light_fire < 0) then {
-			s_player_light_fire = player addAction [localize "str_action_fire_inflame", "\z\addons\dayz_code\actions\player_light_fire.sqf",cursorTarget, 3, true, true, "", ""];
+			s_player_light_fire = player addAction [("<t color=""#ff8800"">" + localize "str_action_fire_inflame" +"</t>"), "\z\addons\dayz_code\actions\player_light_fire.sqf",cursorTarget, 3, true, true, "", ""];
 		};
 	} else {
 		player removeAction s_player_light_fire;
