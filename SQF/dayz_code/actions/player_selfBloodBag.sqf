@@ -5,7 +5,7 @@ if (vehicle player == player) then {
 	_config = configFile >> "CfgMagazines" >> "ItemBloodbag";
 	_text = getText (_config >> "displayName");
 	if (!_hasmeditem) exitWith {cutText [format[(localize "str_player_31"),_text,"use"] , "PLAIN DOWN"]};
-	if (player getVariable["combattimeout", 0] >= time) exitWith { cutText ["You cannot transfuse blood whilst in combat!","PLAIN DOWN"]; };
+	if (player getVariable["combattimeout", 0] >= time) exitWith { cutText ["\n\nYou cannot transfuse blood whilst in combat!","PLAIN DOWN"]; };
 	player removeMagazine "ItemBloodbag";
 	player playActionNow "Medic";
 
@@ -27,7 +27,7 @@ if (vehicle player == player) then {
 	while{_bloodAdded < _totalblood} do {
 		if(r_interrupt) exitWith {_finished = false;};
 		if(r_player_blood >= r_player_bloodTotal) exitWith { r_player_blood = r_player_bloodTotal; };
-		if (player getVariable["combattimeout", 0] >= time) exitWith { cutText ["Transfusion Cancelled: You cannot transfuse blood whilst in combat!","PLAIN DOWN"]; };
+		if (player getVariable["combattimeout", 0] >= time) exitWith { cutText ["\n\nTransfusion Cancelled: You cannot transfuse blood whilst in combat!","PLAIN DOWN"]; };
 		
 		_animState = animationState player;
 		_isMedic = ["medic",_animState] call fnc_inString;
@@ -57,12 +57,12 @@ if (vehicle player == player) then {
 		_bleeding = true;
 	};
 	player setVariable["medForceUpdate",true];
-	if( _infected and _bleeding ) then { cutText [format["Transfusion Successful, but the blood was infected and you cut yourself."], "PLAIN DOWN"]; };
-	if( _infected and !_bleeding ) then { cutText [format["Transfusion Successful, but the blood was infected."], "PLAIN DOWN"]; };
-	if( !_infected and _bleeding ) then { cutText [format["Transfusion Successful, but you cut yourself."], "PLAIN DOWN"]; };
-	if(_finished) then { cutText ["Transfusion Successful","PLAIN DOWN"]; };
+	if( _infected and _bleeding ) then { cutText [format["\n\nTransfusion Successful, but the blood was infected and you cut yourself."], "PLAIN DOWN"]; };
+	if( _infected and !_bleeding ) then { cutText [format["\n\nTransfusion Successful, but the blood was infected."], "PLAIN DOWN"]; };
+	if( !_infected and _bleeding ) then { cutText [format["\n\nTransfusion Successful, but you cut yourself."], "PLAIN DOWN"]; };
+	if(_finished) then { cutText ["\n\nTransfusion Successful","PLAIN DOWN"]; };
 	if(r_interrupt) then {
-		cutText ["You have interupted the transfusion. The Blood bag has been lost.","PLAIN DOWN"];
+		cutText ["\n\nYou have interupted the transfusion. The Blood bag has been lost.","PLAIN DOWN"];
 		r_interrupt = false;
 		player switchMove "";
 		player playActionNow "stop";

@@ -15,13 +15,9 @@ for "_i" from 1 to _meleeNum do {
 };
 
 player removeWeapon _item;
-if (_item == "MeleeBaseball_Bat") then {_item = "ItemBaseball_Bat";};
-if (_item == "MeleeBaseball_Bat_Barbed") then {_item = "ItemBaseball_Bat_Barbed";};
-if (_item == "MeleeBaseball_Bat_Nailed") then {_item = "ItemBaseball_Bat_Nailed";};
-if (_item == "MeleeCrowbar") then {_item = "ItemCrowbar";};
 if (_item == "MeleeHatchet") then {_item = "ItemHatchet";};
+if (_item == "MeleeCrowbar") then {_item = "ItemCrowbar";};
 if (_item == "MeleeMachete") then {_item = "ItemMachete";};
-if (_item == "MeleeShovel") then {_item = "ItemShovel";};
 _bag = createVehicle [format["WeaponHolder_%1",_item],getPosATL player,[], 0, "CAN_COLLIDE"];
 _bag setdir (getDir player);
 player reveal _bag;

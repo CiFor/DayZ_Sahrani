@@ -14,7 +14,7 @@ _text = getText (_config >> _item >> "displayName");
 
 if (!_hasclothesitem) exitWith {cutText [format[(localize "str_player_31"),_text,"wear"] , "PLAIN DOWN"]};
 
-if (vehicle player != player) exitWith {cutText ["You may not change clothes while in a vehicle", "PLAIN DOWN"]};
+if (vehicle player != player) exitWith {cutText ["\n\nYou may not change clothes while in a vehicle", "PLAIN DOWN"]};
 
 _isFemale = (
 				(typeOf player == "SurvivorW2_DZ")||
@@ -27,7 +27,7 @@ _isFemale = (
 				(typeOf player == "SniperDW_DZ")||
 				(typeOf player == "SniperBanditDW_DZ")
 			);
-if (_isFemale && (_item == "Skin_Camo1_DZ" || _item == "Skin_Soldier1_DZ" || _item == "Skin_Rocket_DZ") ) exitWith {cutText ["Currently Female Characters cannot change to this skin. This will change in a future update.", "PLAIN DOWN"]};
+if (_isFemale && (_item == "Skin_Camo1_DZ" || _item == "Skin_Soldier1_DZ" || _item == "Skin_Rocket_DZ") ) exitWith {cutText ["\n\nCurrently Female Characters cannot change to this skin. This will change in a future update.", "PLAIN DOWN"]};
 
 private["_itemNew","_myModel","_humanity","_isBandit","_isHero"];
 _myModel = (typeOf player);
@@ -119,26 +119,26 @@ switch (_item) do {
 	case "Skin_SMD_RACS_Soldier_Digi": {
 		_model = "SMD_RACS_Soldier_Digi";
 	};
-	case "Skin_SMD_RACS_SWAT": {
-		_model = "SMD_RACS_SWAT";
+	case "Skin_SMD_RSPD_SWAT": {
+		_model = "SMD_RSPD_SWAT";
 	};
-	case "Skin_SMD_SPD_SWAT_BLACK": {
+	/*case "Skin_SMD_SPD_SWAT_BLACK": {
 		_model = "SMD_SPD_SWAT_BLACK";
+	};*/
+	case "Skin_SMD_RSPD_SWAT_DIGI": {
+		_model = "SMD_RSPD_SWAT_DIGI";
 	};
-	case "Skin_SMD_SPD_SWAT_BLACK_DIGI": {
-		_model = "SMD_SPD_SWAT_BLACK_DIGI";
+	case "Skin_SMD_RSPD_BLACK": {
+		_model = "SMD_RSPD_BLACK";
 	};
-	case "Skin_SMD_SPD_BLACK": {
-		_model = "SMD_SPD_BLACK";
+	case "Skin_SMD_RSPD_BLUE": {
+		_model = "SMD_RSPD_BLUE";
 	};
-	case "Skin_SMD_SPD_BLUE": {
-		_model = "SMD_SPD_BLUE";
+	case "Skin_SMD_RSPD_BLUE_DIGI": {
+		_model = "SMD_RSPD_BLUE_DIGI";
 	};
-	case "Skin_SMD_SPD_BLUE_DIGI": {
-		_model = "SMD_SPD_BLUE_DIGI";
-	};
-	case "Skin_SMD_RACS_Sheriff": {
-		_model = "SMD_RACS_Sheriff";
+	case "Skin_SMD_SARA_Sheriff": {
+		_model = "SMD_SARA_Sheriff";
 	};
 	case "Skin_SMD_TIGER_CAMO": {
 		_model = "SMD_TIGER_CAMO";
@@ -184,38 +184,35 @@ _hasHelmet = _model in
 										"Soldier1_DZ",
 										"SMD_RACS_Soldier",
 										"SMD_RACS_Soldier_Digi",
-										"SMD_RACS_SWAT",
-										"SMD_SPD_SWAT_BLACK",
-										"SMD_SPD_SWAT_BLACK_DIGI",
-										"SMD_SPD_BLUE",
-										"SMD_SPD_BLUE_DIGI",
+										"SMD_RSPD_BLACK",
+										"SMD_RSPD_SWAT",
+										"SMD_RSPD_SWAT_DIGI",
 										"SMD_TIGER_CAMO",
-										"SMD_US_SpecOps",
-										"SMD_US_SpecOps_DIGI",
 										"SMD_US_SpecOps_MP_DIGI"
 									];
 
 //All Models with visual (Bulletproof) Vest
 _hasBPVest = _model in
 									[
+										"Camo1_DZ",
+										"Rocket_DZ",
 										"Soldier1_DZ",
+										"SMD_ATACS_DES",
+										"SMD_ATACS_URBAN",
+										"SMD_RACS_MP",
+										"SMD_RACS_MP_Tan",
+										"SMD_RACS_MP_Tan_Digi",
 										"SMD_RACS_Soldier",
 										"SMD_RACS_Soldier_Digi",
-										"SMD_RACS_SWAT",
-										"SMD_SPD_SWAT_BLACK",
-										"SMD_SPD_SWAT_BLACK_DIGI",
-										"SMD_SPD_BLACK",
-										"SMD_SPD_BLUE",
-										"SMD_SPD_BLUE_DIGI",
+										"SMD_RSPD_BLACK",
+										"SMD_RSPD_BLUE",
+										"SMD_RSPD_BLUE_DIGI",
+										"SMD_RSPD_SWAT",
+										"SMD_RSPD_SWAT_DIGI",
 										"SMD_TIGER_CAMO",
 										"SMD_US_SpecOps",
 										"SMD_US_SpecOps_DIGI",
-										"SMD_US_SpecOps_MP_DIGI",
-										"Camo1_DZ",
-										"Rocket_DZ",
-										"SMD_RACS_MP",
-										"SMD_RACS_MP_Tan",
-										"SMD_RACS_MP_Tan_Digi"
+										"SMD_US_SpecOps_MP_DIGI"
 									];
 
 if(_hasBPVest && _hasHelmet) then {

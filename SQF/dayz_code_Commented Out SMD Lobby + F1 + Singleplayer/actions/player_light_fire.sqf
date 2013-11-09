@@ -14,7 +14,7 @@ if(_obj isKindOf "Land_fire") then {
 		sleep 6;
 		_obj inflame true;
 	} else {
-		cutText ["You need to add some wood.", "PLAIN DOWN"];
+		cutText ["\n\nYou need to add some wood.", "PLAIN DOWN"];
 	};
 };
 player removeAction s_player_light_fire;

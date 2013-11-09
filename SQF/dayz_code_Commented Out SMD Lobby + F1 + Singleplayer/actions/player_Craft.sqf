@@ -64,5 +64,5 @@ if(_found) then {
 		else { _requireditems = Format["%1, %3 %2",_requireditems,_objName,_count]; };
 	} forEach _input;
 	_outputname = getText(configFile >> "Cfg" + ((_output select 0) select 1) + "s" >> ((_output select 0) select 0) >> "displayName");
-	cutText [Format["\n\nYou require: %1 to make a %2",_requireditems,_outputname],"PLAIN DOWN"];
+	cutText [Format["You require: %1 to make a %2",_requireditems,_outputname],"PLAIN DOWN"];
 };

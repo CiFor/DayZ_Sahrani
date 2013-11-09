@@ -22,7 +22,7 @@ if (!s_refueling_in_progress) then
 
     if (!_isNearFeed) then
     {
-        titleText ["\nYou must be near a fuel station pump.", "PLAIN DOWN", 3];
+        titleText ["\n\nYou must be near a fuel station pump.", "PLAIN DOWN", 3];
         titleFadeOut 3;
     }
     else
@@ -40,7 +40,7 @@ if (!s_refueling_in_progress) then
 			_isRunning = isEngineOn _target;
  
             if ((_velocity select 0 > 1) or (_velocity select 1 > 1) or (_velocity select 2 > 1)) exitWith { titleText ["\n\nRefueling Cancelled", "PLAIN", 3]; };
-            if (_cfcust >= 1.0) exitWith { titleText ["\nRefueling Complete", "PLAIN", 3]; };
+            if (_cfcust >= 1.0) exitWith { titleText ["\n\nRefueling Complete", "PLAIN", 3]; };
 			//if (_isRunning && _isAir) exitWith { titleText ["You must be landed and the Engine turned off.", "PLAIN", 3]; };
  
             sleep 0.5;

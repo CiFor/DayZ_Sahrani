@@ -24,4 +24,4 @@ dayz_thirst = 0;
 _display = uiNamespace getVariable 'DAYZ_GUI_display';
 (_display displayCtrl 1302) ctrlShow true;
 
-cutText ["You have drank some Water.", "PLAIN DOWN"];
+cutText ["\n\nYou have drank some Water.", "PLAIN DOWN"];

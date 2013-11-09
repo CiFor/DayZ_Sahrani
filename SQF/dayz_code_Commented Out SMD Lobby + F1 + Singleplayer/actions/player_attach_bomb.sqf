@@ -5,15 +5,15 @@ _hasCrowbar = 	"ItemCrowbar" in items player;
 _hasCarBomb = "ItemCarBomb" in magazines player;
 _alreadyBombed = _vehicle getVariable["hasBomb",false];
 if(!_hasToolbox or !_hasCrowbar) exitWith {
-	cutText ["You need a Toolbox and a Crowbar to attach the Bomb to this Vehicle", "PLAIN DOWN"];
+	cutText ["\n\nYou need a Toolbox and a Crowbar to attach the Bomb to this Vehicle", "PLAIN DOWN"];
 };
 if(!_hasCarBomb) exitWith {
-	cutText ["You dont have a Bomb in your Inventory", "PLAIN DOWN"];
+	cutText ["\n\nYou dont have a Bomb in your Inventory", "PLAIN DOWN"];
 };
 
 /*
 if(_vehicle getVariable["hasBomb",false]) exitWith {
-	cutText ["This Vehicle already has a Bomb attached!", "PLAIN DOWN"];
+	cutText ["\n\nThis Vehicle already has a Bomb attached!", "PLAIN DOWN"];
 };
 */
 
@@ -34,4 +34,4 @@ if(!_alreadyBombed) then {
 	dayzCarBomb = [_vehicle,getPlayerUID player];
 	publicVariableServer "dayzCarBomb";
 };
-cutText ["Attached Carbomb! Next Survivor who gets in the vehicle will blow up!", "PLAIN DOWN"];
+cutText ["\n\nAttached Carbomb! Next Survivor who starts the Engine will blow up!", "PLAIN DOWN"];
