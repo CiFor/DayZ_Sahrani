@@ -42,6 +42,7 @@ while {true} do {
 		"UH1H_DZ",
 		"UH1H_TK_DZ",
 		"UH1H_SMD_BLOPS",
+		"UH1H_SMD_BLOPS_DIGI",
 		"UH1H_SMD_RACS",
 		"UH1H_SMD_RACS_DIGI",
 		"UH1H_SMD_UN",
@@ -66,8 +67,8 @@ while {true} do {
 	_lootRadius = 0.35;
 
 	//Adjust Wreck and Range of Explosion if its some kind of Mi
-	if((_heliModel == "Mi17_DZ") || (_heliModel == "Mi17_Civilian_DZ") || (_heliModel == "Mi17_SMD_BLOPS")) then {
-		_crashModel = "Mi8Wreck_DZ";
+	if((_heliModel == "Mi17_DZ") || (_heliModel == "Mi17_Civilian_DZ") || (_heliModel == "Mi17_SMD_BLOPS") || (_heliModel == "Mi17_SMD_BLOPS_DIGI")) then {
+		_crashModel = "Mi8Wreck";
 		_exploRange = 285;
 		_lootRadius = 0.3;
 	};
@@ -78,7 +79,7 @@ while {true} do {
 	} else {
 		_lootTable = "Crash1";
 	};
-	if(_crashModel == "Mi8Wreck_DZ") then {
+	if(_crashModel == "Mi8Wreck") then {
 		if(_no50s) then {
 			_lootTable = "Crash2Mi8_NoKSVKs";
 		} else {

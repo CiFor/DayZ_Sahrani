@@ -37,11 +37,11 @@ class CfgMods
 	{
 		dir = "DayZ_Sahrani";
 		name = "DayZ Sahrani";
-		picture = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
+		picture = "z\addons\dayz_code\gui\dayz_sahrani_logo_ca.paa";
 		hidePicture = 0;
 		hideName = 0;
 		action = "";
-		version = "0.7.8-20130828";
+		version = "0.9.7-20131111";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
@@ -49,7 +49,7 @@ class CfgMods
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"Chernarus"};
+		requiredAddons[] = {"smd_sahrani_a2"};
 	};
 };
 
@@ -67,8 +67,8 @@ class CfgMissions
 
 class CfgWorlds
 {
-        initWorld = "Chernarus";
-        demoWorld = "Chernarus";
+        initWorld = "smd_sahrani_a2";
+        demoWorld = "smd_sahrani_a2";
 };
 
 class CfgAddons
@@ -81,7 +81,7 @@ class CfgAddons
 	{
 		class dayz
 		{
-			list[] = {"dayz_code","dayz","dayz_equip","dayz_weapons"};
+			list[] = {"dayz","dayz_anim","dayz_code","dayz_communityassets","dayz_equip","dayz_sfx","dayz_vehicles","dayz_weapons","smd_sahrani_a2","smd_sahrani_artif_obj"};
 		};
 	};
 };
@@ -128,7 +128,7 @@ class CfgActions {
 	*/
 };
 
-//#include "CfgWorlds.hpp"
+//#include "config\Worlds\CfgWorlds.hpp"
 #include "config\Moves\cfgMoves.hpp"
 #include "config\GUI\rscTitles.hpp"
 #include "config\Vehicles\CfgVehicles.hpp"

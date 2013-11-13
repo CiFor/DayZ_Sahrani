@@ -233,7 +233,7 @@ if (_script != "") then
 			publicVariable "dayzSetDate";
 		};
 		diag_log ("HIVE: Local Time set to " + str(_date1));
-	}
+	};
 	
 	//createCenter civilian;
 	if (isDedicated) then {
