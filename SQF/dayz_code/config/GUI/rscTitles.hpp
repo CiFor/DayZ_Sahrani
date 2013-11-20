@@ -18,8 +18,8 @@ class RscButton {
 	offsetPressedX = 0.002;
 	offsetPressedY = 0.002;
 	colorFocused[] = {1, 0.537, 0, 1};
-	colorShadow[] = {0.023529, 0, 0.0313725, 1};
-	colorBorder[] = {0.023529, 0, 0.0313725, 1};
+	colorShadow[] = {0.95, 0.95, 0.95, 1};
+	colorBorder[] = {0.95, 0.95, 0.95, 1};
 	borderSize = 0.0;
 	soundEnter[] = {"\ca\ui\data\sound\onover", 0.09, 1};
 	soundPush[] = {"\ca\ui\data\sound\new1", 0.0, 0};
@@ -528,7 +528,7 @@ class RscIGUIListNBox : RscListNBox {
 	colorSelectBackground2[] = {0.1, 0.1, 0.1, 1.0};
 	period = 0;
 	colorBackground[] = {0, 0, 0, 1};
-	columns[] = {0.1, 0.7, 0.1, 0.1};
+	columns[] = {0.5, 0.5, 0.5, 0.1};
 	
 	class ScrollBar {
 		color[] = {1, 1, 1, 0.6};
@@ -544,7 +544,7 @@ class RscIGUIListNBox : RscListNBox {
 class CfgInGameUI {
 	imageCornerElement = "\ca\ui\data\igui_hud_corner.paa";
 	xboxStyle = 0;
-	colorBackground[] = {1, 1, 1, 0};
+	colorBackground[] = {0,0,0,0.8};
 	colorBackgroundCommand[] = {1, 1, 1, 1};
 	colorBackgroundHelp[] = {1, 1, 1, 1};
 	colorText[] = {0.95, 0.95, 0.95, 1};
@@ -1555,7 +1555,7 @@ class RscDisplayMain : RscStandardDisplay
 class RscButtonActionMenu: RscButton
 {
 	SizeEx = 0.02674;
-	colorBackground[] = {0.1,0.1,0.1,0.85};
+	colorBackground[] = {0.1,0.1,0.1,0.6};
 	colorBackgroundActive[] = {0.5,0.5,0.5,1};
 	colorBackgroundDisabled[] = {0.1,0.1,0.1,0.5};
 	colorFocused[] = {0.95,0.95,0.95,1};
@@ -2705,7 +2705,10 @@ class RscTitles
 	};
 };
 class RscMapControl;
-class IGUIBack;
+class IGUIBack
+{
+ colorBackground[] = {0,0,0,0.6};
+};
 
 class RscTextWIP : RscText {
 	x = "SafeZoneX";
@@ -3058,7 +3061,7 @@ class RscDisplayDiary {
 			y = "SafeZoneY + 0.031";
 			w = "0.98*SafeZoneW";
 			h = 0.082;
-			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+			colorbackground[] = {0,0,0,0.8};
 		};
 		
 		class CA_TopicsBackground : IGUIBack {
@@ -3067,7 +3070,7 @@ class RscDisplayDiary {
 			y = "SafeZoneY + 0.117";
 			w = "0.146*SafeZoneW";
 			h = 0.53;
-			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+			colorbackground[] = {0.1,0.1,0.1,0.8};
 		};
 		
 		class CA_SubTopicsBackground : IGUIBack {
@@ -3267,8 +3270,10 @@ class RscDisplayHintC {
 			w = 0.5;
 			h = 0.06;
 			text = "";
-			colorBackground[] = {0.1, 0.1, 0.1, 0.8};
-			colorText[] = {0, 0, 0, 0};
+			colorBackground[] = {0,0,0,0.6};
+			colorShadow[] = {0.95, 0.95, 0.95, 1};
+			colorBorder[] = {0.95, 0.95, 0.95, 1};
+			colorText[] = {0, 0, 0, 1};
 			font = "TahomaB";
 			sizeEx = 0;
 			fixedWidth = 0;
@@ -3282,8 +3287,24 @@ class RscDisplayHintC {
 			x = 0.36;
 			y = 0.41;
 			w = 0.48;
-			colorBackground[] = {0, 0, 0, 0};
+			colorBackground[] = {0.95, 0.95, 0.95, 1};
+			colorShadow[] = {0.95, 0.95, 0.95, 1};
+			colorBorder[] = {0.95, 0.95, 0.95, 1};
 			text = STR_DISP_ERROR;
+		};
+		class CA_Hint: RscIGUIText {
+		idc = 102;
+		style = 16;
+		lineSpacing = 1;
+		sizeEx = 0.034;
+		x = 0.36;
+		y = 0.41;
+		w = 0.48;
+		h = 0.035;
+		colorBackground[] = {0.95,0.95,0.95,0.8};
+		colorText[] = {0,0,0,1};
+		colorShadow[] = {0.95, 0.95, 0.95, 1};
+		colorBorder[] = {0.95, 0.95, 0.95, 1};
 		};
 		
 		class continue : RscActiveText {
@@ -3307,7 +3328,7 @@ class RscDisplayHintCEx {
 	idd = 72;
 	movingEnable = 1;
 	soundOpen[] = {"", 0.5, 1};
-	indent = "#(argb,8,8,3)color(1,1,1,1)";
+	indent = "#(argb,8,8,8)color(1,1,1,0.8)";
 	
 	class controls {
 		class Background : RscText {
@@ -3319,8 +3340,8 @@ class RscDisplayHintCEx {
 			w = 0.7;
 			h = 0.155;
 			text = "";
-			colorBackground[] = {0.1, 0.1, 0.1, 0.8};
-			colorText[] = {0, 0, 0, 0};
+			colorBackground[] = {0,0,0,0.8};
+			colorText[] = {0,0,0,1};
 			font = "TahomaB";
 			sizeEx = 0;
 			fixedWidth = 0;
@@ -3334,7 +3355,7 @@ class RscDisplayHintCEx {
 			w = 0.66;
 			h = 0.06;
 			text = STR_DISP_ERROR;
-			colorText[] = {0.8, 0.8, 0.8, 1};
+			colorText[] = {0, 0, 0, 1};
 			font = "TahomaB";
 			sizeEx = ( 21 / 408 );
 		};
@@ -3348,7 +3369,7 @@ class RscDisplayHintCEx {
 			h = 0;
 			text = "";
 			colorBackground[] = {0.8, 0.8, 0.8, 1};
-			colorText[] = {1, 1, 1, 1};
+			colorText[] = {0, 0, 0, 1};
 		};
 		
 		class Hint : RscStructuredText {
@@ -3378,7 +3399,7 @@ class RscDisplayHintCEx {
 			text = "";
 			colorBackground[] = {0.8, 0.8, 0.8, 1};
 			color[] = {0.8, 0.8, 0.8, 1};
-			colorText[] = {0.8, 0.8, 0.8, 1};
+			colorText[] = {0, 0, 0, 1};
 		};
 		
 		class continue : RscActiveText {
@@ -3398,6 +3419,23 @@ class RscDisplayHintCEx {
 };
 
 class RscInGameUI {
+ class RscHint
+ {
+  class Background: RscText
+  {
+   colorBackground[] = {0,0,0,0.6};
+  };
+ };
+ class RscTaskHint
+ {
+  class controlsBackground
+  {
+   class Background: RscText
+   {
+    colorBackground[] = {0,0,0,0.6};
+   };
+  };
+ };
 	colorReady[] = {1, 1, 1, 1.0};
 	colorPrepare[] = {0.863, 0.584, 0.0, 1};
 	colorUnload[] = {0.706, 0.0745, 0.0196, 1};
@@ -4220,7 +4258,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			colorBackground[] = {0.1,0.1,0.1,0.95};
 			colorBackgroundActive[] = {0.2,0.2,0.2,0.95};
 			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.95};
-			colorShadow[] = {0.023529,0,0.0313725,1};
+			colorShadow[] = {0.95,0.95,0.95,1};
 			colorBorder[] = {0,0,0,1};
 			borderSize = 0.0;
 			SizeEx = 0.045;
@@ -4243,7 +4281,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			colorBackground[] = {0.1,0.1,0.1,0.95};
 			colorBackgroundActive[] = {0.2,0.2,0.2,0.95};
 			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.95};
-			colorShadow[] = {0.023529,0,0.0313725,1};
+			colorShadow[] = {0.95,0.95,0.95,1};
 			colorBorder[] = {0,0,0,1};
 			borderSize = 0.0;
 			SizeEx = 0.045;
@@ -4508,7 +4546,7 @@ class RscDisplayMultiplayer : RscStandardDisplay {
 	colorPingGood[] = {0, 1, 0, 1};
 	colorPingPoor[] = {1, 0.6, 0, 1};
 	colorPingBad[] = {1, 0, 0, 1};
-	colorVersionGood[] = {0.8784, 0.8471, 0.651, 1.0};
+	colorVersionGood[] = {0, 0.8, 0, 1.0};
 	colorVersionBad[] = {1, 0, 0, 1};
 	
 	class controlsbackground {
@@ -4957,7 +4995,7 @@ class CfgWeaponCursors
  class Laser: Cannon
  {
   texture = "\ca\ui\Data\cursor_w_laserlock_gs";
-  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  color[] = {0.95, 0.95, 0.95, 0};  //no previous color entry
   shadowEnabled = 1;                //no previous shadow entry
  };
  class Rocket: Cannon
