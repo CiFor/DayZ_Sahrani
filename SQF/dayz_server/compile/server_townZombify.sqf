@@ -8,15 +8,15 @@ _list = [];
 _numZeds = 2;
 
 _impt = (importance _town);
-_size = 50;
+_size = 60;
 switch (_type) do {
 	default {
 		_numZeds = 3;
-		_size = 40 * _impt;
+		_size = 60 * _impt;
 	};
 	case "NameCity": {
 		_numZeds = 6;
-		_size = 80 * _impt;
+		_size = 100 * _impt;
 	};
 	case "NameCityCapital": {
 		_numZeds = 10;
@@ -37,7 +37,7 @@ _markerstr setMarkerSize [_size, _size];
 _trigger = createTrigger["EmptyDetector",_position];
 _trigger setTriggerArea[dayz_zSpawnDistance,dayz_zSpawnDistance,0,false];
 _trigger setTriggerActivation["WEST","NOT PRESENT",false];
-_code = format["_id = [%1,%2,'%3'] spawn server_townDeZombify;",_position,_size,_type];
+_code = format["_id = [%1,%2,'%3'] call server_townDeZombify;",_position,_size,_type];
 _trigger setTriggerStatements["this", _code, ""];
 _val = 60 * 10;
 _trigger setTriggerTimeout [_val, _val, _val, true];
@@ -59,7 +59,7 @@ while {_numGroups < _numZeds and _i < _totalBuildings} do {
 				_marker setMarkerText str(_i);
 				*/
 				_numGroups = _numGroups + 1;
-				(position _spot) spawn dayz_spawnZombies;
+				(position _spot) call dayz_spawnZombies;
 			};
 		};
 	};
