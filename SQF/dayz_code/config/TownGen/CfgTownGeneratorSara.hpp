@@ -82,9 +82,9 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};*/
 		class Object3 { ////New Addition to map
-			Type="Land_dum_mesto2";
+			Type="Land_smd_dum_olezlina_open";
 			position[] = {7731.9771, 15907.037, 0.24343386};
-			direction = 86.993599;
+			direction = 176.993599;
 			SetZUp = 1;
 		};
 		/*class Object14 { ////Residential needs replaceing, we used Dum_mesto2 for sake of ease, better match needs foundation
@@ -207,7 +207,7 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object17 {
-			Type="Land_dum_mesto_in";
+			Type="Land_smd_dum_mesto_in_open";
 			position[] = {12404.832, 17440.396, -0.058267947};
 			direction = 180;
 			SetZUp = 1;
@@ -350,16 +350,28 @@ class CfgTownGeneratorSara {
 			direction = 0.12843798;
 			SetZUp = 1;
 		};*/
-		class Object41 {
+		class Object41 { //Shed at Cabo Quarry
 			Type="Land_Shed_Ind02";
 			position[] = {12522.335, 17701.549, -0.058267947};
 			direction = 89.30056;
 			SetZUp = 1;
 		};
-		class Object42 {
+		class Object42 { //Shed at Cabo Quarry
 			Type="Land_Shed_Ind02";
-			position[] = {12523.563, 17739.436, 0.013197624};
+			position[] = {12523.563, 17716.436, 0.013197624};
 			direction = 91.920059;
+			SetZUp = 1;
+		};	
+		class Object69 { //Quarry at Cabo Quarry
+			Type="Land_Ind_Quarry";
+			position[] = {12550, 17680, 0};
+			direction = 0;
+			SetZUp = 1;
+		};	
+		class Object70 { //SawMill at NE Corner
+			Type="Land_Ind_Sawmill";
+			position[] = {13913, 16700, 0};
+			direction = -49;
 			SetZUp = 1;
 		};
 		class Object43 {
@@ -857,33 +869,33 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object3 {
-			Type="Land_dum_mesto_in";
+			Type="Land_smd_dum_mesto_in_open";
 			position[] = {13889.361, 12473.986, 0.040347431};
 			direction = -713.91479;
 			SetZUp = 1;
 		};
 		class Object4 {
-			Type="Land_dum_mesto2";
+			Type="Land_smd_dum_olezlina_open";
 			position[] = {14073.06, 12473.59, 0.0033320296};
-			direction = 111.188;
+			direction = 201.188;
 			SetZUp = 1;
 		};
 		class Object5 {
-			Type="Land_dum_mesto2";
+			Type="Land_smd_dum_olezlina_open";
 			position[] = {14052.706, 12466.291, 0.0033244151};
-			direction = 112.50559;
+			direction = 201.50559;
 			SetZUp = 1;
 		};
 		class Object6 {
-			Type="Land_dum_mesto2";
+			Type="Land_smd_dum_olezlina_open";
 			position[] = {14032.231, 12462.116, 0.16329072};
-			direction = 111.09888;
+			direction = 201.09888;
 			SetZUp = 1;
 		};
 		class Object7 {
-			Type="Land_dum_mesto2";
+			Type="Land_smd_dum_olezlina_open";
 			position[] = {14095.471, 12479.883, 0.0033740061};
-			direction = 111.09888;
+			direction = 201.09888;
 			SetZUp = 1;
 		};
 		class Object8 {
@@ -905,13 +917,13 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object11 {
-			Type="Land_dum_mesto2";
+			Type="Land_smd_dum_olezlina_open";
 			position[] = {14160.312, 12534.815, 0.00016021729};
-			direction = 90.176277;
+			direction = 180.176277;
 			SetZUp = 1;
 		};
 		/*class Object12 {
-			Type="Land_dum_mesto_in";
+			Type="Land_smd_dum_mesto_in_open";
 			position[] = {14154.884, 12501.169, 0.0058159484};
 			direction = 344.83966;
 			SetZUp = 1;
@@ -1042,19 +1054,19 @@ class CfgTownGeneratorSara {
 			SetZUp = 1;
 		};
 		class Object2 {
-			Type="Land_dum_mesto2";
+			Type="Land_smd_dum_olezlina_open";
 			position[] = {13410.084, 9055.4961, -0.01};
-			direction = 139.88057;
+			direction = 229.88057;
 			SetZUp = 1;
 		};
 		class Object3 {
-			Type="Land_dum_mesto2";
+			Type="Land_smd_dum_olezlina_open";
 			position[] = {13485.535, 8892.9492, -0.01};
-			direction = 230.83627;
+			direction = 320.83627;
 			SetZUp = 1;
 		};
 		/*class Object4 {
-			Type="Land_dum_mesto_in";
+			Type="Land_smd_dum_mesto_in_open";
 			position[] = {13688.798, 8981.7324, 0.04808744};
 			direction = 572.72217;
 			SetZUp = 1;
@@ -1673,7 +1685,7 @@ class CfgTownGeneratorSara {
 		};
 		class Object4 {
 			Type="Land_A_GeneralStore_01a";
-			position[] = {2813.5911, 2906.426, 0.088033259};
+			position[] = {2813.5911, 2917.426, 0.088033259};
 			direction = -216.38094;
 			SetZUp = 1;
 		};
