@@ -43,7 +43,7 @@ class CfgLoot {
 		},
 		{//AmmoNATO
 			0.04, //10Rnd_9x39_SP5_VSS
-			0.3, //10Rnd_B_765x17_Ball
+			0.08, //10Rnd_B_765x17_Ball
 			0.7, //15Rnd_9x19_M9
 			0.01, //15Rnd_9x19_M9SD
 			0.01, //1Rnd_HE_GP25
@@ -58,7 +58,7 @@ class CfgLoot {
 			0.7, //30Rnd_545x39_AK
 			0.03, //30Rnd_545x39_AKSD
 			0.5, //30Rnd_762x39_AK47
-			0.3, //30Rnd_9x19_MP5
+			0.08, //30Rnd_9x19_MP5
 			0.02, //30Rnd_9x19_MP5SD
 			0.3, //30Rnd_9x19_UZI
 			0.02, //30Rnd_9x19_UZI_SD
@@ -76,10 +76,10 @@ class CfgLoot {
 			0.07, //HandGrenade
 			0.7, //HandRoadFlare
 			0.1, //SmokeShell
-			0.1, //SmokeShellBlue
+			0, //SmokeShellBlue
 			0.1, //SmokeShellGreen
-			0.1, //SmokeShellOrange
-			0.1, //SmokeShellPurple
+			0, //SmokeShellOrange
+			0, //SmokeShellPurple
 			0.1//SmokeShellRed
 		}
 	};
@@ -150,11 +150,11 @@ class CfgLoot {
 			0.01, //HandGrenade_west
 			0.8, //HandRoadFlare
 			0.1, //SmokeShell
-			0.1, //SmokeShellBlue
+			0, //SmokeShellBlue
 			0.1, //SmokeShellGreen
 			0.1, //SmokeShellOrange
 			0.1, //SmokeShellPurple
-			0.1 //SmokeShellRed
+			0 //SmokeShellRed
 		}
 	};
 	AmmoUS[] = {
@@ -222,14 +222,13 @@ class CfgLoot {
 			0.1, //SmokeShell
 			0.1, //SmokeShellBlue
 			0.1, //SmokeShellGreen
-			0.1, //SmokeShellOrange
-			0.1, //SmokeShellPurple
-			0.1//SmokeShellRed
+			0, //SmokeShellOrange
+			0, //SmokeShellPurple
+			0//SmokeShellRed
 		}
 	};
 	civilian[] = {
 		{//civilian
-//ammo
 			"10x_303",
 			"15Rnd_W1866_Slug",
 			"2Rnd_shotgun_74Pellets",
@@ -239,11 +238,9 @@ class CfgLoot {
 			"8Rnd_9x18_Makarov",
 			"8Rnd_9x18_MakarovSD",
 			"WoodenArrow",
-//medical
 			"ItemAntibiotic",
 			"ItemBandage",
 			"ItemPainkiller",
-//supplies
 			"ItemTrashCards",
 			"ItemFloppyWire",
 			"ItemNails",
@@ -253,7 +250,6 @@ class CfgLoot {
 			"ItemTrashToiletpaper"
 		},
 		{//civilian
-//ammo
 			0.4, //10x_303
 			0.3, //15Rnd_W1866_Slug
 			0.1, //2Rnd_shotgun_74Pellets
@@ -263,11 +259,9 @@ class CfgLoot {
 			0.6, //8Rnd_9x18_Makarov
 			0.04, //8Rnd_9x18_MakarovSD
 			0.9, //WoodenArrow
-//medical
 			0.03, //ItemAntibiotic
 			0.4, //ItemBandage
 			0.6, //ItemPainkiller
-//supplies
 			0.1, //ItemTrashCards
 			0.1, //ItemFloppyWire
 			0.4, //ItemNails
@@ -281,23 +275,19 @@ class CfgLoot {
 		{//drink
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
-//food
 			"FoodCanBakedBeans",
 			"FoodCanSardines",
 			"FoodCanFrankBeans",
 			"FoodCanPasta",
-//ammo
 			"WoodenArrow",
 			"8Rnd_9x18_Makarov",
 			"8Rnd_9x18_MakarovSD",
 			"7Rnd_45ACP_1911",
 			"2Rnd_shotgun_74Slug",
 			"2Rnd_shotgun_74Pellets",
-//medical
 			"ItemBandage",
 			"ItemPainkiller",
 			"ItemAntibiotic",
-//supplies
 			"ItemFloppyWire",
 			"ItemScrapElectronics",
 			"ItemTape",
@@ -385,7 +375,6 @@ class CfgLoot {
 	};			
 	farm[] = {
 		{
-//ammo
 			"2Rnd_shotgun_74Slug",
 			"2Rnd_shotgun_74Pellets",
 			"15Rnd_9x19_M9",
@@ -393,15 +382,12 @@ class CfgLoot {
 			"7Rnd_45ACP_1911",
 			"6Rnd_45ACP",
 			"15Rnd_W1866_Slug",
-//medical
 			"ItemBandage",
-//supplies
 			"ItemSandbag",
 			"ItemWire",
 			"HandRoadFlare"
 		},
 		{
-//ammo
 			0.4, //"2Rnd_shotgun_74Slug",
 			0.4, //"2Rnd_shotgun_74Pellets",
 			0.02, //15Rnd_9x19_M9			
@@ -409,9 +395,7 @@ class CfgLoot {
 			0.25, //7Rnd_45ACP_1911
 			0.3, //6Rnd_45ACP
 			0.3, //15Rnd_W1866_Slug
-//medical
 			1, //ItemBandage
-//supplies
 			0.04, //ItemSandbag
 			0.04, //ItemWire			
 			0.3 //HandRoadFlare
@@ -669,7 +653,6 @@ class CfgLoot {
 			"FoodCanUnlabeled",
 			"FoodNutmix",
 			"FoodPistachio",
-//drink
 			"ItemSodaCoke",
 			"ItemSodaDrwaste",
 			"ItemSodaLemonade",
@@ -687,7 +670,6 @@ class CfgLoot {
 			0.1, //FoodCanUnlabeled
 			0.1, //FoodNutmix
 			0.1, //FoodPistachio
-//drink
 			0.1, //ItemSodaCoke
 			0.1, //ItemSodaLemonade 
 			0.1, //ItemSodaMtngreen
@@ -698,17 +680,14 @@ class CfgLoot {
 	};
 	generic[] = {
 		{
-//ammo
 			"5x_22_LR_17_HMR",
 			"6Rnd_45ACP",
 			"7Rnd_45ACP_1911",
 			"8Rnd_9x18_Makarov",
 			"WoodenArrow",
-//medical
 			"ItemBandage",
 			"ItemHeatPack",
 			"ItemPainkiller",
-//supplies
 			"HandChemBlue",
 			"HandChemGreen",
 			"HandChemRed",
@@ -721,17 +700,14 @@ class CfgLoot {
 			"ItemWaterbottleUnfilled"	
 		},
 		{
-//ammo
 			0.01, //5x_22_LR_17_HMR
 			0.04, //6Rnd_45ACP
 			0.03, //7Rnd_45ACP_1911
 			0.09, //8Rnd_9x18_Makarov
 			0.04, //WoodenArrow
-//medical			
 			0.11, //ItemBandage
 			0.04, //ItemHeatPack
 			0.02, //ItemPainkiller
-//supplies			
 			0.03, //HandChemBlue
 			0.01, //HandChemGreen
 			0.03, //HandChemRed
@@ -746,17 +722,14 @@ class CfgLoot {
 	};
 	genericZed[] = {
 		{
-//ammo
 			"5x_22_LR_17_HMR",
 			"6Rnd_45ACP",
 			"7Rnd_45ACP_1911",
 			"8Rnd_9x18_Makarov",
 			"WoodenArrow",
-//medical
 			"ItemBandage",
 			"ItemHeatPack",
 			"ItemPainkiller",
-//supplies
 			"HandChemBlue",
 			"HandChemGreen",
 			"HandChemRed",
@@ -769,7 +742,6 @@ class CfgLoot {
 			"ItemWaterbottleUnfilled"
 		},
 		{
-//ammo
 			0.04, //10x_303
 			0.02, //15Rnd_W1866_Slug
 			0.05, //2Rnd_shotgun_74Pellets
@@ -779,11 +751,9 @@ class CfgLoot {
 			0.03, //7Rnd_45ACP_1911
 			0.09, //8Rnd_9x18_Makarov
 			0.04, //WoodenArrow
-//medical			
 			0.11, //ItemBandage
 			0.04, //ItemHeatPack
 			0.02, //ItemPainkiller
-//supplies			
 			0.03, //HandChemBlue
 			0.01, //HandChemGreen
 			0.03, //HandChemRed
@@ -816,19 +786,15 @@ class CfgLoot {
 	};
 	hunter[] = {
 		{
-//food
 			"FoodMRE",
 			"FoodNutmix",
-//ammo
 			"5x_22_LR_17_HMR", //cz550
 			"7Rnd_45ACP_1911",
 			"10x_303",
 			"Quiver",
 			"WoodenArrow",
-//medical
 			"ItemHeatPack",
 			"ItemBandage",
-//supplies
 			"ItemNails",
 			"ItemTape",
 			"ItemSandbag",
@@ -836,19 +802,15 @@ class CfgLoot {
 			"ItemWaterbottleUnfilled"			
 		},
 		{
-//food
 			0.04, //FoodMRE
 			0.1, //FoodNutmix
-//ammo
 			0.5, //5x_22_LR_17_HMR
 			0.2, //7Rnd_45ACP_1911
 			0.5, //10x_303
 			0.0, //Quiver
 			1, //WoodenArrow
-//medical
 			0.2, //ItemHeatPack
 			1, //ItemBandage
-//supplies
 			0.4, //ItemNails
 			0.6, //ItemTape
 			0.04, //ItemSandbag
@@ -922,10 +884,8 @@ class CfgLoot {
 	};
 	medicalZed[] = {
 		{
-//trash
 			"TrashTinCan",
 			"TrashJackDaniels",
-//medical
 			"ItemBandage",
 			"ItemPainkiller",
 			"ItemMorphine",
@@ -934,16 +894,14 @@ class CfgLoot {
 			"ItemHeatPack"
 		},
 		{
-//trash
 			0.06, //TrashTinCan
 			0.04, //TrashJackDaniels
-//medical
 			0.8, //ItemBandage
 			0.5, //ItemPainkiller
 			0.5, //ItemMorphine
-			0.2, //ItemEpinephrine
+			0.02, //ItemEpinephrine
 			0.3, //ItemAntibiotic
-			0.1 //ItemHeatPack
+			0.01 //ItemHeatPack
 		}
 	};
 	military[] = {
@@ -974,6 +932,7 @@ class CfgLoot {
 			"1Rnd_Smoke_M203",		
 			"200Rnd_556x45_M249",
 			"HandGrenade_west",
+			"RPG18",
 			"SmokeShell",
 			"SmokeShellPurple",
 			"SmokeShellBlue",
@@ -1036,13 +995,14 @@ class CfgLoot {
 			0.01, //FlareGreen_M203
 			0.01, //1Rnd_Smoke_M203
 			0.01, //200Rnd_556x45_M249
-			0.01, //HandGrenade_west
-			0.04, //SmokeShell
-			0.01, //SmokeShellPurple
-			0.01, //SmokeShellBlue
-			0.01, //SmokeShellOrange
-			0.02, //SmokeShellRed
-			0.02, //SmokeShellGreen
+			0.04, //HandGrenade_west
+			0.01, //"RPG18",
+			0.1, //SmokeShell
+			0.1, //SmokeShellPurple
+			0.1, //SmokeShellBlue
+			0.1, //SmokeShellOrange
+			0.2, //SmokeShellRed
+			0.2, //SmokeShellGreen
 			0.04, //8Rnd_B_Beneli_Pellets
 			0.01, //30Rnd_556x45_G36SD
 			0.02, //30Rnd_9x19_MP5

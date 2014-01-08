@@ -1492,7 +1492,7 @@ class RscDisplayMain : RscStandardDisplay
 		class CA_DAYZ_Sahrani : RscPictureKeepAspect
 		{
 			x = 0.323717 * safezoneW + safezoneX;
-			y = 0.264949 * safezoneH + safezoneY;
+			y = 0.045000 * safezoneH + safezoneY;
 			w = 1.000000;
 			h = 1.000000;
 			text = "z\addons\dayz_code\gui\dayz_sahrani_logo_ca.paa";
@@ -4023,7 +4023,7 @@ class nope {
 	color[] = {0,0,0,0};
 	text = "";
 };
-/*                                                                                 // Begin SMD Custom Lobby Relocation Comment out if Using Standard Lobby
+//ReInsert Start comment here to remove SMD Lobby                                                                                  // Begin SMD Custom Lobby Relocation Comment out if Using Standard Lobby
 class RscDisplayMultiplayerSetup : RscStandardDisplay {
 	west = "ca\ui\data\flag_bluefor_ca.paa";
 	east = "ca\ui\data\flag_opfor_ca.paa";
@@ -4240,7 +4240,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		delete CA_B_Params;
 		delete CA_B_DSinterface;
 		delete CA_B_Kick;                                         // END SMD Custom Lobby Relocation Comment out if Using Standard Lobby
-		/*
+//Re-insert start commment here to remove SMD lobby 		
 		class SMD_ButtonDisconnect: RscButtonTextOnly  // SMD Custom Lobby Disconnect Button Comment out if Using Standard Lobby
 		{
 			idc = 2;
@@ -4291,7 +4291,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		delete CA_ButtonCancel;
 	};
 };                                                                                 // END SMD Custom Lobby Disconnect Button Comment out if Using Standard Lobby
-*/
+//Re-insert end commment here to remove SMD lobby 
 class RscDisplayMPInterrupt : RscStandardDisplay {
 	class controlsBackground {
 		class Mainback : RscPicture {

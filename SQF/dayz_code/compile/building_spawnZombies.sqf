@@ -45,7 +45,7 @@ if (_canLoot) then {
 	//Add Internal Zombies
 	_clean = {alive _x} count ((getPosATL _obj) nearEntities ["zZombie_Base",(sizeOf _type)]) == 0;
 	if (_clean) then {
-		_positions =	getArray (_config >> "lootPos");
+		_positions =	getArray (_config >> "zedPos");
 		_zombieChance =	getNumber (_config >> "zombieChance");
 		//diag_log format["Building: %1 / Positions: %2 / Chance: %3",_type,_positions,_zombieChance];
 		{

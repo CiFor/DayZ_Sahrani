@@ -870,7 +870,7 @@ class CfgTownGeneratorSara {
 		};
 		class Object3 {
 			Type="Land_smd_dum_mesto_in_open";
-			position[] = {13889.361, 12473.986, 0.040347431};
+			position[] = {13889.361, 12473.986, 0.2};
 			direction = -713.91479;
 			SetZUp = 1;
 		};

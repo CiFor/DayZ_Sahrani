@@ -55,13 +55,13 @@
 		};
 		class smdz_blops 
 		{
-			displayName = "SMDZ Black Ops"; 
+			displayName = "SMDZ BLOPZ"; 
 			priority = 5; 
 			side = "TCivilian"; 
 		};
 		class smdz_racs 
 		{
-			displayName = "SMDZ RACS"; 
+			displayName = "SMDZ RACZ"; 
 			priority = 5; 
 			side = "TCivilian"; 
 		};
@@ -73,7 +73,13 @@
 		};
 		class smdz_saracivs 
 		{
-			displayName = "SMDZ Sara Civs";
+			displayName = "SMDZ CIVZ";
+			priority = 5;
+			side = "TCivilian";
+		};
+		class smdz_dayzcivs 
+		{
+			displayName = "DAYZ ZEDS";
 			priority = 5;
 			side = "TCivilian";
 		};
@@ -82,7 +88,7 @@ class CfgMusic
 {
 	class smd_backtrack
 	{
-		name = "";
+		name = "backtrackkunal";
 		sound[] = {"\smd_assets\music\smd_backtrack.ogg", db+0, 1.0};
 		duration = 308;
 	};
@@ -148,10 +154,11 @@ class CfgMusic
 		};		
 		class SUV_TK_EP1 ;
 		class TK_Soldier_Spotter_EP1;   //external class reference
-		class UH1H_TK_EP1;			
+		class UH1H_TK_EP1;
+		class Bandit1_DZ;	
 		class Survivor2_DZ;///////////////////////////////////////////////////// BEGIN SMD UNIT DEFINITIONS/////////////////////////////////
 		
-		class SMD_RACS_MP : SoldierWB  //Flat Tan BDU - Black Vest - No Helmet or Knee Pads //Textures by Pliskin
+		class SMD_RACS_MP : Bandit1_DZ  //Flat Tan BDU - Black Vest - No Helmet or Knee Pads //Textures by Pliskin
 		{
 			vehicleClass = "smd_vilas_units";
 			scope = 2;
@@ -160,6 +167,7 @@ class CfgMusic
 			displayName = "RACS M.P.";
 			weapons[] = {"G36C", "NVGoggles", "ItemGPS", "Throw", "Put", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
 			magazines[] = {"30Rnd_556x45_G36", "30Rnd_556x45_G36", "30Rnd_556x45_G36", "30Rnd_556x45_G36", "30Rnd_556x45_G36", "30Rnd_556x45_G36", "HandGrenade_West", "HandGrenade_West", "HandGrenade_West"};
+			backpack = "";
 			accuracy = 3.5;
 			glassesenabled = 0;
 			TextPlural = "$STR_DN_SpecialForces";
@@ -170,7 +178,7 @@ class CfgMusic
 			icon = "\Ca\characters2\data\icon\i_special_CA.paa";
 			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_racs_mp_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_co.paa"};
 			class Wounds 
 			{ 
 				tex[] = {};
@@ -182,10 +190,11 @@ class CfgMusic
 			faction = "smd_pmc";
 			displayName = "PMC ATACS Desert ";
 			model = "\Ca\Characters_PMC\Frost\Frost.p3d";
-			weapons[] = {"G36_C_SD_Eotech", "NVGoggles", "ItemGPS", "Throw", "Put", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
-			magazines[] = {"30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "HandGrenade_West", "HandGrenade_West", "Pipebomb"};
+			backpack = "";
+			//weapons[] = {"G36_C_SD_Eotech", "NVGoggles", "ItemGPS", "Throw", "Put", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+			//magazines[] = {"30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "HandGrenade_West", "HandGrenade_West", "Pipebomb"};
 			hiddenSelections[] = {"camo"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_hero_atacs_des_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_bdu_hero_atacs_des_co.paa"};
 		};
 		class SMD_ATACS_URBAN: SMD_RACS_MP  //PMC Defensive Marksmen with Black Urban ATACS Camo //Textures by Pliskin
 		{
@@ -195,7 +204,7 @@ class CfgMusic
 			weapons[] = {"G36_C_SD_Eotech", "NVGoggles", "ItemGPS", "Throw", "Put", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
 			magazines[] = {"30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "30Rnd_556x45_G36SD", "HandGrenade_West", "HandGrenade_West", "Pipebomb"};
 			hiddenSelections[] = {"camo"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_bdu_hero_atacs_urban_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_bdu_hero_atacs_urban_co.paa"};
 		};
 		class SMD_RACS_MP_Tan: SMD_RACS_MP //Flat Tan BDU - Blended Vest - No Helmet or Knee Pads //Textures by Pliskin
 		{
@@ -203,7 +212,7 @@ class CfgMusic
 			displayName = "RACS M.P. (Blended Vest)";
 			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_co.paa"};
 		};
 		class SMD_RACS_MP_Tan_Digi: SMD_RACS_MP //Tan Digital Camo BDU - Blended Vest - No Helmet or Knee Pads //Textures by Pliskin
 		{
@@ -211,7 +220,7 @@ class CfgMusic
 			displayName = "RACS M.P. Digital (Blended Vest)";
 			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_digi_co.paa"};
 		};
 		class SMD_RACS_Soldier: SMD_RACS_MP //Camo Regular BDU - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -219,7 +228,7 @@ class CfgMusic
 			displayName = "RACS Infantry";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_racs_regular_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_racs_regular_co.paa"};
 		};
 		class SMD_RACS_Soldier_Digi: SMD_RACS_MP //Digital Camo BDU - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -227,7 +236,7 @@ class CfgMusic
 			displayName = "RACS Infantry Digital";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_racs_regular_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_racs_regular_digi_co.paa"};
 		};
 		class SMD_RSPD_BLACK: SMD_RACS_MP //RSPD Flat Black BDU - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		{ 
@@ -237,7 +246,7 @@ class CfgMusic
 			weapons[] = {"MP5A5", "Throw", "Put", "ItemMap", "ItemWatch", "ItemRadio"};
 			magazines[] = {"30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5"};
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_rspd_black_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_black_co.paa"};
 		};
 		class SMD_RSPD_BLUE: SMD_RACS_MP //SPD Flat Blue - Black Vest - No Helmet or Knee Pads //Textures by Pliskin
 		{
@@ -247,7 +256,7 @@ class CfgMusic
 			weapons[] = {"MP5A5", "Throw", "Put", "ItemMap", "ItemWatch", "ItemRadio"};
 			magazines[] = {"30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5"};
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_rspd_blue_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_rspd_blue_co.paa"};
 		};
 		class SMD_RSPD_BLUE_DIGI: SMD_RACS_MP //SPD Digital Blue BDU - Black Vest - No Helmet or Knee Pads //Textures by Pliskin
 		{
@@ -257,7 +266,7 @@ class CfgMusic
 			weapons[] = {"MP5A5", "Throw", "Put", "ItemMap", "ItemWatch", "ItemRadio"};
 			magazines[] = {"30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5", "30Rnd_9x19_MP5"};
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_rspd_blue_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_rspd_blue_digi_co.paa"};
 		};
 		class SMD_RSPD_SWAT: SMD_RACS_MP //RSPD Night Camo BDU - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -265,7 +274,7 @@ class CfgMusic
 			displayName = "RSPD SWAT Night Camo";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_rspd_swat_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_swat_co.paa"};
 		};
 		class SMD_RSPD_SWAT_DIGI: SMD_RACS_MP //RSPD Digital Black BDU - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -273,7 +282,7 @@ class CfgMusic
 			displayName = "RSPD SWAT Digital Night Camo";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_rspd_swat_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_swat_digi_co.paa"};
 		};
 		class SMD_SARA_Sheriff: SMD_RACS_MP //Sherrif //unchanged original Vilas Work
 		{
@@ -289,6 +298,7 @@ class CfgMusic
 			displayName = "RACS Sniper (Overall)";
 			weapons[] = {"M24_des_EP1", "Throw", "Put", "ItemMap", "Binocular_Vector", "ItemWatch", "ItemRadio"};
 			magazines[] = {"5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24"};
+			backpack = "";
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_ghillie_des_coverall_co.paa"};
 		};	
 		class SMD_Sniper_D_Upper : GUE_Soldier_Scout  //Desert Ghillie (Upper Only) //Textures by Pliskin
@@ -298,6 +308,7 @@ class CfgMusic
 			displayName = "RACS Sniper (top)";
 			weapons[] = {"M24_des_EP1", "Throw", "Put", "ItemMap", "Binocular_Vector", "ItemWatch", "ItemRadio"};
 			magazines[] = {"5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24"};
+			backpack = "";
 			primaryLanguage = "EN";
 			hiddenSelections[] = {"Camo"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_ghillie_des_tophalf_co.paa"};
@@ -311,6 +322,7 @@ class CfgMusic
 			displayName = "SLA Autumn MP";
 			weapons[] = {"AK_74", "NVGoggles", "ItemGPS", "Throw", "Put", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
 			magazines[] = {"30Rnd_545x39_AK", "30Rnd_545x39_AK", "30Rnd_545x39_AK", "30Rnd_545x39_AK", "HandGrenade_West", "HandGrenade_West"};
+			backpack = "";
 			accuracy = 3.5;
 			glassesenabled = 0;
 			TextPlural = "$STR_DN_SpecialForces";
@@ -321,7 +333,7 @@ class CfgMusic
 			icon = "\Ca\characters2\data\icon\i_special_CA.paa";
 			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_sla_autumn_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_sla_autumn_co.paa"};
 			class Wounds 
 			{ 
 				tex[] = {};
@@ -334,7 +346,7 @@ class CfgMusic
 			displayName = "SLA Black MP";
 			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_sla_blackops_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_sla_blackops_co.paa"};
 		};	
 		class SMD_SLA_MP_DESERT: SMD_SLA_MP //SLA Black FLAT - Black Vest - No Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -342,7 +354,7 @@ class CfgMusic
 			displayName = "SLA Desert MP";
 			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_sla_desert_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_sla_desert_co.paa"};
 		};		
 		class SMD_SLA_MP_GREEN: SMD_SLA_MP //SLA Black FLAT - Black Vest - No Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -350,7 +362,7 @@ class CfgMusic
 			displayName = "SLA Green MP";
 			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_sla_green_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_sla_green_co.paa"};
 		};
 		class SMD_SLA_MP_URBAN: SMD_SLA_MP //SLA Black FLAT - Black Vest - No Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -358,7 +370,7 @@ class CfgMusic
 			displayName = "SLA Urban MP";
 			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_sla_urban_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_sla_urban_co.paa"};
 		};		
 		class SMD_SLA_SWAT: SMD_SLA_MP //SLA Autum Camo - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -366,7 +378,7 @@ class CfgMusic
 			displayName = "SLA Autumn SWAT";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_sla_autumn_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_sla_autumn_co.paa"};
 		};
 		class SMD_SLA_SWAT_BLACK: SMD_SLA_SWAT //SLA Autum Camo - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -374,7 +386,7 @@ class CfgMusic
 			displayName = "SLA Black SWAT";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_sla_blackops_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_sla_blackops_co.paa"};
 		};		
 		class SMD_SLA_SWAT_DESERT: SMD_SLA_SWAT //SLA Autum Camo - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -382,7 +394,7 @@ class CfgMusic
 			displayName = "SLA Desert SWAT";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_sla_desert_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_sla_desert_co.paa"};
 		};
 		class SMD_SLA_SWAT_GREEN: SMD_SLA_SWAT //SLA Autum Camo - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -390,7 +402,7 @@ class CfgMusic
 			displayName = "SLA Green SWAT";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_sla_green_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_sla_green_co.paa"};
 		};
 		class SMD_SLA_SWAT_URBAN: SMD_SLA_SWAT //SLA Autum Camo - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -398,7 +410,7 @@ class CfgMusic
 			displayName = "SLA Urban SWAT";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_sla_urban_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_sla_urban_co.paa"};
 		};		
 		class SMD_TIGER_CAMO: SMD_RACS_MP //Tiger Camo - Black Vest - Helmet and Knee Pads //Textures by Pliskin
 		{
@@ -406,7 +418,7 @@ class CfgMusic
 			displayName = "PMC Tiger Camo";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_tigerstripe_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_tigerstripe_co.paa"};
 		};
 		class SMD_US_SpecOps: SMD_RACS_MP //US SPEC OPS NO Helmet/Pads //Textures by Pliskin
 		{
@@ -414,7 +426,7 @@ class CfgMusic
 			displayName = "US Black Ops";
 			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_us_blackops_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_us_blackops_co.paa"};
 		};
 		class SMD_US_SpecOps_DIGI: SMD_RACS_MP //US SPEC OPS Digi NO Helmet/Pads //Textures by Pliskin
 		{ 
@@ -422,7 +434,7 @@ class CfgMusic
 			displayName = "US Black Ops";
 			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_us_blackops_mp_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_us_blackops_mp_digi_co.paa"};
 		};
 		class SMD_US_SpecOps_MP_DIGI: SMD_RACS_MP  //US SPEC OPS Digi BDU - Black Vest - Helmet/Pads //Textures by Pliskin
 		{
@@ -430,7 +442,7 @@ class CfgMusic
 			displayName = "US Black Ops";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_us_blackops_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_us_blackops_digi_co.paa"};
 		};
 		class sah_civilian1_pants: Survivor2_DZ
 		{
@@ -442,8 +454,7 @@ class CfgMusic
 				tex[] = {};
 				mat[] = {"sara_civilians\data\civil_tshirt_body.rvmat","sara_civilians\data\civil_tshirt_body_wound1.rvmat","sara_civilians\data\civil_tshirt_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound1.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound2.rvmat"};
 			};
-		};
-		
+		};		
 		class sah_civilian2_pants: sah_civilian1_pants
 		{
 			model = "\sara_civilians\civil_2_tshirt.p3d";
@@ -515,21 +526,21 @@ class CfgMusic
 			model = "\sara_civilians\civil_7_tshirt_shorts.p3d";
 			displayName = "S_Civ7_S";
 		};///////////////////////////////////////////////////// BEGIN SMD VEHICLE DEFINITIONS/////////////////////////////////		
-		class AH6J_EP1_SMD_MAGPI : AH6J_EP1 //Textures by Pliskin
+		/*class AH6J_EP1_SMD_MAGPI : AH6J_EP1 //Textures by Pliskin
 		{
 			faction = "smd_racs";
 			displayname = "AH6J (Magnum P.I.)";
 			displaynameshort = "AH6J (Magnum P.I.)";
 			hiddenselections[] = {"camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa"};
 		};		
-		/*class AH6J_EP1_SMD_RACS : AH6J_EP1 //Textures by Pliskin
+		class AH6J_EP1_SMD_RACS : AH6J_EP1 //Textures by Pliskin
 		{
 			faction = "smd_racs";
 			displayname = "AH6J (RACS)";
 			displaynameshort = "AH6J (RACS)";
 			hiddenselections[] = {"camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa"};
 		};		
 		class AH6J_EP1_SMD_RACS_DIGI : AH6J_EP1 //Textures by Pliskin
 		{
@@ -537,15 +548,15 @@ class CfgMusic
 			displayname = "AH6J (RACS) Digital";
 			displaynameshort = "AH6J (RACS) Digital";
 			hiddenselections[] = {"camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_digi_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_racs_digi_co.paa"};
 		};*///none of the commented out heli's work, please feel free to fix my config errors and post back!!!			
-		class AH6X_SMD_ATACS : AH6X_EP1 //Textures by Pliskin
+		/*class AH6X_SMD_ATACS : AH6X_EP1 //Textures by Pliskin
 		{
 			faction = "smd_racs";
 			displayname = "AH6X (ATACS)";
 			displaynameshort = "AH6X (ATACS)";
 			hiddenselections[] = {"camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa"};
 		};		
 		class AH6X_SMD_MAGPI : AH6X_EP1 //Textures by Pliskin
 		{
@@ -553,7 +564,7 @@ class CfgMusic
 			displayname = "AH6X (Mag P.I.)";
 			displaynameshort = "AH6X (Mag P.I.)";
 			hiddenselections[] = {"camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa"};
 		};		
 		class AH6X_SMD_RACS : AH6X_EP1 //Textures by Pliskin
 		{
@@ -561,7 +572,7 @@ class CfgMusic
 			displayname = "AH6X (RACS)";
 			displaynameshort = "AH6X (RACS)";
 			hiddenselections[] = {"camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa"};
 		};		
 		class AH6X_SMD_RACS_DIGI : AH6X_EP1 //Textures by Pliskin
 		{
@@ -569,7 +580,7 @@ class CfgMusic
 			displayname = "AH6X (RACS) Digital";
 			displaynameshort = "AH6X (RACS) Digital";
 			hiddenselections[] = {"camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_digi_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_racs_digi_co.paa"};
 		};
 		class C130_SMD_ATACS: C130J  //Textures by Pliskin
 		{
@@ -577,7 +588,7 @@ class CfgMusic
 			displayname = "C130J (ATACS)";
 			displaynameshort = "C130J (ATACS)";
 			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_atacs_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_atacs_wings_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_c130j_atacs_body_co.paa","\smd_assets\vehicles\textures\smd_veh_c130j_atacs_wings_co.paa"};
 		};
 		
 		class C130_SMD_BLOPS: C130J  //Textures by Pliskin
@@ -586,7 +597,7 @@ class CfgMusic
 			displayname = "C130J (Unmarked)";
 			displaynameshort = "C130J (Unmarked)";
 			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_blackops_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_blackops_wings_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_c130j_blackops_body_co.paa","\smd_assets\vehicles\textures\smd_veh_c130j_blackops_wings_co.paa"};
 		};		
 		class C130_SMD_BLOPS_DIGI: C130J  //Textures by Pliskin
 		{
@@ -594,7 +605,7 @@ class CfgMusic
 			displayname = "C130J (Unmarked) Digital";
 			displaynameshort = "C130J (Unmarked) Digital";
 			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_blackops_digital_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_blackops_digital_wings_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_c130j_blackops_digital_body_co.paa","\smd_assets\vehicles\textures\smd_veh_c130j_blackops_digital_wings_co.paa"};
 		};		
 		class C130_SMD_UN: C130J  //Textures by Pliskin
 		{
@@ -602,15 +613,16 @@ class CfgMusic
 			displayname = "C130J (U.N.)";
 			displaynameshort = "C130J (U.N.)";
 			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_UN_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_UN_wings_co.paa"};
-		};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_c130j_UN_body_co.paa","\smd_assets\vehicles\textures\smd_veh_c130j_UN_wings_co.paa"};
+		};*/
+		
 		class HMMWV_SMD_ATACS: HMMWV
 		{
 			side=TWest;
 			faction = "smd_racs";
 			displayname = "HMMWV ATACS";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_atacs_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_atacs_body_us_co.paa"};
 		};
 		class HMMWV_M2_SMD_ATACS: HMMWV_M2
 		{
@@ -618,7 +630,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV M2 ATACS";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_atacs_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_atacs_body_us_co.paa"};
 		};
 		class HMMWV_TOW_SMD_ATACS: HMMWV_TOW
 		{
@@ -626,7 +638,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV TOW ATACS";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_atacs_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_atacs_body_us_co.paa"};
 		};
 		class HMMWV_MK19_SMD_ATACS: HMMWV_MK19
 		{
@@ -634,7 +646,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV MK19 ATACS";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_atacs_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_atacs_body_us_co.paa"};
 		};
 		class HMMWV_SMD_BLOPS: HMMWV
 		{
@@ -642,7 +654,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV (Unmarked)";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_body_us_co.paa"};
 		};
 		class HMMWV_M2_SMD_BLOPS: HMMWV_M2
 		{
@@ -650,7 +662,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV M2 (Unmarked)";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_body_us_co.paa"};
 		};
 		class HMMWV_TOW_SMD_BLOPS: HMMWV_TOW
 		{
@@ -658,7 +670,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV TOW (Unmarked)";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_body_us_co.paa"};
 		};
 		class HMMWV_MK19_SMD_BLOPS: HMMWV_MK19
 		{
@@ -666,7 +678,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV MK19 (Unmarked)";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_body_us_co.paa"};
 		};
 		class HMMWV_SMD_BLOPS_DIGI: HMMWV
 		{
@@ -674,7 +686,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV (Unmarked) Digital";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_digital_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_digital_body_us_co.paa"};
 		};
 		class HMMWV_M2_SMD_BLOPS_DIGI: HMMWV_M2
 		{
@@ -682,7 +694,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV M2 (Unmarked) Digital";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_digital_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_digital_body_us_co.paa"};
 		};
 		class HMMWV_TOW_SMD_BLOPS_DIGI: HMMWV_TOW
 		{
@@ -690,7 +702,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV TOW (Unmarked) Digital";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_digital_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_digital_body_us_co.paa"};
 		};
 		class HMMWV_MK19_SMD_BLOPS_DIGI: HMMWV_MK19
 		{
@@ -698,7 +710,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV MK19 (Unmarked) Digital";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_digital_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_blackops_digital_body_us_co.paa"};
 		};
 		class HMMWV_SMD_RACS: HMMWV
 		{
@@ -706,7 +718,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV RACS";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_racs_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_racs_body_us_co.paa"};
 		};
 		class HMMWV_M2_SMD_RACS: HMMWV_M2
 		{
@@ -714,7 +726,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV M2 RACS";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_racs_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_racs_body_us_co.paa"};
 		};
 		class HMMWV_TOW_SMD_RACS: HMMWV_TOW
 		{
@@ -722,7 +734,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV TOW RACS";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_racs_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_racs_body_us_co.paa"};
 		};
 		class HMMWV_MK19_SMD_RACS: HMMWV_MK19
 		{
@@ -730,7 +742,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV MK19 RACS";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_racs_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_racs_body_us_co.paa"};
 		};
 		class HMMWV_SMD_RACS_DIGI: HMMWV
 		{
@@ -738,7 +750,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV RACS Digital";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_racs_digi_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_racs_digi_body_us_co.paa"};
 		};
 		class HMMWV_M2_SMD_RACS_DIGI: HMMWV_M2
 		{
@@ -746,7 +758,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV M2 RACS Digital";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_racs_digi_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_racs_digi_body_us_co.paa"};
 		};
 		class HMMWV_TOW_SMD_RACS_DIGI: HMMWV_TOW
 		{
@@ -754,7 +766,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV TOW RACS Digital";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_racs_digi_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_racs_digi_body_us_co.paa"};
 		};
 		class HMMWV_MK19_SMD_RACS_DIGI: HMMWV_MK19
 		{
@@ -762,9 +774,9 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "HMMWV MK19 RACS Digital";
 			hiddenselections[] = {"Camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_hmmwv_racs_digi_body_us_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_hmmwv_racs_digi_body_us_co.paa"};
 		};
-		class Ikarus_SMD_COKE: Ikarus_base //Textures by ZombieDanceLeader + ShermanFTW
+		/*class Ikarus_SMD_COKE: Ikarus_base //Textures by ZombieDanceLeader + ShermanFTW
 		{
 			faction = "smd_racs";
 			displayname = "Bus (Coke)";
@@ -773,7 +785,7 @@ class CfgMusic
 			scope = 2;
 			side = 3;
 			hiddenSelections[] = {"Camo1"};
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ikarus_coke_co"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_ikarus_coke_co"};
 			rarityUrban = 0.4;
 			crew = "TK_CIV_Takistani01_EP1";
 			typicalCargo[] = {"TK_CIV_Takistani01_EP1"};
@@ -782,7 +794,7 @@ class CfgMusic
 		{
 			displayname = "Bus (OpenDayZ)";
 			displaynameshort = "Bus (OpenDayZ)";	
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ikarus_opendayz_co"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_ikarus_opendayz_co"};
 		};
 		class LandRover_SMD_RACS: LandRover_CZ_EP1 //Textures by Pliskin
 		{
@@ -790,30 +802,30 @@ class CfgMusic
 			displayname = "Landrover (RACS)";
 			displaynameshort = "Landrover RACS)";
 			hiddenSelections[] = {"Camo1"};
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_landrover_racs_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_landrover_racs_co.paa"};
 		};
 		class LandRover_SMD_RACS_DIGI: LandRover_SMD_RACS //Textures by Pliskin
 		{
 			faction = "smd_racs";
 			displayname = "Landrover (RACS) Digital";
 			displaynameshort = "Landrover RACS) Digital";
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_landrover_racs_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_landrover_racs_digi_co.paa"};
 		};		
 		/*class MH6J_SMD_ATACS : MH6J_EP1 //Textures by Pliskin
 		{
 			displayname = "MH6J (ATACS)";
 			displaynameshort = "MH6J (ATACS)";
 			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
 			//hiddenselections[] = {"camo1"};
-			//hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa"};
-		};*/		
+			//hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa"};
+		};		
 		class MH6J_SMD_MAGPI : MH6J_EP1 //Textures by Pliskin
 		{
 			displayname = "MH6J (Mag P.I.)";
 			displaynameshort = "MH6J (Mag P.I.)";
 			hiddenselections[] = {"camo1"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa"};
 		};		
 		/*class MH6J_SMD_RACS : MH6J_EP1 //Textures by Pliskin
 		{
@@ -821,9 +833,9 @@ class CfgMusic
 			displayname = "MH6J (RACS)";
 			displaynameshort = "MH6J (RACS)";
 			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
 			//hiddenselections[] = {"camo1"};
-			//hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa"};
+			//hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa"};
 		};		
 		class MH6J_SMD_RACS_DIGI : MH6J_EP1 //Textures by Pliskin
 		{
@@ -831,9 +843,9 @@ class CfgMusic
 			displayname = "MH6J (RACS) Digital";
 			displaynameshort = "MH6J (RACS) Digital";
 			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_digi_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_racs_digi_co.paa","ca\air_e\ah6j\data\default_co.paa"};
 			//hiddenselections[] = {"camo1"};
-			//hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_digi_co.paa"};
+			//hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_ah6_racs_digi_co.paa"};
 		};
 		class Mi17_SMD_BLOPS: Mi17_UN_CDF_EP1 //Textures by Pliskin
 		{
@@ -852,56 +864,56 @@ class CfgMusic
 			class Turrets{};
 			threat[] = {0.0,0.0,0.0};
 			hiddenSelectionsTextures[] = {"z\addons\dayz_code\textures\smd_veh_mi17_blackops_body_co.paa","z\addons\dayz_code\textures\smd_veh_mi17_blackops_det_co.paa","z\addons\dayz_code\textures\smd_veh_mi17_blackops_decals2_co.paa"}; //by Textures by Pliskin
-		};	*///none of the commented out heli's work, please feel free to fix my config errors and post back!!!
+		};	//none of the commented out heli's work, please feel free to fix my config errors and post back!!!
 		class UH1H_SMD_ATACS: UH1H_TK_EP1 //Textures by Pliskin
 		{
 			faction = "smd_racs";
 			displayname = "UH1H (ATACS)";
 			displaynameshort = "UH1H (ATACS)";	
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_atacs_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_atacs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_uh1_atacs_co.paa", "\smd_assets\vehicles\textures\smd_veh_uh1_atacs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 		};
 		class UH1H_SMD_BLOPS: UH1H_TK_EP1 //Textures by Pliskin
 		{
 			faction = "smd_racs";
 			displayname = "UH1H (Unmarked)";
 			displaynameshort = "UH1H (Unmarked)";	
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_blackops_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_blackops_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_uh1_blackops_co.paa", "\smd_assets\vehicles\textures\smd_veh_uh1_blackops_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 		};
 		class UH1H_SMD_BLOPS_DIGI: UH1H_TK_EP1 //Textures by Pliskin
 		{
 			faction = "smd_racs";
 			displayname = "UH1H (Unmarked) Digital";
 			displaynameshort = "UH1H (Unmarked) Digital";	
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_co.paa", "\smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 		};
 		class UH1H_SMD_RACS: UH1H_TK_EP1 //Textures by Pliskin
 		{
 			faction = "smd_racs";
 			displayname = "UH1H (RACS)";
 			displaynameshort = "UH1H (RACS)";	
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_racs_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_racs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_uh1_racs_co.paa", "\smd_assets\vehicles\textures\smd_veh_uh1_racs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 		};
 		class UH1H_SMD_RACS_DIGI: UH1H_TK_EP1 //Textures by Pliskin
 		{
 			faction = "smd_racs";
 			displayname = "UH1H (RACS) Digital";
 			displaynameshort = "UH1H (RACS) Digital";	
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_co.paa", "\smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 		};		
 		class UH1H_SMD_UN: UH1H_TK_EP1 //Textures by Pliskin
 		{
 			faction = "smd_racs";
 			displayname = "UH1H (U.N.)";
 			displaynameshort = "UH1H (U.N.)";	
-			hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_un_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_un_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
-		};	
+			hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_uh1_un_co.paa", "\smd_assets\vehicles\textures\smd_veh_uh1_un_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		};	*/
 		class SUV_SMD_ATACS: SUV_TK_EP1 
 		{
 			side=TWest;
 			faction = "smd_racs";
 			displayname = "SUV ATACS";
 			HiddenSelections[] = {"camo"};
-			HiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_suv_atacs_body_co.paa"};
+			HiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_veh_suv_atacs_body_co.paa"};
 		};
 		class SUV_SMD_BLOPS: SUV_TK_EP1 
 		{
@@ -909,7 +921,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "SUV (Unmarked)";
 			hiddenselections[] = {"Camo"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_suv_blackops_body_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_suv_blackops_body_co.paa"};
 		};
 		class SUV_SMD_BLOPS_DIGI: SUV_TK_EP1 
 		{
@@ -917,7 +929,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "SUV (Unmarked) Digital";
 			hiddenselections[] = {"Camo"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_suv_blackops_digital_body_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_suv_blackops_digital_body_co.paa"};
 		};
 		class SUV_SMD_RACS: SUV_TK_EP1 
 		{
@@ -925,7 +937,7 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "SUV RACS";
 			hiddenselections[] = {"Camo"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_suv_racs_body_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_suv_racs_body_co.paa"};
 		};
 		class SUV_SMD_RACS_DIGI: SUV_TK_EP1 
 		{
@@ -933,13 +945,14 @@ class CfgMusic
 			faction = "smd_racs";
 			displayname = "SUV RACS Digital";
 			hiddenselections[] = {"Camo"};
-			hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_suv_racs_digi_body_co.paa"};
+			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_suv_racs_digi_body_co.paa"};
 		};///////////////////////////////////////////////////// BEGIN SMD VEHICLE DEFINITIONS/////////////////////////////////	
-		class zZombie_Base : Citizen1 {
+		class zZombie_Base : Citizen1 { //Heavy Dressed Russian 
 			scope = public;
 			glassesEnabled = 0;
 			vehicleClass = "Zombie";
-			displayName = "Zombie";
+			faction = "smdz_dayzcivs";
+			displayName = "Hunter No Hat";
 			fsmDanger = "";
 			fsmFormation = "";
 			zombieLoot = "civilianZed";
@@ -1045,56 +1058,116 @@ class CfgMusic
 				};
 			};
 		};
-		class z_sah_civilian1_pants: zZombie_Base
+		class z_doctor: zZombie_Base //labcoat mofo
+		{
+			displayName = "Doctor";
+			zombieLoot="medicalZed";
+		};
+		class z_hunter: zZombie_Base //Heavy Dressed Russian with Fur Hat
+		{
+			displayName = "Hunter";
+			zombieLoot="hunterZed";
+		};
+		class z_policeman: zZombie_Base   // Cherno PD
+		{
+			displayName = "Policeman";
+			zombieLoot="policemanZed";
+		};
+		class z_priest: zZombie_Base // orthodox Priest
+		{
+			displayName = "Priest";
+		};
+		class z_suit1: zZombie_Base // Black Suit Red Tie
+		{
+			displayName = "Black Suit";
+			zombieLoot="genericZed";
+		};
+		class z_suit2: z_suit1  // Brown Suit Blue Tie
+		{
+			displayName = "Brown Suit";
+			zombieLoot="civilianZed";
+		};
+		class z_teacher: z_doctor  // Blue Labcoat Brown shoes.
+		{
+			displayName = "Blue LabCoat";
+			zombieLoot="genericZed";
+		};
+		class z_villager1: zZombie_Base //mythbuster blue jeans blue shirt
+		{
+			displayName = "MythBuster Blue";
+			zombieLoot="civilianZed";
+		};
+		class z_villager2: z_villager1  //mythbuster blue jeans yellow shirt
+		{
+			displayName = "MythBuster Yellow";
+		};
+		class z_villager3: z_villager1 //mythbuster Brown Pants Green shirt
+		{
+			displayName = "MythBuster Green";
+		};
+		class z_worker1: zZombie_Base   // Red/Grey Turd Suit
+		{
+			displayName = "Overall Red/Grey";
+			zombieLoot="civilianZed";
+		};
+		class z_worker2: z_worker1    // Brown Turd Suit
+		{
+			displayName = "Overall Brown";
+		};
+		class z_worker3: z_worker1    // blue Turd Suit
+		{
+			displayName = "Overall Blue";
+		};
+		class z_sah_civilian1_pants: zZombie_Base //Blue/white soccer Jersey soccer 
 		{
 			scope = 2;
 			faction = "smdz_saracivs";
 			model = "\sara_civilians\civil_1_tshirt.p3d";
-			vehicleClass = "Sah_Zed_Shorts";
-			displayName = "S_Zombie1_P";
+			vehicleClass = "Sah_Zed_Pants";
+			displayName = "Blue Soccer";
 			class Wounds
 			{
 				tex[] = {};
 				mat[] = {"sara_civilians\data\civil_tshirt_body.rvmat","sara_civilians\data\civil_tshirt_body_wound1.rvmat","sara_civilians\data\civil_tshirt_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound1.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound2.rvmat"};
 			};
 		};	
-		class z_sah_civilian2_pants: z_sah_civilian1_pants
+		class z_sah_civilian2_pants: z_sah_civilian1_pants   //  Black Metal shirt
 		{
 			model = "\sara_civilians\civil_2_tshirt.p3d";
-			displayName = "S_Zombie2_P";
+			displayName = "Black Metal";
 		};
-		class z_sah_civilian3_pants: z_sah_civilian1_pants
+		class z_sah_civilian3_pants: z_sah_civilian1_pants   //  Green Bananaman Shirt
 		{
 			model = "\sara_civilians\civil_3_tshirt.p3d";
-			displayName = "S_Zombie3_P";
+			displayName = "Banana Man";
 		};
-		class z_sah_civilian4_pants: z_sah_civilian1_pants
+		class z_sah_civilian4_pants: z_sah_civilian1_pants   //  Orange Cowboy Shirt
 		{
 			model = "\sara_civilians\civil_4_tshirt.p3d";
-			displayName = "S_Zombie4_P";
+			displayName = "Orange Cowboy";
 		};
-		class z_sah_civilian5_pants: z_sah_civilian1_pants
+		class z_sah_civilian5_pants: z_sah_civilian1_pants   //  Grey Nagova Shirt
 		{
 			model = "\sara_civilians\civil_5_tshirt.p3d";
-			displayName = "S_Zombie5_P";
+			displayName = "Grey Nagova";
 		};
-		class z_sah_civilian6_pants: z_sah_civilian1_pants
+		class z_sah_civilian6_pants: z_sah_civilian1_pants   //  Orange Pepe shirt
 		{
 			model = "\sara_civilians\civil_6_tshirt.p3d";
-			displayName = "S_Zombie6_P";
+			displayName = "Orange Pepe";
 		};
-		class z_sah_civilian7_pants: z_sah_civilian1_pants
+		class z_sah_civilian7_pants: z_sah_civilian1_pants   //  Black redstar shirt
 		{
 			model = "\sara_civilians\civil_7_tshirt.p3d";
-			displayName = "S_Zombie7_P";
+			displayName = "Black RedStar";
 		};
 		class z_sah_civilian1_shorts: zZombie_Base
 		{
 			scope = 2;
 			faction = "smdz_saracivs";
 			model = "\sara_civilians\civil_1_tshirt_shorts.p3d";
-			vehicleClass = "Sah_Zed_Pants";
-			displayName = "S_Zombie1_S";
+			vehicleClass = "Sah_Zed_Shorts";
+			displayName = "Blue Soccer";
 			class Wounds
 			{
 				tex[] = {};
@@ -1104,32 +1177,32 @@ class CfgMusic
 		class z_sah_civilian2_shorts: z_sah_civilian1_shorts
 		{
 			model = "\sara_civilians\civil_2_tshirt_shorts.p3d";
-			displayName = "S_Zombie2_S";
+			displayName = "Black Metal";
 		};
 		class z_sah_civilian3_shorts: z_sah_civilian1_shorts
 		{
 			model = "\sara_civilians\civil_3_tshirt_shorts.p3d";
-			displayName = "S_Zombie3_S";
+			displayName = "Banana Man";
 		};
 		class z_sah_civilian4_shorts: z_sah_civilian1_shorts
 		{
 			model = "\sara_civilians\civil_4_tshirt_shorts.p3d";
-			displayName = "S_Zombie4_S";
+			displayName = "Orange Cowboy";
 		};
 		class z_sah_civilian5_shorts: z_sah_civilian1_shorts
 		{
 			model = "\sara_civilians\civil_5_tshirt_shorts.p3d";
-			displayName = "S_Zombie5_S";
+			displayName = "Grey Nagova";
 		};
 		class z_sah_civilian6_shorts: z_sah_civilian1_shorts
 		{
 			model = "\sara_civilians\civil_6_tshirt_shorts.p3d";
-			displayName = "S_Zombie6_S";
+			displayName = "Orange Pepe";
 		};
 		class z_sah_civilian7_shorts: z_sah_civilian1_shorts
 		{
 			model = "\sara_civilians\civil_7_tshirt_shorts.p3d";
-			displayName = "S_Zombie7_S";////////// FACTION - Desc - Head Gear - Color of Vest
+			displayName = "Black RedStar";////////// FACTION - Desc - Head Gear - Color of Vest
 		};//////////////////////////////////////// Ex. RACS - Tan Camo - Helmet - Black Vest
 		class z_soldier: zZombie_Base {
 			scope = public;
@@ -1156,20 +1229,21 @@ class CfgMusic
 				};
 				
 				class HitPoints {
-					class HitHead {
-						armor = 8;
-						material = -1;
+					class HitHead
+					{
+						armor = 40;
+						material = 100;
 						name = "head_hit";
-						passThrough = true;
-						memoryPoint = "pilot";
+						passThrough = 1;
 					};
-					
-					class HitBody : HitHead {
-						armor = 8;
+					class HitBody
+					{
+						armor = 100;
+						material = 1000;
 						name = "body";
-						memoryPoint = "aimPoint";
+						passThrough = 1;
 					};
-					
+						
 					class HitSpine : HitHead {
 						armor = 8;
 						name = "Spine2";
@@ -1203,20 +1277,21 @@ class CfgMusic
 				};
 				
 				class HitPoints {
-					class HitHead {
-						armor = 8;
-						material = -1;
+					class HitHead
+					{
+						armor = 80;
+						material = 400;
 						name = "head_hit";
-						passThrough = true;
-						memoryPoint = "pilot";
+						passThrough = 1;
 					};
-					
-					class HitBody : HitHead {
-						armor = 8;
+					class HitBody
+					{
+						armor = 800;
+						material = 8000;
 						name = "body";
-						memoryPoint = "aimPoint";
+						passThrough = 1;
 					};
-					
+						
 					class HitSpine : HitHead {
 						armor = 8;
 						name = "Spine2";
@@ -1229,13 +1304,13 @@ class CfgMusic
 			scope = public;
 			glassesEnabled = 0;
 			vehicleClass = "racz_heavy";
-			displayName = "RACZ Regular";
+			displayName = "SWAT BLACK/TAN";
 			faction = "smdz_racs";
 			fsmDanger = "";
 			fsmFormation = "";
 			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_racs_regular_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_racs_regular_co.paa"};
 			zombieLoot = "militarySpecialZed";
 			moves = "CfgMovesZombie";
 			isMan = false;
@@ -1256,15 +1331,15 @@ class CfgMusic
 			{
 				class HitHead
 				{
-					armor = 8;
-					material = -1;
+					armor = 80;
+					material = 400;
 					name = "head_hit";
 					passThrough = 1;
 				};
 				class HitBody
 				{
-					armor = 8;
-					material = -1;
+					armor = 800;
+					material = 8000;
 					name = "body";
 					passThrough = 1;
 				};
@@ -1276,81 +1351,123 @@ class CfgMusic
 			};
 		};	
 		class z_RACSzombie2 : zZombie_Base { //RSPD Sherriff
-			displayName = "RZPD Sherriff";
+			displayName = "Sherriff";
 			faction = "smdz_rspd";
 			zombieLoot = "policemanZed";
 			model = "\vil_police\vil_cop3";
 		};	
 		class z_RACSzombie3 : z_RACSzombie {	 //RSPD Night Camo - Black Helmet - Black Vest
-			displayName = "RZPD SWAT";
+			displayName = "SWAT NIGHT CAMO";
 			faction = "smdz_rspd";
 			zombieLoot = "policemanZed";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_rspd_swat_co.paa"};
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_swat_co.paa"};
 		};	
 		class z_RACSzombie4 : z_soldier {	 //BLOPS Flat Grey - NO Helmet - Black Vest
-			displayName = "BLOPZ Grey";
+			displayName = "MP GREY";
 			faction = "smdz_blops";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_us_blackops_co.paa"};
 			model = "\vil_police\vil_cop";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_us_blackops_co.paa"};
 		};	
 		class z_RACSzombie5 : z_soldier {	 //RACS Flat Tan - NO Helmet - Black Vest
-			displayName = "RACZ TAN/Bl MP";
+			displayName = "MP BLACK/TAN";
 			faction = "smdz_racs";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_co.paa"};
 			model = "\vil_police\vil_cop";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_racs_mp_co.paa"};
 		};	
 		class z_RACSzombie6 : z_soldier {	 //RACS Flat Tan - NO Helmet - Blended Vest
-			displayName = "RACZ TAN MP";
+			displayName = "MP TAN";
 			faction = "smdz_racs";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_co.paa"};
 			model = "\vil_police\vil_cop";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_co.paa"};
 		};	
 		class z_RACSzombie7 : z_soldier {	 //RACS Digi Tan Camo - NO Helmet - Blended Vest
-			displayName = "RACZ TAN DIGI MP";
+			displayName = "MP TAN DIGI";
 			faction = "smdz_racs";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_digi_co.paa"};
 			model = "\vil_police\vil_cop";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_digi_co.paa"};
 		};	
 		class z_RACSzombie8 : z_RACSzombie {	 //RACS Tan Digi Camo - Black Helmet - Black Vest 
-			displayName = "RACZ TAN DIGI Heavy";
+			displayName = "SWAT TAN DIGI";
 			faction = "smdz_racs";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_racs_regular_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_racs_regular_digi_co.paa"};
 		};	
 		class z_RACSzombie9 : z_soldier {	 //BLOPS Grey Digi Camo - NO Helmet - Blended Vest
-			displayName = "BLOPZ Digi MP";
+			displayName = "MP BLACK DIGI";
 			faction = "smdz_blops";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_us_blackops_mp_digi_co.paa"};
 			model = "\vil_police\vil_cop";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_us_blackops_mp_digi_co.paa"};
 		};	
 		class z_RACSzombie10 : z_RACSzombie {	 //BLOPS Grey Digi Camo - Black Helmet - Black Vest
-			displayName = "BLOPZ DIGI Heavy";
+			displayName = "SWAT DIGI";
 			faction = "smdz_blops";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_us_blackops_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_us_blackops_digi_co.paa"};
 		};	
 		class z_RACSzombie11 : z_RACSzombie {	 //RSPD Black Digi Camo - Black Helmet - Black Vest
-			displayName = "RZPD BLACK DIGI Heavy";
+			displayName = "SWAT BLACK DIGI";
 			faction = "smdz_rspd";
 			zombieLoot = "policemanZed";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_rspd_swat_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_swat_digi_co.paa"};
 		};
 		class z_RACSzombie12 : z_soldier {	 //RSPD Blue Digi Camo - NO Helmet - Black Vest
-			displayName = "RZPD BLUE MP";
+			displayName = "MP BLUE DIGI";
 			faction = "smdz_rspd";
-			model = "\vil_police\vil_cop";
 			zombieLoot = "policemanZed";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_rspd_blue_digi_co.paa"};
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_rspd_blue_digi_co.paa"};
+			model = "\vil_police\vil_cop";
 		};
 		class z_RACSzombie13 : z_soldier {	 //RSPD Flat Blue - NO Helmet - Black Vest 
-			displayName = "RZPD BLUE MP";
+			displayName = "MP BLUE";
 			faction = "smdz_rspd";
-			model = "\vil_police\vil_cop";
 			zombieLoot = "policemanZed";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_cop_bdu_rspd_blue_co.paa"};
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_rspd_blue_co.paa"};
+			model = "\vil_police\vil_cop";
 		};
 		class z_RACSzombie14 : z_RACSzombie {	 //RSPD Flat Black - Black Helmet - Black Vest
-			displayName = "RZPD BLACK Heavy";
+			displayName = "SWAT BLACK";
 			faction = "smdz_rspd";
 			zombieLoot = "policemanZed";
-			hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_swat_bdu_rspd_black_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_black_co.paa"};
 		};				
+		/*new Zeds*//*
+		class z_woman1 : zZombie_Base {
+			model = "\ca\characters2\civil\Woman\Hooker\Hooker";
+			faceType = "WomanZedHead";
+			woman = true;
+			moves = "CfgMovesZombie2";
+			identityTypes[] = {"WomanZed"};
+			portrait = "\Ca\characters\data\portraits\comBarHead_civ_woman_ca";
+			hiddenSelections[] = {"Camo"};
+			//hiddenSelectionsTextures[] = {"\Ca\characters2\Civil\Woman\Hooker\data\Hooker1_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\infected\textures\hooker1_co.paa"};
+			zombieLoot = "generic";
+			displayName = "HookerZ";
+			faction = "smdz_saracivs";		
+			minHeadTurnAI = -40;
+			maxHeadTurnAI = 40;
+			leftArmToElbow[] = {"LeftArm", 0.5, "LeftArmRoll", 0};
+			leftArmFromElbow[] = {"LeftForeArm", 0, "LeftForeArmRoll", 0.5};
+			leftWrist = "LeftHand";
+			leftShoulder = "LeftShoulder";
+			leftHand[] = {"LeftHandThumb3", "LeftHandThumb2", "LeftHandThumb1", "LeftHandIndex3", "LeftHandIndex2", "LeftHandIndex1", "LeftHandMiddle3", "LeftHandMiddle2", "LeftHandMiddle1", "LeftHandRing3", "LeftHandRing2", "LeftHandRing1", "LeftInHandRing", "LeftHandPinky3", "LeftHandPinky2", "LeftHandPinky1"};
+			leftArmPoints[] = {"LeftShoulder", "lelbow", "lelbow_axis", "lwrist"};
+			rightArmToElbow[] = {"rightArm", 0.5, "rightArmRoll", 0};
+			rightArmFromElbow[] = {"rightForeArm", 0, "rightForeArmRoll", 0.5};
+			rightWrist = "rightHand";
+			rightShoulder = "rightShoulder";
+			rightHand[] = {"rightHandThumb3", "rightHandThumb2", "rightHandThumb1", "rightHandIndex3", "rightHandIndex2", "rightHandIndex1", "rightHandMiddle3", "rightHandMiddle2", "rightHandMiddle1", "rightHandRing3", "rightHandRing2", "rightHandRing1", "rightInHandRing", "rightHandPinky3", "rightHandPinky2", "rightHandPinky1"};
+			rightArmPoints[] = {"rightShoulder", "relbow", "relbow_axis", "rwrist"};
+
+			class Wounds {
+				tex[] = {};
+				mat[] = {"Ca\characters2\Civil\Woman\Hooker\Data\Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w1_Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w2_Hooker.rvmat"};
+			};
+		};*/
 	};

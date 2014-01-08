@@ -266,7 +266,7 @@ class CfgAmmo {
 	class R_80mm_HE: FakeAmmo {};
 	class R_S8T_AT: FakeAmmo {};
 	class R_M136_AT: FakeAmmo {};
-	class R_RPG18_AT: FakeAmmo {};
+	//class R_RPG18_AT: FakeAmmo {};
 	class R_PG7V_AT: FakeAmmo {};
 	class R_PG7VL_AT: FakeAmmo {};
 	class R_PG7VR_AT: FakeAmmo {};
@@ -514,7 +514,7 @@ class CfgMagazines {
 	class 8Rnd_Stinger: FakeMagazine {};
 	class 2Rnd_Stinger: FakeMagazine {};
 	class Strela: FakeMagazine {};
-	class RPG18: FakeMagazine {};
+	//class RPG18: FakeMagazine {};
 	class SMAW_HEDP: FakeMagazine {};
 	class SMAW_HEAA: FakeMagazine {};
 	class Igla: FakeMagazine {};
@@ -977,7 +977,7 @@ class CfgWeapons {
 	//class m8_sharpshooter: FakeWeapon {};
 	class m8_SAW: FakeWeapon {};
 	//class huntingrifle: FakeWeapon {};
-	class RPG18: FakeWeapon {};
+	//class RPG18: FakeWeapon {};
 	class SMAW: FakeWeapon {};
 	//class PKT_2: FakeWeapon {};
 	class PKT_3: FakeWeapon {};
@@ -1609,7 +1609,7 @@ class CfgVehicles {
 	class TK_Commander_EP1: Banned {};
 	//class GER_Soldier_EP1: Banned {}; - OG Bandit Skin SMD Bandit Level 2
 	//class GER_Soldier_Medic_EP1: Banned {}; - SMD Bandit Level 1
-	class GER_Soldier_TL_EP1: Banned {};
+	//class GER_Soldier_TL_EP1: Banned {}; - loot table bandit skin no mask
 	class GER_Soldier_Scout_EP1: Banned {};
 	class GER_Soldier_MG_EP1: Banned {};
 	class InvisibleManW_EP1: Banned {};

@@ -12,6 +12,8 @@ Sniper1_DZ = 	"Sniper1_DZ";
 Sniper1W_DZ = 	"Sniper1W_DZ";
 SniperBandit_DZ = 	"SniperBandit_DZ";
 SniperBanditW_DZ = 	"SniperBanditW_DZ";
+SniperD_DZ = "SniperD_DZ";
+SniperLight_DZ = "SniperLight_DZ";
 Camo1_DZ = 		"Camo1_DZ";
 Soldier1_DZ = 	"Soldier1_DZ";
 Rocket_DZ = 	"Rocket_DZ";
@@ -22,20 +24,21 @@ SMD_RACS_MP_Tan = "SMD_RACS_MP_Tan";
 SMD_RACS_MP_Tan_Digi = "SMD_RACS_MP_Tan_Digi";
 SMD_RACS_Soldier = "SMD_RACS_Soldier";
 SMD_RACS_Soldier_Digi = "SMD_RACS_Soldier_Digi";
-SMD_RACS_SWAT = "SMD_RACS_SWAT";
-SMD_SPD_SWAT_BLACK = "SMD_SPD_SWAT_BLACK";
-SMD_SPD_SWAT_BLACK_DIGI = "SMD_SPD_SWAT_BLACK_DIGI";
-SMD_SPD_BLUE = "SMD_SPD_BLUE";
-SMD_SPD_BLUE_DIGI = "SMD_SPD_BLUE_DIGI";
+
+
+SMD_RSPD_BLACK = "SMD_RSPD_BLACK";
+SMD_RSPD_BLUE = "SMD_RSPD_BLUE";
+SMD_RSPD_BLUE_DIGI = "SMD_RSPD_BLUE_DIGI";
 SMD_RACS_Sheriff = "SMD_RACS_Sheriff";
+SMD_RSPD_SWAT = "SMD_RSPD_SWAT";
+SMD_RSPD_SWAT_DIGI = "SMD_RSPD_SWAT_DIGI";
 Skin_SMD_TIGER_CAMO = "Skin_SMD_TIGER_CAMO";
 SMD_US_SpecOps = "SMD_US_SpecOps";
 SMD_US_SpecOps_DIGI = "SMD_US_SpecOps_DIGI";
 SMD_US_SpecOps_MP_DIGI = "SMD_US_SpecOps_MP_DIGI";
 
-AllPlayers = ["SMD_ATACS_DES","SMD_ATACS_URBAN","SMD_RACS_MP","SMD_RACS_MP_Tan","SMD_RACS_MP_Tan_Digi","SMD_RACS_Soldier","SMD_RACS_Soldier_Digi","SMD_RACS_SWAT","SMD_SPD_SWAT_BLACK","SMD_SPD_SWAT_BLACK_DIGI","SMD_SPD_BLUE","SMD_SPD_BLUE_DIGI","SMD_RACS_Sheriff","Skin_SMD_TIGER_CAMO","SMD_US_SpecOps","SMD_US_SpecOps_DIGI","SMD_US_SpecOps_MP_DIGI","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","BanditSkin_DZ","BanditSkinW_DZ","Sniper1W_DZ","SniperBandit_DZ","SniperBanditW_DZ"];
-AllPlayersVehicles = ["SMD_ATACS_DES","SMD_ATACS_URBAN","SMD_RACS_MP","SMD_RACS_MP_Tan","SMD_RACS_MP_Tan_Digi","SMD_RACS_Soldier","SMD_RACS_Soldier_Digi","SMD_RACS_SWAT","SMD_SPD_SWAT_BLACK","SMD_SPD_SWAT_BLACK_DIGI","SMD_SPD_BLUE","SMD_SPD_BLUE_DIGI","SMD_RACS_Sheriff","Skin_SMD_TIGER_CAMO","SMD_US_SpecOps","SMD_US_SpecOps_DIGI","SMD_US_SpecOps_MP_DIGI","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","BanditSkin_DZ","BanditSkinW_DZ","Sniper1W_DZ","SniperBandit_DZ","SniperBanditW_DZ","AllVehicles"];
-
+AllPlayers = ["SMD_ATACS_DES","SMD_ATACS_URBAN","SMD_RACS_MP","SMD_RACS_MP_Tan","SMD_RACS_MP_Tan_Digi","SMD_RACS_Soldier","SMD_RACS_Soldier_Digi","SMD_RACS_SWAT","SMD_RSPD_SWAT","SMD_RSPD_SWAT_DIGI","SMD_RSPD_BLACK","SMD_RSPD_BLUE","SMD_RSPD_BLUE_DIGI","SMD_RACS_Sheriff","Skin_SMD_TIGER_CAMO","SMD_US_SpecOps","SMD_US_SpecOps_DIGI","SMD_US_SpecOps_MP_DIGI","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","BanditSkin_DZ","BanditSkinW_DZ","Sniper1W_DZ","SniperBandit_DZ","SniperBanditW_DZ","SniperD_DZ","SniperLight_DZ"];
+AllPlayersVehicles = ["SMD_ATACS_DES","SMD_ATACS_URBAN","SMD_RACS_MP","SMD_RACS_MP_Tan","SMD_RACS_MP_Tan_Digi","SMD_RACS_Soldier","SMD_RACS_Soldier_Digi","SMD_RACS_SWAT","SMD_RSPD_SWAT","SMD_RSPD_SWAT_DIGI","SMD_RSPD_BLACK","SMD_RSPD_BLUE","SMD_RSPD_BLUE_DIGI","SMD_RACS_Sheriff","Skin_SMD_TIGER_CAMO","SMD_US_SpecOps","SMD_US_SpecOps_DIGI","SMD_US_SpecOps_MP_DIGI","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","BanditSkin_DZ","BanditSkinW_DZ","Sniper1W_DZ","SniperBandit_DZ","SniperBanditW_DZ","SniperD_DZ","SniperLight_DZ","AllVehicles"];
 //Cooking
 meatraw = [
     "FoodSteakRaw",
@@ -347,8 +350,8 @@ DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;
 dayz_zSpawnDistance = 1000;
 dayz_maxLocalZombies = 40;
-dayz_maxGlobalZombies = 30;
-dayz_maxZeds = 500;
+dayz_maxGlobalZombies = 3000;
+dayz_maxZeds = 3000;
 dayz_spawnPos = getPosATL player;
 
 //init global arrays for Loot Chances
@@ -386,7 +389,7 @@ if(!isDedicated) then {
 	
 	dayz_buildingMonitor = [];	//Buildings to check
 	dayz_bodyMonitor = [];
-	dayz_flyMonitor = [];		//used for monitor flies
+	//dayz_flyMonitor = [];		//used for monitor flies
 	
 	dayz_baseTypes = 		getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 	

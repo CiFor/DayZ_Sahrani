@@ -23,7 +23,7 @@ sosDistance = heliData select 3;
 
 //If Heli has send SOS, the Player has an Radio and is in the SOS-Range... show Debug Monitor
 if(heliSOS && ("ItemRadio" in items player) && (player distance heliPos <= sosDistance)) then {
-	hint parseText format ["<t color='#00ff00' size='1.25'>Received Transmission</t><img size='5' image='%3'/><br/><t color='#ff0000'>Mayday - Mayday<br/>Infected Pilot!</t><br/><br/>Emergency landing initiated near %2",getText (configFile >> 'CfgVehicles' >> heliModel >> 'displayName'),(heliPos call fa_coor2str), getText (configFile >> "cfgVehicles" >> heliModel >> "picture")];
+	hint parseText format ["<t color='#8A1E1E' size='1.25'>Received Transmission</t><img size='5' image='%3'/><br/><t color='#e60000'>Mayday - Mayday<br/>Infected Pilot!</t><br/><br/>Emergency landing initiated near %2",getText (configFile >> 'CfgVehicles' >> heliModel >> 'displayName'),(heliPos call fa_coor2str), getText (configFile >> "cfgVehicles" >> heliModel >> "picture")];
 	sleep 15;
 };
 

@@ -33,6 +33,30 @@
 					"MeleeBaseball_Bat"
 				};
 			};
+			/*class Craft0 {
+				text="Craft Barbed Bat";
+				script="spawn player_Craft;";
+				use[]= {
+					{"WeaponHolder_ItemBaseball_Bat",1},
+					{"ItemWire",1}
+				};
+				output[]= {
+					{"ItemBaseball_Bat_Barbed","WeaponHolder",1}
+				};
+				crafting = 1;
+			};		
+			class Craft1 {
+				text="Craft Nailed Bat";
+				script="spawn player_Craft;";
+				use[]= {
+					{"WeaponHolder_ItemBaseball_Bat",1},
+					{"ItemNails",1}
+				};
+				output[]= {
+					{"ItemBaseball_Bat_Nailed","magazine",1}
+				};
+				crafting = 1;
+			};*///commented out since crafting has no handler for tools or weapons yet
 		};
 	};
 	

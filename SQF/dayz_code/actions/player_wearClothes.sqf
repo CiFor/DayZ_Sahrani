@@ -92,6 +92,9 @@ switch (_item) do {
 			_model = "SniperDW_DZ";
 		};
 	};
+	case "Skin_BanditClothes_DZ": {
+		_model = "BanditClothes_DZ";
+	};
 	case "Skin_Camo1_DZ": {
 		_model = "Camo1_DZ";
 	};
@@ -122,9 +125,6 @@ switch (_item) do {
 	case "Skin_SMD_RSPD_SWAT": {
 		_model = "SMD_RSPD_SWAT";
 	};
-	/*case "Skin_SMD_SPD_SWAT_BLACK": {
-		_model = "SMD_SPD_SWAT_BLACK";
-	};*/
 	case "Skin_SMD_RSPD_SWAT_DIGI": {
 		_model = "SMD_RSPD_SWAT_DIGI";
 	};

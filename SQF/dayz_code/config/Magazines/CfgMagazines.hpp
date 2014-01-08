@@ -1873,7 +1873,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		ammo = "baseball_bat_swing_Ammo";
 	};
 	
-	class Baseball_Bat_Barbed_Swing : Hatchet_Swing {
+	class Baseball_bat_barbed_swing : Hatchet_Swing {
 		displayName = "Baseball Bat Barbed";
 		displayNameMagazine = "Baseball Bat Barbed";
 		shortNameMagazine = "Baseball Bat Barbed";
@@ -2419,6 +2419,11 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		scope = public;
 		displayName = "KSK Soldier";
 		descriptionShort = "Standard Battle Dress Uniform of the German Armed Forces with Shemagh (Tactical Desert Scarf)";
+	};
+	class BanditClothes_DZ : SkinBase {
+		scope = public;
+		displayName = "KSK Medic";
+		descriptionShort = "Standard Battle Dress Uniform of the German Armed Forces";
 	};
 	class Skin_Rocket_DZ : SkinBase {
 		scope = public;

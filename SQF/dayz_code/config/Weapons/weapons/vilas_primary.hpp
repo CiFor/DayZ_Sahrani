@@ -1734,8 +1734,8 @@
 	};
 
 	class vil_D_C7 : M16_base {
-		picture = "\z\addons\dayz_code\textures\C7_ico.paa";
-		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
+		picture = "\smd_assets\weapons\icons\textures\C7_ico.paa";
+		UiPicture = "\smd_assets\weapons\icons\textures\C7_ico.paa";
 
 		displayName = "C7";
 		scope = 2;		
@@ -1759,8 +1759,8 @@
 	};
 
 	class vil_D_C8 : M16_base {
-		picture = "\z\addons\dayz_code\textures\C8_ico.paa";
-		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
+		picture = "\smd_assets\weapons\icons\textures\C8_ico.paa";
+		UiPicture = "\smd_assets\weapons\icons\textures\C8_ico.paa";
 
 		displayName = "C8";
 		scope = 2;		
@@ -1826,7 +1826,7 @@
 	};
 
 	class vil_D_C7_AG : M16A2GL {
-		picture = "\z\addons\dayz_code\textures\C7AG_ico.paa";
+		picture = "\smd_assets\weapons\icons\textures\C7AG_ico.paa";
 		displayName = "C7 AG";
 		scope = 2;		
 		modes[] = {"Single", "FullAuto"};

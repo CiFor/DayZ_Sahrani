@@ -20,7 +20,35 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"dayz_equip","dayz_weapons","CAMisc3","CABuildingParts","CABuildingParts_Signs","CAStructuresHouse","CAStructuresLand_Ind_Stack_Big","CAStructures_Misc_Powerlines","CAStructures","CABuildings","CABuildings2","Ind_MalyKomin","CAStructures_A_CraneCon","CAStructures_Mil","CAStructures_Nav","CAStructures_Rail","A_Crane_02","A_TVTower","CAStructures_Railway","CAStructuresHouse","CAStructuresHouse_HouseBT"};
+		requiredAddons[] = 
+		{
+			"CAMisc3",
+			"CABuildings",
+			"CABuildings2",
+			"CABuildingParts",
+			"CABuildingParts_Signs",
+			"CAStructuresHouse",
+			"CAStructures_Misc_Powerlines",
+			"CAStructures",
+			"CAStructures_A_CraneCon",
+			"CAStructures_Mil",
+			"CAStructures_Nav",
+			"CAStructures_Rail",
+			"dayz_equip",
+			"dayz_weapons",
+			"Ind_MalyKomin",
+			"A_Crane_02",
+			"A_TVTower",
+			"CAStructures_Railway",
+			"CAStructuresHouse",
+			"CAStructuresHouse_HouseBT",
+			"smd_assets",
+			"smd_roads",
+			"smd_sahrani_a2",
+			"smd_sahrani_artif_obj",
+			"smd_sahrani_rocks",
+			"smd_sahrani_veg"
+		};
 	};
 	class DZ_DebriefingRemoved
 	{
@@ -41,7 +69,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "";
-		version = "0.9.7-20131111";
+		version = "1.0.0";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
@@ -81,7 +109,35 @@ class CfgAddons
 	{
 		class dayz
 		{
-			list[] = {"dayz","dayz_anim","dayz_code","dayz_communityassets","dayz_equip","dayz_sfx","dayz_vehicles","dayz_weapons","smd_sahrani_a2","smd_sahrani_artif_obj"};
+			list[] = 
+			{
+				"CAMisc3",
+				"CABuildings",
+				"CABuildings2",
+				"CABuildingParts",
+				"CABuildingParts_Signs",
+				"CAStructuresHouse",
+				"CAStructures_Misc_Powerlines",
+				"CAStructures",
+				"CAStructures_A_CraneCon",
+				"CAStructures_Mil",
+				"CAStructures_Nav",
+				"CAStructures_Rail",
+				"dayz_equip",
+				"dayz_weapons",
+				"Ind_MalyKomin",
+				"A_Crane_02",
+				"A_TVTower",
+				"CAStructures_Railway",
+				"CAStructuresHouse",
+				"CAStructuresHouse_HouseBT",
+				"smd_assets",
+				"smd_roads",
+				"smd_sahrani_a2",
+				"smd_sahrani_artif_obj",
+				"smd_sahrani_rocks",
+				"smd_sahrani_veg"
+			};
 		};
 	};
 };

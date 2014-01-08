@@ -34,4 +34,4 @@ if(!_alreadyBombed) then {
 	dayzCarBomb = [_vehicle,getPlayerUID player];
 	publicVariableServer "dayzCarBomb";
 };
-cutText ["\n\nAttached Carbomb! Next Survivor who starts the Engine will blow up!", "PLAIN DOWN"];
+cutText ["\n\nAttached Carbomb! Next Survivor who enters the vehicle will blow up!", "PLAIN DOWN"];
