@@ -1,5 +1,5 @@
 private ["_date","_year","_month","_day","_hour","_minute","_date1","_hiveResponse","_key","_objectCount","_dir","_point","_i","_action","_dam","_selection","_wantExplosiveParts","_entity","_worldspace","_damage","_booleans","_rawData","_ObjectID","_class","_CharacterID","_inventory","_hitpoints","_fuel","_id","_objectArray","_script","_result","_outcome"];
-[]execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
+//[]execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
@@ -256,7 +256,7 @@ nul = [
 				'center',		//Center-Marker for the Random-Crashpoints, for Chernarus this is a point near Stary
 				6000,			//Radius in Meters from the Center-Marker in which the Choppers can crash and get waypoints
 				50,			//Percentage chance of smoke on the crashsite
-					false,		//Should the flames & smoke fade after a while (if there is smoke)?
+				false,		//Should the flames & smoke fade after a while (if there is smoke)?
 				false,			//Use the Static-Crashpoint-Function? If true, you have to add Coordinates into server_spawnCrashSite.sqf
 				1,			//Amount of Random-Waypoints the Heli gets before he flys to his Point-Of-Crash (using Static-Crashpoint-Coordinates if its enabled)
 				0.1,			//Amount of Damage the Heli has to get while in-air to explode before the POC. (0.0001 = Insta-Explode when any damage//bullethit, 1 = Only Explode when completly damaged)
@@ -265,7 +265,7 @@ nul = [
 				60,			//Percentage chance of each helicrash to send the SOS to all players that own a radio
 				10000,			//Distance in meters in which all players with Radios will see the SOS-Message
 				false,			//Should the Servers actual Player-Count effect the amount of Loot at the Crashsite (Lootbalancing)? Example: 40 Slot Server has only 20 Players Online, Only 50% of the Min/Max-Lootpiles will spawn
-					40,		//Maximum Playercount of your Server, only used when Lootbalancing is activated
-					2,		//Minimum Lootpiles if Loot-Balancing is active, even if the Playercount is Zero.
+				40,		//Maximum Playercount of your Server, only used when Lootbalancing is activated
+				2,		//Minimum Lootpiles if Loot-Balancing is active, even if the Playercount is Zero.
 				false			//No50-Cal Loottable? If true, the Crashsites will never spawn High-Caliber Rifles like AS50, Lapua Magnum, M107 and KSVK
 			] spawn server_spawnCrashSite;
