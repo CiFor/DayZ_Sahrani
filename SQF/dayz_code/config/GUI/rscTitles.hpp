@@ -4269,7 +4269,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			idc = 1;
 			default = 1;
 			shortcuts[] = {0x00050000 + 0, 28, 57, 156};
-			text = "Play Day7 Sahrani";
+			text = "Play Day 7 Sahrani";
 			align = "center";
 			x = 0.622028 * safezoneW + safezoneX;
 			y = 0.688041 * safezoneH + safezoneY;
