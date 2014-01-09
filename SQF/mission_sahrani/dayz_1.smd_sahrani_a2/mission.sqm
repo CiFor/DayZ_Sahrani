@@ -1,42 +1,8 @@
 version=11;
 class Mission
 {
-	addOns[]=
-	{
-			"CAMisc3",
-			"CABuildings",
-			"CABuildings2",
-			"CABuildingParts",
-			"CABuildingParts_Signs",
-			"CAStructuresHouse",
-			"CAStructures_Misc_Powerlines",
-			"CAStructures",
-			"CAStructures_A_CraneCon",
-			"CAStructures_Mil",
-			"CAStructures_Nav",
-			"CAStructures_Rail",
-			"dayz_equip",
-			"dayz_weapons",
-			"Ind_MalyKomin",
-			"A_Crane_02",
-			"A_TVTower",
-			"CAStructures_Railway",
-			"CAStructuresHouse",
-			"CAStructuresHouse_HouseBT",
-			"smd_assets",
-			"smd_roads",
-			"smd_sahrani_a2",
-			"smd_sahrani_artif_obj",
-			"smd_sahrani_rocks",
-			"smd_sahrani_veg"
-	};
-	addOnsAuto[]=
-	{
-		"smd_roads",
-		"smd_sahrani_a2",
-		"smd_sahrani_artif_obj",
-		"smd_sahrani_rocks"
-	};
+	addOns[]= {};
+	addOnsAuto[]= {"smd_roads","smd_sahrani_a2","smd_sahrani_artif_obj","smd_sahrani_rocks"};
 	randomSeed=11171215;
 	class Intel
 	{
