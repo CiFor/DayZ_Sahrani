@@ -5,7 +5,7 @@ _isAir = vehicle player iskindof "Air";
 _inVehicle = (vehicle player != player);
 _dateNow = (DateToNumber date);
 _maxZombies = dayz_maxLocalZombies;
-_maxWildZombies = 3;
+//_maxWildZombies = 3;
 _age = -1;
 
 _nearbyBuildings = [];
@@ -20,7 +20,7 @@ if (_inVehicle) then {
 	_maxZombies = _maxZombies / 2;
 };
 if (_isAir) then {
-	_maxZombies = 5;
+	_maxZombies = 2;
 };
 
 
@@ -66,7 +66,7 @@ dayz_spawnZombies = 0;
 } foreach _spawnZombies;
 
 dayz_CurrentZombies = count (_position nearEntities ["zZombie_Base",_radius+200]);
-
+/*
 if ("ItemMap_Debug" in items player) then {
 	deleteMarkerLocal "MaxZeds";
 	deleteMarkerLocal "Counter";
@@ -110,16 +110,16 @@ diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZ
 diag_log ("dayz_maxCurrentZeds: " +str(dayz_maxCurrentZeds) + "/" +str(dayz_maxZeds));
 
 };
-
+*/
 _nearby = _position nearObjects ["building",_radius];
-_nearbyCount = count _nearby;
+/*_nearbyCount = count _nearby;
 if (_nearbyCount < 1) exitwith 
 {
 	if ((dayz_spawnZombies < _maxWildZombies) and !_inVehicle)  then {
 		[_position] call wild_spawnZombies;
 	};
 };
-
+*/
 {
 	_type = typeOf _x;
 	_config = 		configFile >> "CfgBuildingLoot" >> _type;
