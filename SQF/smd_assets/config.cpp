@@ -89,7 +89,7 @@ class CfgMusic
 	class smd_backtrack
 	{
 		name = "backtrackkunal";
-		sound[] = {"\smd_assets\music\smd_backtrack.ogg", db+0, 1.0};
+		sound[] = {"\smd_assets\music\smd_backtrack_mono.ogg", db+0, 1.0};
 		duration = 308;
 	};
 };
@@ -1241,7 +1241,7 @@ class CfgMusic
 						armor = 100;
 						material = 1000;
 						name = "body";
-						passThrough = 1;
+						passThrough = 0;
 					};
 						
 					class HitSpine : HitHead {
@@ -1289,7 +1289,7 @@ class CfgMusic
 						armor = 800;
 						material = 8000;
 						name = "body";
-						passThrough = 1;
+						passThrough = 0;
 					};
 						
 					class HitSpine : HitHead {
@@ -1341,7 +1341,7 @@ class CfgMusic
 					armor = 800;
 					material = 8000;
 					name = "body";
-					passThrough = 1;
+					passThrough = 0;
 				};
 			};	
 			class Wounds
