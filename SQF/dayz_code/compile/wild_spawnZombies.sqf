@@ -1,4 +1,6 @@
-private["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_nearByPlayer","_attempt","_myDest","_newDest","_lootType"];
+////////commented out for being da brokens
+
+/*private["_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_nearByPlayer","_attempt","_myDest","_newDest","_lootType"];
 _player = _this select 0;
 _unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 _doLoiter = 	true;
@@ -11,12 +13,12 @@ _type = _unitTypes call BIS_fnc_selectRandom;
 
 //Create the Group and populate it
 //diag_log ("Spawned: " + _type);
-_radius = 40;
-_method = "NONE";
+//_radius = 40;
+//_method = "NONE";
 
-_position = [_player,120,200,10,0,0,0] call BIS_fnc_findSafePos;
+//_position = [_player,120,200,10];
 
-_agent = createAgent [_type, _position, [], _radius, _method];
+_agent = createAgent [_type, position player, [], 40, "NONE"];
 
 if (_doLoiter) then {
 	//_agent setPosATL _position;
