@@ -1,11 +1,11 @@
 ﻿respawn = "BASE";
 respawndelay = 2; // Reduce chance of bodies deleting
-onLoadMission= "DayZ Sahrani";
+onLoadMission= "Day 7 Sahrani";
 OnLoadIntro = "Welcome to Sahrani";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
-disableChannels[]={0,1,2,6}; // -1 to add side
+disableChannels[]={0,2,6}; // -1 to add side
 enableItemsDropping = 0;
 onPauseScript = "\z\addons\dayz_code\compile\player_onPause.sqf";
 
@@ -58,7 +58,7 @@ class RscLoadingText : RscText
 	w = 0.352944;
 	h = 0.039216;
 	sizeEx = 0.03921;
-	colorText[] = {0.543,0.5742,0.4102,1.0};
+	colorText[] = {1,1,1,1};
 };
 class RscProgress
 {
@@ -141,7 +141,7 @@ class DayZ_loadingScreen
 			h = 0.04902;
 			text = "";
 			sizeEx = 0.05;
-			colorText[] = {0.543,0.5742,0.4102,1.0};
+			colorText[] = {1,1,1,1};
 		};
 	};
 };

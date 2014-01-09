@@ -3,33 +3,51 @@ class Mission
 {
 	addOns[]=
 	{
-		"smd_sahrani_a2",
-		"ca_modules_animals",
-		"dayz_code",
-		"dayz_weapons",
-		"dayz_equip",
-		"cacharacters_pmc",
-		"ca_modules_functions",
-		"castructures_castle",
+			"CAMisc3",
+			"CABuildings",
+			"CABuildings2",
+			"CABuildingParts",
+			"CABuildingParts_Signs",
+			"CAStructuresHouse",
+			"CAStructures_Misc_Powerlines",
+			"CAStructures",
+			"CAStructures_A_CraneCon",
+			"CAStructures_Mil",
+			"CAStructures_Nav",
+			"CAStructures_Rail",
+			"dayz_equip",
+			"dayz_weapons",
+			"Ind_MalyKomin",
+			"A_Crane_02",
+			"A_TVTower",
+			"CAStructures_Railway",
+			"CAStructuresHouse",
+			"CAStructuresHouse_HouseBT",
+			"smd_assets",
+			"smd_roads",
+			"smd_sahrani_a2",
+			"smd_sahrani_artif_obj",
+			"smd_sahrani_rocks",
+			"smd_sahrani_veg"
 	};
 	addOnsAuto[]=
 	{
+		"smd_roads",
 		"smd_sahrani_a2",
-		"dayz_weapons",
-		"ca_modules_functions",
-		"castructures_castle",
+		"smd_sahrani_artif_obj",
+		"smd_sahrani_rocks"
 	};
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="DayZ Sahrani";
-		briefingDescription="DayZ in Sahrani";
+		briefingName="Day 7 Sahrani";
+		briefingDescription="Day 7 Sahrani";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
-		year=2008;
-		month=10;
-		day=1;
-		hour=12;
+		year=2007;
+		month=07;
+		day=7;
+		hour=07;
 	};
 	class Groups
 	{
@@ -1252,14 +1270,8 @@ class Mission
 };
 class Intro
 {
-	addOns[]=
-	{
-		"smd_sahrani_a2"
-	};
-	addOnsAuto[]=
-	{
-		"smd_sahrani_a2"
-	};
+	addOns[]={};
+	addOnsAuto[]={};
 	randomSeed=6913869;
 	class Intel
 	{
@@ -1274,14 +1286,8 @@ class Intro
 };
 class OutroWin
 {
-	addOns[]=
-	{
-		"smd_sahrani_a2"
-	};
-	addOnsAuto[]=
-	{
-		"smd_sahrani_a2"
-	};
+	addOns[]={};
+	addOnsAuto[]={};
 	randomSeed=4081731;
 	class Intel
 	{
@@ -1296,14 +1302,8 @@ class OutroWin
 };
 class OutroLoose
 {
-	addOns[]=
-	{
-		"smd_sahrani_a2"
-	};
-	addOnsAuto[]=
-	{
-		"smd_sahrani_a2"
-	};
+	addOns[]= {};
+	addOnsAuto[]={};
 	randomSeed=4975929;
 	class Intel
 	{
