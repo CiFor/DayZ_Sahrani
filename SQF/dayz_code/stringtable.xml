@@ -1962,6 +1962,46 @@
 			<French>Un paquet d'assortiment de fruits secs "Papa", avec 12 fruits et noix différents.</French>
 			<Czech>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Czech>
 		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_HERPY">						
+			<Original>Can (Muffins)</Original>
+			<English>Can (Muffins)</English>	
+			<German>Can (Muffins)</German>
+			<Russian>Банка кексиков</Russian>
+			<Spanish>Can (Muffins)</Spanish>
+			<Dutch>Can (Muffins)</Dutch>
+			<French>Boîte (Muffins)</French>
+			<Czech>Can (Muffins)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_DERPY">						
+			<Original>A clean, unopened can of Derpy Hooves canned muffins.</Original>
+			<English>A clean, unopened can of Derpy Hooves canned muffins.</English>	
+			<German>A clean, unopened can of Derpy Hooves canned muffins.</German>
+			<Russian>Чистая, закрытая банка кексиков "Derpy Hooves".</Russian>
+			<Spanish>A clean, unopened can of Derpy Hooves canned muffins.</Spanish>
+			<Dutch>A clean, unopened can of Derpy Hooves canned muffins.</Dutch>
+			<French>Une boîte intacte de muffins en conserve "Derpy Hooves".</French>
+			<Czech>A clean, unopened can of Derpy Hooves canned muffins.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_DERPY_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Жестянка</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Boîte en fer-blanc</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_DERPY_EMPTY">						
+			<Original>An empty can of Derpy Hooves canned muffins.</Original>
+			<English>An empty can of Derpy Hooves canned muffins.</English>	
+			<German>An empty can of Derpy Hooves canned muffins.</German>
+			<Russian>Пустая банка от кексиков "Derpy Hooves".</Russian>
+			<Spanish>An empty can of Derpy Hooves canned muffins.</Spanish>
+			<Dutch>An empty can of Derpy Hooves canned muffins.</Dutch>
+			<French>Une boîte vide de muffins en conserve "Derpy Hooves".</French>
+			<Czech>An empty can of Derpy Hooves canned muffins.</Czech>
+		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">						
 			<Original>Can (Beans)</Original>
 			<English>Can (Beans)</English>	

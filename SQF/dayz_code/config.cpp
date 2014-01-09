@@ -20,35 +20,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = 
-		{
-			"CAMisc3",
-			"CABuildings",
-			"CABuildings2",
-			"CABuildingParts",
-			"CABuildingParts_Signs",
-			"CAStructuresHouse",
-			"CAStructures_Misc_Powerlines",
-			"CAStructures",
-			"CAStructures_A_CraneCon",
-			"CAStructures_Mil",
-			"CAStructures_Nav",
-			"CAStructures_Rail",
-			"dayz_equip",
-			"dayz_weapons",
-			"Ind_MalyKomin",
-			"A_Crane_02",
-			"A_TVTower",
-			"CAStructures_Railway",
-			"CAStructuresHouse",
-			"CAStructuresHouse_HouseBT",
-			"smd_assets",
-			"smd_roads",
-			"smd_sahrani_a2",
-			"smd_sahrani_artif_obj",
-			"smd_sahrani_rocks",
-			"smd_sahrani_veg"
-		};
+		requiredAddons[] = {"dayz_equip","dayz_weapons",};
 	};
 	class DZ_DebriefingRemoved
 	{
@@ -63,8 +35,8 @@ class CfgMods
 {
 	class DayZ
 	{
-		dir = "DayZ_Sahrani";
-		name = "DayZ Sahrani";
+		dir = "Day7_Sahrani";
+		name = "Day7 Sahrani";
 		picture = "z\addons\dayz_code\gui\dayz_sahrani_logo_ca.paa";
 		hidePicture = 0;
 		hideName = 0;
@@ -109,35 +81,7 @@ class CfgAddons
 	{
 		class dayz
 		{
-			list[] = 
-			{
-				"CAMisc3",
-				"CABuildings",
-				"CABuildings2",
-				"CABuildingParts",
-				"CABuildingParts_Signs",
-				"CAStructuresHouse",
-				"CAStructures_Misc_Powerlines",
-				"CAStructures",
-				"CAStructures_A_CraneCon",
-				"CAStructures_Mil",
-				"CAStructures_Nav",
-				"CAStructures_Rail",
-				"dayz_equip",
-				"dayz_weapons",
-				"Ind_MalyKomin",
-				"A_Crane_02",
-				"A_TVTower",
-				"CAStructures_Railway",
-				"CAStructuresHouse",
-				"CAStructuresHouse_HouseBT",
-				"smd_assets",
-				"smd_roads",
-				"smd_sahrani_a2",
-				"smd_sahrani_artif_obj",
-				"smd_sahrani_rocks",
-				"smd_sahrani_veg"
-			};
+			list[] = {"buildings","dayz","dayz_code","dayz_communityassets","dayz_equip","dayz_sfx","dayz_weapons","smd_assets","sara_civilians","smd_sahrani_a2","smd_sahrani_artif_obj","vil_police"};
 		};
 	};
 };

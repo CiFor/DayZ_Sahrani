@@ -4257,8 +4257,8 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			colorDisabled[] = {0.8,0.8,0.8,1};
 			colorBackground[] = {0.1,0.1,0.1,0.95};
 			colorBackgroundActive[] = {0.2,0.2,0.2,0.95};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.95};
-			colorShadow[] = {0.95,0.95,0.95,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.5};
+			colorShadow[] = {0,0,0,1};
 			colorBorder[] = {0,0,0,1};
 			borderSize = 0.0;
 			SizeEx = 0.045;
@@ -4269,7 +4269,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			idc = 1;
 			default = 1;
 			shortcuts[] = {0x00050000 + 0, 28, 57, 156};
-			text = "Play DayZ Sahrani";
+			text = "Play Day7 Sahrani";
 			align = "center";
 			x = 0.622028 * safezoneW + safezoneX;
 			y = 0.688041 * safezoneH + safezoneY;
@@ -4280,8 +4280,8 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			colorDisabled[] = {0.8,0.8,0.8,1};
 			colorBackground[] = {0.1,0.1,0.1,0.95};
 			colorBackgroundActive[] = {0.2,0.2,0.2,0.95};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.95};
-			colorShadow[] = {0.95,0.95,0.95,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.5};
+			colorShadow[] = {0,0,0,1};
 			colorBorder[] = {0,0,0,1};
 			borderSize = 0.0;
 			SizeEx = 0.045;
@@ -4855,7 +4855,7 @@ class RscDisplayDSinterface : RscStandardDisplay {
 	};
 };
 //Removal of 'F' commands to block hacks
-class RscConfigEditor_Main {
+/*class RscConfigEditor_Main {
 	idd = 3030;
 	class Controls {
 		class MainBackground;
@@ -4866,7 +4866,7 @@ class RscConfigEditor_Main {
 		delete MainTree;
 		delete MainList;
 	};
-};
+};*/
 
 class CfgLoadingTexts {
 	titlesDefault[] = {""};
