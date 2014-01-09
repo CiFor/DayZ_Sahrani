@@ -1,0 +1,4 @@
+
+Please note all DayZ Derivative works are shared under the DML: http://www.bistudio.com/english/community/licenses/dayz-mod-license-share-alike
+
+All map files are shared under the APL-SA: http://www.bistudio.com/english/community/licenses/arma-public-license-share-alike
