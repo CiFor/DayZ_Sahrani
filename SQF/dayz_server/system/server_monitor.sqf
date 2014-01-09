@@ -109,7 +109,7 @@ if (_script != "") then
 				if (count (_worldspace select 1) == 3) then {
 					_pos = _worldspace select 1;
 					_wsDone = true;
-				}
+				};
 			};			
 			if (!_wsDone) then {
 				if (count _worldspace >= 1) then { _dir = _worldspace select 0; };
@@ -130,7 +130,7 @@ if (_script != "") then
 				clearWeaponCargoGlobal  _object;
 				clearMagazineCargoGlobal  _object;
 				
-				if (_object isKindOf "TentStorage" || _object isKindOf "BoxStorage_DZ" || _object isKindOf "Gunrack_DZ" || _object isKindOf "WeaponCache_DZ") then {
+				if (_object isKindOf "TentStorage" || _object isKindOf "BoxStorage_DZ" || _object isKindOf "Gunrack_DZ" || _object isKindOf "WeaponCache_DZ" || _object isKindOf "Workbench_DZ") then {
 					_pos set [2,0];
 					_object setpos _pos;
 					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];

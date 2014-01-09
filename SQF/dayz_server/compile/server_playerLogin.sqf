@@ -81,6 +81,7 @@ if (!_isNew) then {
 	_hiveVer =		_primary select 8;
 	
 	if (!(_model in [
+				"BanditClothes_DZ",
 				"BanditSkin_DZ",
 				"BanditSkinW_DZ",
 				"SurvivorW2_DZ",
