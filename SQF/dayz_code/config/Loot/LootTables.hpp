@@ -527,7 +527,6 @@ class CfgBuildingLoot {
 			{"AK_74_GL_kobra","weapon"},
 			{"AKS_74","weapon"},
 			{"AKS_74_kobra","weapon"},
-			{"AKS_74_NSPU","weapon"},
 			{"AKS_74_pso","weapon"},
 			{"AKS_74_U","weapon"},
 			{"AKS_74_UN_kobra","weapon"},
@@ -608,7 +607,6 @@ class CfgBuildingLoot {
 			0.01, //AK_74_GL_kobra","weapon
 			0.06, //AKS_74","weapon
 			0.04, //AKS_74_kobra","weapon
-			0.01, //AKS_74_NSPU","weapon
 			0.01, //AKS_74_pso","weapon
 			0.03, //AKS_74_U","weapon
 			0.02, //AKS_74_UN_kobra","weapon
@@ -696,7 +694,6 @@ class CfgBuildingLoot {
 			{"AK_74_GL_kobra","weapon"},
 			{"AKS_74","weapon"},
 			{"AKS_74_kobra","weapon"},
-			{"AKS_74_NSPU","weapon"},
 			{"AKS_74_pso","weapon"},
 			{"AKS_74_U","weapon"},
 			{"AKS_74_UN_kobra","weapon"},
@@ -776,7 +773,6 @@ class CfgBuildingLoot {
 			0.01, //AK_74_GL_kobra","weapon
 			0.06, //AKS_74","weapon
 			0.04, //AKS_74_kobra","weapon
-			0.01, //AKS_74_NSPU","weapon
 			0.01, //AKS_74_pso","weapon
 			0.03, //AKS_74_U","weapon
 			0.02, //AKS_74_UN_kobra","weapon
