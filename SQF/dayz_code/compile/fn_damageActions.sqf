@@ -61,12 +61,12 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	_hasPainkillers = 	"ItemPainkiller" in magazines player;
 
 	//Allow player to drag
-	if(_unconscious) then {
+	/*if(_unconscious) then {
 		r_action = true;
 		_action1 = _unit addAction [localize "str_actions_medical_01", "\z\addons\dayz_code\medical\drag.sqf",_unit, 0, true, true];
 		_action2 = _unit addAction [localize "str_actions_medical_02", "\z\addons\dayz_code\medical\pulse.sqf",_unit, 0, true, true];
 		r_player_actions = r_player_actions + [_action1,_action2];
-	};
+	};*/
 	//Load Vehicle
 	if (_hasVehicle and _unconscious) then {
 		_x = 0;
