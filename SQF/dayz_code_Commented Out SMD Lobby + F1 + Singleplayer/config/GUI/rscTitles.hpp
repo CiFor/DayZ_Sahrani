@@ -18,8 +18,8 @@ class RscButton {
 	offsetPressedX = 0.002;
 	offsetPressedY = 0.002;
 	colorFocused[] = {1, 0.537, 0, 1};
-	colorShadow[] = {0.023529, 0, 0.0313725, 1};
-	colorBorder[] = {0.023529, 0, 0.0313725, 1};
+	colorShadow[] = {0.95, 0.95, 0.95, 1};
+	colorBorder[] = {0.95, 0.95, 0.95, 1};
 	borderSize = 0.0;
 	soundEnter[] = {"\ca\ui\data\sound\onover", 0.09, 1};
 	soundPush[] = {"\ca\ui\data\sound\new1", 0.0, 0};
@@ -528,7 +528,7 @@ class RscIGUIListNBox : RscListNBox {
 	colorSelectBackground2[] = {0.1, 0.1, 0.1, 1.0};
 	period = 0;
 	colorBackground[] = {0, 0, 0, 1};
-	columns[] = {0.1, 0.7, 0.1, 0.1};
+	columns[] = {0.5, 0.5, 0.5, 0.1};
 	
 	class ScrollBar {
 		color[] = {1, 1, 1, 0.6};
@@ -544,7 +544,7 @@ class RscIGUIListNBox : RscListNBox {
 class CfgInGameUI {
 	imageCornerElement = "\ca\ui\data\igui_hud_corner.paa";
 	xboxStyle = 0;
-	colorBackground[] = {1, 1, 1, 0};
+	colorBackground[] = {0,0,0,0.8};
 	colorBackgroundCommand[] = {1, 1, 1, 1};
 	colorBackgroundHelp[] = {1, 1, 1, 1};
 	colorText[] = {0.95, 0.95, 0.95, 1};
@@ -1276,16 +1276,25 @@ class RscDisplayStart : RscStandardDisplay {
 	};
 	
 	class controls {
-		class Text {};
-		class Progress {};
-		class Progress2 {};
+		class Text 
+		{
+			colorText[] = {0.95, 0.95, 0.95, 1.0};
+		};
+		class Progress 
+		{
+			colorText[] = {0.95, 0.95, 0.95, 1.0};
+		};
+		class Progress2 
+		{
+			colorText[] = {0.95, 0.95, 0.95, 1.0};
+		};
 		
 		class LoadingPic : RscPictureKeepAspect {
 			text = "z\addons\dayz_code\gui\sahrani.paa";
 		};
 		
 		class CA_Text : RscLoadingText {
-			colorText[] = {0.8784, 0.8471, 0.651, 1.0};
+			colorText[] = {0.95, 0.95, 0.95, 1.0};
 		};
 		
 		class CA_Progress : RscProgress {
@@ -1492,7 +1501,7 @@ class RscDisplayMain : RscStandardDisplay
 		class CA_DAYZ_Sahrani : RscPictureKeepAspect
 		{
 			x = 0.323717 * safezoneW + safezoneX;
-			y = 0.264949 * safezoneH + safezoneY;
+			y = 0.045000 * safezoneH + safezoneY;
 			w = 1.000000;
 			h = 1.000000;
 			text = "z\addons\dayz_code\gui\dayz_sahrani_logo_ca.paa";
@@ -1555,7 +1564,7 @@ class RscDisplayMain : RscStandardDisplay
 class RscButtonActionMenu: RscButton
 {
 	SizeEx = 0.02674;
-	colorBackground[] = {0.1,0.1,0.1,0.85};
+	colorBackground[] = {0.1,0.1,0.1,0.6};
 	colorBackgroundActive[] = {0.5,0.5,0.5,1};
 	colorBackgroundDisabled[] = {0.1,0.1,0.1,0.5};
 	colorFocused[] = {0.95,0.95,0.95,1};
@@ -2705,7 +2714,10 @@ class RscTitles
 	};
 };
 class RscMapControl;
-class IGUIBack;
+class IGUIBack
+{
+ colorBackground[] = {0,0,0,0.6};
+};
 
 class RscTextWIP : RscText {
 	x = "SafeZoneX";
@@ -3058,7 +3070,7 @@ class RscDisplayDiary {
 			y = "SafeZoneY + 0.031";
 			w = "0.98*SafeZoneW";
 			h = 0.082;
-			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+			colorbackground[] = {0,0,0,0.8};
 		};
 		
 		class CA_TopicsBackground : IGUIBack {
@@ -3067,7 +3079,7 @@ class RscDisplayDiary {
 			y = "SafeZoneY + 0.117";
 			w = "0.146*SafeZoneW";
 			h = 0.53;
-			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+			colorbackground[] = {0.1,0.1,0.1,0.8};
 		};
 		
 		class CA_SubTopicsBackground : IGUIBack {
@@ -3267,8 +3279,10 @@ class RscDisplayHintC {
 			w = 0.5;
 			h = 0.06;
 			text = "";
-			colorBackground[] = {0.1, 0.1, 0.1, 0.8};
-			colorText[] = {0, 0, 0, 0};
+			colorBackground[] = {0,0,0,0.6};
+			colorShadow[] = {0.95, 0.95, 0.95, 1};
+			colorBorder[] = {0.95, 0.95, 0.95, 1};
+			colorText[] = {0, 0, 0, 1};
 			font = "TahomaB";
 			sizeEx = 0;
 			fixedWidth = 0;
@@ -3282,8 +3296,24 @@ class RscDisplayHintC {
 			x = 0.36;
 			y = 0.41;
 			w = 0.48;
-			colorBackground[] = {0, 0, 0, 0};
+			colorBackground[] = {0.95, 0.95, 0.95, 1};
+			colorShadow[] = {0.95, 0.95, 0.95, 1};
+			colorBorder[] = {0.95, 0.95, 0.95, 1};
 			text = STR_DISP_ERROR;
+		};
+		class CA_Hint: RscIGUIText {
+		idc = 102;
+		style = 16;
+		lineSpacing = 1;
+		sizeEx = 0.034;
+		x = 0.36;
+		y = 0.41;
+		w = 0.48;
+		h = 0.035;
+		colorBackground[] = {0.95,0.95,0.95,0.8};
+		colorText[] = {0,0,0,1};
+		colorShadow[] = {0.95, 0.95, 0.95, 1};
+		colorBorder[] = {0.95, 0.95, 0.95, 1};
 		};
 		
 		class continue : RscActiveText {
@@ -3307,7 +3337,7 @@ class RscDisplayHintCEx {
 	idd = 72;
 	movingEnable = 1;
 	soundOpen[] = {"", 0.5, 1};
-	indent = "#(argb,8,8,3)color(1,1,1,1)";
+	indent = "#(argb,8,8,8)color(1,1,1,0.8)";
 	
 	class controls {
 		class Background : RscText {
@@ -3319,8 +3349,8 @@ class RscDisplayHintCEx {
 			w = 0.7;
 			h = 0.155;
 			text = "";
-			colorBackground[] = {0.1, 0.1, 0.1, 0.8};
-			colorText[] = {0, 0, 0, 0};
+			colorBackground[] = {0,0,0,0.8};
+			colorText[] = {0,0,0,1};
 			font = "TahomaB";
 			sizeEx = 0;
 			fixedWidth = 0;
@@ -3334,7 +3364,7 @@ class RscDisplayHintCEx {
 			w = 0.66;
 			h = 0.06;
 			text = STR_DISP_ERROR;
-			colorText[] = {0.8, 0.8, 0.8, 1};
+			colorText[] = {0, 0, 0, 1};
 			font = "TahomaB";
 			sizeEx = ( 21 / 408 );
 		};
@@ -3348,7 +3378,7 @@ class RscDisplayHintCEx {
 			h = 0;
 			text = "";
 			colorBackground[] = {0.8, 0.8, 0.8, 1};
-			colorText[] = {1, 1, 1, 1};
+			colorText[] = {0, 0, 0, 1};
 		};
 		
 		class Hint : RscStructuredText {
@@ -3378,7 +3408,7 @@ class RscDisplayHintCEx {
 			text = "";
 			colorBackground[] = {0.8, 0.8, 0.8, 1};
 			color[] = {0.8, 0.8, 0.8, 1};
-			colorText[] = {0.8, 0.8, 0.8, 1};
+			colorText[] = {0, 0, 0, 1};
 		};
 		
 		class continue : RscActiveText {
@@ -3398,6 +3428,23 @@ class RscDisplayHintCEx {
 };
 
 class RscInGameUI {
+ class RscHint
+ {
+  class Background: RscText
+  {
+   colorBackground[] = {0,0,0,0.6};
+  };
+ };
+ class RscTaskHint
+ {
+  class controlsBackground
+  {
+   class Background: RscText
+   {
+    colorBackground[] = {0,0,0,0.6};
+   };
+  };
+ };
 	colorReady[] = {1, 1, 1, 1.0};
 	colorPrepare[] = {0.863, 0.584, 0.0, 1};
 	colorUnload[] = {0.706, 0.0745, 0.0196, 1};
@@ -3985,8 +4032,8 @@ class nope {
 	color[] = {0,0,0,0};
 	text = "";
 };
-/*                                                                                 // Begin SMD Custom Lobby Relocation Comment out if Using Standard Lobby
-class RscDisplayMultiplayerSetup : RscStandardDisplay {
+//ReInsert Start comment here to remove SMD Lobby                                                                                  // Begin SMD Custom Lobby Relocation Comment out if Using Standard Lobby
+/*class RscDisplayMultiplayerSetup : RscStandardDisplay {
 	west = "ca\ui\data\flag_bluefor_ca.paa";
 	east = "ca\ui\data\flag_opfor_ca.paa";
 	guer = "ca\ui\data\flag_indep_ca.paa";
@@ -4202,7 +4249,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		delete CA_B_Params;
 		delete CA_B_DSinterface;
 		delete CA_B_Kick;                                         // END SMD Custom Lobby Relocation Comment out if Using Standard Lobby
-		/*
+//Re-insert start commment here to remove SMD lobby 		
 		class SMD_ButtonDisconnect: RscButtonTextOnly  // SMD Custom Lobby Disconnect Button Comment out if Using Standard Lobby
 		{
 			idc = 2;
@@ -4219,8 +4266,8 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			colorDisabled[] = {0.8,0.8,0.8,1};
 			colorBackground[] = {0.1,0.1,0.1,0.95};
 			colorBackgroundActive[] = {0.2,0.2,0.2,0.95};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.95};
-			colorShadow[] = {0.023529,0,0.0313725,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.5};
+			colorShadow[] = {0,0,0,1};
 			colorBorder[] = {0,0,0,1};
 			borderSize = 0.0;
 			SizeEx = 0.045;
@@ -4231,7 +4278,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			idc = 1;
 			default = 1;
 			shortcuts[] = {0x00050000 + 0, 28, 57, 156};
-			text = "Play DayZ Sahrani";
+			text = "Play Day 7 Sahrani";
 			align = "center";
 			x = 0.622028 * safezoneW + safezoneX;
 			y = 0.688041 * safezoneH + safezoneY;
@@ -4242,8 +4289,8 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 			colorDisabled[] = {0.8,0.8,0.8,1};
 			colorBackground[] = {0.1,0.1,0.1,0.95};
 			colorBackgroundActive[] = {0.2,0.2,0.2,0.95};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.95};
-			colorShadow[] = {0.023529,0,0.0313725,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,0.5};
+			colorShadow[] = {0,0,0,1};
 			colorBorder[] = {0,0,0,1};
 			borderSize = 0.0;
 			SizeEx = 0.045;
@@ -4253,7 +4300,7 @@ class RscDisplayMultiplayerSetup : RscStandardDisplay {
 		delete CA_ButtonCancel;
 	};
 };                                                                                 // END SMD Custom Lobby Disconnect Button Comment out if Using Standard Lobby
-*/
+*///Re-insert end commment here to remove SMD lobby 
 class RscDisplayMPInterrupt : RscStandardDisplay {
 	class controlsBackground {
 		class Mainback : RscPicture {
@@ -4508,7 +4555,7 @@ class RscDisplayMultiplayer : RscStandardDisplay {
 	colorPingGood[] = {0, 1, 0, 1};
 	colorPingPoor[] = {1, 0.6, 0, 1};
 	colorPingBad[] = {1, 0, 0, 1};
-	colorVersionGood[] = {0.8784, 0.8471, 0.651, 1.0};
+	colorVersionGood[] = {0, 0.8, 0, 1.0};
 	colorVersionBad[] = {1, 0, 0, 1};
 	
 	class controlsbackground {
@@ -4817,7 +4864,7 @@ class RscDisplayDSinterface : RscStandardDisplay {
 	};
 };
 //Removal of 'F' commands to block hacks
-class RscConfigEditor_Main {
+/*class RscConfigEditor_Main {
 	idd = 3030;
 	class Controls {
 		class MainBackground;
@@ -4828,7 +4875,7 @@ class RscConfigEditor_Main {
 		delete MainTree;
 		delete MainList;
 	};
-};
+};*/
 
 class CfgLoadingTexts {
 	titlesDefault[] = {""};
@@ -4957,7 +5004,7 @@ class CfgWeaponCursors
  class Laser: Cannon
  {
   texture = "\ca\ui\Data\cursor_w_laserlock_gs";
-  color[] = {0.95, 0.95, 0.95, 1};  //no previous color entry
+  color[] = {0.95, 0.95, 0.95, 0};  //no previous color entry
   shadowEnabled = 1;                //no previous shadow entry
  };
  class Rocket: Cannon
