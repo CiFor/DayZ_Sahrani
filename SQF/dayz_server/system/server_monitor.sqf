@@ -223,7 +223,7 @@ if (_script != "") then
 		_minute = _date select 4;
 
 		//Force full moon nights
-		_date1 = [2007,7,7,07,00];
+		_date1 = [2007,7,7,,];
 
 		if(isDedicated) then {
 			//["dayzSetDate",_date] call broadcastRpcCallAll;
