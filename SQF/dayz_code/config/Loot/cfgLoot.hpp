@@ -296,23 +296,19 @@ class CfgLoot {
 		{//drink
 			0.12, //ItemSodaCoke
 			0.09, //ItemSodaPepsi
-//food
 			0.05, //FoodCanBakedBeans
 			0.05, //FoodCanSardines
 			0.05, //FoodCanFrankBeans
 			0.05, //FoodCanPasta
-//ammo
 			0.04, //WoodenArrow
 			0.07, //8Rnd_9x18_Makarov
 			0.01, //8Rnd_9x18_MakarovSD
 			0.05, //7Rnd_45ACP_1911
 			0.05, //2Rnd_shotgun_74Slug
 			0.05, //2Rnd_shotgun_74Pellets
-//medical
 			0.06, //ItemBandage
 			0.06, //ItemPainkiller
 			0.01, //ItemAntibiotic
-//suplies
 			0.04, //ItemFloppyWire
 			0.02, //ItemScrapElectronics
 			0.08, //ItemTape
@@ -332,7 +328,6 @@ class CfgLoot {
 			"Skin_SMD_RACS_Soldier",
 			"Skin_SMD_RACS_Soldier_Digi",
 			"Skin_SMD_RSPD_BLACK",
-			"Skin_SMD_RSPD_BLACK_DIGI",
 			"Skin_SMD_RSPD_BLUE",
 			"Skin_SMD_RSPD_BLUE_DIGI",
 			"Skin_SMD_RSPD_SWAT",
@@ -350,26 +345,25 @@ class CfgLoot {
 			0.01, //"Skin_BanditSkin_DZ"
 			0.01, //"Skin_Camo1_DZ"
 			0.01, //"Skin_Rocket_DZ"
-			0.01, //SkinSMD_ATACS_DES
-			0.01, //SkinSMD_ATACS_URBAN
+			0.04, //SkinSMD_ATACS_DES
+			0.04, //SkinSMD_ATACS_URBAN
 			0.01, //SkinSMD_RACS_MP
 			0.01, //SkinSMD_RACS_MP_Tan
 			0.01, //SkinSMD_RACS_MP_Tan_Digi
-			0.01, //SkinSMD_RACS_Soldier
-			0.01, //SkinSMD_RACS_Soldier_Digi
+			0.04, //SkinSMD_RACS_Soldier
+			0.02, //SkinSMD_RACS_Soldier_Digi
 			0.01, //Skin_SMD_RSPD_BLACK",
-			0.01, //Skin_SMD_RSPD_BLACK_DIGI",
-			0.01, //Skin_SMD_RSPD_BLUE",
+			0.04, //Skin_SMD_RSPD_BLUE",
 			0.01, //Skin_SMD_RSPD_BLUE_DIGI",
-			0.01, //Skin_SMD_RSPD_SWAT",
-			0.01, //Skin_SMD_RSPD_SWAT_DIGI",
-			0.01, //Skin_SMD_TIGER_CAMO
+			0.02, //Skin_SMD_RSPD_SWAT",
+			0.03, //Skin_SMD_RSPD_SWAT_DIGI",
+			0.20, //Skin_SMD_TIGER_CAMO
 			0.01, //Skin_SMD_US_SpecOps
 			0.01, //Skin_SMD_US_SpecOps_DIGI
 			0.01, //Skin_SMD_US_SpecOps_MP_DIGI
-			0.01, //Skin_Sniper1_DZ
-			0.01, //Skin_SniperD_DZ
-			0.01, //Skin_SniperLight_DZ
+			0.10, //Skin_Sniper1_DZ
+			0.21, //Skin_SniperD_DZ
+			0.31, //Skin_SniperLight_DZ
 			0.01 //Skin_Soldier1_DZ
 		}
 	};			
@@ -693,6 +687,7 @@ class CfgLoot {
 			"HandChemRed",
 			"HandRoadFlare",
 			"ItemBrick",
+			"ItemHose",
 			"ItemNails",
 			"ItemTape",
 			"ItemTrashRazor",
@@ -713,6 +708,7 @@ class CfgLoot {
 			0.03, //HandChemRed
 			0.07, //HandRoadFlare
 			0.01, //ItemBrick
+			0.01, //"ItemHose
 			0.06, //ItemNails
 			0.04, //ItemTape
 			0.01, //ItemTrashRazor
@@ -820,21 +816,16 @@ class CfgLoot {
 	};	
 	hunterZed[] = {
 		{
-//trash
 			"TrashTinCan",
 			"TrashJackDaniels",
-//food
 			"FoodMRE",
 			"FoodNutmix",
-//ammo
 			"5x_22_LR_17_HMR", //cz550
 			"7Rnd_45ACP_1911",
 			"10x_303",
 			"WoodenArrow",
-//medical
 			"ItemHeatPack",
 			"ItemBandage",
-//supplies
 			"ItemNails",
 			"ItemTape",
 			"ItemSandbag",
@@ -842,21 +833,16 @@ class CfgLoot {
 			"ItemWaterbottleUnfilled"			
 		},
 		{
-//trash
 			0.06, //TrashTinCan
 			0.04, //TrashJackDaniels
-//food
 			0.04, //FoodMRE
 			0.1, //FoodNutmix
-//ammo
 			0.5, //5x_22_LR_17_HMR
 			0.2, //7Rnd_45ACP_1911
 			0.5, //10x_303
 			1, //WoodenArrow
-//medical
 			0.2, //ItemHeatPack
 			1, //ItemBandage
-//supplies
 			0.4, //ItemNails
 			0.6, //ItemTape
 			0.04, //ItemSandbag
@@ -906,12 +892,9 @@ class CfgLoot {
 	};
 	military[] = {
 		{
-//food
 			"FoodMRE",
-//drink
 			"ItemWaterbottle",
 			"ItemWaterbottleUnfilled",
-//ammo
 			"20Rnd_556x45_Stanag",
 			"30Rnd_556x45_G36",
 			"20Rnd_762x51_DMR",
@@ -953,13 +936,11 @@ class CfgLoot {
 			"20Rnd_B_765x17_Ball",
 			"20Rnd_762x51_B_SCAR",
 			"75Rnd_545x39_RPK",
-//medical
 			"ItemBandage",
 			"ItemAntibiotic",
 			"ItemPainkiller",
 			"ItemMorphine",
 			"ItemHeatPack",
-//supplies
 			"ItemNails",
 			"ItemScrapElectronics",
 			"ItemTape",
@@ -970,80 +951,71 @@ class CfgLoot {
 			"HandChemRed"			
 		},
 		{
-//food
-			0.04, //FoodMRE
-//drink
-			0.02, //ItemWaterbottle
-			0.04, //ItemWaterbottleUnfilled
-//ammo
-			0.01, //20Rnd_556x45_Stanag
+			0.4, //FoodMRE
+			0.2, //ItemWaterbottle
+			0.4, //ItemWaterbottleUnfilled
+			0.4, //20Rnd_556x45_Stanag
 			0.04, //30Rnd_556x45_G36
 			0.01, //20Rnd_762x51_DMR
-			0.04, //20Rnd_762x51_FNFAL
-			0.04, //20Rnd_762x51_B_SCAR",
-			0.01, //20Rnd_762x51_SB_SCAR",
-			0.05, //17Rnd_9x19_glock17
-			0.01, //15Rnd_9x19_M9SD
-			0.02, //15Rnd_9x19_M9
+			0.14, //20Rnd_762x51_FNFAL
+			0.14, //20Rnd_762x51_B_SCAR",
+			0.11, //20Rnd_762x51_SB_SCAR",
+			0.25, //17Rnd_9x19_glock17
+			0.05, //15Rnd_9x19_M9SD
+			0.22, //15Rnd_9x19_M9
 			0.04, //30Rnd_762x39_AK47
-			0.04, //30Rnd_545x39_AK
-			0.01, //5Rnd_762x51_M24
+			0.02, //30Rnd_545x39_AK
+			0.12, //5Rnd_762x51_M24
 			0.01, //10Rnd_127x99_m107
-			0.04, //8Rnd_B_Beneli_74Slug
+			0.14, //8Rnd_B_Beneli_74Slug
 			0.01, //1Rnd_HE_M203
-			0.01, //FlareWhite_M203
-			0.01, //FlareGreen_M203
-			0.01, //1Rnd_Smoke_M203
+			0.21, //FlareWhite_M203
+			0.11, //FlareGreen_M203
+			0.21, //1Rnd_Smoke_M203
 			0.01, //200Rnd_556x45_M249
 			0.04, //HandGrenade_west
 			0.01, //"RPG18",
-			0.1, //SmokeShell
-			0.1, //SmokeShellPurple
-			0.1, //SmokeShellBlue
-			0.1, //SmokeShellOrange
-			0.2, //SmokeShellRed
-			0.2, //SmokeShellGreen
-			0.04, //8Rnd_B_Beneli_Pellets
-			0.01, //30Rnd_556x45_G36SD
-			0.02, //30Rnd_9x19_MP5
-			0.01, //30Rnd_9x19_MP5SD
+			0.51, //SmokeShell
+			0.10, //SmokeShellPurple
+			0.11, //SmokeShellBlue
+			0.18, //SmokeShellOrange
+			0.40, //SmokeShellRed
+			0.32, //SmokeShellGreen
+			0.14, //8Rnd_B_Beneli_Pellets
+			0.03, //30Rnd_556x45_G36SD
+			0.21, //30Rnd_9x19_MP5
+			0.18, //30Rnd_9x19_MP5SD
 			0.01, //100Rnd_762x51_M240
 			0.04, //10Rnd_9x39_SP5_VSS
 			0.01, //20Rnd_9x39_SP5_VSS
 			//0.02, //8Rnd_B_Saiga12_74Slug
 			0.01, //5Rnd_127x108_KSVK
 			0.01, //5Rnd_86x70_L115A1
-			0.02, //10Rnd_B_765x17_Ball
-			0.02, //20Rnd_B_765x17_Ball
-			0.01, //20Rnd_762x51_B_SCAR
-			0.01, //75Rnd_545x39_RPK
-//medical
-			0.04, //ItemBandage
-			0.04, //ItemAntibiotic
-			0.04, //ItemPainkiller
-			0.01, //ItemMorphine
+			0.12, //10Rnd_B_765x17_Ball
+			0.08, //20Rnd_B_765x17_Ball
+			0.18, //20Rnd_762x51_B_SCAR
+			0.04, //75Rnd_545x39_RPK
+			0.41, //ItemBandage
+			0.18, //ItemAntibiotic
+			0.25, //ItemPainkiller
+			0.10, //ItemMorphine
 			0.04, //ItemHeatPack
-//supplies
-			0.08, //ItemNails
-			0.04, //ItemScrapElectronics
-			0.03, //ItemTape
-			0.04, //ItemSandbag
-			0.04, //ItemWire
-			0.02, //HandChemGreen
-			0.02, //HandChemBlue
-			0.02 //HandChemRed			
+			0.80, //ItemNails
+			0.32, //ItemScrapElectronics
+			0.40, //ItemTape
+			0.6, //ItemSandbag
+			0.6, //ItemWire
+			0.82, //HandChemGreen
+			0.82, //HandChemBlue
+			0.82 //HandChemRed			
 		}
 	};
 	militaryZed[] = {
 		{
-//trash
 			"TrashTinCan",
-//drink
 			"ItemWaterbottle",
 			"ItemWaterbottleUnfilled",
-//food
 			"FoodMRE",
-//ammo
 			"20Rnd_556x45_Stanag",
 			"30Rnd_556x45_G36",
 			"20Rnd_762x51_DMR",
@@ -1078,13 +1050,11 @@ class CfgLoot {
 			"20Rnd_B_765x17_Ball",
 			"20Rnd_762x51_B_SCAR",
 			"75Rnd_545x39_RPK",
-//medical
 			"ItemBandage",
 			"ItemAntibiotic",
 			"ItemPainkiller",
 			"ItemMorphine",
 			"ItemHeatPack",
-//supplies
 			"ItemNails",
 			"ItemScrapElectronics",
 			"ItemTape",
@@ -1095,14 +1065,10 @@ class CfgLoot {
 			"HandChemRed"			
 		},
 		{
-//trash
 			0.18, //TrashTinCan
-//drink
 			0.01, //ItemWaterbottle
 			0.01, //ItemWaterbottleUnfilled
-//food
 			0.01, //FoodMRE
-//ammo
 			0.04, //20Rnd_556x45_Stanag
 			0.04, //30Rnd_556x45_G36
 			0.04, //20Rnd_762x51_DMR
@@ -1115,14 +1081,14 @@ class CfgLoot {
 			0.01, //10Rnd_127x99_m107
 			0.04, //8Rnd_B_Beneli_74Slug
 			0.01, //1Rnd_HE_M203
-			0.01, //FlareWhite_M203
-			0.01, //FlareGreen_M203
-			0.01, //1Rnd_Smoke_M203
+			0.1, //FlareWhite_M203
+			0.1, //FlareGreen_M203
+			0.1, //1Rnd_Smoke_M203
 			0.01, //200Rnd_556x45_M249
-			0.01, //HandGrenade_west
-			0.04, //SmokeShell
-			0.02, //SmokeShellRed
-			0.02, //SmokeShellGreen
+			0.1, //HandGrenade_west
+			0.4, //SmokeShell
+			0.2, //SmokeShellRed
+			0.2, //SmokeShellGreen
 			0.04, //8Rnd_B_Beneli_Pellets
 			0.01, //30Rnd_556x45_G36SD
 			0.02, //30Rnd_9x19_MP5
@@ -1137,31 +1103,26 @@ class CfgLoot {
 			0.02, //20Rnd_B_765x17_Ball
 			0.01, //20Rnd_762x51_B_SCAR
 			0.01, //75Rnd_545x39_RPK
-//medical
-			0.04, //ItemBandage
-			0.04, //ItemAntibiotic
-			0.04, //ItemPainkiller
-			0.01, //ItemMorphine
+			0.4, //ItemBandage
+			0.24, //ItemAntibiotic
+			0.4, //ItemPainkiller
+			0.1, //ItemMorphine
 			0.04, //ItemHeatPack
-//supplies
-			0.08, //ItemNails
-			0.04, //ItemScrapElectronics
-			0.03, //ItemTape
-			0.04, //ItemSandbag
-			0.04, //ItemWire
-			0.02, //HandChemGreen
-			0.02, //HandChemBlue
-			0.02 //HandChemRed			
+			0.8, //ItemNails
+			0.4, //ItemScrapElectronics
+			0.3, //ItemTape
+			0.4, //ItemSandbag
+			0.4, //ItemWire
+			0.2, //HandChemGreen
+			0.2, //HandChemBlue
+			0.2 //HandChemRed			
 		}
 	};
 	militarySpecial[] = {
 		{
-//food
 			"FoodMRE",
-//drink
 			"ItemWaterbottle",
 			"ItemWaterbottleUnfilled",
-//ammo
 			"20Rnd_556x45_Stanag",
 			"30Rnd_556x45_G36",
 			"20Rnd_762x51_DMR",
@@ -1205,13 +1166,11 @@ class CfgLoot {
 			"20Rnd_B_765x17_Ball",
 			"20Rnd_762x51_B_SCAR",
 			"75Rnd_545x39_RPK",
-//medical
 			"ItemBandage",
 			"ItemAntibiotic",
 			"ItemPainkiller",
 			"ItemMorphine",
 			"ItemHeatPack",
-//supplies
 			"ItemNails",
 			"ItemScrapElectronics",
 			"ItemTape",
@@ -1222,43 +1181,40 @@ class CfgLoot {
 			"HandChemRed"			
 		},
 		{
-//food
-			0.04, //FoodMRE
-//drink
-			0.02, //ItemWaterbottle
-			0.04, //ItemWaterbottleUnfilled
-//ammo
-			0.01, //20Rnd_556x45_Stanag
-			0.4, //30Rnd_556x45_G36
+			0.4, //FoodMRE
+			0.2, //ItemWaterbottle
+			0.4, //ItemWaterbottleUnfilled
+			0.1, //20Rnd_556x45_Stanag
+			0.14, //30Rnd_556x45_G36
 			0.01, //20Rnd_762x51_DMR
 			0.4, //20Rnd_762x51_FNFAL
 			0.4, //20Rnd_762x51_B_SCAR",
-			0.01, //20Rnd_762x51_SB_SCAR",
+			0.21, //20Rnd_762x51_SB_SCAR",
 			0.5, //17Rnd_9x19_glock17
-			0.01, //15Rnd_9x19_M9SD
-			0.2, //15Rnd_9x19_M9
+			0.21, //15Rnd_9x19_M9SD
+			0.4, //15Rnd_9x19_M9
 			0.04, //30Rnd_762x39_AK47
-			0.4, //30Rnd_545x39_AK
+			0.14, //30Rnd_545x39_AK
 			0.7, //5Rnd_762x51_M24
 			0.01, //10Rnd_127x99_m107
 			//0.04, //8Rnd_B_Beneli_74Slug
-			0.01, //1Rnd_HE_M203
-			0.03, //FlareWhite_M203
-			0.03, //FlareGreen_M203
-			0.03, //1Rnd_Smoke_M203
+			0.1, //1Rnd_HE_M203
+			0.3, //FlareWhite_M203
+			0.3, //FlareGreen_M203
+			0.3, //1Rnd_Smoke_M203
 			0.01, //200Rnd_556x45_M249
-			0.01, //HandGrenade_west
+			0.1, //HandGrenade_west
 			0.01, //PipeBomb
-			0.08, //SmokeShell
-			0.04, //SmokeShellPurple
-			0.04, //SmokeShellBlue
-			0.04, //SmokeShellOrange
-			0.08, //SmokeShellRed
-			0.08, //SmokeShellGreen
+			0.8, //SmokeShell
+			0.4, //SmokeShellPurple
+			0.14, //SmokeShellBlue
+			0.14, //SmokeShellOrange
+			0.8, //SmokeShellRed
+			0.8, //SmokeShellGreen
 			//0.04, //8Rnd_B_Beneli_Pellets
 			0.01, //30Rnd_556x45_G36SD
-			0.06, //30Rnd_9x19_MP5
-			0.01, //30Rnd_9x19_MP5SD
+			0.6, //30Rnd_9x19_MP5
+			0.1, //30Rnd_9x19_MP5SD
 			0.01, //100Rnd_127x99_M2
 			0.01, //100Rnd_762x51_M240
 			0.01, //100Rnd_762x54_PK
@@ -1270,13 +1226,11 @@ class CfgLoot {
 			0.09, //10Rnd_B_765x17_Ball
 			0.04, //20Rnd_B_765x17_Ball
 			0.01, //75Rnd_545x39_RPK
-//medical
 			0.04, //ItemBandage
 			0.04, //ItemAntibiotic
 			0.04, //ItemPainkiller
 			0.01, //ItemMorphine
 			0.04, //ItemHeatPack
-//supplies
 			0.08, //ItemNails
 			0.04, //ItemScrapElectronics
 			0.03, //ItemTape
@@ -1289,14 +1243,10 @@ class CfgLoot {
 	};
 	militarySpecialZed[] = {
 		{
-//trash
 			"TrashTinCan",
-//drink
 			"ItemWaterbottle",
 			"ItemWaterbottleUnfilled",
-//food
 			"FoodMRE",
-//ammo
 			"20Rnd_556x45_Stanag",
 			"30Rnd_556x45_G36",
 			"20Rnd_762x51_DMR",
@@ -1331,13 +1281,11 @@ class CfgLoot {
 			"20Rnd_B_765x17_Ball",
 			"20Rnd_762x51_B_SCAR",
 			"75Rnd_545x39_RPK",
-//medical
 			"ItemBandage",
 			"ItemAntibiotic",
 			"ItemPainkiller",
 			"ItemMorphine",
 			"ItemHeatPack",
-//supplies
 			"ItemNails",
 			"ItemScrapElectronics",
 			"ItemTape",
@@ -1348,14 +1296,10 @@ class CfgLoot {
 			"HandChemRed"			
 		},
 		{
-//trash
 			0.18, //TrashTinCan
-//drink
 			0.01, //ItemWaterbottle
 			0.01, //ItemWaterbottleUnfilled
-//food
 			0.04, //FoodMRE
-//ammo
 			0.08, //20Rnd_556x45_Stanag
 			0.4, //30Rnd_556x45_G36
 			0.01, //20Rnd_762x51_DMR
@@ -1390,13 +1334,11 @@ class CfgLoot {
 			0.02, //20Rnd_B_765x17_Ball
 			0.1, //20Rnd_762x51_B_SCAR
 			0.01, //75Rnd_545x39_RPK
-//medical
 			0.4, //ItemBandage
 			0.04, //ItemAntibiotic
 			0.1, //ItemPainkiller
 			0.08, //ItemMorphine
 			0.01, //ItemHeatPack
-//supplies
 			0.08, //ItemNails
 			0.01, //ItemScrapElectronics
 			0.03, //ItemTape
@@ -1409,31 +1351,25 @@ class CfgLoot {
 	};
 	policemanZed[] = {
 		{
-//ammo
 			"17Rnd_9x19_glock17",
 			"15Rnd_9x19_M9",
 			"7Rnd_45ACP_1911",
 			"6Rnd_45ACP",
 			"15Rnd_W1866_Slug",
 			"8Rnd_B_Beneli_74Slug",
-//medical
 			"ItemBandage",
-//supplies
 			"ItemSandbag",
 			"ItemWire",
 			"HandRoadFlare"
 		},
 		{
-//ammo
 			0.05, //17Rnd_9x19_glock17
 			0.02, //15Rnd_9x19_M9			
 			0.8, //7Rnd_45ACP_1911
 			0.3, //6Rnd_45ACP
 			0.3, //15Rnd_W1866_Slug
 			0.5, //8Rnd_B_Beneli_74Slug
-//medical
 			1, //ItemBandage
-//supplies
 			0.04, //ItemSandbag
 			0.04, //ItemWire			
 			0.3 //HandRoadFlare

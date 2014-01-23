@@ -27,7 +27,7 @@ class CfgMovesZombie;
 class CfgMovesZombie2: CfgMovesZombie {
 	skeletonName = "WomanSkeleton";
 };
-/*
+
 class CfgVehicles {
 	class zZombie_Base;
 	class z_policeman: zZombie_Base
@@ -67,7 +67,7 @@ class CfgVehicles {
 	class z_villager2: z_villager1{};
 	class z_villager3: z_villager1{};
 	class z_priest: zZombie_Base{};
-	/*class z_soldier: zZombie_Base
+	class z_soldier: zZombie_Base
 	{
 		zombieLoot="militaryZed";
 	};

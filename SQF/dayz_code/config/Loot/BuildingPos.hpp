@@ -1,6 +1,7 @@
+
 class Camp : Hospital
 	{
-		lootChance = 1.00; //    0.5;
+		lootChance = 0.5;
 		lootPos[] = {{0.83,-1.52,-1.1},{0.39,0.96,-1.1}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -10,7 +11,7 @@ class Camp : Hospital
 
 class CampEast : Military
 	{
-		lootChance = 1.00; //    0.5;
+		lootChance = 0.5;
 		lootPos[] = {{-1.057,-1.807,-1.31},{0.627,1.834,-1.31}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -20,7 +21,7 @@ class CampEast : Military
 
 class CampEast_EP1 : Military
 	{
-		lootChance = 1.00; //    0.5;
+		lootChance = 0.5;
 		lootPos[] = {{0.83,-1.52,-1.1},{0.39,0.96,-1.1}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -29,7 +30,7 @@ class CampEast_EP1 : Military
 	};
 class Land_A_BuildingWIP : Industrial 
 	{
-		lootChance = 1.00; //    0.3;
+		lootChance = 0.3;
 		lootPos[] = {{-7.53,0.33,-5.55},{-16,-9.8,-6.42},{-15.89,-5.14,-6.51},{13.59,0.16,-6.3},{20.49,2.32,-4.53},{10.71,-6.52,-2.53},{4.76,-9.42,-1.49},{-5.52,-9.91,-1.64},{-20.26,-5.94,-1.46},{-20.12,-2.94,-2.53},{-23.2,8.45,-2.53},{-4.6,12.48,-0.67},{-16.69,-17.45,-6.52},{-3.22,-5.63,-5.63},{4.04,-3.77,-5.44},{11.48,2.33,-6.47},{-0.72,0.1,-4.6},{-10.17,-10.02,-6.48},{-20.59,7.77,-6.43},{-23.22,2.86,-5.42},{3.03,12.12,-6.48},{5.54,11.07,-6.41},{21.88,-1.16,-6.53},{-22.17,5,-2.53},{-20.11,12.29,-2.53},{-12.5,11.42,-2.53},{8.3,7.76,-2.53},{16.48,2.23,-2.53},{21.6,-4.18,1.39},{13.93,0.4,1.49},{15.46,-1.99,2.42},{3.48,-9.79,1.48},{-21.34,-6.08,1.48},{-23.03,3.49,1.49},{-8.66,6.35,1.5},{-4.92,12.42,3.34},{-20.38,-17.93,1.5},{1.68,11.01,5.4},{3.64,7.62,5.43},{8.21,-7.57,5.36},{-8.43,1.41,5.27}};
 		minRoaming = 4;
 		maxRoaming = 12;
@@ -38,7 +39,7 @@ class Land_A_BuildingWIP : Industrial
 	
 class Land_A_GeneralStore_01: Supermarket 
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{11.86,-1.65,-1.2},{11.63,0.81,-1.2},{11.82,2.46,-1.2},{8.22,4.09,-1.2},{7.57,0.44,-1.2},{6.35,-1.52,-1.2},{2.56,-2.74,-0.64},{0.59,-2.73,-0.64},{4.67,-2.67,-0.58},{6.58,-2.67,-0.65},{-1.16,-2.78,-0.63},{-6.9,-2.94,-1.2},{-4.94,-1.63,-1.2},{-7.58,0.76,-1.2},{-7.63,4.13,-1.2},{-4.26,4.16,-1.2},{0.15,4.25,-1.2},{4.15,4.28,-1.2},{3.76,1.93,-1.2},{1.74,0.92,-1.2},{-0.57,1.68,-1.2},{-1.62,-4.3,-1.2},{1.09,-4.03,-1.2},{4.19,-3.99,-1.2},{5.83,-4.06,-1.2},{6.31,-5.75,-1.2},{6.4,-7.88,-1.2},{12.27,-7.59,-1.2},{12.54,-4.25,-1.2},{8.7,-4.38,-1.2},{9.24,-7.45,-1.2},{3.59,-7.81,-1.2},{0.06,-7.78,-1.2},{-4.21,-7.85,-1.2},{-8.47,-7.1,-1.2},{5.18,7.58,-1.21},{2.38,9.64,-1.21},{-1.25,8.14,-1.21},{-4.95,9.99,-1.21},{-9.07,8.25,-1.21},{-12.96,2.63,-1.21},{-9.82,-10.06,-1.21},{-5.35,-10.02,-1.21}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -48,7 +49,7 @@ class Land_A_GeneralStore_01: Supermarket
 
 class Land_A_GeneralStore_01a: Supermarket 
 	{
-		lootChance = 1.00; //    0.05;
+		lootChance = 0.05;
 		lootPos[] = {{-7.66,-1.37,-1.2},{-7.45,-4.19,-1.2},{-5.18,-2.92,-1.2},{-3.17,-4.11,-1.2},{-2.58,-2.92,-1.2},{-0.2,-2.27,-1.2},{2.9,-1.92,-1.2},{6.27,-2.13,-1.2},{7.76,-4.57,-1.2},{7.97,-3.03,-1.2},{9.92,-2.99,-1.2},{10.28,-0.96,-1.2},{13.83,-0.79,-1.2},{12.88,-4.17,-1.2},{6.53,-0.01,-1.2},{2.92,-0.23,-1.2},{-1.71,-0.46,-1.2},{-4.47,1.18,-1.2},{-6.94,3.36,-1.2},{-8.09,5.76,-1.2},{-6.99,8,-1.2},{-4.56,8.42,-1.2},{-2.61,6.7,-1.2},{-3.39,4.06,-1.2},{-2.04,4.31,-1.2},{-1.02,5.57,-1.2},{-3.92,5.42,-1.2},{-7.74,0.58,-1.2},{1.42,5.36,-1.2},{4.47,4.71,-1.2},{6.77,5.48,-1.2},{9.62,5.62,-1.2},{9.38,7.26,-1.2},{6.7,7.63,-1.2},{3.56,8.17,-1.2},{-0.6,8.47,-1.2},{-0.49,2.02,-1.2},{2.28,2.14,-1.2},{5.6,2.61,-1.2},{8.82,2.52,-1.2},{12.14,1.96,-1.2},{15.19,2.98,-1.2},{14.37,5.33,-1.2},{13.78,6.72,-1.2},{13.13,2.96,-1.2},{-16.13,-1.62,-7.34},{-15.39,-3.01,-7.34},{-13.56,-5.14,-7.34},{-12.06,-1.75,-7.34},{-12.19,-3.71,-7.34},{-9.23,-5.1,-7.34},{-3.07,-5.25,-7.34},{1.75,-5.22,-7.34},{6.74,-5.58,-7.34},{11.41,-5.08,-7.34},{15.59,-5.26,-7.34},{9.41,-2.72,-7.34},{7.35,-2.06,-7.34},{2.3,-3.74,-6.36},{0.86,-3.15,-7.33},{-1.39,-1.36,-7.34},{-4.25,-1.2,-7.34},{-4.54,-3.66,-6.36},{-1.12,-3.96,-6.35},{-3.08,-3.21,-7.34}};
 		zombieChance = 1;
 		minRoaming = 4;
@@ -57,7 +58,7 @@ class Land_A_GeneralStore_01a: Supermarket
 	};
 class Land_A_Hospital : hospital 
 	{
-		lootChance = 1.00; //    0.05;
+		lootChance = 0.05;
 		lootPos[] = {{-20.41,0.24,-4.35},{-18.72,2.05,-4.35},{-18.37,7.01,-4.35},{-20.8,8.18,-4.35},{-16.68,8.26,-4.35},{-13.63,6.68,-4.35},{-10.07,6.98,-4.35},{-7.11,6.8,-4.35},{-4.58,6.45,-4.35},{-8.79,8.5,-4.35},{-15.13,1.73,3.29},{-12.09,-1.02,3.29},{-16.15,-4.84,3.29},{-12.69,-5.16,3.29},{-12.68,-5.16,3.29},{-9.13,-4.8,3.29},{-6.51,-3.16,3.29},{-3.53,-2.01,3.29},{-0.67,-0.26,3.29},{2.57,-0.23,3.29},{5.84,-1.13,3.29},{9,0.15,3.29},{11.6,-0.31,3.29},{14.42,-2.61,3.29},{17.11,-5.15,3.29},{14.22,-5.44,3.29},{8.65,-5.21,3.29},{-4.44,-5.24,3.29},{0.39,-4.75,3.29},{5.8,-4.21,3.29},{16.72,-0.25,6.16},{19.57,1.07,6.16},{21.16,4.34,6.16},{18.8,3.83,6.16},{-6.84,2.87,3.29},{-11.83,3.73,3.29}};
 		zombieChance = 1;
 		minRoaming = 4;
@@ -67,7 +68,7 @@ class Land_A_Hospital : hospital
 	
 class Land_A_Office01: Residential //enterable Office building 
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{4.96,-1.2,-4.53},{15.67,-0.88,-3.83},{15.04,-4.13,-4.53},{12.38,-4.24,-4.53},{12.5,-0.42,-4.39},{9.18,3.83,-4.39},{6.65,6.05,-3.82},{9.03,6.43,-4.53},{10.55,5.21,-3.83},{3.74,3.67,-4.53},{4.62,6.15,-4.53},{-0.04,6.78,-4.53},{-0.46,4.21,-4.53},{1.81,6.67,-4.53},{-7.95,6.48,-4.49},{4.84,-4.31,-4.53},{9.44,-3.66,-2.03},{9.66,-1,-2.03},{3.42,6.67,-2.03},{0.64,6.75,-2.03},{0.77,3.49,-2.03},{3.95,3.49,-2.03},{14.22,1.75,-2.03},{10.59,1.01,-2.03},{14.28,6.4,-2.03},{15.04,3.86,-2.03},{11.57,6.79,-1.37},{2.17,-1.87,-2.01},{-7.95,3.61,-2.03},{-6.55,6.89,-2.03},{-8.01,7.1,-1.34},{-4.47,5.3,-1.33},{-12.1,0.99,-2.03},{-8.6,1.29,-2.03},{-4.83,-3.57,-2.03},{-8.5,-1.92,-2.03},{-10.94,-3.51,-2.03},{-15.55,0.04,-2.03},{-11.96,1.89,0.52},{-11.83,5.35,0.47},{-6.53,2.37,0.47},{-2.25,6.53,0.47},{1.65,6.21,0.47},{8.14,5.74,0.47},{12.57,5.15,0.47},{13.26,0.35,0.47},{14.48,-2.8,0.47},{11.84,-1.41,0.47},{8.59,-2.92,0.47},{2.32,1.51,0.47},{-1.05,0.76,0.47},{-2.43,3.83,0.47}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -77,7 +78,7 @@ class Land_A_Office01: Residential //enterable Office building
 
 class Land_A_Pub_01 : Residential 
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{2.82,0.69,-5.75},{-0.79,-2,-5.75},{-3.63,-2.53,-3.68},{-7.36,-1.42,-5.75},{-4.77,-5.89,-1.76},{-6.11,-2.47,-1.75},{-3.68,0.98,-1.76},{2.06,0.25,-1.26},{4.49,0.98,-1.76},{4.33,-3.55,-1.19},{1.86,6.54,-1.26},{6.13,5.37,-1.39},{6.73,-2.73,-1.76},{1.56,-6.15,-4.94},{4.15,5.11,-5.75},{0.75,2.3,-5.75},{-7.42,0.96,-5.75},{-0.88,-3.31,-1.76},{4.5,-2.25,-1.76},{1.37,2.35,0.27}};
 		minRoaming = 4;
 		maxRoaming = 10;
@@ -86,7 +87,7 @@ class Land_A_Pub_01 : Residential
 
 class Land_a_stationhouse: Residential //enterable Office building 
 	{
-		lootChance = 1.00; //    0.25;
+		lootChance = 0.25;
 		lootPos[] = {{8.83,-6.27,-9.47},{15.3,-5.62,-9.47},{15.54,2.99,-9.47},{11.61,0.9,-9.47},{6.97,1.31,-9.47},{3.01,0.24,-9.47},{-3.46,-7.44,-9.47},{-1.69,-6.18,-9.47},{-1.39,-8.09,-4.65},{-3.16,-7.24,-0.04},{-2.53,-7.4,4.41}};
 		zombieChance = 1;
 		minRoaming = 4;
@@ -96,7 +97,7 @@ class Land_a_stationhouse: Residential //enterable Office building
 
 class Land_afbarabizna: Residential // bombed out 2 story stone house
 	{
-		lootChance = 1.00; //    0.25;
+		lootChance = 0.25;
 		lootPos[] = {{0.23,4.48,-4.22},{5.88,5.13,-4.22},{6.11,2,-4.22},{6.14,-3.37,-4.22},{1.36,2.56,-2.02},{-4.54,2.35,-0.17},{0.07,4.72,-0.17},{5.05,5.39,-0.17},{6.27,1.9,-0.17},{3.76,-3.9,-0.17},{-0.59,0.55,-0.17},{-4.31,-3.53,-0.17},{-2.82,2.62,-4.22}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -106,7 +107,7 @@ class Land_afbarabizna: Residential // bombed out 2 story stone house
 
 class Land_Barn_W_01: Farm //
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{3.9,17.94,-2.64},{4.46,10.66,-2.64},{4.21,3.89,-2.63},{3.72,-1.44,-2.63},{4.85,-7.52,-2.63},{5.01,-16.43,-2.63},{-4.01,-17.99,-2.63},{-4.1,-12.05,-2.63},{-3.94,-5.74,-2.63},{-4.28,-0.51,-2.63},{-4.87,4.91,-2.63},{-2.1,8.96,-2.63},{-1.08,13.04,-2.64},{-4.44,16.82,-2.64}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -116,7 +117,7 @@ class Land_Barn_W_01: Farm //
 
 class Land_Barn_W_02: Farm //
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{-5.27,-6.12,-2.31},{3.6,-5.49,-2.31},{3.51,-0.2,-2.31},{3.68,5.13,-2.31},{-4.42,5.19,-2.31}};
 		zombieChance = 1;
 		minRoaming = 3;
@@ -126,7 +127,7 @@ class Land_Barn_W_02: Farm //
 
 class Land_bouda2_vnitrek: Farm //
 	{
-		lootChance = 1.00; //    0.20;
+		lootChance = 0.20;
 		lootPos[] = {{0.42,2.07,0.63},{1.93,1.67,0.62},{-2.94,2.05,-0.61},{-2.99,-1.87,-0.61},{-0.45,-0.8,-0.61}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -136,7 +137,7 @@ class Land_bouda2_vnitrek: Farm //
 
 class Land_cihlovej_dum_in: Residential //brick blown out multi room house
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{0.12,2.55,-4.57},{2.23,2.62,-5.28},{0.13,0.58,-5.28},{1.54,-1.36,-5.28},{-2.6,1.16,-5.28},{1.95,2.47,-1.81},{1.8,0.45,-1.81},{1.61,-1.39,-1.81},{-2.06,-1.67,-1.81},{-0.44,-0.58,-1.81},{-2.77,2.19,-1.51}};
 		zombieChance = 1;
 		minRoaming = 3;
@@ -146,7 +147,7 @@ class Land_cihlovej_dum_in: Residential //brick blown out multi room house
 
 class Land_deutshe_mini: Residential //brick blown out multi room house
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{4.09,-2.38,-2.75},{-3.58,-2.07,-1.98},{-4.12,0.3,-2.75},{-0.94,-0.25,-2.75},{-4,2.63,-2.33},{-1.83,2.49,-2.75},{0.62,2.68,-2.04},{4.2,0.06,-2.75},{4.2,2.65,-2.75},{1.92,0.99,-2.75}};
 		zombieChance = 1;
 		minRoaming = 3;
@@ -156,7 +157,7 @@ class Land_deutshe_mini: Residential //brick blown out multi room house
 
 class Land_dulni_bs: Residential //Bomboed out Red Brick 2 room 1 story
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{2.93,2.86,-1.75},{2.95,-2.9,-1.75},{-0.84,-2.89,-1.75}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -166,7 +167,7 @@ class Land_dulni_bs: Residential //Bomboed out Red Brick 2 room 1 story
 
 class Land_dum_zboreny: Residential // Bombed out 2 Story with stairs upto 2nd floor
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{6.22,4.4,-2.38},{6.49,-4.52,-2.38},{-2.68,-4.54,-2.38},{-5.93,4.58,-2.38},{0.42,4.9,1.4},{-6.11,4.66,1.41},{-6.01,-4.48,1.42},{-2.64,-0.38,1.4},{-2.58,-4.61,1.41},{3.14,-4.52,1.4},{2.15,1.54,-2.38}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -176,7 +177,7 @@ class Land_dum_zboreny: Residential // Bombed out 2 Story with stairs upto 2nd f
 
 class Land_dum_zboreny_total: Residential // Bombed out 2 Story with stairs upto 2nd floor
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{5.76,-3.19,-2.31},{-5.99,-3.33,-2.01},{-6.06,0.58,-2.3},{5.9,3.58,-2.35}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -186,7 +187,7 @@ class Land_dum_zboreny_total: Residential // Bombed out 2 Story with stairs upto
 
 class Land_hut_old02: Farm //
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{-8.21,8.78,-3.03},{-5.49,1.67,-3.03},{-3.88,2.15,-3.03},{-4,-1.78,-3.03},{-3.77,-3.74,-3.03},{1.75,-7.63,-3.04},{0.71,-2.05,-3.04},{0.86,2.31,-3.04},{-7.47,-0.94,-3.03},{-7.34,-5.25,-3.03},{-5.5,0.23,-2.05},{5.01,-7.63,-3.04},{4.51,-3.77,-3.04},{5.02,0.19,-3.04},{4.88,4.06,-3.04},{4.8,7.39,-3.04}};
 		zombieChance = 1;
 		minRoaming = 3;
@@ -196,7 +197,7 @@ class Land_hut_old02: Farm //
 
 class Land_dum_rasovna: Residential //brick blown out house with attic
 	{
-		lootChance = 1.00; //    0.2;
+		lootChance = 0.2;
 		lootPos[] = {{-1.15,3.22,-2.67},{2.98,3.73,-2.67},{2.94,0.09,-2.67},{2.99,-2.15,-2.67},{-1.09,-3.6,0.95},{-1.05,3.33,0.27},{2.96,3.77,0.27},{-0.95,-0.82,0.27},{1.21,1.27,0.27},{3.03,-0.98,0.27},{-1.21,-2.02,-2.67}};
 		zombieChance = 1;
 		minRoaming = 3;
@@ -206,7 +207,7 @@ class Land_dum_rasovna: Residential //brick blown out house with attic
 
 class Land_Hangar_2: Industrial //Metal Industrial Hangar
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{12.82,-8.33,-2.56},{10.25,-3.27,-2.56},{10.37,0.58,-2.56},{11.39,5.03,-2.56},{9.09,8.3,-2.56},{3.87,1.39,-2.56},{-0.44,-1.62,-2.56},{-4.46,-3.7,-2.56},{-10.42,-6.77,-2.56},{-12.28,-1.51,-2.56},{-6.53,1.87,-2.56},{-1.17,3.95,-2.56},{1.53,8.59,-2.56},{-4.62,8.91,-2.56},{-11.77,9.66,-2.56},{-11.8,4.12,-2.56}}; 
 		zombieChance = 1;
 		minRoaming = 3;
@@ -216,7 +217,7 @@ class Land_Hangar_2: Industrial //Metal Industrial Hangar
 
 class Land_Hlidac_budka: Industrial //Small Green Guardhouse
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{1.47,2.28,-0.09},{2.22,0.51,-0.78},{-0.4,2.14,-0.78},{-2.06,1.55,-0.78}}; 
 		zombieChance = 1;
 		minRoaming = 1;
@@ -226,7 +227,7 @@ class Land_Hlidac_budka: Industrial //Small Green Guardhouse
 
 class Land_hospital: Hospital //A1 Hospital
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{2.02,-4.44,-1.44},{2.97,6.34,-1.44},{-3.74,6.4,-1.44},{-7.17,-1.95,-1.45},{-3.14,-2.28,-1.45},{0.66,-0.15,-1.45},{-4.22,3.69,-1.45},{-9.39,3.88,-1.45}};
 		zombieChance = 1;
 		minRoaming = 4;
@@ -236,7 +237,7 @@ class Land_hospital: Hospital //A1 Hospital
 
 class Land_hruzdum: Residential // 3 Story greyish stucco burned out 1st floor 
 	{
-		lootChance = 1.00; //    0.25;
+		lootChance = 0.25;
 		lootPos[] = {{2.34,3.74,-4.73},{-0.53,3.79,-4.73},{-2.82,1.31,-4.73},{0.02,-1.17,-4.73},{-1.57,3.62,-1.16},{-2.3,-1.15,-1.16},{2.19,2.98,-1.16},{0.5,0.52,-1.16},{-2.33,-0.37,1.59},{-2.93,1.01,2.36},{-2.19,3.13,1.59},{1.92,3.18,1.59},{-0.22,1.07,1.59}};
 		minRoaming = 1;
 		maxRoaming = 4;
@@ -245,7 +246,7 @@ class Land_hruzdum: Residential // 3 Story greyish stucco burned out 1st floor
 
 class Land_Ind_Garage01: Industrial //Yellow Industrial shed (not on sahrani?)
 	{
-		lootChance = 1.00; //    0.25;
+		lootChance = 0.25;
 		lootPos[] = {{-0.71,2.98,-1.23},{2.22,1.69,-1.23},{2.25,-0.19,-1.23},{-0.01,-1.1,-1.24}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -255,7 +256,7 @@ class Land_Ind_Garage01: Industrial //Yellow Industrial shed (not on sahrani?)
 
 class Land_Ind_IlluminantTower: Industrial //Light/Siren Tower
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{0.14,0.79,-9.72},{1.13,-0.03,10.34},{-1.45,-0.6,10.3}};
 		zombieChance = 0.5;
 		minRoaming = 0;
@@ -265,7 +266,7 @@ class Land_Ind_IlluminantTower: Industrial //Light/Siren Tower
 
 class Land_Ind_Workshop01_01: Industrial //A2  Industrial Shed
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{-0.44,-2.93,-1.29},{0.93,-1.07,-1.3},{-0.56,-0.25,-1.3},{1.35,1.83,-1.3},{1.12,5.06,-1.45}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -275,7 +276,7 @@ class Land_Ind_Workshop01_01: Industrial //A2  Industrial Shed
 
 class Land_Ind_Workshop01_02: Industrial //A2  Industrial Shed
 	{
-		lootChance = 1.00; //    0.5;
+		lootChance = 0.5;
 		lootPos[] = {{-0.7,1.47,-1.43},{1.74,-0.32,-1.43},{-0.97,-0.87,-1.43}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -285,7 +286,7 @@ class Land_Ind_Workshop01_02: Industrial //A2  Industrial Shed
 
 class Land_Ind_Workshop01_04: Industrial //A2  Industrial Shed
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{-1.25,2.89,-1.53},{-0.45,4.43,-1.53},{0.87,-5.89,-1.53},{-1,-6.08,-1.53},{-1.25,-4.15,-1.53}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -295,7 +296,7 @@ class Land_Ind_Workshop01_04: Industrial //A2  Industrial Shed
 
 class Land_Ind_Workshop01_L: Industrial //A2  Industrial Shed
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{-1.62,4.15,-1.31},{-3.26,4.48,-1.3},{-2.32,2.34,-1.3},{1.66,-2.39,-1.31},{3.66,-2.09,-1.31},{3.46,-4.56,-1.31}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -305,7 +306,7 @@ class Land_Ind_Workshop01_L: Industrial //A2  Industrial Shed
 
 class Land_KBud: Residential //Outhouse
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{-0.0170898,0.0114746,-0.66367}};
 		zombieChance = 0.3;
 		minRoaming = 0;
@@ -314,7 +315,7 @@ class Land_KBud: Residential //Outhouse
 	};
 class Land_kulna: Industrial //Shabby wooden shed 
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{0.504395,0.218262,-1.11643},{-0.496582,1.93262,-1.12826}};
 		zombieChance = 0.3;
 		minRoaming = 0;
@@ -324,7 +325,7 @@ class Land_kulna: Industrial //Shabby wooden shed
 
 class Land_Mil_Barracks_i: Military //A2 Barracks
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{5.37,2.45,-1.1},{6.41,0.1,-0.91},{6.41,-2.43,-0.9},{6.43,-1.21,-0.92},{5.04,-1.84,-1.1},{1.76,1.89,-1.1},{-0.99,2.2,-1.1},{-4.43,1.66,-1.1},{-8.22,2.46,-1.1},{-8.92,-1.93,-1.1},{-8.25,0.19,-1.1},{-6.78,-1.29,-0.69},{-5.19,-1.45,-1.1},{-4.56,0.09,-1.1},{-3.52,-1.7,0.1},{-1.21,0.25,-1.1},{-0.31,-1.61,-0.7},{-1.91,-2.16,-1.1},{0.98,-1.87,-1.1},{1.72,-0.12,-1.1},{2.99,-1.5,0.11},{2.98,-1.5,-0.68},{9.79,2.44,-1.39},{9.02,1.18,-1.18}};
 		zombieChance = 1;
 		minRoaming = 3;
@@ -343,7 +344,7 @@ class Land_Mil_Barracks_L: Military //not enterable just for zeds
 
 class Land_Mil_ControlTower: Military //
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{2.52,4.72,-9.63},{9.39,3.8,-9.63},{9.8,5.61,-7.44},{4.58,3.93,-5.46},{0.36,5.59,-5.46},{4.46,3.36,-1.07},{7.6,2.07,-0.37},{6.86,-0.87,-1.07},{5.12,-1.82,-0.37},{1.81,2.14,-1.07}};
 		zombieChance = 1;
 		minRoaming = 3;
@@ -353,7 +354,7 @@ class Land_Mil_ControlTower: Military //
 	
 class Land_Mil_Guardhouse: Industrial //Brick closed guardhouse 
 	{
-		lootChance = 1.00; //    0.5;
+		lootChance = 0.5;
 		lootPos[] = {{-2.47,3.2,-1.67},{-2.42,1.43,-1.67}};
 		zombieChance = 0.7;
 		minRoaming = 0;
@@ -363,7 +364,7 @@ class Land_Mil_Guardhouse: Industrial //Brick closed guardhouse
 
 class Land_Misc_Cargo1Ao: Industrial // cargo container
 	{
-		lootChance = 1.00; //    0.8;
+		lootChance = 0.8;
 		lootPos[] = {{0.49,-1.61,-1.09},{0.01,2.19,-1.09},{0.01,0.19,-1.09}};
 		minRoaming = 0;
 		maxRoaming = 3;
@@ -372,7 +373,7 @@ class Land_Misc_Cargo1Ao: Industrial // cargo container
 
 class Land_Misc_Cargo1Bo: Industrial // cargo container
 	{
-		lootChance = 1.00; //    0.8;
+		lootChance = 0.8;
 		lootPos[] = {{-0.32,1.68,-1.09},{0.54,-1.96,-1.09},{0.22,-0.58,-1.09}};
 		minRoaming = 0;
 		maxRoaming = 3;
@@ -381,7 +382,7 @@ class Land_Misc_Cargo1Bo: Industrial // cargo container
 
 class Land_Misc_deerstand: Hunting // A2 Deerstand
 	{
-		lootChance = 1.00; //    0.8;
+		lootChance = 0.8;
 		lootPos[] = {{-0.923828,-0.808594,1.08539},{0.419922,-0.237305,1.08539}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -391,7 +392,7 @@ class Land_Misc_deerstand: Hunting // A2 Deerstand
 	
 class Land_Panelak2: Residential //red brick apartment buildings
 	{
-		lootChance = 1.00; //0.15
+		lootChance = 0.15;
 		lootPos[] = {{-0.73,-3.01,-2.64},{-0.77,1.37,-1.29},{-0.3,3.65,1.41},{0.74,-3.22,2.76},{-0.63,1.85,4.12},{3.69,-7.34,5.48},{2.27,2.94,5.48},{6.7,2.69,5.48},{6.88,-1.46,5.49},{6.1,-5.95,5.48},{4.45,-1.65,5.48},{2.76,0.45,5.48}};
 		minRoaming = 3;
 		maxRoaming = 8;
@@ -400,7 +401,7 @@ class Land_Panelak2: Residential //red brick apartment buildings
 	
 class Land_Rail_House_01: Residential //Unenterable Railway Station with Porch
 	{
-		lootChance = 1.00; //    0.75;
+		lootChance = 0.75;
 		lootPos[] = {{-3.04,2.93,-1.28},{-1.19,2.63,-1.28},{2.46,3,-1.28}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -410,7 +411,7 @@ class Land_Rail_House_01: Residential //Unenterable Railway Station with Porch
 	
 class Land_rail_station_big: Residential //enterable Railway Station
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{8.99,-2.89,-5.04},{8.41,1.52,-5.04},{0.22,4.23,-4.93},{1.75,3.08,-4.93},{-1.75,4.18,-4.92},{2.31,0.79,-4.02},{-3.62,2.05,-4.96},{-4.47,4.48,-4.97},{-3.68,-1.87,-4.96},{0.14,-1.12,-4.97},{-6.54,-5.2,-5.04},{3.62,-5.38,-5.04}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -420,7 +421,7 @@ class Land_rail_station_big: Residential //enterable Railway Station
 	
 class Land_repair_center: Industrial //Repair Center
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{-2.65,-0.11,-1.53},{-2.58,2.6,-1.53},{-5.66,-2.21,-2.53}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -430,7 +431,7 @@ class Land_repair_center: Industrial //Repair Center
 
 class Land_sara_domek_hospoda: Residential  // Yellow building with surrounding porch
 	{
-		lootChance = 1.00; //    0.5;
+		lootChance = 0.5;
 		lootPos[] = {{-4.86,-3.94,-2.73},{4.42,-3.65,-2.73}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -440,7 +441,7 @@ class Land_sara_domek_hospoda: Residential  // Yellow building with surrounding 
 
 class Land_sara_domek_podhradi_1: Residential  //Brick/White stucco un-enterable house with porch
 	{
-		lootChance = 1.00; //    0.5;
+		lootChance = 0.5;
 		lootPos[] = {{2.45,-3.05,-2.76},{-4.834,-3.44,-2.76},{-5.22,1.27,-2.76}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -450,7 +451,7 @@ class Land_sara_domek_podhradi_1: Residential  //Brick/White stucco un-enterable
 
 class Land_sara_Domek_sedy: Residential  // Single Floor Grey Stucco residential with red roof
 	{
-		lootChance = 1.00; //    0.25;
+		lootChance = 0.25;
 		lootPos[] = {{5.39,-0.71,-1.2},{4.33,-0.64,-1.19},{5.21,2.93,-2.14},{1.56,3.64,-2.14},{1.27,0.91,-2.14},{-2.24,3.5,-2.14},{-0.97,0.46,-2.13},{-3.46,-0.11,-1.61},{-4.12,3.09,-2.14}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -460,7 +461,7 @@ class Land_sara_Domek_sedy: Residential  // Single Floor Grey Stucco residential
 
 class Land_sara_domek_zluty: Residential //1 Floor Yellow/Red Residence
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{6.28,1.74,-2.43},{6.55,3.47,-2.43},{3.05,3.48,-2.43},{6.35,-0.07,-2.43},{0.62,3.37,-2.43},{-5.9,2.98,-2.43},{-3.7,3.18,-2.43},{-6.28,-0.31,-2.43},{-6.61,-3.6,-2.43},{-3.94,-2.74,-2.43},{-0.07,-0.49,-2.43}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -470,7 +471,7 @@ class Land_sara_domek_zluty: Residential //1 Floor Yellow/Red Residence
 
 class Land_sara_hasic_zbroj: Residential //1 Floor Yellow/Red Garage
 	{
-		lootChance = 1.00; //    0.5;
+		lootChance = 0.5;
 		lootPos[] = {{5.01,1.44,-2.65},{6.41,-1.58,-2.65},{-0.36,-1.92,-2.65},{-2.1,1.97,-2.65}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -480,7 +481,7 @@ class Land_sara_hasic_zbroj: Residential //1 Floor Yellow/Red Garage
 	
 class Land_Shed_Ind02: Industrial //Large 2 floor Grey Sheet metal industrial Shed
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{-1.14,-7.64,-4.63},{-1.03,0.61,-4.63},{1.97,4.56,-4.63},{3.54,8.94,-4.63},{-2.21,9.61,-4.63},{3,-9.37,-1.28},{4.45,-2.16,-1.28},{4.53,6.7,-1.28},{-4.11,-7.53,-1.29},{-4.18,-3.28,-1.29},{-3.93,1.28,-1.28},{-3.89,9.24,-1.28},{-1.08,11.79,-1.28},{-2.69,11.84,-1.28}};
 		zombieChance = 1;
 		minRoaming = 4;
@@ -490,16 +491,16 @@ class Land_Shed_Ind02: Industrial //Large 2 floor Grey Sheet metal industrial Sh
 	
 class Land_Shed_W01: Farm //Large 2 floor Grey Sheet metal industrial Shed
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{1.27,-0.36,-1.29},{-0.34,1.03,-1.29}};
 		minRoaming = 0;
 		maxRoaming = 3;
 		zedPos[] = {};
 	};
 	
-class Land_smd_ammostore2_open: Military
+class Land_smd_ammostore2_open: Mil_Industrial
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{-2.06,1.79,-2.44},{0.47,2.97,-2.44},{1.83,1.24,-2.44},{-1.41,0.31,3.4},{1.37,3.4,3.4},{2.48,-0.02,3.4},{-2.26,4.22,3.4}};
 		minRoaming = 3;
 		maxRoaming = 6;
@@ -508,8 +509,8 @@ class Land_smd_ammostore2_open: Military
 	
 class Land_smd_army_hut_int: Military
 	{
-		lootChance = 1.00; //    0.33;
-		lootPos[] = {{0.03,-4.59,-0.59},{2.4,-5.13,-1.33},{2.12,-1.09,-0.93},{-1.06,-3.11,-0.92},{-1.2,0.9,-0.93},{2.56,4.12,-1.35},{-1.34,4.08,-1.32}};
+		lootChance = 0.33;
+		lootPos[] = {{0.03,-4.58,-0.59},{2.4,-5.13,-1.33},{2.12,-1.09,-0.93},{-1.06,-3.11,-0.92},{-1.2,0.9,-0.92},{2.56,4.12,-1.33},{-1.34,4.08,-1.24},{2.55,2.96,-0.13},{-1.14,2.9,-0.14},{-1.08,2.94,-0.89},{2.25,2.94,-0.92},{0.56,0.83,-1.37}};
 		minRoaming = 3;
 		maxRoaming = 6;
 		zedPos[] = {{-2.9,8.07,-2.16},{-4.68,-2.28,-2.16},{-6.54,-6.32,-2.16},{-2.71,-9.66,-2.16},{2.97,7.23,-2.17},{-1.77,6.63,-2.16}};
@@ -517,8 +518,8 @@ class Land_smd_army_hut_int: Military
 
 class Land_smd_army_hut2: Military
 	{
-		lootChance = 1.00; //    0.4;
-		lootPos[] = {{-1.45,-4.21,-1.33},{2.67,-4.89,-1.33},{-2.29,7.76,-2.17},{0.92,10.29,-2.17}};
+		lootChance = 0.4;
+		lootPos[] = {{-1.36,-4.43,-1.33},{2.67,-4.89,-1.33},{-0.04,-4.62,-0.62},{2.34,-1.17,-0.13},{-1.25,-1.24,-0.11},{2.27,-1.2,-0.86},{-1.21,-1.2,-0.84},{-1.38,2.92,-0.13},{2.32,2.86,-0.13},{2.3,2.91,-0.92},{-1.28,2.91,-0.92},{-1,1.02,-0.13},{2.04,1.05,-0.11},{-1.28,0.69,-0.83},{2.07,1.09,-0.92}};
 		minRoaming = 1;
 		maxRoaming = 6;
 		zedPos[] = {{3.05,6.63,-2.17},{-3.95,-3.59,-2.17},{-6.82,-5.5,-2.17},{-5.69,-10.33,-2.17}};
@@ -526,17 +527,25 @@ class Land_smd_army_hut2: Military
 	
 class Land_smd_army_hut2_int: Military
 	{
-		lootChance = 1.00; //    0.4;
-		lootPos[] = {{1.19,-1.1,-0.95},{-1.47,1.59,-0.95},{-1.11,-1.32,-0.95}};
+		lootChance = 0.5;
+		lootPos[] = {{1.19,-1.1,-0.95},{-1.47,1.59,-0.95},{-1.11,-1.32,-0.95},{0.95,0.19,-0.95}};
 		minRoaming = 2;
 		maxRoaming = 6;
 		zedPos[] = {{-4.81,-3.87,-1.78},{-6.32,-2.09,-1.78},{-3.78,0.67,-1.78},{-1.39,4.19,-1.78},{0.62,6.91,-1.78},{3.4,4.99,-1.78}};
 	};
-
+class Land_smd_army_hut3_long: Military
+	{
+		lootChance = 0.25;
+		lootPos[] = {{1.53,-3.63,-1.27},{-0.33,-3.32,-0.58},{-2.49,-4.84,-1.27},{-2.91,-1.23,-0.06},{-2.89,-1.23,-0.86},{-2.39,1.02,-0.07},{-2.3,0.97,-0.87},{1.61,-1.98,-1.27},{-2.41,2.62,-0.06},{-2.72,2.54,-0.86},{-2.23,5.19,-0.06},{-2.22,5.17,-0.85},{-2.46,3.89,-1.27},{0.9,4.33,-1.27}};
+		minRoaming = 2;
+		maxRoaming = 6;
+		zedPos[] = {{4.69,-2.77,-2.11},{7.08,-0.75,-2.11},{6.17,3.17,-2.11},{7.58,6.28,-2.11},{6.88,9.46,-2.11},{4.7,6.79,-2.11}};
+	};
+	
 class Land_smd_army_hut3_long_int: Military
 	{
-		lootChance = 1.00; //    0.33;
-		lootPos[] = {{-0.39,-3.33,-0.56},{-3,-1.06,-0.86},{1.19,-1.84,-1.27},{0.95,5.17,-0.87},{-2.84,3.94,-1.27}};
+		lootChance = 0.15;
+		lootPos[] = {{-0.4,-3.33,-0.57},{-2.97,-1.07,-0.06},{1.19,-1.84,-1.27},{0.94,5.2,-0.07},{-2.84,3.94,-1.27},{-2.94,-0.67,-0.86},{-2.24,0.94,-0.05},{-2.24,0.95,-0.86},{1.62,-3.74,-1.27},{-2.77,-4.82,-1.27},{0.95,5.19,-0.86},{-0.66,5.26,-1.27},{-0.33,2.85,-1.27},{0.11,-0.25,-1.27},{0.2,-3.38,-1.27}};
 		minRoaming = 2;
 		maxRoaming = 6;
 		zedPos[] = {{4.69,-2.77,-2.11},{7.08,-0.75,-2.11},{6.17,3.17,-2.11},{7.58,6.28,-2.11},{6.88,9.46,-2.11},{4.7,6.79,-2.11}};
@@ -544,7 +553,7 @@ class Land_smd_army_hut3_long_int: Military
 
 class Land_smd_army_hut_storrage: Residential // 3 walled car port
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{-0.22,-3.96,-1.97},{-0.65,-0.83,-1.97},{-1.03,1.96,-1.97},{-1.34,4.25,-1.97}};
 		minRoaming = 2;
 		maxRoaming = 6;
@@ -553,7 +562,7 @@ class Land_smd_army_hut_storrage: Residential // 3 walled car port
 
 class Land_smd_bouda_plech_open: Industrial	
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{0.37,1.71,-1.04},{0.37,-1.69,-1.04},{0.86,-0.05,-1.04}};
 		minRoaming = 1;
 		maxRoaming = 2;
@@ -562,16 +571,26 @@ class Land_smd_bouda_plech_open: Industrial
 	
 class Land_smd_benzina_schnell_open: Industrial
 	{
-		lootChance = 1.00; //    0.33;
-		lootPos[] = {{1.08,7.01,-1.46},{-1.48,6.73,-2.12},{-0.24,3.75,-2.12},{3.26,4.27,-2.12}};
+		lootChance = 0.4;
+		lootPos[] = {{1.08,7,-1.46},{-1.48,6.73,-2.12},{-0.24,3.75,-2.12},{3.26,4.27,-2.12},{1.44,5.06,-2.12}};
 		minRoaming = 3;
 		maxRoaming = 6;
 		zedPos[] = {{-5.2,4.2,-2.29},{-0.53,-2.27,-2.29},{3.4,-2.24,-2.29},{1.54,-6.73,-2.29},{1.53,3.96,-2.12}};
 	};	
+	
+class Land_smd_budova3_open: Military //A1 Military House Enterable
+	{
+		lootChance = 0.33;
+		lootPos[] = {{2.55,-2.09,-1.91},{2.02,1.87,-1.91},{-0.5,2.02,-1.92},{-2.6,2.57,-1.91},{-1.87,-2.12,-1.91},{0.24,-1.77,-1.91},{-1.54,0.16,-1.19}};
+		zombieChance = 0;
+		minRoaming = 0;
+		maxRoaming = 0;
+		zedPos[] = {};
+	};
 
 class Land_smd_budova4_in: Military //A1 Barrack with Blue Doors
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{6.12,-2.63,-1.89},{5.87,1.59,-1.89},{4.06,-2.26,-1.53},{0.37,-2.21,-1.58},{0.62,-0.43,-1.89},{-1.84,-0.57,-1.89},{-1.6,-2.73,-0.92},{2.23,2.17,-1.89},{0.12,1.95,-1.89},{-2.16,2.42,-1.89},{-4.52,2.07,-1.89},{-6.4,2.35,-1.89},{-3.89,-0.44,-1.89},{-6.87,0.17,-1.89},{-6.7,-2.75,-1.57},{-4.19,-2.65,-1.57},{4.15,-0.08,-1.89},{6.34,-0.02,-1.89}};
 		zombieChance = 1;
 		minRoaming = 3;
@@ -581,8 +600,8 @@ class Land_smd_budova4_in: Military //A1 Barrack with Blue Doors
 
 class Land_smd_cihlovej_dum_mini: Residential
 	{
-		lootChance = 1.00; //    0.7;
-		lootPos[] = {{0.58,2.34,-2.59},{2.75,-1.05,-2.87},{-1.69,2.47,-2.87}};
+		lootChance = 0.4;
+		lootPos[] = {{0.58,2.34,-2.59},{2.78,-1.05,-2.87},{-1.69,2.47,-2.87},{2.83,-0.94,-1.92},{0.38,1.06,-2.87}};
 		minRoaming = 2;
 		maxRoaming = 5;
 		zedPos[] = {{2.41,1.31,-2.87},{-1.74,-0.38,-2.87},{-3.77,-5.18,-2.92},{2.05,-4.93,-2.92}};
@@ -590,8 +609,17 @@ class Land_smd_cihlovej_dum_mini: Residential
 
 class Land_smd_dum_istan2: Residential
 	{
-		lootChance = 1.00; //    0.25;
-		lootPos[] = {{-4,2.01,-2.23},{-0.54,-2.07,0.83},{3.01,-0.78,0.82},{6.7,-4.48,0.82},{-5.99,-4.35,3.8},{-6.8,2.26,3.8},{-2.82,2.46,3.8}};
+		lootChance = 0.5;
+		lootPos[] = {{-3.22,1.89,-2.23},{-0.54,-2.07,0.83},{3.01,-0.78,0.82},{6.7,-4.48,0.82},{-5.99,-4.35,3.8},{-6.8,2.26,3.8},{-2.82,2.46,3.8},{-2.53,-3.68,3.8},{-3.75,-1.35,3.8},{1.36,-0.52,2.2},{4.42,-3.61,0.82},{-3.33,-4.03,0.82}};
+		minRoaming = 3;
+		maxRoaming = 6;
+		zedPos[] = {{3.88,-3.52,0.82},{-1.63,-3.74,0.82},{-6.43,5.16,-2.31},{-6.74,-6.88,-2.31},{5.16,-6.99,-2.31},{-1.05,-8.69,-2.31},{-2.47,4.95,-2.31}};
+	};
+
+class Land_smd_dum_istan2b: Residential
+	{
+		lootChance = 0.4;
+		lootPos[] = {{-2.99,1.88,-2.26},{-3.29,-4.39,0.82},{-0.41,-2.42,0.82},{0.75,-4.2,0.82},{4.2,-4.26,0.82},{6.33,-4.3,0.82},{6.38,-1,0.82},{3.81,-0.95,0.82},{1.42,-0.48,2.2},{-3.03,-4.39,3.8},{-2.91,-2.08,3.8},{-2.8,1.64,3.8},{-5.77,2.03,3.8},{-5.36,-1.33,3.8},{-5.96,-4.44,3.8}}; 
 		minRoaming = 3;
 		maxRoaming = 6;
 		zedPos[] = {{3.88,-3.52,0.82},{-1.63,-3.74,0.82},{-6.43,5.16,-2.31},{-6.74,-6.88,-2.31},{5.16,-6.99,-2.31},{-1.05,-8.69,-2.31},{-2.47,4.95,-2.31}};
@@ -599,7 +627,7 @@ class Land_smd_dum_istan2: Residential
 
 class Land_smd_dum_istan2_02: Residential
 	{
-		lootChance = 1.00; //    0.7;
+		lootChance = 0.5;
 		lootPos[] = {{-2.32,1.36,-4.16},{-2.33,-1.51,-4.16}};
 		minRoaming = 1;
 		maxRoaming = 2;
@@ -608,8 +636,8 @@ class Land_smd_dum_istan2_02: Residential
 	
 class Land_smd_dum_istan3: Residential
 	{
-		lootChance = 1.00; //    0.25;
-		lootPos[] = {{-6.52,3.93,-2.52},{-0.37,3.85,-2.52},{-10.42,-4.16,-1.11},{-7.55,-2.05,0.59},{-0.64,-1.3,0.59},{6.06,-0.02,0.59},{9.91,1.01,0.59},{9.9,-4.5,0.59},{4.31,-4.9,0.59}};
+		lootChance = 0.5;
+		lootPos[] = {{-6.52,3.93,-2.48},{-0.37,3.85,-2.48},{-10.42,-4.16,-1.11},{-7.55,-2.05,0.59},{-0.64,-1.3,0.59},{6.06,-0.02,0.59},{9.91,1.01,0.59},{9.9,-4.5,0.59}};
 		minRoaming = 3;
 		maxRoaming = 6;
 		zedPos[] = {{3.87,-1.88,0.59},{-10.7,0.99,-2.52},{-12.28,4.12,-2.52},{9.78,5.25,-2.53},{-1.4,-6.8,-2.52},{-8.28,-9.04,-2.52}};
@@ -617,7 +645,7 @@ class Land_smd_dum_istan3: Residential
 	
 class Land_dum_istan3_pumpa: Residential
 	{
-		lootChance = 1.00; //    0.25;
+		lootChance = 0.25;
 		lootPos[] = {{-1.57,2.95,-1.86},{3.86,-0.43,1.47},{0.43,1.29,1.47},{3.94,-2.52,1.47},{3.41,-4.33,1.47},{-1.56,2.89,1.47},{-3.77,2.7,1.47},{-3.6,-4.42,1.47}};
 		minRoaming = 3;
 		maxRoaming = 6;
@@ -626,16 +654,25 @@ class Land_dum_istan3_pumpa: Residential
 	
 class Land_kostel: Church  // Orangeish pink church with 1 bell tower
 	{
-		lootChance = 1.00; //    0.25;
+		lootChance = 0.25;
 		lootPos[] = {{3.22,-4.25,-0.91},{3.94,-7.13,-7.34},{5.58,-4.12,-7.34},{2.78,-6.8,-0.91},{5.29,-6.89,-0.82},{5.16,-4.44,-0.91},{5.5,-7.02,-7.34},{4.29,-4.31,-7.25}};
 		minRoaming = 3;
 		maxRoaming = 10;
 		zedPos[] = {{-4.36,-13.55,-7.41},{0.08,-13.89,-7.41},{5.06,-10.82,-7.42},{8.84,-6.89,-7.42},{8.25,-4.08,-7.42},{6.06,-1.15,-7.42},{4.54,2.02,-7.42},{4.04,5.18,-7.42},{2.85,9.52,-7.41},{0.29,12.5,-7.41},{-5.38,13.31,-7.41},{-9.46,10.03,-7.41},{-8.33,3.61,-7.41},{-10.28,-0.69,-7.41},{-8.82,-6.32,-7.41}};
 	};
 
+class smd_dum_istan3_hromada: Residential
+	{
+		lootChance = 0.5;
+		lootPos[] = {{-0.35,-2.43,-3.25},{-2.26,-2.8,-3.25},{-3.25,-0.17,-3.25},{-0.87,-0.12,-3.25},{0.31,1.37,-3.25},{0.15,2.78,-3.25}};
+		minRoaming = 3;
+		maxRoaming = 6;
+		zedPos[] = {{-6.46,6.47,-7.29},{6.71,6.77,-7.29},{-2.59,-8.16,-7.36},{6.56,-3.82,-7.37},{5.75,10.14,-7.37},{-1.11,11.53,-7.36}};
+	};
+
 class Land_smd_dum_istan4: Residential
 	{
-		lootChance = 1.00; //    0.25;
+		lootChance = 0.25;
 		lootPos[] = {{-4.26,6.1,-7.29},{-0.48,6.46,-7.29},{5.03,6.37,-7.29},{2.68,-7.82,-5.94},{2.65,-2.4,-4.34}};
 		minRoaming = 3;
 		maxRoaming = 6;
@@ -644,7 +681,7 @@ class Land_smd_dum_istan4: Residential
 
 class Land_smd_dum_istan4_big: Residential
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{-5.1,6.01,-10.29},{-0.81,5.86,-10.29},{5,5.67,-10.29},{2.59,-8.2,-8.93},{2.63,-2.72,-7.34}};
 		minRoaming = 3;
 		maxRoaming = 6;
@@ -653,7 +690,7 @@ class Land_smd_dum_istan4_big: Residential
 
 class Land_smd_dum_istan4_big_inverse: Residential
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{-5.75,5.41,-10.29},{-2.02,5.69,-10.29},{5.12,6.52,-10.29},{-2.84,-8.06,-8.93},{-2.68,-3.07,-7.34}};
 		minRoaming = 3;
 		maxRoaming = 6;
@@ -662,8 +699,8 @@ class Land_smd_dum_istan4_big_inverse: Residential
 
 class Land_smd_dum_istan4_detaily1: Residential
 	{
-		lootChance = 1.00; //    0.33;
-		lootPos[] = {{-5.39,6.16,-7.29},{-2.61,6.22,-7.29},{2.19,5.98,-7.29},{5.65,6.18,-7.29},{2.71,-8.14,-5.93},{2.65,-3.3,-4.34}};
+		lootChance = 0.3;
+		lootPos[] = {{-5.39,6.16,-7.29},{-2.61,6.22,-7.29},{2.19,5.98,-7.29},{5.65,6.18,-7.29},{2.71,-8.14,-5.93},{2.65,-3.3,-4.34},{2.59,-4.11,-4.34}};
 		minRoaming = 3;
 		maxRoaming = 6;
 		zedPos[] = {{-2.13,-8.36,-7.36},{-4.9,-8.44,-7.36},{-4.46,5.78,-7.29},{-0.57,6.31,-7.29},{3.98,6.26,-7.29}};
@@ -671,8 +708,8 @@ class Land_smd_dum_istan4_detaily1: Residential
 
 class Land_smd_dum_istan4_inverse: Residential
 	{
-		lootChance = 1.00; //    0.33;
-		lootPos[] = {{4.37,6.5,-7.29},{-0.89,5.68,-7.29},{-5.57,6.39,-7.29},{-2.76,-7.83,-5.93},{-2.61,-3.6,-4.34}};
+		lootChance = 0.5;
+		lootPos[] = {{-4.26,6.1,-7.29},{-0.48,6.46,-7.29},{5.03,6.37,-7.29},{2.68,-7.82,-5.94},{2.65,-2.4,-4.34},{2.77,-3.51,-4.34}};
 		minRoaming = 3;
 		maxRoaming = 6;
 		zedPos[] = {{2.39,-7.94,-7.36},{4.95,-8.28,-7.36},{2.71,6.04,-7.29},{0.42,6.43,-7.29},{-3.34,6.16,-7.29}};
@@ -680,8 +717,8 @@ class Land_smd_dum_istan4_inverse: Residential
 
 class Land_smd_dum_mesto_in_open: Residential //2 Floor Stone Residence
 	{
-		lootChance = 1.00; //    0.15;
-		lootPos[] = {{-4.05,0.81,-3.36},{-4.34,-3.26,-3.36},{1.3,-3.61,-3.36},{5.48,3.36,-3.36},{6.01,-2.23,-3.36},{3.12,2.04,-3.36},{-1.76,4.56,-2.58},{-4.61,2.77,-3.36},{-3.45,4.46,-3.36},{1.85,4.25,-1.85},{5.65,3.82,-0.37},{5.55,-2.83,-0.37},{1.4,-3.48,-0.37},{-0.8,-2.6,-0.37},{-3.84,-4.89,-0.21},{-5.05,-3.43,-0.37},{-3.74,3.97,0.3},{-2.09,1.27,-0.37}};
+		lootChance = 0.15;
+		lootPos[] = {{-4.05,0.81,-3.36},{-4.34,-3.26,-3.36},{5.38,-2.6,-3.43},{-2.61,4.61,-3.18},{-1.96,-2.45,-3.97},{-1.66,-0.04,-3.97},{-4.26,4.39,-3.97},{-4.9,2.61,-3.97},{-2.84,3.2,-3.97},{-2.6,4.67,-3.97},{1.58,-0.5,-3.97},{2.23,2.2,-3.97},{4.33,3.35,-3.97},{5.65,4.27,-3.97},{5.23,0.44,-3.97},{5.38,-3.45,-3.43},{2.22,4.31,-2.46},{-5.37,-4.94,-0.82},{-3.13,-4.81,-0.82},{-2.98,-2.31,-0.98},{-4.12,-1.08,-0.98},{-4.36,2.1,-0.98},{-3.87,4.36,-0.98},{-2.96,2.72,-0.98},{-2.21,0.06,-0.98},{1.49,-1.56,-0.99},{4.8,-2.05,-0.99},{5.19,0.88,-0.99},{5.09,3.21,-0.99}};
 		zombieChance = 1;
 		minRoaming = 2;
 		maxRoaming = 6;
@@ -690,8 +727,8 @@ class Land_smd_dum_mesto_in_open: Residential //2 Floor Stone Residence
 
 class Land_smd_dum_olez_istan1_open: Residential //2 Floor stucco residential shutters on 1st floor glass on 2nd
 	{
-		lootChance = 1.00; //    0.33;
-		lootPos[] = {{-7.71,2.11,-1.17},{-2.09,-4.57,-1.84},{-6.7,-5.17,-1.84},{-2.6,-0.33,-1.84},{1.68,2.06,-1.84},{4.04,-2.35,-1.84},{6.98,1.45,-1.84},{5.85,2.37,-1.51},{5.5,-3.3,1.37},{4.59,1.62,1.37},{-5.07,-4.31,1.37},{-1.96,-4.02,1.37},{-1.08,3.36,1.37}};
+		lootChance = 0.2;
+		lootPos[] = {{-7.71,2.1,-1.17},{-2.09,-4.57,-1.84},{-6.7,-5.17,-1.84},{-2.6,-0.33,-1.84},{1.68,2.06,-1.84},{4.04,-2.35,-1.84},{6.98,1.45,-1.84},{5.85,2.38,-1.51},{5.5,-3.3,1.37},{4.59,1.62,1.37},{-5.07,-4.31,1.37},{-1.96,-4.02,1.37},{-1.08,3.36,1.37},{-2.15,-4.54,-1.07},{5.76,-1.32,1.96},{2.38,-2.06,1.37},{1.46,0.5,1.37},{1.14,2.91,1.37},{-5.49,1.8,1.37}};
 		minRoaming = 3;
 		maxRoaming = 8;
 		zedPos[] = {{1.87,-6.28,-1.86},{2.95,-6.02,-1.86},{5.04,-5.52,-1.86},{7.73,-6.05,-1.87},{1.19,5.54,-1.86},{-0.94,5.57,-1.86},{-3.92,5.61,-1.86},{-6.96,5.65,-1.86}}; 
@@ -699,8 +736,8 @@ class Land_smd_dum_olez_istan1_open: Residential //2 Floor stucco residential sh
 
 class Land_smd_dum_olez_istan1_open2: Residential //2 Floor stucco residential shutters on 1st floor glass on 2nd
 	{
-		lootChance = 1.00; //    0.33;
-		lootPos[] = {{-2.1,-4.58,-1.84},{-7.47,0.32,-1.84},{0.6,2.99,-1.84},{7.11,1.38,-0.84},{5.36,-1.22,1.37},{3.44,-2.45,1.37},{-1.46,-1.84,1.37},{-0.91,-4.99,1.37},{-6.89,-5.62,1.37},{-5.97,1.49,2.17}};
+		lootChance = 0.33;
+		lootPos[] = {{-2.1,-4.58,-1.84},{-7.47,0.32,-1.84},{0.6,2.99,-1.84},{5.36,-1.22,1.37},{3.44,-2.45,1.37},{-1.46,-1.84,1.37},{-0.91,-4.99,1.37},{-6.89,-5.62,1.37},{-5.97,1.49,2.17},{7.38,1.42,-1.84},{5.81,1.92,-1.5},{2.53,2.57,-1.84},{4.32,-0.25,-1.84},{1.61,-0.9,-1.84},{4.16,-2.09,-1.84},{-4.2,1.19,-1.84},{-2.54,-0.7,-1.84},{-5.71,-4.41,-1.84},{-7.38,-2.15,-1.84},{-7.71,2.15,-1.16},{5.13,2.2,1.37},{2.06,1.44,1.37},{-2.5,0.8,1.37},{-6.48,-1.83,1.37}};
 		minRoaming = 3;
 		maxRoaming = 6;
 		zedPos[] = {{-7.39,5.54,-1.86},{-4.57,5.88,-1.86},{-1.12,5.66,-1.86},{2.85,5.54,-1.86},{7.63,-5.54,-1.87},{4.98,-6.07,-1.86},{1.78,-6.71,-1.86}};
@@ -708,8 +745,8 @@ class Land_smd_dum_olez_istan1_open2: Residential //2 Floor stucco residential s
 
 class Land_smd_dum_olez_istan2_open: Residential //1 Floor stucco residential shutters
 	{
-		lootChance = 1.00; //    0.65;
-		lootPos[] = {{0.43,-4.73,0.35},{-4.2,-4.59,-0.37},{-4.67,4.81,-0.37},{0.27,5.27,0.06},{0.22,3.13,-0.37}};
+		lootChance = 0.4;
+		lootPos[] = {{0.31,-5.26,0.49},{-4.2,-4.59,-0.24},{-4.67,4.81,-0.25},{0.27,5.27,0.06},{-0.11,3.1,-0.23},{2.53,-0.52,-0.23},{-0.51,-1.68,-0.23},{-2.95,-0.73,-0.23},{-3.18,2.17,-0.23},{-5.54,0.53,-0.23}};
 		minRoaming = 1;
 		maxRoaming = 5;
 		zedPos[] = {{6.06,0.98,-0.39},{5.92,-2.33,-0.38},{7.83,-5.56,-0.39},{5.77,-5.19,-0.38},{3.72,4.52,-0.38}};
@@ -717,26 +754,35 @@ class Land_smd_dum_olez_istan2_open: Residential //1 Floor stucco residential sh
 
 class Land_smd_dum_olez_istan2_open2: Residential //1 Floor stucco residential shutters
 	{
-		lootChance = 1.00; //    0.65;
-		lootPos[] = {{-3.64,-4.31,-0.37},{0.25,4.92,0.37},{-5.53,5.29,-0.37},{2.18,1.7,-0.37},{-1.84,0.22,-0.37}};
+		lootChance = 0.4;
+		lootPos[] = {{-3.64,-4.31,-0.25},{-0.09,4.54,0.48},{-5.56,4.71,-0.25},{2.18,1.7,-0.25},{-1.84,0.22,-0.25},{2.02,-3.09,-0.23},{-1.38,-3.6,-0.23},{-3.61,-0.69,-0.23},{-3.63,2.38,-0.23},{-1.43,2.73,-0.23}};
 		minRoaming = 1;
 		maxRoaming = 6;
 		zedPos[] = {{3.99,4.97,-0.38},{5.58,3.09,-0.38},{5.74,0.32,-0.38},{5.58,-2.9,-0.38},{7.34,-6.53,-0.39},{5.01,-5.45,-0.38}};
 	};
 
-class Land_smd_fuelstation_army: Industrial
+class Land_smd_fuelstation_army: Mil_Industrial
 	{
-		lootChance = 1.00; //    0.3;
-		lootPos[] = {{1.4,4.45,-2.3},{2.44,0.09,-2.3},{-1.42,1.02,-2.3},{-5.51,4.16,-2.3},{1.29,-5.42,-2.3}};
+		lootChance = 0.4;
+		lootPos[] = {{1.4,4.45,-2.29},{2.44,0.09,-2.29},{-1.42,1.02,-2.29},{-5.51,4.16,-2.29},{1.29,-5.42,-2.29}};
 		minRoaming = 1;
 		maxRoaming = 6;
 		zedPos[] = {{3.56,8.36,-2.3},{5.28,2.47,-2.3},{5.93,-4.26,-2.3},{-3.63,-5.81,-2.3},{-9.35,2.3,-2.3},{-6.07,7.45,-2.3}};
 	};	
 
-class Land_smd_garaz_bez_tanku: Military
+class Land_smd_garaz_bez_tanku: Mil_Industrial
 	{
-		lootChance = 1.00; //    0.4;
-		lootPos[] = {{-6.65,-0.86,3.42},{-5.76,4.49,3.42},{0,3.82,3.42},{7.11,-0.48,3.42},{7.13,4.06,3.42}};
+		lootChance = 0.5;
+		lootPos[] = {{-6.65,-0.86,3.42},{-5.76,4.49,3.42},{0,3.82,3.42},{7.11,-0.48,3.42},{7.13,4.06,3.42},{-5.05,0.93,-2.49},{-6.55,5.09,-2.49},{-3.48,5.31,-2.49},{-4.09,3.4,-2.49},{4.73,4.72,-2.49},{6.31,4.93,-2.49},{6.57,2.94,-2.49},{5.83,1.45,-2.49},{3.54,1.52,-2.49}};
+		minRoaming = 1;
+		maxRoaming = 6;
+		zedPos[] = {{-5.99,-3.98,-2.6},{-4.14,-4.93,-2.6},{-1.67,-9.7,-2.6},{3.98,-7.72,-2.61},{5.96,-5.74,-2.61},{6.31,-3.23,-2.61},{3.31,-3.8,-2.61}};
+	};
+
+class Land_smd_garaz_s_tankem: Mil_Industrial
+	{
+		lootChance = 0.25;
+		lootPos[] = {{-5.43,1.29,-2.49},{-3.49,1.69,-2.49},{-3.8,4.32,-2.49},{-5.94,4.06,-2.49},{3.07,1.82,-2.49},{5.29,3.8,-2.49},{7.17,2.93,-2.49},{6.8,0.79,-2.49}};
 		minRoaming = 1;
 		maxRoaming = 6;
 		zedPos[] = {{-5.99,-3.98,-2.6},{-4.14,-4.93,-2.6},{-1.67,-9.7,-2.6},{3.98,-7.72,-2.61},{5.96,-5.74,-2.61},{6.31,-3.23,-2.61},{3.31,-3.8,-2.61}};
@@ -744,8 +790,8 @@ class Land_smd_garaz_bez_tanku: Military
 
 class Land_smd_garaz_mala_open: Industrial
 	{
-		lootChance = 1.00; //    0.6;
-		lootPos[] = {{2.14,-0.76,-1.14},{4.5,-2.43,-1.14},{1.78,-3.24,-1.14}};
+		lootChance = 0.5;
+		lootPos[] = {{2.14,-0.76,-1.14},{1.78,-3.24,-1.14},{-1.7,-2.43,-1.14},{-1.64,-0.73,-1.14},{-1.1,1.26,-1.14},{0.21,-0.64,-1.14}};
 		minRoaming = 1;
 		maxRoaming = 3;
 		zedPos[] = {{2.05,5.81,-1.14},{5.1,6.77,-1.15}};
@@ -753,8 +799,8 @@ class Land_smd_garaz_mala_open: Industrial
 
 class Land_smd_garaz_open: Industrial
 	{
-		lootChance = 1.00; //    0.33;
-		lootPos[] = {{4.29,-3.21,-1.23},{-5.1,0.33,-1.23},{-2.64,2.9,-1.23},{2.04,2.16,-1.23},{-1.13,-1.7,-1.23}};
+		lootChance = 0.25;
+		lootPos[] = {{4.29,-3.21,-1.23},{-5.1,0.33,-1.23},{-2.64,2.9,-1.23},{2.04,2.16,-1.23},{-1.13,-1.7,-1.23},{-5.16,-2.93,-1.23},{2.81,-2.2,-1.23},{5.49,0.16,-1.23},{3.71,1.58,-1.23}}; 
 		minRoaming = 1;
 		maxRoaming = 3;
 		zedPos[] = {{4.56,1.73,-1.23},{4.07,6.09,-1.24},{-0.38,6.61,-1.24},{-3.82,6.75,-1.24}};
@@ -762,8 +808,8 @@ class Land_smd_garaz_open: Industrial
 
 class Land_smd_garaz_long_open: Industrial
 	{
-		lootChance = 1.00; //    0.20;
-		lootPos[] = {{14.64,2.97,-1.23},{13.93,-1.71,-1.23},{10.51,2.56,-1.23},{4.76,2.64,-1.23},{-0.8,2.72,-1.23},{-5.89,2.79,-1.23},{-7.64,0.85,-1.03},{-13.59,-2.93,-1.23},{-0.77,-3.51,-0.2},{4.63,-2.31,-1.23}};
+		lootChance = 0.20;
+		lootPos[] = {{14.64,2.97,-1.23},{13.93,-1.71,-1.23},{10.51,2.56,-1.23},{4.76,2.64,-1.23},{-0.8,2.72,-1.23},{-5.89,2.79,-1.23},{-13.59,-2.93,-1.23},{-0.77,-3.51,-0.2},{4.63,-2.31,-1.23},{-7.53,0.83,-1.23},{-8.47,-3.28,-1.23},{-5.29,-2.81,-1.23},{-2.79,-0.38,-1.23},{2.12,-0.01,-1.23},{6.66,0.24,-1.23},{10.69,0.23,-1.23}};
 		minRoaming = 1;
 		maxRoaming = 3;
 		zedPos[] = {{5.39,1.03,-1.23},{11.55,1.3,-1.23},{-2.41,0.82,-1.23},{-5.56,5.3,-1.24},{-10.76,8.54,-1.24},{6.95,8.76,-1.24}};
@@ -771,7 +817,7 @@ class Land_smd_garaz_long_open: Industrial
 
 class Land_smd_hlaska: Military
 	{
-		lootChance = 1.00; //    0.25;
+		lootChance = 0.25;
 		lootPos[] = {{-1.06,-0.7,3.77},{-1.02,0.98,3.77},{1.03,-0.71,3.77},{0.95,0.98,3.77}};
 		minRoaming = 1;
 		maxRoaming = 7;
@@ -780,8 +826,8 @@ class Land_smd_hlaska: Military
 	
 class Land_smd_hospoda_mesto: Residential 
 	{
-		lootChance = 1.00; //    0.25;
-		lootPos[] = {{3.72,-6.53,-4.35},{1.56,-1.53,-5.18},{-7.26,-2.73,-5.17},{-0.64,-4.02,-5.17},{-7.25,-6.4,-5.17},{-7.12,-6.4,-1.23},{-3.68,-2.63,-1.22},{3.66,-3.98,-1.24},{4.64,0.2,-1.25},{4.39,2.81,-1.25},{-2.04,-2.56,-1.22},{3.17,1.07,-5.19},{6.26,7.07,-4.37},{3.9,7.05,-4.36},{4.96,7.17,-0.67},{6.93,2.1,-4.36}};
+		lootChance = 0.4;
+		lootPos[] = {{3.72,-6.53,-4.35},{1.56,-1.53,-5.18},{-7.26,-2.73,-5.17},{-0.64,-4.02,-5.17},{-7.25,-6.4,-5.17},{-7.12,-6.4,-1.23},{-3.68,-2.63,-1.22},{4,-3.78,-0.4},{4.64,0.2,-1.25},{4.39,2.81,-1.25},{-2.04,-2.56,-1.22},{3.17,1.07,-5.19},{6.27,6.94,-4.37},{4,6.68,-4.35},{4.96,7.17,-0.67},{6.93,2.1,-4.36},{6.92,-3.82,-4.36},{4.44,-2.2,-4.19},{1.34,-5.74,-5.17},{6.17,5.18,-4.33},{4.2,4.4,-5.19},{5.19,-0.14,-5.19},{-3.95,-4.47,-5.17},{2.17,-2.34,-1.24},{3.48,7.19,-1.25},{3.19,4.93,-1.25},{5.89,4.81,-1.25},{6.74,0.81,-1.25},{6.65,-2.71,-1.25},{5.59,-5.06,-1.25}}; 
 		minRoaming = 4;
 		maxRoaming = 9;
 		ZedChance[] = {{0.88,3.88,-5.43},{-1.21,1.22,-5.43},{-5.18,-0.39,-5.43},{0.75,-9.35,-5.43},{5.42,-9.98,-5.43},{9.29,-10.49,-5.43},{8,-7.93,-5.43},{10.42,-6.92,-5.43},{10.24,-3.71,-5.43}};
@@ -789,7 +835,7 @@ class Land_smd_hospoda_mesto: Residential
 	
 class Land_smd_hotel : Residential 
 	{
-		lootChance = 1.00; //    0.3;
+		lootChance = 0.3;
 		lootPos[] = {{-2.55,8.33,-6.78},{3.22,6.54,-7.75},{3.29,-6.16,-7.7},{0.49,0.4,-4.26},{-8.7,-16.75,-4.26},{-20.88,-3.52,-4.26},{-17.11,-5.73,-4.26},{-12.55,13.98,-4.26},{-17.08,17.43,-4.26},{-15.49,21.04,-4.26},{-4.94,16.12,-4.26},{3.3,0.07,-4.26},{13.56,17.46,-4.26},{16.71,12.81,-4.26},{20.69,9.32,-4.26},{16.23,5.72,-4.26},{12.39,3.27,-4.26},{8.75,-3.27,-4.26},{15.08,-11.39,-4.26},{6.58,-11.83,-4.26},{6.23,-2.78,-2.4},{0.2,-5.82,-0.76},{0.87,-8.68,-0.76},{9.06,0.77,-0.76},{11.67,6.09,-0.76},{20.31,8.73,-0.76},{20.61,13.16,-0.76},{5.16,4.98,-0.76},{3.3,1.06,-0.76},{-5.68,4.01,-0.76},{-7.6,0.34,-0.76},{-6.77,-5.36,-0.76},{-11.12,-5.11,-0.76},{-20.92,-16.93,-0.76},{0.65,0.03,2.74},{-8.94,-14.15,2.74},{-12.09,-4.66,2.74},{-15.41,-4.42,2.74},{-21.2,-2.74,2.74},{-16.15,8.73,2.74},{-17.54,20.31,2.74},{-8.7,11.25,2.74},{11.64,11.21,2.74},{20.28,10.23,2.74},{9.67,1.12,2.74},{15.18,-11.91,2.74},{16.28,-17.14,2.74},{3.66,-12.45,2.74},{6.79,-12.32,2.74}};
 		minRoaming = 3;
 		maxRoaming = 6;
@@ -798,8 +844,8 @@ class Land_smd_hotel : Residential
 
 class Land_smd_hotel_riviera1: Residential
 	{
-		lootChance = 1.00; //    0.25;
-		lootPos[] = {{-8.43,7.49,-3.34},{-4.52,8.27,-3.34},{4.36,8.68,-3.33},{11.81,7.65,-3.34},{12.29,-7.08,-0.32},{6.23,-5.89,-0.32},{0.51,-5.84,-0.32},{-5.35,-6.86,-0.32},{-9.82,-6.93,-0.32},{-12.1,-7.86,-0.32},{-11.46,-1.46,-0.32},{-13.83,-1.55,-0.32},{-5.61,-6.65,-3.34},{0.71,-5.55,-3.34},{9.01,-6.09,-3.34}}; 
+		lootChance = 0.25;
+		lootPos[] = {{-8.43,7.49,-3.34},{-4.52,8.27,-3.34},{4.36,8.68,-3.33},{11.81,7.65,-3.34},{12.29,-7.08,-0.32},{6.23,-5.89,-0.32},{0.51,-5.84,-0.32},{-5.35,-6.86,-0.32},{-9.82,-6.93,-0.32},{-12.1,-7.86,-0.32},{-11.46,-1.46,-0.32},{-13.83,-1.55,-0.32},{-5.61,-6.65,-3.34},{0.71,-5.55,-3.34},{9.01,-6.09,-3.34},{-12.65,-4.37,-0.32},{13.52,6.06,3.28},{11.8,4.14,3.28},{12.8,1.38,3.28},{12.65,-1.73,3.28},{12.06,-5.22,3.28},{9.2,-5.23,3.28},{7.33,-2.58,3.28},{8.16,0.09,3.28},{8.27,2.9,3.28},{6.25,5.76,3.28},{3.75,5.86,3.28},{0.9,3.54,3.28},{2.31,1.22,3.28},{1.79,-1.28,3.28},{-1.18,-3.37,3.28},{-4.07,-4.63,3.28},{-5.97,-2.19,3.28},{-8.15,0.9,3.28},{-9.12,3.92,3.28},{-6.65,5.7,3.28},{-5.11,7.69,3.28},{-11.9,0.64,3.43},{-13.48,-3.61,3.83}};
 		minRoaming = 3;
 		maxRoaming = 6;
 		zedPos[] = {{12.02,-9.26,-3.41},{1.45,-9.69,-3.41},{-6.39,-9.23,-3.41},{-11.6,-4.83,-3.41},{-13.83,0.76,-3.41},{-14.67,5.54,-3.41},{-4.45,12,-3.41},{7.48,13.36,-3.41},{15.17,10.4,-3.42}};
@@ -807,8 +853,8 @@ class Land_smd_hotel_riviera1: Residential
 
 class Land_smd_hotel_riviera2: Residential
 	{
-		lootChance = 1.00; //    0.25;
-		lootPos[] = {{13.01,6.38,-3.34},{8.14,7.43,-3.34},{0.26,7.76,-3.33},{-5.52,7.85,-3.34},{-9.31,7.34,-3.34},{-9.43,-7.65,-0.32},{-3.77,-6.6,-0.32},{1.71,-6.53,-0.32},{7.18,-6.95,-0.32}}; 
+		lootChance = 0.3;
+		lootPos[] = {{13.01,6.38,-3.34},{8.14,7.43,-3.34},{0.26,7.76,-3.33},{-5.52,7.85,-3.34},{-9.31,7.34,-3.34},{-3.77,-6.6,-0.32},{1.71,-6.53,-0.32},{7.18,-6.95,-0.32},{-8.96,-7.53,-3.34},{-3.99,-6.75,-3.34},{1.41,-6.51,-3.34},{3.13,-6.92,-3.34},{8.09,-7.43,-3.34},{9.88,-7.78,-3.34},{-9.35,-7.54,-0.32},{-10.12,4.27,3.28},{-7.27,3.52,3.28},{-3.65,4.85,3.28},{0.47,5.13,3.28},{4.36,4.78,3.28},{8.21,3.74,3.28},{8.6,0.72,3.28},{8.71,-2.84,3.28},{6.72,-5.65,3.28},{2.73,-4.6,3.28},{0.98,-2.57,3.28},{-1.74,-0.7,3.28},{-5.29,-1.44,3.28},{-8.51,-2.8,3.28},{-9.79,-5.82,3.28},{-6.81,-5.13,3.28},{-2.92,-5.92,3.28},{-1.97,-3.89,3.28}};
 		minRoaming = 3;
 		maxRoaming = 6;
 		zedPos[] = {{-14.19,1.23,-3.41},{-15.83,6.29,-3.41},{-12.69,12.14,-3.41},{-7.18,12.81,-3.41},{5.82,12.56,-3.41},{11.28,10.2,-3.42},{9.67,-11.16,-3.41},{5.22,-9.93,-3.41},{-7.59,-12.79,-3.41}};
@@ -816,8 +862,8 @@ class Land_smd_hotel_riviera2: Residential
 
 class Land_smd_house_y_open: Residential
 	{
-		lootChance = 1.00; //    0.25;
-		lootPos[] = {{-3.18,-5.19,-1.41},{-0.7,-5.45,-1.41},{4.74,-2.63,-1.41},{4.6,3.45,-1.41},{0.02,1.07,-1.41},{-2.66,3.16,-1.41},{-4.67,3.61,-1.41},{-2.07,-2.62,-1.41},{1.98,5.67,-1.41}}; 
+		lootChance = 0.2;
+		lootPos[] = {{-3.18,-5.19,-1.41},{-0.7,-5.45,-1.41},{4.74,-2.63,-1.41},{4.6,3.45,-1.41},{0.02,1.07,-1.41},{-2.66,3.16,-1.41},{-4.67,3.61,-1.41},{-2.07,-2.62,-1.41},{1.98,5.67,-1.41},{0.86,-2.67,-1.41},{0.93,3.61,-1.41},{-4.96,1.4,-0.65},{-3.22,-0.26,-1.41},{-4.45,-2.95,-1.41},{3.47,0.42,-1.41}}; 
 		minRoaming = 1;
 		maxRoaming = 6;
 		zedPos[] = {{-3.86,7.42,-1.89},{-7.61,7.8,-1.89},{-7.21,0.42,-1.89},{-4.96,-7.03,-1.89},{0.62,-9.47,-1.89},{5.78,-8.68,-1.9}}; 
@@ -825,7 +871,7 @@ class Land_smd_house_y_open: Residential
 
 class Land_smd_hut01: Residential
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{-0.31,2.42,-0.45},{0.99,1.98,-0.45},{-0.33,-0.5,-0.45},{2.83,2.19,-0.45},{3.31,-2.34,-0.45}}; 
 		minRoaming = 1;
 		maxRoaming = 4;
@@ -834,7 +880,7 @@ class Land_smd_hut01: Residential
 
 class Land_smd_hut02: Residential
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{-0.49,2.32,-0.45},{1.07,3.1,-0.45},{-0.35,-0.1,-0.45}}; 
 		minRoaming = 1;
 		maxRoaming = 4;
@@ -843,7 +889,7 @@ class Land_smd_hut02: Residential
 
 class Land_smd_hut04: Residential
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{-0.85,1.68,-0.44},{0.69,2.77,-0.44},{-0.7,-0.93,-0.44}}; 
 		minRoaming = 1;
 		maxRoaming = 4;
@@ -852,8 +898,8 @@ class Land_smd_hut04: Residential
 
 class Land_smd_kasarna_prujezd: Residential //Yellow unenterable Apartment Block Section with Open Archway
 	{
-		lootChance = 1.00; //    0.65;
-		lootPos[] = {{-0.85,1.68,-0.44},{0.69,2.77,-0.44},{-0.7,-0.93,-0.44}}; 
+		lootChance = 0.5;
+		lootPos[] = {{-0.85,1.68,-0.44},{0.69,2.77,-0.44},{-0.7,-0.93,-0.44},{-1.17,4.43,-8.75},{-0.13,0.04,-8.75},{-0.04,-4.24,-8.75}};
 		zombieChance = 1.0;
 		minRoaming = 1;
 		maxRoaming = 4;
@@ -862,7 +908,7 @@ class Land_smd_kasarna_prujezd: Residential //Yellow unenterable Apartment Block
 
 class Land_smd_kostel_mexico: Church
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{-6.97,-4.98,-9.21},{-6.87,-6.97,-9.21},{6.69,-4.78,-9.21},{7.05,-7.39,-9.21}}; 
 		zombieChance = 1.0;
 		minRoaming = 1;
@@ -873,7 +919,7 @@ class Land_smd_kostel_mexico: Church
 
 class Land_smd_kostel_trosky: Church   //Church Ruins (just walls) 
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{-0.06,13.35,-5.33},{1.32,9.11,-5.33},{-1.72,4.82,-5.33},{-4,1.93,-5.33},{3.07,-1.18,-5.33},{4.03,1.07,-5.33}}; 
 		zombieChance = 1.0;
 		minRoaming = 1;
@@ -884,7 +930,7 @@ class Land_smd_kostel_trosky: Church   //Church Ruins (just walls)
 
 class Land_smd_letistni_hala: Military //Airport Terminal
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{4.88,6.78,-8.28},{1.2,5.5,-8.27},{3.01,-4.61,-8.27},{1.12,-6.6,-8.27}}; 
 		zombieChance = 1.0;
 		minRoaming = 4;
@@ -894,7 +940,7 @@ class Land_smd_letistni_hala: Military //Airport Terminal
 
 class Land_smd_majak_v_celku: Industrial //Grey Stone LightHouse on Pedestal
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{-2.93,0.9,-6.09},{2.85,-6.87,-6.09},{0.41,-5.27,-6.07}}; 
 		minRoaming = 1;
 		maxRoaming = 3;
@@ -903,8 +949,8 @@ class Land_smd_majak_v_celku: Industrial //Grey Stone LightHouse on Pedestal
 
 class Land_smd_Panelak: Residential //2 Floor Brick Apartment Buildings
 	{
-		lootChance = 1.00; //    0.15;
-		lootPos[] = {{0.18,2.46,1.42},{-0.4,2.53,-1.22},{0.93,-2.32,0.07},{-2.89,-2.04,0.07},{-3.65,-4.98,0.07},{-4.4,2.39,0.4},{-6.85,3.4,0.07},{-5.89,0.68,0.07},{-6.35,-1.7,0.07},{-6.75,-5.27,0.07},{0.57,3.23,1.33},{2.47,-0.72,2.77},{4.54,-1.12,2.77},{5.37,-4.25,3.17},{5.49,-6.67,2.77},{6.89,0.95,2.77},{4.98,2.43,3.45},{2.77,3.38,2.77},{0.61,0.46,-1.22}};
+		lootChance = 0.15;
+		lootPos[] = {{0.18,2.46,1.42},{-0.4,2.53,-1.22},{0.93,-2.32,0.07},{-2.89,-2.04,0.07},{-3.65,-4.98,0.07},{-4.4,2.39,0.4},{-6.85,3.4,0.07},{-5.89,0.68,0.07},{-6.35,-1.7,0.07},{-6.75,-5.27,0.07},{0.57,3.23,1.33},{2.47,-0.72,2.77},{4.54,-1.12,2.77},{5.37,-4.25,3.17},{5.49,-6.67,2.77},{6.89,0.95,2.77},{4.98,2.43,3.45},{2.77,3.38,2.77},{0.61,0.46,-1.22},{-2.13,2.92,0.07},{-2.97,0.3,0.07},{-0.24,4.41,1.41},{-0.39,-2.31,2.77},{5.04,3.79,2.77},{6.62,3.69,2.77},{7.1,-1.35,2.77},{6.51,-4.77,2.77},{3.3,-6.37,2.77},{2.93,-4.23,2.77}};
 		zombieChance = 1;
 		minRoaming = 2;
 		maxRoaming = 8;
@@ -913,7 +959,7 @@ class Land_smd_Panelak: Residential //2 Floor Brick Apartment Buildings
 
 class Land_smd_posed: Military //A1 "Deerstand"
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{-0.43,0.98,0.87},{0.5,0.36,0.87}};
 		zombieChance = 1.0;
 		minRoaming = 2;
@@ -923,7 +969,7 @@ class Land_smd_posed: Military //A1 "Deerstand"
 
 class Land_smd_dum_olezlina_open: Residential
 	{
-		lootChance = 1.00; //    0.25;
+		lootChance = 0.25;
 		lootPos[] = {{-7.13,3.41,-2.87},{-4.35,-0.79,-3.83},{-7.71,-0.04,-3.83},{-2.45,0.08,-3.83},{6.75,2.7,-3.83},{0.9,0.8,-3.83},{1.66,-2.56,-3.83},{6.99,-2.46,-3.77},{-2.49,-2.46,-0.44},{-6.6,-3.08,-0.02},{-6.72,-3.02,-0.43},{-7.35,2.96,-0.43},{7.5,-3.02,0.27},{1.11,-2.84,-0.43},{7.45,0.11,-0.43},{5.05,2.88,-0.43}};
 		minRoaming = 3;
 		maxRoaming = 6;
@@ -932,7 +978,7 @@ class Land_smd_dum_olezlina_open: Residential
 
 class Land_smd_sara_stodola2: Farm //Brown open Barn
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{-4.43,-1.76,-2.17},{-3.39,3.37,-2.17},{-1.13,2,-2.17},{4.36,-2.13,-2.15},{4.44,1.39,-2.14},{7.35,1.23,-2.5}}; 
 		zombieChance = 1.0;
 		minRoaming = 2;
@@ -942,8 +988,8 @@ class Land_smd_sara_stodola2: Farm //Brown open Barn
 
 class Land_smd_sara_zluty_statek_in: Residential //Yellow enterable Residence with 2 doors and porch
 	{
-		lootChance = 1.00; //    0.65;
-		lootPos[] = {{-9.19,1.21,-2.89},{-8.95,5.2,-2.88},{6.46,-2.73,-2.92},{9.1,2.83,-1.88},{8.71,5.47,-2.89},{-3.9,0.04,-2.88},{-3.9,0.18,-2.54},{-4.21,5.4,-2.88},{0.12,0.47,-2.89},{6.33,0.38,-2.87}}; 
+		lootChance = 0.25;
+		lootPos[] = {{-9.19,1.21,-2.89},{-8.95,5.2,-2.88},{6.46,-2.73,-2.92},{9.1,2.83,-1.88},{8.71,5.47,-2.89},{-3.9,0.04,-2.88},{-3.9,0.18,-2.54},{-4.21,5.4,-2.88},{0.12,0.47,-2.89},{6.33,0.38,-2.87},{6.42,5.66,-2.89},{8.93,0.64,-2.9},{6.86,2.87,-2.89},{3.51,5.66,-2.88},{3.33,3.63,-2.89},{2.28,1.34,-2.9},{-4,2.5,-2.88},{-1.94,2.84,-2.89},{-0.57,4.9,-2.88},{1.87,-2.19,-2.91}}; 
 		zombieChance = 1.0;
 		minRoaming = 2;
 		maxRoaming = 6;
@@ -952,7 +998,7 @@ class Land_smd_sara_zluty_statek_in: Residential //Yellow enterable Residence wi
 
 class Land_smd_shop1: Residential //Store Front - Electronica 
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{-1.46,-0.92,-1.95},{1.45,-0.75,-1.93}}; 
 		zombieChance = 0;
 		minRoaming = 0;
@@ -962,7 +1008,7 @@ class Land_smd_shop1: Residential //Store Front - Electronica
 
 class Land_smd_shop1_double: Residential //Store Front - Electronica 
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{-1.16,-0.83,-1.84},{1.42,-0.75,-1.88}};
 		zombieChance = 0;
 		minRoaming = 0;
@@ -972,7 +1018,7 @@ class Land_smd_shop1_double: Residential //Store Front - Electronica
 
 class Land_smd_shop2: Residential //Store Front - Tabaquria 
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{1.89,-0.9,-1.88},{-0.58,-0.86,-1.87}};
 		zombieChance = 0;
 		minRoaming = 0;
@@ -982,7 +1028,7 @@ class Land_smd_shop2: Residential //Store Front - Tabaquria
 
 class Land_smd_shop2_double: Residential //Store Front - Tabaquria 
 	{
-		lootChance = 1.00; //    0.65;
+		lootChance = 0.65;
 		lootPos[] = {{-1.14,-0.97,-1.86},{1.46,-0.87,-1.87}};
 		zombieChance = 0;
 		minRoaming = 0;
@@ -992,7 +1038,7 @@ class Land_smd_shop2_double: Residential //Store Front - Tabaquria
 
 class Land_smd_strazni_vez: Military //Blue Metal windowed Guard Tower 
 	{
-		lootChance = 1.00; //    0.66;
+		lootChance = 0.66;
 		lootPos[] = {{-1.68,-1.31,2},{-0.23,-0.91,1.41},{-1.61,0.48,1.41}};
 		minRoaming = 3;
 		maxRoaming = 8;
@@ -1001,7 +1047,7 @@ class Land_smd_strazni_vez: Military //Blue Metal windowed Guard Tower
 
 class Land_smd_ss_hangard_withdoor: Military //Desert SS Hangar with Roll up door
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{-13.7,-19.34,-5.87},{-10.98,-7.05,-5.87},{-5.4,-0.71,-5.87},{-11.68,6.55,-5.87},{-11.92,12.7,-5.87},{-13.14,20.03,-5.87},{-1.78,20.55,-5.87},{4.64,21.03,-5.87},{10.43,20.66,-5.87},{11.24,10.53,-5.87},{11.16,6.41,-5.87},{13.32,-1.9,-5.87},{11.38,-7.12,-5.87},{13.53,-15.42,-5.87},{12.17,-19.38,-5.87}};
 		zombieChance = 1;
 		minRoaming = 3;
@@ -1011,8 +1057,8 @@ class Land_smd_ss_hangard_withdoor: Military //Desert SS Hangar with Roll up doo
 	
 class Land_smd_zastavka_jih: Residential //Bus Stop Yellow 
 	{
-		lootChance = 1.00; //    0.65;
-		lootPos[] = {{-1.14,-0.97,-1.86},{1.46,-0.87,-1.87}};
+		lootChance = 0.25;
+		lootPos[] = {{-1.05,-0.2,-1.21},{1.23,-0.19,-1.2}};
 		minRoaming = 1;
 		maxRoaming = 2;
 		zedPos[] = {{-0.71,-2.25,-1.28},{-2.54,-1.59,-1.28}};
@@ -1020,8 +1066,8 @@ class Land_smd_zastavka_jih: Residential //Bus Stop Yellow
 
 class Land_smd_zastavka_sever: Residential //Bus Stop Brown
 	{
-		lootChance = 1.00; //    0.65;
-		lootPos[] = {{-1.11,0.21,-1.21},{1.16,0.35,-1.21},{1.85,-2.16,-1.28}};
+		lootChance = 0.25;
+		lootPos[] = {{-3.18,0.36,-0.8},{-0.73,0.53,-0.8},{1.05,0.84,-0.8},{3.11,0.58,-0.8}};
 		minRoaming = 1;
 		maxRoaming = 3;
 		zedPos[] = {{-0.71,-2.25,-1.28},{-2.54,-1.59,-1.28}};
@@ -1030,7 +1076,7 @@ class Land_smd_zastavka_sever: Residential //Bus Stop Brown
 
 class Land_SS_hangar: Military //Desert SS Hangar with Roll up door
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{11.97,-18.83,-5.87},{11.67,-9.13,-5.87},{13.42,-4.62,-5.87},{10.05,1.37,-5.87},{12.54,6.68,-5.87},{11.21,10.62,-5.87},{12.08,14.73,-5.87},{13.34,19.27,-5.87},{3.74,21.89,-5.87},{-3.05,21.22,-5.87},{-11.56,20.37,-5.87},{-14,4.74,-5.87},{-11.7,0.58,-5.87},{-13.01,-5.99,-5.87},{-11.47,-9.89,-5.87},{-13.28,-15.67,-5.87}};
 		zombieChance = 1;
 		minRoaming = 3;
@@ -1040,7 +1086,7 @@ class Land_SS_hangar: Military //Desert SS Hangar with Roll up door
 
 class Land_stodola_open: Farm //1 Floor grey stucco barn
 	{
-		lootChance = 1.00; //    0.33;
+		lootChance = 0.33;
 		lootPos[] = {{0.31,-5.25,-4.11},{0.81,2.78,-4.16},{-1.72,6.07,-4.13},{-3.53,4.58,-4.14},{-0.79,1.35,-4.21},{-2.89,-0.91,-4.16}};
 		zombieChance = 1;
 		minRoaming = 3;
@@ -1050,7 +1096,7 @@ class Land_stodola_open: Farm //1 Floor grey stucco barn
 
 class Land_stodola_old_open: Farm //3 Floor grey stucco barn
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{0.74,-3.43,-4.12},{3.07,-9.08,-4.12},{-2.3,-10.42,-5.08},{-1.8,-5.64,-5.08},{1.6,3.86,-5.08},{3.18,10.2,-5.08},{-2.22,9.55,-5.08},{2.81,8.24,0.51},{-1.47,10.7,2.96},{3.12,10.84,2.96},{-0.73,-3.37,-3.13},{4.26,-5.7,-0.02},{3.1,-10.73,2.96},{-1.48,-10.6,2.96},{-3.27,-10.88,-1},{4.72,-10.82,-1}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -1060,7 +1106,7 @@ class Land_stodola_old_open: Farm //3 Floor grey stucco barn
 
 class Land_Tovarna2: Industrial  // 4 story Industrial building with catwalk/stairs
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{-8.77,8.23,-5.56},{-12.51,7.72,-5.56},{-4.07,1.7,-3.9},{-12.87,1.44,-2.23},{-12.42,8.13,-2.23},{-12.72,4.11,-2.23},{-4,8.98,-2.23},{-7.33,8.44,-2.23},{-4.55,5.23,-2.23},{-11.47,2.92,1.67},{-11.07,8.14,1.67},{-3.95,8.74,1.56},{-2.68,3.45,3.42},{-13.2,-8.96,3.42},{-8.81,-0.44,0.4},{-12.13,-0.15,0.42},{-2.03,6.61,-5.56},{0.24,1.72,-5.6},{6.22,-3.95,-4.62},{-6.39,-8.24,-5.6},{-10.85,-6.91,-5.57},{-6.78,-1.73,-5.56},{-6.97,0.1,6.39},{-0.64,-3.16,6.68},{-4.46,6.98,5.14},{8.41,-0.23,-2.03},{10.47,-0.06,-5.64},{11.65,-5.44,-5.64},{10.1,-9.26,-5.64}};
 		zombieChance = 1;
 		minRoaming = 2;
@@ -1070,7 +1116,7 @@ class Land_Tovarna2: Industrial  // 4 story Industrial building with catwalk/sta
 
 class Land_vez: Military  // green metal deertsand
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{0,1.54,1.36}};
 		minRoaming = 0;
 		maxRoaming = 2;
@@ -1079,7 +1125,7 @@ class Land_vez: Military  // green metal deertsand
 
 class Land_ZalChata: Residential //worn down wooden house with porch
 	{
-		lootChance = 1.00; //    0.15;
+		lootChance = 0.15;
 		lootPos[] = {{-3.18,-2.75,-0.53},{-0.29,-2.11,-0.53},{1.9,-2.01,-0.53}};
 		zombieChance = 1;
 		minRoaming = 0;
@@ -1089,7 +1135,7 @@ class Land_ZalChata: Residential //worn down wooden house with porch
 	
 class MASH : Hospital
 	{
-		lootChance = 1.00; //    0.5;
+		lootChance = 0.5;
 		lootPos[] = {{-1.057,-1.807,-1.31},{0.627,1.834,-1.31}};
 		zombieChance = 1;
 		minRoaming = 1;
@@ -1099,7 +1145,7 @@ class MASH : Hospital
 	
 class MASH_EP1 : Hospital
 	{
-		lootChance = 1.00; //    0.5;
+		lootChance = 0.5;
 		lootPos[] = {{-0.67,0.95,-1.31},{1.68,-2.43,-1.31},{-1.76,-1.62,-1.31}};
 		zombieChance = 1;
 		minRoaming = 1;

@@ -1009,7 +1009,6 @@ class CfgBuildingLoot {
 			{"WeaponHolder_PartFueltank","object"},
 			{"WeaponHolder_PartGeneric","object"},
 			{"WeaponHolder_PartGlass","object"},
-			{"WeaponHolder_PartVRotor","object"},
 			{"WeaponHolder_PartWheel","object"}
 		};
 		itemChance[] =	{
@@ -1021,13 +1020,12 @@ class CfgBuildingLoot {
 			0.02, //ItemToolbox","weapon
 			0.02, //ItemWire","magazine
 			0.01, //WeaponHolder_ItemHatchet","object
-			0.01, //WeaponHolder_ItemJerrycan","object
+			0.03, //WeaponHolder_ItemJerrycan","object
 			0, //WeaponHolder_ItemPropane","object
 			0.04, //WeaponHolder_PartEngine","object
-			0.04, //WeaponHolder_PartFueltank","object
+			0.02, //WeaponHolder_PartFueltank","object
 			0.04, //WeaponHolder_PartGeneric","object
 			0.04, //WeaponHolder_PartGlass","object
-			0.04, //WeaponHolder_PartVRotor","object
 			0.04 //WeaponHolder_PartWheel","object
 		};
 	};
@@ -1172,6 +1170,52 @@ class CfgBuildingLoot {
 			0.04//vil_USPSD","weapon
 		};
 	};
+	class Mil_Industrial: Default {
+		zombieChance = 1;
+		zombieClass[] = {"z_worker1","z_worker2","z_worker3","z_RACSzombie13","z_RACSzombie6"};
+		maxRoaming = 2;
+		lootChance = 1;
+		lootPos[] = {};
+		itemType[] =	{
+			{"","militarySpecial"},
+			{"","trash"},
+			{"ItemCraftingBook2","weapon"},
+			{"ItemKnife","military"},
+			{"ItemNails","magazine"},
+			{"ItemTankTrap","magazine"},
+			{"ItemToolbox","weapon"},
+			{"ItemWire","magazine"},
+			{"RPG18","weapon"},
+			{"WeaponHolder_ItemJerrycan","object"},
+			{"WeaponHolder_ItemPropane","object"},
+			{"WeaponHolder_PartEngine","object"},
+			{"WeaponHolder_PartFueltank","object"},
+			{"WeaponHolder_PartGeneric","object"},
+			{"WeaponHolder_PartGlass","object"},
+			{"WeaponHolder_PartVRotor","object"},
+			{"WeaponHolder_PartWheel","object"}
+		};
+		itemChance[] =	{
+			0.04, //{"","militarySpecial
+			1.0, //","trash
+			0.02, //ItemCraftingBook2","weapon
+			0.02, //ItemKnife","military
+			0.01, //ItemNails","magazine
+			0.02, //ItemTankTrap","magazine
+			0.02, //ItemToolbox","weapon
+			0.02, //ItemWire","magazine
+			0.01, //RPG18","weapon
+			0.01, //WeaponHolder_ItemHatchet","object
+			0.01, //WeaponHolder_ItemJerrycan","object
+			0, //WeaponHolder_ItemPropane","object
+			0.01, //WeaponHolder_PartEngine","object
+			0.01, //WeaponHolder_PartFueltank","object
+			0.04, //WeaponHolder_PartGeneric","object
+			0.04, //WeaponHolder_PartGlass","object
+			0.04, //WeaponHolder_PartVRotor","object
+			0.01 //WeaponHolder_PartWheel","object
+		};
+	};	
 	class MilitarySpecial: Default {
 		zombieChance = 1;
 		minRoaming = 2;
