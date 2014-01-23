@@ -1,4 +1,528 @@
 class CfgVehicles {
+class Citizen1;
+class zZombie_Base : Citizen1 { //Heavy Dressed Russian 
+			scope = public;
+			glassesEnabled = 0;
+			vehicleClass = "Zombie";
+			faction = "smdz_dayzcivs";
+			displayName = "Hunter No Hat";
+			fsmDanger = "";
+			fsmFormation = "";
+			zombieLoot = "civilianZed";
+			moves = "CfgMovesZombie";
+			isMan = false;
+			weapons[] = {};
+			magazines[] = {};
+			sensitivity = 5;	// sensor sensitivity
+			sensitivityEar = 3;
+			identityTypes[] = {"zombie1", "zombie2"};
+			class TalkTopics {};
+			languages[] = {};
+			
+			class Eventhandlers {
+			
+				class Eventhandlers {
+					init = "_this call zombie_initialize;";
+					local = "if(_this select 1) then {[(position (_this select 0)),(_this select 0),true] execFSM '\z\AddOns\dayz_code\system\zombie_agent.fsm'};";
+				};
+				
+				class HitPoints {
+					class HitHead {
+						armor = 0.3;
+						material = -1;
+						name = "head_hit";
+						passThrough = true;
+						memoryPoint = "pilot";
+					};
+					
+					class HitBody : HitHead {
+						armor = 2;
+						name = "body";
+						memoryPoint = "aimPoint";
+					};
+					
+					class HitSpine : HitHead {
+						armor = 2;
+						name = "Spine2";
+						memoryPoint = "aimPoint";
+					};
+					
+					class HitHands : HitHead {
+						armor = 0.5;
+						material = -1;
+						name = "hands";
+						passThrough = true;
+					};
+					
+					class HitLArm : HitHands {
+						name = "LeftArm";
+						memoryPoint = "lelbow";
+					};
+					
+					class HitRArm : HitHands {
+						name = "RightArm";
+						memoryPoint = "relbow";
+					};
+					
+					class HitLForeArm : HitHands {
+						name = "LeftForeArm";
+						memoryPoint = "lwrist";
+					};
+					
+					class HitRForeArm : HitHands {
+						name = "RightForeArm";
+						memoryPoint = "rwrist";
+					};
+					
+					class HitLHand : HitHands {
+						name = "LeftHand";
+						memoryPoint = "LeftHandMiddle1";
+					};
+					
+					class HitRHand : HitHands {
+						name = "RightHand";
+						memoryPoint = "RightHandMiddle1";
+					};
+					
+					class HitLegs : HitHands {
+						name = "legs";
+						memoryPoint = "pelvis";
+					};
+					
+					class HitLLeg : HitHands {
+						name = "LeftLeg";
+						memoryPoint = "lknee";
+					};
+					
+					class HitLLegUp : HitHands {
+						name = "LeftUpLeg";
+						memoryPoint = "lfemur";
+					};
+					
+					class HitRLeg : HitHands {
+						name = "RightLeg";
+						memoryPoint = "rknee";
+					};
+					
+					class HitRLegUp : HitHands {
+						name = "RightUpLeg";
+						memoryPoint = "rfemur";
+					};
+				};
+			};
+		};
+		class z_doctor: zZombie_Base //labcoat mofo
+		{
+			displayName = "Doctor";
+			zombieLoot="medicalZed";
+		};
+		class z_hunter: zZombie_Base //Heavy Dressed Russian with Fur Hat
+		{
+			displayName = "Hunter";
+			zombieLoot="hunterZed";
+		};
+		class z_policeman: zZombie_Base   // Cherno PD
+		{
+			displayName = "Policeman";
+			zombieLoot="policemanZed";
+		};
+		class z_priest: zZombie_Base // orthodox Priest
+		{
+			displayName = "Priest";
+		};
+		class z_suit1: zZombie_Base // Black Suit Red Tie
+		{
+			displayName = "Black Suit";
+			zombieLoot="genericZed";
+		};
+		class z_suit2: z_suit1  // Brown Suit Blue Tie
+		{
+			displayName = "Brown Suit";
+			zombieLoot="civilianZed";
+		};
+		class z_teacher: z_doctor  // Blue Labcoat Brown shoes.
+		{
+			displayName = "Blue LabCoat";
+			zombieLoot="genericZed";
+		};
+		class z_villager1: zZombie_Base //mythbuster blue jeans blue shirt
+		{
+			displayName = "MythBuster Blue";
+			zombieLoot="civilianZed";
+		};
+		class z_villager2: z_villager1  //mythbuster blue jeans yellow shirt
+		{
+			displayName = "MythBuster Yellow";
+		};
+		class z_villager3: z_villager1 //mythbuster Brown Pants Green shirt
+		{
+			displayName = "MythBuster Green";
+		};
+		class z_worker1: zZombie_Base   // Red/Grey Turd Suit
+		{
+			displayName = "Overall Red/Grey";
+			zombieLoot="civilianZed";
+		};
+		class z_worker2: z_worker1    // Brown Turd Suit
+		{
+			displayName = "Overall Brown";
+		};
+		class z_worker3: z_worker1    // blue Turd Suit
+		{
+			displayName = "Overall Blue";
+		};
+		class z_sah_civilian1_pants: zZombie_Base //Blue/white soccer Jersey soccer 
+		{
+			scope = 2;
+			faction = "smdz_saracivs";
+			model = "\sara_civilians\civil_1_tshirt.p3d";
+			vehicleClass = "Sah_Zed_Pants";
+			displayName = "Blue Soccer";
+			class Wounds
+			{
+				tex[] = {};
+				mat[] = {"sara_civilians\data\civil_tshirt_body.rvmat","sara_civilians\data\civil_tshirt_body_wound1.rvmat","sara_civilians\data\civil_tshirt_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound1.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound2.rvmat"};
+			};
+		};	
+		class z_sah_civilian2_pants: z_sah_civilian1_pants   //  Black Metal shirt
+		{
+			model = "\sara_civilians\civil_2_tshirt.p3d";
+			displayName = "Black Metal";
+		};
+		class z_sah_civilian3_pants: z_sah_civilian1_pants   //  Green Bananaman Shirt
+		{
+			model = "\sara_civilians\civil_3_tshirt.p3d";
+			displayName = "Banana Man";
+		};
+		class z_sah_civilian4_pants: z_sah_civilian1_pants   //  Orange Cowboy Shirt
+		{
+			model = "\sara_civilians\civil_4_tshirt.p3d";
+			displayName = "Orange Cowboy";
+		};
+		class z_sah_civilian5_pants: z_sah_civilian1_pants   //  Grey Nagova Shirt
+		{
+			model = "\sara_civilians\civil_5_tshirt.p3d";
+			displayName = "Grey Nagova";
+		};
+		class z_sah_civilian6_pants: z_sah_civilian1_pants   //  Orange Pepe shirt
+		{
+			model = "\sara_civilians\civil_6_tshirt.p3d";
+			displayName = "Orange Pepe";
+		};
+		class z_sah_civilian7_pants: z_sah_civilian1_pants   //  Black redstar shirt
+		{
+			model = "\sara_civilians\civil_7_tshirt.p3d";
+			displayName = "Black RedStar";
+		};
+		class z_sah_civilian1_shorts: zZombie_Base
+		{
+			scope = 2;
+			faction = "smdz_saracivs";
+			model = "\sara_civilians\civil_1_tshirt_shorts.p3d";
+			vehicleClass = "Sah_Zed_Shorts";
+			displayName = "Blue Soccer";
+			class Wounds
+			{
+				tex[] = {};
+				mat[] = {"sara_civilians\data\civil_tshirt_shorts_body.rvmat","sara_civilians\data\civil_tshirt_shorts_body_wound1.rvmat","sara_civilians\data\civil_tshirt_shorts_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound1.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound2.rvmat"};
+			};
+		};
+		class z_sah_civilian2_shorts: z_sah_civilian1_shorts
+		{
+			model = "\sara_civilians\civil_2_tshirt_shorts.p3d";
+			displayName = "Black Metal";
+		};
+		class z_sah_civilian3_shorts: z_sah_civilian1_shorts
+		{
+			model = "\sara_civilians\civil_3_tshirt_shorts.p3d";
+			displayName = "Banana Man";
+		};
+		class z_sah_civilian4_shorts: z_sah_civilian1_shorts
+		{
+			model = "\sara_civilians\civil_4_tshirt_shorts.p3d";
+			displayName = "Orange Cowboy";
+		};
+		class z_sah_civilian5_shorts: z_sah_civilian1_shorts
+		{
+			model = "\sara_civilians\civil_5_tshirt_shorts.p3d";
+			displayName = "Grey Nagova";
+		};
+		class z_sah_civilian6_shorts: z_sah_civilian1_shorts
+		{
+			model = "\sara_civilians\civil_6_tshirt_shorts.p3d";
+			displayName = "Orange Pepe";
+		};
+		class z_sah_civilian7_shorts: z_sah_civilian1_shorts
+		{
+			model = "\sara_civilians\civil_7_tshirt_shorts.p3d";
+			displayName = "Black RedStar";////////// FACTION - Desc - Head Gear - Color of Vest
+		};//////////////////////////////////////// Ex. RACS - Tan Camo - Helmet - Black Vest
+		class z_soldier: zZombie_Base {
+			scope = public;
+			glassesEnabled = 0;
+			displayName = "Zombie Soldier";
+			fsmDanger = "";
+			fsmFormation = "";
+			zombieLoot = "militaryZed";
+			moves = "CfgMovesZombie";
+			isMan = false;
+			weapons[] = {};
+			magazines[] = {};
+			sensitivity = 5.5;	// sensor sensitivity
+			sensitivityEar = 4;
+			identityTypes[] = {"Zombie1","Zombie2"};
+			class TalkTopics {};
+			languages[] = {};
+			
+			class Eventhandlers {
+			
+				class Eventhandlers {
+					init = "_this call zombie_initialize;";
+					local = "if(_this select 1) then {[(position (_this select 0)),(_this select 0),true] execFSM '\z\AddOns\dayz_code\system\zombie_agent.fsm'};";
+				};
+				
+				class HitPoints {
+					class HitHead
+					{
+						armor = 40;
+						material = 100;
+						name = "head_hit";
+						passThrough = 1;
+					};
+					class HitBody
+					{
+						armor = 100;
+						material = 1000;
+						name = "body";
+						passThrough = 0;
+					};
+						
+					class HitSpine : HitHead {
+						armor = 8;
+						name = "Spine2";
+						memoryPoint = "aimPoint";
+					};
+				};
+			};
+		};
+		class z_soldier_heavy: zZombie_Base {
+			scope = public;
+			glassesEnabled = 0;
+			displayName = "Zombie Heavy";
+			fsmDanger = "";
+			fsmFormation = "";
+			zombieLoot = "militaryZed";
+			moves = "CfgMovesZombie";
+			isMan = false;
+			weapons[] = {};
+			magazines[] = {};
+			sensitivity = 5;	// sensor sensitivity
+			sensitivityEar = 4;
+			identityTypes[] = {"Zombie1","Zombie2"};
+			class TalkTopics {};
+			languages[] = {};
+			
+			class Eventhandlers {
+			
+				class Eventhandlers {
+					init = "_this call zombie_initialize;";
+					local = "if(_this select 1) then {[(position (_this select 0)),(_this select 0),true] execFSM '\z\AddOns\dayz_code\system\zombie_agent.fsm'};";
+				};
+				
+				class HitPoints {
+					class HitHead
+					{
+						armor = 80;
+						material = 400;
+						name = "head_hit";
+						passThrough = 1;
+					};
+					class HitBody
+					{
+						armor = 800;
+						material = 8000;
+						name = "body";
+						passThrough = 0;
+					};
+						
+					class HitSpine : HitHead {
+						armor = 8;
+						name = "Spine2";
+						memoryPoint = "aimPoint";
+					};					
+				};
+			};
+		};
+		class z_RACSzombie : zZombie_Base{	 ///// RACS Tan Camo - Black Helmet - Black Vest
+			scope = public;
+			glassesEnabled = 0;
+			vehicleClass = "racz_heavy";
+			displayName = "SWAT BLACK/TAN";
+			faction = "smdz_racs";
+			fsmDanger = "";
+			fsmFormation = "";
+			model = "\vil_police\vil_swat";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_racs_regular_co.paa"};
+			zombieLoot = "militarySpecialZed";
+			moves = "CfgMovesZombie";
+			isMan = false;
+			weapons[] = {};
+			magazines[] = {};
+			sensitivity = 5;	// sensor sensitivity
+			sensitivityEar = 4;
+			identityTypes[] = {"Zombie1","Zombie2"};
+			class TalkTopics {};
+			languages[] = {};		
+			class Eventhandlers 
+			{
+				init = "_this call zombie_initialize;";
+				local = "if(_this select 1) then {[(position (_this select 0)),(_this select 0),true] execFSM '\z\AddOns\dayz_code\system\zombie_agent.fsm'};";
+			};
+
+			class HitPoints 
+			{
+				class HitHead
+				{
+					armor = 80;
+					material = 400;
+					name = "head_hit";
+					passThrough = 1;
+				};
+				class HitBody
+				{
+					armor = 800;
+					material = 8000;
+					name = "body";
+					passThrough = 0;
+				};
+			};	
+			class Wounds
+			{
+				tex[] = {};
+				mat[] = {"ca\characters2\Blufor\data\Soldier.RVmat","ca\characters2\Blufor\data\Soldier_W1.RVmat","ca\characters2\Blufor\data\Soldier_W2.RVmat","ca\characters2\Blufor\data\Soldier_Light.RVmat","ca\characters2\Blufor\data\Soldier_Light_W1.RVmat","ca\characters2\Blufor\data\Soldier_Light_W2.RVmat","ca\characters2\Blufor\data\Soldier_EQUIP_Light.RVmat","ca\characters2\Blufor\data\Soldier_Light_EQUIP_W2.RVmat","ca\characters2\Blufor\data\Soldier_Light_EQUIP_W1.RVmat","ca\characters2\Blufor\data\Soldier_GL.RVmat","ca\characters2\Blufor\data\Soldier_GL_W1.RVmat","ca\characters2\Blufor\data\Soldier_GL_W2.RVmat","ca\characters2\Blufor\data\Soldier_NCO.RVmat","ca\characters2\Blufor\data\Soldier_NCO_W1.RVmat","ca\characters2\Blufor\data\Soldier_NCO_W2.RVmat","ca\characters2\Blufor\data\Soldier_MG.RVmat","ca\characters2\Blufor\data\Soldier_MG_W1.RVmat","ca\characters2\Blufor\data\Soldier_MG_W2.RVmat","ca\characters2\Blufor\data\Soldier_AT.RVmat","ca\characters2\Blufor\data\Soldier_AT_W1.RVmat","ca\characters2\Blufor\data\Soldier_AT_W2.RVmat","ca\characters2\Blufor\data\Soldier_CO.RVmat","ca\characters2\Blufor\data\Soldier_CO_W1.RVmat","ca\characters2\Blufor\data\Soldier_CO_W2.RVmat","ca\characters2\Blufor\data\Soldier_CO_EQUIP.RVmat","ca\characters2\Blufor\data\Soldier_CO_EQUIP_W1.RVmat","ca\characters2\Blufor\data\Soldier_CO_EQUIP_W2.RVmat","ca\characters2\Blufor\data\Soldier_Pilot.RVmat","ca\characters2\Blufor\data\Soldier_Pilot_W1.RVmat","ca\characters2\Blufor\data\Soldier_Pilot_W2.RVmat","ca\characters2\Blufor\data\Soldier_Pilot_EQUIP.RVmat","ca\characters2\Blufor\data\Soldier_Pilot_EQUIP_W1.RVmat","ca\characters2\Blufor\data\Soldier_Pilot_EQUIP_W2.RVmat","ca\characters2\Blufor\data\Soldier_Guard.RVmat","ca\characters2\Blufor\data\Soldier_Guard_W1.RVmat","ca\characters2\Blufor\data\Soldier_Guard_W2.RVmat","ca\characters2\Blufor\data\Soldier_Crew.RVmat","ca\characters2\Blufor\data\Soldier_Crew_W1.RVmat","ca\characters2\Blufor\data\Soldier_Crew_W2.RVmat","ca\characters2\Blufor\data\Soldier_Crew_EQUIP.RVmat","ca\characters2\Blufor\data\Soldier_Crew_EQUIP_W1.RVmat","ca\characters2\Blufor\data\Soldier_Crew_EQUIP_W2.RVmat","ca\characters2\Blufor\data\Soldier_Guard_EQUIP.RVmat","ca\characters2\Blufor\data\Soldier_Guard_EQUIP_W1.RVmat","ca\characters2\Blufor\data\Soldier_Guard_EQUIP_W2.RVmat"};
+			};
+		};	
+		class z_RACSzombie2 : zZombie_Base { //RSPD Sherriff
+			displayName = "Sherriff";
+			faction = "smdz_rspd";
+			zombieLoot = "policemanZed";
+			model = "\vil_police\vil_cop3";
+		};	
+		class z_RACSzombie3 : z_RACSzombie {	 //RSPD Night Camo - Black Helmet - Black Vest
+			displayName = "SWAT NIGHT CAMO";
+			faction = "smdz_rspd";
+			zombieLoot = "policemanZed";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_swat_co.paa"};
+		};	
+		class z_RACSzombie4 : z_soldier {	 //BLOPS Flat Grey - NO Helmet - Black Vest
+			displayName = "MP GREY";
+			faction = "smdz_blops";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_us_blackops_co.paa"};
+			model = "\vil_police\vil_cop";
+		};	
+		class z_RACSzombie5 : z_soldier {	 //RACS Flat Tan - NO Helmet - Black Vest
+			displayName = "MP BLACK/TAN";
+			faction = "smdz_racs";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_co.paa"};
+			model = "\vil_police\vil_cop";
+		};	
+		class z_RACSzombie6 : z_soldier {	 //RACS Flat Tan - NO Helmet - Blended Vest
+			displayName = "MP TAN";
+			faction = "smdz_racs";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_co.paa"};
+			model = "\vil_police\vil_cop";
+		};	
+		class z_RACSzombie7 : z_soldier {	 //RACS Digi Tan Camo - NO Helmet - Blended Vest
+			displayName = "MP TAN DIGI";
+			faction = "smdz_racs";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_digi_co.paa"};
+			model = "\vil_police\vil_cop";
+		};	
+		class z_RACSzombie8 : z_RACSzombie {	 //RACS Tan Digi Camo - Black Helmet - Black Vest 
+			displayName = "SWAT TAN DIGI";
+			faction = "smdz_racs";
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_racs_regular_digi_co.paa"};
+		};	
+		class z_RACSzombie9 : z_soldier {	 //BLOPS Grey Digi Camo - NO Helmet - Blended Vest
+			displayName = "MP BLACK DIGI";
+			faction = "smdz_blops";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_us_blackops_mp_digi_co.paa"};
+			model = "\vil_police\vil_cop";
+		};	
+		class z_RACSzombie10 : z_RACSzombie {	 //BLOPS Grey Digi Camo - Black Helmet - Black Vest
+			displayName = "SWAT DIGI";
+			faction = "smdz_blops";
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_us_blackops_digi_co.paa"};
+		};	
+		class z_RACSzombie11 : z_RACSzombie {	 //RSPD Black Digi Camo - Black Helmet - Black Vest
+			displayName = "SWAT BLACK DIGI";
+			faction = "smdz_rspd";
+			zombieLoot = "policemanZed";
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_swat_digi_co.paa"};
+		};
+		class z_RACSzombie12 : z_soldier {	 //RSPD Blue Digi Camo - NO Helmet - Black Vest
+			displayName = "MP BLUE DIGI";
+			faction = "smdz_rspd";
+			zombieLoot = "policemanZed";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_rspd_blue_digi_co.paa"};
+			model = "\vil_police\vil_cop";
+		};
+		class z_RACSzombie13 : z_soldier {	 //RSPD Flat Blue - NO Helmet - Black Vest 
+			displayName = "MP BLUE";
+			faction = "smdz_rspd";
+			zombieLoot = "policemanZed";
+			hiddenSelections[] = {"Camo01"};
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_rspd_blue_co.paa"};
+			model = "\vil_police\vil_cop";
+		};
+		class z_RACSzombie14 : z_RACSzombie {	 //RSPD Flat Black - Black Helmet - Black Vest
+			displayName = "SWAT BLACK";
+			faction = "smdz_rspd";
+			zombieLoot = "policemanZed";
+			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_black_co.paa"};
+		};				
+		/*new Zeds*//*
+		class z_woman1 : zZombie_Base {
+			model = "\ca\characters2\civil\Woman\Hooker\Hooker";
+			faceType = "WomanZedHead";
+			woman = true;
+			moves = "CfgMovesZombie2";
+			identityTypes[] = {"WomanZed"};
+			portrait = "\Ca\characters\data\portraits\comBarHead_civ_woman_ca";
+			hiddenSelections[] = {"Camo"};
+			//hiddenSelectionsTextures[] = {"\Ca\characters2\Civil\Woman\Hooker\data\Hooker1_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd_assets\infected\textures\hooker1_co.paa"};
+			zombieLoot = "generic";
+			displayName = "HookerZ";
+			faction = "smdz_saracivs";		
+			minHeadTurnAI = -40;
+			maxHeadTurnAI = 40;
+			leftArmToElbow[] = {"LeftArm", 0.5, "LeftArmRoll", 0};
+			leftArmFromElbow[] = {"LeftForeArm", 0, "LeftForeArmRoll", 0.5};
+			leftWrist = "LeftHand";
+			leftShoulder = "LeftShoulder";
+			leftHand[] = {"LeftHandThumb3", "LeftHandThumb2", "LeftHandThumb1", "LeftHandIndex3", "LeftHandIndex2", "LeftHandIndex1", "LeftHandMiddle3", "LeftHandMiddle2", "LeftHandMiddle1", "LeftHandRing3", "LeftHandRing2", "LeftHandRing1", "LeftInHandRing", "LeftHandPinky3", "LeftHandPinky2", "LeftHandPinky1"};
+			leftArmPoints[] = {"LeftShoulder", "lelbow", "lelbow_axis", "lwrist"};
+			rightArmToElbow[] = {"rightArm", 0.5, "rightArmRoll", 0};
+			rightArmFromElbow[] = {"rightForeArm", 0, "rightForeArmRoll", 0.5};
+			rightWrist = "rightHand";
+			rightShoulder = "rightShoulder";
+			rightHand[] = {"rightHandThumb3", "rightHandThumb2", "rightHandThumb1", "rightHandIndex3", "rightHandIndex2", "rightHandIndex1", "rightHandMiddle3", "rightHandMiddle2", "rightHandMiddle1", "rightHandRing3", "rightHandRing2", "rightHandRing1", "rightInHandRing", "rightHandPinky3", "rightHandPinky2", "rightHandPinky1"};
+			rightArmPoints[] = {"rightShoulder", "relbow", "relbow_axis", "rwrist"};
+
+			class Wounds {
+				tex[] = {};
+				mat[] = {"Ca\characters2\Civil\Woman\Hooker\Data\Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w1_Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w2_Hooker.rvmat"};
+			};
+		};*/
 	class Survivor2_DZ;
 	class AllVehicles;
 	class Air : AllVehicles 
