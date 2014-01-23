@@ -126,7 +126,7 @@ class CfgMusic
 		class AH6X_EP1;   //external class reference		
 		class BAF_Soldier_SniperH_W;   //external class reference		
 		class C130J;   //external class reference
-		class Citizen1;	// External class referenceclass 
+		//class Citizen1;	// External class referenceclass 
 		class GUE_Soldier_Scout;
 		class HMMWV;
 		class HMMWV_M2;
@@ -946,8 +946,8 @@ class CfgMusic
 			displayname = "SUV RACS Digital";
 			hiddenselections[] = {"Camo"};
 			hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_veh_suv_racs_digi_body_co.paa"};
-		};///////////////////////////////////////////////////// BEGIN SMD VEHICLE DEFINITIONS/////////////////////////////////	
-		class zZombie_Base : Citizen1 { //Heavy Dressed Russian 
+		};///////////////////////////////////////////////////// BEGIN SMD VEHICLE DEFINITIONS////////////////////////////////
+		/*class zZombie_Base : Citizen1 { //Heavy Dressed Russian 
 			scope = public;
 			glassesEnabled = 0;
 			vehicleClass = "Zombie";
@@ -1258,7 +1258,7 @@ class CfgMusic
 			displayName = "Zombie Heavy";
 			fsmDanger = "";
 			fsmFormation = "";
-			zombieLoot = "militaryZed";
+			zombieLoot = "militarySpecialZed";
 			moves = "CfgMovesZombie";
 			isMan = false;
 			weapons[] = {};
@@ -1356,84 +1356,93 @@ class CfgMusic
 			zombieLoot = "policemanZed";
 			model = "\vil_police\vil_cop3";
 		};	
-		class z_RACSzombie3 : z_RACSzombie {	 //RSPD Night Camo - Black Helmet - Black Vest
+		class z_RACSzombie3 : zZombie_Base {	 //RSPD Night Camo - Black Helmet - Black Vest
 			displayName = "SWAT NIGHT CAMO";
 			faction = "smdz_rspd";
-			zombieLoot = "policemanZed";
+			zombieLoot = "militarySpecialZed";
+			model = "\vil_police\vil_swat";
 			hiddenSelections[] = {"Camo01"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_swat_co.paa"};
 		};	
-		class z_RACSzombie4 : z_soldier {	 //BLOPS Flat Grey - NO Helmet - Black Vest
+		class z_RACSzombie4 : zZombie_Base {	 //BLOPS Flat Grey - NO Helmet - Black Vest
 			displayName = "MP GREY";
 			faction = "smdz_blops";
+			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_us_blackops_co.paa"};
-			model = "\vil_police\vil_cop";
 		};	
-		class z_RACSzombie5 : z_soldier {	 //RACS Flat Tan - NO Helmet - Black Vest
+		class z_RACSzombie5 : zZombie_Base {	 //RACS Flat Tan - NO Helmet - Black Vest
 			displayName = "MP BLACK/TAN";
 			faction = "smdz_racs";
+			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_co.paa"};
-			model = "\vil_police\vil_cop";
 		};	
-		class z_RACSzombie6 : z_soldier {	 //RACS Flat Tan - NO Helmet - Blended Vest
+		class z_RACSzombie6 : zZombie_Base {	 //RACS Flat Tan - NO Helmet - Blended Vest
 			displayName = "MP TAN";
 			faction = "smdz_racs";
+			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_co.paa"};
-			model = "\vil_police\vil_cop";
 		};	
-		class z_RACSzombie7 : z_soldier {	 //RACS Digi Tan Camo - NO Helmet - Blended Vest
+		class z_RACSzombie7 : zZombie_Base {	 //RACS Digi Tan Camo - NO Helmet - Blended Vest
 			displayName = "MP TAN DIGI";
 			faction = "smdz_racs";
+			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_digi_co.paa"};
-			model = "\vil_police\vil_cop";
 		};	
-		class z_RACSzombie8 : z_RACSzombie {	 //RACS Tan Digi Camo - Black Helmet - Black Vest 
+		class z_RACSzombie8 : zZombie_Base {	 //RACS Tan Digi Camo - Black Helmet - Black Vest 
 			displayName = "SWAT TAN DIGI";
 			faction = "smdz_racs";
+			model = "\vil_police\vil_swat";
+			hiddenSelections[] = {"Camo01"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_racs_regular_digi_co.paa"};
 		};	
-		class z_RACSzombie9 : z_soldier {	 //BLOPS Grey Digi Camo - NO Helmet - Blended Vest
+		class z_RACSzombie9 : zZombie_Base {	 //BLOPS Grey Digi Camo - NO Helmet - Blended Vest
 			displayName = "MP BLACK DIGI";
 			faction = "smdz_blops";
+			model = "\vil_police\vil_cop";
 			hiddenSelections[] = {"Camo01"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_us_blackops_mp_digi_co.paa"};
-			model = "\vil_police\vil_cop";
 		};	
-		class z_RACSzombie10 : z_RACSzombie {	 //BLOPS Grey Digi Camo - Black Helmet - Black Vest
+		class z_RACSzombie10 : zZombie_Base {	 //BLOPS Grey Digi Camo - Black Helmet - Black Vest
 			displayName = "SWAT DIGI";
 			faction = "smdz_blops";
+			model = "\vil_police\vil_swat";
+			zombieLoot = "militarySpecialZed";
+			hiddenSelections[] = {"Camo01"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_us_blackops_digi_co.paa"};
 		};	
-		class z_RACSzombie11 : z_RACSzombie {	 //RSPD Black Digi Camo - Black Helmet - Black Vest
+		class z_RACSzombie11 : zZombie_Base {	 //RSPD Black Digi Camo - Black Helmet - Black Vest
 			displayName = "SWAT BLACK DIGI";
 			faction = "smdz_rspd";
-			zombieLoot = "policemanZed";
+			model = "\vil_police\vil_swat";
+			zombieLoot = "militarySpecialZed";
+			hiddenSelections[] = {"Camo01"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_swat_digi_co.paa"};
 		};
-		class z_RACSzombie12 : z_soldier {	 //RSPD Blue Digi Camo - NO Helmet - Black Vest
+		class z_RACSzombie12 : zZombie_Base {	 //RSPD Blue Digi Camo - NO Helmet - Black Vest
 			displayName = "MP BLUE DIGI";
 			faction = "smdz_rspd";
+			model = "\vil_police\vil_cop";
 			zombieLoot = "policemanZed";
 			hiddenSelections[] = {"Camo01"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_rspd_blue_digi_co.paa"};
-			model = "\vil_police\vil_cop";
 		};
-		class z_RACSzombie13 : z_soldier {	 //RSPD Flat Blue - NO Helmet - Black Vest 
+		class z_RACSzombie13 : zZombie_Base {	 //RSPD Flat Blue - NO Helmet - Black Vest 
 			displayName = "MP BLUE";
 			faction = "smdz_rspd";
+			model = "\vil_police\vil_cop";
 			zombieLoot = "policemanZed";
 			hiddenSelections[] = {"Camo01"};
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_rspd_blue_co.paa"};
-			model = "\vil_police\vil_cop";
 		};
-		class z_RACSzombie14 : z_RACSzombie {	 //RSPD Flat Black - Black Helmet - Black Vest
+		class z_RACSzombie14 : zZombie_Base {	 //RSPD Flat Black - Black Helmet - Black Vest
 			displayName = "SWAT BLACK";
 			faction = "smdz_rspd";
-			zombieLoot = "policemanZed";
+			model = "\vil_police\vil_swat";
+			zombieLoot = "militarySpecialZed";
 			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_black_co.paa"};
 		};				
 		/*new Zeds*//*
