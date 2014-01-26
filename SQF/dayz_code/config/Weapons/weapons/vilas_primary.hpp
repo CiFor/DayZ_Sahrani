@@ -1826,7 +1826,7 @@
 	};
 
 	class vil_D_C7_AG : M16A2GL {
-		picture = "\smd_assets\weapons\icons\textures\C7AG_ico.paa";
+		picture = "\smd_assets\weapons\icons\C7AG_ico.paa";
 		displayName = "C7 AG";
 		scope = 2;		
 		modes[] = {"Single", "FullAuto"};
