@@ -816,7 +816,6 @@ class CfgLoot {
 	};	
 	hunterZed[] = {
 		{
-			"TrashTinCan",
 			"TrashJackDaniels",
 			"FoodMRE",
 			"FoodNutmix",
@@ -833,7 +832,6 @@ class CfgLoot {
 			"ItemWaterbottleUnfilled"			
 		},
 		{
-			0.06, //TrashTinCan
 			0.04, //TrashJackDaniels
 			0.04, //FoodMRE
 			0.1, //FoodNutmix
@@ -870,7 +868,6 @@ class CfgLoot {
 	};
 	medicalZed[] = {
 		{
-			"TrashTinCan",
 			"TrashJackDaniels",
 			"ItemBandage",
 			"ItemPainkiller",
@@ -880,7 +877,6 @@ class CfgLoot {
 			"ItemHeatPack"
 		},
 		{
-			0.06, //TrashTinCan
 			0.04, //TrashJackDaniels
 			0.8, //ItemBandage
 			0.5, //ItemPainkiller
@@ -1012,7 +1008,6 @@ class CfgLoot {
 	};
 	militaryZed[] = {
 		{
-			"TrashTinCan",
 			"ItemWaterbottle",
 			"ItemWaterbottleUnfilled",
 			"FoodMRE",
@@ -1065,7 +1060,6 @@ class CfgLoot {
 			"HandChemRed"			
 		},
 		{
-			0.18, //TrashTinCan
 			0.01, //ItemWaterbottle
 			0.01, //ItemWaterbottleUnfilled
 			0.01, //FoodMRE
@@ -1243,7 +1237,6 @@ class CfgLoot {
 	};
 	militarySpecialZed[] = {
 		{
-			"TrashTinCan",
 			"ItemWaterbottle",
 			"ItemWaterbottleUnfilled",
 			"FoodMRE",
@@ -1296,7 +1289,6 @@ class CfgLoot {
 			"HandChemRed"			
 		},
 		{
-			0.18, //TrashTinCan
 			0.01, //ItemWaterbottle
 			0.01, //ItemWaterbottleUnfilled
 			0.04, //FoodMRE

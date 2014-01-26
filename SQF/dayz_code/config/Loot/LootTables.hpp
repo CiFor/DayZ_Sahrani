@@ -23,7 +23,7 @@ class CfgBuildingLoot {
 	class Crash1: Default {
 		zombieChance = 1;
 		maxRoaming = 2;
-		zombieClass[] = {"z_RACSzombie4","z_RACSzombie9","z_RACSzombie10"}; 
+		zombieClass[] = {"z_RACSzombie3","z_RACSzombie4","z_RACSzombie9","z_RACSzombie10","z_RACSzombie11","z_RACSzombie14"}; 
 		lootChance = 1;
 		lootPos[] = {};
 		itemType[] =	{
@@ -260,7 +260,7 @@ class CfgBuildingLoot {
 	class Crash1_No50s: Default {
 		zombieChance = 1;
 		maxRoaming = 2;
-		zombieClass[] = {"z_RACSzombie4","z_RACSzombie9","z_RACSzombie10"}; 
+		zombieClass[] = {"z_RACSzombie3","z_RACSzombie4","z_RACSzombie9","z_RACSzombie10","z_RACSzombie11","z_RACSzombie14"}; 
 		lootChance = 1;
 		lootPos[] = {};
 		itemType[] =	{		
@@ -941,7 +941,7 @@ class CfgBuildingLoot {
 		zombieChance = 1;
 		minRoaming = 2;
 		maxRoaming = 6;
-		zombieClass[] = {"z_doctor","z_priest","z_suit1","z_villager1","z_worker3","z_RACSzombie12","z_RACSzombie6"};
+		zombieClass[] = {"z_doctor","z_priest","z_suit1","z_villager1","z_worker3","z_RACSzombie12","z_RACSzombie13","z_RACSzombie6"};
 
 		lootChance = 1;
 		lootPos[] = {};
@@ -990,7 +990,7 @@ class CfgBuildingLoot {
 	};
 	class Industrial: Default {
 		zombieChance = 1;
-		zombieClass[] = {"z_worker1","z_worker2","z_worker3","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_RACSzombie13","z_RACSzombie6"};
+		zombieClass[] = {"z_worker1","z_worker2","z_worker3","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_RACSzombie13","z_RACSzombie13","z_RACSzombie6"};
 		maxRoaming = 2;
 		lootChance = 1;
 		lootPos[] = {};
@@ -1032,7 +1032,7 @@ class CfgBuildingLoot {
 	class Military: Default {
 		zombieChance = 1;
 		maxRoaming = 6;
-		zombieClass[] = {"z_RACSzombie","z_RACSzombie3","z_RACSzombie5","z_RACSzombie6","z_RACSzombie7","z_RACSzombie8","z_RACSzombie11","z_RACSzombie12"};
+		zombieClass[] = {"z_RACSzombie","z_RACSzombie5","z_RACSzombie6","z_RACSzombie7","z_RACSzombie8","z_RACSzombie12","z_RACSzombie13"};
 		lootChance = 1;
 		lootPos[] = {};
 		itemType[] =	{
@@ -1172,7 +1172,7 @@ class CfgBuildingLoot {
 	};
 	class Mil_Industrial: Default {
 		zombieChance = 1;
-		zombieClass[] = {"z_worker1","z_worker2","z_worker3","z_RACSzombie13","z_RACSzombie6"};
+		zombieClass[] = {"z_worker1","z_worker2","z_worker3","z_RACSzombie5","z_RACSzombie13","z_RACSzombie6"};
 		maxRoaming = 2;
 		lootChance = 1;
 		lootPos[] = {};
@@ -1220,7 +1220,7 @@ class CfgBuildingLoot {
 		zombieChance = 1;
 		minRoaming = 2;
 		maxRoaming = 6;
-		zombieClass[] = {"z_RACSzombie3","z_RACSzombie10","z_RACSzombie11","z_RACSzombie14"};
+		zombieClass[] = {"z_RACSzombie","z_RACSzombie7","z_RACSzombie8"};
 		lootChance = 1;
 		lootPos[] = {};
 		itemType[] =	{
@@ -1393,7 +1393,7 @@ class CfgBuildingLoot {
 	class Residential: Default {
 		zombieChance = 1;
 		maxRoaming = 2;
-		zombieClass[] = {"z_sah_civilian1_shorts","z_sah_civilian2_shorts","z_sah_civilian3_shorts","z_sah_civilian4_shorts","z_sah_civilian5_shorts","z_sah_civilian6_shorts","z_sah_civilian7_shorts","z_sah_civilian1_pants","z_sah_civilian2_pants","z_sah_civilian3_pants","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_sah_civilian7_pants","z_RACSzombie12","z_RACSzombie6"};
+		zombieClass[] = {"z_sah_civilian1_shorts","z_sah_civilian2_shorts","z_sah_civilian3_shorts","z_sah_civilian4_shorts","z_sah_civilian5_shorts","z_sah_civilian6_shorts","z_sah_civilian7_shorts","z_sah_civilian1_pants","z_sah_civilian2_pants","z_sah_civilian3_pants","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_sah_civilian7_pants","z_RACSzombie12","z_RACSzombie13","z_RACSzombie14"};
 		lootChance = 1;
 		lootPos[] = {};
 		itemType[] =	{
@@ -1487,14 +1487,14 @@ class CfgBuildingLoot {
 	class Office: Residential {
 		minRoaming = 1;
 		maxRoaming = 3;
-		zombieClass[] = {"z_suit1","z_suit2","z_worker2","z_RACSzombie12","z_RACSzombie6"};
+		zombieClass[] = {"z_suit1","z_suit2","z_worker2","z_RACSzombie12","z_RACSzombie13"};
 	};
 	class Supermarket: Default {
 		lootChance = 1;
 		minRoaming = 2;
 		maxRoaming = 5;
 		zombieChance = 1;
-		zombieClass[] = {"z_sah_civilian1_shorts","z_sah_civilian2_shorts","z_sah_civilian3_shorts","z_sah_civilian4_shorts","z_sah_civilian5_shorts","z_sah_civilian6_shorts","z_sah_civilian7_shorts","z_sah_civilian1_pants","z_sah_civilian2_pants","z_sah_civilian3_pants","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_sah_civilian7_pants","z_RACSzombie12","z_RACSzombie6"};
+		zombieClass[] = {"z_sah_civilian1_shorts","z_sah_civilian2_shorts","z_sah_civilian3_shorts","z_sah_civilian4_shorts","z_sah_civilian5_shorts","z_sah_civilian6_shorts","z_sah_civilian7_shorts","z_sah_civilian1_pants","z_sah_civilian2_pants","z_sah_civilian3_pants","z_sah_civilian4_pants","z_sah_civilian5_pants","z_sah_civilian6_pants","z_sah_civilian7_pants","z_RACSzombie12","z_RACSzombie13"};
 		itemType[] = {
 			{"DZ_ALICE_Pack_EP1","object"},
 			{"DZ_Assault_Pack_EP1","object"},
