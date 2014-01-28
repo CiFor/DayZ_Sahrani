@@ -2535,8 +2535,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Brick";
-		model = "smd_assets\objects\brick.p3d";
-		picture = "\smd_assets\objects\icons\brick.paa";
+		model = "\z\addons\dayz_communityassets\models\brick.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_brick.paa";
 		descriptionShort = "Rectangular block of kiln baked clay. Can be Thrown and used for crafting various items";
 		ammo = "Brick";
 	};

@@ -1276,16 +1276,25 @@ class RscDisplayStart : RscStandardDisplay {
 	};
 	
 	class controls {
-		class Text {};
-		class Progress {};
-		class Progress2 {};
+		class Text 
+		{
+			colorText[] = {0.95, 0.95, 0.95, 1.0};
+		};
+		class Progress 
+		{
+			colorText[] = {0.95, 0.95, 0.95, 1.0};
+		};
+		class Progress2 
+		{
+			colorText[] = {0.95, 0.95, 0.95, 1.0};
+		};
 		
 		class LoadingPic : RscPictureKeepAspect {
 			text = "z\addons\dayz_code\gui\sahrani.paa";
 		};
 		
 		class CA_Text : RscLoadingText {
-			colorText[] = {0.8784, 0.8471, 0.651, 1.0};
+			colorText[] = {0.95, 0.95, 0.95, 1.0};
 		};
 		
 		class CA_Progress : RscProgress {
@@ -1505,7 +1514,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "DayZ Sahrani 0.9.7-20130929";
+			text = "DayZ Sahrani 1.0.0-20140128";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;        ///////////////////////////////////////////////////////////////////////////////////////

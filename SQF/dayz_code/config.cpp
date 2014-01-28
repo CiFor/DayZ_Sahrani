@@ -20,7 +20,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"dayz_equip","dayz_weapons",};
+		requiredAddons[] = {"dayz_equip","dayz_weapons"};
 	};
 	class DZ_DebriefingRemoved
 	{
@@ -35,7 +35,7 @@ class CfgMods
 {
 	class DayZ
 	{
-		dir = "Day7_Sahrani";
+		dir = "DayZ_Sahrani";
 		name = "Day7 Sahrani";
 		picture = "z\addons\dayz_code\gui\dayz_sahrani_logo_ca.paa";
 		hidePicture = 0;
