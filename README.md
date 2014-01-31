@@ -1,9 +1,9 @@
 DayZ_Sahrani
 ===================
-Current Release: 0.7.8
+Current Release: 1.0.0
 
 
-Development Build: 0.9.7
+Development Build: 1.1.0
 
 
 PLEASE EMAIL me before making any modifications or additions.
