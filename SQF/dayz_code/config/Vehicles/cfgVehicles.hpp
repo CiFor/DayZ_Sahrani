@@ -1,6 +1,67 @@
-class CfgVehicles {
+class CfgVehicles 
+{
 class Citizen1;
-class zZombie_Base : Citizen1 { //Heavy Dressed Russian 
+class Survivor2_DZ;
+		class Survivor2_SMD: Survivor2_DZ
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_1_tshirt_shorts";
+			weaponSlots = "1+4+6*256+2*4096+2+4*16+10*131072"; //"1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		};
+		class Survivor4_SMD: Survivor2_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_2_tshirt_shorts";
+		};
+		class Survivor5_SMD: Survivor2_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_3_tshirt_shorts";
+		};
+		class Survivor6_SMD: Survivor2_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_4_tshirt_shorts";
+		};
+		class Survivor7_SMD: Survivor2_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_5_tshirt_shorts";
+		};
+		class Survivor8_SMD: Survivor2_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_6_tshirt_shorts";
+		};
+		class Survivor9_SMD: Survivor2_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_7_tshirt_shorts";
+		};
+		class Survivor2P_SMD: Survivor2_SMD
+		{
+			weaponSlots = "1+4+7*256+2*4096+2+5*16+10*131072"; //"1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		}; 
+		class Survivor4P_SMD: Survivor2P_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_2_tshirt";
+		};
+		class Survivor5P_SMD: Survivor2P_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_3_tshirt";
+		};
+		class Survivor6P_SMD: Survivor2P_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_4_tshirt";
+		};
+		class Survivor7P_SMD: Survivor2P_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_5_tshirt";
+		};
+		class Survivor8P_SMD: Survivor2P_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_6_tshirt";
+		};
+		class Survivor9P_SMD: Survivor2P_SMD
+		{
+			model = "\smd\smd_units\smd_icewindo_civs\civil_7_tshirt";
+		};
+		
+		class zZombie_Base : Citizen1 
+		{ //Heavy Dressed Russian 
 			scope = public;
 			glassesEnabled = 0;
 			vehicleClass = "Zombie";
@@ -175,89 +236,90 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		{
 			scope = 2;
 			faction = "smdz_saracivs";
-			model = "\sara_civilians\civil_1_tshirt.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_1_tshirt.p3d";
 			vehicleClass = "Sah_Zed_Pants";
 			displayName = "Blue Soccer";
 			class Wounds
 			{
 				tex[] = {};
-				mat[] = {"sara_civilians\data\civil_tshirt_body.rvmat","sara_civilians\data\civil_tshirt_body_wound1.rvmat","sara_civilians\data\civil_tshirt_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound1.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound2.rvmat"};
+				mat[] = {"SMD\smd_units\smd_icewindo_civs\data\civil_tshirt_body.rvmat","SMD\smd_units\smd_icewindo_civs\data\civil_tshirt_body_wound1.rvmat","SMD\smd_units\smd_icewindo_civs\data\civil_tshirt_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","SMD\smd_units\smd_icewindo_civs\data\civil_1_tshirt_hhl_wound1.rvmat","SMD\smd_units\smd_icewindo_civs\data\civil_1_tshirt_hhl_wound2.rvmat"};
 			};
 		};	
 		class z_sah_civilian2_pants: z_sah_civilian1_pants   //  Black Metal shirt
 		{
-			model = "\sara_civilians\civil_2_tshirt.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_2_tshirt.p3d";
 			displayName = "Black Metal";
 		};
 		class z_sah_civilian3_pants: z_sah_civilian1_pants   //  Green Bananaman Shirt
 		{
-			model = "\sara_civilians\civil_3_tshirt.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_3_tshirt.p3d";
 			displayName = "Banana Man";
 		};
 		class z_sah_civilian4_pants: z_sah_civilian1_pants   //  Orange Cowboy Shirt
 		{
-			model = "\sara_civilians\civil_4_tshirt.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_4_tshirt.p3d";
 			displayName = "Orange Cowboy";
 		};
 		class z_sah_civilian5_pants: z_sah_civilian1_pants   //  Grey Nagova Shirt
 		{
-			model = "\sara_civilians\civil_5_tshirt.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_5_tshirt.p3d";
 			displayName = "Grey Nagova";
 		};
 		class z_sah_civilian6_pants: z_sah_civilian1_pants   //  Orange Pepe shirt
 		{
-			model = "\sara_civilians\civil_6_tshirt.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_6_tshirt.p3d";
 			displayName = "Orange Pepe";
 		};
 		class z_sah_civilian7_pants: z_sah_civilian1_pants   //  Black redstar shirt
 		{
-			model = "\sara_civilians\civil_7_tshirt.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_7_tshirt.p3d";
 			displayName = "Black RedStar";
 		};
 		class z_sah_civilian1_shorts: zZombie_Base
 		{
 			scope = 2;
 			faction = "smdz_saracivs";
-			model = "\sara_civilians\civil_1_tshirt_shorts.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_1_tshirt_shorts.p3d";
 			vehicleClass = "Sah_Zed_Shorts";
 			displayName = "Blue Soccer";
 			class Wounds
 			{
 				tex[] = {};
-				mat[] = {"sara_civilians\data\civil_tshirt_shorts_body.rvmat","sara_civilians\data\civil_tshirt_shorts_body_wound1.rvmat","sara_civilians\data\civil_tshirt_shorts_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound1.rvmat","sara_civilians\data\civil_1_tshirt_hhl_wound2.rvmat"};
+				mat[] = {"SMD\smd_units\smd_icewindo_civs\data\civil_tshirt_body.rvmat","SMD\smd_units\smd_icewindo_civs\data\civil_tshirt_body_wound1.rvmat","SMD\smd_units\smd_icewindo_civs\data\civil_tshirt_body_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","SMD\smd_units\smd_icewindo_civs\data\civil_1_tshirt_hhl_wound1.rvmat","SMD\smd_units\smd_icewindo_civs\data\civil_1_tshirt_hhl_wound2.rvmat"};
 			};
 		};
 		class z_sah_civilian2_shorts: z_sah_civilian1_shorts
 		{
-			model = "\sara_civilians\civil_2_tshirt_shorts.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_2_tshirt_shorts.p3d";
 			displayName = "Black Metal";
 		};
 		class z_sah_civilian3_shorts: z_sah_civilian1_shorts
 		{
-			model = "\sara_civilians\civil_3_tshirt_shorts.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_3_tshirt_shorts.p3d";
 			displayName = "Banana Man";
 		};
 		class z_sah_civilian4_shorts: z_sah_civilian1_shorts
 		{
-			model = "\sara_civilians\civil_4_tshirt_shorts.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_4_tshirt_shorts.p3d";
 			displayName = "Orange Cowboy";
 		};
 		class z_sah_civilian5_shorts: z_sah_civilian1_shorts
 		{
-			model = "\sara_civilians\civil_5_tshirt_shorts.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_5_tshirt_shorts.p3d";
 			displayName = "Grey Nagova";
 		};
 		class z_sah_civilian6_shorts: z_sah_civilian1_shorts
 		{
-			model = "\sara_civilians\civil_6_tshirt_shorts.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_6_tshirt_shorts.p3d";
 			displayName = "Orange Pepe";
 		};
 		class z_sah_civilian7_shorts: z_sah_civilian1_shorts
 		{
-			model = "\sara_civilians\civil_7_tshirt_shorts.p3d";
+			model = "\SMD\smd_units\smd_icewindo_civz\civil_7_tshirt_shorts.p3d";
 			displayName = "Black RedStar";////////// FACTION - Desc - Head Gear - Color of Vest
 		};//////////////////////////////////////// Ex. RACS - Tan Camo - Helmet - Black Vest
-		class z_soldier: zZombie_Base {
+		class z_soldier: zZombie_Base 
+		{
 			scope = public;
 			glassesEnabled = 0;
 			displayName = "Zombie Soldier";
@@ -361,9 +423,9 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 			faction = "smdz_racs";
 			fsmDanger = "";
 			fsmFormation = "";
-			model = "\vil_police\vil_swat";
+			model = "\SMD\smd_units\smd_vilas_cops\smd_vil_swat";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_racs_regular_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_swat_bdu_racs_regular_co.paa"};
 			zombieLoot = "militarySpecialZed";
 			moves = "CfgMovesZombie";
 			isMan = false;
@@ -407,87 +469,87 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 			displayName = "Sherriff";
 			faction = "smdz_rspd";
 			zombieLoot = "policemanZed";
-			model = "\vil_police\vil_cop3";
+			model = "\SMD\smd_units\smd_vilas_cops\smd_vil_cop3";
 		};	
 		class z_RACSzombie3 : z_RACSzombie {	 //RSPD Night Camo - Black Helmet - Black Vest
 			displayName = "SWAT NIGHT CAMO";
 			faction = "smdz_rspd";
 			zombieLoot = "policemanZed";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_swat_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_swat_bdu_rspd_swat_co.paa"};
 		};	
 		class z_RACSzombie4 : z_soldier {	 //BLOPS Flat Grey - NO Helmet - Black Vest
 			displayName = "MP GREY";
 			faction = "smdz_blops";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_us_blackops_co.paa"};
-			model = "\vil_police\vil_cop";
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_cop_bdu_us_blackops_co.paa"};
+			model = "\SMD\smd_units\smd_vilas_cops\smd_vil_cop";
 		};	
 		class z_RACSzombie5 : z_soldier {	 //RACS Flat Tan - NO Helmet - Black Vest
 			displayName = "MP BLACK/TAN";
 			faction = "smdz_racs";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_co.paa"};
-			model = "\vil_police\vil_cop";
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_cop_bdu_racs_mp_co.paa"};
+			model = "\SMD\smd_units\smd_vilas_cops\smd_vil_cop";
 		};	
 		class z_RACSzombie6 : z_soldier {	 //RACS Flat Tan - NO Helmet - Blended Vest
 			displayName = "MP TAN";
 			faction = "smdz_racs";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_co.paa"};
-			model = "\vil_police\vil_cop";
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_cop_bdu_racs_mp_tan_co.paa"};
+			model = "\SMD\smd_units\smd_vilas_cops\smd_vil_cop";
 		};	
 		class z_RACSzombie7 : z_soldier {	 //RACS Digi Tan Camo - NO Helmet - Blended Vest
 			displayName = "MP TAN DIGI";
 			faction = "smdz_racs";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_racs_mp_tan_digi_co.paa"};
-			model = "\vil_police\vil_cop";
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_cop_bdu_racs_mp_tan_digi_co.paa"};
+			model = "\SMD\smd_units\smd_vilas_cops\smd_vil_cop";
 		};	
 		class z_RACSzombie8 : z_RACSzombie {	 //RACS Tan Digi Camo - Black Helmet - Black Vest 
 			displayName = "SWAT TAN DIGI";
 			faction = "smdz_racs";
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_racs_regular_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_swat_bdu_racs_regular_digi_co.paa"};
 		};	
 		class z_RACSzombie9 : z_soldier {	 //BLOPS Grey Digi Camo - NO Helmet - Blended Vest
 			displayName = "MP BLACK DIGI";
 			faction = "smdz_blops";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_us_blackops_mp_digi_co.paa"};
-			model = "\vil_police\vil_cop";
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_cop_bdu_us_blackops_mp_digi_co.paa"};
+			model = "\SMD\smd_units\smd_vilas_cops\smd_vil_cop";
 		};	
 		class z_RACSzombie10 : z_RACSzombie {	 //BLOPS Grey Digi Camo - Black Helmet - Black Vest
 			displayName = "SWAT DIGI";
 			faction = "smdz_blops";
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_us_blackops_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_swat_bdu_us_blackops_digi_co.paa"};
 		};	
 		class z_RACSzombie11 : z_RACSzombie {	 //RSPD Black Digi Camo - Black Helmet - Black Vest
 			displayName = "SWAT BLACK DIGI";
 			faction = "smdz_rspd";
 			zombieLoot = "policemanZed";
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_swat_digi_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_swat_bdu_rspd_swat_digi_co.paa"};
 		};
 		class z_RACSzombie12 : z_soldier {	 //RSPD Blue Digi Camo - NO Helmet - Black Vest
 			displayName = "MP BLUE DIGI";
 			faction = "smdz_rspd";
 			zombieLoot = "policemanZed";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_rspd_blue_digi_co.paa"};
-			model = "\vil_police\vil_cop";
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_cop_bdu_rspd_blue_digi_co.paa"};
+			model = "\SMD\smd_units\smd_vilas_cops\smd_vil_cop";
 		};
 		class z_RACSzombie13 : z_soldier {	 //RSPD Flat Blue - NO Helmet - Black Vest 
 			displayName = "MP BLUE";
 			faction = "smdz_rspd";
 			zombieLoot = "policemanZed";
 			hiddenSelections[] = {"Camo01"};
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_cop_bdu_rspd_blue_co.paa"};
-			model = "\vil_police\vil_cop";
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_cop_bdu_rspd_blue_co.paa"};
+			model = "\SMD\smd_units\smd_vilas_cops\smd_vil_cop";
 		};
 		class z_RACSzombie14 : z_RACSzombie {	 //RSPD Flat Black - Black Helmet - Black Vest
 			displayName = "SWAT BLACK";
 			faction = "smdz_rspd";
 			zombieLoot = "policemanZed";
-			hiddenSelectionsTextures[] = {"\smd_assets\characters\textures\smd_swat_bdu_rspd_black_co.paa"};
+			hiddenSelectionsTextures[] = {"\smd\smd_units\smd_pliskins\smd_swat_bdu_rspd_black_co.paa"};
 		};				
 		/*new Zeds*//*
 		class z_woman1 : zZombie_Base {
@@ -499,7 +561,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 			portrait = "\Ca\characters\data\portraits\comBarHead_civ_woman_ca";
 			hiddenSelections[] = {"Camo"};
 			//hiddenSelectionsTextures[] = {"\Ca\characters2\Civil\Woman\Hooker\data\Hooker1_co.paa"};
-			hiddenSelectionsTextures[] = {"\smd_assets\infected\textures\hooker1_co.paa"};
+			hiddenSelectionsTextures[] = {"smd\smd_assets\infected\textures\hooker1_co.paa"};
 			zombieLoot = "generic";
 			displayName = "HookerZ";
 			faction = "smdz_saracivs";		
@@ -523,7 +585,6 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 				mat[] = {"Ca\characters2\Civil\Woman\Hooker\Data\Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w1_Hooker.rvmat", "Ca\characters2\Civil\Woman\Hooker\Data\w2_Hooker.rvmat"};
 			};
 		};*/
-	class Survivor2_DZ;
 	class AllVehicles;
 	class Air : AllVehicles 
 	{
@@ -581,15 +642,15 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		displayname = "AH6X (ATACS)";
 		displaynameshort = "AH6X (ATACS)";
 		hiddenselections[] = {"camo1"};
-		hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa"};
+		hiddenselectionstextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa"};
 	};
 	
 	class AH6X_SMD_MAGPI : AH6X_DZ
 	{
-		displayname = "AH6X (ATACS)";
-		displaynameshort = "AH6X (ATACS)";
+		displayname = "AH6X (Mag P.I.)";
+		displaynameshort = "AH6X (Mag P.I.)";
 		hiddenselections[] = {"camo1"};
-		hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa"};
+		hiddenselectionstextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa"};
 	};
 	
 	class AH6X_SMD_RACS : AH6X_DZ
@@ -597,7 +658,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		displayname = "AH6X (RACS)";
 		displaynameshort = "AH6X (RACS)";
 		hiddenselections[] = {"camo1"};
-		hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa"};
+		hiddenselectionstextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa"};
 	};
 	
 	class AH6X_SMD_RACS_DIGI : AH6X_DZ
@@ -605,7 +666,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		displayname = "AH6X (RACS) Digital";
 		displaynameshort = "AH6X (RACS) Digital";
 		hiddenselections[] = {"camo1"};
-		hiddenselectionstextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_digi_co.paa"};
+		hiddenselectionstextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_ah6_racs_digi_co.paa"};
 	};
 	
 	class An2_Base_EP1;
@@ -633,7 +694,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 	};
 
 	class Plane;
-	class C130_base: Plane 
+	class C130_SMDZ_base: Plane 
 	{
 		destrType = "DestructWreck";
 		scope = 2;
@@ -2601,7 +2662,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 	};
 	
 	
-	class C130_SMD_DZ: C130_base
+	class C130_SMD_DZ: C130_SMDZ_base
 	{
 		model = "\ca\air_E\c130j\c130j.p3d";
 		class Damage
@@ -2618,7 +2679,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		displayname = "C130J (ATACS)";
 		displaynameshort = "C130J (ATACS)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_atacs_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_atacs_wings_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_c130j_atacs_body_co.paa","smd\smd_assets\vehicles\textures\smd_veh_c130j_atacs_wings_co.paa"};
 	};
 	
 	class C130_SMD_BLOPS: C130_SMD_DZ 
@@ -2626,7 +2687,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		displayname = "C130J (Unmarked)";
 		displaynameshort = "C130J (Unmarked)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_blackops_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_blackops_wings_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_c130j_blackops_body_co.paa","smd\smd_assets\vehicles\textures\smd_veh_c130j_blackops_wings_co.paa"};
 	};	
 	
 	class C130_SMD_BLOPS_DIGI: C130_SMD_DZ 
@@ -2634,7 +2695,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		displayname = "C130J (Unmarked)";
 		displaynameshort = "C130J (Unmarked)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_blackops_digital_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_blackops_digital_wings_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_c130j_blackops_digital_body_co.paa","smd\smd_assets\vehicles\textures\smd_veh_c130j_blackops_digital_wings_co.paa"};
 	};
 	
 	class C130_SMD_UN: C130_SMD_DZ 
@@ -2642,7 +2703,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		displayname = "C130J (U.N.)";
 		displaynameshort = "C130J (U.N.)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_c130j_UN_body_co.paa","smd_assets\vehicles\textures\smd_veh_c130j_UN_wings_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_c130j_UN_body_co.paa","smd\smd_assets\vehicles\textures\smd_veh_c130j_UN_wings_co.paa"};
 	};
 	
 	/*class CH47_base_DZ: Helicopter
@@ -3027,14 +3088,14 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		displaynameshort = "Landrover RACS)";
 		scope = 2;
 		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_landrover_racs_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_landrover_racs_co.paa"};
 	};
 
 	class LandRover_SMD_RACS_DIGI: LandRover_SMD_RACS
 	{
 		displayname = "Landrover (RACS) Digital";
 		displaynameshort = "Landrover RACS) Digital";
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_landrover_racs_digi_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_landrover_racs_digi_co.paa"};
 	};
 
 	class MH60S_DZ: Helicopter
@@ -3298,7 +3359,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		displayname = "MH6J (ATACS)";
 		displaynameshort = "MH6J (ATACS)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_ah6_atacs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
 	};*/
 	
 	class MH6J_SMD_MAGPI : MH6J_DZ
@@ -3306,7 +3367,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		displayname = "Hughes 500D";
 		displaynameshort = "Hughes 500D";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_ah6_magnumpi_co.paa","ca\air_e\ah6j\data\default_co.paa"};
 	};
 	
 	/*class MH6J_SMD_RACS : MH6J_DZ
@@ -3314,7 +3375,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		displayname = "MH6J (RACS)";
 		displaynameshort = "MH6J (RACS)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_ah6_racs_co.paa","ca\air_e\ah6j\data\default_co.paa"};
 	};
 	
 	class MH6J_SMD_RACS_DIGI : MH6J_DZ
@@ -3410,7 +3471,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		hasGunner = 0;
 		class Turrets{};
 		threat[] = {0.0,0.0,0.0};
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_mi17_blackops_body_co.paa","smd_assets\vehicles\textures\smd_veh_mi17_blackops_det_co.paa","smd_assets\vehicles\textures\smd_veh_mi17_blackops_decals2_co.paa"}; //by Textures by Pliskin
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_mi17_blackops_body_co.paa","smd\smd_assets\vehicles\textures\smd_veh_mi17_blackops_det_co.paa","smd\smd_assets\vehicles\textures\smd_veh_mi17_blackops_decals2_co.paa"}; //by Textures by Pliskin
 	};	
 	
 	class MV22_DZ: Plane {
@@ -3755,44 +3816,43 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 	{
 		displayname = "UH1H (ATACS)";
 		displaynameshort = "UH1H (ATACS)";	
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_atacs_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_atacs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_uh1_atacs_co.paa", "smd\smd_assets\vehicles\textures\smd_veh_uh1_atacs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
 
 	class UH1H_SMD_BLOPS: UH1H_DZ
 	{
 		displayname = "UH1H Unmarked";
 		displaynameshort = "UH1H (Unmarked)";	
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_blackops_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_blackops_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_uh1_blackops_co.paa", "smd\smd_assets\vehicles\textures\smd_veh_uh1_blackops_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
 
 	class UH1H_SMD_BLOPS_DIGI: UH1H_DZ
 	{
 		displayname = "UH1H Unmarked";
 		displaynameshort = "UH1H (Unmarked)";	
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_co.paa", "smd\smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};
 
 	class UH1H_SMD_RACS: UH1H_DZ
 	{
 		displayname = "UH1H (RACS)";
 		displaynameshort = "UH1H (RACS)";	
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_racs_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_racs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_co.paa", "smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};	
 
 	class UH1H_SMD_RACS_DIGI: UH1H_DZ
 	{
 		displayname = "UH1H (RACS) Digital";
 		displaynameshort = "UH1H (RACS) Digital";	
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_co.paa", "smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};		
 
 	class UH1H_SMD_UN: UH1H_DZ
 	{
 		displayname = "UH1H (United Nations)";
 		displaynameshort = "UH1H UNITED NATIONS";	
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_uh1_un_co.paa", "smd_assets\vehicles\textures\smd_veh_uh1_un_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_uh1_un_co.paa", "smd\smd_assets\vehicles\textures\smd_veh_uh1_un_in_co.paa", "ca\air_E\UH1H\data\default_co.paa"};
 	};	
-	
 	class UH1H_TK_DZ: UH1H_DZ { // Camo Huey - Copy UH1H_DZ
 		hiddenSelectionsTextures[] = {"ca\air_E\UH1H\data\UH1D_TKA_CO.paa", "ca\air_E\UH1H\data\UH1D_in_TKA_CO.paa", "ca\air_E\UH1H\data\default_TKA_co.paa"};
 	};
@@ -3871,7 +3931,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		side = 3;
 		faction = "BIS_TK_CIV";
 		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ikarus_coke_co"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_ikarus_coke_co"};
 		rarityUrban = 0.4;
 		crew = "TK_CIV_Takistani01_EP1";
 		typicalCargo[] = {"TK_CIV_Takistani01_EP1"};
@@ -3881,13 +3941,13 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 	{
 		displayname = "Ikarus (OpenDayZ)";
 		displaynameshort = "Ikarus (OpenDayZ)";	
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ikarus_opendayz_co"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_ikarus_opendayz_co"};
 	};
 	class Ikarus_SMD_DAYZHORROR: Ikarus_SMD_COKE
 	{
 		displayname = "Ikarus (DayZHorror)";
 		displaynameshort = "Ikarus (DayZHorror)";	
-		hiddenSelectionsTextures[] = {"smd_assets\vehicles\textures\smd_veh_ikarus_dayzhorror_co"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_veh_ikarus_dayzhorror_co"};
 	};
 	
 	class SkodaBase;
@@ -4066,18 +4126,18 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 	
 	class SMD_hatchback_rustbucket : car_hatchback {
 		hiddenselections[] = {"Camo1"};
-		hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_hatchback_rustbucket_co.paa"};
+		hiddenselectionstextures[] = {"smd\smd_assets\vehicles\textures\smd_hatchback_rustbucket_co.paa"};
 	};
 	class SMD_hatchback_bloodied : car_hatchback {
 		hiddenselections[] = {"Camo1"};
-		hiddenselectionstextures[] = {"\smd_assets\vehicles\textures\smd_hatchback_bloody_co.paa"};
+		hiddenselectionstextures[] = {"smd\smd_assets\vehicles\textures\smd_hatchback_bloody_co.paa"};
 	};
 	class Lada1_TK_CIV_EP1;
 	class SMD_Lada_bloodied : Lada1_TK_CIV_EP1 {
 		terrainCoef = 2;
 		maxSpeed = 90;
 		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_lada_bloody_co.paa","\Ca\wheeled_E\Lada\Data\Lada_glass_ECIV1_CA.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_lada_bloody_co.paa","\Ca\wheeled_E\Lada\Data\Lada_glass_ECIV1_CA.paa"};
 	};
 	
 	class TT650_Base;
@@ -4109,7 +4169,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 	{
 		terrainCoef = 0;
 		maxSpeed = 70;
-		hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_ural_kabina_bloody_co.paa","\CA\wheeled_E\Ural\Data\Ural_plachta_CIVIL_CO.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_ural_kabina_bloody_co.paa","\CA\wheeled_E\Ural\Data\Ural_plachta_CIVIL_CO.paa"};
 	};
 	class V3S_Base_EP1;
 	class V3S_Civ: V3S_Base_EP1 {
@@ -4129,80 +4189,8 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		terrainCoef = 0;
 		maxSpeed = 70;
 		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"\smd_assets\vehicles\textures\smd_v3s_kabpar_bloody_co.paa","\ca\wheeled2\v3s\data\v3s_intkor_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\vehicles\textures\smd_v3s_kabpar_bloody_co.paa","\ca\wheeled2\v3s\data\v3s_intkor_co.paa"};
 	};
-	class Animal;
-	class Pastor;
-	class Fin;
-	class DZAnimal: Animal
-	{
-		scope = 0;
-		side = 1;
-		accuracy = 0.25;
-		boneHead = "head";
-		bonePrimaryWeapon = "head";
-		triggerAnim = "";
-		picture = "";
-		icon = "\Ca\animals2\data\mapicon_animals_ca.paa";
-		mapSize = 10;
-		weaponSlots = 0;
-		fsmFormation = "";
-		fsmDanger = "";
-		agentTasks[] = {};
-		moves = "CfgMovesAnimal";
-		memoryPointHeadAxis = "head_axis";
-		woman = 0;
-		faceType = "Default";
-		boneLEye = "l_eye";
-		boneREye = "r_eye";
-		boneLEyelidUp = "eye_upl";
-		boneREyelidUp = "eye_upr";
-		boneLEyelidDown = "eye_lwl";
-		boneREyelidDown = "eye_lwr";
-		boneLPupil = "l_pupila";
-		boneRPupil = "r_pupila";
-		memoryPointAim = "aimPoint";
-		memoryPointCameraTarget = "camera";
-		extCameraPosition[] = {0,0.5,-2.5};
-		class EventHandlers{};
-		class Wounds
-		{
-			tex[] = {};
-			mat[] = {};
-		};
-		class VariablesScalar {};
-		class VariablesString {};
-	};
-	class DZ_Pastor : Pastor {
-		scope = 2;
-		side = 1;
-		model = "\ca\animals2\Dogs\Pastor\Pastor";
-		displayName = "Alsatian";
-		moves = "CfgMovesDogDZ";
-		gestures = "CfgGesturesDogDZ";
-		fsmDanger = "";
-		fsmFormation = "";
-		agentTasks[] = {};
-		woman = 0;
-		class EventHandlers{};
-		class Wounds
-		{
-			tex[] = {};
-			mat[] = {};
-		};
-		class VariablesScalar {};
-		class VariablesString {};
-	};
-	
-	class DZ_Fin : Fin {
-		scope = 2;
-		model = "\ca\animals2\Dogs\Fin\Fin";
-		displayName = "Fin";
-		moves = "CfgMovesDogDZ";
-		gestures = "CfgGesturesDogDZ";
-		fsmDanger = "";
-		fsmFormation = "";
-	};//End Pooch Begine SMD Clothing
 	class GER_Soldier_EP1; //Original "Bandit" Clothing (KSK German)
 	class Bandit1_DZ : GER_Soldier_EP1 {
 		displayName = "$STR_CHAR_2";
@@ -4280,8 +4268,8 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
-	class BAF_Soldier_SniperH_W;
-	class Sniper1_DZ: BAF_Soldier_SniperH_W {
+	class SMD_Sniper_G;
+	class Sniper1_DZ: SMD_Sniper_G {
 		displayName = "Survivor";
 		side = 1;
 		weapons[] = {"Throw","Put"};
@@ -4292,8 +4280,8 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
-	class BAF_Soldier_SniperH_MTP; //Lighter Green Ghillie
-	class SniperLight_DZ: BAF_Soldier_SniperH_MTP {
+	class SMD_Sniper_L; //Lighter Green Ghillie
+	class SniperLight_DZ: SMD_Sniper_L {
 		displayName = "Survivor";
 		side = 1;
 		weapons[] = {"Throw","Put"};
@@ -4304,13 +4292,20 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
-	class SniperBandit_DZ: Sniper1_DZ {
+	class SMD_Sniper_G_Upper;
+	class SniperBandit_DZ: SMD_Sniper_G_Upper {
 		displayName = "Bandit";
-		model = "\ca\characters2\Ghillie_Top";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
 	};
-	class CZ_Soldier_Sniper_EP1;
-	class SniperLightBandit_DZ: CZ_Soldier_Sniper_EP1 {
-		displayName = "Survivor";
+	class SniperLightBandit_DZ: SMD_Sniper_G_Upper {
+		displayName = "Bandit";
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -4324,16 +4319,23 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 	class SniperBanditW_DZ : SniperBandit_DZ {}; //Woman Bandit Ghillie
 	class SniperLightW_DZ : SniperLight_DZ {}; //Woman Light Ghillie
 	class SniperLightBanditW_DZ : SniperLightBandit_DZ {}; //Woman Bandit Light Ghillie	
-	
-	class SniperD_DZ : Sniper1_DZ {  //Desert Ghillie
+	class SMD_Sniper_D;
+	class SniperD_DZ : SMD_Sniper_D {  //Desert Ghillie
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_ghillie_des_coverall_co.paa"};
+		hiddenSelectionsTextures[] = {"smd\smd_assets\characters\textures\smd_ghillie_des_coverall_co.paa"};
 	};
 	class SniperDW_DZ : SniperD_DZ {}; //Woman Desert Ghillie
-	
-	class SniperBanditD_DZ : SniperBandit_DZ { //Bandit Desert Ghillie
-		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"smd_assets\characters\textures\smd_ghillie_des_tophalf_co.paa"};
+	class SMD_Sniper_D_Upper;
+	class SniperBanditD_DZ : SMD_Sniper_D_Upper { //Bandit Desert Ghillie
+		displayName = "Bandit";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
 	};
 	class SniperBanditDW_DZ : SniperBanditD_DZ {}; //Woman Bandit Desert Ghillie
 	class BanditW1_DZ;
@@ -5434,7 +5436,7 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 	{
 		scope = public;
 		displayName="Propane Tank";
-		model="\smd_assets\objects\propane.p3d";
+		model="smd\smd_assets\objects\propane.p3d";
 		class eventHandlers
 		{
 			init="[(_this select 0),'cfgMagazines','ItemPropane'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
@@ -5830,8 +5832,8 @@ class zZombie_Base : Citizen1 { //Heavy Dressed Russian
 	class Workbench_DZ : Land_A_tent {
 		scope = 2;
 		displayName="Workbench";
-		model="\smd_assets\objects\workbench.p3d";
-		icon = "\smd_assets\objects\icons\workbench.paa";
+		model="smd\smd_assets\objects\workbench.p3d";
+		icon = "smd\smd_assets\objects\icons\workbench.paa";
 		armor = 400; 
 		vehicleClass = "Survival";
 		transportMaxMagazines = 100;

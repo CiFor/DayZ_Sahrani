@@ -1,22 +1,12 @@
 disableSerialization;
 
 //Model Variables
-Bandit1_DZ = 	"Bandit1_DZ";
-BanditW1_DZ = 	"BanditW1_DZ";
-BanditSkin_DZ = 	"BanditSkin_DZ";
-BanditSkinW_DZ = 	"BanditSkinW_DZ";
-Survivor1_DZ = 	"Survivor2_DZ";
-Survivor2_DZ = 	"Survivor2_DZ";
-SurvivorW2_DZ = "SurvivorW2_DZ";
-Sniper1_DZ = 	"Sniper1_DZ";
-Sniper1W_DZ = 	"Sniper1W_DZ";
-SniperBandit_DZ = 	"SniperBandit_DZ";
-SniperBanditW_DZ = 	"SniperBanditW_DZ";
-SniperD_DZ = "SniperD_DZ";
-SniperLight_DZ = "SniperLight_DZ";
-Camo1_DZ = 		"Camo1_DZ";
-Soldier1_DZ = 	"Soldier1_DZ";
-Rocket_DZ = 	"Rocket_DZ";
+Bandit1_DZ = "Bandit1_DZ";
+BanditW1_DZ = "BanditW1_DZ";
+BanditSkin_DZ = "BanditSkin_DZ";
+BanditSkinW_DZ = "BanditSkinW_DZ";
+Camo1_DZ = "Camo1_DZ";
+Rocket_DZ = "Rocket_DZ";
 SMD_ATACS_DES = "SMD_ATACS_DES";
 SMD_ATACS_URBAN = "SMD_ATACS_URBAN";
 SMD_RACS_MP = "SMD_RACS_MP";
@@ -24,21 +14,142 @@ SMD_RACS_MP_Tan = "SMD_RACS_MP_Tan";
 SMD_RACS_MP_Tan_Digi = "SMD_RACS_MP_Tan_Digi";
 SMD_RACS_Soldier = "SMD_RACS_Soldier";
 SMD_RACS_Soldier_Digi = "SMD_RACS_Soldier_Digi";
-
-
 SMD_RSPD_BLACK = "SMD_RSPD_BLACK";
 SMD_RSPD_BLUE = "SMD_RSPD_BLUE";
 SMD_RSPD_BLUE_DIGI = "SMD_RSPD_BLUE_DIGI";
 SMD_RACS_Sheriff = "SMD_RACS_Sheriff";
 SMD_RSPD_SWAT = "SMD_RSPD_SWAT";
 SMD_RSPD_SWAT_DIGI = "SMD_RSPD_SWAT_DIGI";
-Skin_SMD_TIGER_CAMO = "Skin_SMD_TIGER_CAMO";
+SMD_TIGER_CAMO = "SMD_TIGER_CAMO";
 SMD_US_SpecOps = "SMD_US_SpecOps";
 SMD_US_SpecOps_DIGI = "SMD_US_SpecOps_DIGI";
 SMD_US_SpecOps_MP_DIGI = "SMD_US_SpecOps_MP_DIGI";
+Sniper1_DZ = 	"Sniper1_DZ";
+Sniper1W_DZ = "Sniper1W_DZ";
+SniperBandit_DZ = "SniperBandit_DZ";
+SniperBanditW_DZ = "SniperBanditW_DZ";
+SniperD_DZ = "SniperD_DZ";
+SniperLight_DZ = "SniperLight_DZ";
+Soldier1_DZ = "Soldier1_DZ";
+Survivor1_DZ = "Survivor2_DZ";
+Survivor2_DZ = "Survivor2_DZ";
+Survivor3_DZ = "Survivor3_DZ";
+Survivor2_SMD = "Survivor2_SMD";
+Survivor4_SMD = "Survivor4_SMD";
+Survivor5_SMD = "Survivor5_SMD";
+Survivor6_SMD = "Survivor6_SMD";
+Survivor7_SMD = "Survivor7_SMD";
+Survivor8_SMD = "Survivor8_SMD";
+Survivor9_SMD = "Survivor9_SMD";
+Survivor2P_SMD = "Survivor2P_SMD";
+Survivor4P_SMD = "Survivor4P_SMD";
+Survivor5P_SMD = "Survivor5P_SMD";
+Survivor6P_SMD = "Survivor6P_SMD";
+Survivor7P_SMD = "Survivor7P_SMD";
+Survivor8P_SMD = "Survivor8P_SMD";
+Survivor9P_SMD = "Survivor9P_SMD";
+SurvivorW2_DZ = "SurvivorW2_DZ";
+player_freshpawn = ["Survivor2_SMD","Survivor4_SMD","Survivor5_SMD","Survivor6_SMD","Survivor7_SMD","Survivor8_SMD","Survivor9_SMD"];
 
-AllPlayers = ["SMD_ATACS_DES","SMD_ATACS_URBAN","SMD_RACS_MP","SMD_RACS_MP_Tan","SMD_RACS_MP_Tan_Digi","SMD_RACS_Soldier","SMD_RACS_Soldier_Digi","SMD_RACS_SWAT","SMD_RSPD_SWAT","SMD_RSPD_SWAT_DIGI","SMD_RSPD_BLACK","SMD_RSPD_BLUE","SMD_RSPD_BLUE_DIGI","SMD_RACS_Sheriff","Skin_SMD_TIGER_CAMO","SMD_US_SpecOps","SMD_US_SpecOps_DIGI","SMD_US_SpecOps_MP_DIGI","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","BanditSkin_DZ","BanditSkinW_DZ","Sniper1W_DZ","SniperBandit_DZ","SniperBanditW_DZ","SniperD_DZ","SniperLight_DZ"];
-AllPlayersVehicles = ["SMD_ATACS_DES","SMD_ATACS_URBAN","SMD_RACS_MP","SMD_RACS_MP_Tan","SMD_RACS_MP_Tan_Digi","SMD_RACS_Soldier","SMD_RACS_Soldier_Digi","SMD_RACS_SWAT","SMD_RSPD_SWAT","SMD_RSPD_SWAT_DIGI","SMD_RSPD_BLACK","SMD_RSPD_BLUE","SMD_RSPD_BLUE_DIGI","SMD_RACS_Sheriff","Skin_SMD_TIGER_CAMO","SMD_US_SpecOps","SMD_US_SpecOps_DIGI","SMD_US_SpecOps_MP_DIGI","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","BanditSkin_DZ","BanditSkinW_DZ","Sniper1W_DZ","SniperBandit_DZ","SniperBanditW_DZ","SniperD_DZ","SniperLight_DZ","AllVehicles"];
+AllPlayers = [
+	"Bandit1_DZ",
+	"BanditW1_DZ",
+	"BanditSkin_DZ",
+	"BanditSkinW_DZ",
+	"BanditSkinW_DZ",
+	"Camo1_DZ",
+	"Rocket_DZ",
+	"SMD_ATACS_DES",
+	"SMD_ATACS_URBAN",
+	"SMD_RACS_MP",
+	"SMD_RACS_MP_Tan",
+	"SMD_RACS_MP_Tan_Digi",
+	"SMD_RACS_Soldier",
+	"SMD_RACS_Soldier_Digi",
+	"SMD_RSPD_SWAT",
+	"SMD_RSPD_SWAT_DIGI",
+	"SMD_RSPD_BLACK",
+	"SMD_RSPD_BLUE",
+	"SMD_RSPD_BLUE_DIGI",
+	"SMD_RACS_Sheriff",
+	"SMD_TIGER_CAMO",
+	"SMD_US_SpecOps",
+	"SMD_US_SpecOps_DIGI",
+	"SMD_US_SpecOps_MP_DIGI",
+	"Sniper1_DZ",
+	"Sniper1W_DZ",
+	"SniperBandit_DZ",
+	"SniperBanditW_DZ",
+	"SniperD_DZ",
+	"SniperLight_DZ",
+	"Soldier1_DZ",
+	"Survivor2_DZ",
+	"Survivor3_DZ",
+	"Survivor2_SMD",
+	"Survivor4_SMD",
+	"Survivor5_SMD",
+	"Survivor6_SMD",
+	"Survivor7_SMD",
+	"Survivor8_SMD",
+	"Survivor9_SMD",
+	"Survivor2P_SMD",
+	"Survivor4P_SMD",
+	"Survivor5P_SMD",
+	"Survivor6P_SMD",
+	"Survivor7P_SMD",
+	"Survivor8P_SMD",
+	"Survivor9P_SMD",
+	"player_freshpawn"
+];
+AllPlayersVehicles = [
+	"Bandit1_DZ",
+	"BanditW1_DZ",
+	"BanditSkin_DZ",
+	"BanditSkinW_DZ",
+	"BanditSkinW_DZ",
+	"Camo1_DZ",
+	"Rocket_DZ",
+	"SMD_ATACS_DES",
+	"SMD_ATACS_URBAN",
+	"SMD_RACS_MP",
+	"SMD_RACS_MP_Tan",
+	"SMD_RACS_MP_Tan_Digi",
+	"SMD_RACS_Soldier",
+	"SMD_RACS_Soldier_Digi",
+	"SMD_RSPD_SWAT",
+	"SMD_RSPD_SWAT_DIGI",
+	"SMD_RSPD_BLACK",
+	"SMD_RSPD_BLUE",
+	"SMD_RSPD_BLUE_DIGI",
+	"SMD_RACS_Sheriff",
+	"SMD_TIGER_CAMO",
+	"SMD_US_SpecOps",
+	"SMD_US_SpecOps_DIGI",
+	"SMD_US_SpecOps_MP_DIGI",
+	"Sniper1_DZ",
+	"Sniper1W_DZ",
+	"SniperBandit_DZ",
+	"SniperBanditW_DZ",
+	"SniperD_DZ",
+	"SniperLight_DZ",
+	"Soldier1_DZ",
+	"Survivor2_DZ",
+	"Survivor3_DZ",
+	"Survivor2_SMD",
+	"Survivor4_SMD",
+	"Survivor5_SMD",
+	"Survivor6_SMD",
+	"Survivor7_SMD",
+	"Survivor8_SMD",
+	"Survivor9_SMD",
+	"Survivor2P_SMD",
+	"Survivor4P_SMD",
+	"Survivor5P_SMD",
+	"Survivor6P_SMD",
+	"Survivor7P_SMD",
+	"Survivor8P_SMD",
+	"Survivor9P_SMD"
+];
 //Cooking
 meatraw = [
     "FoodSteakRaw",

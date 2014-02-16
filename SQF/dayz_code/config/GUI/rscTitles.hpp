@@ -1514,7 +1514,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "DayZ Sahrani 1.0.0-20140128";
+			text = "DayZ Sahrani 1.1.0";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;        ///////////////////////////////////////////////////////////////////////////////////////
@@ -1590,7 +1590,7 @@ class RscDisplayGenderSelect
 			h = 0.542373 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;dayz_selectGender = 'Survivor2_DZ';";
+			action = "closeDialog 0;dayz_selectGender = player_freshpawn select floor random count player_freshpawn;";//		action = "closeDialog 0;dayz_selectGender = 'Survivor2_DZ';";
 		};
 		class GenderPic_Woman : RscActiveText
 		{
