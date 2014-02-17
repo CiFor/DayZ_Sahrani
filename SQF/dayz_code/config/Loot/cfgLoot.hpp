@@ -247,7 +247,21 @@ class CfgLoot {
 			"ItemScrapElectronics",
 			"ItemTape",
 			"ItemTrashRazor",
-			"ItemTrashToiletpaper"
+			"ItemTrashToiletpaper",
+			"Skin_smd_civilian1",
+			"Skin_smd_civilian2",
+			"Skin_smd_civilian3",
+			"Skin_smd_civilian4",
+			"Skin_smd_civilian5",
+			"Skin_smd_civilian6",
+			"Skin_smd_civilian7",
+			"Skin_smd_civilian1_p",
+			"Skin_smd_civilian2_p",
+			"Skin_smd_civilian3_p",
+			"Skin_smd_civilian4_p",
+			"Skin_smd_civilian5_p",
+			"Skin_smd_civilian6_p",
+			"Skin_smd_civilian7_p"
 		},
 		{//civilian
 			0.4, //10x_303
@@ -268,7 +282,21 @@ class CfgLoot {
 			0.01, //ItemScrapElectronics
 			0.03, //ItemTape
 			0.1, //ItemTrashRazor
-			0.1//ItemTrashToiletpaper
+			0.1,//ItemTrashToiletpaper
+			0.1, //Skin_smd_civilian1
+			0.1, //"Skin_smd_civilian2",
+			0.1, //"Skin_smd_civilian3",
+			0.1, //"Skin_smd_civilian4",
+			0.1, //"Skin_smd_civilian5",
+			0.1, //"Skin_smd_civilian6",
+			0.1, //"Skin_smd_civilian7",
+			0.1, //"Skin_smd_civilian1_p",
+			0.1, //"Skin_smd_civilian2_p",
+			0.1, //"Skin_smd_civilian3_p",
+			0.1, //"Skin_smd_civilian4_p",
+			0.1, //"Skin_smd_civilian5_p",
+			0.1, //"Skin_smd_civilian6_p",
+			0.1 //"Skin_smd_civilian7_p"
 		}
 	};
 	civilianZed[] = {
@@ -313,6 +341,40 @@ class CfgLoot {
 			0.02, //ItemScrapElectronics
 			0.08, //ItemTape
 			0.04 //ItemNails
+		}
+	};
+	civclothing[] = {
+		{//Inventory clothing items
+			"Skin_smd_civilian1",
+			"Skin_smd_civilian2",
+			"Skin_smd_civilian3",
+			"Skin_smd_civilian4",
+			"Skin_smd_civilian5",
+			"Skin_smd_civilian6",
+			"Skin_smd_civilian7",
+			"Skin_smd_civilian1_p",
+			"Skin_smd_civilian2_p",
+			"Skin_smd_civilian3_p",
+			"Skin_smd_civilian4_p",
+			"Skin_smd_civilian5_p",
+			"Skin_smd_civilian6_p",
+			"Skin_smd_civilian7_p"
+		},
+		{//Inventory civclothing items
+			0.1, //Skin_smd_civilian1
+			0.1, //"Skin_smd_civilian2",
+			0.1, //"Skin_smd_civilian3",
+			0.1, //"Skin_smd_civilian4",
+			0.1, //"Skin_smd_civilian5",
+			0.1, //"Skin_smd_civilian6",
+			0.1, //"Skin_smd_civilian7",
+			0.1, //"Skin_smd_civilian1_p",
+			0.1, //"Skin_smd_civilian2_p",
+			0.1, //"Skin_smd_civilian3_p",
+			0.1, //"Skin_smd_civilian4_p",
+			0.1, //"Skin_smd_civilian5_p",
+			0.1, //"Skin_smd_civilian6_p",
+			0.1 //"Skin_smd_civilian7_p"
 		}
 	};
 	clothing[] = {

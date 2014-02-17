@@ -34,22 +34,22 @@ Soldier1_DZ = "Soldier1_DZ";
 Survivor1_DZ = "Survivor2_DZ";
 Survivor2_DZ = "Survivor2_DZ";
 Survivor3_DZ = "Survivor3_DZ";
-Survivor2_SMD = "Survivor2_SMD";
-Survivor4_SMD = "Survivor4_SMD";
-Survivor5_SMD = "Survivor5_SMD";
-Survivor6_SMD = "Survivor6_SMD";
-Survivor7_SMD = "Survivor7_SMD";
-Survivor8_SMD = "Survivor8_SMD";
-Survivor9_SMD = "Survivor9_SMD";
-Survivor2P_SMD = "Survivor2P_SMD";
-Survivor4P_SMD = "Survivor4P_SMD";
-Survivor5P_SMD = "Survivor5P_SMD";
-Survivor6P_SMD = "Survivor6P_SMD";
-Survivor7P_SMD = "Survivor7P_SMD";
-Survivor8P_SMD = "Survivor8P_SMD";
-Survivor9P_SMD = "Survivor9P_SMD";
+smd_civilian1 = "smd_civilian1";
+smd_civilian2 = "smd_civilian2";
+smd_civilian3 = "smd_civilian3";
+smd_civilian4 = "smd_civilian4";
+smd_civilian5 = "smd_civilian5";
+smd_civilian6 = "smd_civilian6";
+smd_civilian7 = "smd_civilian7";
+smd_civilian1_p = "smd_civilian1_p";
+smd_civilian2_p = "smd_civilian2_p";
+smd_civilian3_p = "smd_civilian3_p";
+smd_civilian4_p = "smd_civilian4_p";
+smd_civilian5_p = "smd_civilian5_p";
+smd_civilian6_p = "smd_civilian6_p";
+smd_civilian7_p = "smd_civilian7_p";
 SurvivorW2_DZ = "SurvivorW2_DZ";
-player_freshpawn = ["Survivor2_SMD","Survivor4_SMD","Survivor5_SMD","Survivor6_SMD","Survivor7_SMD","Survivor8_SMD","Survivor9_SMD"];
+player_freshpawn = ["smd_civilian1","smd_civilian2","smd_civilian3","smd_civilian4","smd_civilian5","smd_civilian6","smd_civilian7"];
 
 AllPlayers = [
 	"Bandit1_DZ",
@@ -85,20 +85,20 @@ AllPlayers = [
 	"Soldier1_DZ",
 	"Survivor2_DZ",
 	"Survivor3_DZ",
-	"Survivor2_SMD",
-	"Survivor4_SMD",
-	"Survivor5_SMD",
-	"Survivor6_SMD",
-	"Survivor7_SMD",
-	"Survivor8_SMD",
-	"Survivor9_SMD",
-	"Survivor2P_SMD",
-	"Survivor4P_SMD",
-	"Survivor5P_SMD",
-	"Survivor6P_SMD",
-	"Survivor7P_SMD",
-	"Survivor8P_SMD",
-	"Survivor9P_SMD",
+	"smd_civilian1",
+	"smd_civilian2",
+	"smd_civilian3",
+	"smd_civilian4",
+	"smd_civilian5",
+	"smd_civilian6",
+	"smd_civilian7",
+	"smd_civilian1_p",
+	"smd_civilian2_p",
+	"smd_civilian3_p",
+	"smd_civilian4_p",
+	"smd_civilian5_p",
+	"smd_civilian6_p",
+	"smd_civilian7_p",
 	"player_freshpawn"
 ];
 AllPlayersVehicles = [
@@ -135,20 +135,20 @@ AllPlayersVehicles = [
 	"Soldier1_DZ",
 	"Survivor2_DZ",
 	"Survivor3_DZ",
-	"Survivor2_SMD",
-	"Survivor4_SMD",
-	"Survivor5_SMD",
-	"Survivor6_SMD",
-	"Survivor7_SMD",
-	"Survivor8_SMD",
-	"Survivor9_SMD",
-	"Survivor2P_SMD",
-	"Survivor4P_SMD",
-	"Survivor5P_SMD",
-	"Survivor6P_SMD",
-	"Survivor7P_SMD",
-	"Survivor8P_SMD",
-	"Survivor9P_SMD"
+	"smd_civilian1",
+	"smd_civilian2",
+	"smd_civilian3",
+	"smd_civilian4",
+	"smd_civilian5",
+	"smd_civilian6",
+	"smd_civilian7",
+	"smd_civilian1_p",
+	"smd_civilian2_p",
+	"smd_civilian3_p",
+	"smd_civilian4_p",
+	"smd_civilian5_p",
+	"smd_civilian6_p",
+	"smd_civilian7_p"
 ];
 //Cooking
 meatraw = [

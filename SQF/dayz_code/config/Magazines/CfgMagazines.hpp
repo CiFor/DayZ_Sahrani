@@ -709,7 +709,17 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_smasht_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	};
-	class FoodEdible; // External class reference													//food
+	class FoodEdible; // External class reference		//food
+	class FoodBanana : FoodEdible {																//food - raw
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Banana";
+		model = "smd\smd_assets\objects\smd_banana";
+		picture = "\dayz_equip\textures\equip_steak_ca.paa";
+		descriptionShort = "Bunch of MuhFuckin Bananas from Sahrani.";
+		bloodRegen = 400;
+	};
 	class FoodmeatRaw : FoodEdible {																//food - raw
 		scope = public;
 		count = 1;
@@ -2420,7 +2430,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		displayName = "KSK Soldier";
 		descriptionShort = "Standard Battle Dress Uniform of the German Armed Forces with Shemagh (Tactical Desert Scarf)";
 	};
-	class BanditClothes_DZ : SkinBase {
+	class Skin_BanditClothes_DZ : SkinBase {
 		scope = public;
 		displayName = "KSK Medic";
 		descriptionShort = "Standard Battle Dress Uniform of the German Armed Forces";
@@ -2529,7 +2539,100 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		scope = public;
 		displayName = "Desert Ghillie Suit";
 		descriptionShort = "Specialized camouflage clothing designed to resemble Desert Terrain";
-	};
+	};	
+	class Skin_smd_civilian1 : SkinBase 
+	{
+		scope = public;
+		displayName = "Shorts w/Blue Shirt";
+		desciptionShort = "Green Shorts, with Blue Sports T Shirt";
+	};	
+	class Skin_smd_civilian2 : SkinBase 
+	{
+		scope = public;
+		displayName = "Shorts w/Metal Shirt";
+		desciptionShort = "Dark Red/Black Shorts, with Black Heavy Metal T Shirt";
+	};	
+	class Skin_smd_civilian3 : SkinBase 
+	{
+		scope = public;
+		displayName = "Shorts w/Green Shirt";
+		desciptionShort = "Green Plaid Shorts, with Bright Green Banana Man T Shirt";
+	};	
+	class Skin_smd_civilian4 : SkinBase 
+	{
+		scope = public;
+		displayName = "Shorts w/Orange Shirt";
+		desciptionShort = "Blue Shorts, with Orange Cowboy T Shirt";
+	};	
+	class Skin_smd_civilian5 : SkinBase 
+	{
+		scope = public;
+		displayName = "Shorts w/Beige Shirt";
+		desciptionShort = "Green Shorts, with Beige Nagova T Shirt";
+	};	
+	class Skin_smd_civilian6 : SkinBase 
+	{
+		scope = public;
+		displayName = "Shorts w/Yellow Shirt";
+		desciptionShort = "Beige Shorts, with Yellow Pepe T Shirt";
+	};	
+	class Skin_smd_civilian7 : SkinBase 
+	{
+		scope = public;
+		displayName = "Shorts w/Black Shirt";
+		desciptionShort = "Dark Red/Black Shorts, with Black Heavy Metal T Shirt";
+	};	
+	class Skin_smd_civilian1_p : SkinBase 
+	{
+		scope = public;
+		displayName = "Pants w/Blue Shirt";
+		desciptionShort = "Green Pants, with Blue Sports T Shirt";
+	};	
+	class Skin_smd_civilian2_p : SkinBase 
+	{
+		scope = public;
+		displayName = "Pants w/Metal Shirt";
+		desciptionShort = "Dark Red/Black Pants, with Black Heavy Metal T Shirt";
+	};	
+	class Skin_smd_civilian3_p : SkinBase 
+	{
+		scope = public;
+		displayName = "Pants w/Green Shirt";
+		desciptionShort = "Green Plaid Pants, with Bright Green Banana Man T Shirt";
+	};	
+	class Skin_smd_civilian4_p : SkinBase 
+	{
+		scope = public;
+		displayName = "Pants w/Orange Shirt";
+		desciptionShort = "Blue Pants, with Orange Cowboy T Shirt";
+	};	
+	class Skin_smd_civilian5_p : SkinBase 
+	{
+		scope = public;
+		displayName = "Pants w/Beige Shirt";
+		desciptionShort = "Green Pants, with Beige Nagova T Shirt";
+	};	
+	class Skin_smd_civilian6_p : SkinBase 
+	{
+		scope = public;
+		displayName = "Pants w/Yellow Shirt";
+		desciptionShort = "Beige Pants, with Yellow Pepe T Shirt";
+	};	
+	class Skin_smd_civilian7_p : SkinBase 
+	{
+		scope = public;
+		displayName = "Pants w/Black Shirt";
+		desciptionShort = "Dark Red/Black Pants, with Black Heavy Metal T Shirt";
+	};	
+	class ItemAntibioticEmpty : CA_Magazine {															//trash
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Antibiotics (Empty)";
+		model = "smd\smd_assets\objects\smd_antibiotics_empty";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_brick.paa";
+		descriptionShort = "Empty Antibiotics";
+	};	
 	class ItemBrick : TrashTinCan {															//trash
 		scope = public;
 		count = 1;
@@ -2545,8 +2648,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Electronic Wire";
-		model = "smd_assets\objects\floppywire";
-		picture = "\smd_assets\objects\icons\floppywire.paa";
+		model = "smd\smd_assets\objects\floppywire";
+		picture = "smd\smd_assets\objects\icons\floppywire.paa";
 		descriptionShort = "Scrap Electronic Wire";
 	};
 	class ItemHose : CA_Magazine {
@@ -2572,8 +2675,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = "(256 * 2)";
 		displayName = "Propane Tank";
-		model = "smd_assets\objects\propane";
-		picture = "\smd_assets\objects\icons\propane.paa";
+		model = "smd\smd_assets\objects\propane";
+		picture = "smd\smd_assets\objects\icons\propane.paa";
 		descriptionShort = "Propane Tank";
 	};
 	class ItemRope : CA_Magazine {
@@ -2590,8 +2693,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Scrap Electronics";
-		model = "smd_assets\objects\scrapelectronics";
-		picture = "\smd_assets\objects\icons\scrapelectronics.paa";
+		model = "smd\smd_assets\objects\scrapelectronics";
+		picture = "smd\smd_assets\objects\icons\scrapelectronics.paa";
 		descriptionShort = "Electronic circuit board used for crafting various items";
 	};	
 	class ItemTape : CA_Magazine {
@@ -2599,8 +2702,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Duct Tape";
-		model = "smd_assets\objects\tape";
-		picture = "\smd_assets\objects\icons\tape.paa";
+		model = "\z\addons\dayz_communityassets\models\tape";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_duct_tape.paa";
 		descriptionShort = "Duct Tape used for crafting various items";
 	};
 	class ItemCarBomb : CA_Magazine {
@@ -2609,7 +2712,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		type = (2*256);
 		displayName = "Car Bomb";
 		model = "\ca\weapons\explosive.p3d";
-		picture = "\smd_assets\objects\icons\carbomb.paa";
+		picture = "smd\smd_assets\objects\icons\carbomb.paa";
 		descriptionShort = "Can be attached to a vehicles engine and then automaticly explode when the engine is turned on!";
 	};	
 	class ItemWoodenSplint : CA_Magazine {
@@ -2617,8 +2720,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Splint & Duct Tape";
-		model = "smd_assets\objects\woodensplint";
-		picture = "\smd_assets\objects\icons\woodensplint.paa";
+		model = "smd\smd_assets\objects\woodensplint";
+		picture = "smd\smd_assets\objects\icons\woodensplint.paa";
 		descriptionShort = "Two wooden sticks and duct tape. Combined these two objects are great for mending broken legs.";
 		class ItemActions
 		{
@@ -2628,7 +2731,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 				script="spawn player_useMeds;";
 			};
 		};
-	};																								//SMD Equipment Fixes and Additions Original and Community DayZ Content - By Seven of EHDGaming.co.uk	
+	};																						//SMD Equipment Fixes and Additions Original and Community DayZ Content - By Seven of EHDGaming.co.uk	
 	class ItemBloodbag: CA_Magazine {
 		scope=2;
 		count=1;

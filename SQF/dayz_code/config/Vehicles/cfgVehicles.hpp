@@ -2,60 +2,60 @@ class CfgVehicles
 {
 class Citizen1;
 class Survivor2_DZ;
-		class Survivor2_SMD: Survivor2_DZ
+		class smd_civilian1: Survivor2_DZ
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_1_tshirt_shorts";
 			weaponSlots = "1+4+6*256+2*4096+2+4*16+10*131072"; //"1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		};
-		class Survivor4_SMD: Survivor2_SMD
+		class smd_civilian2: smd_civilian1
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_2_tshirt_shorts";
 		};
-		class Survivor5_SMD: Survivor2_SMD
+		class smd_civilian3: smd_civilian1
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_3_tshirt_shorts";
 		};
-		class Survivor6_SMD: Survivor2_SMD
+		class smd_civilian4: smd_civilian1
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_4_tshirt_shorts";
 		};
-		class Survivor7_SMD: Survivor2_SMD
+		class smd_civilian5: smd_civilian1
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_5_tshirt_shorts";
 		};
-		class Survivor8_SMD: Survivor2_SMD
+		class smd_civilian6: smd_civilian1
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_6_tshirt_shorts";
 		};
-		class Survivor9_SMD: Survivor2_SMD
+		class smd_civilian7: smd_civilian1
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_7_tshirt_shorts";
 		};
-		class Survivor2P_SMD: Survivor2_SMD
+		class smd_civilian1_p: smd_civilian1
 		{
 			weaponSlots = "1+4+7*256+2*4096+2+5*16+10*131072"; //"1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		}; 
-		class Survivor4P_SMD: Survivor2P_SMD
+		class smd_civilian2_p: smd_civilian1_p
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_2_tshirt";
 		};
-		class Survivor5P_SMD: Survivor2P_SMD
+		class smd_civilian3_p: smd_civilian1_p
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_3_tshirt";
 		};
-		class Survivor6P_SMD: Survivor2P_SMD
+		class smd_civilian4_p: smd_civilian1_p
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_4_tshirt";
 		};
-		class Survivor7P_SMD: Survivor2P_SMD
+		class smd_civilian5_p: smd_civilian1_p
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_5_tshirt";
 		};
-		class Survivor8P_SMD: Survivor2P_SMD
+		class smd_civilian6_p: smd_civilian1_p
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_6_tshirt";
 		};
-		class Survivor9P_SMD: Survivor2P_SMD
+		class smd_civilian7_p: smd_civilian1_p
 		{
 			model = "\smd\smd_units\smd_icewindo_civs\civil_7_tshirt";
 		};

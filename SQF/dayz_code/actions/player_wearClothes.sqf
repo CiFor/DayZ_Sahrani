@@ -152,8 +152,8 @@ switch (_item) do {
 	case "Skin_SMD_US_SpecOps_MP_DIGI": {
 		_model = "SMD_US_SpecOps_MP_DIGI";
 	};
-	case "Skin_Survivor2_DZ": {
-		_model = "Survivor2_DZ";
+	case "Skin_smd_civilian1": {
+		_model = "smd_civilian1";
 		if (_isBandit) then {
 			_model = "Bandit1_DZ";
 		};
@@ -167,6 +167,201 @@ switch (_item) do {
 			_model = "BanditW1_DZ";
 		};
 	};
+	case "Skin_smd_civilian2": {
+		_model = "smd_civilian2";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian3": {
+		_model = "smd_civilian3";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian4": {
+		_model = "smd_civilian4";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian5": {
+		_model = "smd_civilian5";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian6": {
+		_model = "smd_civilian6";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian7": {
+		_model = "smd_civilian7";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian1_p": {
+		_model = "smd_civilian1_p";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian2_p": {
+		_model = "smd_civilian2_p";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian3_p": {
+		_model = "smd_civilian3_p";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian4_p": {
+		_model = "smd_civilian4_p";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian5_p": {
+		_model = "smd_civilian5_p";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian6_p": {
+		_model = "smd_civilian6_p";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};
+	case "Skin_smd_civilian7_p": {
+		_model = "smd_civilian7_p";
+		if (_isBandit) then {
+			_model = "Bandit1_DZ";
+		};
+		if (_isHero) then {
+			_model = "Survivor3_DZ";
+		};
+		if (_isFemale && !_isBandit) then {
+			_model = "SurvivorW2_DZ";
+		};
+		if (_isFemale && _isBandit) then {
+			_model = "BanditW1_DZ";
+		};
+	};		
 	case "Skin_Rocket_DZ": {
 		_model = "Rocket_DZ";
 	};

@@ -28,6 +28,7 @@ _direction =	0;
 _model =		"";
 _newUnit =		objNull;
 _botActive = false;
+_possibleFreshSpawnArray = ["smd_civilian1", "smd_civilian2", "smd_civilian3", "smd_civilian4", "smd_civilian5", "smd_civilian6","smd_civilian7"];
 
 if (_playerID == "") then {
 	_playerID = getPlayerUID _playerObj;
@@ -72,20 +73,36 @@ _randomSpot = false;
 /* PROCESS */
 _hiveVer = 0;
 
-if (!_isNew) then {
-	//RETURNING CHARACTER		
-	_inventory = 	_primary select 4;
-	_backpack = 	_primary select 5;
-	_survival =		_primary select 6;
-	_model =		_primary select 7;
-	_hiveVer =		_primary select 8;
-	
-	if (!(_model in [
+
+				if (!_isNew) then {
+				//RETURNING CHARACTER	
+				_inventory = _primary select 4;
+				_backpack = _primary select 5;
+				_survival =	 _primary select 6;
+				_model =	 _primary select 7;
+				_hiveVer =	 _primary select 8;
+
+				if (!(_model in [
 				"BanditClothes_DZ",
 				"BanditSkin_DZ",
 				"BanditSkinW_DZ",
 				"SurvivorW2_DZ",
 				"Survivor2_DZ",
+				"Survivor3_DZ",
+				"smd_civilian1",
+				"smd_civilian2",
+				"smd_civilian3",
+				"smd_civilian4",
+				"smd_civilian5",
+				"smd_civilian6",
+				"smd_civilian7",
+				"smd_civilian1_p",
+				"smd_civilian2_p",
+				"smd_civilian3_p",
+				"smd_civilian4_p",
+				"smd_civilian5_p",
+				"smd_civilian6_p",
+				"smd_civilian7_p",
 				"Soldier1_DZ",
 				"Camo1_DZ",
 				"BanditW1_DZ",
@@ -121,20 +138,32 @@ if (!_isNew) then {
 				"SMD_US_SpecOps_DIGI",
 				"SMD_US_SpecOps_MP_DIGI"
 				])) then {
-		_model = "Survivor2_DZ";
-	};
-	
-} else {
-	_model =		_primary select 3;
-	_hiveVer =		_primary select 4;
-	if (isNil "_model") then {
-		_model = "Survivor2_DZ";
-	} else {
-		if (_model == "") then {
-			_model = "Survivor2_DZ";
-		};
-	};
+				_model =  _possibleFreshSpawnArray select floor random count _possibleFreshSpawnArray;
+				};
 
+				} else {
+				_model =	 _primary select 3;
+				_hiveVer =	 _primary select 4;
+				if (isNil "_model") then {
+				_model = _possibleFreshSpawnArray select floor random count _possibleFreshSpawnArray;
+				} else {
+				if (_model == "") then {
+				_model = _possibleFreshSpawnArray select floor random count _possibleFreshSpawnArray;
+				} else {
+				if (!(_model in [
+				"Survivor2_DZ",
+				"smd_civilian2",
+				"smd_civilian3",
+				"smd_civilian4",
+				"smd_civilian5",
+				"smd_civilian6",
+				"smd_civilian7"
+				])) then { 
+				_model =  _possibleFreshSpawnArray select floor random count _possibleFreshSpawnArray;	
+			}	
+		};
+	};	
+		
 	//Record initial inventory
 	_config = (configFile >> "CfgSurvival" >> "Inventory" >> "Default");
 	_mags = getArray (_config >> "magazines");

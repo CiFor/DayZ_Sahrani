@@ -542,7 +542,6 @@ class CfgBuildingLoot {
 			{"SVD","weapon"},
 			{"SVD_CAMO","weapon"},
 			{"SVD_des_EP1","weapon"},
-			{"SVD_NSPU_EP1","weapon"},
 			{"vil_AK_101","weapon"},
 			{"vil_AK_103","weapon"},
 			{"vil_AK_105","weapon"},
@@ -622,7 +621,6 @@ class CfgBuildingLoot {
 			0.08, //SVD","weapon
 			0.04, //SVD_CAMO","weapon
 			0.04, //SVD_des_EP1","weapon
-			0.01, //SVD_NSPU_EP1","weapon
 			0.06, //vil_AK_101","weapon
 			0.06, //vil_AK_103","weapon
 			0.06, //vil_AK_105","weapon
@@ -708,7 +706,6 @@ class CfgBuildingLoot {
 			{"SVD","weapon"},
 			{"SVD_CAMO","weapon"},
 			{"SVD_des_EP1","weapon"},
-			{"SVD_NSPU_EP1","weapon"},
 			{"vil_AK_101","weapon"},
 			{"vil_AK_103","weapon"},
 			{"vil_AK_105","weapon"},
@@ -787,7 +784,6 @@ class CfgBuildingLoot {
 			0.08, //SVD","weapon
 			0.04, //SVD_CAMO","weapon
 			0.04, //SVD_des_EP1","weapon
-			0.01, //SVD_NSPU_EP1","weapon
 			0.06, //vil_AK_101","weapon
 			0.06, //vil_AK_103","weapon
 			0.06, //vil_AK_105","weapon
@@ -1402,6 +1398,7 @@ class CfgBuildingLoot {
 			{"DZ_British_ACU","object"},
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
+			{"","civclothing"},
 			{"","food"},
 			{"","trash"},
 			{"Binocular","weapon"},
@@ -1443,6 +1440,7 @@ class CfgBuildingLoot {
 			0.01, //DZ_British_ACU","object
 			0.08, //DZ_Czech_Vest_Puch","object
 			0.03, //DZ_TK_Assault_Pack_EP1","object
+			0.09, //civclothing
 			0.08, //,food
 			1.0, //","trash
 			0.01, //Binocular","weapon
@@ -1501,6 +1499,7 @@ class CfgBuildingLoot {
 			{"DZ_British_ACU","object"},
 			{"DZ_Czech_Vest_Puch","object"},
 			{"DZ_TK_Assault_Pack_EP1","object"},
+			{"","civclothing"},
 			{"","food"},
 			{"","medical"},
 			{"","trash"},
@@ -1535,6 +1534,7 @@ class CfgBuildingLoot {
 			0.01, //DZ_British_ACU
 			0.08, //DZ_Czech_Vest_Puch
 			0.03, //DZ_TK_Assault_Pack_EP1
+			0.08, //civclothing
 			1.8, //"","food
 			0.03, //"","medical
 			1.0, //","trash
