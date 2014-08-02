@@ -358,7 +358,15 @@ class CfgLoot {
 			"Skin_smd_civilian4_p",
 			"Skin_smd_civilian5_p",
 			"Skin_smd_civilian6_p",
-			"Skin_smd_civilian7_p"
+			"Skin_smd_civilian7_p",
+			"Skin_Sniper1_DZ",
+			"Skin_SniperD_DZ",
+			"Skin_SniperLight_DZ",
+			"Skin_Soldier1_DZ",
+			"Skin_Camo1_DZ",
+			"Skin_Rocket_DZ",
+			"Skin_SMD_ATACS_DES",
+			"Skin_SMD_ATACS_URBAN"
 		},
 		{//Inventory civclothing items
 			0.1, //Skin_smd_civilian1
@@ -374,7 +382,15 @@ class CfgLoot {
 			0.1, //"Skin_smd_civilian4_p",
 			0.1, //"Skin_smd_civilian5_p",
 			0.1, //"Skin_smd_civilian6_p",
-			0.1 //"Skin_smd_civilian7_p"
+			0.1, //"Skin_smd_civilian7_p",
+			0.01, //"Skin_Sniper1_DZ",
+			0.01, //"Skin_SniperD_DZ",
+			0.01, //"Skin_SniperLight_DZ",
+			0.01, //"Skin_Soldier1_DZ"
+			0.01, //"Skin_Camo1_DZ",
+			0.01, //"Skin_Rocket_DZ",
+			0.01, //"Skin_SMD_ATACS_DES",
+			0.01 //"Skin_SMD_ATACS_URBAN",
 		}
 	};
 	clothing[] = {
@@ -1461,7 +1477,7 @@ class CfgLoot {
 			"FoodCanPowellEmpty",
 			/*"FoodCanPowellEmptyDirty",
 			"FoodCanPowellEmptyRusted",
-			"FoodCanRusCornEmpty",/*
+			"FoodCanRusCornEmpty",
 			"FoodCanRusCornEmptyDirty",
 			"FoodCanRusCornEmptyRusted",
 			"FoodCanRusMilkEmpty",

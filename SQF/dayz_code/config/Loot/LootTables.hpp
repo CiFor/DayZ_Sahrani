@@ -156,7 +156,7 @@ class CfgBuildingLoot {
 			0.1, //","medical
 			0.3, //","military
 			0.2, //","militarySpecial
-			1.0, //","trash
+			0.85, //","trash
 			0, //Binocular","weapon
 			0.02, //Binocular_Vector","military
 			0.01, //NVGoggles","weapon
@@ -254,7 +254,7 @@ class CfgBuildingLoot {
 			0.06, //vil_USP","weapon
 			0.04, //vil_USPSD","weapon
 			0.01, //ItemRadio","weapon
-			0.01, //PipeBomb, magazine
+			0.01 //PipeBomb, magazine
 		};
 	};
 	class Crash1_No50s: Default {
@@ -393,7 +393,7 @@ class CfgBuildingLoot {
 			0.1, //","medical
 			0.3, //","military
 			0.2, //","militarySpecial
-			1.0, //","trash
+			0.85, //","trash
 			0, //Binocular","weapon
 			0.02, //Binocular_Vector","military
 			0.01, //NVGoggles","weapon
@@ -491,7 +491,7 @@ class CfgBuildingLoot {
 			0.06, //vil_USP","weapon
 			0.04, //vil_USPSD","weapon
 			0.01, //ItemRadio","weapon
-			0.01, //PipeBomb, magazine
+			0.01 //PipeBomb, magazine
 		};
 	};
 	class Crash2Mi8: Default {
@@ -591,7 +591,7 @@ class CfgBuildingLoot {
 			0.01, //","clothing
 			0.01, //","foodSpecial
 			0.01, //","medical
-			1.0, //","trash
+			0.85, //","trash
 			0, //Binocular","weapon
 			0.04, //Binocular_Vector","military
 			0.01, //NVGoggles","weapon
@@ -755,7 +755,7 @@ class CfgBuildingLoot {
 			0.01, //","clothing
 			0.01, //","foodSpecial
 			0.01, //","medical
-			1.0, //","trash
+			0.85, //","trash
 			0, //Binocular","weapon
 			0.04, //Binocular_Vector","military
 			0.01, //NVGoggles","weapon
@@ -901,7 +901,7 @@ class CfgBuildingLoot {
 			0.35, //"","farm
 			0.25, //"","food
 			0.03, //"","hunter
-			1.0, //","trash
+			0.85, //","trash
 			0.3, //Binocular","weapon
 			0.01, //WeaponHolder_ItemJerrycan","object"},
 			0.01, //WeaponHolder_PartEngine","object"},
@@ -947,7 +947,7 @@ class CfgBuildingLoot {
 			{"MedBox0","object"}
 		};
 		itemChance[] =	{
-			1.0, //","trash
+			0.85, //","trash
 			1, //hospital
 			0.4 //MedBox0
 		};
@@ -1008,7 +1008,7 @@ class CfgBuildingLoot {
 			{"WeaponHolder_PartWheel","object"}
 		};
 		itemChance[] =	{
-			1.0, //","trash
+			0.85, //","trash
 			0.02, //ItemCraftingBook2","weapon
 			0.02, //ItemKnife","military
 			0.01, //ItemNails","magazine
@@ -1108,12 +1108,12 @@ class CfgBuildingLoot {
 			0.04, //DZ_TK_Assault_Pack_EP1","object
 			0.1, //"","AmmoUN
 			0.7, //"","AmmoNATO
-			0.01, //","clothing
+			0.35, //","clothing
 			0.5, //","foodSpecial
 			0.2, //","medical
 			0.8, //","military
 			0.9, //","militarySpecial
-			1.0, //","trash
+			0.85, //","trash
 			0.04, //Binocular","weapon
 			0.02, //Binocular_Vector","military
 			0.02, //AK_107_GL_kobra","weapon
@@ -1193,7 +1193,7 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.04, //{"","militarySpecial
-			1.0, //","trash
+			0.85, //","trash
 			0.02, //ItemCraftingBook2","weapon
 			0.02, //ItemKnife","military
 			0.01, //ItemNails","magazine
@@ -1312,12 +1312,12 @@ class CfgBuildingLoot {
 			0.01, //DZ_TK_Assault_Pack_EP1","object
 			0.4, //"","AmmoUN
 			0.6, //"","AmmoNATO
-			0.01, //","clothing
+			0.15, //","clothing
 			0.3, //","foodSpecial
 			0.4, //","medical
 			0.4, //","military
 			0.6, //","militarySpecial
-			1.0, //","trash
+			0.85, //","trash
 			0, //Binocular","weapon
 			0.02, //Binocular_Vector","military
 			0.01, //M24","weapon
@@ -1442,7 +1442,7 @@ class CfgBuildingLoot {
 			0.03, //DZ_TK_Assault_Pack_EP1","object
 			0.09, //civclothing
 			0.08, //,food
-			1.0, //","trash
+			0.85, //","trash
 			0.01, //Binocular","weapon
 			0.00, //Skin_BanditSkin_DZ
 			0.01, //Skin_Camo1_DZ
@@ -1537,7 +1537,7 @@ class CfgBuildingLoot {
 			0.08, //civclothing
 			1.8, //"","food
 			0.03, //"","medical
-			1.0, //","trash
+			0.85, //","trash
 			0.04, //Binocular
 			0.01, //PartWoodPile
 			0.03, //WeaponHolder_ItemTent
