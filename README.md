@@ -1,9 +1,9 @@
 DayZ_Sahrani
 ===================
-Current Release: 1.0.0
+Current Release: 1.1.0
 
 
-Development Build: 1.1.0
+Development Build: NA - Likely won't be any more updates to this mod
 
 
 PLEASE EMAIL me before making any modifications or additions.
@@ -22,6 +22,10 @@ Github for windows:
 
 
 Usefull Links:
+
+Intro To Modding Tutorials:
+
+- https://www.youtube.com/playlist?list=PLD7hd9B3fKvyW8G3U7SynEP7nhpHTvFLr
 
 Dev-Heaven Community Modding Bible:
 - https://dev-heaven.net/projects/cmb/wiki
