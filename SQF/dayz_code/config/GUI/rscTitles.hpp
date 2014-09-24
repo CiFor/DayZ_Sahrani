@@ -1498,7 +1498,7 @@ class RscDisplayMain : RscStandardDisplay
 			text = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
 		};
 
-		class CA_DAYZ_Sahrani : RscPictureKeepAspect
+		class CA_DAY7_Sahrani : RscPictureKeepAspect
 		{
 			x = 0.323717 * safezoneW + safezoneX;
 			y = 0.045000 * safezoneH + safezoneY;
@@ -1514,7 +1514,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "DayZ Sahrani 1.1.0";
+			text = "Day7 Sahrani 1.5.0";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;        ///////////////////////////////////////////////////////////////////////////////////////

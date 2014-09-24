@@ -35,13 +35,13 @@ class CfgMods
 {
 	class DayZ
 	{
-		dir = "DayZ_Sahrani";
+		dir = "Day7 Sahrani";
 		name = "Day7 Sahrani";
 		picture = "z\addons\dayz_code\gui\dayz_sahrani_logo_ca.paa";
 		hidePicture = 0;
 		hideName = 0;
 		action = "";
-		version = "1.0.0";
+		version = "1.5.0";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
@@ -81,7 +81,7 @@ class CfgAddons
 	{
 		class dayz
 		{
-			list[] = {"buildings","dayz","dayz_code","dayz_communityassets","dayz_equip","dayz_sfx","dayz_weapons","smd_assets","sara_civilians","smd_sahrani_a2","smd_sahrani_artif_obj","vil_police"};
+			list[] = {"buildings","dayz","dayz_code","dayz_communityassets","dayz_equip","dayz_sfx","dayz_weapons","dutch_pack","smd_assets","smd_sahrani_a2","smd_sahrani_artif_obj","vilas_wwp","vilas_aks"};
 		};
 	};
 };
