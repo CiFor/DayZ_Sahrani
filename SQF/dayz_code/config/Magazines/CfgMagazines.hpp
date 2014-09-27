@@ -1911,7 +1911,15 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		ammo = "shovel_swing_Ammo";
 	};
 	
-	class 10Rnd_127x99_m107 {
+	class 10Rnd_127x99_m107 : CA_Magazine
+	{
+		scope = 2;
+		displayName = "$STR_MN_10RND_M107";
+		ammo = "B_127x99_Ball_noTracer";
+		count = 10;
+		initSpeed = 850;
+		picture = "\CA\weapons\data\Equip\M_107_CA.paa";
+		descriptionShort = "$STR_DSS_10RND_M107";
 		class ItemActions {
 			class Craft0
 			{
@@ -1929,7 +1937,15 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		};
 	};
 	
-	class 5Rnd_127x99_as50 {
+	class 5Rnd_127x99_as50 : CA_Magazine
+	{
+		scope = 2;
+		displayName = "$STR_BAF_CFGMAGAZINES_5RND_127X99_AS500";
+		descriptionShort = "$STR_BAF_CFGMAGAZINES_5RND_127X99_AS500_0";
+		ammo = "B_127x99_Ball_noTracer_BAF";
+		count = 5;
+		initSpeed = 936;
+		picture = "\CA\weapons_BAF\data\UI\M_AS50_CA.paa";
 		class ItemActions {
 			class Craft0
 			{
@@ -2648,8 +2664,8 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		count = 1;
 		type = 256;
 		displayName = "Electronic Wire";
-		model = "smd\smd_assets\objects\floppywire";
-		picture = "smd\smd_assets\objects\icons\floppywire.paa";
+		model = "\smd\smd_assets\objects\floppywire";
+		picture = "\smd\smd_assets\objects\icons\floppywire.paa";
 		descriptionShort = "Scrap Electronic Wire";
 	};
 	class ItemHose : CA_Magazine {
@@ -2676,7 +2692,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		type = "(256 * 2)";
 		displayName = "Propane Tank";
 		model = "smd\smd_assets\objects\propane";
-		picture = "smd\smd_assets\objects\icons\propane.paa";
+		picture = "\smd\smd_assets\objects\icons\propane.paa";
 		descriptionShort = "Propane Tank";
 	};
 	class ItemRope : CA_Magazine {
@@ -2694,7 +2710,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		type = 256;
 		displayName = "Scrap Electronics";
 		model = "smd\smd_assets\objects\scrapelectronics";
-		picture = "smd\smd_assets\objects\icons\scrapelectronics.paa";
+		picture = "\smd\smd_assets\objects\icons\scrapelectronics.paa";
 		descriptionShort = "Electronic circuit board used for crafting various items";
 	};	
 	class ItemTape : CA_Magazine {
@@ -2712,7 +2728,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		type = (2*256);
 		displayName = "Car Bomb";
 		model = "\ca\weapons\explosive.p3d";
-		picture = "smd\smd_assets\objects\icons\carbomb.paa";
+		picture = "\smd\smd_assets\objects\icons\carbomb.paa";
 		descriptionShort = "Can be attached to a vehicles engine and then automaticly explode when the engine is turned on!";
 	};	
 	class ItemWoodenSplint : CA_Magazine {
@@ -2721,7 +2737,7 @@ class CfgMagazines {																				//Original DayZ Content DayZ Dev Team
 		type = 256;
 		displayName = "Splint & Duct Tape";
 		model = "smd\smd_assets\objects\woodensplint";
-		picture = "smd\smd_assets\objects\icons\woodensplint.paa";
+		picture = "\smd\smd_assets\objects\icons\woodensplint.paa";
 		descriptionShort = "Two wooden sticks and duct tape. Combined these two objects are great for mending broken legs.";
 		class ItemActions
 		{

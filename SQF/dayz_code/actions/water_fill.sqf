@@ -3,11 +3,11 @@ private["_hasFood","_item","_text","_qty"];
 call gear_ui_init;
 
 _playerPos = 	getPosATL player;
-_canFill = 		count nearestObjects [_playerPos, ["Land_kasna","Land_kasna_new","Land_kasna_new_bez","Land_pumpa","Land_water_tank"], 4] > 0;
+_canFill = 		count nearestObjects [_playerPos, ["Land_kasna","Land_kasna_new","Land_kasna_new_bez","Land_smd_water_pump","Land_water_tank"], 4] > 0;
 _isPond = 		false;
 _isWell = 		false;
 _pondPos = 		[];
-_objectsWell = 	[];
+_objectsWell = 	["Land_kasna","Land_kasna_new","Land_kasna_new_bez","Land_smd_water_pump","Land_water_tank"];
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};

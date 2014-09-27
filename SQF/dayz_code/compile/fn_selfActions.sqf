@@ -370,7 +370,7 @@ _objectsWell = 	nearestObjects [_playerPos, [], 4];
 _canDrink = false;
 {
 	_isWell = ["kasna",str(_x),false] call fnc_inString;
-	if(!_isWell) then { _isWell = ["pumpa",str(_x),false] call fnc_inString; };
+	if(!_isWell) then { _isWell = ["smd_water",str(_x),false] call fnc_inString; };
 	if (_isWell) then {_canDrink = true};
 } forEach _objectsWell;
 
